@@ -13,6 +13,7 @@ import LookingToHire from '../LookingToHire';
 import LookingForAJob from '../LookingForAJob';
 
 import Jobs from '../Jobs';
+import Resources from '../Resources';
 
 const RouterComponent = () => (
   <BrowserRouter>
@@ -23,6 +24,8 @@ const RouterComponent = () => (
       <Route path='/looking-for-a-job' Component={LookingForAJob} />
 
       <Route path='/jobs' Component={Jobs} />
+      <Route path='/resources' Component={Resources} />
+
       <Route path="*" element={<Navigate to='/' />} />
     </Routes>
   </BrowserRouter>

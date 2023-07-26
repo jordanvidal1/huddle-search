@@ -16,7 +16,7 @@ const Role = props => {
 
   return (
     <Grid item xs={3}>
-      <div className='latest-role'>
+      <div className='role'>
         <div className='role-container'>
           <div className={classNames}>
             <span>
