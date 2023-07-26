@@ -1,0 +1,88 @@
+.executive-search {
+    .container {
+        background: url('../../executive-search.png') top right no-repeat #B1DEEA;
+        background-size: contain;
+    }
+
+    .content {
+        align-self: flex-start;
+        max-width: 616px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .title {
+        margin-top: 0.5rem;
+
+        h2 {
+            color: #310A31;
+            font-weight: 300;
+        }
+
+        a {
+            color: #F6E27F;
+            background: #310A31;
+        }
+    }
+
+    .text {
+        margin-top: 2rem;
+
+        span {
+            color: #310A31;
+            font-size: 1.125rem;
+            font-weight: 500;
+
+            a {
+                color: #D70;
+                font-weight: 700;
+            }
+
+            img {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    .grid-container {
+        margin-top: 2.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .info-container {
+        align-items: flex-start;
+        display: flex;
+        flex: 1 0 0;
+        flex-direction: column;
+        padding: 1rem;
+
+        img {
+            height: 2.5rem;
+        }
+
+        h6 {
+            color: #310A31;
+            font-weight: 700;
+            margin: 1.5rem 0 1rem;
+        }
+
+        p {
+            color: rgba(49, 10, 49, 0.70);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .btn-container {
+        margin-top: 3rem;
+    }
+
+    .btn {
+        background: #D70;
+        box-shadow: 0 4px 0 0 #310A31;
+        color: #FFF;
+        font-weight: 700;
+    }
+}

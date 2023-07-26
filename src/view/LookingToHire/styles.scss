@@ -1,0 +1,74 @@
+.looking-to-hire {
+    .container {
+        background: url('../../looking-to-hire.png') center right no-repeat #8762CB;
+        background-size: contain;
+    }
+
+    .content {
+        align-self: flex-start;
+        max-width: 616px;
+    }
+
+    .title {
+        a {
+            color: #F6E27F;
+            background: #310A31;
+        }
+    }
+
+    .text {
+        font-size: 1.125rem;
+        margin-top: 2rem;
+
+        a {
+            color: #F6E27F;
+            font-weight: 800;
+        }
+
+        img {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .btn-container {
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .btn:not(.btn-secondary) {
+        background: transparent;
+        border: 3px solid #F6E27F;
+        color: #F6E27F;
+    }
+
+    .cv-container {
+        background: #310A31;
+        border-radius: 2rem;
+        margin-top: 4rem;
+        padding: 2rem;
+
+        p {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 1rem;
+            margin: 1rem 0 2rem;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                cursor: pointer;
+            }
+
+            span {
+                color: #F6E27F;
+                font-weight: 800;
+            }
+
+            img {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
