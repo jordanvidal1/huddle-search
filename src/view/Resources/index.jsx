@@ -4,6 +4,7 @@ import {Grid} from '@material-ui/core';
 import TopNav from '../shared/TopNav';
 import Header from '../shared/Header';
 import SearchBar from '../shared/SearchBar';
+import RoleNav from '../shared/RoleNav';
 import Resource from '../shared/Resource';
 import Logo from '../../static/full-logo-dark.svg';
 import './styles.scss';
@@ -20,6 +21,7 @@ const Jobs = () => {
           <Header />
         </div>
       </div>
+      <RoleNav />
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
