@@ -7,9 +7,12 @@ import {
 } from 'react-router-dom';
 import {hot} from 'react-hot-loader/root';
 import {CssBaseline} from '@material-ui/core';
+
 import Home from '../Home';
 import LookingToHire from '../LookingToHire';
 import LookingForAJob from '../LookingForAJob';
+
+import Jobs from '../Jobs';
 
 const RouterComponent = () => (
   <BrowserRouter>
@@ -18,6 +21,8 @@ const RouterComponent = () => (
       <Route path='/' Component={Home} />
       <Route path='/looking-to-hire' Component={LookingToHire} />
       <Route path='/looking-for-a-job' Component={LookingForAJob} />
+
+      <Route path='/jobs' Component={Jobs} />
       <Route path="*" element={<Navigate to='/' />} />
     </Routes>
   </BrowserRouter>

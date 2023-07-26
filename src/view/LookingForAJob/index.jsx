@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import TopNav from '../shared/TopNav';
 import Header from '../shared/Header';
@@ -40,9 +40,9 @@ const LookingForAJob = () => {
                     Featured roles
                   </h5>
                   <div className='link-container'>
-                    <a>
+                    <Link to='/jobs'>
                       <span>Browse all jobs<img alt='arrow-icon' src={ArrowIcon} /></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className='roles'>

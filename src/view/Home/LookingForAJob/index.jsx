@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import FeaturedRole from './FeaturedRole'
 import ArrowIcon from '../../../static/arrow.svg';
@@ -27,9 +28,9 @@ const LookingForAJob = () => {
                     Featured roles
                   </h5>
                   <div className='link-container'>
-                    <a>
+                    <Link to='/jobs'>
                       <span>Browse all jobs<img alt='arrow-icon' src={ArrowIcon} /></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className='roles'>

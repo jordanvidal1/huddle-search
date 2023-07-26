@@ -4,8 +4,9 @@ import {Grid} from '@material-ui/core';
 import Salary from '../../../static/salary-pink.svg';
 import Benefits from '../../../static/benefits-pink.svg';
 import Location from '../../../static/location-pink.svg';
+import './styles.scss';
 
-const LatestRole = props => {
+const Role = props => {
   const {type, title, salary, benefits, location} = props;
 
   const classNames = cx('role-type', {
@@ -55,9 +56,9 @@ const LatestRole = props => {
   );
 }
 
-export default LatestRole;
+export default Role;
 
-LatestRole.defaultProps = {
+Role.defaultProps = {
   type: 'Permanent',
   title: 'Job title that breaks onto 3 lines',
   salary: 50000,

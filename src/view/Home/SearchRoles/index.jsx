@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-// import Search from './Search';
-import LatestRole from './LatestRole'
+import SearchBar from '../../shared/SearchBar';
+import Role from '../../shared/Role'
 import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
@@ -17,7 +18,7 @@ const Home = () => {
                   <h2>
                     Search open roles
                   </h2>
-                  <div className='search' />
+                  <SearchBar />
                 </div>
               </Grid>
               <Grid item xs={12}>
@@ -26,16 +27,16 @@ const Home = () => {
                     <h3>
                       Latest roles
                     </h3>
-                    <a>
+                    <Link to='/jobs'>
                       <span>Browse all jobs</span>
                       <img alt='arrow' src={ArrowIcon} />
-                    </a>
+                    </Link>
                   </div>
                   <Grid container spacing={3}>
-                    <LatestRole />
-                    <LatestRole />
-                    <LatestRole />
-                    <LatestRole />
+                    <Role />
+                    <Role />
+                    <Role />
+                    <Role />
                   </Grid>
                 </div>
               </Grid>

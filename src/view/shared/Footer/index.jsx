@@ -58,9 +58,11 @@ const Home = () => {
                     </p>
                   </div>
                   <div className='btn-container'>
-                    <button className="btn btn-secondary">
-                      Browse all jobs
-                    </button>
+                    <Link to='/jobs'>
+                      <button className="btn btn-secondary">
+                        Browse all jobs
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </Grid>
