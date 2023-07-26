@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
-import SalaryIcon from '../../static/salary.svg';
+import SalaryIcon from '../../../static/salary.svg';
 
 const FeaturedRole = props => {
   const {type, title, salary} = props;

@@ -1,0 +1,70 @@
+.header {
+  border-radius: 1000px;
+  background: #FFF;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1.75rem 3rem;
+  width: fit-content;
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    a {
+      align-items: center;
+      color: #310A31;
+      display: flex;
+      font-size: 1.125rem;
+      font-weight: 800;
+      text-decoration: none;
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .nav-dropdown {
+    background: #310A31;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 4.375rem;
+    padding: 2.5rem 2rem;
+    position: absolute;
+    width: 16.5rem;
+
+    img {
+      position: absolute;
+      top: -0.75rem;
+    }
+
+    & > div > div {
+      &:first-child a {
+        margin-top: 0
+      }
+
+      &:last-child a {
+        margin-bottom: 0
+      }
+    }
+
+    a {
+      color: #F6E27F;
+      font-family: Montserrat;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      margin: 2rem 0;
+    }
+  }
+}

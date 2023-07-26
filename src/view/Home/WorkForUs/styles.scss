@@ -1,13 +1,7 @@
-.looking-to-hire {
-    .header-container {
-        background: #FFF;
-        display: flex;
-        justify-content: space-between;
-    }
-
+.work-for-us {
     .container {
-        background: url('../../static/looking-to-hire.png') center right no-repeat #8762CB;
-        background-size: contain;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../../../static/work-for-us.jpg'), lightgray 50% / cover no-repeat;
+        background-size: cover;
     }
 
     .content {
@@ -23,28 +17,38 @@
     }
 
     .text {
-        font-size: 1.125rem;
         margin-top: 2rem;
+    }
+
+    .body {
+        color: #FFF;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    .grid-container {
+        margin-top: 3rem;
+
+        .link-container {
+            align-items: center;
+            display: flex;
+            height: 3rem;
+        }
 
         a {
+            display: flex;
+        }
+
+        span {
             color: #F6E27F;
+            font-size: 1.25rem;
             font-weight: 800;
+            max-width: 11.375rem;
         }
 
         img {
-            margin-left: 0.5rem;
+            margin-left: 1rem;
         }
-    }
-
-    .btn-container {
-        gap: 2rem;
-        margin-top: 4rem;
-    }
-
-    .btn:not(.btn-secondary) {
-        background: transparent;
-        border: 3px solid #F6E27F;
-        color: #F6E27F;
     }
 
     .cv-container {

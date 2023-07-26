@@ -1,38 +1,24 @@
 import React from 'react';
-import Header from './Header';
-import Logo from '../../full-logo-dark.svg';
-import './styles.scss';
+import Hero from './Hero';
+import LookingToHire from './LookingToHire';
+import LookingForAJob from './LookingForAJob';
+import SearchRoles from './SearchRoles';
+import ExecutiveSearch from './ExecutiveSearch';
+import EmbeddedTalent from './EmbeddedTalent';
+import WorkForUs from './WorkForUs';
+import Footer from '../shared/Footer';
 
-const Home = () => {
-  return (
-    <div className='home'>
-      <div className='container'>
-        <div className='inner-container'>
-          <div className='content'>
-            <div className='header-container'>
-              <img alt='logo' src={Logo} />
-              <Header />
-            </div>
-            <div className='text-container'>
-              <div className='title'>
-                <h1>
-                  Because every search starts with a huddle
-                </h1>
-              </div>
-              <div className='text'>
-                <span>
-                  Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus. Cursus amet habita sse nisl est rhoncus.
-                </span>
-              </div>
-              <button className="btn btn-primary">
-                Browse all jobs
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+const Home = () => (
+  <div className='home'>
+    <Hero />
+    <LookingToHire />
+    <LookingForAJob />
+    <SearchRoles />
+    <ExecutiveSearch />
+    <EmbeddedTalent />
+    <WorkForUs />
+    <Footer />
+  </div>
+);
 
 export default Home;

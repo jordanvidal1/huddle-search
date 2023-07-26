@@ -1,6 +1,6 @@
-.home {
+.hero {
     .container {
-        background: url('../../hero-image.png') center no-repeat #FF958C;
+        background: url('../../../static/hero-image.png') center no-repeat #FF958C;
         background-size: cover;
     }
 
@@ -11,28 +11,6 @@
     .header-container {
         display: flex;
         justify-content: space-between;
-    }
-
-    .header {
-        border-radius: 1000px;
-        background: #FFF;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 1.75rem 3rem;
-        width: fit-content;
-
-        .nav-list {
-            display: flex;
-            gap: 2rem;
-
-            a {
-                color: #310A31;
-                font-size: 1.125rem;
-                font-weight: 800;
-                text-decoration: none;
-            }
-        }
     }
 
     .text-container {

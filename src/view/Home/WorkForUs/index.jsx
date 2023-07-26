@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import ArrowIcon from '../../arrow.svg';
+import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
 const WorkForUs = () => {
@@ -47,7 +47,7 @@ const WorkForUs = () => {
               <Grid item xs={6}>
                 <div className='link-container'>
                   <a>
-                    <span>Diversity, equity, & inclusion</span>
+                    <span>Diversity, equality & inclusion</span>
                     <img alt='arrow-icon' src={ArrowIcon} />
                   </a>
                 </div>

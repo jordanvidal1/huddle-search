@@ -1,9 +1,9 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
-import Salary from '../../salary-pink.svg';
-import Benefits from '../../benefits-pink.svg';
-import Location from '../../location-pink.svg';
+import Salary from '../../../static/salary-pink.svg';
+import Benefits from '../../../static/benefits-pink.svg';
+import Location from '../../../static/location-pink.svg';
 
 const LatestRole = props => {
   const {type, title, salary, benefits, location} = props;

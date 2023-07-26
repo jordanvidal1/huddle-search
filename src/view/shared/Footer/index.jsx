@@ -1,15 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-import TextLogo from '../../text-logo.svg';
-import FullLogo from '../../full-logo.svg';
-import Phone from '../../phone-number.svg';
-import Email from '../../email.svg';
-import Location from '../../location.svg';
-import LinkedIn from '../../linkedin.svg';
-import Twitter from '../../twitter.svg';
-import Facebook from '../../facebook.svg';
-import Instagram from '../../instagram.svg';
-import ThePrimeGroup from '../../the-prime-group.svg';
+import TextLogo from '../../../static/text-logo.svg';
+import FullLogo from '../../../static/full-logo.svg';
+import Phone from '../../../static/phone-number.svg';
+import Email from '../../../static/email.svg';
+import Location from '../../../static/location.svg';
+import LinkedIn from '../../../static/linkedin.svg';
+import Twitter from '../../../static/twitter.svg';
+import Facebook from '../../../static/facebook.svg';
+import Instagram from '../../../static/instagram.svg';
+import ThePrimeGroup from '../../../static/the-prime-group.svg';
 
 import './styles.scss';
 
@@ -78,45 +79,53 @@ const Home = () => {
                         </div>
                         <div>
                           <img alt='email' src={Email} />
-                          <span>+44 0000 000 000</span>
+                          <span>hello@company.com</span>
                         </div>
                         <div>
                           <img alt='location' src={Location} />
-                          <span>+44 0000 000 000</span>
+                          <span>1 Fore St Ave, London EC2Y9DT</span>
                         </div>
                       </div>
                       <div className='footer-socials'>
-                        <img alt='linkedin' src={LinkedIn} />
-                        <img alt='twitter' src={Twitter} />
-                        <img alt='facebook' src={Facebook} />
-                        <img alt='instagram' src={Instagram} />
+                        <a href='#' rel='noreferrer' target='_blank'>
+                          <img alt='linkedin' src={LinkedIn} />
+                        </a>
+                        <a href='#' rel='noreferrer' target='_blank'>
+                          <img alt='twitter' src={Twitter} />
+                        </a>
+                        <a href='#' rel='noreferrer' target='_blank'>
+                          <img alt='facebook' src={Facebook} />
+                        </a>
+                        <a href='#' rel='noreferrer' target='_blank'>
+                          <img alt='instagram' src={Instagram} />
+                        </a>
                       </div>
                     </div>
                     <div className='footer-links'>
                       <div className='footer-links-column'>
                         <h6>Discover</h6>
                         <ul>
-                          <li><a>Looking to hire</a></li>
-                          <li><a>Looking for a job</a></li>
-                          <li><a>Specialisms</a></li>
-                          <li><a>Sectors</a></li>
-                          <li><a>Resources</a></li>
+                          <li><Link to='/looking-to-hire'>Looking to hire</Link></li>
+                          <li><Link to='/looking-for-a-job'>Looking for a job</Link></li>
+                          <li><Link to='/specialisms'>Specialisms</Link></li>
+                          <li><Link to='/sectors'>Sectors</Link></li>
+                          <li><Link to='/resources'>Resources</Link></li>
                         </ul>
                       </div>
                       <div className='footer-links-column'>
                         <h6>Services</h6>
                         <ul>
-                          <li><a>Executive Search</a></li>
-                          <li><a>Embedded Talent Solutions</a></li>
-                          <li><a>Contract/Interim</a></li>
+                          <li><Link to='/executive-search'>Executive Search</Link></li>
+                          <li><Link to='/embedded-talent-solutions'>Embedded Talent Solutions</Link></li>
+                          <li><Link to='/contract-interim'>Contract/Interim</Link></li>
                         </ul>
                       </div>
                       <div className='footer-links-column'>
                         <h6>Company</h6>
                         <ul>
-                          <li><a>About Us</a></li>
-                          <li><a>Work For Us</a></li>
-                          <li><a>Contact Us</a></li>
+                          <li><Link to='/about-us'>About Us</Link></li>
+                          <li><Link to='/work-for-us'>Work For Us</Link></li>
+                          <li><Link to='/contact-us'>Contact Us</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -124,10 +133,10 @@ const Home = () => {
                   <div className='divider'/>
                   <div className='footer-legal'>
                     <div>
-                      <a><span>Legal</span></a>
-                      <a><span>Cookies</span></a>
-                      <a><span>Privacy</span></a>
-                      <a><span>Terms</span></a>
+                      <Link to='/legal'>Legal</Link>
+                      <Link to='/cookies'>Cookies</Link>
+                      <Link to='/privacy'>Privacy</Link>
+                      <Link to='/terms'>Terms</Link>
                     </div>
                     <div>
                       <span>

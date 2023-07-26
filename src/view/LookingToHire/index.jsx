@@ -1,10 +1,19 @@
 import React from 'react';
-import ArrowIcon from '../../arrow.svg';
+import {Link} from 'react-router-dom';
+import Header from '../shared/Header';
+import ArrowIcon from '../../static/arrow.svg';
+import Logo from '../../static/full-logo-dark.svg'
 import './styles.scss';
 
 const LookingToHire = () => {
   return (
     <div className='looking-to-hire'>
+      <div className='header-container'>
+        <Link to='/'>
+          <img alt='logo' src={Logo} />
+        </Link>
+        <Header />
+      </div>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

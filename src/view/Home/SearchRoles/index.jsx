@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 // import Search from './Search';
 import LatestRole from './LatestRole'
-import ArrowIcon from '../../arrow.svg';
+import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
 const Home = () => {

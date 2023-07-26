@@ -1,6 +1,6 @@
 .footer {
     .container {
-        background: url('../../footer-pattern.svg') center no-repeat #FF958C;
+        background: url('../../../static/footer-pattern.svg') center no-repeat #FF958C;
         background-size: cover;
 
         .inner-container {
@@ -148,6 +148,7 @@
                     color: #F6E27F;
                     font-size: 1rem;
                     font-weight: 800;
+                    text-decoration: none;
                 }
             }
         }
@@ -178,10 +179,11 @@
                 }
             }
 
-            span {
+            a {
                 color: #F6E27F;
                 font-size: 0.875rem;
                 font-weight: 800;
+                text-decoration: none;
             }
 
             img {

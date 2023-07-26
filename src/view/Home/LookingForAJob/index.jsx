@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
 import FeaturedRole from './FeaturedRole'
-import ArrowIcon from '../../static/arrow.svg';
+import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
 const LookingForAJob = () => {
