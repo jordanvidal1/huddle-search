@@ -108,7 +108,9 @@ const Home = () => {
                           <li><Link to='/looking-to-hire'>Looking to hire</Link></li>
                           <li><Link to='/looking-for-a-job'>Looking for a job</Link></li>
                           <li><Link to='/specialisms'>Specialisms</Link></li>
+                          {/* todo: dropdown links */}
                           <li><Link to='/sectors'>Sectors</Link></li>
+                          {/* todo: dropdown links */}
                           <li><Link to='/resources'>Resources</Link></li>
                         </ul>
                       </div>
@@ -124,6 +126,7 @@ const Home = () => {
                         <h6>Company</h6>
                         <ul>
                           <li><Link to='/about-us'>About Us</Link></li>
+                          {/* todo: dropdown links */}
                           <li><Link to='/work-for-us'>Work For Us</Link></li>
                           <li><Link to='/contact-us'>Contact Us</Link></li>
                         </ul>

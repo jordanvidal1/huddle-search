@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import TopNav from '../shared/TopNav'
 import Header from '../shared/Header';
 import ArrowIcon from '../../static/arrow.svg';
 import Logo from '../../static/full-logo-dark.svg';
@@ -8,6 +9,7 @@ import './styles.scss';
 const LookingToHire = () => {
   return (
     <div className='looking-to-hire'>
+      <TopNav />
       <div className='header-container'>
         <div className='header-inner-container'>
           <Link to='/'>

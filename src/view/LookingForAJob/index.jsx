@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import {Grid} from '@material-ui/core';
+import TopNav from '../shared/TopNav';
 import Header from '../shared/Header';
 import FeaturedRole from './FeaturedRole';
 import ArrowIcon from '../../static/arrow.svg';
@@ -10,6 +11,7 @@ import './styles.scss';
 const LookingForAJob = () => {
   return (
     <div className='looking-for-a-job'>
+      <TopNav />
       <div className='header-container'>
         <div className='header-inner-container'>
           <Link to='/'>
