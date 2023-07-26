@@ -1,12 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import {Grid} from '@material-ui/core';
-import FeaturedRole from './FeaturedRole'
+import Header from '../shared/Header';
+import FeaturedRole from './FeaturedRole';
 import ArrowIcon from '../../static/arrow.svg';
+import Logo from '../../static/full-logo-dark.svg';
 import './styles.scss';
 
 const LookingForAJob = () => {
   return (
     <div className='looking-for-a-job'>
+      <div className='header-container'>
+        <div className='header-inner-container'>
+          <Link to='/'>
+            <img alt='logo' src={Logo} />
+          </Link>
+          <Header />
+        </div>
+      </div>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

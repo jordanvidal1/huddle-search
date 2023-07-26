@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Header from '../../shared/Header';
 import Logo from '../../../static/full-logo-dark.svg';
 import './styles.scss';
@@ -10,7 +11,9 @@ const Hero = () => {
         <div className='inner-container'>
           <div className='content'>
             <div className='header-container'>
-              <img alt='logo' src={Logo} />
+              <Link to='/'>
+                <img alt='logo' src={Logo} />
+              </Link>
               <Header />
             </div>
             <div className='text-container'>
