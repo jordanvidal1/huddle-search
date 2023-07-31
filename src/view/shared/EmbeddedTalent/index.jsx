@@ -8,38 +8,36 @@ import InfoIcon3 from '../../../static/embedded-icon-3.svg';
 import InfoIcon4 from '../../../static/embedded-icon-4.svg';
 import './styles.scss';
 
-const EmbeddedTalent = () => {
-  return (
-    <div className='embedded-talent'>
-      <div className='container'>
-        <div className='inner-container'>
-          <div className='content'>
-            <div className='title'>
-              <h2>
-                <a>Embedded</a> Talent Solutions
-              </h2>
-            </div>
-            <div className='text'>
-              <span className='body'>
-                Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
-              </span>
-            </div>
-            <Grid container spacing={2} className='grid-container'>
-              <InfoBox icon={InfoIcon1} />
-              <InfoBox icon={InfoIcon2} />
-              <InfoBox icon={InfoIcon3} />
-              <InfoBox icon={InfoIcon4} />
-            </Grid>
-            <div className='btn-container'>
-              <button className="btn btn-secondary">
-                Find out more
-              </button>
-            </div>
+const EmbeddedTalent = () => (
+  <div className='embedded-talent'>
+    <div className='container'>
+      <div className='inner-container'>
+        <div className='content'>
+          <div className='title'>
+            <h2>
+              <a>Embedded</a> Talent Solutions
+            </h2>
+          </div>
+          <div className='text'>
+            <span className='body'>
+              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
+            </span>
+          </div>
+          <Grid container spacing={2} className='grid-container'>
+            <InfoBox icon={InfoIcon1} />
+            <InfoBox icon={InfoIcon2} />
+            <InfoBox icon={InfoIcon3} />
+            <InfoBox icon={InfoIcon4} />
+          </Grid>
+          <div className='btn-container'>
+            <button className="btn btn-secondary">
+              Find out more
+            </button>
           </div>
         </div>
       </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default EmbeddedTalent;
