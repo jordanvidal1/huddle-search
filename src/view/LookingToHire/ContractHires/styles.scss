@@ -1,0 +1,30 @@
+.looking-to-hire {
+    .contract-hires {
+        .container {
+            background: url('../../../static/contract-hires.png') center left no-repeat #8762CB;
+            background-size: contain;
+        }
+
+        .content {
+            align-self: flex-end;
+            max-width: 616px;
+        }
+
+        .title {
+            a {
+                color: #F6E27F;
+                background: #310A31;
+            }
+        }
+
+        .text {
+            font-size: 1.125rem;
+            margin-top: 2rem;
+        }
+
+        .btn-container {
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+    }
+}

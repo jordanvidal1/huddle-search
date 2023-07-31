@@ -1,36 +1,38 @@
-.hero {
-    .container {
-        background: url('../../../static/hero-image.png') center no-repeat #FF958C;
-        background-size: cover;
-    }
-
-    .content {
-        align-self: stretch;
-    }
-
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 6rem;
-        max-width: 616px;
-    }
-
-    .title {
-        h1 {
-            color: #310A31;
+.home {
+    .hero {
+        .container {
+            background: url('../../../static/hero-image.png') center no-repeat #FF958C;
+            background-size: cover;
         }
-    }
 
-    .text {
-        margin-top: 2.5rem;
-
-        span {
-            color: #310A31;
-            font-size: 1.25rem;
+        .content {
+            align-self: stretch;
         }
-    }
 
-    button {
-        margin-top: 4rem;
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 6rem;
+            max-width: 616px;
+        }
+
+        .title {
+            h1 {
+                color: #310A31;
+            }
+        }
+
+        .text {
+            margin-top: 2.5rem;
+
+            span {
+                color: #310A31;
+                font-size: 1.25rem;
+            }
+        }
+
+        button {
+            margin-top: 4rem;
+        }
     }
 }

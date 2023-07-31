@@ -2,6 +2,13 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+
+  .header-inner-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 div:not(.content) > .header-container {
@@ -9,12 +16,8 @@ div:not(.content) > .header-container {
   padding: 0 1.5rem;
 
   .header-inner-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: 1248px;
-    width: 100%;
   }
 
   .header {

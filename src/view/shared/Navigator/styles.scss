@@ -1,13 +1,13 @@
-.role-nav {
+.top-nav {
   align-items: center;
   align-self: stretch;
-  background: #52050A;
+  background: #310A31;
   display: flex;
   height: 3.5rem;
   padding: 0 1.5rem;
   justify-content: space-between;
 
-  .role-nav-container {
+  .top-nav-inner {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -16,18 +16,7 @@
     width: 100%;
   }
 
-  .role-nav-inner {
-    align-items: center;
-    display: flex;
-    gap: 4rem;
-  }
-
-  span {
-    color: #FFF;
-    font-size: 1.125rem;
-  }
-
-  .role-nav-list {
+  .top-nav-left, .top-nav-right {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -37,14 +26,10 @@
       display: flex;
     }
 
-    .active a {
-      color: #FFF;
-    }
-
     a {
-      color: rgba(255, 255, 255, 0.50);
-      font-size: 1.125rem;
-      font-weight: 800;
+      color: #F6E27F;
+      font-size: 0.875rem;
+      font-weight: 700;
     }
   }
 }

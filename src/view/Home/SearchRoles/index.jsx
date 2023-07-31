@@ -1,12 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import SearchBar from '../../shared/SearchBar';
-import Role from '../../shared/Role'
-import ArrowIcon from '../../../static/arrow.svg';
+import Roles from '../../shared/Roles';
 import './styles.scss';
 
-const Home = () => {
+const SearchRoles = () => {
   return (
     <div className='search-roles'>
       <div className='container'>
@@ -18,27 +16,13 @@ const Home = () => {
                   <h2>
                     Search open roles
                   </h2>
-                  <SearchBar />
+                  <SearchBar>
+                    Search by title, keyword, specialism or sector...
+                  </SearchBar>
                 </div>
               </Grid>
               <Grid item xs={12}>
-                <div className='box roles-box'>
-                  <div className='roles-header'>
-                    <h3>
-                      Latest roles
-                    </h3>
-                    <Link to='/jobs'>
-                      <span>Browse all jobs</span>
-                      <img alt='arrow' src={ArrowIcon} />
-                    </Link>
-                  </div>
-                  <Grid container spacing={3}>
-                    <Role />
-                    <Role />
-                    <Role />
-                    <Role />
-                  </Grid>
-                </div>
+                <Roles featured />
               </Grid>
             </Grid>
           </div>
@@ -48,4 +32,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default SearchRoles;

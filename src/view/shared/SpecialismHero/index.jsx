@@ -1,32 +1,30 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Header from '../../shared/Header';
+import InfoContainer from '../InfoContainer';
 import './styles.scss';
 
-const Hero = () => {
+const SpecialismHero = props => {
+  const {children, name} = props;
+
+  const headerText = children || `Specialism ${name}`;
+
   return (
     <div className='hero'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            <Header />
             <div className='text-container'>
               <div className='title'>
                 <h1>
-                  Because every search starts with a huddle
+                  {headerText}
                 </h1>
               </div>
               <div className='text'>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus. Cursus amet habita sse nisl est rhoncus.
+                  Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum. Nisi quisque mi tortor suspendisse consequat.
                 </span>
               </div>
-              <Link to='/jobs'>
-                <button className="btn btn-primary">
-                  Browse all jobs
-                </button>
-              </Link>
             </div>
+            <InfoContainer />
           </div>
         </div>
       </div>
@@ -34,4 +32,8 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default SpecialismHero;
+
+SpecialismHero.defaultProps = {
+  name: '{name}'
+};

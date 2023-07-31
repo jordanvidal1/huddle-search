@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import cx from 'classnames';
 import HeaderArrow from '../../../static/header-arrow.svg';
 import DropdownArrow from '../../../static/dropdown-arrow.svg';
+import Logo from '../../../static/full-logo-dark.svg'
 
 import './styles.scss';
 
@@ -16,6 +18,7 @@ const routes = [
   },
   {
     name: 'Specialisms',
+    path: '/specialisms'
     // subLinks: []
   },
   {
@@ -48,9 +51,11 @@ const routes = [
       }
     ]
   }
-]
+];
 
-const Header = () => {
+const Header = ({
+  pathname
+}) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => setExpanded(!expanded);
@@ -78,7 +83,7 @@ const Header = () => {
       {routes.map((route, i) => (
         <div key={i}>
           <span
-            // className={cx({active: route.path === value})}
+            className={cx({active: route.path === pathname})}
             onClick={route.subLinks && handleExpandClick}
           >
             <Link
@@ -96,8 +101,15 @@ const Header = () => {
   );
 
   return (
-    <div className='header'>
-      {renderNavList()}
+    <div className='header-container'>
+      <div className='header-inner-container'>
+        <Link to='/'>
+          <img alt='logo' src={Logo} />
+        </Link>
+        <div className='header'>
+          {renderNavList()}
+        </div>
+      </div>
     </div>
   );
 }

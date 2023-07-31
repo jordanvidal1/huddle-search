@@ -31,7 +31,7 @@ const rightRoutes = [
     name: 'Contact us',
     path: '/contact-us'
   }
-]
+];
 
 const TopNav = () => {
   const renderTopNavList = () => (
@@ -39,9 +39,7 @@ const TopNav = () => {
       <div className='top-nav-left'>
         {leftRoutes.map((route, i) => (
           <div key={i}>
-            <span
-              // className={cx({active: route.path === value})}
-            >
+            <span>
               <Link
                 to={route.path}
                 // onClick={hideSidebar}
@@ -55,9 +53,7 @@ const TopNav = () => {
       <div className='top-nav-right'>
         {rightRoutes.map((route, i) => (
           <div key={i}>
-            <span
-              // className={cx({active: route.path === value})}
-            >
+            <span>
               <Link
                 to={route.path}
                 // onClick={hideSidebar}

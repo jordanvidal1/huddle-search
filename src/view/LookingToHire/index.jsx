@@ -1,60 +1,33 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import TopNav from '../shared/TopNav'
-import Header from '../shared/Header';
-import ArrowIcon from '../../static/arrow.svg';
-import Logo from '../../static/full-logo-dark.svg';
+
+import ContractHires from './ContractHires';
+
+import Hero from '../shared/SpecialismHero';
+import Specialisms from '../shared/Specialisms';
+import PermanentHires from '../shared/LookingToHire';
+import ExecutiveSearch from '../shared/ExecutiveSearch';
+import EmbeddedTalent from '../shared/EmbeddedTalent';
+import ResourcesPage from '../shared/ResourcesPage';
+
 import './styles.scss';
 
 const LookingToHire = () => {
   return (
     <div className='looking-to-hire'>
-      <TopNav />
-      <div className='header-container'>
-        <div className='header-inner-container'>
-          <Link to='/'>
-            <img alt='logo' src={Logo} />
-          </Link>
-          <Header />
-        </div>
-      </div>
-      <div className='container'>
-        <div className='inner-container'>
-          <div className='content'>
-            <div className='title'>
-              <h2>
-                Looking to <a>hire?</a>
-              </h2>
-            </div>
-            <div className='text'>
-              <span className='body'>
-                Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
-              </span>
-            </div>
-            <div className='btn-container'>
-              <button className="btn btn-secondary">
-                Submit new role
-              </button>
-              <button className="btn">
-                Talk to us
-              </button>
-            </div>
-            <div className='cv-container'>
-              <h5>
-                Be sent 3 CVs with no obligations
-              </h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus.
-              </p>
-              <div className='link-container'>
-                <a>
-                  <span>Request now<img alt='arrow-icon' src={ArrowIcon} /></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Hero>
+        Looking to <a>hire?</a>
+      </Hero>
+      <Specialisms type='specialisms' />
+      <Specialisms type='sectors' />
+      <PermanentHires>
+        <a>Permanent</a> hires to transform your team
+      </PermanentHires>
+      <ContractHires />
+      <ExecutiveSearch />
+      <EmbeddedTalent />
+      {/*<OurStory />*/}
+      {/*<OurProcess />*/}
+      <ResourcesPage />
     </div>
   );
 }

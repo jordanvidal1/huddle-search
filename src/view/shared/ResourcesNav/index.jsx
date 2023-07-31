@@ -19,13 +19,13 @@ const filters = [
   }
 ];
 
-const RoleNav = () => {
-  const renderRoleNavList = () => (
-    <div className='role-nav-inner'>
-      <div className='role-nav-title'>
+const ResourcesNav = () => {
+  const renderResourcesNavList = () => (
+    <div className='resources-nav-inner'>
+      <div className='resources-nav-title'>
         <span>Resources</span>
       </div>
-      <div className='role-nav-list'>
+      <div className='resources-nav-list'>
         {filters.map((filter, i) => (
           <div key={i}>
             <span
@@ -46,12 +46,12 @@ const RoleNav = () => {
   );
 
   return (
-    <div className='role-nav'>
-      <div className='role-nav-container'>
-        {renderRoleNavList()}
+    <div className='resources-nav'>
+      <div className='resources-nav-container'>
+        {renderResourcesNavList()}
       </div>
     </div>
   );
 }
 
-export default RoleNav;
+export default ResourcesNav;

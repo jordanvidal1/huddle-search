@@ -1,0 +1,75 @@
+.specialisms, .looking-to-hire {
+    .specialisms {
+        .container {
+            background: #310A31;
+        }
+
+        &.disciplines {
+            .container {
+                background: #8762CB;
+            }
+        }
+
+        &.sectors {
+            .container {
+                background: #F9F9F9;
+
+                h2 {
+                    color: #310A31;
+                }
+
+                .text {
+                    span {
+                        color: #7E8192;
+                    }
+                }
+
+                .specialism-list {
+                    a {
+                        color: #310A31;
+                    }
+                }
+            }
+        }
+
+        .text-container {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text {
+            display: flex;
+            align-self: flex-start;
+            margin: 2rem 0 4rem;
+            max-width: 721px;
+
+            span {
+                color: #FFF;
+                font-size: 1.125rem;
+            }
+        }
+
+        .specialism-list-container {
+            margin-top: 4rem;
+            max-height: 24.75rem;
+
+            .specialism-list {
+                align-items: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+
+                a {
+                    color: #F6E27F;
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                }
+
+                img {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

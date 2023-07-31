@@ -1,0 +1,28 @@
+.info-grid-container {
+    .info-container {
+        align-items: flex-start;
+        background: #310A31;
+        border-radius: 2rem;
+        display: flex;
+        padding: 1.75rem 1.75rem 2rem 1.75rem;
+        flex-direction: column;
+
+        .info-title {
+            margin: 1rem 0;
+            max-width: 19.5rem;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 1rem;
+        }
+
+        .btn-container {
+            margin-top: 3rem;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

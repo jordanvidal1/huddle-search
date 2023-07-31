@@ -6,7 +6,7 @@ import InfoIcon1 from '../../../static/executive-icon-1.svg';
 import InfoIcon2 from '../../../static/executive-icon-2.svg';
 import InfoIcon3 from '../../../static/executive-icon-3.svg';
 import InfoIcon4 from '../../../static/executive-icon-4.svg';
-import InfoBox from '../../shared/InfoBox'
+import InfoBox from '../InfoBox'
 import './styles.scss';
 
 const ExecutiveSearch = () => {
