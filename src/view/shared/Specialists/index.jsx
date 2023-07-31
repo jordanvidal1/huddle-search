@@ -1,12 +1,16 @@
 import React from 'react';
-import './styles.scss';
 import SpecialistPlaceholder from '../../../static/specialist.jpg';
 import PhoneIcon from '../../../static/phone-number.svg';
 import EmailIcon from '../../../static/email.svg';
 import LinkedInIcon from '../../../static/linkedin-pink.svg';
+import './styles.scss';
 
 const Specialists = props => {
   const {name, specialists} = props;
+
+  const headerText = name
+    ? `Specialists in ${name}`
+    : 'Leadership Team';
 
   return (
     <div className='specialists'>
@@ -16,7 +20,7 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  Specialists in {name}
+                  {headerText}
                 </h2>
               </div>
               <div className='text'>
@@ -71,7 +75,6 @@ const Specialists = props => {
 export default Specialists;
 
 Specialists.defaultProps = {
-  name: '{name}',
   specialists: [
     {
       img: SpecialistPlaceholder,

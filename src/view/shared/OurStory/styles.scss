@@ -1,52 +1,50 @@
-.looking-to-hire {
-    .our-story {
-        .container {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-story.jpeg'), lightgray 50% / cover no-repeat;
-            background-size: cover;
+.our-story {
+    .container {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background-size: cover;
+    }
+}
+
+.our-process {
+    .container {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-process.jpeg'), lightgray -100% / cover no-repeat;
+        background-size: cover;
+    }
+}
+
+.our-story, .our-process {
+    .content {
+        align-self: center;
+        margin: 2rem 0;
+        max-width: 51.625rem;
+        text-align: center;
+    }
+
+    h5 {
+        color: #00D7A9;
+    }
+
+    .title {
+        margin-top: 4rem;
+
+        a {
+            color: #F6E27F;
+            background: #310A31;
         }
     }
 
-    .our-process {
-        .container {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-process.jpeg'), lightgray -100% / cover no-repeat;
-            background-size: cover;
+    .text {
+        margin-top: 2rem;
+
+        p {
+            color: #FFF;
+            font-size: 1.125rem;
+            font-weight: 600;
         }
     }
 
-    .our-story, .our-process {
-        .content {
-            align-self: center;
-            margin: 2rem 0;
-            max-width: 51.625rem;
-            text-align: center;
-        }
-
-        h5 {
-            color: #00D7A9;
-        }
-
-        .title {
-            margin-top: 4rem;
-
-            a {
-                color: #F6E27F;
-                background: #310A31;
-            }
-        }
-
-        .text {
-            margin-top: 2rem;
-
-            p {
-                color: #FFF;
-                font-size: 1.125rem;
-                font-weight: 600;
-            }
-        }
-
-        .btn-container {
-            justify-content: center;
-            margin-top: 4rem;
-        }
+    .btn-container {
+        justify-content: center;
+        margin-top: 4rem;
     }
 }

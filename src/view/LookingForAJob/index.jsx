@@ -1,49 +1,27 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Grid} from '@material-ui/core';
-import FeaturedRole from './FeaturedRole';
-import ArrowIcon from '../../static/arrow.svg';
+
+import Hero from '../shared/SpecialismHero';
+import SearchRoles from '../shared/SearchRoles';
+import Specialists from '../shared/Specialists';
+import OurStory from '../shared/OurStory';
+import ResourcesPage from '../shared/ResourcesPage';
+
 import './styles.scss';
 
 const LookingForAJob = () => (
   <div className='looking-for-a-job'>
-    <div className='container'>
-      <div className='inner-container'>
-        <div className='content'>
-          <div className='title'>
-            <h2>
-              Looking for a <a>job?</a>
-            </h2>
-          </div>
-          <div className='text'>
-            <span className='body'>
-              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
-            </span>
-          </div>
-          <div className='featured-roles'>
-            <div className='featured-roles-container'>
-              <div className='subtitle-container'>
-                <h5>
-                  Featured roles
-                </h5>
-                <div className='link-container'>
-                  <Link to='/jobs'>
-                    <span>Browse all jobs<img alt='arrow-icon' src={ArrowIcon} /></span>
-                  </Link>
-                </div>
-              </div>
-              <div className='roles'>
-                <Grid container spacing={2}>
-                  <FeaturedRole />
-                  <FeaturedRole />
-                  <FeaturedRole />
-                </Grid>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero job>
+      Looking for a <a>job?</a>
+    </Hero>
+    <SearchRoles />
+    <Specialists />
+    <OurStory type='story'>
+      Three leaders form a huddle to <a>reimagine</a> recruitment
+    </OurStory>
+    <OurStory type='process'>
+      Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale
+    </OurStory>
+    <ResourcesPage />
   </div>
 );
 

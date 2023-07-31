@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import SearchBar from '../../shared/SearchBar';
-import Roles from '../../shared/Roles';
+import SearchBar from '../SearchBar';
+import Roles from '../Roles';
 import './styles.scss';
 
 const SearchRoles = () =>  (

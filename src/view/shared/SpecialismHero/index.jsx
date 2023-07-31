@@ -3,7 +3,7 @@ import InfoContainer from '../InfoContainer';
 import './styles.scss';
 
 const SpecialismHero = props => {
-  const {children, name} = props;
+  const {children, name, job} = props;
 
   const headerText = children || `Specialism ${name}`;
 
@@ -22,9 +22,16 @@ const SpecialismHero = props => {
                 <span>
                   Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum. Nisi quisque mi tortor suspendisse consequat.
                 </span>
+                {job && (
+                  <div className='btn-container'>
+                    <button className='btn btn-secondary'>
+                      Browse all jobs
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
-            <InfoContainer />
+            {!job && <InfoContainer />}
           </div>
         </div>
       </div>

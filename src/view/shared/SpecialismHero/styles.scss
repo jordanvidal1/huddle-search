@@ -1,4 +1,4 @@
-.specialisms, .looking-to-hire {
+.specialisms, .looking-to-hire, .looking-for-a-job {
     .hero {
         .text-container {
             align-self: flex-start;
@@ -15,6 +15,7 @@
 
         .text {
             display: flex;
+            flex-direction: column;
             align-self: flex-end;
             margin-top: 3rem;
             max-width: 593px;
@@ -23,6 +24,10 @@
                 font-size: 1.25rem;
                 font-weight: 600;
                 line-height: 2rem;
+            }
+
+            .btn-container {
+                margin-top: 4rem;
             }
         }
 
