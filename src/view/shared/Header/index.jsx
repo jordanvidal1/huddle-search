@@ -59,6 +59,7 @@ const Header = ({
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => setExpanded(!expanded);
+  const closeExpandClick = () => setExpanded(false);
 
   const renderDropdown = subLinks => expanded && (
     <div className='nav-dropdown'>
@@ -68,7 +69,7 @@ const Header = ({
           <div key={i}>
             <Link
               to={subLink.path}
-              // onClick={hideSidebar}
+              onClick={closeExpandClick}
             >
               {subLink.name}
             </Link>
@@ -88,7 +89,7 @@ const Header = ({
           >
             <Link
               to={route.path}
-              // onClick={hideSidebar}
+              onClick={closeExpandClick}
             >
               {route.name}
               {route.subLinks && <img alt='arrow' src={HeaderArrow} />}

@@ -17,7 +17,7 @@ const Navigator = ({
 
   useEffect(() => {
     setPathname(`/${location.pathname.split('/')[1]}`);
-    // return navigate.listen(location => setPathname(location));
+    document.getElementById('content').scrollTo(0, 0);
   }, [location]);
 
   return (

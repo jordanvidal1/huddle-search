@@ -10,13 +10,13 @@ const texts = {
     body: 'Lorem ipsum dolor sit amet consectetur. Purus vulputate scele risque tellus massa purus velit. In ullamcorper gravida ut morbimet diam nisl gravida porttitor neque.',
     path: '/our-process'
   }
-}
+};
 
 const OurStory = ({
   children,
   type
 }) => (
-  <div className={`our-${type}`}>
+  <div className={`our-${type}-static`}>
     <div className='container'>
       <div className='inner-container'>
         <div className='content'>

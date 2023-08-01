@@ -1,18 +1,18 @@
-.our-story {
+.our-story-static {
     .container {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-story.jpeg'), lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 }
 
-.our-process {
+.our-process-static {
     .container {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../../../static/our-process.jpeg'), lightgray -100% / cover no-repeat;
         background-size: cover;
     }
 }
 
-.our-story, .our-process {
+.our-story-static, .our-process-static {
     .content {
         align-self: center;
         margin: 2rem 0;

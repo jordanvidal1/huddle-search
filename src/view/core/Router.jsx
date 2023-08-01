@@ -18,6 +18,8 @@ import Resources from '../Resources';
 import Specialisms from '../Specialisms';
 
 import LeadershipTeam from '../LeadershipTeam';
+import OurStory from '../OurStory';
+import OurProcess from '../OurProcess'
 
 const RouterComponent = () => (
   <BrowserRouter>
@@ -38,8 +40,8 @@ const RouterComponent = () => (
         {/*<Route path='/contract-interim' Component={Specialisms} />*/}
 
         <Route path='/leadership-team' Component={LeadershipTeam} />
-        {/*<Route path='/our-story' Component={Specialisms} />*/}
-        {/*<Route path='/our-process' Component={Specialisms} />*/}
+        <Route path='/our-story' Component={OurStory} />
+        <Route path='/our-process' Component={OurProcess} />
         {/*<Route path='/work-for-us' Component={Specialisms} />*/}
         {/*<Route path='/contact-us' Component={Specialisms} />*/}
 

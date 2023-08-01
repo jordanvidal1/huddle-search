@@ -1,14 +1,13 @@
 import React from 'react';
 
-import Hero from './Hero';
 import Leaders from './Leaders';
-import OurStory from '../shared/OurStory';
 
-import './Hero/styles.scss';
+import Hero from '../shared/LeadershipHero';
+import OurStory from '../shared/OurStory';
 
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero job>
+    <Hero type='leadership'>
       A leadership with <a>unrivalled</a> experience
     </Hero>
     <Leaders />
