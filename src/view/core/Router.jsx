@@ -17,6 +17,8 @@ import Jobs from '../Jobs';
 import Resources from '../Resources';
 import Specialisms from '../Specialisms';
 
+import LeadershipTeam from '../LeadershipTeam';
+
 const RouterComponent = () => (
   <BrowserRouter>
     <CssBaseline/>
@@ -31,15 +33,15 @@ const RouterComponent = () => (
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />
-        <Route path='/executive-search' Component={Specialisms} />
-        <Route path='/embedded-talent-solutions' Component={Specialisms} />
-        <Route path='/contract-interim' Component={Specialisms} />
+        {/*<Route path='/executive-search' Component={Specialisms} />*/}
+        {/*<Route path='/embedded-talent-solutions' Component={Specialisms} />*/}
+        {/*<Route path='/contract-interim' Component={Specialisms} />*/}
 
-        <Route path='/leadership-team' Component={Specialisms} />
-        <Route path='/our-story' Component={Specialisms} />
-        <Route path='/our-process' Component={Specialisms} />
-        <Route path='/work-for-us' Component={Specialisms} />
-        <Route path='/contact-us' Component={Specialisms} />
+        <Route path='/leadership-team' Component={LeadershipTeam} />
+        {/*<Route path='/our-story' Component={Specialisms} />*/}
+        {/*<Route path='/our-process' Component={Specialisms} />*/}
+        {/*<Route path='/work-for-us' Component={Specialisms} />*/}
+        {/*<Route path='/contact-us' Component={Specialisms} />*/}
 
         <Route path="*" element={<Navigate to='/' />} />
       </Routes>

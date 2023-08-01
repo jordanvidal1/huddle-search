@@ -74,34 +74,20 @@ const Specialists = props => {
 
 export default Specialists;
 
+const defaultSpecialist = {
+  img: SpecialistPlaceholder,
+  name: 'Name',
+  role: 'Role',
+  description: 'Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus.',
+  number: '+44 0000 000 000',
+  email: 'leader@company.com',
+  linkedin: '@leader'
+};
+
 Specialists.defaultProps = {
   specialists: [
-    {
-      img: SpecialistPlaceholder,
-      name: 'Name',
-      role: 'Role',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus.',
-      number: '+44 0000 000 000',
-      email: 'leader@company.com',
-      linkedin: '@leader'
-    },
-    {
-      img: SpecialistPlaceholder,
-      name: 'Name',
-      role: 'Role',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus.',
-      number: '+44 0000 000 000',
-      email: 'leader@company.com',
-      linkedin: '@leader'
-    },
-    {
-      img: SpecialistPlaceholder,
-      name: 'Name',
-      role: 'Role',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus.',
-      number: '+44 0000 000 000',
-      email: 'leader@company.com',
-      linkedin: '@leader'
-    }
+    defaultSpecialist,
+    defaultSpecialist,
+    defaultSpecialist
   ]
 };
