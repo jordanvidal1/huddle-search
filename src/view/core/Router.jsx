@@ -19,7 +19,9 @@ import Specialisms from '../Specialisms';
 
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
-import OurProcess from '../OurProcess'
+import OurProcess from '../OurProcess';
+import WorkForUs from '../WorkForUs';
+import ContactUs from '../ContactUs';
 
 const RouterComponent = () => (
   <BrowserRouter>
@@ -42,8 +44,8 @@ const RouterComponent = () => (
         <Route path='/leadership-team' Component={LeadershipTeam} />
         <Route path='/our-story' Component={OurStory} />
         <Route path='/our-process' Component={OurProcess} />
-        {/*<Route path='/work-for-us' Component={Specialisms} />*/}
-        {/*<Route path='/contact-us' Component={Specialisms} />*/}
+        <Route path='/work-for-us' Component={WorkForUs} />
+        <Route path='/contact-us' Component={ContactUs} />
 
         <Route path="*" element={<Navigate to='/' />} />
       </Routes>

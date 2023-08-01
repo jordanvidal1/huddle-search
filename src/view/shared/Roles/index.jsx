@@ -6,15 +6,13 @@ import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
 const Roles = props => {
-  const {name, featured} = props;
-
-  const headerText = featured ? 'Featured roles' : 'Related roles';
+  const {children, name} = props;
 
   return (
     <div className='box roles-box'>
       <div className='roles-header'>
         <h3>
-          {headerText}
+          {children}
         </h3>
         <Link to='/jobs'>
           <span>{`Browse all ${name ? `${name} ` : ''}jobs`}</span>

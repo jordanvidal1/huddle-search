@@ -1,7 +1,6 @@
-.related-roles {
+.related-roles, .work-for-us {
     .container {
         background: #FFF;
-        background-size: cover;
     }
 
     .box {
@@ -29,6 +28,18 @@
             font-size: 1.25rem;
             font-weight: 800;
             margin-right: 1rem;
+        }
+    }
+}
+
+.work-for-us {
+    .box {
+        background: #F6E27F;
+    }
+
+    .roles-header {
+        h3, span {
+            color: #310A31;
         }
     }
 }

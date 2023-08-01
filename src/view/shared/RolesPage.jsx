@@ -9,7 +9,9 @@ const RolesPage = props => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            <Roles name={name} />
+            <Roles name={name}>
+              Related roles
+            </Roles>
           </div>
         </div>
       </div>

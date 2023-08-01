@@ -4,7 +4,7 @@ import OriginStory from './OriginStory';
 import ProPoints from '../shared/ProPoints';
 
 import Hero from '../shared/LeadershipHero';
-import Specialists from '../shared/Specialists';
+import Leadership from '../shared/Specialists';
 import OurStoryStatic from '../shared/OurStory';
 
 const OurStory = () => (
@@ -14,7 +14,7 @@ const OurStory = () => (
     </Hero>
     <OriginStory />
     <ProPoints />
-    <Specialists />
+    <Leadership />
     <OurStoryStatic type='process'>
       Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale
     </OurStoryStatic>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Roles from '../Roles';
+import ContactContainer from '../ContactContainer';
 import Signature1 from '../../../static/signature-1.svg';
 import Signature2 from '../../../static/signature-2.svg';
 import Signature3 from '../../../static/signature-3.svg';
@@ -134,6 +136,19 @@ const elements = {
     path: '/our-process',
     text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
     infoComponent: ourProcessComponent()
+  },
+  work: {
+    path: '/work-for-us',
+    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
+    infoComponent: Roles({
+      children: 'Open roles at Huddle',
+      name: 'Huddle'
+    })
+  },
+  contact: {
+    path: '/contact-us',
+    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
+    infoComponent: ContactContainer()
   }
 };
 

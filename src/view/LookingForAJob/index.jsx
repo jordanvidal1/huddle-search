@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from '../shared/SpecialismHero';
 import SearchRoles from '../shared/SearchRoles';
-import Specialists from '../shared/Specialists';
+import Leadership from '../shared/Specialists';
 import OurStory from '../shared/OurStory';
 import ResourcesPage from '../shared/ResourcesPage';
 
@@ -14,7 +14,7 @@ const LookingForAJob = () => (
       Looking for a <a>job?</a>
     </Hero>
     <SearchRoles />
-    <Specialists />
+    <Leadership />
     <OurStory type='story'>
       Three leaders form a huddle to <a>reimagine</a> recruitment
     </OurStory>

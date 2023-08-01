@@ -1,4 +1,4 @@
-.leadership-team, .our-story {
+.leadership-team, .our-story, .work-for-us, .contact-us {
     .hero {
         .container {
             background: url('../../../static/leadership.png') top right no-repeat #FFF;
@@ -135,6 +135,37 @@
                     color: rgba(255, 255, 255, 0.70);
                     font-size: 1rem;
                 }
+            }
+        }
+    }
+}
+
+.work-for-us, .contact-us {
+    .hero {
+        .container {
+            background: url('../../../static/work-for-us.png') top right no-repeat #FFF;
+            background-size: contain;
+        }
+
+        .text-container {
+            margin-bottom: 8rem;
+
+            > h5 {
+                color: #310A31;
+            }
+        }
+
+        .title {
+            margin-top: 2rem;
+
+            h1 {
+                color: #310A31;
+                font-size: 5rem;
+            }
+
+            a {
+                color: #F6E27F;
+                background: #310A31;
             }
         }
     }

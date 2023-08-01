@@ -9,16 +9,18 @@ const InfoContainer = () => (
   <Grid container spacing={3} className='info-grid-container'>
     <Grid item xs={4}>
       <div className='info-container'>
-        <img alt='vacancy-icon' src={VacancyIcon} />
-        <div className='info-title'>
-          <h5>
-            Have a vacancy to fill?
-          </h5>
-        </div>
-        <div className='info-text'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
-          </p>
+        <div className='info-text-container'>
+          <img alt='vacancy-icon' src={VacancyIcon} />
+          <div className='info-title'>
+            <h5>
+              Have a vacancy to fill?
+            </h5>
+          </div>
+          <div className='info-text'>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+            </p>
+          </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
@@ -29,16 +31,18 @@ const InfoContainer = () => (
     </Grid>
     <Grid item xs={4}>
       <div className='info-container'>
-        <img alt='help-icon' src={HelpIcon} />
-        <div className='info-title'>
-          <h5>
-            Need help with something?
-          </h5>
-        </div>
-        <div className='info-text'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
-          </p>
+        <div className='info-text-container'>
+          <img alt='help-icon' src={HelpIcon} />
+          <div className='info-title'>
+            <h5>
+              Need help with something?
+            </h5>
+          </div>
+          <div className='info-text'>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+            </p>
+          </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
@@ -49,16 +53,18 @@ const InfoContainer = () => (
     </Grid>
     <Grid item xs={4}>
       <div className='info-container'>
-        <img alt='cv-icon' src={CVIcon} />
-        <div className='info-title'>
-          <h5>
-            Want 3 CVs with no obligations?
-          </h5>
-        </div>
-        <div className='info-text'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
-          </p>
+        <div className='info-text-container'>
+          <img alt='cv-icon' src={CVIcon} />
+          <div className='info-title'>
+            <h5>
+              Want 3 CVs with no obligations?
+            </h5>
+          </div>
+          <div className='info-text'>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+            </p>
+          </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>

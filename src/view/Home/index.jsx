@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from './Hero';
 import LookingForAJob from './LookingForAJob';
-import WorkForUs from './WorkForUs';
+import WorkForUs from '../shared/WorkForUs';
 
 import LookingToHire from '../shared/LookingToHire';
 import SearchRoles from '../shared/SearchRoles';

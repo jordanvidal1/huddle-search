@@ -12,7 +12,7 @@ const Home = () => (
     <Hero />
     <Specialisms type='disciplines' />
     <RolesPage />
-    <Specialists />
+    <Specialists name='{name' />
     <ResourcesPage />
   </div>
 );
