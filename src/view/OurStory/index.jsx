@@ -1,6 +1,7 @@
 import React from 'react';
 
 import OriginStory from './OriginStory';
+import ProPoints from '../shared/ProPoints';
 
 import Hero from '../shared/LeadershipHero';
 import Specialists from '../shared/Specialists';
@@ -12,6 +13,7 @@ const OurStory = () => (
       Experts unite to <a>redefine</a> an industry
     </Hero>
     <OriginStory />
+    <ProPoints />
     <Specialists />
     <OurStoryStatic type='process'>
       Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale

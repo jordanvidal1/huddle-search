@@ -1,0 +1,46 @@
+.our-story {
+    .pro-points {
+        .container {
+            background: #310A31;
+        }
+
+        .text-container {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            max-width: 45.0625rem;
+        }
+
+        .text {
+            margin-top: 2rem;
+
+            span {
+                font-size: 1.125rem;
+            }
+        }
+
+        .pro-point-container {
+            margin-top: 4rem;
+            text-align: center;
+
+            .pro-point {
+                display: flex;
+                flex-direction: column;
+                max-width: 23.3333rem;
+
+                img {
+                    margin: 0 auto;
+                }
+
+                h5 {
+                    margin: 1.5rem 0 1rem;
+                }
+
+                span {
+                    color: rgba(255, 255, 255, 0.70);
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
