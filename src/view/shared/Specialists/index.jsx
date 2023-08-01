@@ -1,5 +1,4 @@
 import React from 'react';
-import SpecialistPlaceholder from '../../../static/specialist.jpg';
 import PhoneIcon from '../../../static/phone-number.svg';
 import EmailIcon from '../../../static/email.svg';
 import LinkedInIcon from '../../../static/linkedin-pink.svg';
@@ -35,7 +34,7 @@ const Specialists = props => {
 
                 return (
                   <div className='specialist'>
-                    <img alt='specialist-img' src={img} />
+                    <img alt='specialist-img' />
                     <div className='specialist-details'>
                       <h5>
                         {name}
@@ -75,7 +74,6 @@ const Specialists = props => {
 export default Specialists;
 
 const defaultSpecialist = {
-  img: SpecialistPlaceholder,
   name: 'Name',
   role: 'Role',
   description: 'Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus.',

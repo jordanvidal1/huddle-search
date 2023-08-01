@@ -16,7 +16,11 @@ const Leaders = ({
 
             return (
               <div className='leader'>
-                {imgReversed && <img alt='specialist-img' />}
+                {imgReversed && (
+                  <div className='img-container'>
+                    <img alt='specialist-img' />
+                  </div>
+                )}
                 <div className='text-container'>
                   <div className='title'>
                     <h2>{name}</h2>
@@ -42,7 +46,11 @@ const Leaders = ({
                     </div>
                   </div>
                 </div>
-                {!imgReversed && <img alt='specialist-img' />}
+                {!imgReversed && (
+                  <div className='img-container'>
+                    <img alt='specialist-img' />
+                  </div>
+                )}
               </div>
             )
           })}
