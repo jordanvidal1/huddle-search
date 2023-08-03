@@ -14,9 +14,7 @@ const Resources = () =>  (
               Browse all resources
             </h2>
           </div>
-          <SearchBar>
-            Search by title, keyword, specialism or sector...
-          </SearchBar>
+          <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
           <div className='resources-grid'>
             <Grid container spacing={3}>
               <Resource />

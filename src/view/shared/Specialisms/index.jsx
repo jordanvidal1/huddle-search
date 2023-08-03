@@ -29,9 +29,7 @@ const Specialisms = props => {
                 </span>
               </div>
             </div>
-            <SearchBar>
-              Search disciplines...
-            </SearchBar>
+            <SearchBar placeholder='Search disciplines...' />
             <div className='specialism-list-container'>
               <div className='specialism-list'>
                 {/*<h5>*/}

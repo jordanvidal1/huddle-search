@@ -3,11 +3,19 @@ import SearchIcon from '../../../static/search.svg';
 import './styles.scss';
 
 const SearchBar = ({
-  children
+  placeholder
 }) => (
   <div className='search-bar'>
-    <img className='search-icon' alt='search-icon' src={SearchIcon} />
-    {children}
+    <div className='input-container'>
+      <img className='search-icon' alt='search-icon' src={SearchIcon} />
+      <input
+        id='search'
+        type='text'
+        name='search'
+        placeholder={placeholder}
+        autoComplete='off'
+      />
+    </div>
   </div>
 );
 

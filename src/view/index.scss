@@ -82,12 +82,6 @@ p {
   font-size: 1.125rem;
 }
 
-.btn-container {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-}
-
 .btn {
   align-items: center;
   border: 0;
@@ -117,4 +111,52 @@ p {
   background: #F6E27F;
   box-shadow: 0 8px 0 0 #310A31;
   color: #2BAC91;
+}
+
+.btn-container {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+}
+
+input {
+  border: 0;
+  color: #1A1A1A;
+  flex-grow: 1;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  &:focus-visible {
+    outline: 0;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7E8192;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7E8192;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #7E8192;
+  }
+}
+
+.input-container {
+  align-items: center;
+  align-self: stretch;
+  border-radius: 1000px;
+  background: #FFF;
+  display: flex;
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+
+  img.search-icon {
+    margin-right: 1rem;
+  }
 }

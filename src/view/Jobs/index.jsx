@@ -14,9 +14,7 @@ const Jobs = () => (
               Browse all jobs
             </h2>
           </div>
-          <SearchBar>
-            Search by title, keyword, specialism or sector...
-          </SearchBar>
+          <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
           <div className='jobs-grid'>
             <Grid container spacing={3}>
               <Role />

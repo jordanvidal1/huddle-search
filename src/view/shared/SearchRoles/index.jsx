@@ -15,9 +15,7 @@ const SearchRoles = () =>  (
                 <h2>
                   Search open roles
                 </h2>
-                <SearchBar>
-                  Search by title, keyword, specialism or sector...
-                </SearchBar>
+                <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
               </div>
             </Grid>
             <Grid item xs={12}>
