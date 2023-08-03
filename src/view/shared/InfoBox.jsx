@@ -5,9 +5,9 @@ const InfoBox = ({ icon, title, text }) => (
   <Grid item xs={6}>
     <div className='info-container'>
       <img alt='info-icon' src={icon} />
-      <h6>
+      <h5>
         {title}
-      </h6>
+      </h5>
       <p>
         {text}
       </p>
