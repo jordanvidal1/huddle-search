@@ -1,4 +1,6 @@
-.home, .work-for-us {
+.home,
+.work-for-us,
+.contract-interim {
     .work-for-us {
         .container {
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../../../static/work-for-us.jpg'), lightgray 50% / cover no-repeat;
@@ -69,11 +71,9 @@
                 justify-content: flex-end;
 
                 a {
-                    cursor: pointer;
-                }
-
-                span {
+                    align-items: center;
                     color: #F6E27F;
+                    display: flex;
                     font-weight: 800;
                 }
 

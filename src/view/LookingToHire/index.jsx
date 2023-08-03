@@ -10,8 +10,6 @@ import EmbeddedTalent from '../shared/EmbeddedTalent';
 import OurStory from '../shared/OurStory';
 import ResourcesPage from '../shared/ResourcesPage';
 
-import './styles.scss';
-
 const LookingToHire = () => (
   <div className='looking-to-hire'>
     <Hero>

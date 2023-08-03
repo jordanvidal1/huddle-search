@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import VacancyIcon from '../../../static/vacancy.svg';
 import HelpIcon from '../../../static/help.svg';
@@ -45,9 +46,11 @@ const InfoContainer = () => (
           </div>
         </div>
         <div className='btn-container'>
-          <button className='btn btn-secondary'>
-            Talk to us
-          </button>
+          <Link to='/contact-us'>
+            <button className='btn btn-secondary'>
+              Talk to us
+            </button>
+          </Link>
         </div>
       </div>
     </Grid>

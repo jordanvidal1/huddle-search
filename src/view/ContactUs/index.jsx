@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from '../shared/LeadershipHero';
 import Leadership from '../shared/Specialists';
-import Contact from './Contact';
+import ContactForm from './ContactForm';
 import FollowUs from './FollowUs';
 
 const ContactUs = () => (
@@ -10,7 +10,7 @@ const ContactUs = () => (
     <Hero type='contact'>
       We’d love you to give us a <a>shout</a>
     </Hero>
-    <Contact />
+    <ContactForm />
     <Leadership />
     <FollowUs />
   </div>

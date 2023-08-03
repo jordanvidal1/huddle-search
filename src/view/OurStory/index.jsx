@@ -13,7 +13,7 @@ const OurStory = () => (
       Experts unite to <a>redefine</a> an industry
     </Hero>
     <OriginStory />
-    <ProPoints />
+    <ProPoints type='story' />
     <Leadership />
     <OurStoryStatic type='process'>
       Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale

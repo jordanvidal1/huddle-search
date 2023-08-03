@@ -1,4 +1,8 @@
-.specialisms, .looking-to-hire, .looking-for-a-job {
+.specialisms,
+.looking-to-hire,
+.looking-for-a-job,
+.embedded-talent,
+.contract-interim {
     .hero {
         .text-container {
             align-self: flex-start;
@@ -33,6 +37,26 @@
 
         .info-grid-container {
             margin-top: 6rem;
+        }
+    }
+}
+
+.looking-to-hire,
+.embedded-talent,
+.contract-interim {
+    .hero {
+        .container {
+            background: url('../../../static/looking-to-hire.png') top right no-repeat #8762CB;
+            background-size: contain;
+        }
+
+        .title {
+            margin-top: 2rem;
+
+            a {
+                color: #F6E27F;
+                background: #310A31;
+            }
         }
     }
 }

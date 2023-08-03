@@ -8,26 +8,26 @@ import ProIcon5 from '../../../static/pro-icon-5.svg';
 import './styles.scss';
 
 
-// const elements = {
-//   leadership: {
-//     text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-//     path: '/leadership-team',
-//     infoComponent: leadershipComponent()
-//   },
-//   story: {
-//     path: '/our-story',
-//     text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-//     infoComponent: ourStoryComponent()
-//   },
-//   process: {
-//     path: '/our-process',
-//     text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-//     infoComponent: ourProcessComponent()
-//   }
-// };
+const texts = {
+  story: {
+    title: 'Values that make us who we are'
+  },
+  process: {
+    title: 'Why it’s great for clients'
+  },
+  executive: {
+    title: 'Why Executive Search is great for clients'
+  },
+  embedded: {
+    title: 'Why embedding Huddle is great for clients'
+  },
+  contract: {
+    title: 'Why our contract service is great for clients'
+  }
+};
 
 const ProPoints = props => {
-  const {children, type} = props;
+  const {type} = props;
 
   return (
     <div className='pro-points'>
@@ -37,7 +37,7 @@ const ProPoints = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  Values that make us who we are
+                  {texts[type].title}
                 </h2>
               </div>
               <div className='text'>

@@ -26,9 +26,11 @@ const LookingToHire = ({
             <button className="btn btn-secondary">
               Submit new role
             </button>
-            <button className="btn">
-              Talk to us
-            </button>
+            <Link to='/contact-us'>
+              <button className="btn">
+                Talk to us
+              </button>
+            </Link>
           </div>
           <div className='cv-container'>
             <h5>

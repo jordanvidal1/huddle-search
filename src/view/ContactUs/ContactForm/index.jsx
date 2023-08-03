@@ -4,7 +4,7 @@ import {Grid} from '@material-ui/core';
 import TextField from '../../shared/TextField';
 import './styles.scss';
 
-const Contact = () => (
+const ContactForm = () => (
   <div className='contact'>
     <div className='container'>
       <div className='inner-container'>
@@ -96,4 +96,4 @@ const Contact = () => (
   </div>
 );
 
-export default Contact;
+export default ContactForm;

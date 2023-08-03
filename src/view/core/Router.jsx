@@ -10,8 +10,12 @@ import {CssBaseline} from '@material-ui/core';
 
 import Navigator from '../shared/Navigator';
 import Home from '../Home';
+
 import LookingToHire from '../LookingToHire';
 import LookingForAJob from '../LookingForAJob';
+// import ExecutiveSearch from '../ExecutiveSearch';
+import EmbeddedTalent from '../EmbeddedTalent';
+import ContractInterim from '../ContractInterim';
 
 import Jobs from '../Jobs';
 import Resources from '../Resources';
@@ -37,9 +41,9 @@ const RouterComponent = () => (
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />
-        {/*<Route path='/executive-search' Component={Specialisms} />*/}
-        {/*<Route path='/embedded-talent-solutions' Component={Specialisms} />*/}
-        {/*<Route path='/contract-interim' Component={Specialisms} />*/}
+        {/*<Route path='/executive-search' Component={ExecutiveSearch} />*/}
+        <Route path='/embedded-talent-solutions' Component={EmbeddedTalent} />
+        <Route path='/contract-interim' Component={ContractInterim} />
 
         <Route path='/leadership-team' Component={LeadershipTeam} />
         <Route path='/our-story' Component={OurStory} />

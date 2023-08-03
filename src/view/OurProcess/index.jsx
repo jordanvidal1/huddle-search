@@ -10,7 +10,7 @@ const OurProcess = () => (
     <Hero type='process'>
       Leveraging AI to source hires <a>faster & cheaper</a>
     </Hero>
-    <ProPoints />
+    <ProPoints type='process' />
     <Leadership />
     <OurStory type='story'>
       Three leaders form a huddle to <a>reimagine</a> recruitment

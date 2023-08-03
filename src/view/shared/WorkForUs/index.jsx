@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
@@ -76,9 +77,9 @@ const WorkForUs = () =>  (
               Huddle is always on the lookout for talent. If you want to join our incredible team, check out our open roles.
             </p>
             <div className='link-container'>
-              <a>
-                <span>Join the team<img alt='arrow-icon' src={ArrowIcon} /></span>
-              </a>
+              <Link to='/work-for-us'>
+                Join the team<img alt='arrow-icon' src={ArrowIcon} />
+              </Link>
             </div>
           </div>
         </div>
