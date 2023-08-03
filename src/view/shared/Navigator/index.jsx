@@ -17,25 +17,22 @@ const Navigator = ({
 
   useEffect(() => {
     setPathname(`/${location.pathname.split('/')[1]}`);
-    document.getElementById('content').scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
-    <div /*style={{overflow: sideMenuDisplayed && 'hidden'}} */>
-      {/*{isSmallScreenDevice && sidebar()}*/}
-      <div /*style={{height: innerHeight}} */>
-        {pathname !== '/' && (
-          <>
-            <TopNav />
-            <Header />
-            {pathname.includes('/resources') && <ResourcesNav />}
-          </>
-        )}
-        <div id='content' /*className={classes.navChildren} */>
-          {children}
-        </div>
-        <Footer />
+    <div>
+      {pathname !== '/' && (
+        <>
+          <TopNav />
+          <Header />
+          {pathname.includes('/resources') && <ResourcesNav />}
+        </>
+      )}
+      <div id='content'>
+        {children}
       </div>
+      <Footer />
     </div>
   );
 }

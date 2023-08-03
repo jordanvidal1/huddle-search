@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
@@ -16,7 +17,9 @@ const LookingToHire = ({
           </div>
           <div className='text'>
             <span className='body'>
-              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
+              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <Link to='/looking-to-hire'>
+              Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
+            </Link>
             </span>
           </div>
           <div className='btn-container'>

@@ -17,7 +17,9 @@ const LookingForAJob = () =>  (
           </div>
           <div className='text'>
             <span className='body'>
-              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
+              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <Link to='/looking-for-a-job'>
+              Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
+            </Link>
             </span>
           </div>
           <div className='featured-roles'>

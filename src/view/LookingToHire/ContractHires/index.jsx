@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import {Link} from 'react-router-dom'
 
 const ContractHires = () => (
   <div className='contract-hires'>
@@ -17,9 +18,11 @@ const ContractHires = () => (
             </span>
           </div>
           <div className='btn-container'>
-            <button className="btn btn-secondary">
-              Find out more
-            </button>
+            <Link to='/contract-interim'>
+              <button className="btn btn-secondary">
+                Find out more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

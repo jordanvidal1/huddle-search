@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import InfoBox from '../InfoBox'
 import ArrowIcon from '../../../static/arrow.svg';
@@ -20,7 +21,9 @@ const EmbeddedTalent = () => (
           </div>
           <div className='text'>
             <span className='body'>
-              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <a>Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} /></a>
+              Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis sed aliquam penatibus. Sagittis tellus venenatis quam nullam vitae quam risus faucibus. Arcu malesuada turpis vitae maecenas mattis porttitor. <Link to='/embedded-talent-solutions'>
+              Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
+            </Link>
             </span>
           </div>
           <Grid container spacing={2} className='grid-container'>
@@ -30,9 +33,11 @@ const EmbeddedTalent = () => (
             <InfoBox icon={InfoIcon4} />
           </Grid>
           <div className='btn-container'>
-            <button className="btn btn-secondary">
-              Find out more
-            </button>
+            <Link to='/embedded-talent-solutions'>
+              <button className="btn btn-secondary">
+                Find out more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

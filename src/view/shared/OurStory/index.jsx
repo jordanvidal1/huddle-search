@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import {Link} from 'react-router-dom'
 
 const texts = {
   story: {
@@ -34,9 +35,11 @@ const OurStory = ({
             </p>
           </div>
           <div className='btn-container'>
-            <button className='btn btn-secondary'>
-              Find out more
-            </button>
+            <Link to={`/our-${type}`}>
+              <button className='btn btn-secondary'>
+                Find out more
+              </button>
+            </Link>
           </div>
         </div>
       </div>
