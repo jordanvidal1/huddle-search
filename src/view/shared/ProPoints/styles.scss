@@ -1,4 +1,5 @@
 .our-story,
+.executive-search,
 .embedded-talent,
 .contract-interim {
     .pro-points {
@@ -31,6 +32,9 @@
                 max-width: 23.3333rem;
 
                 img {
+                    background: #02C39A;
+                    border-radius: 62.5rem;
+                    padding: 1rem;
                     margin: 0 auto;
                 }
 
@@ -41,6 +45,60 @@
                 span {
                     color: rgba(255, 255, 255, 0.70);
                     font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.embedded-talent,
+.contract-interim {
+    .pro-points {
+        .pro-point-container {
+            .pro-point {
+                img {
+                    background: #FF958C;
+                }
+            }
+        }
+    }
+}
+
+.executive-search {
+    .pro-points {
+        .container {
+            background: #645028;
+        }
+
+        .title {
+            h2 {
+                font-family: Playfair Display;
+                font-weight: 400;
+            }
+        }
+
+        .text {
+            span {
+                color: #FFF;
+                font-family: Plus Jakarta Sans;
+                font-weight: 400;
+            }
+        }
+
+        .pro-point-container {
+            .pro-point {
+                img {
+                    background: #7E8192;
+                }
+
+                h5 {
+                    font-family: Playfair Display;
+                }
+
+                span {
+                    color: rgba(255, 255, 255, 0.70);
+                    font-family: Plus Jakarta Sans;
+                    font-weight: 400;
                 }
             }
         }

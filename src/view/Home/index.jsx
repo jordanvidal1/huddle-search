@@ -19,7 +19,7 @@ const Home = () => (
     <SearchRoles />
     <ExecutiveSearch />
     <EmbeddedTalent />
-    <WorkForUs />
+    <WorkForUs home />
   </div>
 );
 

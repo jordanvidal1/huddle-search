@@ -37,3 +37,36 @@
         }
     }
 }
+
+.executive-search {
+    .contact-grid-container {
+        .contact-container {
+            background: #1A1A1A;
+
+            .contact-title {
+                margin: 1.5rem 0 1rem;
+
+                h5 {
+                    color: #FFF;
+                    font-family: Playfair Display;
+                    font-size: 1.75rem;
+                }
+            }
+
+            .contact-text {
+                p {
+                    color: rgba(255, 255, 255, 0.70);
+                    font-family: Plus Jakarta Sans;
+                    font-weight: 400;
+                }
+            }
+
+            .contact-info {
+                p {
+                    color: #E0B45C;
+                    font-family: Plus Jakarta Sans;
+                }
+            }
+        }
+    }
+}

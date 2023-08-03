@@ -149,6 +149,10 @@ const elements = {
     path: '/contact-us',
     text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
     infoComponent: ContactContainer()
+  },
+  executive: {
+    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
+    infoComponent: ourProcessComponent()
   }
 };
 
@@ -156,7 +160,7 @@ const LeadershipHero = props => {
   const {children, type} = props;
 
   return (
-    <div className='hero'>
+    <div className='leadership-hero'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

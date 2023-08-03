@@ -28,11 +28,13 @@ const Hero = () => {
                   Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus. Cursus amet habita sse nisl est rhoncus.
                 </span>
               </div>
-              <Link to='/jobs'>
-                <button className="btn btn-primary">
-                  Browse all jobs
-                </button>
-              </Link>
+              <div className='btn-container'>
+                <Link to='/jobs'>
+                  <button className="btn btn-primary">
+                    Browse all jobs
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

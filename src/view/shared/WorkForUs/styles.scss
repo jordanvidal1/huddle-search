@@ -1,5 +1,6 @@
 .home,
 .work-for-us,
+.executive-search,
 .embedded-talent,
 .contract-interim {
     .work-for-us {
@@ -40,14 +41,11 @@
             }
 
             a {
-                display: flex;
-            }
-
-            span {
                 color: #F6E27F;
+                display: flex;
                 font-size: 1.25rem;
                 font-weight: 800;
-                max-width: 11.375rem;
+                max-width: 14.75rem;
             }
 
             img {
@@ -81,6 +79,42 @@
                 img {
                     margin-left: 1rem;
                 }
+            }
+        }
+    }
+}
+
+.executive-search {
+    .work-for-us {
+        .container {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../../../static/executive-work-for-us.jpeg'), lightgray 0px -70.059px / 100% 117.087% no-repeat;
+            background-size: cover;
+        }
+
+        .title {
+            h2 {
+                font-family: Playfair Display;
+                font-weight: 400;
+            }
+
+            a {
+                color: #FFF;
+                background: 0;
+            }
+        }
+
+        .text {
+            p {
+                font-family: Plus Jakarta Sans;
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+        }
+
+        .grid-container {
+            span {
+                color: #E0B45C;
+                font-family: Plus Jakarta Sans;
             }
         }
     }

@@ -4,9 +4,7 @@ import ProIcon1 from '../../../static/pro-icon-1.svg';
 import ProIcon2 from '../../../static/pro-icon-2.svg';
 import ProIcon3 from '../../../static/pro-icon-3.svg';
 import ProIcon4 from '../../../static/pro-icon-4.svg';
-import ProIcon5 from '../../../static/pro-icon-5.svg';
 import './styles.scss';
-
 
 const texts = {
   story: {
@@ -94,7 +92,7 @@ const ProPoints = props => {
                 </Grid>
                 <Grid item xs={4}>
                   <div className='pro-point'>
-                    <img alt='pro-point-icon-5' src={ProIcon5} />
+                    <img alt='pro-point-icon-5' src={ProIcon1} />
                     <h5>
                       Tortor est ipsum
                     </h5>

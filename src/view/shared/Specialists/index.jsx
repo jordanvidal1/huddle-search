@@ -1,11 +1,17 @@
 import React from 'react';
+
 import PhoneIcon from '../../../static/phone-number.svg';
 import EmailIcon from '../../../static/email.svg';
 import LinkedInIcon from '../../../static/linkedin-pink.svg';
+
+import PhoneGreyIcon from '../../../static/phone-number-grey.svg';
+import EmailGreyIcon from '../../../static/email-grey.svg';
+import LinkedInGreyIcon from '../../../static/linkedin-grey.svg';
+
 import './styles.scss';
 
 const Specialists = props => {
-  const {name, specialists} = props;
+  const {name, specialists, executive} = props;
 
   const headerText = name
     ? `Specialists in ${name}`
@@ -48,15 +54,24 @@ const Specialists = props => {
                     </div>
                     <div className='specialist-contact'>
                       <div>
-                        <img alt='phone-number-icon' src={PhoneIcon} />
+                        <img
+                          alt='phone-number-icon'
+                          src={executive ? PhoneGreyIcon : PhoneIcon}
+                        />
                         <span>{number}</span>
                       </div>
                       <div>
-                        <img alt='email-icon' src={EmailIcon} />
+                        <img
+                          alt='email-icon'
+                          src={executive ? EmailGreyIcon : EmailIcon}
+                        />
                         <span>{email}</span>
                       </div>
                       <div>
-                        <img alt='linkedin-icon' src={LinkedInIcon} />
+                        <img
+                          alt='linkedin-icon'
+                          src={executive ? LinkedInGreyIcon : LinkedInIcon}
+                        />
                         <span>{linkedin}</span>
                       </div>
                     </div>

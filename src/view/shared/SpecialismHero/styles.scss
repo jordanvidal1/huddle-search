@@ -1,9 +1,10 @@
 .specialisms,
 .looking-to-hire,
 .looking-for-a-job,
+.executive-search,
 .embedded-talent,
 .contract-interim {
-    .hero {
+    .specialism-hero {
         .text-container {
             align-self: flex-start;
             display: flex;
@@ -43,9 +44,10 @@
 }
 
 .looking-to-hire,
+.looking-for-a-job,
 .embedded-talent,
 .contract-interim {
-    .hero {
+    .specialism-hero {
         .container {
             background: url('../../../static/looking-to-hire.png') top right no-repeat #8762CB;
             background-size: contain;
@@ -63,7 +65,7 @@
 }
 
 .specialisms {
-    .hero {
+    .specialism-hero {
         .container {
             background: url('../../../static/executive-search.png') top right no-repeat #FFF;
             background-size: contain;
@@ -82,6 +84,68 @@
         .text {
             span {
                 color: #7E8192;
+            }
+        }
+    }
+}
+
+.executive-search {
+    .specialism-hero {
+        .container {
+            background: url('../../../static/executive-search.png') top right no-repeat #F9F9F9;
+            background-size: contain;
+        }
+
+        .content {
+            margin-top: 2rem;
+        }
+
+        .text-container {
+            width: 45.0625rem;
+        }
+
+        .title {
+            max-width: 35.625rem;
+
+            h1 {
+                color: #7E6739;
+                font-family: Playfair Display;
+                font-size: 8rem;
+                font-weight: 800;
+                line-height: 8rem;
+                margin: 1.5rem 0;
+            }
+
+            p {
+                color: #7E6739;
+                font-family: Plus Jakarta Sans;
+                font-size: 1.25rem;
+                font-weight: 600;
+                letter-spacing: 1.25rem;
+                text-align: center;
+
+                &:first-child {
+                    align-items: center;
+                    display: flex;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    justify-content: center;
+                    letter-spacing: normal;
+                }
+            }
+
+            img {
+                margin-left: 1rem;
+            }
+        }
+
+        .text {
+            align-self: flex-end;
+
+            span {
+                color: #1A1A1A;
+                font-family: Plus Jakarta Sans;
+                font-weight: 400;
             }
         }
     }

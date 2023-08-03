@@ -1,23 +1,33 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
+
 import PhoneIcon from '../../../static/phone.svg';
 import EmailIcon from '../../../static/email-pink.svg';
+import PhoneGreyIcon from '../../../static/phone-grey.svg';
+import EmailGreyIcon from '../../../static/contact-email-grey.svg';
+
 import './styles.scss';
 
-const ContactContainer = () => (
+const ContactContainer = ({
+  executive
+}) => (
   <Grid container spacing={3} className='contact-grid-container'>
     <Grid item xs={6}>
       <div className='contact-container'>
         <div className='contact-text-container'>
-          <img alt='vacancy-icon' src={PhoneIcon} />
+          <img alt='vacancy-icon' src={executive ? PhoneGreyIcon : PhoneIcon} />
           <div className='contact-title'>
             <h5>
-              Speak over the phone
+              {executive ? 'Phone' : 'Speak over the phone'}
             </h5>
           </div>
           <div className='contact-text'>
             <p>
-              Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.            </p>
+              {executive
+                ? 'Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.'
+                : 'Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.'
+              }
+            </p>
           </div>
         </div>
         <div className='contact-info'>
@@ -30,15 +40,19 @@ const ContactContainer = () => (
     <Grid item xs={6}>
       <div className='contact-container'>
         <div className='contact-text-container'>
-          <img alt='help-icon' src={EmailIcon} />
+          <img alt='help-icon' src={executive ? EmailGreyIcon : EmailIcon} />
           <div className='contact-title'>
             <h5>
-              Send us an email
+              {executive ? 'Email' : 'Send us an email'}
             </h5>
           </div>
           <div className='contact-text'>
             <p>
-              Want to start a conversation about our embedded talent solutions? Our team is here to help.            </p>
+              {executive
+                ? 'Want to start a conversation about our specialised service for executive hires? Our team is here to help.'
+                : 'Want to start a conversation about our embedded talent solutions? Our team is here to help.'
+              }
+            </p>
           </div>
         </div>
         <div className='contact-info'>

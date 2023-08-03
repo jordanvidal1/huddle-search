@@ -1324,6 +1324,16 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.5.tgz#90b5420ab23076a9e76a98516200afcb6ba7de8d"
   integrity sha512-kR4hwC44p0GZQsy1oA2X8EdFMg/lC7qwVX9jNgNBQ+uSZXKoV4Vyc1VepcRAcGRKPIgcc/3OC1j7FNQDYpFLJA==
 
+"@fontsource/playfair-display@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-5.0.7.tgz#d9f2196e485f7933acc055138ba74f5d5ce994f6"
+  integrity sha512-R0TMwbrQj2X5D0nD8wM01rXpM4wBwcEh0MLN6DaLkD7tkZKoCflW7vm18DNCpZbzP/yGiEFXaXAW2jPZWG3j5A==
+
+"@fontsource/plus-jakarta-sans@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/plus-jakarta-sans/-/plus-jakarta-sans-5.0.7.tgz#245359304a45bf555edcd259ac06a36f8b1cfa87"
+  integrity sha512-kmUqj8hx7tJTKaHZucmjsNDHz+FNJYcb+jW2TkjZIMyIatXyAlBLzCTSBncqJeergYQB48irJK8igviAXN/ahQ==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"

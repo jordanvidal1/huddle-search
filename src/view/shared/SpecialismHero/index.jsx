@@ -1,15 +1,22 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import InfoContainer from '../InfoContainer';
 import ContactContainer from '../ContactContainer';
 import './styles.scss';
 
 const SpecialismHero = props => {
-  const {children, name, contact, empty} = props;
+  const {
+    children,
+    name,
+    contact,
+    executive,
+    empty
+  } = props;
 
   const headerText = children || `Specialism ${name}`;
 
   return (
-    <div className='hero'>
+    <div className='specialism-hero'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
@@ -25,15 +32,17 @@ const SpecialismHero = props => {
                 </span>
                 {empty && (
                   <div className='btn-container'>
-                    <button className='btn btn-secondary'>
-                      Browse all jobs
-                    </button>
+                    <Link to='/jobs'>
+                      <button className='btn btn-secondary'>
+                        Browse all jobs
+                      </button>
+                    </Link>
                   </div>
                 )}
               </div>
             </div>
             {!empty && (contact ? (
-              <ContactContainer />
+              <ContactContainer executive={executive} />
             ) : (
               <InfoContainer />
             ))}

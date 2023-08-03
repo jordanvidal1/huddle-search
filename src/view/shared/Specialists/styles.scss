@@ -2,6 +2,7 @@
 .looking-for-a-job,
 .our-story,
 .contact-us,
+.executive-search,
 .embedded-talent,
 .contract-interim {
     .specialists {
@@ -13,13 +14,6 @@
             align-self: flex-start;
             display: flex;
             flex-direction: column;
-        }
-
-        .title {
-            h1 {
-                color: #310A31;
-                font-size: 5rem;
-            }
         }
 
         .text {
@@ -86,6 +80,62 @@
                         font-size: 1.125rem;
                         font-weight: 800;
                         margin-left: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.executive-search {
+    .specialists {
+        .container {
+            background: #F9F9F9;
+        }
+
+        .title {
+            h2 {
+                color: #1A1A1A;
+                font-family: Playfair Display;
+                font-weight: 400;
+            }
+        }
+
+        .text {
+            span {
+                color: #1A1A1A;
+                font-family: Plus Jakarta Sans;
+                font-weight: 400;
+            }
+        }
+
+        .specialists-container {
+            .specialist {
+                > img {
+                    border-color: #7E6739;
+                }
+
+                h5 {
+                    color: #1A1A1A;
+                    font-family: Playfair Display;
+                    font-weight: 900;
+                }
+
+                span {
+                    color: rgba(26, 26, 26, 0.50);
+                    font-family: Plus Jakarta Sans;
+                }
+
+                p {
+                    color: rgba(26, 26, 26, 0.70);
+                    font-family: Plus Jakarta Sans;
+                    font-weight: 400;
+                }
+
+                .specialist-contact {
+                    span {
+                        color: #7E6739;
+                        font-family: Plus Jakarta Sans;
                     }
                 }
             }
