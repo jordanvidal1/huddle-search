@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-import cx from 'classnames';
 import HeaderArrow from '../../../static/header-arrow.svg';
 import DropdownArrow from '../../../static/dropdown-arrow.svg';
-import Logo from '../../../static/full-logo-dark.svg'
+import Logo from '../../../static/full-logo-dark.svg';
 
 import './styles.scss';
 
@@ -54,23 +53,16 @@ const routes = [
 ];
 
 const Header = ({
-  pathname
+  expanded,
+  expandClick
 }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const handleExpandClick = () => setExpanded(!expanded);
-  const closeExpandClick = () => setExpanded(false);
-
   const renderDropdown = subLinks => expanded && (
     <div className='nav-dropdown'>
       <img alt='dropdown-arrow' src={DropdownArrow} />
       <div>
         {subLinks.map((subLink, i) => (
           <div key={i}>
-            <Link
-              to={subLink.path}
-              onClick={closeExpandClick}
-            >
+            <Link to={subLink.path}>
               {subLink.name}
             </Link>
           </div>
@@ -84,16 +76,18 @@ const Header = ({
       {routes.map((route, i) => (
         <div key={i}>
           <span
-            className={cx({active: route.path === pathname})}
-            onClick={route.subLinks && handleExpandClick}
+            onClick={route.subLinks && expandClick}
           >
-            <Link
-              to={route.path}
-              onClick={closeExpandClick}
-            >
-              {route.name}
-              {route.subLinks && <img alt='arrow' src={HeaderArrow} />}
-            </Link>
+            {route.subLinks ? (
+              <a>
+                {route.name}
+                <img alt='arrow' src={HeaderArrow} />
+              </a>
+            ) : (
+              <Link to={route.path}>
+                {route.name}
+              </Link>
+            )}
           </span>
           {route.subLinks && renderDropdown(route.subLinks)}
         </div>
@@ -104,7 +98,7 @@ const Header = ({
   return (
     <div className='header-container'>
       <div className='header-inner-container'>
-        <Link to='/'>
+        <Link to='/' onClick={expanded && expandClick}>
           <img alt='logo' src={Logo} />
         </Link>
         <div className='header'>

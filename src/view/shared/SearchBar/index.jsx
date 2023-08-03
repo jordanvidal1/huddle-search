@@ -1,4 +1,5 @@
 import React from 'react';
+import TextField from '../TextField';
 import SearchIcon from '../../../static/search.svg';
 import './styles.scss';
 
@@ -6,16 +7,14 @@ const SearchBar = ({
   placeholder
 }) => (
   <div className='search-bar'>
-    <div className='input-container'>
-      <img className='search-icon' alt='search-icon' src={SearchIcon} />
-      <input
-        id='search'
-        type='text'
-        name='search'
-        placeholder={placeholder}
-        autoComplete='off'
-      />
-    </div>
+    <TextField
+      id='search'
+      type='text'
+      name='search'
+      placeholder={placeholder}
+      autoComplete='off'
+      img={SearchIcon}
+    />
   </div>
 );
 

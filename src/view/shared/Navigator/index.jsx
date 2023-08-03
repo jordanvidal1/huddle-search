@@ -11,11 +11,18 @@ import './styles.scss';
 const Navigator = ({
   children
 }) => {
+  const [expanded, setExpanded] = useState(false);
   const [pathname, setPathname] = useState('/');
 
   const location = useLocation();
 
+  // todo: useMemo(children);
+
+  const handleExpandClick = () => setExpanded(!expanded);
+  const closeExpandClick = () => setExpanded(false);
+
   useEffect(() => {
+    closeExpandClick();
     setPathname(`/${location.pathname.split('/')[1]}`);
     window.scrollTo(0, 0);
   }, [location]);
@@ -25,7 +32,10 @@ const Navigator = ({
       {pathname !== '/' && (
         <>
           <TopNav />
-          <Header />
+          <Header
+            expanded={expanded}
+            expandClick={handleExpandClick}
+          />
           {pathname.includes('/resources') && <ResourcesNav />}
         </>
       )}

@@ -5,6 +5,7 @@ import LinkedIn from '../../../static/linkedin-purple.svg'
 import Twitter from '../../../static/twitter-purple.svg'
 import Facebook from '../../../static/facebook-purple.svg'
 import Instagram from '../../../static/instagram-purple.svg'
+import TextField from '../../shared/TextField'
 
 const FollowUs = () => (
   <div className='follow-us'>
@@ -24,14 +25,12 @@ const FollowUs = () => (
               <div className='action-container'>
                 <form /*action="/action_page.php" method="get" */ id='subscribe-form'>
                   <div className='subscribe-container'>
-                    <div className='input-container'>
-                      <input
-                        id='email-subscribe'
-                        type='text'
-                        name='email'
-                        placeholder='Enter your email address'
-                      />
-                    </div>
+                    <TextField
+                      id='email-subscribe'
+                      type='text'
+                      name='email'
+                      placeholder='Enter your email address'
+                    />
                     <button
                       className='btn btn-secondary'
                       type='submit'

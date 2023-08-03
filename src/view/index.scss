@@ -33,7 +33,7 @@ code {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, label {
   color: #FFF;
   font-family: Montserrat;
   font-style: normal;
@@ -122,12 +122,15 @@ p {
 input {
   border: 0;
   color: #1A1A1A;
-  flex-grow: 1;
   font-family: Montserrat;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  &:not([type='checkbox']) {
+    width: 100%;
+  }
 
   &:focus-visible {
     outline: 0;
@@ -147,16 +150,29 @@ input {
   }
 }
 
-.input-container {
-  align-items: center;
-  align-self: stretch;
-  border-radius: 1000px;
-  background: #FFF;
-  display: flex;
+.textfield {
   flex-grow: 1;
-  padding: 1.5rem 2rem;
 
-  img.search-icon {
-    margin-right: 1rem;
+  .input-container {
+    align-items: center;
+    align-self: stretch;
+    border-radius: 1000px;
+    background: #FFF;
+    display: flex;
+    padding: 1.5rem 2rem;
+
+    img.search-icon {
+      margin-right: 1rem;
+    }
+  }
+
+  &:has(label) {
+    .input-container {
+      margin-top: 0.75rem;
+    }
+  }
+
+  label {
+    font-size: 1.25rem;
   }
 }
