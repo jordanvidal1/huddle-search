@@ -1,20 +1,20 @@
 import React from 'react';
 
 import Hero from '../shared/SpecialismHero';
-import Specialisms from '../shared/Specialisms';
+import Disciplines from '../shared/Specialisms';
 import Specialists from '../shared/Specialists';
 
 import RolesPage from '../shared/RolesPage';
 import ResourcesPage from '../shared/ResourcesPage';
 
-const Home = () => (
+const Specialisms = () => (
   <div className='specialisms'>
     <Hero />
-    <Specialisms type='disciplines' />
+    <Disciplines type='disciplines' />
     <RolesPage />
-    <Specialists name='{name' />
+    <Specialists name='{name}' />
     <ResourcesPage />
   </div>
 );
 
-export default Home;
+export default Specialisms;

@@ -1,9 +1,10 @@
 import React from 'react';
 import InfoContainer from '../InfoContainer';
+import ContactContainer from '../ContactContainer';
 import './styles.scss';
 
 const SpecialismHero = props => {
-  const {children, name, job} = props;
+  const {children, name, contact, empty} = props;
 
   const headerText = children || `Specialism ${name}`;
 
@@ -22,7 +23,7 @@ const SpecialismHero = props => {
                 <span>
                   Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum. Nisi quisque mi tortor suspendisse consequat.
                 </span>
-                {job && (
+                {empty && (
                   <div className='btn-container'>
                     <button className='btn btn-secondary'>
                       Browse all jobs
@@ -31,7 +32,11 @@ const SpecialismHero = props => {
                 )}
               </div>
             </div>
-            {!job && <InfoContainer />}
+            {!empty && (contact ? (
+              <ContactContainer />
+            ) : (
+              <InfoContainer />
+            ))}
           </div>
         </div>
       </div>

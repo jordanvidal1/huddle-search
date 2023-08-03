@@ -5,9 +5,9 @@ import Leadership from '../shared/Specialists';
 import ProPoints from '../shared/ProPoints';
 import WorkForUs from '../shared/WorkForUs';
 
-const LookingToHire = () => (
+const EmbeddedTalent = () => (
   <div className='embedded-talent'>
-    <Hero>
+    <Hero contact>
       <a>Embedded</a> talent solutions
     </Hero>
     <ProPoints type='embedded' />
@@ -16,4 +16,4 @@ const LookingToHire = () => (
   </div>
 );
 
-export default LookingToHire;
+export default EmbeddedTalent;

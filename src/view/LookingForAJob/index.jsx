@@ -10,7 +10,7 @@ import './styles.scss';
 
 const LookingForAJob = () => (
   <div className='looking-for-a-job'>
-    <Hero job>
+    <Hero empty>
       Looking for a <a>job?</a>
     </Hero>
     <SearchRoles />
