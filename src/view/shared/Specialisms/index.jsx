@@ -6,7 +6,7 @@ import ArrowIcon from '../../../static/arrow.svg';
 import './styles.scss';
 
 const Specialisms = props => {
-  const {type, name, disciplines} = props;
+  const {type, name, specialisms} = props;
 
   const headerText = name
     ? `${capitalize(type)} in ${name}`
@@ -29,15 +29,15 @@ const Specialisms = props => {
                 </span>
               </div>
             </div>
-            <SearchBar placeholder='Search disciplines...' />
+            <SearchBar placeholder={`Search ${type}...`} />
             <div className='specialism-list-container'>
               <div className='specialism-list'>
                 {/*<h5>*/}
                 {/*  A*/}
                 {/*</h5>*/}
-                {disciplines.map((discipline) => (
-                  <Link to={discipline.path}>
-                    {discipline.name}
+                {specialisms.map((specialism) => (
+                  <Link to={specialism.path}>
+                    {specialism.name}
                     <img alt='arrow-icon' src={ArrowIcon} />
                   </Link>
                 ))}
@@ -53,18 +53,18 @@ const Specialisms = props => {
 export default Specialisms;
 
 Specialisms.defaultProps = {
-  disciplines: [
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
-    {name: 'Discipline', path: ''},
+  specialisms: [
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
+    {name: 'Specialism', path: ''},
   ]
 };

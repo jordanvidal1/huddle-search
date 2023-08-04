@@ -37,7 +37,6 @@ const RouterComponent = () => (
         <Route path='/resources' Component={Resources} />
         <Route path='/specialisms' Component={Specialisms} />
         {/*<Route path='/sectors' Component={Sectors} />*/}
-        {/*<Route path='/disciplines' Component={Disciplines} />*/}
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />
