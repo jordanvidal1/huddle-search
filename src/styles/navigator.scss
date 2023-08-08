@@ -3,16 +3,60 @@
   align-self: stretch;
   background: #310A31;
   display: flex;
-  height: 3.5rem;
+  flex-direction: column;
   justify-content: space-between;
 
   .top-nav-inner {
     align-items: center;
     display: flex;
-    flex-direction: row;
+    height: 3.5rem;
+    padding: 0 1.5rem;
     justify-content: space-between;
-    margin: 0 auto;
     width: 100%;
+  }
+
+  .top-nav-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .top-nav-quicklinks {
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    width: 100%;
+
+    img {
+      transform: rotate(0deg);
+      transition: transform 0.25s linear;
+    }
+  }
+
+  &:has(.dropdown.active) {
+    .top-nav-quicklinks {
+      img {
+        transform: rotate(180deg);
+        transition: transform 0.25s linear;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .top-nav-inner {
+      padding: 0 1rem;
+    }
+
+    .top-nav-list {
+      display: none;
+    }
+
+    .top-nav-quicklinks {
+      display: flex;
+    }
   }
 
   .top-nav-left, .top-nav-right {
@@ -29,6 +73,40 @@
       color: #F6E27F;
       font-size: 0.875rem;
       font-weight: 700;
+    }
+  }
+
+  .dropdown {
+    background: rgba(49, 10, 49, 0.9);
+    display: none;
+    width: 100%;
+
+    .dropdown-container {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem 1.5rem;
+      width: 100%;
+
+      .top-nav-left, .top-nav-right {
+        flex-direction: column;
+        gap: 1.5rem;
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .top-nav-inner {
+      padding: 0 0.75rem 0 0.25rem;
+    }
+
+    .dropdown.active {
+      display: flex;
     }
   }
 }
@@ -100,6 +178,7 @@ div:not(.content) > .header {
   .logo-menubar {
     cursor: pointer;
     display: none;
+    padding: 0.5rem;
   }
 }
 
@@ -169,7 +248,7 @@ div:not(.content) > .header {
 
 @include media-breakpoint-down(md) {
   div:not(.content) > .header .header-inner {
-    padding: 0 1.25rem 0 0.75rem;
+    padding: 0 0.75rem;
 
     .header-nav-list {
       display: none;
@@ -193,14 +272,16 @@ div:not(.content) > .header {
   width: 100%;
   z-index: 222;
 
-  &.active {
-    display: flex;
+  @include media-breakpoint-down(md) {
+    &.active {
+      display: flex;
+    }
   }
 
   .sidebar-container {
     background: #FFF;
     height: 100%;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem 2rem 1.5rem;
     width: 90%;
   }
 
@@ -215,6 +296,7 @@ div:not(.content) > .header {
 
     .close-button {
       cursor: pointer;
+      padding: 0.5rem;
     }
   }
 

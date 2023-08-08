@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
+import Dropdown from '../../static/dropdown.svg'
+import cx from 'classnames'
 
 const leftRoutes = [
   {
@@ -32,6 +34,11 @@ const rightRoutes = [
 ];
 
 const TopNav = () => {
+  const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
+
+  const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
+  const hideDropdown = () => setDropdownDisplayed(false);
+
   const renderTopNavList = () => (
     <>
       <div className='top-nav-left'>
@@ -40,7 +47,7 @@ const TopNav = () => {
             <span>
               <Link
                 to={route.path}
-                // onClick={hideSidebar}
+                onClick={hideDropdown}
               >
                 {route.name}
               </Link>
@@ -54,7 +61,7 @@ const TopNav = () => {
             <span>
               <Link
                 to={route.path}
-                // onClick={hideSidebar}
+                onClick={hideDropdown}
               >
                 {route.name}
               </Link>
@@ -65,11 +72,45 @@ const TopNav = () => {
     </>
   );
 
-  return (
-    <div className='top-nav'>
-      <div className='top-nav-inner container'>
+  const renderDropdown = () => (
+    /**
+     * mobile and web should have different behavior
+     * in order to make sidebar responsive is added state
+     */
+    <div
+      className={cx('dropdown', {
+        'active': dropdownDisplayed,
+      })}
+    >
+      <div className='dropdown-container'>
         {renderTopNavList()}
       </div>
+    </div>
+  );
+
+  return (
+    <div className='top-nav'>
+      <div className='top-nav-container container'>
+        <div className='top-nav-inner'>
+          <div className='top-nav-list'>
+            {renderTopNavList()}
+          </div>
+          <div
+            className='top-nav-quicklinks'
+            onClick={toggleDropdown}
+          >
+            <p>
+              Quicklinks
+            </p>
+            <img
+              alt='quicklinks-menubar'
+              className='quicklinks-button'
+              src={Dropdown}
+            />
+          </div>
+        </div>
+      </div>
+      {renderDropdown()}
     </div>
   );
 }

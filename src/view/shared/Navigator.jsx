@@ -115,7 +115,7 @@ const Navigator = ({
                 <img alt='arrow' src={HeaderArrow} />
               </a>
             ) : (
-              <Link to={route.path}>
+              <Link to={route.path} onClick={hideSidebar}>
                 {route.name}
               </Link>
             )}
@@ -161,11 +161,13 @@ const Navigator = ({
     >
       <div className='sidebar-container'>
         <div className='sidebar-header'>
-          <img
-            alt='sidebar-logo'
-            className='logo'
-            src={Logo}
-          />
+          <Link to='/' onClick={hideSidebar}>
+            <img
+              alt='sidebar-logo'
+              className='logo'
+              src={Logo}
+            />
+          </Link>
           <img
             alt='close-button'
             onClick={hideSidebar}
