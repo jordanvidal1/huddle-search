@@ -1,11 +1,9 @@
 .footer {
-    .container {
-        background: url('../../../static/footer-pattern.svg') center no-repeat #FF958C;
-        background-size: cover;
+    background: url('../../../static/footer-pattern.svg') center no-repeat #FF958C;
+    background-size: cover;
 
-        .inner-container {
-            margin-bottom: 0.5rem;
-        }
+    .inner-container {
+        margin-bottom: 2rem;
     }
 
     .content {

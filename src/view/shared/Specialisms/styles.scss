@@ -1,33 +1,27 @@
 .specialisms, .looking-to-hire {
-    .specialisms {
-        .container {
-            background: #310A31;
-        }
+    > .specialisms {
+        background: #310A31;
 
         &.disciplines {
-            .container {
-                background: #8762CB;
-            }
+            background: #8762CB;
         }
 
         &.sectors {
-            .container {
-                background: #F9F9F9;
+            background: #F9F9F9;
 
-                h2 {
+            h2 {
+                color: #310A31;
+            }
+
+            .text {
+                span {
+                    color: #7E8192;
+                }
+            }
+
+            .specialism-list {
+                a {
                     color: #310A31;
-                }
-
-                .text {
-                    span {
-                        color: #7E8192;
-                    }
-                }
-
-                .specialism-list {
-                    a {
-                        color: #310A31;
-                    }
                 }
             }
         }

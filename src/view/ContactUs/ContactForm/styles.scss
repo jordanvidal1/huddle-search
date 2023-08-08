@@ -1,8 +1,6 @@
 .contact-us {
-    .contact {
-        .container {
-            background: #310A31;
-        }
+    > .contact {
+        background: #310A31;
 
         .content {
             flex-direction: row;

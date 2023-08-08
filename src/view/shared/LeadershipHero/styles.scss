@@ -4,13 +4,11 @@
 .contact-us,
 .executive-search {
     .leadership-hero {
-        .container {
-            background: url('../../../static/leadership.png') top right no-repeat #FFF;
-            background-size: contain;
+        background: url('../../../static/leadership.png') top right no-repeat #FFF;
+        background-size: contain;
 
-            .content {
-                margin-top: 2rem;
-            }
+        .content {
+            margin-top: 2rem;
         }
 
         .text-container {
@@ -154,10 +152,8 @@
 
 .work-for-us, .contact-us {
     .leadership-hero {
-        .container {
-            background: url('../../../static/work-for-us.png') top right no-repeat #FFF;
-            background-size: contain;
-        }
+        background: url('../../../static/work-for-us.png') top right no-repeat #FFF;
+        background-size: contain;
 
         .text-container {
             margin-bottom: 8rem;
@@ -185,9 +181,7 @@
 
 .executive-search {
     .leadership-hero {
-        .container {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 10.41%, rgba(0, 0, 0, 0.70) 34.26%, rgba(0, 0, 0, 0.57) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../../../static/executive-leadership.jpg'), lightgray 50% / cover no-repeat;
-        }
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 10.41%, rgba(0, 0, 0, 0.70) 34.26%, rgba(0, 0, 0, 0.57) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../../../static/executive-leadership.jpg'), lightgray 50% / cover no-repeat;
 
         .title {
             h1 {

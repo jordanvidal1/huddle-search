@@ -6,9 +6,7 @@
 .embedded-talent,
 .contract-interim {
     .specialists {
-        .container {
-            background: #8762CB;
-        }
+        background: #8762CB;
 
         .text-container {
             align-self: flex-start;
@@ -88,10 +86,8 @@
 }
 
 .executive-search {
-    .specialists {
-        .container {
-            background: #F9F9F9;
-        }
+    > .specialists {
+        background: #F9F9F9;
 
         .title {
             h2 {

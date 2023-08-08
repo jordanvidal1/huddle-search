@@ -1,9 +1,7 @@
 .home, .looking-for-a-job {
     .search-roles {
-        .container {
-            background: url('../../../static/open-roles-pattern.svg') center no-repeat #FF958C;
-            background-size: cover;
-        }
+        background: url('../../../static/open-roles-pattern.svg') center no-repeat #FF958C;
+        background-size: cover;
 
         .box {
             align-items: flex-start;

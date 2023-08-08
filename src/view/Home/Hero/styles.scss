@@ -1,9 +1,7 @@
 .home {
     .hero {
-        .container {
-            background: url('../../../static/hero-image.png') center no-repeat #FF958C;
-            background-size: cover;
-        }
+        background: url('../../../static/hero-image.png') center no-repeat #FF958C;
+        background-size: cover;
 
         .content {
             align-self: stretch;
