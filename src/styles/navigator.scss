@@ -45,11 +45,7 @@
     }
   }
 
-  @include media-breakpoint-down(lg) {
-    .top-nav-inner {
-      padding: 0 1rem;
-    }
-
+  @include media-breakpoint-down(md) {
     .top-nav-list {
       display: none;
     }
