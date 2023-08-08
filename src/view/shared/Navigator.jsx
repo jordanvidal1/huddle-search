@@ -8,6 +8,7 @@ import Footer from './Footer';
 
 import Logo from '../../static/full-logo-dark.svg';
 import Menubar from '../../static/menubar.svg';
+import CloseButton from '../../static/close-button.svg';
 import DropdownArrow from '../../static/dropdown-arrow.svg';
 import HeaderArrow from '../../static/header-arrow.svg';
 
@@ -71,7 +72,7 @@ const Navigator = ({
 
   const location = useLocation();
 
-  // const content = useMemo(() => children, []);
+  const content = useMemo(() => children, []);
 
   const handleExpandClick = () => setExpanded(!expanded);
   const closeExpandClick = () => setExpanded(false);
@@ -81,6 +82,10 @@ const Navigator = ({
     setPathname(`/${location.pathname.split('/')[1]}`);
     window.scrollTo(0, 0);
   }, [location]);
+
+  useEffect(() => {
+    document.body.style.overflow = sideMenuDisplayed ? 'hidden' : 'auto';
+  }, [sideMenuDisplayed]);
 
   const renderDropdown = subLinks => expanded && (
     <div className='nav-dropdown'>
@@ -151,31 +156,31 @@ const Navigator = ({
      */
     <div
       className={cx('sidebar', {
-        active: sideMenuDisplayed,
-        passive: !sideMenuDisplayed
+        'active': sideMenuDisplayed,
       })}
-      // style={{height: innerHeight}}
     >
-      <div>
-        <img
-          alt='sidebar-logo'
-          className='logo'
-          src={Logo}
-        />
-        <img
-          alt='close-button'
-          onClick={hideSidebar}
-          className='close-button'
-          // src={CloseButton}
-        />
+      <div className='sidebar-container'>
+        <div className='sidebar-header'>
+          <img
+            alt='sidebar-logo'
+            className='logo'
+            src={Logo}
+          />
+          <img
+            alt='close-button'
+            onClick={hideSidebar}
+            className='close-button'
+            src={CloseButton}
+          />
+        </div>
+        {renderNavList()}
       </div>
-      {renderNavList()}
     </div>
   );
 
   return (
-    <>
-      {/*{renderSidebar()}*/}
+    <div>
+      {renderSidebar()}
       {pathname !== '/' ? (
         <>
           <TopNav />
@@ -186,10 +191,10 @@ const Navigator = ({
         renderHeader()
       )}
       <div id='content'>
-        {children}
+        {content}
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

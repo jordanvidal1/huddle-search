@@ -39,6 +39,7 @@
   display: flex;
   height: 6rem;
   justify-content: space-between;
+  z-index: 10;
 
   .header-inner {
     align-items: center;
@@ -100,7 +101,9 @@ div:not(.content) > .header {
     cursor: pointer;
     display: none;
   }
+}
 
+.header-nav, .sidebar {
   .nav-list {
     display: flex;
     gap: 2rem;
@@ -115,6 +118,7 @@ div:not(.content) > .header {
     a {
       align-items: center;
       color: #310A31 !important;
+      cursor: pointer !important;
       display: flex;
       font-size: 1.125rem;
       font-weight: 800;
@@ -129,8 +133,9 @@ div:not(.content) > .header {
     background: #310A31;
     border-radius: 2rem;
     display: flex;
+    gap: 2rem;
     justify-content: center;
-    margin-top: 4.375rem;
+    margin-top: 5rem;
     padding: 2.5rem 2rem;
     position: absolute;
     right: 0;
@@ -141,24 +146,23 @@ div:not(.content) > .header {
       top: -0.75rem;
     }
 
-    & > div > div {
-      &:first-child a {
-        margin-top: 0
-      }
-
-      &:last-child a {
-        margin-bottom: 0;
-      }
+    > div {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
     a {
-      color: #F6E27F !important;
       font-family: Montserrat;
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 800;
       line-height: normal;
-      margin: 2rem 0;
+
+      @include media-breakpoint-up(md) {
+        color: #F6E27F !important;
+      }
     }
   }
 }
@@ -177,24 +181,74 @@ div:not(.content) > .header {
   }
 }
 
-.nav-container {
-  position: relative;
-}
-
 .sidebar {
-  background: grey;
-  // display: none;
+  background: rgba(0, 0, 0, 0.50);
+  display: none;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   left: 0;
   overflow: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 222;
 
-  & .logo {
-    width: 83px;
+  &.active {
+    display: flex;
+  }
+
+  .sidebar-container {
+    background: #FFF;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    width: 90%;
+  }
+
+  .sidebar-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      height: 2.5rem;
+    }
+
+    .close-button {
+      cursor: pointer;
+    }
+  }
+
+  .nav-list {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+
+    a {
+      font-size: 1.5rem;;
+    }
+
+    > div {
+      align-items: flex-start;
+    }
+  }
+
+  .nav-dropdown {
+    align-items: flex-start;
+    background: none;
+    gap: 2rem;
+    padding: 0;
+    position: relative;
+    margin-top: 2rem;
+
+    img {
+      display: none;
+    }
+
+    a {
+      color: #1A1A1A;
+      font-size: 1rem;
+    }
   }
 }
 
