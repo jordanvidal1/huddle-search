@@ -1,12 +1,12 @@
 /* Media queries sizes */
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
   html {
     font-size: 0.75rem;
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   html {
     font-size: 1rem;
   }

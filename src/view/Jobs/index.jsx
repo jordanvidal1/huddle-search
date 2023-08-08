@@ -2,7 +2,6 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 import SearchBar from '../shared/SearchBar';
 import Role from '../shared/Role';
-import './styles.scss';
 
 const Jobs = () => (
   <div className='jobs'>

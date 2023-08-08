@@ -6,8 +6,6 @@ import Leadership from '../shared/Specialists';
 import OurStory from '../shared/OurStory';
 import ResourcesPage from '../shared/ResourcesPage';
 
-import './styles.scss';
-
 const LookingForAJob = () => (
   <div className='looking-for-a-job'>
     <Hero empty>

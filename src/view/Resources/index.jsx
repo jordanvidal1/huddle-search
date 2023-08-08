@@ -2,7 +2,6 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
-import './styles.scss';
 
 const Resources = () =>  (
   <div className='resources'>

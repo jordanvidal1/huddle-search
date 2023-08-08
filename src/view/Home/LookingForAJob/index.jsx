@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import FeaturedRole from './FeaturedRole'
 import ArrowIcon from '../../../static/arrow.svg';
-import './styles.scss';
 
 const LookingForAJob = () =>  (
   <div className='looking-for-a-job'>

@@ -1,5 +1,40 @@
 @import 'bootstrap';
-@import './media_queries';
+@import 'media_queries';
+
+@import 'home_hero';
+@import 'home_looking_for_a_job';
+@import 'jobs';
+@import 'leaders';
+@import 'looking_for_a_job';
+@import 'looking_to_hire';
+@import 'embedded_talent';
+@import 'executive_search';
+@import 'leadership_hero';
+
+@import 'contact_form';
+@import 'follow_us';
+@import 'contract_hires';
+@import 'our_story';
+@import 'origin_story';
+@import 'pro_points';
+@import 'search_bar';
+@import 'search_roles';
+@import 'specialism_hero';
+@import 'specialisms';
+@import 'specialists';
+@import 'work_for_us';
+
+@import 'role';
+@import 'roles';
+@import 'resource';
+@import 'resources';
+@import 'resources_nav';
+@import 'resources_page';
+@import 'info_container';
+@import 'contact_container';
+@import 'contact_visit_container';
+@import 'navigator';
+@import 'footer';
 
 body {
   margin: 0;
@@ -20,14 +55,18 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1320px !important;
 }
 
 .inner-container {
   display: flex;
   flex-direction: column;
-  margin: 6rem auto;
-  max-width: 1248px;
+  padding: 6rem 1.5rem;
   width: 100%;
+
+  @include media-breakpoint-down(md) {
+    padding: 4rem 0.75rem;
+  }
 }
 
 .content {
@@ -84,6 +123,16 @@ p {
   font-size: 1.125rem;
 }
 
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 .btn {
   align-items: center;
   border: 0;
@@ -99,6 +148,10 @@ p {
   padding: 1rem 2rem;
   white-space: nowrap;
   width: fit-content;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
 }
 
 .btn-primary {
@@ -119,6 +172,10 @@ p {
   align-items: center;
   align-self: stretch;
   display: flex;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
 }
 
 input {
