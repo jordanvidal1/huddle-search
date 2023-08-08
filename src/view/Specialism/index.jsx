@@ -6,8 +6,8 @@ import Specialists from '../shared/Specialists';
 import RolesPage from '../shared/RolesPage';
 import ResourcesPage from '../shared/ResourcesPage';
 
-const Specialisms = () => (
-  <div className='specialisms'>
+const Specialism = () => (
+  <div className='specialism'>
     <Hero />
     <RolesPage />
     <Specialists name='{name}' />
@@ -15,4 +15,4 @@ const Specialisms = () => (
   </div>
 );
 
-export default Specialisms;
+export default Specialism;

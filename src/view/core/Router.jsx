@@ -19,7 +19,7 @@ import ContractInterim from '../ContractInterim';
 
 import Jobs from '../Jobs';
 import Resources from '../Resources';
-import Specialisms from '../Specialisms';
+import Specialism from '../Specialism';
 
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
@@ -34,9 +34,13 @@ const RouterComponent = () => (
       <Routes>
         <Route path='/' Component={Home} />
         <Route path='/jobs' Component={Jobs} />
+        {/*<Route path='/jobs/:jobIndex' Component={Job} />*/}
         <Route path='/resources' Component={Resources} />
-        <Route path='/specialisms' Component={Specialisms} />
-        {/*<Route path='/sectors' Component={Sectors} />*/}
+        {/*<Route path='/resources/:resourceIndex' Component={Resource} />*/}
+        <Route path='/specialism' Component={Specialism} />
+        {/*<Route path='/specialism/:specialismIndex' Component={Specialism}/>*/}
+        <Route path='/sector' Component={Specialism} />
+        {/*<Route path='/sector/:sectorIndex' Component={Specialism} />*/}
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />

@@ -1,7 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Link, useLocation} from 'react-router-dom';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
+import {capitalize} from '../core/helper'
 
 const SpecialismHero = props => {
   const {
@@ -12,7 +13,15 @@ const SpecialismHero = props => {
     empty
   } = props;
 
-  const headerText = children || `Specialism ${name}`;
+  const [pathname, setPathname] = useState('/');
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setPathname(`${location.pathname.split('/')[1]}`);
+  }, [location]);
+
+  const headerText = children || `${capitalize(pathname)} ${name}`;
 
   return (
     <div className='specialism-hero'>
