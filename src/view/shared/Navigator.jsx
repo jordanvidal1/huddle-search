@@ -184,15 +184,9 @@ const Navigator = ({
   return (
     <div>
       {renderSidebar()}
-      {pathname !== '/' ? (
-        <>
-          <TopNav />
-          {renderHeader()}
-          {pathname.includes('/resources') && <ResourcesNav />}
-        </>
-      ) : (
-        renderHeader()
-      )}
+      <TopNav />
+      {renderHeader()}
+      {pathname.includes('/resources') && <ResourcesNav />}
       <div id='content'>
         {content}
         <Footer />
