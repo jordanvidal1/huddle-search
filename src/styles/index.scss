@@ -89,6 +89,10 @@ a {
   font-style: normal;
   line-height: normal;
   text-decoration: none;
+
+  &:not([href]):not([class]) {
+    cursor: initial
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,13 +127,25 @@ p {
   font-size: 1.125rem;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   h1 {
     font-size: 4rem;
   }
 
   h2 {
     font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
   }
 }
 
@@ -149,19 +165,25 @@ p {
   white-space: nowrap;
   width: fit-content;
 
+  &:hover {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+  }
+
   @include media-breakpoint-down(md) {
     width: 100%;
   }
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:hover {
   border: 3px solid #9B7ED4;
   background: #02C39A;
   box-shadow: 0 8px 0 0 #310A31;
   color: #FFE97B;
 }
 
-.btn-secondary {
+.btn-secondary, .btn-secondary:hover {
   border: 3px solid #FF958C;
   background: #F6E27F;
   box-shadow: 0 8px 0 0 #310A31;

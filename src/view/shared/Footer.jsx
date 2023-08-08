@@ -24,7 +24,7 @@ const Footer = () => (
             <img className='logo' alt='logo' src={TextLogo} />
           </div>
           <Grid container spacing={4}>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
               <div className='box hire-box'>
                 <div className='text'>
                   <h3>
@@ -44,7 +44,7 @@ const Footer = () => (
                 </div>
               </div>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
               <div className='box job-box'>
                 <div className='text'>
                   <h3>
@@ -98,6 +98,7 @@ const Footer = () => (
                       </a>
                     </div>
                   </div>
+                  <div className='footer-divider' />
                   <div className='footer-links'>
                     <div className='footer-links-column'>
                       <h6>Discover</h6>
@@ -132,18 +133,18 @@ const Footer = () => (
                 </div>
                 <div className='divider'/>
                 <div className='footer-legal'>
-                  <div>
+                  <div className='footer-legal-links'>
                     <Link to='/legal'>Legal</Link>
                     <Link to='/cookies'>Cookies</Link>
                     <Link to='/privacy'>Privacy</Link>
                     <Link to='/terms'>Terms</Link>
                   </div>
-                  <div>
+                  <div className='footer-legal-prime'>
                     <span>
                       Proudly part of <img alt='prime-group' src={ThePrimeGroup} />
                     </span>
                   </div>
-                  <div>
+                  <div className='footer-copyright'>
                     <span>
                       2023 © Huddle Search. All rights reserved.{/* todo: make year dynamic */}
                     </span>

@@ -30,7 +30,7 @@ const WorkForUs = ({
             </div>
             <Grid container spacing={4} className='grid-container'
                   alignItems='center'>
-              <Grid item xs={6} center>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/leadership-team'>
                     Leadership team
@@ -38,7 +38,7 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/corporate-responsibility'>
                     Corporate social responsibility
@@ -46,7 +46,7 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/our-story'>
                     Our story
@@ -54,7 +54,7 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/diversity'>
                     Diversity, equality & inclusion
@@ -62,7 +62,7 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/our-process'>
                     Our process
@@ -70,7 +70,7 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/the-prime-group'>
                     The Prime Group

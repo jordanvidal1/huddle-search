@@ -29,13 +29,16 @@
             }
         }
 
-        .btn {
+        .btn-container {
             margin-top: 4rem;
         }
 
         @include media-breakpoint-down(md) {
+            background: #FF958C;
+
             .text-container {
                 margin-top: 2rem;
+                max-width: unset;
             }
         }
     }

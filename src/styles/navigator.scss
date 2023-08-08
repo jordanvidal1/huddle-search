@@ -48,23 +48,28 @@
   }
 
   .logo {
-    width: 12.1875rem;
+    height: 3.72rem;
   }
 
   @include media-breakpoint-down(lg) {
-    height: 4.5rem;
-
     .logo {
-      width: 9rem;
+      height: 3rem;
     }
   }
 
   @include media-breakpoint-down(md) {
+    height: 5rem;
+
+    .logo {
+      height: 3rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
     height: 4rem;
 
     .logo {
-      height: 2rem;
-      width: unset;
+      height: 2.5rem;
     }
   }
 }

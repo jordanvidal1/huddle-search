@@ -101,5 +101,61 @@
             font-size: 1.25rem;
             font-weight: 800;
         }
+
+        @include media-breakpoint-down(md) {
+            background: #F9F9F9;
+
+            .content {
+                max-width: unset;
+            }
+
+            .text-container {
+                max-width: unset;
+                text-align: center;
+            }
+
+            .title {
+                h1 {
+                    font-size: 6rem;
+                    line-height: normal;
+                    margin: 0.5rem 0;
+                }
+            }
+
+            .text {
+                text-align: left;
+            }
+
+            .info-container {
+                align-items: center;
+            }
+
+            .grid-container {
+                margin-left: -0.5rem;
+                text-align: center;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .info-container {
+                h5 {
+                    margin: 1rem 0 0.5rem;
+                }
+            }
+
+            .grid-container {
+                margin-top: 1.5rem;
+            }
+
+            .btn-container {
+                margin-top: 2.5rem;
+            }
+        }
     }
 }

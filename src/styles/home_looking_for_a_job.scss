@@ -1,12 +1,5 @@
 .home {
     .looking-for-a-job {
-        @include media-breakpoint-down(md) {
-            .featured-roles {
-                margin-top: 3rem !important;
-                padding: 2rem 1.5rem;
-            }
-        }
-
         background: url('../static/home-looking-for-a-job.png') center left no-repeat #8762CB;
         background-size: contain;
 
@@ -45,7 +38,13 @@
             .subtitle-container {
                 align-items: center;
                 display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
                 justify-content: space-between;
+
+                h5 {
+                    margin-right: 4.96rem;
+                }
             }
 
             .link-container {
@@ -135,6 +134,30 @@
 
                 img {
                     margin-right: 0.5rem;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #8762CB;
+
+            .content {
+                max-width: unset;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .featured-roles {
+                margin-top: 3rem;
+                padding: 2rem 1.5rem;
+
+                .subtitle-container {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                .link-container {
+                    margin-top: 0;
                 }
             }
         }

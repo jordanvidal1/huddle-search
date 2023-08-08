@@ -14,7 +14,7 @@ const Role = props => {
   });
 
   return (
-    <Grid item xs={3}>
+    <Grid item xs={12} sm={3}>
       <div className='role'>
         <div className='role-container'>
           <div className={classNames}>
