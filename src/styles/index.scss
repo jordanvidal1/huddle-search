@@ -233,6 +233,7 @@ input {
 
 .textfield {
   flex-grow: 1;
+  position: relative;
 
   .input-container {
     align-items: center;
@@ -255,5 +256,18 @@ input {
 
   label {
     font-size: 1.25rem;
+  }
+}
+
+.error-msg {
+  bottom: -1.375rem;
+  color: #de695c;
+  font-size: 0.875rem;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .error-msg {
+    max-width: 100%;
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import TextField from './TextField';
+import Input from './Input';
 import SearchIcon from '../../static/search.svg';
 
 const SearchBar = ({
   placeholder
 }) => (
   <div className='search-bar'>
-    <TextField
+    <Input
       id='search'
       type='text'
       name='search'

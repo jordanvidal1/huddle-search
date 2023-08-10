@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Input from '../shared/Input';
 import LinkedIn from '../../static/linkedin-purple.svg';
 import Twitter from '../../static/twitter-purple.svg';
 import Facebook from '../../static/facebook-purple.svg';
 import Instagram from '../../static/instagram-purple.svg';
-import TextField from '../shared/TextField';
 
 const FollowUs = () => (
   <div className='follow-us'>
@@ -22,9 +22,9 @@ const FollowUs = () => (
                 </p>
               </div>
               <div className='action-container'>
-                <form /*action="/action_page.php" method="get" */ id='subscribe-form'>
+                <form>
                   <div className='subscribe-container'>
-                    <TextField
+                    <Input
                       id='email-subscribe'
                       type='text'
                       name='email'

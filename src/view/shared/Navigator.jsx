@@ -63,7 +63,7 @@ const Navigator = ({
   children
 }) => {
   const [expanded, setExpanded] = useState(false);
-  const [pathname, setPathname] = useState('/');
+  const [pathname, setPathname] = useState('');
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
 
   // const {isSizeDown: isSmallScreenDevice} = useScreenSize('md');
@@ -79,9 +79,11 @@ const Navigator = ({
   const closeExpandClick = () => setExpanded(false);
 
   useEffect(() => {
+    if (pathname !== '') {
+      window.scrollTo(0, 0);
+    }
     closeExpandClick();
     setPathname(`/${location.pathname.split('/')[1]}`);
-    window.scrollTo(0, 0);
   }, [location]);
 
   useEffect(() => {
