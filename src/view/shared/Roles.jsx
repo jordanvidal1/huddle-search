@@ -18,6 +18,7 @@ const Roles = props => {
           <img alt='arrow' src={ArrowIcon} />
         </Link>
       </div>
+      {/* todo: slider */}
       <Grid container spacing={3}>
         <Role />
         <Role />

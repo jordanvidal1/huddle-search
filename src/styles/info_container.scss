@@ -32,4 +32,14 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md) {
+        .info-container {
+            padding: 1.5rem;
+
+            .info-title {
+                max-width: unset;
+            }
+        }
+    }
 }

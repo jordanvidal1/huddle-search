@@ -49,4 +49,12 @@
       font-weight: 800;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    top: 5rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    top: 4rem;
+  }
 }

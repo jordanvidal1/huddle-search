@@ -14,6 +14,8 @@ const Resources = () =>  (
             </h2>
           </div>
           <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
+          {/* todo: mobile placeholder */}
+          {/* todo: sort by / filters */}
           <div className='resources-grid'>
             <Grid container spacing={3} justifyContent='center'>
               <Resource />

@@ -14,6 +14,7 @@ const SearchBar = ({
       autoComplete='off'
       img={SearchIcon}
     />
+    {/* todo: reset button */}
   </div>
 );
 

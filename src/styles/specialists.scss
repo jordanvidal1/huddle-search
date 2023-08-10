@@ -12,12 +12,13 @@
             align-self: flex-start;
             display: flex;
             flex-direction: column;
+            margin-bottom: 4rem;
         }
 
         .text {
             display: flex;
             align-self: flex-start;
-            margin: 2rem 0 4rem;
+            margin-top: 2rem;
             max-width: 45.0625rem;
 
             span {
@@ -78,6 +79,25 @@
                         font-size: 1.125rem;
                         font-weight: 800;
                         margin-left: 0.75rem;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .text-container {
+                margin-bottom: 2rem;
+            }
+
+            .specialists-container {
+                flex-direction: column;
+
+                .specialist {
+                    max-width: unset;
+                    padding: 1rem 0;
+
+                    h5 {
+                        font-size: 1.75rem;
                     }
                 }
             }

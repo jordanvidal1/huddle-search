@@ -30,7 +30,7 @@ const Resource = props => {
           <div className='resource-attributes'>
             {attributes.map((attribute) => (
               <div className='resource-attribute'>
-                {attribute}
+                <span>{attribute}</span>
               </div>
             ))}
           </div>

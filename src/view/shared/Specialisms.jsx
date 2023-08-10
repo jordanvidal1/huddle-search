@@ -29,6 +29,7 @@ const Specialisms = props => {
               </div>
             </div>
             <SearchBar placeholder={`Search ${type}...`} />
+            {/* todo: mobile placeholder */}
             <div className='specialism-list-container'>
               <div className='specialism-list'>
                 {/*<h5>*/}

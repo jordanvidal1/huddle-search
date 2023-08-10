@@ -15,6 +15,8 @@ const SearchRoles = () =>  (
                   Search open roles
                 </h2>
                 <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
+                {/* todo: mobile placeholder */}
+                {/* todo: slider */}
               </div>
             </Grid>
             <Grid item xs={12}>

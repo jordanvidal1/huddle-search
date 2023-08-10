@@ -6,8 +6,8 @@ import HelpIcon from '../../static/help.svg';
 import CVIcon from '../../static/cv.svg';
 
 const InfoContainer = () => (
-  <Grid container spacing={3} className='info-grid-container'>
-    <Grid item xs={4}>
+  <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
+    <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
           <img alt='vacancy-icon' src={VacancyIcon} />
@@ -29,7 +29,7 @@ const InfoContainer = () => (
         </div>
       </div>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
           <img alt='help-icon' src={HelpIcon} />
@@ -51,7 +51,7 @@ const InfoContainer = () => (
         </div>
       </div>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
           <img alt='cv-icon' src={CVIcon} />

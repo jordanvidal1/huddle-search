@@ -40,6 +40,32 @@
         .contact-grid-container {
             margin-top: 6rem;
         }
+
+        @include media-breakpoint-down(md) {
+            .text {
+                margin-top: 2rem;
+            }
+
+            .info-grid-container,
+            .contact-grid-container {
+                margin-top: 3rem;
+
+                > div {
+                    flex-basis: 100%;
+                    max-width: 70%;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .info-grid-container,
+            .contact-grid-container {
+                > div {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -69,7 +95,7 @@
 
         .title {
             background: url('../static/specialism-icon.svg') top center no-repeat;
-            background-size: 12rem 12rem;
+            background-size: 12rem;
             padding-top: 6rem;
 
             h1 {
@@ -80,6 +106,24 @@
         .text {
             span {
                 color: #7E8192;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #FFF;
+
+            .inner-container {
+                padding: 1.5rem 0 0;
+            }
+
+            .title {
+                background-position: right 0;
+                background-size: 10rem;
+                padding-top: 6.5rem;
+
+                h1 {
+                    font-size: 3rem;
+                }
             }
         }
     }

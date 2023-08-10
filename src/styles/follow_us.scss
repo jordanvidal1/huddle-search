@@ -79,7 +79,9 @@
         }
 
         .input-container {
-            padding: 1rem 1.5rem;
+            input {
+                padding: 1rem 1.5rem;
+            }
         }
     }
 }
