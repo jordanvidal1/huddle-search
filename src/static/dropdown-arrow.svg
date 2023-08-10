@@ -1,3 +1,16 @@
-<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 0L28 12L1.90735e-06 12L14 0Z" fill="#310A31"/>
+<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14" height="8" fill="#F5F5F5"/>
+<g id="Home" clip-path="url(#clip0_481_21463)">
+<g id="quicklinks">
+<rect width="375" height="44" transform="translate(-339 -18)" fill="#310A31"/>
+<g id="Container">
+<path id="Icon" d="M2 1.5L7 6.5L12 1.5" stroke="#F6E27F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_481_21463">
+<rect width="375" height="11112" fill="white" transform="translate(-339 -18)"/>
+</clipPath>
+</defs>
 </svg>

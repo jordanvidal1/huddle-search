@@ -27,8 +27,13 @@
     cursor: pointer;
     display: none;
     justify-content: space-between;
-    padding: 1rem 0.5rem;
+    padding: 0.75rem 0.5rem;
     width: 100%;
+
+    p {
+      color: #F6E27F;
+      font-size: 1rem;
+    }
 
     img {
       transform: rotate(0deg);
@@ -42,16 +47,6 @@
         transform: rotate(180deg);
         transition: transform 0.25s linear;
       }
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    .top-nav-list {
-      display: none;
-    }
-
-    .top-nav-quicklinks {
-      display: flex;
     }
   }
 
@@ -72,8 +67,22 @@
     }
   }
 
+  @include media-breakpoint-down(md) {
+    .top-nav-inner {
+      height: unset;
+    }
+
+    .top-nav-list {
+      display: none;
+    }
+
+    .top-nav-quicklinks {
+      display: flex;
+    }
+  }
+
   .dropdown {
-    background: rgba(49, 10, 49, 0.9);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #310A31;
     display: none;
     width: 100%;
 
@@ -91,6 +100,7 @@
 
         a {
           font-size: 1rem;
+          font-weight: 800;
         }
       }
     }
@@ -278,7 +288,8 @@ div:not(.content) > .header {
   .sidebar-container {
     background: #FFF;
     height: 100%;
-    padding: 2rem 1rem 2rem 1.5rem;
+    max-width: 23rem;
+    padding: 2rem 1.5rem;
     width: 90%;
   }
 
@@ -304,7 +315,7 @@ div:not(.content) > .header {
     margin-top: 5rem;
 
     a {
-      font-size: 1.5rem;;
+      font-size: 1.5rem;
     }
 
     > div {
@@ -319,14 +330,16 @@ div:not(.content) > .header {
     padding: 0;
     position: relative;
     margin-top: 2rem;
+    width: 100%;
 
     img {
       display: none;
     }
 
     a {
-      color: #1A1A1A;
+      color: #310A31;
       font-size: 1rem;
+      text-overflow: ellipsis;
     }
   }
 }

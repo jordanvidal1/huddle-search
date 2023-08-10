@@ -40,11 +40,15 @@
             }
 
             a {
-                color: #F6E27F;
                 display: flex;
-                font-size: 1.25rem;
-                font-weight: 800;
                 max-width: 14.75rem;
+
+                span {
+                    color: #F6E27F;
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                    max-width: 12.375rem;
+                }
             }
 
             img {
@@ -94,6 +98,11 @@
 
                 .link-container {
                     height: unset;
+
+                    a {
+                        justify-content: space-between;
+                        width: 100%;
+                    }
                 }
             }
 

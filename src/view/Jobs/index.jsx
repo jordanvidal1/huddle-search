@@ -15,7 +15,7 @@ const Jobs = () => (
           </div>
           <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
           <div className='jobs-grid'>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} justifyContent='center'>
               <Role />
               <Role />
               <Role />

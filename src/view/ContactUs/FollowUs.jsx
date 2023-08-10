@@ -22,7 +22,7 @@ const FollowUs = () => (
                 </p>
               </div>
               <div className='action-container'>
-                <form>
+                <form /* todo: connect form */ >
                   <div className='subscribe-container'>
                     <Input
                       id='email-subscribe'

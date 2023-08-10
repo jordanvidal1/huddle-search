@@ -122,10 +122,6 @@
                 }
             }
 
-            .text {
-                text-align: left;
-            }
-
             .info-container {
                 align-items: center;
             }
@@ -140,6 +136,11 @@
             .title {
                 h1 {
                     font-size: 3.5rem;
+                }
+
+                img {
+                    margin-left: 0.75rem;
+                    width: 5rem;
                 }
             }
 

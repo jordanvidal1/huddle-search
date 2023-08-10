@@ -33,7 +33,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/leadership-team'>
-                    Leadership team
+                    <span>Leadership team</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
@@ -41,7 +41,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/corporate-responsibility'>
-                    Corporate social responsibility
+                    <span>Corporate social responsibility</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
@@ -49,7 +49,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/our-story'>
-                    Our story
+                    <span>Our story</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
@@ -57,7 +57,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/diversity'>
-                    Diversity, equality & inclusion
+                    <span>Diversity, equality & inclusion</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
@@ -65,7 +65,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/our-process'>
-                    Our process
+                    <span>Our process</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
@@ -73,7 +73,7 @@ const WorkForUs = ({
               <Grid item xs={12} sm={6}>
                 <div className='link-container'>
                   <Link to='/the-prime-group'>
-                    The Prime Group
+                    <span>The Prime Group</span>
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>

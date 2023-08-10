@@ -36,6 +36,10 @@
         @include media-breakpoint-down(md) {
             background: #FF958C;
 
+            h1 {
+                font-size: 2.75rem;
+            }
+
             .text-container {
                 margin-top: 2rem;
                 max-width: unset;

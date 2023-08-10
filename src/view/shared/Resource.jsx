@@ -12,7 +12,7 @@ const Resource = props => {
   });
 
   return (
-    <Grid item xs={3}>
+    <Grid item xs={12} sm={6} md={3} className='resource-grid-item'>
       <div className='resource'>
         <div className='resource-container'>
           <div className='resource-type-container'>

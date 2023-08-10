@@ -15,7 +15,7 @@ const Resources = () =>  (
           </div>
           <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
           <div className='resources-grid'>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} justifyContent='center'>
               <Resource />
               <Resource />
               <Resource />

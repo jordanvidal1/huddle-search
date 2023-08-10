@@ -103,7 +103,12 @@ const ContactForm = () => {
                       label='Phone number'
                       placeholder='+44 0000 000 000'
                       register={register('number', {
-                        required: 'Phone number is required.'
+                        required: 'Phone number is required.',
+                        // todo: phone number validation
+                        // pattern: {
+                        //   value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                        //   message: 'Phone number is invalid.'
+                        // }
                       })}
                       errors={errors}
                     />

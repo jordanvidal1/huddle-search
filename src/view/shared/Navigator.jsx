@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Logo from '../../static/full-logo-dark.svg';
 import Menubar from '../../static/menubar.svg';
 import CloseButton from '../../static/close-button.svg';
-import DropdownArrow from '../../static/dropdown-arrow.svg';
+import DropdownArrow from '../../static/header-dropdown-arrow.svg';
 import HeaderArrow from '../../static/header-arrow.svg';
 
 const routes = [
