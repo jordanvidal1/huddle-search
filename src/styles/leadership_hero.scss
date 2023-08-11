@@ -147,6 +147,117 @@
                 }
             }
         }
+
+        @include media-breakpoint-down(md) {
+            background: #FFF;
+
+            .content {
+                margin-top: 4rem;
+            }
+
+            .text-container {
+                max-width: unset;
+
+                > h5 {
+                    font-size: 1.75rem;
+                }
+            }
+
+            .title {
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+
+            .text {
+                margin-top: 2rem;
+                max-width: unset;
+            }
+
+            .info-container {
+                margin-top: 3rem;
+
+                .info-box {
+                    padding: 2rem 1.5rem;
+
+                    .info-title h5 {
+                        font-size: 1.75rem;
+                    }
+                }
+
+                .info-details {
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    justify-content: space-around;
+                    text-align: center;
+
+                    h2 {
+                        font-size: 4rem;
+                    }
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+                .info-description {
+                    margin-bottom: 2rem;
+
+                    span {
+                        line-height: 2.125rem;
+                    }
+                }
+
+                .info-calculation {
+                    flex-direction: column;
+                    margin: 0 auto;
+
+                    > div {
+                        margin: 1.5rem;
+                        max-width: 30rem;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            .info-container {
+                margin-top: 3rem;
+
+                .info-box {
+                    padding: 2rem 1.5rem;
+                }
+
+                .info-details {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    align-items: center;
+                }
+
+                .info-signatures {
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    .info-signature {
+                        align-items: center;
+                    }
+                }
+            }
+        }
     }
 }
 

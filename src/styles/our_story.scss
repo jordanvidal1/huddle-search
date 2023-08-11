@@ -23,7 +23,7 @@
     .title {
         margin-top: 4rem;
 
-        a {
+        a, a:hover {
             color: #F6E27F;
             background: #310A31;
         }
@@ -42,5 +42,17 @@
     .btn-container {
         justify-content: center;
         margin-top: 4rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        .title {
+            h2 {
+                font-size: 2.375rem;
+            }
+        }
+
+        .btn-container {
+            margin-top: 4.75rem;
+        }
     }
 }

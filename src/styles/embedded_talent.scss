@@ -76,6 +76,11 @@
 
             .info-container {
                 align-items: center;
+
+                h5 {
+                    font-size: 1.75rem;
+                    margin: 1rem 0 0.5rem;
+                }
             }
 
             .grid-container {
@@ -85,12 +90,6 @@
         }
 
         @include media-breakpoint-down(sm) {
-            .info-container {
-                h5 {
-                    margin: 1rem 0 0.5rem;
-                }
-            }
-
             .grid-container {
                 margin-top: 1.5rem;
             }

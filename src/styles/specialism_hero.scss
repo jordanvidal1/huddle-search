@@ -42,8 +42,19 @@
         }
 
         @include media-breakpoint-down(md) {
+            .text-container {
+                max-width: unset;
+            }
+
+            .title {
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+
             .text {
-                margin-top: 2rem;
+                margin-top: 2.5rem;
+                max-width: unset;
             }
 
             .info-grid-container,
@@ -83,6 +94,14 @@
             a {
                 color: #F6E27F;
                 background: #310A31;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #8762CB;
+
+            .title {
+                margin-top: 4rem;
             }
         }
     }

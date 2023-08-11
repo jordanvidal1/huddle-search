@@ -46,7 +46,6 @@
 
         .specialism-list-container {
             margin-top: 4rem;
-            max-height: 24.75rem;
 
             .specialism-list {
                 align-items: flex-start;
@@ -62,6 +61,24 @@
 
                 img {
                     margin-left: 1rem;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .text {
+                margin-bottom: 3rem;
+            }
+
+            .specialism-list-container {
+                margin-top: 3rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .specialism-list-container {
+                .specialism-list {
+                    flex-direction: column;
                 }
             }
         }

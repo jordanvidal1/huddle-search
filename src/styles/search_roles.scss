@@ -37,9 +37,17 @@
             .box {
                 padding: 1.5rem 0.75rem;
 
+                &:not(.roles-box), &:not(.job-box) {
+                    gap: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    padding-left: 0.75rem;
+                }
+
                 h3 {
                     font-size: 2.375rem;
-                    margin-bottom: 1rem;
                 }
 
                 &.roles-box {

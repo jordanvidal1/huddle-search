@@ -3,7 +3,7 @@
         background: #8762CB;
 
         .inner-container {
-            padding: 3rem auto;
+            padding: 3rem 0;
         }
 
         .leader {
@@ -74,6 +74,51 @@
                 font-size: 1.125rem;
                 font-weight: 800;
                 margin-left: 1rem;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .inner-container {
+                padding: 2rem 0;
+            }
+
+            .leader {
+                flex-direction: column-reverse;
+                gap: 2rem;
+                padding: 2rem 0;
+
+                &:nth-child(2) {
+                    flex-direction: column;
+                }
+
+                .img-container {
+                    > img {
+                        border-width: 6px;
+                        max-height: 21.25rem;
+                        max-width: 21.26rem;
+                    }
+                }
+            }
+
+            .role {
+                margin-bottom: 2rem;
+            }
+
+            .text {
+                margin-bottom: 3rem;
+                max-width: unset;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .leader {
+                .img-container {
+                    > img {
+                        border-width: 5px;
+                        max-height: 17.4375rem;
+                        max-width: 17.4375rem;
+                    }
+                }
             }
         }
     }

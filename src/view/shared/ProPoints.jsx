@@ -45,7 +45,7 @@ const ProPoints = props => {
             </div>
             <div className='pro-point-container'>
               <Grid container spacing={4} justifyContent='space-around' align='center'>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={6} md={4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-1' src={ProIcon1} />
                     <h5>
@@ -56,7 +56,7 @@ const ProPoints = props => {
                     </span>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={6} md={4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-2' src={ProIcon2} />
                     <h5>
@@ -67,7 +67,7 @@ const ProPoints = props => {
                     </span>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={6} md={4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-3' src={ProIcon3} />
                     <h5>
@@ -78,7 +78,7 @@ const ProPoints = props => {
                     </span>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={6} md={4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-4' src={ProIcon4} />
                     <h5>
@@ -89,7 +89,7 @@ const ProPoints = props => {
                     </span>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={6} md={4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-5' src={ProIcon1} />
                     <h5>

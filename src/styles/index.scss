@@ -91,7 +91,7 @@ a {
   text-decoration: none;
 
   &:not([href]):not([class]) {
-    cursor: initial
+    cursor: initial;
   }
 }
 

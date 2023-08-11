@@ -124,6 +124,11 @@
 
             .info-container {
                 align-items: center;
+
+                h5 {
+                    font-size: 1.75rem;
+                    margin: 1rem 0 0.5rem;
+                }
             }
 
             .grid-container {
@@ -141,12 +146,6 @@
                 img {
                     margin-left: 0.75rem;
                     width: 5rem;
-                }
-            }
-
-            .info-container {
-                h5 {
-                    margin: 1rem 0 0.5rem;
                 }
             }
 

@@ -40,7 +40,7 @@
 
                 p:first-child {
                     font-size: 1.5rem;
-                    line-height: 2.365rem;
+                    line-height: 2.375rem;
                 }
 
                 h6 {
@@ -94,6 +94,45 @@
                 text-align: center;
                 text-shadow: 3px 6px #F6E27F;
                 font-weight: 800;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .content {
+                gap: 3rem;
+            }
+
+            .story {
+                flex-direction: column;
+                gap: 2rem;
+
+                &.story-2 {
+                    flex-direction: column-reverse;
+                }
+
+                .img-container {
+                    > img {
+                        border-width: 6px;
+                        max-height: 21.25rem;
+                        max-width: 21.26rem;
+                    }
+                }
+            }
+
+            .quote {
+                padding: 2rem 0;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .story {
+                .img-container {
+                    > img {
+                        border-width: 5px;
+                        max-height: 17.4375rem;
+                        max-width: 17.4375rem;
+                    }
+                }
             }
         }
     }

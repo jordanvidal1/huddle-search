@@ -46,6 +46,19 @@
                 }
             }
         }
+
+        @include media-breakpoint-down(md) {
+            .pro-point-container {
+                margin-top: 3rem;
+
+                .pro-point {
+                    h5 {
+                        font-size: 1.75rem;
+                        margin: 1rem 0 0.5rem;
+                    }
+                }
+            }
+        }
     }
 }
 

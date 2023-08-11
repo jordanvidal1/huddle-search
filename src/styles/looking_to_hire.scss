@@ -76,13 +76,11 @@
             background: #8762CB;
 
             .content {
+                margin-top: 4rem;
                 max-width: unset;
             }
-        }
 
-        @include media-breakpoint-down(sm) {
             .btn-container {
-                gap: 1.5rem;
                 margin-top: 3rem;
             }
 

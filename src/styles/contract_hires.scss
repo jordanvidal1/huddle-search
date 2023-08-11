@@ -21,8 +21,20 @@
         }
 
         .btn-container {
-            gap: 2rem;
             margin-top: 4rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #8762CB;
+
+            .content {
+                margin-top: 4rem;
+                max-width: unset;
+            }
+
+            .btn-container {
+                margin-top: 3rem;
+            }
         }
     }
 }
