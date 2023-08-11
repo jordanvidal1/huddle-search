@@ -229,6 +229,12 @@
         }
 
         @include media-breakpoint-down(sm) {
+            .text-container {
+                > h5 {
+                    font-size: 1.25rem;
+                }
+            }
+
             .title {
                 h1 {
                     font-size: 3rem;
@@ -287,6 +293,28 @@
                 background: #310A31;
             }
         }
+
+        @include media-breakpoint-down(md) {
+            background: #FFF;
+
+            .text-container {
+                margin-bottom: 3rem;
+            }
+
+            .title {
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
     }
 }
 
@@ -294,7 +322,13 @@
     .leadership-hero {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 10.41%, rgba(0, 0, 0, 0.70) 34.26%, rgba(0, 0, 0, 0.57) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../static/executive-leadership.jpg'), lightgray 50% / cover no-repeat;
 
+        .content {
+            margin-top: 0;
+        }
+
         .title {
+            margin-top: 0;
+
             h1 {
                 color: #FFF;
                 font-family: Playfair Display;
@@ -344,6 +378,43 @@
 
                 img {
                     background: #7E8192;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .info-container {
+                margin: 3rem 0 0;
+
+                .info-calculation {
+                    flex-direction: column;
+                    margin: 0 auto;
+
+                    h5 {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    > div {
+                        margin: 2rem;
+                        max-width: 30rem;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                h1 {
+                    font-size: 3rem;
                 }
             }
         }

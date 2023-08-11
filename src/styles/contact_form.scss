@@ -27,10 +27,12 @@
             .input-container {
                 input {
                     font-size: 1rem;
-                    padding: 1rem;
+                    height: 3.5rem;
+                    padding: 1.12rem;
 
                     &#message {
                         border-radius: 1rem;
+                        height: 10.25rem;
                         padding-bottom: 8rem;
                     }
                 }
@@ -75,6 +77,13 @@
             .btn-container {
                 margin-top: 3rem;
                 justify-content: flex-end;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .content {
+                flex-direction: column;
+                gap: 3rem;
             }
         }
     }

@@ -5,8 +5,8 @@ import EmailIcon from '../../static/email-pink.svg';
 import VisitIcon from '../../static/visit.svg';
 
 const ContactVisitContainer = () => (
-  <Grid container spacing={3} className='visit-grid-container'>
-    <Grid item xs={4}>
+  <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>
+    <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
           <img alt='vacancy-icon' src={PhoneIcon} />
@@ -28,7 +28,7 @@ const ContactVisitContainer = () => (
         </div>
       </div>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
           <img alt='help-icon' src={EmailIcon} />
@@ -50,7 +50,7 @@ const ContactVisitContainer = () => (
         </div>
       </div>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
           <img alt='cv-icon' src={VisitIcon} />

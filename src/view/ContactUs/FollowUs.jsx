@@ -55,18 +55,22 @@ const FollowUs = () => (
               </div>
               <div className='action-container'>
                 <div className='socials'>
-                  <a href='#' rel='noreferrer' target='_blank'>
-                    <img alt='linkedin' src={LinkedIn} />
-                  </a>
-                  <a href='#' rel='noreferrer' target='_blank'>
-                    <img alt='twitter' src={Twitter} />
-                  </a>
-                  <a href='#' rel='noreferrer' target='_blank'>
-                    <img alt='facebook' src={Facebook} />
-                  </a>
-                  <a href='#' rel='noreferrer' target='_blank'>
-                    <img alt='instagram' src={Instagram} />
-                  </a>
+                  <div>
+                    <a href='#' rel='noreferrer' target='_blank'>
+                      <img alt='linkedin' src={LinkedIn} />
+                    </a>
+                    <a href='#' rel='noreferrer' target='_blank'>
+                      <img alt='twitter' src={Twitter} />
+                    </a>
+                  </div>
+                  <div>
+                    <a href='#' rel='noreferrer' target='_blank'>
+                      <img alt='facebook' src={Facebook} />
+                    </a>
+                    <a href='#' rel='noreferrer' target='_blank'>
+                      <img alt='instagram' src={Instagram} />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

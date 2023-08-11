@@ -36,6 +36,20 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md) {
+        .contact-container {
+            padding: 1.5rem;
+
+            h5 {
+                font-size: 1.75rem;
+            }
+
+            .contact-info {
+                margin-top: 3rem;
+            }
+        }
+    }
 }
 
 .executive-search {

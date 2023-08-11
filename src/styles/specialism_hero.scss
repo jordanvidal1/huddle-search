@@ -38,7 +38,7 @@
 
         .info-grid-container,
         .contact-grid-container {
-            margin-top: 6rem;
+            margin-top: 5.25rem;
         }
 
         @include media-breakpoint-down(md) {
@@ -59,7 +59,7 @@
 
             .info-grid-container,
             .contact-grid-container {
-                margin-top: 3rem;
+                margin-top: 2.25rem;
 
                 > div {
                     flex-basis: 100%;
@@ -74,6 +74,18 @@
                 > div {
                     flex-basis: 100%;
                     max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .embedded-talent, .contract-interim {
+        .specialism-hero {
+            .title {
+                h1 {
+                    font-size: 3.5rem;
                 }
             }
         }
@@ -203,6 +215,52 @@
                 color: #1A1A1A;
                 font-family: Plus Jakarta Sans;
                 font-weight: 400;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #F9F9F9;
+
+            .content {
+                margin-top: 4rem;
+            }
+
+            .text-container {
+                text-align: center;
+                width: unset;
+            }
+
+            .title {
+                max-width: unset;
+
+                h1 {
+                    font-size: 6rem;
+                    line-height: normal;
+                    margin: 0.5rem 0;
+                }
+            }
+
+            .text {
+                margin-top: 2.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                img {
+                    margin-left: 0.75rem;
+                    width: 5rem;
+                }
+            }
+
+            .text {
+                span {
+                    font-size: 1.125rem;
+                }
             }
         }
     }

@@ -23,6 +23,7 @@
 
                     h3 {
                         color: #310A31;
+                        word-wrap: break-word;
                     }
 
                     p {
@@ -72,15 +73,58 @@
             .socials {
                 align-items: center;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 margin: 0 auto;
                 max-width: 27rem;
+
+                & > div {
+                    align-items: center;
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: space-around;
+                    margin: 0 auto;
+                }
             }
         }
 
         .input-container {
             input {
                 padding: 1rem 1.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .box-container {
+                gap: 2rem;
+
+                .box {
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    padding: 2rem 1.5rem;
+
+                    &.follow {
+                        gap: 3rem;
+                    }
+                }
+            }
+
+            .action-container {
+                .subscribe-container {
+                    flex-direction: column;
+
+                    .textfield {
+                        width: 100%;
+
+                        input {
+                            height: 3.75rem;
+                            padding: 1.12rem 1.5rem;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                }
             }
         }
     }

@@ -41,4 +41,26 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md) {
+        > div {
+            flex-basis: 100%;
+            max-width: 70%;
+        }
+
+        .visit-container {
+            padding: 1.5rem;
+
+            .visit-title {
+                max-width: unset;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        > div {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
 }
