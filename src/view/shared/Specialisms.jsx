@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {capitalize} from '../core/helper';
+import {capitalize} from '../../services/helper';
 import SearchBar from './SearchBar';
 import ArrowIcon from '../../static/arrow.svg';
 

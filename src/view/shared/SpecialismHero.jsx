@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
-import {capitalize} from '../core/helper';
+import {capitalize} from '../../services/helper';
 
 const SpecialismHero = props => {
   const {

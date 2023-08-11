@@ -3,7 +3,7 @@ import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import Input from '../shared/Input';
-import {fetchApi} from '../core/api';
+import {fetchApi} from '../../services/api';
 
 const ContactForm = () => {
   const {
