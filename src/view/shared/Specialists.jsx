@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 
 import PhoneIcon from '../../static/phone-number.svg';
 import EmailIcon from '../../static/email.svg';
@@ -9,11 +10,9 @@ import EmailGreyIcon from '../../static/email-grey.svg';
 import LinkedInGreyIcon from '../../static/linkedin-grey.svg';
 
 const Specialists = props => {
-  const {name, specialists, executive} = props;
+  const {type = 'leadership', name, specialists, executive} = props;
 
-  const headerText = name
-    ? `Specialists in ${name}`
-    : 'Leadership Team';
+  const {t} = useTranslation(['huddle']);
 
   return (
     <div className='specialists'>
@@ -23,12 +22,12 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {headerText}
+                  {t(`huddle:specialists:${type}:title`, {name})}
                 </h2>
               </div>
               <div className='text'>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus.
+                  {t(`huddle:specialists:${type}:desc`)}
                 </span>
               </div>
             </div>

@@ -7,7 +7,7 @@ import OurStory from '../shared/OurStory';
 
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero type='leadership'>
+    <Hero type='leadershipTeam'>
       A leadership with <a>unrivalled</a> experience
     </Hero>
     <Leaders />

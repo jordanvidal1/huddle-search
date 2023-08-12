@@ -7,7 +7,7 @@ import FollowUs from './FollowUs';
 
 const ContactUs = () => (
   <div className='contact-us'>
-    <Hero type='contact'>
+    <Hero type='contactUs'>
       We’d love you to give us a <a>shout</a>
     </Hero>
     <ContactForm />

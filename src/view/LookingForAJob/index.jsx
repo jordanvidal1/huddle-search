@@ -8,7 +8,7 @@ import ResourcesPage from '../shared/ResourcesPage';
 
 const LookingForAJob = () => (
   <div className='looking-for-a-job'>
-    <Hero empty>
+    <Hero type='lookingForAJob' empty>
       Looking for a <a>job?</a>
     </Hero>
     <SearchRoles />

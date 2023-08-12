@@ -10,15 +10,15 @@ import Logo from '../../static/text-logo-gold.svg';
 
 const ExecutiveSearch = () => (
   <div className='executive-search'>
-    <Hero contact executive>
+    <Hero type='executiveSearch' contact executive>
       <p>
         A specialist service by<img alt='logo-gold' src={Logo} />
       </p>
       Executive
       <p>SEARCH</p>
     </Hero>
-    <ProPoints type='executive' />
-    <Service type='executive'>
+    <ProPoints type='executiveSearch' />
+    <Service type='executiveSearch'>
       A specialised service powered by AI
     </Service>
     <Leadership executive />

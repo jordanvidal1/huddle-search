@@ -1,0 +1,383 @@
+{
+  "home": {
+    "hero": {
+      "title": "Because every search starts with a huddle",
+      "desc": "At Huddle – we are redefining tech recruitment – by delivering new ways compelling opportunities meet the industry’s top-tier talent.",
+      "button": "Browse all jobs"
+    },
+    "lookingForAJob": {
+      "desc": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "link": "Find out more",
+      "roles": {
+        "title": "Featured roles",
+        "button": "Browse all jobs"
+      }
+    }
+  },
+  "lookingToHire": {
+    "home": {
+      "desc": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "cv": {
+        "title": "Be sent 3 CVs with no obligations",
+        "text": "Instantly discover talent by receiving three targeted CVs via our automated candidate sourcing tech – commitment-free.",
+        "link": "Request now"
+      }
+    },
+    "lookingToHire": {
+      "desc": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
+      "cv": {
+        "title": "Be sent 3 CVs with no obligations",
+        "text": "Instantly discover talent by receiving three targeted CVs via our automated candidate sourcing tech – commitment-free.",
+        "link": "Request now"
+      }
+    },
+    "specialisms": {
+      "desc": "Our expansive team of experts covers a diverse array of fields, enabling us to provide comprehensive solutions across various specialisms."
+    },
+    "sectors": {
+      "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and opportunities."
+    },
+    "contract": {
+      "desc": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
+      "button": "Find out more"
+    }
+  },
+  "executiveSearch": {
+    "title": {
+      "part1": "A specialist service by",
+      "part2": "Executive",
+      "part3": "SEARCH"
+    },
+    "desc": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
+    "info": {
+      "1": {
+        "title": "Research & needs assessment",
+        "text": "By consulting clients, creating detailed role specifications, and analysing markets, we grasp your needs and conditions, enabling a precise recruitment strategy."
+      },
+      "2": {
+        "title": "Executive identification & outreach",
+        "text": "Through a blend of diverse sourcing, discreet outreach, and meticulous long-listing, we connect with candidates meeting criteria and expressing genuine interest."
+      },
+      "3": {
+        "title": "Assessment & evaluation",
+        "text": "Thorough interviews, reference validation, and assessments such as psychometric tests ensure the selection qualified, compatible candidates, enhancing your recruitment process."
+      },
+      "4": {
+        "title": "Offer management & onboarding",
+        "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
+      }
+    },
+    "button": "Find out more",
+    "specialised": {
+      "title": "A specialised service powered by AI",
+      "text": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision.",
+      "1": {
+        "title": "Simultaneous talent pool targeting",
+        "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+      },
+      "2": {
+        "title": "Extensive data analysis",
+        "text": "We accurately examine suitable candidates with unparalleled position specificity."
+      },
+      "3": {
+        "title": "Automated candidate sourcing",
+        "text": "We intelligently identify and effectively engage with highly-qualified individuals."
+      }
+    }
+  },
+  "embeddedTalent": {
+    "desc": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
+    "link": "Find out more",
+    "info": {
+      "1": {
+        "title": "Onboarding & integration",
+        "text": "We can guarantee seamless assimilation of external talent. Through processes, tools, training, and alignment with your culture and objectives, we ensure their swift integration."
+      },
+      "2": {
+        "title": "Resource & skill management",
+        "text": "We perform skill assessments, targeted talent acquisition, gap analysis, talent pools, and ongoing learning to ensure your projects access the right expertise for success."
+      },
+      "3": {
+        "title": "Performance monitoring & feedback",
+        "text": "We ensure external talent's alignment with your company goals, with use of metrics, check-ins, feedback, KPIs, and reviews for effective collaboration and measurable success."
+      },
+      "4": {
+        "title": "Transition & off-boarding",
+        "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
+      }
+    },
+    "button": "Find out more"
+  },
+  "workForUs": {
+    "desc": "Discover more about our innovative company and game-changing service to further ignite your enthusiasm for Huddle.",
+    "container": {
+      "title": "Want to work for us?",
+      "text": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle.",
+      "link": "Join the team"
+    }
+  },
+  "contactUs": {
+    "form": {
+      "title": "Take a moment to talk to the team",
+      "desc": "Feel free to send us a message and we will be sure to get back to you as soon as possible."
+    },
+    "join": "Be the first to know when we announce new roles, service updates, and other communications.",
+    "follow": "Make sure you’re following us across social media to keep up-to-date with new roles and more."
+  },
+  "specialists": {
+    "leadership": {
+      "title": "Leadership Team",
+      "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success."
+    },
+    "specialists": {
+      "title": "Specialists in {{name}}",
+      "desc": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
+    }
+  },
+  "specialismHero": {
+    "title": {
+      "specialism": "Specialism {{name}}",
+      "sector": "Sector {{name}}"
+    },
+    "desc": {
+      "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
+      "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "lookingForAJob": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
+      "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
+      "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
+    },
+    "button": "Browse all jobs"
+  },
+  "leadershipHero": {
+    "leadershipTeam": {
+      "path": "/leadership-team",
+      "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success.",
+      "info": {
+        "title": "The leadership in numbers..."
+      }
+    },
+    "ourStory": {
+      "path": "/our-story",
+      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment.",
+      "info": {
+        "title": "The mission statement...",
+        "text": "Our mission is to revolutionise the recruitment landscape by delivering exceptional results through innovative practices. We are dedicated to exceeding client expectations by leveraging cutting-edge approaches that consistently source, assess, and match top-tier talent. Through our unwavering commitment to excellence and continuous innovation, we strive to transform businesses and careers, driving success and shaping the future of recruitment."
+      },
+      "button": "Find out more"
+    },
+    "ourProcess": {
+      "path": "/our-process",
+      "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified candidates efficiently and with unprecedented precision.",
+      "info": {
+        "title": "The internal propitiatory tech...",
+        "calculation": {
+          "1": {
+            "title": "Simultaneous talent pool targeting",
+            "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+          },
+          "2": {
+            "title": "Simultaneous talent pool targeting",
+            "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+          },
+          "3": {
+            "title": "Simultaneous talent pool targeting",
+            "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+          }
+        }
+      },
+      "button": "Find out more"
+    },
+    "executiveSearch": {
+      "path": "/executive-search",
+      "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision."
+    },
+    "workForUs": {
+      "path": "/work-for-us",
+      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
+    },
+    "contactUs": {
+      "path": "/contact-us",
+      "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
+    }
+  },
+  "infoContainer": {
+    "vacancy": {
+      "title": "Have a vacancy to fill?",
+      "text": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "button": "Submit new role"
+    },
+    "help": {
+      "title": "Need help with something?",
+      "text": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service.",
+      "button": "Talk to us"
+    },
+    "cv": {
+      "title": "Want 3 CVs with no obligations?",
+      "text": "Instantly discover talent by receiving three targeted CVs via our automated candidate sourcing tech – commitment-free.",
+      "button": "Request role"
+    }
+  },
+  "contactContainer": {
+    "phone": {
+      "title": "Phone",
+      "executiveTitle": "Speak over the phone",
+      "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
+      "executiveText": "Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.",
+      "phoneNumber": "+44 0000 000 000"
+    },
+    "email": {
+      "title": "Email",
+      "executiveTitle": "Send us an email",
+      "text": "Want to start a conversation about our embedded talent solutions? Our team is here to help.",
+      "executiveText": "Want to start a conversation about our specialised service for executive hires? Our team is here to help.",
+      "emailAddress": "hello@huddlesearch.com"
+    }
+  },
+  "visitContainer": {
+    "phone": {
+      "title": "Phone",
+      "text": "Mon-Fri from 8am to 5pm.",
+      "phoneNumber": "+44 0000 000 000"
+    },
+    "email": {
+      "title": "Email",
+      "text": "Our team is here to help.",
+      "emailAddress": "hello@huddlesearch.com"
+    },
+    "visit": {
+      "title": "Visit",
+      "text": "Come say hello at our office."
+    }
+  },
+  "proPoints": {
+    "ourStory": {
+      "title": "Values that make us who we are",
+      "desc": "We abide by five core company values which serve as the compass that directs our actions, shapes our culture, and fuels our commitment to excellence.",
+      "points": {
+        "1": {
+          "title": "Integrity",
+          "text": "Upholding the highest ethical standards in every interaction and decision."
+        },
+        "2": {
+          "title": "Transparency",
+          "text": "Fostering open communication and trust, ensuring clarity in all engagements."
+        },
+        "3": {
+          "title": "Honesty",
+          "text": "Embracing truthfulness and sincerity, building authentic relationships with clients and candidates."
+        },
+        "4": {
+          "title": "Efficiency",
+          "text": "Streamlining processes and delivering prompt, effective solutions to meet client needs."
+        },
+        "5": {
+          "title": "Excellence",
+          "text": "Demonstrating meticulous attention to detail and a commitment to achieving remarkable results for clients and candidates alike."
+        }
+      }
+    },
+    "ourProcess": {
+      "title": "Why it’s great for clients",
+      "desc": "Our AI technology provides us, and our clients, a plethora of advantages, such as expanded candidate talent pools, higher candidate quality, unbiased selection, reduced time-to-fill, and cost savings for hiring companies.",
+      "points": {
+        "1": {
+          "title": "Larger candidate talent pools",
+          "text": "Expanding candidate talent pools to ensure a comprehensive and diverse sourcing approach."
+        },
+        "2": {
+          "title": "Higher quality of candidates & key info",
+          "text": "Elevating candidate quality by accessing key information for more informed and effective decision-making."
+        },
+        "3": {
+          "title": "No bias, complying with inclusion policies",
+          "text": "Ensuring an unbiased and equitable selection process, in strict compliance with inclusion policies."
+        },
+        "4": {
+          "title": "Overall time-to-fill is reduced",
+          "text": "Significantly reducing the overall time-to-fill vacancies, streamlining the recruitment journey."
+        },
+        "5": {
+          "title": "Cost savings are passed to hiring companies",
+          "text": "Passing on cost savings directly to hiring companies, optimising resource allocation and maximising value."
+        }
+      }
+    },
+    "executiveSearch": {
+      "title": "Why Executive Search is great for clients",
+      "desc": "Our process encompasses comprehensive research, diverse candidate sourcing, thorough evaluation, and streamlined offer management and onboarding, ensuring a seamless transition into new roles for top-tier executive talent.",
+      "points": {
+        "1": {
+          "title": "Research & needs assessment",
+          "text": "By consulting clients, creating detailed role specifications, and analysing markets, we grasp your needs and conditions, enabling a precise recruitment strategy."
+        },
+        "2": {
+          "title": "Executive identification & outreach",
+          "text": "Through a blend of diverse sourcing, discreet outreach, and meticulous long-listing, we connect with candidates meeting criteria and expressing genuine interest."
+        },
+        "3": {
+          "title": "Assessment & evaluation",
+          "text": "Thorough interviews, reference validation, and assessments such as psychometric tests ensure the selection qualified, compatible candidates, enhancing your recruitment process."
+        },
+        "4": {
+          "title": "Offer management & onboarding",
+          "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
+        }
+      }
+    },
+    "contractInterim": {
+      "title": "Why our contract service is great for clients",
+      "desc": "Our streamlined contract service encompasses effective client engagement, candidate sourcing and shortlisting, interview coordination, seamless onboarding, performance monitoring, and contract management for a comprehensive and smooth transition.",
+      "points": {
+        "1": {
+          "title": "Client engagement & requirement understanding",
+          "text": "We initiate communication, gather comprehensive job specifications, and establish clear contract terms to lay the groundwork for a successful partnership."
+        },
+        "2": {
+          "title": "Candidate sourcing & shortlisting",
+          "text": "Our candidate sourcing and shortlisting strategy involves diverse channels, thorough screening, and meticulous evaluation, resulting in a refined shortlist of the most fitting candidates for the next selection stage."
+        },
+        "3": {
+          "title": "Interview & selection process",
+          "text": "We manage interview coordination, gather feedback for refinement, and facilitate offer negotiation to ensure a seamless transition for the chosen candidate."
+        },
+        "4": {
+          "title": "Onboarding & contract management",
+          "text": "We finalise contracts, guide seamless candidate onboarding, monitor performance, and discuss contract renewal or conclusion for a smooth transition."
+        }
+      }
+    },
+    "embeddedTalent": {
+      "title": "Why embedding Huddle is great for clients",
+      "desc": "Our services ensure seamless assimilation of external talent, expert resource management, performance alignment through metrics and feedback, and smooth transitions for optimised collaboration.",
+      "points": {
+        "1": {
+          "title": "Onboarding & integration",
+          "text": "We can guarantee seamless assimilation of external talent. Through processes, tools, training, and alignment with your culture and objectives, we ensure their swift integration."
+        },
+        "2": {
+          "title": "Resource & skill management",
+          "text": "We perform skill assessments, targeted talent acquisition, gap analysis, talent pools, and ongoing learning to ensure your projects access the right expertise for success."
+        },
+        "3": {
+          "title": "Performance monitoring & feedback",
+          "text": "We ensure external talent's alignment with your company goals, with use of metrics, check-ins, feedback, KPIs, and reviews for effective collaboration and measurable success."
+        },
+        "4": {
+          "title": "Transition & off-boarding",
+          "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
+        }
+      }
+    }
+  },
+  "footer": {
+    "lookingToHire": {
+      "title": "Looking to hire?",
+      "desc": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape."
+    },
+    "lookingForAJob": {
+      "title": "Looking for a job?",
+      "desc": "Browse our exciting open roles, find opportunities that meet your aspirations, and apply online."
+    }
+  }
+}

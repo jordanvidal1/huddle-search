@@ -4,7 +4,7 @@ import PhoneIcon from '../../static/phone.svg';
 import EmailIcon from '../../static/email-pink.svg';
 import VisitIcon from '../../static/visit.svg';
 
-const ContactVisitContainer = () => (
+const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>
     <Grid item xs={12} sm={4}>
       <div className='visit-container'>
@@ -12,18 +12,18 @@ const ContactVisitContainer = () => (
           <img alt='vacancy-icon' src={PhoneIcon} />
           <div className='visit-title'>
             <h5>
-              Phone
+              {t('huddle:visitContainer:phone:title')}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              Mon-Fri from 8am to 5pm.
+              {t('huddle:visitContainer:phone:text')}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            +44 0000 000 000
+            {t('huddle:visitContainer:phone:phoneNumber')}
           </p>
         </div>
       </div>
@@ -34,18 +34,18 @@ const ContactVisitContainer = () => (
           <img alt='help-icon' src={EmailIcon} />
           <div className='visit-title'>
             <h5>
-              Email
+              {t('huddle:visitContainer:email:title')}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              Our team is here to help.
+              {t('huddle:visitContainer:email:text')}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            hello@huddlesearch.com
+            {t('huddle:visitContainer:email:emailAddress')}
           </p>
         </div>
       </div>
@@ -56,12 +56,12 @@ const ContactVisitContainer = () => (
           <img alt='cv-icon' src={VisitIcon} />
           <div className='visit-title'>
             <h5>
-              Visit
+              {t('huddle:visitContainer:visit:title')}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              Come say hello at our office.
+              {t('huddle:visitContainer:visit:text')}
             </p>
           </div>
         </div>

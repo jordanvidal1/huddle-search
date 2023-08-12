@@ -7,10 +7,10 @@ import OurStory from '../shared/OurStory';
 
 const OurProcess = () => (
   <div className='our-story'>
-    <Hero type='process'>
+    <Hero type='ourProcess'>
       Leveraging AI to source hires <a>faster & cheaper</a>
     </Hero>
-    <ProPoints type='process' />
+    <ProPoints type='ourProcess' />
     <Leadership />
     <OurStory type='story'>
       Three leaders form a huddle to <a>reimagine</a> recruitment

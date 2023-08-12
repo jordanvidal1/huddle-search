@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Router from './view/core/Router';
 
+import './services/i18n';
 import './view/fonts';
 import './styles/index.scss';
 

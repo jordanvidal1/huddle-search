@@ -1,47 +1,42 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
-const texts = {
-  story: {
-    body: 'Lorem ipsum dolor sit amet consectetur. Purus vulputate scele risque tellus massa purus velit. In ullamcorper gravida ut morbimet diam nisl gravida porttitor neque.',
-    path: '/our-story'
-  },
-  process: {
-    body: 'Lorem ipsum dolor sit amet consectetur. Purus vulputate scele risque tellus massa purus velit. In ullamcorper gravida ut morbimet diam nisl gravida porttitor neque.',
-    path: '/our-process'
-  }
-};
+import {useTranslation} from 'react-i18next';
+import {capitalize} from '../../services/helper';
 
 const OurStory = ({
   children,
   type
-}) => (
-  <div className={`our-${type}-static`}>
-    <div className='container'>
-      <div className='inner-container'>
-        <div className='content'>
-          <h5>
-            {texts[type].path}
-          </h5>
-          <div className='title'>
-            <h2>
-              {children}
-            </h2>
-          </div>
-          <div className='text'>
-            <p>
-              {texts[type].body}
-            </p>
-          </div>
-          <div className='btn-container'>
-            <Link to={`/our-${type}`} className='btn btn-secondary'>
-              Find out more
-            </Link>
+}) => {
+  const {t} = useTranslation(['huddle']);
+
+  return (
+    <div className={`our-${type}-static`}>
+      <div className='container'>
+        <div className='inner-container'>
+          <div className='content'>
+            <h5>
+              {t(`huddle:leadershipHero:our${capitalize(type)}:path`)}
+            </h5>
+            <div className='title'>
+              <h2>
+                {children}
+              </h2>
+            </div>
+            <div className='text'>
+              <p>
+                {t(`huddle:leadershipHero:our${capitalize(type)}:desc`)}
+              </p>
+            </div>
+            <div className='btn-container'>
+              <Link to={`/our-${type}`} className='btn btn-secondary'>
+                {t(`huddle:leadershipHero:our${capitalize(type)}:button`)}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default OurStory;

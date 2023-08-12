@@ -7,10 +7,10 @@ import WorkForUs from '../shared/WorkForUs';
 
 const EmbeddedTalent = () => (
   <div className='embedded-talent'>
-    <Hero contact>
+    <Hero type='embeddedTalent' contact>
       <a>Embedded</a> talent solutions
     </Hero>
-    <ProPoints type='embedded' />
+    <ProPoints type='embeddedTalent' />
     <Leadership />
     <WorkForUs />
   </div>

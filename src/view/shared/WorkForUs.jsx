@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 
 import ArrowIcon from '../../static/arrow.svg';
@@ -9,6 +10,8 @@ const WorkForUs = ({
   home,
   executive
 }) => {
+  const {t} = useTranslation(['huddle']);
+
   const arrowIcon = executive ? ArrowGoldIcon : ArrowIcon;
 
   return (
@@ -23,9 +26,7 @@ const WorkForUs = ({
             </div>
             <div className='text'>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Tortor est ipsum quis
-                sed aliquam penatibus. Sagittis tellus venenatis quam nullam
-                vitae quam risus faucibus.
+                {t('huddle:workForUs:desc')}
               </p>
             </div>
             <Grid container spacing={4} className='grid-container'
@@ -82,15 +83,14 @@ const WorkForUs = ({
             {home && (
               <div className='cv-container'>
                 <h5>
-                  Want to work for us?
+                  {t('huddle:workForUs:container:title')}
                 </h5>
                 <p>
-                  Huddle is always on the lookout for talent. If you want to
-                  join our incredible team, check out our open roles.
+                  {t('huddle:workForUs:container:text')}
                 </p>
                 <div className='link-container'>
                   <Link to='/work-for-us'>
-                    Join the team<img alt='arrow-icon' src={ArrowIcon}/>
+                    {t('huddle:workForUs:container:link')}<img alt='arrow-icon' src={ArrowIcon}/>
                   </Link>
                 </div>
               </div>

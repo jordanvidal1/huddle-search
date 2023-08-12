@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
-import {capitalize} from '../../services/helper';
 
 const SpecialismHero = props => {
   const {
     children,
+    type,
     name,
     contact,
     executive,
@@ -21,7 +22,7 @@ const SpecialismHero = props => {
     setPathname(`${location.pathname.split('/')[1]}`);
   }, [location]);
 
-  const headerText = children || `${capitalize(pathname)} ${name}`;
+  const {t} = useTranslation(['huddle']);
 
   return (
     <div className='specialism-hero'>
@@ -31,26 +32,26 @@ const SpecialismHero = props => {
             <div className='text-container'>
               <div className='title'>
                 <h1>
-                  {headerText}
+                  {children || t(`huddle:specialismHero:title:${pathname}`, {name})}
                 </h1>
               </div>
               <div className='text'>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum. Nisi quisque mi tortor suspendisse consequat.
+                  {t(`huddle:specialismHero:desc:${type}`)}
                 </span>
                 {empty && (
                   <div className='btn-container'>
                     <Link to='/jobs' className='btn btn-secondary'>
-                      Browse all jobs
+                      {t('huddle:specialismHero:button')}
                     </Link>
                   </div>
                 )}
               </div>
             </div>
             {!empty && (contact ? (
-              <ContactContainer executive={executive} />
+              <ContactContainer t={t} executive={executive} />
             ) : (
-              <InfoContainer />
+              <InfoContainer t={t} />
             ))}
           </div>
         </div>

@@ -9,11 +9,11 @@ import OurStoryStatic from '../shared/OurStory';
 
 const OurStory = () => (
   <div className='our-story'>
-    <Hero type='story'>
+    <Hero type='ourStory'>
       Experts unite to <a>redefine</a> an industry
     </Hero>
     <OriginStory />
-    <ProPoints type='story' />
+    <ProPoints type='ourStory' />
     <Leadership />
     <OurStoryStatic type='process'>
       Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale

@@ -7,30 +7,28 @@ import PhoneGreyIcon from '../../static/phone-grey.svg';
 import EmailGreyIcon from '../../static/contact-email-grey.svg';
 
 const ContactContainer = ({
+  t,
   executive
 }) => (
-  <Grid container spacing={3} className='contact-grid-container'>
+  <Grid container spacing={3} justifyContent='center' className='contact-grid-container'>
     <Grid item xs={6}>
       <div className='contact-container'>
         <div className='contact-text-container'>
           <img alt='vacancy-icon' src={executive ? PhoneGreyIcon : PhoneIcon} />
           <div className='contact-title'>
             <h5>
-              {executive ? 'Phone' : 'Speak over the phone'}
+              {t(`huddle:contactContainer:phone:${executive ? 'executiveTitle' : 'title'}`)}
             </h5>
           </div>
           <div className='contact-text'>
             <p>
-              {executive
-                ? 'Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.'
-                : 'Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.'
-              }
+              {t(`huddle:contactContainer:phone:${executive ? 'executiveText' : 'text'}`)}
             </p>
           </div>
         </div>
         <div className='contact-info'>
           <p>
-            +44 0000 000 000
+            {t('huddle:contactContainer:phone:phoneNumber')}
           </p>
         </div>
       </div>
@@ -41,21 +39,19 @@ const ContactContainer = ({
           <img alt='help-icon' src={executive ? EmailGreyIcon : EmailIcon} />
           <div className='contact-title'>
             <h5>
-              {executive ? 'Email' : 'Send us an email'}
+              {t(`huddle:contactContainer:email:${executive ? 'executiveTitle' : 'title'}`)}
             </h5>
           </div>
           <div className='contact-text'>
             <p>
-              {executive
-                ? 'Want to start a conversation about our specialised service for executive hires? Our team is here to help.'
-                : 'Want to start a conversation about our embedded talent solutions? Our team is here to help.'
-              }
+              {t(`huddle:contactContainer:email:${executive ? 'executiveText' : 'text'}`)}
             </p>
           </div>
         </div>
         <div className='contact-info'>
           <p>
-            hello@huddlesearch.com
+            {t('huddle:contactContainer:email:emailAddress')}
+
           </p>
         </div>
       </div>

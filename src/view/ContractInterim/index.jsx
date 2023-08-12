@@ -7,10 +7,10 @@ import WorkForUs from '../shared/WorkForUs';
 
 const ContractInterim = () => (
   <div className='contract-interim'>
-    <Hero>
+    <Hero type='contractInterim'>
       <a>Contract</a> hires to deliver your project
     </Hero>
-    <ProPoints type='contract' />
+    <ProPoints type='contractInterim' />
     <Leadership />
     <WorkForUs />
   </div>

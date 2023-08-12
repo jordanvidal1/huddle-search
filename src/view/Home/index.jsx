@@ -12,7 +12,7 @@ import EmbeddedTalent from '../shared/EmbeddedTalent';
 const Home = () => (
   <div className='home'>
     <Hero />
-    <LookingToHire>
+    <LookingToHire type='home'>
       Looking to <a>hire?</a>
     </LookingToHire>
     <LookingForAJob />

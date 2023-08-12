@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 import Signature1 from '../../static/signature-1.svg';
@@ -7,12 +8,12 @@ import Signature3 from '../../static/signature-3.svg';
 import PlusIcon from '../../static/plus.svg';
 import EqualsIcon from '../../static/equals.svg';
 
-const leadershipComponent = () => (
+const leadershipComponent = t => (
   <div className='info-container'>
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          The leadership in numbers...
+          {t('huddle:leadershipHero:leadershipTeam:info:title')}
         </h5>
       </div>
       <div className='info-details'>
@@ -52,17 +53,17 @@ const signatures = [
   {...defaultSignature, img: Signature3}
 ];
 
-const ourStoryComponent = () => (
+const ourStoryComponent = t => (
   <div className='info-container'>
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          The mission statement...
+          {t('huddle:leadershipHero:ourStory:info:title')}
         </h5>
       </div>
       <div className='info-description'>
         <span>
-          Lorem ipsum dolor sit amet consectetur. Tempor auctor posuere parturient sit amet nisl duis nibh consectetur. Ullamcorper sit eu faucibus volutpat quam tellus. Elit mi lorem ultrices in dolor adipiscing. Convallis quisque sed ipsum egestas. Leo aliquam sed convallis nunc proin.
+          {t('huddle:leadershipHero:ourStory:info:text')}
         </span>
       </div>
       <div className='info-signatures'>
@@ -80,39 +81,39 @@ const ourStoryComponent = () => (
   </div>
 );
 
-const ourProcessComponent = () => (
+const ourProcessComponent = t => (
   <div className='info-container'>
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          The internal propitiatory tech...
+          {t('huddle:leadershipHero:ourProcess:info:title')}
         </h5>
       </div>
       <div className='info-calculation'>
         <div>
           <h5>
-            Simultaneous talent pool targeting
+            {t('huddle:leadershipHero:ourProcess:info:calculation:1:title')}
           </h5>
           <span>
-            We run concurrent searches on internal and external sources e.g. pro networks and job boards.
+            {t('huddle:leadershipHero:ourProcess:info:calculation:1:text')}
           </span>
         </div>
         <img alt='plus-icon' src={PlusIcon} />
         <div>
           <h5>
-            Extensive data analysis
+            {t('huddle:leadershipHero:ourProcess:info:calculation:2:title')}
           </h5>
           <span>
-            We accurately examine suitable candidates with unparalleled position specificity.
+            {t('huddle:leadershipHero:ourProcess:info:calculation:2:text')}
           </span>
         </div>
         <img alt='equals-icon' src={EqualsIcon} />
         <div>
           <h5>
-            Automated candidate sourcing
+            {t('huddle:leadershipHero:ourProcess:info:calculation:3:title')}
           </h5>
           <span>
-            We intelligently identify and effectively engage with highly-qualified individuals.
+            {t('huddle:leadershipHero:ourProcess:info:calculation:3:text')}
           </span>
         </div>
       </div>
@@ -120,43 +121,22 @@ const ourProcessComponent = () => (
   </div>
 );
 
-const elements = {
-  leadership: {
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    path: '/leadership-team',
-    infoComponent: leadershipComponent()
-  },
-  story: {
-    path: '/our-story',
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    infoComponent: ourStoryComponent()
-  },
-  process: {
-    path: '/our-process',
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    infoComponent: ourProcessComponent()
-  },
-  work: {
-    path: '/work-for-us',
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    infoComponent: Roles({
-      children: 'Open roles at Huddle',
-      name: 'Huddle'
-    })
-  },
-  contact: {
-    path: '/contact-us',
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    infoComponent: ContactContainer()
-  },
-  executive: {
-    text: 'Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.',
-    infoComponent: ourProcessComponent()
-  }
-};
-
 const LeadershipHero = props => {
   const {children, type} = props;
+
+  const {t} = useTranslation(['huddle'])
+
+  const components = {
+    leadershipTeam: leadershipComponent(t),
+    ourStory: ourStoryComponent(t),
+    ourProcess: ourProcessComponent(t),
+    workForUs: Roles({
+      children: 'Open roles at Huddle',
+      name: 'Huddle'
+    }),
+    contactUs: ContactContainer(t),
+    executiveSearch: ourProcessComponent(t)
+  };
 
   return (
     <div className='leadership-hero'>
@@ -165,7 +145,7 @@ const LeadershipHero = props => {
           <div className='content'>
             <div className='text-container'>
               <h5>
-                {elements[type].path}
+                {t(`huddle:leadershipHero:${type}:path`)}
               </h5>
               <div className='title'>
                 <h1>
@@ -174,11 +154,11 @@ const LeadershipHero = props => {
               </div>
               <div className='text'>
                 <span>
-                  {elements[type].text}
+                  {t(`huddle:leadershipHero:${type}:desc`)}
                 </span>
               </div>
             </div>
-            {elements[type].infoComponent}
+            {components[type]}
           </div>
         </div>
       </div>

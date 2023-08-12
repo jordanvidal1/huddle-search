@@ -5,7 +5,7 @@ import VacancyIcon from '../../static/vacancy.svg';
 import HelpIcon from '../../static/help.svg';
 import CVIcon from '../../static/cv.svg';
 
-const InfoContainer = () => (
+const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
     <Grid item xs={12} sm={4}>
       <div className='info-container'>
@@ -13,18 +13,18 @@ const InfoContainer = () => (
           <img alt='vacancy-icon' src={VacancyIcon} />
           <div className='info-title'>
             <h5>
-              Have a vacancy to fill?
+              {t('huddle:infoContainer:vacancy:title')}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+              {t('huddle:infoContainer:vacancy:text')}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            Submit new role
+            {t('huddle:infoContainer:vacancy:button')}
           </button>
         </div>
       </div>
@@ -35,18 +35,18 @@ const InfoContainer = () => (
           <img alt='help-icon' src={HelpIcon} />
           <div className='info-title'>
             <h5>
-              Need help with something?
+              {t('huddle:infoContainer:help:title')}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+              {t('huddle:infoContainer:help:text')}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <Link to='/contact-us' className='btn btn-secondary'>
-            Talk to us
+            {t('huddle:infoContainer:help:button')}
           </Link>
         </div>
       </div>
@@ -57,18 +57,18 @@ const InfoContainer = () => (
           <img alt='cv-icon' src={CVIcon} />
           <div className='info-title'>
             <h5>
-              Want 3 CVs with no obligations?
+              {t('huddle:infoContainer:cv:title')}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices sed dignissim.
+              {t('huddle:infoContainer:cv:text')}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            Request role
+            {t('huddle:infoContainer:cv:button')}
           </button>
         </div>
       </div>
