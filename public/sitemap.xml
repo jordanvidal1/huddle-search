@@ -6,8 +6,8 @@
 <url> <loc>https://www.huddlesearch.com/jobs/:id</loc> </url>
 <url> <loc>https://www.huddlesearch.com/resources</loc> </url>
 <url> <loc>https://www.huddlesearch.com/resources/:id</loc> </url>
-<url> <loc>https://www.huddlesearch.com/specialism/:id</loc> </url>
-<url> <loc>https://www.huddlesearch.com/sector/:id</loc> </url>
+<url> <loc>https://www.huddlesearch.com/specialisms/:id</loc> </url>
+<url> <loc>https://www.huddlesearch.com/sectors/:id</loc> </url>
 <url> <loc>https://www.huddlesearch.com/looking-to-hire</loc> </url>
 <url> <loc>https://www.huddlesearch.com/looking-for-a-job</loc> </url>
 <url> <loc>https://www.huddlesearch.com/executive-search</loc> </url>
