@@ -23,12 +23,12 @@ const routes = [
   },
   {
     name: 'Specialisms',
-    path: '/specialism'
+    path: '/specialisms'
     // subLinks: []
   },
   {
     name: 'Sectors',
-    path: '/sector'
+    path: '/sectors'
     // subLinks: []
   },
   {

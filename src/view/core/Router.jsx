@@ -21,6 +21,9 @@ import Jobs from '../Jobs';
 import Resources from '../Resources';
 import Specialism from '../Specialism';
 
+// import Job from '../Job';
+// import Resource from '../Resource';
+
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
 import OurProcess from '../OurProcess';
@@ -34,13 +37,13 @@ const RouterComponent = () => (
       <Routes>
         <Route path='/' Component={Home} />
         <Route path='/jobs' Component={Jobs} />
-        {/*<Route path='/jobs/:jobIndex' Component={Job} />*/}
+        {/*<Route path='/jobs/:id' Component={Job} />*/}
         <Route path='/resources' Component={Resources} />
-        {/*<Route path='/resources/:resourceIndex' Component={Resource} />*/}
-        <Route path='/specialism' Component={Specialism} />
-        {/*<Route path='/specialism/:specialismIndex' Component={Specialism}/>*/}
-        <Route path='/sector' Component={Specialism} />
-        {/*<Route path='/sector/:sectorIndex' Component={Specialism} />*/}
+        {/*<Route path='/resources/:id' Component={Resource} />*/}
+        <Route path='/specialisms' Component={Specialism} />
+        {/*<Route path='/specialisms/:id' Component={Specialism}/>*/}
+        <Route path='/sectors' Component={Specialism} />
+        {/*<Route path='/sectors/:id' Component={Specialism} />*/}
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />

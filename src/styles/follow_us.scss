@@ -66,8 +66,14 @@
             .subscribe-container {
                 align-items: center;
                 display: flex;
+                flex-wrap: wrap;
                 gap: 1rem;
                 margin-bottom: 1rem;
+
+                input {
+                    height: 3.5rem;
+                    min-width: 23rem;
+                }
             }
 
             .socials {

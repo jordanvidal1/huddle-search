@@ -109,9 +109,9 @@ const Footer = () => {
                         <ul>
                           <li><Link to='/looking-to-hire'>Looking to hire</Link></li>
                           <li><Link to='/looking-for-a-job'>Looking for a job</Link></li>
-                          <li><Link to='/specialism'>Specialisms</Link></li>
+                          <li><Link to='/specialisms'>Specialisms</Link></li>
                           {/* todo: dropdown links */}
-                          <li><Link to='/sector'>Sectors</Link></li>
+                          <li><Link to='/sectors'>Sectors</Link></li>
                           {/* todo: dropdown links */}
                           <li><Link to='/resources'>Resources</Link></li>
                         </ul>
