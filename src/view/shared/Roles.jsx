@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import Role from './Role';
-import ArrowIcon from '../../static/arrow.svg';
+import ArrowIcon from '../../static/huddle/arrow.svg';
 
 const Roles = props => {
   const {children, name} = props;

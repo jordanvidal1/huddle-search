@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import Resource from './Resource';
-import ArrowIcon from '../../static/arrow.svg';
+import ArrowIcon from '../../static/huddle/arrow.svg';
 
 const Resources = props => {
   const {name} = props;

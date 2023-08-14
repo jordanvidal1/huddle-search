@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 
 const ContractHires = () => {
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='contract-hires'>
@@ -17,12 +17,12 @@ const ContractHires = () => {
             </div>
             <div className='text'>
             <span className='body'>
-              {t('huddle:lookingToHire:contract:desc')}
+              {t(`${window.SITE_NAME}:lookingToHire:contract:desc`)}
             </span>
             </div>
             <div className='btn-container'>
               <Link to='/contract-interim' className="btn btn-secondary">
-                {t('huddle:lookingToHire:contract:button')}
+                {t(`${window.SITE_NAME}:lookingToHire:contract:button`)}
               </Link>
             </div>
           </div>

@@ -2,13 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import Input from '../shared/Input';
-import LinkedIn from '../../static/linkedin-purple.svg';
-import Twitter from '../../static/twitter-purple.svg';
-import Facebook from '../../static/facebook-purple.svg';
-import Instagram from '../../static/instagram-purple.svg';
+import LinkedIn from '../../static/huddle/linkedin-purple.svg';
+import Twitter from '../../static/huddle/twitter-purple.svg';
+import Facebook from '../../static/huddle/facebook-purple.svg';
+import Instagram from '../../static/huddle/instagram-purple.svg';
 
 const FollowUs = () => {
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='follow-us'>
@@ -19,10 +19,10 @@ const FollowUs = () => {
               <div className='box join'>
                 <div className='text-container'>
                   <h3>
-                    {t('huddle:contactUs:join:title')}
+                    {t(`${window.SITE_NAME}:contactUs:join:title`)}
                   </h3>
                   <p>
-                    {t('huddle:contactUs:join:text')}
+                    {t(`${window.SITE_NAME}:contactUs:join:text`)}
                   </p>
                 </div>
                 <div className='action-container'>
@@ -51,10 +51,10 @@ const FollowUs = () => {
               <div className='box follow'>
                 <div className='text-container'>
                   <h3>
-                    {t('huddle:contactUs:follow:title')}
+                    {t(`${window.SITE_NAME}:contactUs:follow:title`)}
                   </h3>
                   <p>
-                    {t('huddle:contactUs:follow:text')}
+                    {t(`${window.SITE_NAME}:contactUs:follow:text`)}
                   </p>
                 </div>
                 <div className='action-container'>

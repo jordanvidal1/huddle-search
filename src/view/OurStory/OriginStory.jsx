@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../static/logo.svg';
+import Logo from '../../static/huddle/logo.svg';
 
 const OriginStory = () => (
   <div className='origin-story'>

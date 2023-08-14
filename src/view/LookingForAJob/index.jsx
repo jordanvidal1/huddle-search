@@ -14,7 +14,7 @@ const LookingForAJob = () => (
     <SearchRoles />
     <Leadership />
     <OurStory type='story'>
-      Three leaders form a huddle to <a>reimagine</a> recruitment
+      Three leaders come together to <a>reimagine</a> recruitment
     </OurStory>
     <OurStory type='process'>
       Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale

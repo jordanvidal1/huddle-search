@@ -8,8 +8,8 @@ export const fetchApi = async (
   body
 ) => {
   const headers = new Headers();
-  headers.set('Authorization', 'Basic ' + Buffer.from('admin' + ":" + 'm4IQ Y6hk BsDw muri 2QHg 1MaV').toString('base64'));
-  // todo: use auth from .env
+  headers.set('Authorization', 'Basic ' + Buffer.from(
+    window.WP_USER + ":" + window.WP_TOKEN).toString('base64'));
 
   const options = {
     method,

@@ -6,11 +6,11 @@ import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
 
-import Logo from '../../static/full-logo-dark.svg';
-import Menubar from '../../static/menubar.svg';
-import CloseButton from '../../static/close-button.svg';
-import DropdownArrow from '../../static/header-dropdown-arrow.svg';
-import HeaderArrow from '../../static/header-arrow.svg';
+import Logo from '../../static/huddle/full-logo-dark.svg';
+import Menubar from '../../static/huddle/menubar.svg';
+import CloseButton from '../../static/huddle/close-button.svg';
+import DropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
+import HeaderArrow from '../../static/huddle/header-arrow.svg';
 
 const routes = [
   {
@@ -189,7 +189,7 @@ const Navigator = ({
       <TopNav />
       {renderHeader()}
       {pathname.includes('/resources') && <ResourcesNav />}
-      <div id='content'>
+      <div id='content' className={`nav-content ${window.SITE_NAME}`}>
         {content}
         <Footer />
       </div>

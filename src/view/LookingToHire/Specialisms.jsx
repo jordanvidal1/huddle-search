@@ -1,18 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {capitalize} from '../../services/helper';
 import SearchBar from '../shared/SearchBar';
-import ArrowIcon from '../../static/arrow.svg';
+import ArrowIcon from '../../static/huddle/arrow.svg';
 
 const Specialisms = props => {
-  const {type, name, specialisms} = props;
+  const {type, specialisms} = props;
 
-  const {t} = useTranslation(['huddle']);
-
-  const headerText = name
-    ? `${capitalize(type)} in ${name}`
-    : capitalize(type);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className={`specialisms ${type}`}>
@@ -22,12 +17,12 @@ const Specialisms = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {headerText}
+                  {t(`${window.SITE_NAME}:lookingToHire:${type}:title`)}
                 </h2>
               </div>
               <div className='text'>
                 <span>
-                  {t(`huddle:lookingToHire:${type}:desc`)}
+                  {t(`${window.SITE_NAME}:lookingToHire:${type}:desc`)}
                 </span>
               </div>
             </div>

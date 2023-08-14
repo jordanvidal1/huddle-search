@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
-import Dropdown from '../../static/dropdown-arrow.svg';
+import Dropdown from '../../static/huddle/dropdown-arrow.svg';
 
 const leftRoutes = [
   {

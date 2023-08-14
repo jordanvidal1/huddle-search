@@ -13,7 +13,7 @@ const OurProcess = () => (
     <ProPoints type='ourProcess' />
     <Leadership />
     <OurStory type='story'>
-      Three leaders form a huddle to <a>reimagine</a> recruitment
+      Three leaders come together to <a>reimagine</a> recruitment
     </OurStory>
   </div>
 );

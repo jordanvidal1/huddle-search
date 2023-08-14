@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {capitalize} from '../../services/helper';
+import {capitalize} from '@material-ui/core';
 
 const OurStory = ({
   children,
   type
 }) => {
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className={`our-${type}-static`}>
@@ -15,7 +15,7 @@ const OurStory = ({
         <div className='inner-container'>
           <div className='content'>
             <h5>
-              {t(`huddle:leadershipHero:our${capitalize(type)}:path`)}
+              {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:path`)}
             </h5>
             <div className='title'>
               <h2>
@@ -24,12 +24,12 @@ const OurStory = ({
             </div>
             <div className='text'>
               <p>
-                {t(`huddle:leadershipHero:our${capitalize(type)}:desc`)}
+                {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:desc`)}
               </p>
             </div>
             <div className='btn-container'>
               <Link to={`/our-${type}`} className='btn btn-secondary'>
-                {t(`huddle:leadershipHero:our${capitalize(type)}:button`)}
+                {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:button`)}
               </Link>
             </div>
           </div>

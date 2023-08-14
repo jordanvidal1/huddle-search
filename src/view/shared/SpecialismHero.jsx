@@ -22,7 +22,7 @@ const SpecialismHero = props => {
     setPathname(`${location.pathname.split('/')[1]}`);
   }, [location]);
 
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='specialism-hero'>
@@ -32,17 +32,17 @@ const SpecialismHero = props => {
             <div className='text-container'>
               <div className='title'>
                 <h1>
-                  {children || t(`huddle:specialismHero:title:${pathname}`, {name})}
+                  {children || t(`${window.SITE_NAME}:specialismHero:title:${pathname}`, {name})}
                 </h1>
               </div>
               <div className='text'>
                 <span>
-                  {t(`huddle:specialismHero:desc:${type}`)}
+                  {t(`${window.SITE_NAME}:specialismHero:desc:${type}`)}
                 </span>
                 {empty && (
                   <div className='btn-container'>
                     <Link to='/jobs' className='btn btn-secondary'>
-                      {t('huddle:specialismHero:button')}
+                      {t(`${window.SITE_NAME}:specialismHero:button`)}
                     </Link>
                   </div>
                 )}

@@ -1,12 +1,16 @@
 {
   "home": {
     "hero": {
-      "title": "Because every search starts with a huddle",
-      "desc": "At Huddle – we are redefining tech recruitment – by delivering new ways compelling opportunities meet the industry’s top-tier talent.",
+      "title": {
+        "part1": "The home of ",
+        "part2": "verified",
+        "part3": " Unitas talent"
+      },
+      "desc": "At Unitas – we are redefining recruitment in finance – by delivering new ways compelling opportunities meet the industry’s top-tier talent.",
       "button": "Browse all jobs"
     },
     "lookingForAJob": {
-      "desc": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "desc": "Transform your finance career with Unitas. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
       "link": "Find out more",
       "roles": {
         "title": "Featured roles",
@@ -16,7 +20,8 @@
   },
   "lookingToHire": {
     "home": {
-      "desc": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "desc": "Elevate your financial team with exceptional talent. Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
+      "link": "Find out more",
       "cv": {
         "title": "Be sent 3 CVs with no obligations",
         "text": "Instantly discover talent by receiving three targeted CVs via our automated candidate sourcing tech – commitment-free.",
@@ -32,9 +37,11 @@
       }
     },
     "specialisms": {
+      "title": "Specialisms",
       "desc": "Our expansive team of experts covers a diverse array of fields, enabling us to provide comprehensive solutions across various specialisms."
     },
     "sectors": {
+      "title": "Sectors",
       "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and opportunities."
     },
     "contract": {
@@ -109,10 +116,10 @@
     "button": "Find out more"
   },
   "workForUs": {
-    "desc": "Discover more about our innovative company and game-changing service to further ignite your enthusiasm for Huddle.",
+    "desc": "Discover more about our innovative company and game-changing service to further ignite your enthusiasm for Unitas.",
     "container": {
       "title": "Want to work for us?",
-      "text": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle.",
+      "text": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Unitas.",
       "link": "Join the team"
     }
   },
@@ -126,7 +133,7 @@
       "text": "Be the first to know when we announce new roles, service updates, and other communications."
     },
     "follow": {
-      "title": "Follow the team @huddlesearch",
+      "title": "Follow the team @unitastalent",
       "text": "Make sure you’re following us across social media to keep up-to-date with new roles and more."
     }
   },
@@ -147,8 +154,8 @@
     },
     "desc": {
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
-      "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "lookingForAJob": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "lookingToHire": "Elevate your financial team with exceptional talent. Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
+      "lookingForAJob": "Transform your finance career with Unitas. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -165,7 +172,7 @@
     },
     "ourStory": {
       "path": "/our-story",
-      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment.",
+      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Unitas, they have formed a powerhouse committed to the innovation of recruitment in finance.",
       "info": {
         "title": "The mission statement...",
         "text": "Our mission is to revolutionise the recruitment landscape by delivering exceptional results through innovative practices. We are dedicated to exceeding client expectations by leveraging cutting-edge approaches that consistently source, assess, and match top-tier talent. Through our unwavering commitment to excellence and continuous innovation, we strive to transform businesses and careers, driving success and shaping the future of recruitment."
@@ -200,7 +207,7 @@
     },
     "workForUs": {
       "path": "/work-for-us",
-      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
+      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Unitas."
     },
     "contactUs": {
       "path": "/contact-us",
@@ -223,7 +230,7 @@
   "infoContainer": {
     "vacancy": {
       "title": "Have a vacancy to fill?",
-      "text": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "text": "Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
       "button": "Submit new role"
     },
     "help": {
@@ -242,7 +249,7 @@
       "title": "Phone",
       "executiveTitle": "Speak over the phone",
       "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
-      "executiveText": "Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.",
+      "executiveText": "Want to chat about Executive Search at Unitas? Our lines are open Mon-Fri from 8am to 5pm.",
       "phoneNumber": "+44 0000 000 000"
     },
     "email": {
@@ -250,7 +257,7 @@
       "executiveTitle": "Send us an email",
       "text": "Want to start a conversation about our embedded talent solutions? Our team is here to help.",
       "executiveText": "Want to start a conversation about our specialised service for executive hires? Our team is here to help.",
-      "emailAddress": "hello@huddlesearch.com"
+      "emailAddress": "hello@unitastalent.com"
     }
   },
   "visitContainer": {
@@ -262,7 +269,7 @@
     "email": {
       "title": "Email",
       "text": "Our team is here to help.",
-      "emailAddress": "hello@huddlesearch.com"
+      "emailAddress": "hello@unitastalent.com"
     },
     "visit": {
       "title": "Visit",
@@ -392,11 +399,14 @@
   "footer": {
     "lookingToHire": {
       "title": "Looking to hire?",
-      "desc": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape."
+      "desc": "Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape."
     },
     "lookingForAJob": {
       "title": "Looking for a job?",
       "desc": "Browse our exciting open roles, find opportunities that meet your aspirations, and apply online."
-    }
+    },
+    "slogan": "The home of verified Unitas talent.",
+    "email": "hello@unitastalent.com",
+    "copyright": "2023 © Unitas Talent. All rights reserved."
   }
 }

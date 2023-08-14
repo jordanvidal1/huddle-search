@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import ArrowIcon from '../../static/arrow.svg';
+import ArrowIcon from '../../static/huddle/arrow.svg';
 
 const LookingToHire = ({
   children,
   type
 }) => {
-  const {t} = useTranslation(['huddle'])
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='looking-to-hire'>
@@ -21,9 +21,13 @@ const LookingToHire = ({
             </div>
             <div className='text'>
               <span className='body'>
-                {t(`huddle:lookingToHire:${type}:desc`)} <Link to='/looking-to-hire'>
-                Find out more<img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
-              </Link>
+                {t(`${window.SITE_NAME}:lookingToHire:${type}:desc`)} {
+                  type === 'home' && (
+                    <Link to='/looking-to-hire'>
+                      {t(`${window.SITE_NAME}:lookingToHire:${type}:link`)}
+                      <img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
+                    </Link>
+                )}
               </span>
             </div>
             <div className='btn-container'>
@@ -36,14 +40,14 @@ const LookingToHire = ({
             </div>
             <div className='cv-container'>
               <h5>
-                {t(`huddle:lookingToHire:${type}:cv:title`)}
+                {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:title`)}
               </h5>
               <p>
-                {t(`huddle:lookingToHire:${type}:cv:text`)}
+                {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:text`)}
               </p>
               <div className='link-container'>
                 <a>
-                  <span>{t(`huddle:lookingToHire:${type}:cv:link`)}<img alt='arrow-icon' src={ArrowIcon} /></span>
+                  <span>{t(`${window.SITE_NAME}:lookingToHire:${type}:cv:link`)}<img alt='arrow-icon' src={ArrowIcon} /></span>
                 </a>
               </div>
             </div>

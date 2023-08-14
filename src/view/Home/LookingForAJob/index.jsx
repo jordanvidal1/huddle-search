@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
 import FeaturedRole from './FeaturedRole';
-import ArrowIcon from '../../../static/arrow.svg';
+import ArrowIcon from '../../../static/huddle/arrow.svg';
 
 const LookingForAJob = () => {
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='looking-for-a-job'>
@@ -20,8 +20,8 @@ const LookingForAJob = () => {
             </div>
             <div className='text'>
               <span className='body'>
-                {t('huddle:home:lookingForAJob:desc')} <Link to='/looking-for-a-job'>
-                {t('huddle:home:lookingForAJob:link')}
+                {t(`${window.SITE_NAME}:home:lookingForAJob:desc`)} <Link to='/looking-for-a-job'>
+                {t(`${window.SITE_NAME}:home:lookingForAJob:link`)}
                 <img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
               </Link>
               </span>
@@ -30,11 +30,11 @@ const LookingForAJob = () => {
               <div className='featured-roles-container'>
                 <div className='subtitle-container'>
                   <h5>
-                    {t('huddle:home:lookingForAJob:roles:title')}
+                    {t(`${window.SITE_NAME}:home:lookingForAJob:roles:title`)}
                   </h5>
                   <div className='link-container'>
                     <Link to='/jobs'>
-                      <span>{t('huddle:home:lookingForAJob:roles:button')}
+                      <span>{t(`${window.SITE_NAME}:home:lookingForAJob:roles:button`)}
                       <img alt='arrow-icon' src={ArrowIcon} /></span>
                     </Link>
                   </div>

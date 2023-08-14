@@ -1,19 +1,20 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import {capitalize} from '@material-ui/core';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
-import Signature1 from '../../static/signature-1.svg';
-import Signature2 from '../../static/signature-2.svg';
-import Signature3 from '../../static/signature-3.svg';
-import PlusIcon from '../../static/plus.svg';
-import EqualsIcon from '../../static/equals.svg';
+import Signature1 from '../../static/huddle/signature-1.svg';
+import Signature2 from '../../static/huddle/signature-2.svg';
+import Signature3 from '../../static/huddle/signature-3.svg';
+import PlusIcon from '../../static/huddle/plus.svg';
+import EqualsIcon from '../../static/huddle/equals.svg';
 
 const leadershipComponent = t => (
   <div className='info-container'>
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t('huddle:leadershipHero:leadershipTeam:info:title')}
+          {t(`${window.SITE_NAME}:leadershipHero:leadershipTeam:info:title`)}
         </h5>
       </div>
       <div className='info-details'>
@@ -58,12 +59,12 @@ const ourStoryComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t('huddle:leadershipHero:ourStory:info:title')}
+          {t(`${window.SITE_NAME}:leadershipHero:ourStory:info:title`)}
         </h5>
       </div>
       <div className='info-description'>
         <span>
-          {t('huddle:leadershipHero:ourStory:info:text')}
+          {t(`${window.SITE_NAME}:leadershipHero:ourStory:info:text`)}
         </span>
       </div>
       <div className='info-signatures'>
@@ -86,34 +87,34 @@ const ourProcessComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t('huddle:leadershipHero:ourProcess:info:title')}
+          {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:title`)}
         </h5>
       </div>
       <div className='info-calculation'>
         <div>
           <h5>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:1:title')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:title`)}
           </h5>
           <span>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:1:text')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:text`)}
           </span>
         </div>
         <img alt='plus-icon' src={PlusIcon} />
         <div>
           <h5>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:2:title')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:2:title`)}
           </h5>
           <span>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:2:text')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:2:text`)}
           </span>
         </div>
         <img alt='equals-icon' src={EqualsIcon} />
         <div>
           <h5>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:3:title')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:title`)}
           </h5>
           <span>
-            {t('huddle:leadershipHero:ourProcess:info:calculation:3:text')}
+            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:text`)}
           </span>
         </div>
       </div>
@@ -124,15 +125,17 @@ const ourProcessComponent = t => (
 const LeadershipHero = props => {
   const {children, type} = props;
 
-  const {t} = useTranslation(['huddle'])
+  const {t} = useTranslation(['huddle', 'unitas']);
+
+  const siteName = capitalize(window.SITE_NAME);
 
   const components = {
     leadershipTeam: leadershipComponent(t),
     ourStory: ourStoryComponent(t),
     ourProcess: ourProcessComponent(t),
     workForUs: Roles({
-      children: 'Open roles at Huddle',
-      name: 'Huddle'
+      children: `Open roles at ${siteName}`,
+      name: siteName
     }),
     contactUs: ContactContainer(t),
     executiveSearch: ourProcessComponent(t)
@@ -145,7 +148,7 @@ const LeadershipHero = props => {
           <div className='content'>
             <div className='text-container'>
               <h5>
-                {t(`huddle:leadershipHero:${type}:path`)}
+                {t(`${window.SITE_NAME}:leadershipHero:${type}:path`)}
               </h5>
               <div className='title'>
                 <h1>
@@ -154,7 +157,7 @@ const LeadershipHero = props => {
               </div>
               <div className='text'>
                 <span>
-                  {t(`huddle:leadershipHero:${type}:desc`)}
+                  {t(`${window.SITE_NAME}:leadershipHero:${type}:desc`)}
                 </span>
               </div>
             </div>

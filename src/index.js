@@ -7,6 +7,12 @@ import './services/i18n';
 import './view/fonts';
 import './styles/index.scss';
 
+window.SITE_NAME = process.env.REACT_APP_SITE_NAME;
+window.HUDDLE = window.SITE_NAME === 'huddle';
+
+window.WP_USER = process.env.REACT_APP_WP_USER;
+window.WP_TOKEN = process.env.REACT_APP_WP_TOKEN;
+
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );

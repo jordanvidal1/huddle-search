@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './Input';
-import SearchIcon from '../../static/search.svg';
+import SearchIcon from '../../static/huddle/search.svg';
 
 const SearchBar = ({
   placeholder

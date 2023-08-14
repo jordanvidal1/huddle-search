@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "start:b": "VARIANT=true react-scripts start",
-    "build": "yarn sitemap && react-scripts build",
-    "build:b": "VARIANT=true react-scripts build",
+    "start:huddle": "env-cmd -f ./.env.huddle react-scripts start",
+    "start:unitas": "env-cmd -f ./.env.unitas react-scripts start",
+    "build:huddle": "env-cmd -f ./.env.huddle yarn sitemap && react-scripts build",
+    "build:unitas": "env-cmd -f ./.env.unitas yarn sitemap && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sitemap": "babel-node src/view/core/sitemap-generator.js"

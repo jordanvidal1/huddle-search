@@ -1,8 +1,8 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import PhoneIcon from '../../static/phone.svg';
-import EmailIcon from '../../static/email-pink.svg';
-import VisitIcon from '../../static/visit.svg';
+import PhoneIcon from '../../static/huddle/phone.svg';
+import EmailIcon from '../../static/huddle/email-pink.svg';
+import VisitIcon from '../../static/huddle/visit.svg';
 
 const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>
@@ -12,18 +12,18 @@ const ContactVisitContainer = (t) => (
           <img alt='vacancy-icon' src={PhoneIcon} />
           <div className='visit-title'>
             <h5>
-              {t('huddle:visitContainer:phone:title')}
+              {t(`${window.SITE_NAME}:visitContainer:phone:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t('huddle:visitContainer:phone:text')}
+              {t(`${window.SITE_NAME}:visitContainer:phone:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            {t('huddle:visitContainer:phone:phoneNumber')}
+            {t(`${window.SITE_NAME}:visitContainer:phone:phoneNumber`)}
           </p>
         </div>
       </div>
@@ -34,18 +34,18 @@ const ContactVisitContainer = (t) => (
           <img alt='help-icon' src={EmailIcon} />
           <div className='visit-title'>
             <h5>
-              {t('huddle:visitContainer:email:title')}
+              {t(`${window.SITE_NAME}:visitContainer:email:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t('huddle:visitContainer:email:text')}
+              {t(`${window.SITE_NAME}:visitContainer:email:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            {t('huddle:visitContainer:email:emailAddress')}
+            {t(`${window.SITE_NAME}:visitContainer:email:emailAddress`)}
           </p>
         </div>
       </div>
@@ -56,12 +56,12 @@ const ContactVisitContainer = (t) => (
           <img alt='cv-icon' src={VisitIcon} />
           <div className='visit-title'>
             <h5>
-              {t('huddle:visitContainer:visit:title')}
+              {t(`${window.SITE_NAME}:visitContainer:visit:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t('huddle:visitContainer:visit:text')}
+              {t(`${window.SITE_NAME}:visitContainer:visit:text`)}
             </p>
           </div>
         </div>

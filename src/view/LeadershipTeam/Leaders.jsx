@@ -1,7 +1,7 @@
 import React from 'react';
-import PhoneIcon from '../../static/phone-number.svg';
-import EmailIcon from '../../static/email.svg';
-import LinkedInIcon from '../../static/linkedin-pink.svg';
+import PhoneIcon from '../../static/huddle/phone-number.svg';
+import EmailIcon from '../../static/huddle/email.svg';
+import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
 
 const Leaders = ({
   leaders

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-import VacancyIcon from '../../static/vacancy.svg';
-import HelpIcon from '../../static/help.svg';
-import CVIcon from '../../static/cv.svg';
+import VacancyIcon from '../../static/huddle/vacancy.svg';
+import HelpIcon from '../../static/huddle/help.svg';
+import CVIcon from '../../static/huddle/cv.svg';
 
 const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
@@ -13,18 +13,18 @@ const InfoContainer = ({t}) => (
           <img alt='vacancy-icon' src={VacancyIcon} />
           <div className='info-title'>
             <h5>
-              {t('huddle:infoContainer:vacancy:title')}
+              {t(`${window.SITE_NAME}:infoContainer:vacancy:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t('huddle:infoContainer:vacancy:text')}
+              {t(`${window.SITE_NAME}:infoContainer:vacancy:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            {t('huddle:infoContainer:vacancy:button')}
+            {t(`${window.SITE_NAME}:infoContainer:vacancy:button`)}
           </button>
         </div>
       </div>
@@ -35,18 +35,18 @@ const InfoContainer = ({t}) => (
           <img alt='help-icon' src={HelpIcon} />
           <div className='info-title'>
             <h5>
-              {t('huddle:infoContainer:help:title')}
+              {t(`${window.SITE_NAME}:infoContainer:help:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t('huddle:infoContainer:help:text')}
+              {t(`${window.SITE_NAME}:infoContainer:help:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <Link to='/contact-us' className='btn btn-secondary'>
-            {t('huddle:infoContainer:help:button')}
+            {t(`${window.SITE_NAME}:infoContainer:help:button`)}
           </Link>
         </div>
       </div>
@@ -57,18 +57,18 @@ const InfoContainer = ({t}) => (
           <img alt='cv-icon' src={CVIcon} />
           <div className='info-title'>
             <h5>
-              {t('huddle:infoContainer:cv:title')}
+              {t(`${window.SITE_NAME}:infoContainer:cv:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t('huddle:infoContainer:cv:text')}
+              {t(`${window.SITE_NAME}:infoContainer:cv:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            {t('huddle:infoContainer:cv:button')}
+            {t(`${window.SITE_NAME}:infoContainer:cv:button`)}
           </button>
         </div>
       </div>

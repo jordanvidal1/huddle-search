@@ -6,7 +6,7 @@ import Service from '../shared/LeadershipHero';
 import Leadership from '../shared/Specialists';
 import WorkForUs from '../shared/WorkForUs';
 
-import Logo from '../../static/text-logo-gold.svg';
+import Logo from '../../static/huddle/text-logo-gold.svg';
 
 const ExecutiveSearch = () => (
   <div className='executive-search'>

@@ -1,18 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {Grid} from '@material-ui/core';
+import {capitalize, Grid} from '@material-ui/core';
 
-import ArrowIcon from '../../static/arrow.svg';
-import ArrowGoldIcon from '../../static/arrow-gold.svg';
+import ArrowIcon from '../../static/huddle/arrow.svg';
+import ArrowGoldIcon from '../../static/huddle/arrow-gold.svg';
 
 const WorkForUs = ({
   home,
   executive
 }) => {
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   const arrowIcon = executive ? ArrowGoldIcon : ArrowIcon;
+  const siteName = capitalize(window.SITE_NAME);
 
   return (
     <div className='work-for-us'>
@@ -21,12 +22,12 @@ const WorkForUs = ({
           <div className='content'>
             <div className='title'>
               <h2>
-                More reasons to get <a>excited</a> about Huddle
+                More reasons to get <a>excited</a> about {siteName}
               </h2>
             </div>
             <div className='text'>
               <p>
-                {t('huddle:workForUs:desc')}
+                {t(`${window.SITE_NAME}:workForUs:desc`)}
               </p>
             </div>
             <Grid container spacing={4} className='grid-container'
@@ -83,14 +84,14 @@ const WorkForUs = ({
             {home && (
               <div className='cv-container'>
                 <h5>
-                  {t('huddle:workForUs:container:title')}
+                  {t(`${window.SITE_NAME}:workForUs:container:title`)}
                 </h5>
                 <p>
-                  {t('huddle:workForUs:container:text')}
+                  {t(`${window.SITE_NAME}:workForUs:container:text`)}
                 </p>
                 <div className='link-container'>
                   <Link to='/work-for-us'>
-                    {t('huddle:workForUs:container:link')}<img alt='arrow-icon' src={ArrowIcon}/>
+                    {t(`${window.SITE_NAME}:workForUs:container:link`)}<img alt='arrow-icon' src={ArrowIcon}/>
                   </Link>
                 </div>
               </div>

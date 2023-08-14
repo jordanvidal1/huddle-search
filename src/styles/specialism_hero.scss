@@ -97,7 +97,7 @@
 .embedded-talent,
 .contract-interim {
     .specialism-hero {
-        background: url('../static/looking-to-hire.png') top right no-repeat #8762CB;
+        background: url('../static/huddle/looking-to-hire.png') top right no-repeat #8762CB;
         background-size: contain;
 
         .title {
@@ -121,11 +121,11 @@
 
 .specialism {
     .specialism-hero {
-        background: url('../static/executive-search.png') top right no-repeat #FFF;
+        background: url('../static/huddle/executive-search.png') top right no-repeat #FFF;
         background-size: contain;
 
         .title {
-            background: url('../static/specialism-icon.svg') top center no-repeat;
+            background: url('../static/huddle/specialism-icon.svg') top center no-repeat;
             background-size: 12rem;
             padding-top: 6rem;
 
@@ -162,7 +162,7 @@
 
 .executive-search {
     .specialism-hero {
-        background: url('../static/executive-search.png') top right no-repeat #F9F9F9;
+        background: url('../static/huddle/executive-search.png') top right no-repeat #F9F9F9;
         background-size: contain;
 
         .content {

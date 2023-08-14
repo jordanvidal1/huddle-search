@@ -1,18 +1,18 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 
-import PhoneIcon from '../../static/phone-number.svg';
-import EmailIcon from '../../static/email.svg';
-import LinkedInIcon from '../../static/linkedin-pink.svg';
+import PhoneIcon from '../../static/huddle/phone-number.svg';
+import EmailIcon from '../../static/huddle/email.svg';
+import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
 
-import PhoneGreyIcon from '../../static/phone-number-grey.svg';
-import EmailGreyIcon from '../../static/email-grey.svg';
-import LinkedInGreyIcon from '../../static/linkedin-grey.svg';
+import PhoneGreyIcon from '../../static/huddle/phone-number-grey.svg';
+import EmailGreyIcon from '../../static/huddle/email-grey.svg';
+import LinkedInGreyIcon from '../../static/huddle/linkedin-grey.svg';
 
 const Specialists = props => {
   const {type = 'leadership', name, specialists, executive} = props;
 
-  const {t} = useTranslation(['huddle']);
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='specialists'>
@@ -22,12 +22,12 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`huddle:specialists:${type}:title`, {name})}
+                  {t(`${window.SITE_NAME}:specialists:${type}:title`, {name})}
                 </h2>
               </div>
               <div className='text'>
                 <span>
-                  {t(`huddle:specialists:${type}:desc`)}
+                  {t(`${window.SITE_NAME}:specialists:${type}:desc`)}
                 </span>
               </div>
             </div>

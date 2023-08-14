@@ -4,7 +4,7 @@
 .contact-us,
 .executive-search {
     .leadership-hero {
-        background: url('../static/leadership.png') top right no-repeat #FFF;
+        background: url('../static/huddle/leadership.png') top right no-repeat #FFF;
         background-size: contain;
 
         .content {
@@ -269,7 +269,7 @@
 
 .work-for-us, .contact-us {
     .leadership-hero {
-        background: url('../static/work-for-us.png') top right no-repeat #FFF;
+        background: url('../static/huddle/work-for-us.png') top right no-repeat #FFF;
         background-size: contain;
 
         .text-container {
@@ -320,7 +320,7 @@
 
 .executive-search {
     .leadership-hero {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 10.41%, rgba(0, 0, 0, 0.70) 34.26%, rgba(0, 0, 0, 0.57) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../static/executive-leadership.jpg'), lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 10.41%, rgba(0, 0, 0, 0.70) 34.26%, rgba(0, 0, 0, 0.57) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/executive-leadership.jpg'), lightgray 50% / cover no-repeat;
 
         .content {
             margin-top: 0;

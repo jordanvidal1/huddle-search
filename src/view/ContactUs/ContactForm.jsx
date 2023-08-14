@@ -30,7 +30,7 @@ const ContactForm = () => {
     }
 
     return await fetchApi(
-      'https://huddlesearch.com/wp-json/contact-form-7/v1/contact-forms/26/feedback',
+      `${window.SITE_URL}/wp-json/contact-form-7/v1/contact-forms/26/feedback`,
       'POST',
       formData
     );
