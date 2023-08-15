@@ -25,7 +25,7 @@
             margin-top: 3rem;
             max-width: 37.0625rem;
 
-            span {
+            p {
                 font-size: 1.25rem;
                 font-weight: 600;
                 line-height: 2rem;
@@ -124,10 +124,14 @@
         background: url('../static/huddle/executive-search.png') top right no-repeat #FFF;
         background-size: contain;
 
+        .inner-container {
+            padding-top: 5rem;
+        }
+
         .title {
             background: url('../static/huddle/specialism-icon.svg') top center no-repeat;
             background-size: 12rem;
-            padding-top: 6rem;
+            padding-top: 7rem;
 
             h1 {
                 color: #310A31;
@@ -135,7 +139,7 @@
         }
 
         .text {
-            span {
+            p {
                 color: #7E8192;
             }
         }
@@ -211,7 +215,7 @@
         .text {
             align-self: flex-end;
 
-            span {
+            p {
                 color: #1A1A1A;
                 font-family: Plus Jakarta Sans;
                 font-weight: 400;
@@ -258,10 +262,54 @@
             }
 
             .text {
-                span {
+                p {
                     font-size: 1.125rem;
                 }
             }
+        }
+    }
+}
+
+.unitas-site {
+    .looking-to-hire, .looking-for-a-job {
+        .specialism-hero {
+            background: url('../static/unitas/looking-to-hire.png') top right no-repeat #3A84C9;
+            background-size: 50%;
+
+            .title {
+                h1, a {
+                    background: none;
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-size: 6rem;
+                    font-weight: 900;
+                }
+            }
+
+            .text p {
+                color: #FFF;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .specialism .specialism-hero {
+        background: url('../static/unitas/sector.png') top right no-repeat #F9F9F9;
+        background-size: 50%;
+
+        .title {
+            background: url('../static/unitas/specialism-icon.svg') top center no-repeat;
+            background-size: 12rem;
+
+            h1 {
+                color: #1A1A1A;
+                font-size: 6rem;
+                font-weight: 900;
+            }
+        }
+
+        .text p {
+            font-weight: 400;
         }
     }
 }

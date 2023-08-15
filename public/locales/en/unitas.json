@@ -148,8 +148,8 @@
   },
   "specialismHero": {
     "title": {
-      "specialism": "Specialism {{name}}",
-      "sector": "Sector {{name}}"
+      "specialisms": "Specialism {{name}}",
+      "sectors": "Sector {{name}}"
     },
     "desc": {
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",

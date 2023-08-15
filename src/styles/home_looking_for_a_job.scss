@@ -174,13 +174,11 @@
             background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-for-a-job.jpeg'), lightgray 1537.611px -49.295px / 107.361% 121.193% no-repeat;
             background-size: contain;
 
-            .title {
-                a {
-                    background: none;
-                    color: #FFF;
-                    font-family: Fraunces;
-                    font-weight: 400;
-                }
+            .title a {
+                background: none;
+                color: #FFF;
+                font-family: Fraunces;
+                font-weight: 400;
             }
 
             .text {

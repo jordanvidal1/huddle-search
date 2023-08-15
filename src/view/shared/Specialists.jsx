@@ -4,15 +4,28 @@ import {useTranslation} from 'react-i18next';
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
 import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
+import ExecutivePhoneIcon from '../../static/huddle/phone-number-grey.svg';
+import ExecutiveEmailIcon from '../../static/huddle/email-grey.svg';
+import ExecutiveLinkedInIcon from '../../static/huddle/linkedin-grey.svg';
 
-import PhoneGreyIcon from '../../static/huddle/phone-number-grey.svg';
-import EmailGreyIcon from '../../static/huddle/email-grey.svg';
-import LinkedInGreyIcon from '../../static/huddle/linkedin-grey.svg';
+import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
+import UnitasEmailIcon from '../../static/unitas/email-white.svg';
+import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
+
+const isHuddle = window.HUDDLE;
 
 const Specialists = props => {
   const {type = 'leadership', name, specialists, executive} = props;
 
   const {t} = useTranslation(['huddle', 'unitas']);
+
+  const huddlePhoneIcon = executive ? ExecutivePhoneIcon : PhoneIcon;
+  const huddleEmailIcon = executive ? ExecutiveEmailIcon : EmailIcon;
+  const huddleLinkedInIcon = executive ? ExecutiveLinkedInIcon : LinkedInIcon;
+
+  const phoneIcon = isHuddle ? huddlePhoneIcon : UnitasPhoneIcon;
+  const emailIcon = isHuddle ? huddleEmailIcon : UnitasEmailIcon;
+  const linkedInIcon = isHuddle ? huddleLinkedInIcon : UnitasLinkedInIcon;
 
   return (
     <div className='specialists'>
@@ -26,9 +39,9 @@ const Specialists = props => {
                 </h2>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:specialists:${type}:desc`)}
-                </span>
+                </p>
               </div>
             </div>
             <div className='specialists-container'>
@@ -37,7 +50,9 @@ const Specialists = props => {
 
                 return (
                   <div className='specialist'>
-                    <img alt='specialist-img' />
+                    <div className='specialist-img-container'>
+                      <img alt='specialist-img' />
+                    </div>
                     <div className='specialist-details'>
                       <h5>
                         {name}
@@ -53,21 +68,21 @@ const Specialists = props => {
                       <div>
                         <img
                           alt='phone-number-icon'
-                          src={executive ? PhoneGreyIcon : PhoneIcon}
+                          src={phoneIcon}
                         />
                         <span>{number}</span>
                       </div>
                       <div>
                         <img
                           alt='email-icon'
-                          src={executive ? EmailGreyIcon : EmailIcon}
+                          src={emailIcon}
                         />
                         <span>{email}</span>
                       </div>
                       <div>
                         <img
                           alt='linkedin-icon'
-                          src={executive ? LinkedInGreyIcon : LinkedInIcon}
+                          src={linkedInIcon}
                         />
                         <span>{linkedin}</span>
                       </div>

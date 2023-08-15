@@ -3,11 +3,17 @@ import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
+
 import Signature1 from '../../static/huddle/signature-1.svg';
 import Signature2 from '../../static/huddle/signature-2.svg';
 import Signature3 from '../../static/huddle/signature-3.svg';
+import UnitasSignature1 from '../../static/unitas/signature-1.svg';
+import UnitasSignature2 from '../../static/unitas/signature-2.svg';
+import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
+
+const isHuddle = window.HUDDLE;
 
 const leadershipComponent = t => (
   <div className='info-container'>
@@ -49,9 +55,9 @@ const defaultSignature = {
 }
 
 const signatures = [
-  {...defaultSignature, img: Signature1},
-  {...defaultSignature, img: Signature2},
-  {...defaultSignature, img: Signature3}
+  {...defaultSignature, img: isHuddle ? Signature1 : UnitasSignature1},
+  {...defaultSignature, img: isHuddle ? Signature2 : UnitasSignature2},
+  {...defaultSignature, img: isHuddle ? Signature3 : UnitasSignature3}
 ];
 
 const ourStoryComponent = t => (
@@ -63,9 +69,9 @@ const ourStoryComponent = t => (
         </h5>
       </div>
       <div className='info-description'>
-        <span>
+        <p>
           {t(`${window.SITE_NAME}:leadershipHero:ourStory:info:text`)}
-        </span>
+        </p>
       </div>
       <div className='info-signatures'>
         {signatures.map((signature) => (
@@ -156,9 +162,9 @@ const LeadershipHero = props => {
                 </h1>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:leadershipHero:${type}:desc`)}
-                </span>
+                </p>
               </div>
             </div>
             {components[type]}

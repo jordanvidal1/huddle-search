@@ -2,10 +2,10 @@ import React from 'react';
 import Roles from './Roles';
 
 const RolesPage = props => {
-  const {type, name} = props;
+  const {name} = props;
 
   return (
-    <div className={`related-roles ${type}`}>
+    <div className='related-roles'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

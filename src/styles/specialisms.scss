@@ -14,14 +14,16 @@
             }
 
             .text {
-                span {
+                p {
                     color: #7E8192;
                 }
             }
 
-            .specialism-list {
-                a {
-                    color: #310A31 !important;
+            .specialism-list-container {
+                .specialism-list {
+                    a {
+                        color: #310A31;
+                    }
                 }
             }
         }
@@ -38,7 +40,7 @@
             margin: 2rem 0 4rem;
             max-width: 45.0625rem;
 
-            span {
+            p {
                 color: #FFF;
                 font-size: 1.125rem;
             }
@@ -54,13 +56,16 @@
                 gap: 2rem;
 
                 a {
+                    align-items: center;
                     color: #F6E27F;
+                    display: flex;
                     font-size: 1.25rem;
                     font-weight: 800;
                 }
 
                 img {
                     margin-left: 1rem;
+                    width: 1.25rem;
                 }
             }
         }
@@ -79,6 +84,35 @@
             .specialism-list-container {
                 .specialism-list {
                     flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .specialism, .looking-to-hire {
+        > .specialisms {
+            background: #1A1A1A;
+
+            &.sectors {
+                background: #F9F9F9;
+
+                h2 {
+                    color: #1A1A1A;
+                }
+
+                .specialism-list-container {
+                    .specialism-list a {
+                        color: #1A1A1A;
+                    }
+                }
+            }
+
+            .specialism-list-container {
+                .specialism-list a {
+                    color: #F49944;
+                    font-weight: 600;
                 }
             }
         }

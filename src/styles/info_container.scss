@@ -13,6 +13,13 @@
             align-items: flex-start;
             display: flex;
             flex-direction: column;
+
+            img {
+                background: #FF958C;
+                border-radius: 62.5rem;
+                padding: 1rem;
+                width: 4rem;
+            }
         }
 
         .info-title {
@@ -40,6 +47,19 @@
 
             .info-title {
                 max-width: unset;
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .info-grid-container {
+        .info-container {
+            background: #1A1A1A;
+            border-radius: 1.5rem;
+
+            img {
+                background: #B1C9B1;
             }
         }
     }

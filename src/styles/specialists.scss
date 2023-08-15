@@ -21,7 +21,7 @@
             margin-top: 2rem;
             max-width: 45.0625rem;
 
-            span {
+            p {
                 color: #FFF;
                 font-size: 1.125rem;
             }
@@ -38,12 +38,22 @@
                 flex-direction: column;
                 max-width: 20rem;
 
-                > img {
+                .specialist-img-container {
+                    align-items: center;
+                    background: #02C39A;
                     border-radius: 62.5rem;
-                    border: 5px solid #02C39A;
-                    background: #000;
+                    display: flex;
                     height: 15.625rem;
+                    justify-content: center;
+                    padding: 5px;
                     width: 15.625rem;
+
+                    img {
+                        background: #000;
+                        border-radius: 62.5rem;
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
 
                 h5 {
@@ -72,6 +82,10 @@
                     & > div {
                         align-items: center;
                         display: flex;
+                    }
+
+                    img {
+                        width: 1.25rem;
                     }
 
                     span {
@@ -118,7 +132,7 @@
         }
 
         .text {
-            span {
+            p {
                 color: #1A1A1A;
                 font-family: Plus Jakarta Sans;
                 font-weight: 400;
@@ -153,6 +167,36 @@
                         color: #7E6739;
                         font-family: Plus Jakarta Sans;
                     }
+                }
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .specialism,
+    .looking-for-a-job,
+    .our-story,
+    .contact-us,
+    .executive-search,
+    .embedded-talent,
+    .contract-interim {
+        .specialists {
+            background: #3A84C9;
+
+            .specialists-container .specialist {
+                .specialist-img-container {
+                    background: linear-gradient(#ED903A, #F8B535);
+                }
+
+                .h5 {
+                    color: #1A1A1A;
+                    font-weight: 400;
+                }
+
+                .specialist-contact span {
+                    color: #FFF;
+                    font-weight: 600;
                 }
             }
         }

@@ -21,9 +21,9 @@ const Specialisms = props => {
                 </h2>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:lookingToHire:${type}:desc`)}
-                </span>
+                </p>
               </div>
             </div>
             <SearchBar placeholder={`Search ${type}...`} />

@@ -159,12 +159,10 @@
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/work-for-us.jpeg'), lightgray 1688px -5.42px / 118.889% 100.943% no-repeat;
             background-size: cover;
 
-            .title {
-                a {
-                    background: none;
-                    color: #FFF;
-                    font-family: Fraunces;
-                }
+            .title a {
+                background: none;
+                color: #FFF;
+                font-family: Fraunces;
             }
 
             .text {

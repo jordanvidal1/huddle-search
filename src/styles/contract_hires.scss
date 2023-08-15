@@ -1,40 +1,48 @@
-.looking-to-hire {
-    .contract-hires {
-        background: url('../static/huddle/contract-hires.png') center left no-repeat #8762CB;
-        background-size: contain;
+.looking-to-hire .contract-hires {
+    background: url('../static/huddle/contract-hires.png') center left no-repeat #8762CB;
+    background-size: contain;
+
+    .content {
+        align-self: flex-end;
+        max-width: 38.5rem;
+    }
+
+    .title {
+        a {
+            color: #F6E27F;
+            background: #310A31;
+        }
+    }
+
+    .text {
+        margin-top: 2rem;
+    }
+
+    .btn-container {
+        margin-top: 4rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: #8762CB;
 
         .content {
-            align-self: flex-end;
-            max-width: 38.5rem;
-        }
-
-        .title {
-            a {
-                color: #F6E27F;
-                background: #310A31;
-            }
-        }
-
-        .text {
-            font-size: 1.125rem;
-            margin-top: 2rem;
+            margin-top: 4rem;
+            max-width: unset;
         }
 
         .btn-container {
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
+    }
+}
 
-        @include media-breakpoint-down(md) {
-            background: #8762CB;
+.unitas-site .looking-to-hire .contract-hires {
+    background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/contract-hires.jpeg'), lightgray -40px -9.559px / 100% 126.832% no-repeat;
+    background-size: cover;
 
-            .content {
-                margin-top: 4rem;
-                max-width: unset;
-            }
-
-            .btn-container {
-                margin-top: 3rem;
-            }
-        }
+    .title a {
+        background: none;
+        color: #FFF;
+        font-family: Fraunces;
     }
 }

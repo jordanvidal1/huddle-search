@@ -36,9 +36,9 @@ const SpecialismHero = props => {
                 </h1>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:specialismHero:desc:${type}`)}
-                </span>
+                </p>
                 {empty && (
                   <div className='btn-container'>
                     <Link to='/jobs' className='btn btn-secondary'>

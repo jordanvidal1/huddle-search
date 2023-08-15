@@ -23,7 +23,7 @@
     .title {
         margin-top: 4rem;
 
-        a, a:hover {
+        a {
             color: #F6E27F;
             background: #310A31;
         }
@@ -53,6 +53,37 @@
 
         .btn-container {
             margin-top: 4.75rem;
+        }
+    }
+}
+
+.unitas-site {
+    .our-story-static {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background-size: cover;
+    }
+
+    .our-process-static {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background-size: cover;
+    }
+
+    .our-story-static, .our-process-static {
+        h5 {
+            color: #64A364;
+            font-family: Poppins;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        .title a {
+            background: none;
+            color: #FFF;
+            font-family: Fraunces;
+        }
+
+        .text p {
+            font-weight: 400;
         }
     }
 }

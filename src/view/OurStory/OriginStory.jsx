@@ -1,5 +1,8 @@
 import React from 'react';
 import Logo from '../../static/huddle/logo.svg';
+import UnitasLogo from '../../static/unitas/logo.svg';
+
+const isHuddle = window.HUDDLE;
 
 const OriginStory = () => (
   <div className='origin-story'>
@@ -26,7 +29,9 @@ const OriginStory = () => (
               </p>
             </div>
             <div className='img-container'>
-              <img alt='specialist-img' />
+              <div>
+                <img alt='specialist-img' />
+              </div>
               <span>
                 Lorem ipsum dolor sit amet consectetur.
               </span>
@@ -39,7 +44,9 @@ const OriginStory = () => (
           </div>
           <div className='story story-2'>
             <div className='img-container'>
-              <img alt='specialist-img' />
+              <div>
+                <img alt='specialist-img' />
+              </div>
               <span>
                 Lorem ipsum dolor sit amet consectetur.
               </span>
@@ -73,13 +80,19 @@ const OriginStory = () => (
               </p>
             </div>
             <div className='img-container'>
-              <img alt='specialist-img' />
+              <div>
+                <img alt='specialist-img' />
+              </div>
               <span>
                 Lorem ipsum dolor sit amet consectetur.
               </span>
             </div>
           </div>
-          <img alt='logo' className='logo' src={Logo} />
+          <img
+            alt='logo'
+            className='logo'
+            src={isHuddle ? Logo : UnitasLogo}
+          />
         </div>
       </div>
     </div>

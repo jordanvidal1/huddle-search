@@ -1,7 +1,13 @@
 import React from 'react';
+
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
 import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
+import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
+import UnitasEmailIcon from '../../static/unitas/email-white.svg';
+import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
+
+const isHuddle = window.HUDDLE;
 
 const Leaders = ({
   leaders
@@ -11,15 +17,10 @@ const Leaders = ({
       <div className='inner-container'>
         <div className='content'>
           {leaders.map((leader) => {
-            const {name, role, description, number, email, linkedin, imgReversed} = leader;
+            const {name, role, description, number, email, linkedin} = leader;
 
             return (
               <div className='leader'>
-                {imgReversed && (
-                  <div className='img-container'>
-                    <img alt='specialist-img' />
-                  </div>
-                )}
                 <div className='text-container'>
                   <div className='title'>
                     <h2>{name}</h2>
@@ -28,28 +29,37 @@ const Leaders = ({
                     <span>{role}</span>
                   </div>
                   <div className='text'>
-                    <span>{description}</span>
+                    <p>{description}</p>
                   </div>
                   <div className='leader-contact'>
                     <div>
-                      <img alt='phone-number-icon' src={PhoneIcon} />
+                      <img
+                        alt='phone-number-icon'
+                        src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
+                      />
                       <span>{number}</span>
                     </div>
                     <div>
-                      <img alt='email-icon' src={EmailIcon} />
+                      <img
+                        alt='email-icon'
+                        src={isHuddle ? EmailIcon : UnitasEmailIcon}
+                      />
                       <span>{email}</span>
                     </div>
                     <div>
-                      <img alt='linkedin-icon' src={LinkedInIcon} />
+                      <img
+                        alt='linkedin-icon'
+                        src={isHuddle ? LinkedInIcon : UnitasLinkedInIcon}
+                      />
                       <span>{linkedin}</span>
                     </div>
                   </div>
                 </div>
-                {!imgReversed && (
-                  <div className='img-container'>
+                <div className='img-container'>
+                  <div>
                     <img alt='specialist-img' />
                   </div>
-                )}
+                </div>
               </div>
             )
           })}
@@ -73,7 +83,7 @@ const defaultLeader = {
 Leaders.defaultProps = {
   leaders: [
     defaultLeader,
-    {...defaultLeader, imgReversed: true},
+    defaultLeader,
     defaultLeader
   ]
 };

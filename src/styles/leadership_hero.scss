@@ -44,7 +44,7 @@
             margin-top: 3rem;
             max-width: 37.0625rem;
 
-            span {
+            p {
                 color: #7E8192;
                 font-size: 1.25rem;
                 font-weight: 600;
@@ -82,7 +82,7 @@
             .info-description {
                 margin-bottom: 1.5rem;
 
-                span {
+                p {
                     font-size: 1.5rem;
                     line-height: 2.375rem;
                 }
@@ -203,7 +203,7 @@
                 .info-description {
                     margin-bottom: 2rem;
 
-                    span {
+                    p {
                         line-height: 2.125rem;
                     }
                 }
@@ -341,7 +341,7 @@
             align-self: flex-start;
             max-width: unset;
 
-            span {
+            p {
                 color: #FFF;
                 font-family: Plus Jakarta Sans;
                 font-size: 1.125rem;
@@ -417,6 +417,77 @@
                     font-size: 3rem;
                 }
             }
+        }
+    }
+}
+
+.unitas-site {
+    .leadership-team,
+    .our-story,
+    .work-for-us,
+    .contact-us,
+    .executive-search {
+        .leadership-hero {
+            .text-container h5 {
+                color: #496049;
+                font-family: Poppins;
+                font-size: 1.75rem;
+                font-weight: 400;
+            }
+
+            .title {
+                h1, a {
+                    background: none;
+                    color: #496049;
+                    font-family: Fraunces;
+                    font-size: 5rem;
+                    font-weight: 900;
+                }
+            }
+            .text p {
+                font-weight: 400;
+            }
+
+            .info-container {
+                .info-box {
+                    background: #496049;
+                    border-radius: 1.5rem;
+
+                    .info-title h5 {
+                        color: #FFF;
+                        font-weight: 900;
+                    }
+
+                    .info-detail {
+                        h2 {
+                            font-size: 4rem;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .info-signatures .info-signature {
+                    h6 {
+                        color: #FFF;
+                        font-family: Poppins;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        color: rgba(255, 255, 255, 0.30);
+                    }
+                }
+            }
+        }
+    }
+
+    .leadership-team, .our-story {
+        .leadership-hero {
+            background: url('../static/unitas/leadership.png') top right no-repeat #FFF;
+            background-size: 50%;
         }
     }
 }
