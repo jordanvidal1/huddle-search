@@ -16,9 +16,9 @@ const ContractHires = () => {
               </h2>
             </div>
             <div className='text'>
-            <span className='body'>
-              {t(`${window.SITE_NAME}:lookingToHire:contract:desc`)}
-            </span>
+              <span>
+                {t(`${window.SITE_NAME}:lookingToHire:contract:desc`)}
+              </span>
             </div>
             <div className='btn-container'>
               <Link to='/contract-interim' className="btn btn-secondary">

@@ -51,9 +51,9 @@
   },
   "executiveSearch": {
     "title": {
-      "part1": "A specialist service by",
+      "part1": "Brought to you by",
       "part2": "Executive",
-      "part3": "SEARCH"
+      "part3": "Search"
     },
     "desc": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
     "info": {
@@ -94,7 +94,6 @@
   },
   "embeddedTalent": {
     "desc": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
-    "link": "Find out more",
     "info": {
       "1": {
         "title": "Onboarding & integration",
@@ -248,7 +247,7 @@
     "phone": {
       "title": "Phone",
       "executiveTitle": "Speak over the phone",
-      "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
+      "text": "Want to chat about embedding Unitas into your team? Our lines are open Mon-Fri from 8am to 5pm.",
       "executiveText": "Want to chat about Executive Search at Unitas? Our lines are open Mon-Fri from 8am to 5pm.",
       "phoneNumber": "+44 0000 000 000"
     },
@@ -374,7 +373,7 @@
       }
     },
     "embeddedTalent": {
-      "title": "Why embedding Huddle is great for clients",
+      "title": "Why embedding Unitas is great for clients",
       "desc": "Our services ensure seamless assimilation of external talent, expert resource management, performance alignment through metrics and feedback, and smooth transitions for optimised collaboration.",
       "points": {
         "1": {

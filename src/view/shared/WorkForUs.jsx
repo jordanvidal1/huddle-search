@@ -4,7 +4,12 @@ import {useTranslation} from 'react-i18next';
 import {capitalize, Grid} from '@material-ui/core';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
-import ArrowGoldIcon from '../../static/huddle/arrow-gold.svg';
+import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
+
+import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
+import UnitasExecutiveArrowIcon from '../../static/unitas/arrow-gold.svg';
+
+const isHuddle = window.HUDDLE;
 
 const WorkForUs = ({
   home,
@@ -12,7 +17,11 @@ const WorkForUs = ({
 }) => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const arrowIcon = executive ? ArrowGoldIcon : ArrowIcon;
+  const arrowIcon = isHuddle
+    ? ArrowIcon : UnitasArrowIcon;
+  const executiveArrowIcon = isHuddle
+    ? ExecutiveArrowIcon : UnitasExecutiveArrowIcon;
+  const icon = executive ? executiveArrowIcon : arrowIcon;
   const siteName = capitalize(window.SITE_NAME);
 
   return (
@@ -36,7 +45,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/leadership-team'>
                     <span>Leadership team</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -44,7 +53,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/corporate-responsibility'>
                     <span>Corporate social responsibility</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -52,7 +61,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/our-story'>
                     <span>Our story</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -60,7 +69,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/diversity'>
                     <span>Diversity, equality & inclusion</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -68,7 +77,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/our-process'>
                     <span>Our process</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -76,7 +85,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/the-prime-group'>
                     <span>The Prime Group</span>
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={icon}/>
                   </Link>
                 </div>
               </Grid>
@@ -91,7 +100,8 @@ const WorkForUs = ({
                 </p>
                 <div className='link-container'>
                   <Link to='/work-for-us'>
-                    {t(`${window.SITE_NAME}:workForUs:container:link`)}<img alt='arrow-icon' src={ArrowIcon}/>
+                    {t(`${window.SITE_NAME}:workForUs:container:link`)}
+                    <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>
               </div>

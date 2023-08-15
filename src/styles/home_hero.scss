@@ -23,7 +23,7 @@
         .text {
             margin-top: 2.5rem;
 
-            span {
+            p {
                 color: #310A31;
                 font-size: 1.25rem;
             }
@@ -43,6 +43,39 @@
             .text-container {
                 margin-top: 2rem;
                 max-width: unset;
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .home {
+        .hero {
+            background: url('../static/unitas/hero-image.png') center right no-repeat #F9F9F9;
+            background-size: contain;
+
+            .title {
+                h1, a {
+                    color: #1A1A1A;
+                    font-family: Fraunces;
+                    font-weight: 900;
+                    line-height: 6rem;
+                }
+
+                a {
+                    background: linear-gradient(20deg, #CB7F39 0%, #C59436 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            .text p {
+                color: #7E8192;
+            }
+
+            @include media-breakpoint-down(md) {
+                background: #F9F9F9;
             }
         }
     }

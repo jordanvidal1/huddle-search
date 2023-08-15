@@ -149,10 +149,34 @@ p {
   }
 }
 
+.unitas-site {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Fraunces;
+    font-weight: 400;
+  }
+
+  p, span, a, label {
+    font-family: Poppins;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+}
+
 .btn {
   align-items: center;
   border: 0;
-  border-radius: 1000px;
+  border-radius: 62.5rem;
   cursor: pointer;
   display: flex;
   font-family: Montserrat;
@@ -177,17 +201,39 @@ p {
 }
 
 .btn-primary, .btn-primary:hover {
-  border: 3px solid #9B7ED4;
   background: #02C39A;
+  border: 3px solid #9B7ED4;
   box-shadow: 0 8px 0 0 #310A31;
   color: #FFE97B;
 }
 
 .btn-secondary, .btn-secondary:hover {
-  border: 3px solid #FF958C;
   background: #F6E27F;
+  border: 3px solid #FF958C;
   box-shadow: 0 8px 0 0 #310A31;
   color: #2BAC91;
+}
+
+.unitas-site {
+  .btn {
+    border-radius: 0.75rem;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+
+  .btn-primary, .btn-primary:hover {
+    background: #3A84C9;
+    border: 0;
+    box-shadow: none;
+    color: #FFF;
+  }
+
+  .btn-secondary, .btn-secondary:hover {
+    background: #C57B36;
+    border: 0;
+    box-shadow: none;
+    color: #FFF;
+  }
 }
 
 .btn-container {
@@ -229,6 +275,11 @@ input {
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #7E8192;
   }
+}
+
+.unitas-site input {
+  font-family: Poppins;
+  font-weight: 400;
 }
 
 .textfield {

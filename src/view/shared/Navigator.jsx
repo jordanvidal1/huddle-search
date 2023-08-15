@@ -12,6 +12,12 @@ import CloseButton from '../../static/huddle/close-button.svg';
 import DropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
 import HeaderArrow from '../../static/huddle/header-arrow.svg';
 
+import UnitasLogo from '../../static/unitas/full-logo.svg';
+import UnitasMenubar from '../../static/unitas/menubar.svg';
+import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
+import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
+import UnitasCloseButton from '../../static/unitas/close-button.svg';
+
 const routes = [
   {
     name: 'Looking To Hire',
@@ -59,14 +65,14 @@ const routes = [
   }
 ];
 
+const isHuddle = window.HUDDLE;
+
 const Navigator = ({
   children
 }) => {
   const [expanded, setExpanded] = useState(false);
   const [pathname, setPathname] = useState('');
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
-
-  // const {isSizeDown: isSmallScreenDevice} = useScreenSize('md');
 
   const toggleSideBar = () => setSideMenuDisplayed(!sideMenuDisplayed);
   const hideSidebar = () => setSideMenuDisplayed(false);
@@ -92,7 +98,10 @@ const Navigator = ({
 
   const renderDropdown = subLinks => expanded && (
     <div className='nav-dropdown'>
-      <img alt='dropdown-arrow' src={DropdownArrow} />
+      <img
+        alt='dropdown-arrow'
+        src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+      />
       <div>
         {subLinks.map((subLink, i) => (
           <div key={i}>
@@ -115,7 +124,11 @@ const Navigator = ({
             {route.subLinks ? (
               <a>
                 {route.name}
-                <img alt='arrow' src={HeaderArrow} />
+                <img
+                  alt='arrow'
+                  className='header-arrow'
+                  src={isHuddle ? HeaderArrow : UnitasHeaderArrow}
+                />
               </a>
             ) : (
               <Link to={route.path} onClick={hideSidebar}>
@@ -134,7 +147,7 @@ const Navigator = ({
       <div className='header-container container'>
         <div className='header-inner'>
           <Link to='/' onClick={expanded && handleExpandClick}>
-            <img alt='logo' className='logo' src={Logo} />
+            <img alt='logo' className='logo' src={isHuddle ? Logo : UnitasLogo} />
           </Link>
           <div className='header-nav'>
             <div className='header-nav-list'>
@@ -143,7 +156,7 @@ const Navigator = ({
             <img
               alt='logo-menubar'
               className='logo-menubar'
-              src={Menubar}
+              src={isHuddle ? Menubar : UnitasMenubar}
               onClick={toggleSideBar}
             />
           </div>
@@ -168,14 +181,14 @@ const Navigator = ({
             <img
               alt='sidebar-logo'
               className='logo'
-              src={Logo}
+              src={isHuddle ? Logo : UnitasLogo}
             />
           </Link>
           <img
             alt='close-button'
             onClick={hideSidebar}
             className='close-button'
-            src={CloseButton}
+            src={isHuddle ? CloseButton : UnitasCloseButton}
           />
         </div>
         {renderNavList()}
@@ -184,12 +197,12 @@ const Navigator = ({
   );
 
   return (
-    <div>
+    <div className={`${window.SITE_NAME}-site`}>
       {renderSidebar()}
-      <TopNav />
+      <TopNav isHuddle={isHuddle} />
       {renderHeader()}
       {pathname.includes('/resources') && <ResourcesNav />}
-      <div id='content' className={`nav-content ${window.SITE_NAME}`}>
+      <div id='content'>
         {content}
         <Footer />
       </div>

@@ -17,21 +17,21 @@
 
         .text {
             margin-top: 2rem;
-        }
 
-        .body {
-            color: #FFF;
-            font-size: 1.125rem;
-            font-weight: 600;
+            p {
+                color: #FFF;
+                font-size: 1.125rem;
+                font-weight: 600;
 
-            a {
-                color: #F6E27F;
-                font-weight: 700;
-                white-space: nowrap;
-            }
+                a {
+                    color: #F6E27F;
+                    font-weight: 700;
+                    white-space: nowrap;
+                }
 
-            img {
-                margin-left: 0.5rem;
+                img {
+                    margin-left: 0.5rem;
+                }
             }
         }
 
@@ -48,7 +48,10 @@
             padding: 1rem;
 
             img {
-                height: 4rem;
+                background: #FF958C;
+                border-radius: 62.5rem;
+                padding: 1rem;
+                width: 4rem;
             }
 
             h5 {
@@ -97,6 +100,44 @@
 
             .btn-container {
                 margin-top: 2.5rem;
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .home, .looking-to-hire {
+        .embedded-talent {
+            background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/embedded-talent.jpeg') right, lightgray -1053.154px -199px / 160.501% 114.829% no-repeat;
+            background-size: cover;
+
+            .title {
+                a {
+                    background: none;
+                    color: #FFF;
+                    font-family: Fraunces;
+                }
+            }
+
+            .text {
+                p {
+                    color: #FFF;
+                    font-weight: 400;
+                }
+            }
+
+            .info-container {
+                img {
+                    background: #B1C9B1;
+                }
+
+                h5 {
+                    font-weight: 400;
+                }
+
+                p {
+                    font-weight: 400;
+                }
             }
         }
     }

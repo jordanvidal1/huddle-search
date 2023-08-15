@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+
 import TextLogo from '../../static/huddle/text-logo.svg';
 import FullLogo from '../../static/huddle/full-logo.svg';
 import Phone from '../../static/huddle/phone-number.svg';
@@ -12,6 +13,18 @@ import Twitter from '../../static/huddle/twitter.svg';
 import Facebook from '../../static/huddle/facebook.svg';
 import Instagram from '../../static/huddle/instagram.svg';
 import ThePrimeGroup from '../../static/huddle/the-prime-group.svg';
+
+import UnitasLogo from '../../static/unitas/full-logo.svg';
+import UnitasPhone from '../../static/unitas/phone-number.svg';
+import UnitasEmail from '../../static/unitas/email.svg';
+import UnitasLocation from '../../static/unitas/location.svg';
+import UnitasLinkedIn from '../../static/unitas/linkedin.svg';
+import UnitasTwitter from '../../static/unitas/twitter.svg';
+import UnitasFacebook from '../../static/unitas/facebook.svg';
+import UnitasInstagram from '../../static/unitas/instagram.svg';
+import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
+
+const isHuddle = window.HUDDLE;
 
 const Footer = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -72,35 +85,60 @@ const Footer = () => {
                   <div className='footer-container'>
                     <div className='footer-content'>
                       <div className='footer-company'>
-                        <img className='logo' alt='logo' src={FullLogo} />
+                        <img
+                          className='logo'
+                          alt='logo'
+                          src={isHuddle ? FullLogo : UnitasLogo}
+                        />
                         <p>{t(`${window.SITE_NAME}:footer:slogan`)}</p>
                       </div>
                       <div className='footer-contact'>
                         <div>
-                          <img alt='phone-number' src={Phone} />
+                          <img
+                            alt='phone-number'
+                            src={isHuddle ? Phone : UnitasPhone}
+                          />
                           <span>+44 0000 000 000</span>
                         </div>
                         <div>
-                          <img alt='email' src={Email} />
+                          <img
+                            alt='email'
+                            src={isHuddle ? Email : UnitasEmail}
+                          />
                           <span>{t(`${window.SITE_NAME}:footer:email`)}</span>
                         </div>
                         <div>
-                          <img alt='location' src={Location} />
+                          <img
+                            alt='location'
+                            src={isHuddle ? Location : UnitasLocation}
+                          />
                           <span>1 Fore St Ave, London EC2Y9DT</span>
                         </div>
                       </div>
                       <div className='footer-socials'>
                         <a href='#' rel='noreferrer' target='_blank'>
-                          <img alt='linkedin' src={LinkedIn} />
+                          <img
+                            alt='linkedin'
+                            src={isHuddle ? LinkedIn : UnitasLinkedIn}
+                          />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
-                          <img alt='twitter' src={Twitter} />
+                          <img
+                            alt='twitter'
+                            src={isHuddle ? Twitter : UnitasTwitter}
+                          />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
-                          <img alt='facebook' src={Facebook} />
+                          <img
+                            alt='facebook'
+                            src={isHuddle ? Facebook : UnitasFacebook}
+                          />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
-                          <img alt='instagram' src={Instagram} />
+                          <img
+                            alt='instagram'
+                            src={isHuddle ? Instagram : UnitasInstagram}
+                          />
                         </a>
                       </div>
                     </div>
@@ -147,7 +185,10 @@ const Footer = () => {
                     </div>
                     <div className='footer-legal-prime'>
                     <span>
-                      Proudly part of <img alt='prime-group' src={ThePrimeGroup} />
+                      Proudly part of <img
+                      alt='prime-group'
+                      src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                    />
                     </span>
                     </div>
                     <div className='footer-copyright'>

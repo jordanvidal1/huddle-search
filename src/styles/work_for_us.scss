@@ -53,6 +53,7 @@
 
             img {
                 margin-left: 1rem;
+                width: 1.25rem;
             }
         }
 
@@ -82,6 +83,7 @@
 
                 img {
                     margin-left: 1rem;
+                    width: 1.25rem;
                 }
             }
         }
@@ -142,6 +144,50 @@
             span {
                 color: #E0B45C;
                 font-family: Plus Jakarta Sans;
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .home,
+    .work-for-us,
+    .executive-search,
+    .embedded-talent,
+    .contract-interim {
+        > .work-for-us {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/work-for-us.jpeg'), lightgray 1688px -5.42px / 118.889% 100.943% no-repeat;
+            background-size: cover;
+
+            .title {
+                a {
+                    background: none;
+                    color: #FFF;
+                    font-family: Fraunces;
+                }
+            }
+
+            .text {
+                p {
+                    font-weight: 400;
+                }
+            }
+
+            .grid-container {
+                a span {
+                    color: #F49944;
+                    font-weight: 600;
+                }
+            }
+
+            .cv-container {
+                background: #1A1A1A;
+                border-radius: 1.5rem;
+
+                a {
+                    color: #F49944;
+                    font-weight: 600;
+                }
             }
         }
     }

@@ -1,9 +1,17 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
+import {renderNumber} from '../../services/numberFormat';
+
 import Salary from '../../static/huddle/salary-pink.svg';
 import Benefits from '../../static/huddle/benefits-pink.svg';
 import Location from '../../static/huddle/location-pink.svg';
+
+import UnitasSalary from '../../static/unitas/salary.svg';
+import UnitasBenefits from '../../static/unitas/benefits.svg';
+import UnitasLocation from '../../static/unitas/location.svg';
+
+const isHuddle = window.HUDDLE;
 
 const Role = props => {
   const {type, title, salary, benefits, location} = props;
@@ -30,14 +38,25 @@ const Role = props => {
           </div>
           <div className='role-details'>
             <span>
-              <img alt='salary' src={Salary} />£{salary} per year
-              {/* todo: number display function */}
+              <img
+                alt='salary'
+                src={isHuddle ? Salary : UnitasSalary}
+              />
+              £{renderNumber(salary)} per year
             </span>
             <span>
-              <img alt='benefits' src={Benefits} />{benefits}
+              <img
+                alt='benefits'
+                src={isHuddle ? Benefits : UnitasBenefits}
+              />
+              {benefits}
             </span>
             <span>
-              <img alt='location' src={Location} />{location}
+              <img
+                alt='location'
+                src={isHuddle ? Location : UnitasLocation}
+              />
+              {location}
             </span>
           </div>
           <div className='role-description'>

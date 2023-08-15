@@ -13,6 +13,15 @@
         }
 
         .title {
+            display: flex;
+            flex-direction: column;
+
+            > div {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+
             h1 {
                 color: #7E6739;
                 font-family: Playfair Display;
@@ -42,6 +51,7 @@
 
             img {
                 margin-left: 1rem;
+                width: 6.782rem;
             }
         }
 
@@ -49,9 +59,8 @@
             margin-top: 3rem;
             text-align: center;
 
-            span {
+            p {
                 color: #1A1A1A;
-                text-align: center;
                 font-family: Plus Jakarta Sans;
                 font-size: 1.125rem;
                 font-weight: 400;
@@ -155,6 +164,92 @@
 
             .btn-container {
                 margin-top: 2.5rem;
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .home, .looking-to-hire {
+        .executive-search {
+            background: linear-gradient(90deg, #710058 0%, rgba(113, 0, 88, 0.92) 39.76%, rgba(113, 0, 88, 0.00) 100%), url('../static/unitas/executive-search.jpeg') right no-repeat, lightgray 369.127px -386.817px / 100% 143.885% no-repeat;
+            background-size: contain;
+
+            .title {
+                > div {
+                    flex-direction: row;
+                    margin-top: 1.5rem;
+                }
+
+                h1 {
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-size: 5rem;
+                    font-style: italic;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: -0.1rem;
+                    margin: 0;
+                    margin-right: 0.75rem;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-size: 5rem;
+                    font-weight: 300;
+                    letter-spacing: normal;
+
+                    &:first-child {
+                        align-self: flex-start;
+                        color: rgba(255, 255, 255, 0.50);
+                        font-family: Poppins;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+
+                img {
+                    width: 5.728rem;
+                }
+            }
+
+            .text {
+                text-align: left;
+
+                p {
+                    color: #FFF;
+                    font-family: Poppins;
+                }
+            }
+
+            .info-container {
+                h5 {
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-weight: 400;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.70);
+                    font-family: Poppins;
+                }
+            }
+
+            .btn {
+                background: #FFC700;
+                border-radius: 0.5rem;
+                color: #4D003C;
+                font-family: Poppins;
+                font-weight: 600;
+            }
+
+            @include media-breakpoint-down(md) {
+                .title {
+                    > div {
+                        flex-direction: column;
+                    }
+                }
             }
         }
     }

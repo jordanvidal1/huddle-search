@@ -20,13 +20,16 @@
             margin-top: 2rem;
 
             a {
+                align-items: center;
                 color: #F6E27F;
+                display: flex;
                 font-weight: 800;
                 white-space: nowrap;
             }
 
             img {
                 margin-left: 0.5rem;
+                width: 0.875rem;
             }
         }
 
@@ -47,6 +50,10 @@
             margin-top: 4rem;
             padding: 2rem;
 
+            .text-container {
+                max-width: 30.5rem;
+            }
+
             p {
                 color: rgba(255, 255, 255, 0.70);
                 font-size: 1rem;
@@ -58,17 +65,16 @@
                 justify-content: flex-end;
 
                 a {
-                    cursor: pointer;
-                }
-
-                span {
+                    align-items: center;
                     color: #F6E27F;
+                    display: flex;
                     font-size: 1.25rem;
                     font-weight: 800;
                 }
 
                 img {
                     margin-left: 1rem;
+                    width: 1.25rem;
                 }
             }
         }
@@ -88,6 +94,53 @@
             .cv-container {
                 margin-top: 3rem;
                 padding: 2rem 1.5rem;
+
+                .text-container {
+                    max-width: unset;
+                }
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .home, .looking-to-hire {
+        .looking-to-hire {
+            background: linear-gradient(90deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-to-hire.jpeg') center right no-repeat, lightgray 518.333px -9px / 94.676% 102.02% no-repeat;
+            background-size: cover;
+
+            .title a {
+                background: none;
+                color: #FFF;
+                font-family: Fraunces;
+            }
+
+            .text a {
+                color: #FFF;
+                font-weight: 600;
+            }
+
+            .btn:not(.btn-secondary) {
+                background: transparent;
+                border-color: #FFF;
+                color: #FFF;
+            }
+
+            .cv-container {
+                background: #1A1A1A;
+                border-radius: 1.5rem;
+
+                .text-container {
+                    max-width: 28.5rem;
+                }
+
+                .link-container a {
+                    color: #C57B36;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                background: #3A84C9;
             }
         }
     }

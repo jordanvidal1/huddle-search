@@ -3,7 +3,12 @@ import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
 import FeaturedRole from './FeaturedRole';
+
 import ArrowIcon from '../../../static/huddle/arrow.svg';
+import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
+import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
+
+const isHuddle = window.HUDDLE;
 
 const LookingForAJob = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -19,12 +24,16 @@ const LookingForAJob = () => {
               </h2>
             </div>
             <div className='text'>
-              <span className='body'>
+              <p>
                 {t(`${window.SITE_NAME}:home:lookingForAJob:desc`)} <Link to='/looking-for-a-job'>
                 {t(`${window.SITE_NAME}:home:lookingForAJob:link`)}
-                <img className='arrow-icon' alt='arrow-icon' src={ArrowIcon} />
+                <img
+                  className='arrow-icon'
+                  alt='arrow-icon'
+                  src={isHuddle ? ArrowIcon : UnitasArrowIcon}
+                />
               </Link>
-              </span>
+              </p>
             </div>
             <div className='featured-roles'>
               <div className='featured-roles-container'>
@@ -34,8 +43,11 @@ const LookingForAJob = () => {
                   </h5>
                   <div className='link-container'>
                     <Link to='/jobs'>
-                      <span>{t(`${window.SITE_NAME}:home:lookingForAJob:roles:button`)}
-                      <img alt='arrow-icon' src={ArrowIcon} /></span>
+                      {t(`${window.SITE_NAME}:home:lookingForAJob:roles:button`)}
+                      <img
+                        alt='arrow-icon'
+                        src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
+                      />
                     </Link>
                   </div>
                 </div>

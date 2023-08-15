@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
-import Dropdown from '../../static/huddle/dropdown-arrow.svg';
+import DropdownArrow from '../../static/huddle/dropdown-arrow.svg';
+import UnitasDropdownArrow from '../../static/unitas/dropdown-arrow.svg';
 
 const leftRoutes = [
   {
@@ -33,7 +34,7 @@ const rightRoutes = [
   }
 ];
 
-const TopNav = () => {
+const TopNav = ({isHuddle}) => {
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 
   const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
@@ -105,7 +106,7 @@ const TopNav = () => {
             <img
               alt='quicklinks-menubar'
               className='quicklinks-button'
-              src={Dropdown}
+              src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
             />
           </div>
         </div>

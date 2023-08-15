@@ -21,9 +21,9 @@ const Hero = () => {
                 </h1>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:home:hero:desc`)}
-                </span>
+                </p>
               </div>
               <div className='btn-container'>
                 <Link to='/jobs' className="btn btn-primary">

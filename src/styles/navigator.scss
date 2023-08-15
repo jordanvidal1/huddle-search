@@ -201,16 +201,17 @@ div:not(.content) > .header {
       position: relative;
     }
 
-    a {
+    a, a:hover {
       align-items: center;
-      color: #310A31 !important;
-      cursor: pointer !important;
+      color: #310A31;
+      cursor: pointer;
       display: flex;
       font-size: 1.125rem;
       font-weight: 800;
 
       img {
         margin-left: 10px;
+        width: 1rem;
       }
     }
   }
@@ -230,6 +231,7 @@ div:not(.content) > .header {
     img {
       position: absolute;
       top: -0.75rem;
+      width: 1.75rem;
     }
 
     > div {
@@ -239,16 +241,13 @@ div:not(.content) > .header {
       gap: 2rem;
     }
 
-    a {
+    a, a:hover {
+      color: #F6E27F;
       font-family: Montserrat;
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 800;
       line-height: normal;
-
-      @include media-breakpoint-up(md) {
-        color: #F6E27F !important;
-      }
     }
   }
 }
@@ -289,6 +288,7 @@ div:not(.content) > .header {
     background: #FFF;
     height: 100%;
     max-width: 23rem;
+    overflow: auto;
     padding: 2rem 1.5rem;
     width: 90%;
   }
@@ -314,7 +314,7 @@ div:not(.content) > .header {
     gap: 3rem;
     margin-top: 5rem;
 
-    a {
+    a, a:hover {
       font-size: 1.5rem;
     }
 
@@ -336,7 +336,7 @@ div:not(.content) > .header {
       display: none;
     }
 
-    a {
+    a, a:hover {
       color: #310A31;
       font-size: 1rem;
       text-overflow: ellipsis;
@@ -348,3 +348,53 @@ div:not(.content) > .header {
   cursor: pointer;
 }
 
+.unitas-site {
+  .top-nav {
+    background: #3A84C9;
+
+    a {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .top-nav-quicklinks p {
+      color: #FFF;
+    }
+
+    .dropdown {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #3A84C9;
+
+      .dropdown-container .top-nav-left a,
+      .dropdown-container .top-nav-right a {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .header {
+    border-bottom: 1px solid rgba(26, 26, 26, 0.15);
+
+    .header-nav {
+      .nav-list a {
+        color: #3A84C9;
+        font-weight: 600;
+      }
+
+      .nav-dropdown {
+        background: #3A84C9;
+
+        a, a:hover {
+          color: #FFF;
+          font-family: Poppins;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    .nav-list a {
+      color: #3A84C9;
+      font-weight: 600;
+    }
+  }
+}
