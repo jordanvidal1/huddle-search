@@ -208,6 +208,7 @@
             }
 
             img {
+                height: 1.5rem;
                 margin-left: 1rem;
             }
         }
@@ -271,10 +272,13 @@
 }
 
 .unitas-site {
-    .looking-to-hire, .looking-for-a-job {
+    .looking-to-hire,
+    .looking-for-a-job,
+    .embedded-talent,
+    .contract-interim {
         .specialism-hero {
             background: url('../static/unitas/looking-to-hire.png') top right no-repeat #3A84C9;
-            background-size: 50%;
+            background-size: 45%;
 
             .title {
                 h1, a {
@@ -293,9 +297,17 @@
         }
     }
 
+    .embedded-talent,
+    .contract-interim {
+        .specialism-hero {
+            background: url('../static/unitas/embedded-talent-specialism.png') top right no-repeat #3A84C9;
+            background-size: 45%;
+        }
+    }
+
     .specialism .specialism-hero {
         background: url('../static/unitas/sector.png') top right no-repeat #F9F9F9;
-        background-size: 50%;
+        background-size: 45%;
 
         .title {
             background: url('../static/unitas/specialism-icon.svg') top center no-repeat;
@@ -310,6 +322,92 @@
 
         .text p {
             font-weight: 400;
+        }
+    }
+
+    .executive-search .specialism-hero {
+        background: linear-gradient(90deg, #710058 0%, rgba(113, 0, 88, 0.92) 39.76%, rgba(113, 0, 88, 0.00) 100%), url('../static/unitas/executive-search.jpeg') right no-repeat, lightgray 369.127px -386.817px / 100% 143.885% no-repeat;
+        background-size: cover;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            max-width: unset;
+
+            > h1 {
+                display: flex;
+                flex-direction: column;
+
+                > div {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 1.5rem;
+                }
+
+                h1 {
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-size: 5rem;
+                    font-style: italic;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: -0.1rem;
+                    margin: 0;
+                    margin-right: 0.75rem;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: Fraunces;
+                    font-size: 5rem;
+                    font-weight: 300;
+                    letter-spacing: normal;
+                }
+
+                > p {
+                    align-self: flex-start;
+                    color: rgba(255, 255, 255, 0.50);
+                    font-family: Poppins;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .text {
+            text-align: left;
+
+            p {
+                color: #FFF;
+                font-family: Poppins;
+            }
+        }
+
+        .info-container {
+            h5 {
+                color: #FFF;
+                font-family: Fraunces;
+                font-weight: 400;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.70);
+                font-family: Poppins;
+            }
+        }
+
+        .btn {
+            background: #FFC700;
+            border-radius: 0.5rem;
+            color: #4D003C;
+            font-family: Poppins;
+            font-weight: 600;
+        }
+
+        @include media-breakpoint-down(md) {
+            .title > h1 > div {
+                flex-direction: column;
+            }
         }
     }
 }

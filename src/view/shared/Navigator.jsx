@@ -1,6 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
+import {isHuddle} from '../../services/helper';
 
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
@@ -65,8 +66,6 @@ const routes = [
   }
 ];
 
-const isHuddle = window.HUDDLE;
-
 const Navigator = ({
   children
 }) => {
@@ -100,7 +99,7 @@ const Navigator = ({
     <div className='nav-dropdown'>
       <img
         alt='dropdown-arrow'
-        src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+        src={isHuddle() ? DropdownArrow : UnitasDropdownArrow}
       />
       <div>
         {subLinks.map((subLink, i) => (
@@ -127,7 +126,7 @@ const Navigator = ({
                 <img
                   alt='arrow'
                   className='header-arrow'
-                  src={isHuddle ? HeaderArrow : UnitasHeaderArrow}
+                  src={isHuddle() ? HeaderArrow : UnitasHeaderArrow}
                 />
               </a>
             ) : (
@@ -147,7 +146,7 @@ const Navigator = ({
       <div className='header-container container'>
         <div className='header-inner'>
           <Link to='/' onClick={expanded && handleExpandClick}>
-            <img alt='logo' className='logo' src={isHuddle ? Logo : UnitasLogo} />
+            <img alt='logo' className='logo' src={isHuddle() ? Logo : UnitasLogo} />
           </Link>
           <div className='header-nav'>
             <div className='header-nav-list'>
@@ -156,7 +155,7 @@ const Navigator = ({
             <img
               alt='logo-menubar'
               className='logo-menubar'
-              src={isHuddle ? Menubar : UnitasMenubar}
+              src={isHuddle() ? Menubar : UnitasMenubar}
               onClick={toggleSideBar}
             />
           </div>
@@ -181,14 +180,14 @@ const Navigator = ({
             <img
               alt='sidebar-logo'
               className='logo'
-              src={isHuddle ? Logo : UnitasLogo}
+              src={isHuddle() ? Logo : UnitasLogo}
             />
           </Link>
           <img
             alt='close-button'
             onClick={hideSidebar}
             className='close-button'
-            src={isHuddle ? CloseButton : UnitasCloseButton}
+            src={isHuddle() ? CloseButton : UnitasCloseButton}
           />
         </div>
         {renderNavList()}

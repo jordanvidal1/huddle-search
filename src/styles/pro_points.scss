@@ -15,7 +15,7 @@
         .text {
             margin-top: 2rem;
 
-            span {
+            p {
                 font-size: 1.125rem;
             }
         }
@@ -34,13 +34,14 @@
                     border-radius: 62.5rem;
                     padding: 1rem;
                     margin: 0 auto;
+                    width: 4rem;
                 }
 
                 h5 {
                     margin: 1.5rem 0 1rem;
                 }
 
-                span {
+                p {
                     color: rgba(255, 255, 255, 0.70);
                     font-size: 1rem;
                 }
@@ -87,7 +88,7 @@
         }
 
         .text {
-            span {
+            p {
                 color: #FFF;
                 font-family: Plus Jakarta Sans;
                 font-weight: 400;
@@ -104,10 +105,48 @@
                     font-family: Playfair Display;
                 }
 
-                span {
+                p {
                     color: rgba(255, 255, 255, 0.70);
                     font-family: Plus Jakarta Sans;
                     font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.unitas-site {
+    .our-story,
+    .embedded-talent,
+    .contract-interim {
+        .pro-points {
+            background: #1A1A1A;
+
+            .pro-point-container .pro-point img {
+                background: #B1C9B1;
+            }
+        }
+    }
+
+    .executive-search {
+        .pro-points {
+            background: #FFC700;
+
+            .title h2, .text p {
+                color: #1A1A1A;
+            }
+
+            .pro-point-container .pro-point {
+                img {
+                    background: #710058;
+                }
+
+                h5 {
+                    color: #1A1A1A;
+                }
+
+                p {
+                    color: rgba(26, 26, 26, 0.70);
                 }
             }
         }

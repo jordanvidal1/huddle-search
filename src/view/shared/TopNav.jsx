@@ -106,7 +106,7 @@ const TopNav = ({isHuddle}) => {
             <img
               alt='quicklinks-menubar'
               className='quicklinks-button'
-              src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+              src={isHuddle() ? DropdownArrow : UnitasDropdownArrow}
             />
           </div>
         </div>

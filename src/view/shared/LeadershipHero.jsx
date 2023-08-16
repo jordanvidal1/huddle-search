@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
+import {isHuddle} from '../../services/helper';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 
@@ -12,8 +13,6 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
-
-const isHuddle = window.HUDDLE;
 
 const leadershipComponent = t => (
   <div className='info-container'>
@@ -55,9 +54,9 @@ const defaultSignature = {
 }
 
 const signatures = [
-  {...defaultSignature, img: isHuddle ? Signature1 : UnitasSignature1},
-  {...defaultSignature, img: isHuddle ? Signature2 : UnitasSignature2},
-  {...defaultSignature, img: isHuddle ? Signature3 : UnitasSignature3}
+  {...defaultSignature, img: isHuddle() ? Signature1 : UnitasSignature1},
+  {...defaultSignature, img: isHuddle() ? Signature2 : UnitasSignature2},
+  {...defaultSignature, img: isHuddle() ? Signature3 : UnitasSignature3}
 ];
 
 const ourStoryComponent = t => (
@@ -101,9 +100,9 @@ const ourProcessComponent = t => (
           <h5>
             {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:title`)}
           </h5>
-          <span>
+          <p>
             {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:text`)}
-          </span>
+          </p>
         </div>
         <img alt='plus-icon' src={PlusIcon} />
         <div>
@@ -119,9 +118,9 @@ const ourProcessComponent = t => (
           <h5>
             {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:title`)}
           </h5>
-          <span>
+          <p>
             {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:text`)}
-          </span>
+          </p>
         </div>
       </div>
     </div>

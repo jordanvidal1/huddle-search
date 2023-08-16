@@ -2,13 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
+import {isHuddle} from '../../../services/helper';
 import FeaturedRole from './FeaturedRole';
 
 import ArrowIcon from '../../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
-
-const isHuddle = window.HUDDLE;
 
 const LookingForAJob = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -30,7 +29,7 @@ const LookingForAJob = () => {
                 <img
                   className='arrow-icon'
                   alt='arrow-icon'
-                  src={isHuddle ? ArrowIcon : UnitasArrowIcon}
+                  src={isHuddle() ? ArrowIcon : UnitasArrowIcon}
                 />
               </Link>
               </p>
@@ -46,7 +45,7 @@ const LookingForAJob = () => {
                       {t(`${window.SITE_NAME}:home:lookingForAJob:roles:button`)}
                       <img
                         alt='arrow-icon'
-                        src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
+                        src={isHuddle() ? ArrowIcon : UnitasRequestArrowIcon}
                       />
                     </Link>
                   </div>

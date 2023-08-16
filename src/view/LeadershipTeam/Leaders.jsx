@@ -1,4 +1,5 @@
 import React from 'react';
+import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
@@ -6,8 +7,6 @@ import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
 import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
 import UnitasEmailIcon from '../../static/unitas/email-white.svg';
 import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
-
-const isHuddle = window.HUDDLE;
 
 const Leaders = ({
   leaders
@@ -35,21 +34,21 @@ const Leaders = ({
                     <div>
                       <img
                         alt='phone-number-icon'
-                        src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
+                        src={isHuddle() ? PhoneIcon : UnitasPhoneIcon}
                       />
                       <span>{number}</span>
                     </div>
                     <div>
                       <img
                         alt='email-icon'
-                        src={isHuddle ? EmailIcon : UnitasEmailIcon}
+                        src={isHuddle() ? EmailIcon : UnitasEmailIcon}
                       />
                       <span>{email}</span>
                     </div>
                     <div>
                       <img
                         alt='linkedin-icon'
-                        src={isHuddle ? LinkedInIcon : UnitasLinkedInIcon}
+                        src={isHuddle() ? LinkedInIcon : UnitasLinkedInIcon}
                       />
                       <span>{linkedin}</span>
                     </div>

@@ -13,6 +13,14 @@
             align-items: flex-start;
             display: flex;
             flex-direction: column;
+
+            > img {
+                background: #FF958C;
+                border-radius: 62.5rem;
+                height: 4rem;
+                padding: 1rem;
+                width: 4rem;
+            }
         }
 
         .visit-title {

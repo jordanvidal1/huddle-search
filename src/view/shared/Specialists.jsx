@@ -1,5 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
@@ -12,8 +13,6 @@ import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
 import UnitasEmailIcon from '../../static/unitas/email-white.svg';
 import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
 
-const isHuddle = window.HUDDLE;
-
 const Specialists = props => {
   const {type = 'leadership', name, specialists, executive} = props;
 
@@ -23,9 +22,9 @@ const Specialists = props => {
   const huddleEmailIcon = executive ? ExecutiveEmailIcon : EmailIcon;
   const huddleLinkedInIcon = executive ? ExecutiveLinkedInIcon : LinkedInIcon;
 
-  const phoneIcon = isHuddle ? huddlePhoneIcon : UnitasPhoneIcon;
-  const emailIcon = isHuddle ? huddleEmailIcon : UnitasEmailIcon;
-  const linkedInIcon = isHuddle ? huddleLinkedInIcon : UnitasLinkedInIcon;
+  const phoneIcon = isHuddle() ? huddlePhoneIcon : UnitasPhoneIcon;
+  const emailIcon = isHuddle() ? huddleEmailIcon : UnitasEmailIcon;
+  const linkedInIcon = isHuddle() ? huddleLinkedInIcon : UnitasLinkedInIcon;
 
   return (
     <div className='specialists'>

@@ -1,8 +1,8 @@
 import React from 'react';
+import {isHuddle} from '../../services/helper';
+
 import Logo from '../../static/huddle/logo.svg';
 import UnitasLogo from '../../static/unitas/logo.svg';
-
-const isHuddle = window.HUDDLE;
 
 const OriginStory = () => (
   <div className='origin-story'>
@@ -91,7 +91,7 @@ const OriginStory = () => (
           <img
             alt='logo'
             className='logo'
-            src={isHuddle ? Logo : UnitasLogo}
+            src={isHuddle() ? Logo : UnitasLogo}
           />
         </div>
       </div>

@@ -1,12 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
-
-const isHuddle = window.HUDDLE;
 
 const LookingToHire = ({
   children,
@@ -33,7 +32,7 @@ const LookingToHire = ({
                       <img
                         className='arrow-icon'
                         alt='arrow-icon'
-                        src={isHuddle ? ArrowIcon : UnitasArrowIcon}
+                        src={isHuddle() ? ArrowIcon : UnitasArrowIcon}
                       />
                     </Link>
                 )}
@@ -61,7 +60,7 @@ const LookingToHire = ({
                   {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:link`)}
                   <img
                     alt='arrow-icon'
-                    src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
+                    src={isHuddle() ? ArrowIcon : UnitasRequestArrowIcon}
                   />
                 </a>
               </div>

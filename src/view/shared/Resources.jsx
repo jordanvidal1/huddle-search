@@ -1,12 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
+import {isHuddle} from '../../services/helper';
 import Resource from './Resource';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
-
-const isHuddle = window.HUDDLE;
 
 const Resources = props => {
   const {name} = props;
@@ -19,7 +18,7 @@ const Resources = props => {
         </h3>
         <Link to='/resources'>
           {`Browse all ${name ? `${name} ` : ''}resources`}
-          <img alt='arrow' src={isHuddle ? ArrowIcon : UnitasArrowIcon} />
+          <img alt='arrow' src={isHuddle() ? ArrowIcon : UnitasArrowIcon} />
         </Link>
       </div>
       {/* todo: slider */}

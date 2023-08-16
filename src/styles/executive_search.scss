@@ -50,8 +50,8 @@
             }
 
             img {
+                height: 1.5rem;
                 margin-left: 1rem;
-                width: 6.782rem;
             }
         }
 
@@ -173,7 +173,7 @@
     .home, .looking-to-hire {
         .executive-search {
             background: linear-gradient(90deg, #710058 0%, rgba(113, 0, 88, 0.92) 39.76%, rgba(113, 0, 88, 0.00) 100%), url('../static/unitas/executive-search.jpeg') right no-repeat, lightgray 369.127px -386.817px / 100% 143.885% no-repeat;
-            background-size: contain;
+            background-size: cover;
 
             .title {
                 > div {
@@ -207,10 +207,6 @@
                         font-size: 1rem;
                         font-weight: 400;
                     }
-                }
-
-                img {
-                    width: 5.728rem;
                 }
             }
 

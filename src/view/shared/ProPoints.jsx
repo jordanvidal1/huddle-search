@@ -23,9 +23,9 @@ const ProPoints = props => {
                 </h2>
               </div>
               <div className='text'>
-                <span>
+                <p>
                   {t(`${window.SITE_NAME}:proPoints:${type}:desc`)}
-                </span>
+                </p>
               </div>
             </div>
             <div className='pro-point-container'>
@@ -36,9 +36,9 @@ const ProPoints = props => {
                     <h5>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:1:title`)}
                     </h5>
-                    <span>
+                    <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:1:text`)}
-                    </span>
+                    </p>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -47,9 +47,9 @@ const ProPoints = props => {
                     <h5>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:2:title`)}
                     </h5>
-                    <span>
+                    <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:2:text`)}
-                    </span>
+                    </p>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -58,9 +58,9 @@ const ProPoints = props => {
                     <h5>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:3:title`)}
                     </h5>
-                    <span>
+                    <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:3:text`)}
-                    </span>
+                    </p>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -69,9 +69,9 @@ const ProPoints = props => {
                     <h5>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:4:title`)}
                     </h5>
-                    <span>
+                    <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:4:text`)}
-                    </span>
+                    </p>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
@@ -80,9 +80,9 @@ const ProPoints = props => {
                     <h5>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:5:title`)}
                     </h5>
-                    <span>
+                    <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:5:text`)}
-                    </span>
+                    </p>
                   </div>
                 </Grid>
               </Grid>

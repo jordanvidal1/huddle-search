@@ -1,8 +1,9 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import PhoneIcon from '../../static/huddle/phone.svg';
-import EmailIcon from '../../static/huddle/email-pink.svg';
-import VisitIcon from '../../static/huddle/visit.svg';
+
+import PhoneIcon from '../../static/huddle/phone-white.svg';
+import EmailIcon from '../../static/huddle/email-white.svg';
+import VisitIcon from '../../static/huddle/visit-white.svg';
 
 const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>

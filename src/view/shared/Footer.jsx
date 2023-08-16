@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
 import FullLogo from '../../static/huddle/full-logo.svg';
@@ -24,8 +25,6 @@ import UnitasFacebook from '../../static/unitas/facebook.svg';
 import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
 
-const isHuddle = window.HUDDLE;
-
 const Footer = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
@@ -34,7 +33,7 @@ const Footer = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            {window.HUDDLE && (
+            {isHuddle() && (
               <div className='title'>
                 <h6>
                   Because every search starts with a
@@ -88,7 +87,7 @@ const Footer = () => {
                         <img
                           className='logo'
                           alt='logo'
-                          src={isHuddle ? FullLogo : UnitasLogo}
+                          src={isHuddle() ? FullLogo : UnitasLogo}
                         />
                         <p>{t(`${window.SITE_NAME}:footer:slogan`)}</p>
                       </div>
@@ -96,21 +95,21 @@ const Footer = () => {
                         <div>
                           <img
                             alt='phone-number'
-                            src={isHuddle ? Phone : UnitasPhone}
+                            src={isHuddle() ? Phone : UnitasPhone}
                           />
                           <span>+44 0000 000 000</span>
                         </div>
                         <div>
                           <img
                             alt='email'
-                            src={isHuddle ? Email : UnitasEmail}
+                            src={isHuddle() ? Email : UnitasEmail}
                           />
                           <span>{t(`${window.SITE_NAME}:footer:email`)}</span>
                         </div>
                         <div>
                           <img
                             alt='location'
-                            src={isHuddle ? Location : UnitasLocation}
+                            src={isHuddle() ? Location : UnitasLocation}
                           />
                           <span>1 Fore St Ave, London EC2Y9DT</span>
                         </div>
@@ -119,25 +118,25 @@ const Footer = () => {
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='linkedin'
-                            src={isHuddle ? LinkedIn : UnitasLinkedIn}
+                            src={isHuddle() ? LinkedIn : UnitasLinkedIn}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='twitter'
-                            src={isHuddle ? Twitter : UnitasTwitter}
+                            src={isHuddle() ? Twitter : UnitasTwitter}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='facebook'
-                            src={isHuddle ? Facebook : UnitasFacebook}
+                            src={isHuddle() ? Facebook : UnitasFacebook}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='instagram'
-                            src={isHuddle ? Instagram : UnitasInstagram}
+                            src={isHuddle() ? Instagram : UnitasInstagram}
                           />
                         </a>
                       </div>
@@ -187,7 +186,7 @@ const Footer = () => {
                     <span>
                       Proudly part of <img
                       alt='prime-group'
-                      src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                      src={isHuddle() ? ThePrimeGroup : UnitasThePrimeGroup}
                     />
                     </span>
                     </div>

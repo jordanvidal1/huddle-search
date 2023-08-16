@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {isHuddle} from '../../services/helper';
 import InfoBox from './InfoBox';
 
 import Logo from '../../static/huddle/text-logo-gold.svg';
@@ -16,8 +17,6 @@ import UnitasInfoIcon2 from '../../static/unitas/executive-icon-2.svg';
 import UnitasInfoIcon3 from '../../static/unitas/executive-icon-3.svg';
 import UnitasInfoIcon4 from '../../static/unitas/executive-icon-4.svg';
 
-const isHuddle = window.HUDDLE;
-
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
@@ -30,7 +29,7 @@ const ExecutiveSearch = () => {
               <div className='title'>
                 <p>
                   {t(`${window.SITE_NAME}:executiveSearch:title:part1`)}
-                  <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />
+                  <img alt='logo-gold' src={isHuddle() ? Logo : UnitasLogo} />
                 </p>
                 <div>
                   <h1>
@@ -49,22 +48,22 @@ const ExecutiveSearch = () => {
             </div>
             <Grid container spacing={2} className='grid-container'>
               <InfoBox
-                icon={isHuddle ? InfoIcon1 : UnitasInfoIcon1}
+                icon={isHuddle() ? InfoIcon1 : UnitasInfoIcon1}
                 title={t(`${window.SITE_NAME}:executiveSearch:info:1:title`)}
                 text={t(`${window.SITE_NAME}:executiveSearch:info:1:text`)}
               />
               <InfoBox
-                icon={isHuddle ? InfoIcon2 : UnitasInfoIcon2}
+                icon={isHuddle() ? InfoIcon2 : UnitasInfoIcon2}
                 title={t(`${window.SITE_NAME}:executiveSearch:info:2:title`)}
                 text={t(`${window.SITE_NAME}:executiveSearch:info:2:text`)}
               />
               <InfoBox
-                icon={isHuddle ? InfoIcon3 : UnitasInfoIcon3}
+                icon={isHuddle() ? InfoIcon3 : UnitasInfoIcon3}
                 title={t(`${window.SITE_NAME}:executiveSearch:info:3:title`)}
                 text={t(`${window.SITE_NAME}:executiveSearch:info:3:text`)}
               />
               <InfoBox
-                icon={isHuddle ? InfoIcon4 : UnitasInfoIcon4}
+                icon={isHuddle() ? InfoIcon4 : UnitasInfoIcon4}
                 title={t(`${window.SITE_NAME}:executiveSearch:info:4:title`)}
                 text={t(`${window.SITE_NAME}:executiveSearch:info:4:text`)}
               />

@@ -141,8 +141,9 @@
 
         .specialists-container {
             .specialist {
-                > img {
-                    border-color: #7E6739;
+                .specialist-img-container {
+                    background: #7E6739;
+                    padding: 3px;
                 }
 
                 h5 {
@@ -198,6 +199,46 @@
                     color: #FFF;
                     font-weight: 600;
                 }
+            }
+        }
+    }
+
+    .executive-search > .specialists {
+        background: #710058;
+
+        .title h2 {
+            color: #FFF;
+            font-family: Fraunces;
+        }
+
+        .text p {
+            color: #FFF;
+            font-family: Poppins;
+        }
+
+        .specialists-container .specialist {
+            .specialist-img-container {
+                background: #FFC700;
+            }
+
+            h5 {
+                color: #FFF;
+                font-family: Fraunces;
+                font-weight: 400;
+            }
+
+            span {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: Poppins;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.70);
+                font-family: Poppins;
+            }
+
+            .specialist-contact span {
+                color: #FFC700;
             }
         }
     }

@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {capitalize, Grid} from '@material-ui/core';
+import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
@@ -9,17 +10,15 @@ import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 import UnitasExecutiveArrowIcon from '../../static/unitas/arrow-gold.svg';
 
-const isHuddle = window.HUDDLE;
-
 const WorkForUs = ({
   home,
   executive
 }) => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const arrowIcon = isHuddle
+  const arrowIcon = isHuddle()
     ? ArrowIcon : UnitasArrowIcon;
-  const executiveArrowIcon = isHuddle
+  const executiveArrowIcon = isHuddle()
     ? ExecutiveArrowIcon : UnitasExecutiveArrowIcon;
   const icon = executive ? executiveArrowIcon : arrowIcon;
   const siteName = capitalize(window.SITE_NAME);
