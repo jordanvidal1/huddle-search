@@ -21,7 +21,7 @@ const WorkForUs = ({
   const executiveArrowIcon = isHuddle()
     ? ExecutiveArrowIcon : UnitasExecutiveArrowIcon;
   const icon = executive ? executiveArrowIcon : arrowIcon;
-  const siteName = capitalize(window.SITE_NAME);
+  const siteName = capitalize(process.env.REACT_APP_SITE_NAME);
 
   return (
     <div className='work-for-us'>

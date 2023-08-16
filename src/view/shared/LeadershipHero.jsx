@@ -132,7 +132,7 @@ const LeadershipHero = props => {
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const siteName = capitalize(window.SITE_NAME);
+  const siteName = capitalize(process.env.REACT_APP_SITE_NAME);
 
   const components = {
     leadershipTeam: leadershipComponent(t),
