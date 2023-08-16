@@ -78,7 +78,7 @@ const Navigator = ({
 
   const location = useLocation();
 
-  const content = useMemo(() => children, []);
+  const content = useMemo(() => children, [children]);
 
   const handleExpandClick = () => setExpanded(!expanded);
   const closeExpandClick = () => setExpanded(false);
@@ -89,7 +89,7 @@ const Navigator = ({
     }
     closeExpandClick();
     setPathname(`/${location.pathname.split('/')[1]}`);
-  }, [location]);
+  }, [location, pathname]);
 
   useEffect(() => {
     document.body.style.overflow = sideMenuDisplayed ? 'hidden' : 'auto';
@@ -121,14 +121,14 @@ const Navigator = ({
             onClick={route.subLinks && handleExpandClick}
           >
             {route.subLinks ? (
-              <a>
+              <span>
                 {route.name}
                 <img
                   alt='arrow'
                   className='header-arrow'
                   src={isHuddle() ? HeaderArrow : UnitasHeaderArrow}
                 />
-              </a>
+              </span>
             ) : (
               <Link to={route.path} onClick={hideSidebar}>
                 {route.name}

@@ -201,7 +201,7 @@ div:not(.content) > .header {
       position: relative;
     }
 
-    a, a:hover {
+    a, a:hover, span > span {
       align-items: center;
       color: #310A31;
       cursor: pointer;
@@ -314,7 +314,7 @@ div:not(.content) > .header {
     gap: 3rem;
     margin-top: 5rem;
 
-    a, a:hover {
+    a, a:hover, span > span {
       font-size: 1.5rem;
     }
 
@@ -375,9 +375,11 @@ div:not(.content) > .header {
     border-bottom: 1px solid rgba(26, 26, 26, 0.15);
 
     .header-nav {
-      .nav-list a {
-        color: #3A84C9;
-        font-weight: 600;
+      .nav-list {
+        a, span > span {
+          color: #3A84C9;
+          font-weight: 600;
+        }
       }
 
       .nav-dropdown {
@@ -392,9 +394,11 @@ div:not(.content) > .header {
   }
 
   .sidebar {
-    .nav-list a {
-      color: #3A84C9;
-      font-weight: 600;
+    .nav-list {
+      a, span > span {
+        color: #3A84C9;
+        font-weight: 600;
+      }
     }
   }
 }
