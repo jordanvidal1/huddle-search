@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 import Input from '../shared/Input';
 
 import LinkedIn from '../../static/huddle/linkedin-purple.svg';
@@ -25,10 +25,10 @@ const FollowUs = () => {
               <div className='box join'>
                 <div className='text-container'>
                   <h3>
-                    {t(`${window.SITE_NAME}:contactUs:join:title`)}
+                    {t(`${getNamespace}:contactUs:join:title`)}
                   </h3>
                   <p>
-                    {t(`${window.SITE_NAME}:contactUs:join:text`)}
+                    {t(`${getNamespace}:contactUs:join:text`)}
                   </p>
                 </div>
                 <div className='action-container'>
@@ -57,10 +57,10 @@ const FollowUs = () => {
               <div className='box follow'>
                 <div className='text-container'>
                   <h3>
-                    {t(`${window.SITE_NAME}:contactUs:follow:title`)}
+                    {t(`${getNamespace}:contactUs:follow:title`)}
                   </h3>
                   <p>
-                    {t(`${window.SITE_NAME}:contactUs:follow:text`)}
+                    {t(`${getNamespace}:contactUs:follow:text`)}
                   </p>
                 </div>
                 <div className='action-container'>

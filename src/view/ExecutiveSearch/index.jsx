@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import Hero from '../shared/SpecialismHero';
 import ProPoints from '../shared/ProPoints';
@@ -18,15 +18,15 @@ const ExecutiveSearch = () => {
     <div className='executive-search'>
       <Hero type='executiveSearch' contact executive>
         <p>
-          {t(`${window.SITE_NAME}:executiveSearch:title:part1`)}
+          {t(`${getNamespace}:executiveSearch:title:part1`)}
           <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />
         </p>
         <div>
           <h1>
-            {t(`${window.SITE_NAME}:executiveSearch:title:part2`)}
+            {t(`${getNamespace}:executiveSearch:title:part2`)}
           </h1>
           <p>
-            {t(`${window.SITE_NAME}:executiveSearch:title:part3`)}
+            {t(`${getNamespace}:executiveSearch:title:part3`)}
           </p>
         </div>
       </Hero>

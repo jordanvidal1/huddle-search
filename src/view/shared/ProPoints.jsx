@@ -61,7 +61,7 @@ const ProPoints = props => {
                       {t(`${getNamespace}:proPoints:${type}:points:3:title`)}
                     </h5>
                     <p>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:3:text`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:3:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -69,10 +69,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-4' src={ProIcon4} />
                     <h5>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:4:title`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:4:title`)}
                     </h5>
                     <p>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:4:text`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:4:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -80,10 +80,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-5' src={ProIcon1} />
                     <h5>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:5:title`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:5:title`)}
                     </h5>
                     <p>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:5:text`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:5:text`)}
                     </p>
                   </div>
                 </Grid>

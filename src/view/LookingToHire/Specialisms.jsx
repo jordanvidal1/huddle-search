@@ -23,7 +23,7 @@ const Specialisms = props => {
               </div>
               <div className='text'>
                 <p>
-                  {t(`${window.SITE_NAME}:lookingToHire:${type}:desc`)}
+                  {t(`${getNamespace}:lookingToHire:${type}:desc`)}
                 </p>
               </div>
             </div>
