@@ -32,11 +32,9 @@
             }
         }
 
-        .visit-text {
-            p {
-                color: rgba(49, 10, 49, 0.70);
-                font-size: 1rem;
-            }
+        .visit-text p {
+            color: rgba(49, 10, 49, 0.70);
+            font-size: 1rem;
         }
 
         .visit-info {
@@ -46,6 +44,7 @@
                 color: #310A31;
                 font-size: 1.25rem;
                 font-weight: 800;
+                line-height: 1.75rem; /* 140% */
             }
         }
     }
@@ -70,5 +69,28 @@
             flex-basis: 100%;
             max-width: 100%;
         }
+    }
+}
+
+.unitas-site .visit-grid-container .visit-container {
+    background: #56422F;
+    border-radius: 1.5rem;
+
+    .visit-text-container > img {
+        background: #B1C9B1;
+    }
+
+    .visit-title h5 {
+        color: #FFF;
+    }
+
+    .visit-text p {
+        color: rgba(255, 255, 255, 0.70);
+    }
+
+    .visit-info p {
+        color: #FFF;
+        font-weight: 600;
+        line-height: 1.75rem; /* 140% */
     }
 }

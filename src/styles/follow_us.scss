@@ -72,7 +72,13 @@
 
                 input {
                     height: 3.5rem;
-                    min-width: 23rem;
+                    min-width: 21.375rem;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    button {
+                        flex-grow: 1;
+                    }
                 }
             }
 
@@ -89,6 +95,10 @@
                     flex-grow: 1;
                     justify-content: space-around;
                     margin: 0 auto;
+                }
+
+                img {
+                    height: 2.3125rem;
                 }
             }
         }
@@ -133,5 +143,29 @@
                 }
             }
         }
+    }
+}
+
+.unitas-site .contact-us > .follow-us .box-container {
+    .box {
+        &.join {
+            background: #1A1A1A;
+        }
+
+        &.follow {
+            background: #56422F;
+
+            h3 {
+                color: #FFF;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.70);
+            }
+        }
+    }
+
+    .action-container .subscribe-container input {
+        height: 4rem;
     }
 }

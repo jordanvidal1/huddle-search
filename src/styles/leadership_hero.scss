@@ -450,6 +450,7 @@
                     font-weight: 900;
                 }
             }
+
             .text p {
                 font-weight: 400;
             }
@@ -498,8 +499,21 @@
 
     .leadership-team, .our-story {
         .leadership-hero {
-            background: url('../static/unitas/leadership.png') top right no-repeat #FFF;
+            background: url('../static/unitas/leadership.png') top right no-repeat #F9F9F9;
             background-size: 45%;
+        }
+    }
+
+    .work-for-us, .contact-us {
+        .leadership-hero {
+            background: url('../static/unitas/contact-us.png') top right no-repeat #F9F9F9;
+            background-size: 45%;
+
+            .text-container h5,
+            .title h1,
+            .title a {
+                color: #56422F;
+            }
         }
     }
 

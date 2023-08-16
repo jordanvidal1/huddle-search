@@ -64,7 +64,7 @@
     }
 
     .roles-header {
-        h3, span {
+        h3, a {
             color: #310A31;
         }
     }
@@ -82,6 +82,18 @@
         .roles-header a {
             color: #F49944;
             font-weight: 600;
+        }
+    }
+
+    .work-for-us {
+        .box {
+            background: #56422F;
+        }
+
+        .roles-header {
+            h3, a {
+                color: #FFF;
+            }
         }
     }
 }
