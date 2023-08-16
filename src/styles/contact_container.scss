@@ -63,6 +63,14 @@
 .executive-search .contact-grid-container .contact-container {
     background: #1A1A1A;
 
+    .contact-text-container > img {
+        background: none;
+        border-radius: 0;
+        height: 2rem;
+        padding: 0;
+        width: 2rem;
+    }
+
     .contact-title {
         margin: 1.5rem 0 1rem;
 

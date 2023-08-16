@@ -358,7 +358,7 @@
         .info-container {
             margin: 7rem 0 2rem;
 
-            .info-box {
+            .info-box:has(.info-calculation) {
                 background-color: unset;
                 padding: 0;
 
