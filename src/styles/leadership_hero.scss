@@ -185,6 +185,10 @@
                 .info-box {
                     padding: 2rem 1.5rem;
 
+                    &:has(.info-calculation) {
+                        padding: 2rem 1.5rem;
+                    }
+
                     .info-title h5 {
                         font-size: 1.75rem;
                     }
