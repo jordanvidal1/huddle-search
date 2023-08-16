@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
@@ -22,9 +22,9 @@ const Specialists = props => {
   const huddleEmailIcon = executive ? ExecutiveEmailIcon : EmailIcon;
   const huddleLinkedInIcon = executive ? ExecutiveLinkedInIcon : LinkedInIcon;
 
-  const phoneIcon = isHuddle() ? huddlePhoneIcon : UnitasPhoneIcon;
-  const emailIcon = isHuddle() ? huddleEmailIcon : UnitasEmailIcon;
-  const linkedInIcon = isHuddle() ? huddleLinkedInIcon : UnitasLinkedInIcon;
+  const phoneIcon = isHuddle ? huddlePhoneIcon : UnitasPhoneIcon;
+  const emailIcon = isHuddle ? huddleEmailIcon : UnitasEmailIcon;
+  const linkedInIcon = isHuddle ? huddleLinkedInIcon : UnitasLinkedInIcon;
 
   return (
     <div className='specialists'>
@@ -34,12 +34,12 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${window.SITE_NAME}:specialists:${type}:title`, {name})}
+                  {t(`${getNamespace}:specialists:${type}:title`, {name})}
                 </h2>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${window.SITE_NAME}:specialists:${type}:desc`)}
+                  {t(`${getNamespace}:specialists:${type}:desc`)}
                 </p>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
+import {getNamespace} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-white.svg';
 import EmailIcon from '../../static/huddle/email-white.svg';
@@ -13,18 +14,18 @@ const ContactVisitContainer = (t) => (
           <img alt='vacancy-icon' src={PhoneIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${window.SITE_NAME}:visitContainer:phone:title`)}
+              {t(`${getNamespace}:visitContainer:phone:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${window.SITE_NAME}:visitContainer:phone:text`)}
+              {t(`${getNamespace}:visitContainer:phone:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            {t(`${window.SITE_NAME}:visitContainer:phone:phoneNumber`)}
+            {t(`${getNamespace}:visitContainer:phone:phoneNumber`)}
           </p>
         </div>
       </div>
@@ -35,18 +36,18 @@ const ContactVisitContainer = (t) => (
           <img alt='help-icon' src={EmailIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${window.SITE_NAME}:visitContainer:email:title`)}
+              {t(`${getNamespace}:visitContainer:email:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${window.SITE_NAME}:visitContainer:email:text`)}
+              {t(`${getNamespace}:visitContainer:email:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            {t(`${window.SITE_NAME}:visitContainer:email:emailAddress`)}
+            {t(`${getNamespace}:visitContainer:email:emailAddress`)}
           </p>
         </div>
       </div>
@@ -57,12 +58,12 @@ const ContactVisitContainer = (t) => (
           <img alt='cv-icon' src={VisitIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${window.SITE_NAME}:visitContainer:visit:title`)}
+              {t(`${getNamespace}:visitContainer:visit:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${window.SITE_NAME}:visitContainer:visit:text`)}
+              {t(`${getNamespace}:visitContainer:visit:text`)}
             </p>
           </div>
         </div>

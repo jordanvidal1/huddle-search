@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../../services/helper';
+import {getNamespace, isHuddle} from '../../../services/helper';
 import FeaturedRole from './FeaturedRole';
 
 import ArrowIcon from '../../../static/huddle/arrow.svg';
@@ -24,12 +24,12 @@ const LookingForAJob = () => {
             </div>
             <div className='text'>
               <p>
-                {t(`${window.SITE_NAME}:home:lookingForAJob:desc`)} <Link to='/looking-for-a-job'>
-                {t(`${window.SITE_NAME}:home:lookingForAJob:link`)}
+                {t(`${getNamespace}:home:lookingForAJob:desc`)} <Link to='/looking-for-a-job'>
+                {t(`${getNamespace}:home:lookingForAJob:link`)}
                 <img
                   className='arrow-icon'
                   alt='arrow-icon'
-                  src={isHuddle() ? ArrowIcon : UnitasArrowIcon}
+                  src={isHuddle ? ArrowIcon : UnitasArrowIcon}
                 />
               </Link>
               </p>
@@ -38,14 +38,14 @@ const LookingForAJob = () => {
               <div className='featured-roles-container'>
                 <div className='subtitle-container'>
                   <h5>
-                    {t(`${window.SITE_NAME}:home:lookingForAJob:roles:title`)}
+                    {t(`${getNamespace}:home:lookingForAJob:roles:title`)}
                   </h5>
                   <div className='link-container'>
                     <Link to='/jobs'>
-                      {t(`${window.SITE_NAME}:home:lookingForAJob:roles:button`)}
+                      {t(`${getNamespace}:home:lookingForAJob:roles:button`)}
                       <img
                         alt='arrow-icon'
-                        src={isHuddle() ? ArrowIcon : UnitasRequestArrowIcon}
+                        src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
                       />
                     </Link>
                   </div>

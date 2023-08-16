@@ -38,21 +38,21 @@ const Role = props => {
             <span>
               <img
                 alt='salary'
-                src={isHuddle() ? Salary : UnitasSalary}
+                src={isHuddle ? Salary : UnitasSalary}
               />
               £{renderNumber(salary)} per year
             </span>
             <span>
               <img
                 alt='benefits'
-                src={isHuddle() ? Benefits : UnitasBenefits}
+                src={isHuddle ? Benefits : UnitasBenefits}
               />
               {benefits}
             </span>
             <span>
               <img
                 alt='location'
-                src={isHuddle() ? Location : UnitasLocation}
+                src={isHuddle ? Location : UnitasLocation}
               />
               {location}
             </span>

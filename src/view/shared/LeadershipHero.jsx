@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 
@@ -18,7 +18,7 @@ const leadershipComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${window.SITE_NAME}:leadershipHero:leadershipTeam:info:title`)}
+          {t(`${getNamespace}:leadershipHero:leadershipTeam:info:title`)}
         </h5>
       </div>
       <div className='info-details'>
@@ -53,9 +53,9 @@ const defaultSignature = {
 }
 
 const signatures = [
-  {...defaultSignature, img: isHuddle() ? Signature1 : UnitasSignature1},
-  {...defaultSignature, img: isHuddle() ? Signature2 : UnitasSignature2},
-  {...defaultSignature, img: isHuddle() ? Signature3 : UnitasSignature3}
+  {...defaultSignature, img: isHuddle ? Signature1 : UnitasSignature1},
+  {...defaultSignature, img: isHuddle ? Signature2 : UnitasSignature2},
+  {...defaultSignature, img: isHuddle ? Signature3 : UnitasSignature3}
 ];
 
 const ourStoryComponent = t => (
@@ -63,12 +63,12 @@ const ourStoryComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${window.SITE_NAME}:leadershipHero:ourStory:info:title`)}
+          {t(`${getNamespace}:leadershipHero:ourStory:info:title`)}
         </h5>
       </div>
       <div className='info-description'>
         <p>
-          {t(`${window.SITE_NAME}:leadershipHero:ourStory:info:text`)}
+          {t(`${getNamespace}:leadershipHero:ourStory:info:text`)}
         </p>
       </div>
       <div className='info-signatures'>
@@ -91,34 +91,34 @@ const ourProcessComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:title`)}
+          {t(`${getNamespace}:leadershipHero:ourProcess:info:title`)}
         </h5>
       </div>
       <div className='info-calculation'>
         <div>
           <h5>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:title`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:1:title`)}
           </h5>
           <p>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:1:text`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:1:text`)}
           </p>
         </div>
         <img alt='plus-icon' src={PlusIcon} />
         <div>
           <h5>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:2:title`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:2:title`)}
           </h5>
           <span>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:2:text`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:2:text`)}
           </span>
         </div>
         <img alt='equals-icon' src={EqualsIcon} />
         <div>
           <h5>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:title`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:3:title`)}
           </h5>
           <p>
-            {t(`${window.SITE_NAME}:leadershipHero:ourProcess:info:calculation:3:text`)}
+            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:3:text`)}
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ const LeadershipHero = props => {
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const siteName = isHuddle() ? 'Huddle' : 'Unitas';
+  const siteName = isHuddle ? 'Huddle' : 'Unitas';
 
   const components = {
     leadershipTeam: leadershipComponent(t),
@@ -152,7 +152,7 @@ const LeadershipHero = props => {
           <div className='content'>
             <div className='text-container'>
               <h5>
-                {t(`${window.SITE_NAME}:leadershipHero:${type}:path`)}
+                {t(`${getNamespace}:leadershipHero:${type}:path`)}
               </h5>
               <div className='title'>
                 <h1>
@@ -161,7 +161,7 @@ const LeadershipHero = props => {
               </div>
               <div className='text'>
                 <p>
-                  {t(`${window.SITE_NAME}:leadershipHero:${type}:desc`)}
+                  {t(`${getNamespace}:leadershipHero:${type}:desc`)}
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
 import FullLogo from '../../static/huddle/full-logo.svg';
@@ -33,7 +33,7 @@ const Footer = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            {isHuddle() && (
+            {isHuddle && (
               <div className='title'>
                 <h6>
                   Because every search starts with a
@@ -46,10 +46,10 @@ const Footer = () => {
                 <div className='box hire-box'>
                   <div className='text'>
                     <h3>
-                      {t(`${window.SITE_NAME}:footer:lookingToHire:title`)}
+                      {t(`${getNamespace}:footer:lookingToHire:title`)}
                     </h3>
                     <p>
-                      {t(`${window.SITE_NAME}:footer:lookingToHire:desc`)}
+                      {t(`${getNamespace}:footer:lookingToHire:desc`)}
                     </p>
                   </div>
                   <div className='btn-container'>
@@ -66,10 +66,10 @@ const Footer = () => {
                 <div className='box job-box'>
                   <div className='text'>
                     <h3>
-                      {t(`${window.SITE_NAME}:footer:lookingForAJob:title`)}
+                      {t(`${getNamespace}:footer:lookingForAJob:title`)}
                     </h3>
                     <p>
-                      {t(`${window.SITE_NAME}:footer:lookingForAJob:desc`)}
+                      {t(`${getNamespace}:footer:lookingForAJob:desc`)}
                     </p>
                   </div>
                   <div className='btn-container'>
@@ -87,29 +87,29 @@ const Footer = () => {
                         <img
                           className='logo'
                           alt='logo'
-                          src={isHuddle() ? FullLogo : UnitasLogo}
+                          src={isHuddle ? FullLogo : UnitasLogo}
                         />
-                        <p>{t(`${window.SITE_NAME}:footer:slogan`)}</p>
+                        <p>{t(`${getNamespace}:footer:slogan`)}</p>
                       </div>
                       <div className='footer-contact'>
                         <div>
                           <img
                             alt='phone-number'
-                            src={isHuddle() ? Phone : UnitasPhone}
+                            src={isHuddle ? Phone : UnitasPhone}
                           />
                           <span>+44 0000 000 000</span>
                         </div>
                         <div>
                           <img
                             alt='email'
-                            src={isHuddle() ? Email : UnitasEmail}
+                            src={isHuddle ? Email : UnitasEmail}
                           />
-                          <span>{t(`${window.SITE_NAME}:footer:email`)}</span>
+                          <span>{t(`${getNamespace}:footer:email`)}</span>
                         </div>
                         <div>
                           <img
                             alt='location'
-                            src={isHuddle() ? Location : UnitasLocation}
+                            src={isHuddle ? Location : UnitasLocation}
                           />
                           <span>1 Fore St Ave, London EC2Y9DT</span>
                         </div>
@@ -118,25 +118,25 @@ const Footer = () => {
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='linkedin'
-                            src={isHuddle() ? LinkedIn : UnitasLinkedIn}
+                            src={isHuddle ? LinkedIn : UnitasLinkedIn}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='twitter'
-                            src={isHuddle() ? Twitter : UnitasTwitter}
+                            src={isHuddle ? Twitter : UnitasTwitter}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='facebook'
-                            src={isHuddle() ? Facebook : UnitasFacebook}
+                            src={isHuddle ? Facebook : UnitasFacebook}
                           />
                         </a>
                         <a href='#' rel='noreferrer' target='_blank'>
                           <img
                             alt='instagram'
-                            src={isHuddle() ? Instagram : UnitasInstagram}
+                            src={isHuddle ? Instagram : UnitasInstagram}
                           />
                         </a>
                       </div>
@@ -186,13 +186,13 @@ const Footer = () => {
                     <span>
                       Proudly part of <img
                       alt='prime-group'
-                      src={isHuddle() ? ThePrimeGroup : UnitasThePrimeGroup}
+                      src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
                     />
                     </span>
                     </div>
                     <div className='footer-copyright'>
                     <span>
-                      {t(`${window.SITE_NAME}:footer:copyright`)}
+                      {t(`${getNamespace}:footer:copyright`)}
                       {/* todo: make year dynamic */}
                     </span>
                     </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
+import {getNamespace} from '../../services/helper';
+
 import VacancyIcon from '../../static/huddle/vacancy.svg';
 import HelpIcon from '../../static/huddle/help.svg';
 import CVIcon from '../../static/huddle/cv.svg';
@@ -13,18 +15,18 @@ const InfoContainer = ({t}) => (
           <img alt='vacancy-icon' src={VacancyIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${window.SITE_NAME}:infoContainer:vacancy:title`)}
+              {t(`${getNamespace}:infoContainer:vacancy:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${window.SITE_NAME}:infoContainer:vacancy:text`)}
+              {t(`${getNamespace}:infoContainer:vacancy:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            {t(`${window.SITE_NAME}:infoContainer:vacancy:button`)}
+            {t(`${getNamespace}:infoContainer:vacancy:button`)}
           </button>
         </div>
       </div>
@@ -35,18 +37,18 @@ const InfoContainer = ({t}) => (
           <img alt='help-icon' src={HelpIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${window.SITE_NAME}:infoContainer:help:title`)}
+              {t(`${getNamespace}:infoContainer:help:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${window.SITE_NAME}:infoContainer:help:text`)}
+              {t(`${getNamespace}:infoContainer:help:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <Link to='/contact-us' className='btn btn-secondary'>
-            {t(`${window.SITE_NAME}:infoContainer:help:button`)}
+            {t(`${getNamespace}:infoContainer:help:button`)}
           </Link>
         </div>
       </div>
@@ -57,18 +59,18 @@ const InfoContainer = ({t}) => (
           <img alt='cv-icon' src={CVIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${window.SITE_NAME}:infoContainer:cv:title`)}
+              {t(`${getNamespace}:infoContainer:cv:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${window.SITE_NAME}:infoContainer:cv:text`)}
+              {t(`${getNamespace}:infoContainer:cv:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <button className='btn btn-secondary'>
-            {t(`${window.SITE_NAME}:infoContainer:cv:button`)}
+            {t(`${getNamespace}:infoContainer:cv:button`)}
           </button>
         </div>
       </div>

@@ -91,7 +91,7 @@ const OriginStory = () => (
           <img
             alt='logo'
             className='logo'
-            src={isHuddle() ? Logo : UnitasLogo}
+            src={isHuddle ? Logo : UnitasLogo}
           />
         </div>
       </div>

@@ -20,7 +20,7 @@ const Roles = props => {
           {`Browse all ${name ? `${name} ` : ''}jobs`}
           <img
             alt='arrow'
-            src={isHuddle() ? ArrowIcon : UnitasArrowIcon}
+            src={isHuddle ? ArrowIcon : UnitasArrowIcon}
           />
         </Link>
       </div>

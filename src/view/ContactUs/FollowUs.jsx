@@ -69,13 +69,13 @@ const FollowUs = () => {
                       <a href='#' rel='noreferrer' target='_blank'>
                         <img
                           alt='linkedin'
-                          src={isHuddle() ? LinkedIn : UnitasLinkedIn}
+                          src={isHuddle ? LinkedIn : UnitasLinkedIn}
                         />
                       </a>
                       <a href='#' rel='noreferrer' target='_blank'>
                         <img
                           alt='twitter'
-                          src={isHuddle() ? Twitter : UnitasTwitter}
+                          src={isHuddle ? Twitter : UnitasTwitter}
                         />
                       </a>
                     </div>
@@ -83,13 +83,13 @@ const FollowUs = () => {
                       <a href='#' rel='noreferrer' target='_blank'>
                         <img
                           alt='facebook'
-                          src={isHuddle() ? Facebook : UnitasFacebook}
+                          src={isHuddle ? Facebook : UnitasFacebook}
                         />
                       </a>
                       <a href='#' rel='noreferrer' target='_blank'>
                         <img
                           alt='instagram'
-                          src={isHuddle() ? Instagram : UnitasInstagram}
+                          src={isHuddle ? Instagram : UnitasInstagram}
                         />
                       </a>
                     </div>

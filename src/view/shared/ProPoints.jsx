@@ -1,6 +1,8 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {getNamespace} from '../../services/helper';
+
 import ProIcon1 from '../../static/huddle/pro-icon-1.svg';
 import ProIcon2 from '../../static/huddle/pro-icon-2.svg';
 import ProIcon3 from '../../static/huddle/pro-icon-3.svg';
@@ -19,12 +21,12 @@ const ProPoints = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${window.SITE_NAME}:proPoints:${type}:title`)}
+                  {t(`${getNamespace}:proPoints:${type}:title`)}
                 </h2>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${window.SITE_NAME}:proPoints:${type}:desc`)}
+                  {t(`${getNamespace}:proPoints:${type}:desc`)}
                 </p>
               </div>
             </div>
@@ -34,10 +36,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-1' src={ProIcon1} />
                     <h5>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:1:title`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:1:title`)}
                     </h5>
                     <p>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:1:text`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:1:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -45,10 +47,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-2' src={ProIcon2} />
                     <h5>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:2:title`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:2:title`)}
                     </h5>
                     <p>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:2:text`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:2:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -56,7 +58,7 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-3' src={ProIcon3} />
                     <h5>
-                      {t(`${window.SITE_NAME}:proPoints:${type}:points:3:title`)}
+                      {t(`${getNamespace}:proPoints:${type}:points:3:title`)}
                     </h5>
                     <p>
                       {t(`${window.SITE_NAME}:proPoints:${type}:points:3:text`)}

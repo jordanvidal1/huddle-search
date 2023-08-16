@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-white.svg';
 import EmailIcon from '../../static/huddle/email-white.svg';
@@ -13,9 +13,9 @@ const ContactContainer = ({
   t,
   executive
 }) => {
-  const executivePhoneIcon = isHuddle()
+  const executivePhoneIcon = isHuddle
     ? ExecutivePhoneIcon : UnitasExecutivePhoneIcon;
-  const executiveEmailIcon = isHuddle()
+  const executiveEmailIcon = isHuddle
     ? ExecutiveEmailIcon : UnitasExecutiveEmailIcon;
 
   const phoneIcon = executive ? executivePhoneIcon : PhoneIcon;
@@ -29,18 +29,18 @@ const ContactContainer = ({
             <img alt='phone-icon' src={phoneIcon} />
             <div className='contact-title'>
               <h5>
-                {t(`${window.SITE_NAME}:contactContainer:phone:${executive ? 'executiveTitle' : 'title'}`)}
+                {t(`${getNamespace}:contactContainer:phone:${executive ? 'executiveTitle' : 'title'}`)}
               </h5>
             </div>
             <div className='contact-text'>
               <p>
-                {t(`${window.SITE_NAME}:contactContainer:phone:${executive ? 'executiveText' : 'text'}`)}
+                {t(`${getNamespace}:contactContainer:phone:${executive ? 'executiveText' : 'text'}`)}
               </p>
             </div>
           </div>
           <div className='contact-info'>
             <p>
-              {t(`${window.SITE_NAME}:contactContainer:phone:phoneNumber`)}
+              {t(`${getNamespace}:contactContainer:phone:phoneNumber`)}
             </p>
           </div>
         </div>
@@ -51,18 +51,18 @@ const ContactContainer = ({
             <img alt='email-icon' src={emailIcon} />
             <div className='contact-title'>
               <h5>
-                {t(`${window.SITE_NAME}:contactContainer:email:${executive ? 'executiveTitle' : 'title'}`)}
+                {t(`${getNamespace}:contactContainer:email:${executive ? 'executiveTitle' : 'title'}`)}
               </h5>
             </div>
             <div className='contact-text'>
               <p>
-                {t(`${window.SITE_NAME}:contactContainer:email:${executive ? 'executiveText' : 'text'}`)}
+                {t(`${getNamespace}:contactContainer:email:${executive ? 'executiveText' : 'text'}`)}
               </p>
             </div>
           </div>
           <div className='contact-info'>
             <p>
-              {t(`${window.SITE_NAME}:contactContainer:email:emailAddress`)}
+              {t(`${getNamespace}:contactContainer:email:emailAddress`)}
             </p>
           </div>
         </div>

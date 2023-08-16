@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 import InfoBox from './InfoBox';
 
 import Logo from '../../static/huddle/text-logo-gold.svg';
@@ -28,49 +28,49 @@ const ExecutiveSearch = () => {
             <div className='text-container'>
               <div className='title'>
                 <p>
-                  {t(`${window.SITE_NAME}:executiveSearch:title:part1`)}
-                  <img alt='logo-gold' src={isHuddle() ? Logo : UnitasLogo} />
+                  {t(`${getNamespace}:executiveSearch:title:part1`)}
+                  <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />
                 </p>
                 <div>
                   <h1>
-                    {t(`${window.SITE_NAME}:executiveSearch:title:part2`)}
+                    {t(`${getNamespace}:executiveSearch:title:part2`)}
                   </h1>
                   <p>
-                    {t(`${window.SITE_NAME}:executiveSearch:title:part3`)}
+                    {t(`${getNamespace}:executiveSearch:title:part3`)}
                   </p>
                 </div>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${window.SITE_NAME}:executiveSearch:desc`)}
+                  {t(`${getNamespace}:executiveSearch:desc`)}
                 </p>
               </div>
             </div>
             <Grid container spacing={2} className='grid-container'>
               <InfoBox
-                icon={isHuddle() ? InfoIcon1 : UnitasInfoIcon1}
-                title={t(`${window.SITE_NAME}:executiveSearch:info:1:title`)}
-                text={t(`${window.SITE_NAME}:executiveSearch:info:1:text`)}
+                icon={isHuddle ? InfoIcon1 : UnitasInfoIcon1}
+                title={t(`${getNamespace}:executiveSearch:info:1:title`)}
+                text={t(`${getNamespace}:executiveSearch:info:1:text`)}
               />
               <InfoBox
-                icon={isHuddle() ? InfoIcon2 : UnitasInfoIcon2}
-                title={t(`${window.SITE_NAME}:executiveSearch:info:2:title`)}
-                text={t(`${window.SITE_NAME}:executiveSearch:info:2:text`)}
+                icon={isHuddle ? InfoIcon2 : UnitasInfoIcon2}
+                title={t(`${getNamespace}:executiveSearch:info:2:title`)}
+                text={t(`${getNamespace}:executiveSearch:info:2:text`)}
               />
               <InfoBox
-                icon={isHuddle() ? InfoIcon3 : UnitasInfoIcon3}
-                title={t(`${window.SITE_NAME}:executiveSearch:info:3:title`)}
-                text={t(`${window.SITE_NAME}:executiveSearch:info:3:text`)}
+                icon={isHuddle ? InfoIcon3 : UnitasInfoIcon3}
+                title={t(`${getNamespace}:executiveSearch:info:3:title`)}
+                text={t(`${getNamespace}:executiveSearch:info:3:text`)}
               />
               <InfoBox
-                icon={isHuddle() ? InfoIcon4 : UnitasInfoIcon4}
-                title={t(`${window.SITE_NAME}:executiveSearch:info:4:title`)}
-                text={t(`${window.SITE_NAME}:executiveSearch:info:4:text`)}
+                icon={isHuddle ? InfoIcon4 : UnitasInfoIcon4}
+                title={t(`${getNamespace}:executiveSearch:info:4:title`)}
+                text={t(`${getNamespace}:executiveSearch:info:4:text`)}
               />
             </Grid>
             <div className='btn-container'>
               <Link to='/executive-search' className="btn">
-                {t(`${window.SITE_NAME}:executiveSearch:button`)}
+                {t(`${getNamespace}:executiveSearch:button`)}
               </Link>
             </div>
           </div>

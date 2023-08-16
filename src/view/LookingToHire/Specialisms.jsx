@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+import {getNamespace} from '../../services/helper';
 import SearchBar from '../shared/SearchBar';
 import ArrowIcon from '../../static/huddle/arrow.svg';
 
@@ -17,7 +18,7 @@ const Specialisms = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${window.SITE_NAME}:lookingToHire:${type}:title`)}
+                  {t(`${getNamespace}:lookingToHire:${type}:title`)}
                 </h2>
               </div>
               <div className='text'>

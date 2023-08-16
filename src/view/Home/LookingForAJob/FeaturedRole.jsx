@@ -30,7 +30,7 @@ const FeaturedRole = props => {
           <div className='role-salary'>
             <img
               alt='salary-icon'
-              src={isHuddle() ? SalaryIcon : UnitasSalaryIcon}
+              src={isHuddle ? SalaryIcon : UnitasSalaryIcon}
             />
             <span>
               £{renderNumber(salary)} per year

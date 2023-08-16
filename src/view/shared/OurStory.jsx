@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
+import {getNamespace} from '../../services/helper';
 
 const OurStory = ({
   children,
@@ -15,7 +16,7 @@ const OurStory = ({
         <div className='inner-container'>
           <div className='content'>
             <h5>
-              {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:path`)}
+              {t(`${getNamespace}:leadershipHero:our${capitalize(type)}:path`)}
             </h5>
             <div className='title'>
               <h2>
@@ -24,12 +25,12 @@ const OurStory = ({
             </div>
             <div className='text'>
               <p>
-                {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:desc`)}
+                {t(`${getNamespace}:leadershipHero:our${capitalize(type)}:desc`)}
               </p>
             </div>
             <div className='btn-container'>
               <Link to={`/our-${type}`} className='btn btn-secondary'>
-                {t(`${window.SITE_NAME}:leadershipHero:our${capitalize(type)}:button`)}
+                {t(`${getNamespace}:leadershipHero:our${capitalize(type)}:button`)}
               </Link>
             </div>
           </div>

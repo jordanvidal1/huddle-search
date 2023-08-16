@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
@@ -16,12 +16,12 @@ const WorkForUs = ({
 }) => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const arrowIcon = isHuddle()
+  const arrowIcon = isHuddle
     ? ArrowIcon : UnitasArrowIcon;
-  const executiveArrowIcon = isHuddle()
+  const executiveArrowIcon = isHuddle
     ? ExecutiveArrowIcon : UnitasExecutiveArrowIcon;
   const icon = executive ? executiveArrowIcon : arrowIcon;
-  const siteName = isHuddle() ? 'Huddle' : 'Unitas';
+  const siteName = isHuddle ? 'Huddle' : 'Unitas';
 
   return (
     <div className='work-for-us'>
@@ -35,7 +35,7 @@ const WorkForUs = ({
             </div>
             <div className='text'>
               <p>
-                {t(`${window.SITE_NAME}:workForUs:desc`)}
+                {t(`${getNamespace}:workForUs:desc`)}
               </p>
             </div>
             <Grid container spacing={4} className='grid-container'
@@ -92,14 +92,14 @@ const WorkForUs = ({
             {home && (
               <div className='cv-container'>
                 <h5>
-                  {t(`${window.SITE_NAME}:workForUs:container:title`)}
+                  {t(`${getNamespace}:workForUs:container:title`)}
                 </h5>
                 <p>
-                  {t(`${window.SITE_NAME}:workForUs:container:text`)}
+                  {t(`${getNamespace}:workForUs:container:text`)}
                 </p>
                 <div className='link-container'>
                   <Link to='/work-for-us'>
-                    {t(`${window.SITE_NAME}:workForUs:container:link`)}
+                    {t(`${getNamespace}:workForUs:container:link`)}
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>

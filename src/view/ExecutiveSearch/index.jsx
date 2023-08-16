@@ -19,7 +19,7 @@ const ExecutiveSearch = () => {
       <Hero type='executiveSearch' contact executive>
         <p>
           {t(`${window.SITE_NAME}:executiveSearch:title:part1`)}
-          <img alt='logo-gold' src={isHuddle() ? Logo : UnitasLogo} />
+          <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />
         </p>
         <div>
           <h1>

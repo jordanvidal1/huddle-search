@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {isHuddle} from '../../services/helper';
+import {getNamespace, isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
@@ -25,14 +25,14 @@ const LookingToHire = ({
             </div>
             <div className='text'>
               <p>
-                {t(`${window.SITE_NAME}:lookingToHire:${type}:desc`)} {
+                {t(`${getNamespace}:lookingToHire:${type}:desc`)} {
                   type === 'home' && (
                     <Link to='/looking-to-hire'>
-                      {t(`${window.SITE_NAME}:lookingToHire:${type}:link`)}
+                      {t(`${getNamespace}:lookingToHire:${type}:link`)}
                       <img
                         className='arrow-icon'
                         alt='arrow-icon'
-                        src={isHuddle() ? ArrowIcon : UnitasArrowIcon}
+                        src={isHuddle ? ArrowIcon : UnitasArrowIcon}
                       />
                     </Link>
                 )}
@@ -49,18 +49,18 @@ const LookingToHire = ({
             <div className='cv-container'>
               <div className='text-container'>
                 <h5>
-                  {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:title`)}
+                  {t(`${getNamespace}:lookingToHire:${type}:cv:title`)}
                 </h5>
                 <p>
-                  {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:text`)}
+                  {t(`${getNamespace}:lookingToHire:${type}:cv:text`)}
                 </p>
               </div>
               <div className='link-container'>
                 <a>
-                  {t(`${window.SITE_NAME}:lookingToHire:${type}:cv:link`)}
+                  {t(`${getNamespace}:lookingToHire:${type}:cv:link`)}
                   <img
                     alt='arrow-icon'
-                    src={isHuddle() ? ArrowIcon : UnitasRequestArrowIcon}
+                    src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
                   />
                 </a>
               </div>

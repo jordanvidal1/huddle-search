@@ -18,7 +18,7 @@ const Resources = props => {
         </h3>
         <Link to='/resources'>
           {`Browse all ${name ? `${name} ` : ''}resources`}
-          <img alt='arrow' src={isHuddle() ? ArrowIcon : UnitasArrowIcon} />
+          <img alt='arrow' src={isHuddle ? ArrowIcon : UnitasArrowIcon} />
         </Link>
       </div>
       {/* todo: slider */}

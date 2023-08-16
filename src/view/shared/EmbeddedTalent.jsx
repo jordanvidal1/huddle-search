@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {getNamespace} from '../../services/helper';
+
 import InfoBox from './InfoBox';
 import InfoIcon1 from '../../static/huddle/info-icon-1.svg';
 import InfoIcon2 from '../../static/huddle/info-icon-2.svg';
@@ -23,34 +25,34 @@ const EmbeddedTalent = () => {
             </div>
             <div className='text'>
               <p>
-                {t(`${window.SITE_NAME}:embeddedTalent:desc`)}
+                {t(`${getNamespace}:embeddedTalent:desc`)}
               </p>
             </div>
             <Grid container spacing={2} className='grid-container'>
               <InfoBox
                 icon={InfoIcon1}
-                title={t(`${window.SITE_NAME}:embeddedTalent:info:1:title`)}
-                text={t(`${window.SITE_NAME}:embeddedTalent:info:1:text`)}
+                title={t(`${getNamespace}:embeddedTalent:info:1:title`)}
+                text={t(`${getNamespace}:embeddedTalent:info:1:text`)}
               />
               <InfoBox
                 icon={InfoIcon2}
-                title={t(`${window.SITE_NAME}:embeddedTalent:info:2:title`)}
-                text={t(`${window.SITE_NAME}:embeddedTalent:info:2:text`)}
+                title={t(`${getNamespace}:embeddedTalent:info:2:title`)}
+                text={t(`${getNamespace}:embeddedTalent:info:2:text`)}
               />
               <InfoBox
                 icon={InfoIcon3}
-                title={t(`${window.SITE_NAME}:embeddedTalent:info:3:title`)}
-                text={t(`${window.SITE_NAME}:embeddedTalent:info:3:text`)}
+                title={t(`${getNamespace}:embeddedTalent:info:3:title`)}
+                text={t(`${getNamespace}:embeddedTalent:info:3:text`)}
               />
               <InfoBox
                 icon={InfoIcon4}
-                title={t(`${window.SITE_NAME}:embeddedTalent:info:4:title`)}
-                text={t(`${window.SITE_NAME}:embeddedTalent:info:4:text`)}
+                title={t(`${getNamespace}:embeddedTalent:info:4:title`)}
+                text={t(`${getNamespace}:embeddedTalent:info:4:text`)}
               />
             </Grid>
             <div className='btn-container'>
               <Link to='/embedded-talent-solutions' className="btn btn-secondary">
-                {t(`${window.SITE_NAME}:embeddedTalent:button`)}
+                {t(`${getNamespace}:embeddedTalent:button`)}
               </Link>
             </div>
           </div>
