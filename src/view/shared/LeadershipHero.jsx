@@ -1,6 +1,5 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {capitalize} from '@material-ui/core';
 import {isHuddle} from '../../services/helper';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';

@@ -10,6 +10,7 @@ i18n
     lng: 'en',
     fallbackLng: 'en',
     whitelist: 'en',
+    defaultNS: 'huddle',
     backend: {
       loadPath: `/locales/{{lng}}/{{ns}}.json`,
     },

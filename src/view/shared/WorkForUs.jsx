@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {capitalize, Grid} from '@material-ui/core';
+import {Grid} from '@material-ui/core';
 import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
