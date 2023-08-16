@@ -15,9 +15,15 @@
             input {
                 flex-grow: 1;
                 padding: 1.5rem 7.5rem 1.5rem 4.25rem;
+            }
 
-                @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
+                input {
                     padding: 1.12rem 7rem 1.12rem 3.75rem;
+                }
+
+                img.search-icon {
+                    left: 1.5rem;
                 }
             }
         }

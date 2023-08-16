@@ -1,209 +1,213 @@
-.home {
-    .looking-for-a-job {
-        background: url('../static/huddle/home-looking-for-a-job.png') left no-repeat #8762CB;
-        background-size: 45%;
+.home .looking-for-a-job {
+    background: url('../static/huddle/home-looking-for-a-job.png') left no-repeat #8762CB;
+    background-size: 45%;
 
-        .content {
-            align-self: flex-end;
-            max-width: 38.5rem;
+    .content {
+        align-self: flex-end;
+        max-width: 38.5rem;
+    }
+
+    .title {
+        a {
+            color: #F6E27F;
+            background: #310A31;
+        }
+    }
+
+    .text {
+        font-size: 1.125rem;
+        margin-top: 2rem;
+
+        a {
+            align-items: center;
+            color: #F6E27F;
+            display: flex;
+            font-weight: 800;
+            white-space: nowrap;
         }
 
-        .title {
-            a {
-                color: #F6E27F;
-                background: #310A31;
+        img {
+            margin-left: 0.5rem;
+            width: 0.875rem;
+        }
+    }
+
+    .featured-roles {
+        background: #310A31;
+        border-radius: 2rem;
+        margin-top: 4rem;
+        padding: 2rem;
+
+        .subtitle-container {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+
+            h5 {
+                margin-right: 4.96rem;
             }
         }
 
-        .text {
-            font-size: 1.125rem;
-            margin-top: 2rem;
+        .link-container {
+            display: flex;
+            justify-content: flex-end;
 
             a {
                 align-items: center;
                 color: #F6E27F;
                 display: flex;
+                font-size: 1.25rem;
                 font-weight: 800;
-                white-space: nowrap;
             }
 
             img {
-                margin-left: 0.5rem;
-                width: 0.875rem;
+                margin-left: 1rem;
+                width: 1.25rem;
             }
         }
 
+        .roles {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .featured-role {
+        border-radius: 1.5rem;
+        border: 1px solid rgba(49, 10, 49, 0.15);
+        background: #FFF;
+        box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+
+        .role-container {
+            display: flex;
+            padding: 1rem;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1 0 0;
+        }
+
+        .role-type {
+            align-items: center;
+            border-radius: 6.25rem;
+            display: flex;
+            gap: 0.375rem;
+            padding: 0.375rem 0.75rem;
+
+            &.permanent {
+                background: #E3EBFF;
+
+                span {
+                    color: #2A64F6;
+                    font-weight: 600;
+                }
+            }
+
+            &.contract {
+                background: #FFCCFA;
+
+                span {
+                    color: #991F8D;
+                }
+            }
+
+            span {
+                font-size: 0.75rem;
+            }
+        }
+
+        .role-title {
+            margin: 0.75rem 0 1rem;
+
+            h6 {
+                color: #1A1A1A;
+                font-size: 1.125rem;
+                font-weight: 800;
+            }
+        }
+
+        .role-salary {
+            align-items: center;
+            display: flex;
+
+            span {
+                color: #1A1A1A;
+                font-size: 0.75rem;
+            }
+
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background: #8762CB;
+
+        .content {
+            max-width: unset;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
         .featured-roles {
-            background: #310A31;
-            border-radius: 2rem;
-            margin-top: 4rem;
-            padding: 2rem;
+            margin-top: 3rem;
+            padding: 2rem 1.5rem;
 
             .subtitle-container {
-                align-items: center;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-                justify-content: space-between;
-
-                h5 {
-                    margin-right: 4.96rem;
-                }
+                align-items: flex-start;
+                flex-direction: column;
             }
 
             .link-container {
-                display: flex;
-                justify-content: flex-end;
-
-                a {
-                    align-items: center;
-                    color: #F6E27F;
-                    display: flex;
-                    font-size: 1.25rem;
-                    font-weight: 800;
-                }
-
-                img {
-                    margin-left: 1rem;
-                    width: 1.25rem;
-                }
-            }
-
-            .roles {
-                margin-top: 2rem;
-            }
-        }
-
-        .featured-role {
-            border-radius: 1.5rem;
-            border: 1px solid rgba(49, 10, 49, 0.15);
-            background: #FFF;
-            box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
-
-            .role-container {
-                display: flex;
-                padding: 1rem;
-                flex-direction: column;
-                align-items: flex-start;
-                flex: 1 0 0;
-            }
-
-            .role-type {
-                align-items: center;
-                border-radius: 6.25rem;
-                display: flex;
-                gap: 0.375rem;
-                padding: 0.375rem 0.75rem;
-
-                &.permanent {
-                    background: #E3EBFF;
-
-                    span {
-                        color: #2A64F6;
-                        font-weight: 600;
-                    }
-                }
-
-                &.contract {
-                    background: #FFCCFA;
-
-                    span {
-                        color: #991F8D;
-                    }
-                }
-
-                span {
-                    font-size: 0.75rem;
-                }
-            }
-
-            .role-title {
-                margin: 0.75rem 0 1rem;
-
-                h6 {
-                    color: #1A1A1A;
-                    font-size: 1.125rem;
-                    font-weight: 800;
-                }
-            }
-
-            .role-salary {
-                align-items: center;
-                display: flex;
-
-                span {
-                    color: #1A1A1A;
-                    font-size: 0.75rem;
-                }
-
-                img {
-                    margin-right: 0.5rem;
-                }
-            }
-        }
-
-        @include media-breakpoint-down(md) {
-            background: #8762CB;
-
-            .content {
-                max-width: unset;
-            }
-        }
-
-        @include media-breakpoint-down(sm) {
-            .featured-roles {
-                margin-top: 3rem;
-                padding: 2rem 1.5rem;
-
-                .subtitle-container {
-                    align-items: flex-start;
-                    flex-direction: column;
-                }
-
-                .link-container {
-                    margin-top: 0;
-                }
+                margin-top: 0;
             }
         }
     }
 }
 
-.unitas-site {
-    .home {
-        .looking-for-a-job {
-            background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-for-a-job.jpeg'), lightgray 1537.611px -49.295px / 107.361% 121.193% no-repeat;
-            background-size: cover;
+.unitas-site .home .looking-for-a-job {
+    background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-for-a-job.jpeg'), lightgray 1537.611px -49.295px / 107.361% 121.193% no-repeat;
+    background-size: cover;
 
-            .title a {
-                background: none;
-                color: #FFF;
-                font-family: Fraunces;
-                font-weight: 400;
-            }
+    .title a {
+        background: none;
+        color: #FFF;
+        font-family: Fraunces;
+        font-weight: 400;
+    }
 
-            .text {
-                a {
-                    color: #FFF;
-                    font-weight: 600;
-                }
-            }
+    .text {
+        a {
+            color: #FFF;
+            font-weight: 600;
+        }
+    }
 
-            .featured-roles {
-                background: #1A1A1A;
-                border-radius: 1.5rem;
+    .featured-roles {
+        background: #1A1A1A;
+        border-radius: 1.5rem;
 
-                .link-container a {
-                    color: #C57B36;
-                }
-            }
+        .link-container a {
+            color: #C57B36;
+        }
+    }
 
-            .featured-role {
-                border-radius: 0.75rem;
+    .featured-role {
+        border-radius: 0.75rem;
 
-                .role-title h6 {
-                    font-weight: 900;
-                }
-            }
+        .role-title h6 {
+            font-weight: 900;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background: #3A84C9;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .title h2 {
+            font-size: 3rem;
         }
     }
 }

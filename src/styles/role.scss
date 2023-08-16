@@ -101,6 +101,10 @@
     .role {
       border-radius: 0.75rem;
 
+      .role-container {
+        padding: 1.5rem;
+      }
+
       .role-title h6 {
         font-size: 2rem;
         font-weight: 900;

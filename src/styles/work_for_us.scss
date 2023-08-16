@@ -13,11 +13,9 @@
             max-width: 38.5rem;
         }
 
-        .title {
-            a {
-                color: #F6E27F;
-                background: #310A31;
-            }
+        .title a {
+            color: #F6E27F;
+            background: #310A31;
         }
 
         .text {
@@ -182,6 +180,12 @@
                 a {
                     color: #F49944;
                     font-weight: 600;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title h2 {
+                    font-size: 3rem;
                 }
             }
         }

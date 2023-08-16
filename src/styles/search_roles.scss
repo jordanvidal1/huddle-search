@@ -43,7 +43,7 @@
             .box {
                 padding: 1.5rem 0.75rem;
 
-                &:not(.roles-box), &:not(.job-box) {
+                &:not(.roles-box):not(.job-box) {
                     gap: 1.5rem;
                 }
 
@@ -70,27 +70,37 @@
     }
 }
 
-.unitas-site {
-    .home, .looking-for-a-job {
-        .search-roles {
-            background: url('../static/unitas/open-roles-pattern.svg') top left no-repeat, url('../static/unitas/open-roles-pattern-2.svg') bottom right no-repeat #F9F9F9;
+.unitas-site .home, .looking-for-a-job {
+    .search-roles {
+        background: url('../static/unitas/open-roles-pattern.svg') top left no-repeat, url('../static/unitas/open-roles-pattern-2.svg') bottom right no-repeat #F9F9F9;
 
-            .box {
-                background: #1A1A1A;
+        .box {
+            background: #1A1A1A;
+            border-radius: 1.5rem;
+            padding: 2rem 3rem 2.5rem;
+
+            &.roles-box {
                 border-radius: 1.5rem;
-                padding: 2rem 3rem 2.5rem;
-
-                &.roles-box {
-                    border-radius: 1.5rem;
-                }
-
-                h2 {
-                    font-size: 4rem;
-                }
             }
 
-            .roles-header a {
-                color: #F49944;
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        .roles-header a {
+            color: #F49944;
+        }
+
+        @include media-breakpoint-down(md) {
+            background-size: 40%;
+
+            .box {
+                padding: 1.5rem 0.75rem;
+
+                h2 {
+                    font-size: 3rem;
+                }
             }
         }
     }

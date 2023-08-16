@@ -200,6 +200,10 @@
             display: flex;
             justify-content: space-between;
 
+            .footer-legal-prime img {
+                width: 11.24rem;
+            }
+
             & > div {
                 align-items: center;
                 display: flex;
@@ -222,6 +226,13 @@
         }
     }
 
+    @include media-breakpoint-down(lg) {
+        .footer-box .footer-legal > div > span {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
     @include media-breakpoint-down(md) {
         .inner-container {
             padding-bottom: 10rem;
@@ -238,8 +249,9 @@
         }
 
         .box {
-            &.job-box, &.box.hire-box {
-                padding: 3rem 1.5rem;
+            &.job-box, &.hire-box {
+                border-radius: 1.5rem;
+                padding: 2rem 1.5rem;
             }
 
             h3 {
@@ -252,6 +264,7 @@
         }
 
         .footer-box {
+            border-radius: 1.5rem;
             padding: 3rem;
 
             .footer-company {
@@ -299,8 +312,8 @@
                 }
 
                 > div > span {
-                    flex-direction: column;
-                    gap: 0.5rem;
+                    flex-direction: row;
+                    gap: 1rem;
                 }
 
                 .footer-legal-prime {
@@ -308,7 +321,7 @@
                 }
 
                 .footer-copyright {
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                     text-align: center;
                 }
             }
@@ -325,20 +338,33 @@
                     width: 100%;
                 }
             }
+
+            .footer-legal {
+                > div > span {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+
+                .footer-copyright {
+                    margin-top: 2rem;
+                    max-width: 10rem;
+                }
+            }
         }
     }
 }
 
 .unitas-site {
     .footer {
-        background: #3A84C9;
+        background: url('../static/unitas/footer-pattern.svg') bottom no-repeat #3A84C9;
+        background-size: 15.625rem;
+
+        .inner-container {
+            padding-bottom: 10rem;
+        }
 
         .box {
             background: #1A1A1A;
-
-            p {
-                color: #FFF;
-            }
 
             .btn:not(.btn-secondary) {
                 border-color: #C57B36;

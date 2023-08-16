@@ -70,6 +70,7 @@
         .grid-container {
             margin-top: 2.5rem;
             margin-left: -1.5rem;
+            width: calc(100% + 3rem);
         }
 
         .info-container {
@@ -139,7 +140,6 @@
             }
 
             .grid-container {
-                margin-left: -0.5rem;
                 text-align: center;
             }
         }
@@ -234,8 +234,40 @@
 
             @include media-breakpoint-down(md) {
                 .title {
-                    > div {
+                    align-items: flex-start;
+                    flex-direction: column-reverse;
+
+                    div {
+                        align-items: flex-start;
                         flex-direction: column;
+                        margin: 0 0 1rem;
+                    }
+
+                    > p {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
+
+                        img {
+                            margin: 0.75rem 0 0;
+                        }
+                    }
+                }
+
+                .info-container h5 {
+                    font-size: 2rem;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title {
+                    h1 {
+                        font-size: 3rem;
+                        letter-spacing: -0.06rem;
+                    }
+
+                    div p {
+                        font-size: 3rem;
                     }
                 }
             }

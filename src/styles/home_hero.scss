@@ -1,81 +1,105 @@
-.home {
-    .hero {
-        background: url('../static/huddle/hero-image.png') center no-repeat #FF958C;
-        background-size: cover;
+.home .hero {
+    background: url('../static/huddle/hero-image.png') center no-repeat #FF958C;
+    background-size: cover;
+
+    .content {
+        align-self: stretch;
+        margin-top: 6rem;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 38.5rem;
+    }
+
+    .title {
+        h1 {
+            color: #310A31;
+        }
+    }
+
+    .text {
+        margin-top: 2.5rem;
+
+        p {
+            color: #310A31;
+            font-size: 1.25rem;
+        }
+    }
+
+    .btn-container {
+        margin-top: 4rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: #FF958C;
 
         .content {
-            align-self: stretch;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2.75rem;
         }
 
         .text-container {
-            display: flex;
-            flex-direction: column;
-            margin-top: 6rem;
-            max-width: 38.5rem;
-        }
-
-        .title {
-            h1 {
-                color: #310A31;
-            }
-        }
-
-        .text {
-            margin-top: 2.5rem;
-
-            p {
-                color: #310A31;
-                font-size: 1.25rem;
-            }
-        }
-
-        .btn-container {
-            margin-top: 4rem;
-        }
-
-        @include media-breakpoint-down(md) {
-            background: #FF958C;
-
-            h1 {
-                font-size: 2.75rem;
-            }
-
-            .text-container {
-                margin-top: 2rem;
-                max-width: unset;
-            }
+            max-width: unset;
         }
     }
 }
 
-.unitas-site {
-    .home {
-        .hero {
-            background: url('../static/unitas/hero-image.png') center right no-repeat #F9F9F9;
-            background-size: contain;
+.unitas-site .home .hero {
+    background: url('../static/unitas/hero-image.png') right no-repeat #F9F9F9;
+    background-size: 40%;
 
-            .title {
-                h1, a {
-                    color: #1A1A1A;
-                    font-family: Fraunces;
-                    font-weight: 900;
-                    line-height: 6rem;
-                }
+    .content {
+        margin-top: 0;
+    }
 
-                a {
-                    background: linear-gradient(20deg, #CB7F39 0%, #C59436 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+    .text-container {
+        max-width: 41.5rem;
+    }
+
+    .title {
+        h1, a {
+            color: #1A1A1A;
+            font-family: Fraunces;
+            font-weight: 900;
+            line-height: 6rem;
+        }
+
+        a {
+            background: linear-gradient(20deg, #CB7F39 0%, #C59436 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .text p {
+        color: #7E8192;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: #F9F9F9;
+
+        .content {
+            margin-top: 4rem;
+        }
+
+        .title {
+            h1, a {
+                font-size: 6rem;
             }
+        }
+    }
 
-            .text p {
-                color: #7E8192;
-            }
-
-            @include media-breakpoint-down(md) {
-                background: #F9F9F9;
+    @include media-breakpoint-down(sm) {
+        .title {
+            h1, a {
+                font-size: 4rem;
+                line-height: normal;
             }
         }
     }

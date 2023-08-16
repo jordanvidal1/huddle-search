@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             )}
             <Grid container spacing={4}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <div className='box hire-box'>
                   <div className='text'>
                     <h3>
@@ -62,7 +62,7 @@ const Footer = () => {
                   </div>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <div className='box job-box'>
                   <div className='text'>
                     <h3>
