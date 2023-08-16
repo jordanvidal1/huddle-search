@@ -347,6 +347,10 @@
         "4": {
           "title": "Offer management & onboarding",
           "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
+        },
+        "5": {
+          "title": "",
+          "text": ""
         }
       }
     },
@@ -369,6 +373,10 @@
         "4": {
           "title": "Onboarding & contract management",
           "text": "We finalise contracts, guide seamless candidate onboarding, monitor performance, and discuss contract renewal or conclusion for a smooth transition."
+        },
+        "5": {
+          "title": "",
+          "text": ""
         }
       }
     },
@@ -391,6 +399,10 @@
         "4": {
           "title": "Transition & off-boarding",
           "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
+        },
+        "5": {
+          "title": "",
+          "text": ""
         }
       }
     }
