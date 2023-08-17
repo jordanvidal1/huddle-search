@@ -1,5 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import {leaders} from '../../services/constants';
 import {getNamespace, isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
@@ -44,7 +45,7 @@ const Specialists = props => {
               </div>
             </div>
             <div className='specialists-container'>
-              {specialists.map((specialist) => {
+              {(specialists || leaders).map((specialist) => {
                 const {img, name, role, description, number, email, linkedin} = specialist;
 
                 return (
@@ -72,18 +73,22 @@ const Specialists = props => {
                         <span>{number}</span>
                       </div>
                       <div>
-                        <img
-                          alt='email-icon'
-                          src={emailIcon}
-                        />
-                        <span>{email}</span>
+                        <a href={`mailto:${email}`}>
+                          <img
+                            alt='email-icon'
+                            src={emailIcon}
+                          />
+                          <span>{email}</span>
+                        </a>
                       </div>
                       <div>
-                        <img
-                          alt='linkedin-icon'
-                          src={linkedInIcon}
-                        />
-                        <span>{linkedin}</span>
+                        <a href={linkedin} rel='noreferrer' target='_blank'>
+                          <img
+                            alt='linkedin-icon'
+                            src={linkedInIcon}
+                          />
+                          <span>LinkedIn profile</span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -98,20 +103,3 @@ const Specialists = props => {
 }
 
 export default Specialists;
-
-const defaultSpecialist = {
-  name: 'Name',
-  role: 'Role',
-  description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalyzed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionizes the client and candidate experience here at [company name]. Beyond his professional achievements, Peter is a sought-after consultant at various companies, further solidifying his position as a thought leader in the tech space.',
-  number: '+44 0000 000 000',
-  email: 'leader@company.com',
-  linkedin: '@leader'
-};
-
-Specialists.defaultProps = {
-  specialists: [
-    defaultSpecialist,
-    defaultSpecialist,
-    defaultSpecialist
-  ]
-};

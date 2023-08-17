@@ -1,4 +1,5 @@
 import React from 'react';
+import {leaders} from '../../services/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
@@ -8,15 +9,20 @@ import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
 import UnitasEmailIcon from '../../static/unitas/email-white.svg';
 import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
 
-const Leaders = ({
-  leaders
-}) => (
+const Leaders = () => (
   <div className='leaders'>
     <div className='container'>
       <div className='inner-container'>
         <div className='content'>
           {leaders.map((leader) => {
-            const {name, role, description, number, email, linkedin} = leader;
+            const {
+              name,
+              role,
+              description,
+              number,
+              email,
+              linkedin
+            } = leader;
 
             return (
               <div className='leader'>
@@ -39,18 +45,22 @@ const Leaders = ({
                       <span>{number}</span>
                     </div>
                     <div>
-                      <img
-                        alt='email-icon'
-                        src={isHuddle ? EmailIcon : UnitasEmailIcon}
-                      />
-                      <span>{email}</span>
+                      <a href={`mailto:${email}`}>
+                        <img
+                          alt='email-icon'
+                          src={isHuddle ? EmailIcon : UnitasEmailIcon}
+                        />
+                        <span>{email}</span>
+                      </a>
                     </div>
                     <div>
-                      <img
-                        alt='linkedin-icon'
-                        src={isHuddle ? LinkedInIcon : UnitasLinkedInIcon}
-                      />
-                      <span>{linkedin}</span>
+                      <a href={linkedin} rel='noreferrer' target='_blank'>
+                        <img
+                          alt='linkedin-icon'
+                          src={isHuddle ? LinkedInIcon : UnitasLinkedInIcon}
+                        />
+                        <span>LinkedIn profile</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -69,20 +79,3 @@ const Leaders = ({
 );
 
 export default Leaders;
-
-const defaultLeader = {
-  name: 'Leader name',
-  role: 'Role',
-  description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalyzed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionizes the client and candidate experience here at [company name]. Beyond his professional achievements, Peter is a sought-after consultant at various companies, further solidifying his position as a thought leader in the tech space.',
-  number: '+44 0000 000 000',
-  email: 'leader@company.com',
-  linkedin: '@leader'
-};
-
-Leaders.defaultProps = {
-  leaders: [
-    defaultLeader,
-    defaultLeader,
-    defaultLeader
-  ]
-};

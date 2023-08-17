@@ -1,5 +1,5 @@
 
-const siteName = process.env.REACT_APP_SITE_NAME;
+const getNamespace = process.env.REACT_APP_SITE_NAME;
 
 const renderNumber = (
   number, minimumFractionDigits = 0,
@@ -9,8 +9,6 @@ const renderNumber = (
     minimumFractionDigits,
     maximumFractionDigits
   }).format(number);
-
-const getNamespace = siteName;
 
 const isHuddle = getNamespace === 'huddle';
 
