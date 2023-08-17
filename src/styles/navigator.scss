@@ -67,20 +67,6 @@
     }
   }
 
-  @include media-breakpoint-down(md) {
-    .top-nav-inner {
-      height: unset;
-    }
-
-    .top-nav-list {
-      display: none;
-    }
-
-    .top-nav-quicklinks {
-      display: flex;
-    }
-  }
-
   .dropdown {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #310A31;
     display: none;
@@ -108,7 +94,17 @@
 
   @include media-breakpoint-down(md) {
     .top-nav-inner {
+      height: 2.75rem;
       padding: 0 0.75rem 0 0.25rem;
+    }
+
+    .top-nav-list {
+      display: none;
+    }
+
+    .top-nav-quicklinks {
+      display: flex;
+      padding: 0.625rem 0.5rem;
     }
 
     .dropdown.active {

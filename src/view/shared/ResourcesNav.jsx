@@ -8,7 +8,8 @@ const filters = [
   //   name: 'All'
   // },
   {
-    name: 'Blog'
+    name: 'Blog',
+    path: '/resources'
   },
   // {
   //   name: 'Insights'
@@ -34,7 +35,7 @@ const ResourcesNav = () => {
             {/* todo: temp condition */}
             <Link
               to={filter.path}
-              // onClick={hideSidebar}
+              onClick={hideDropdown}
             >
               {filter.name}
             </Link>

@@ -35,10 +35,10 @@ const Resources = () => {
             {/* todo: sort by / filters */}
             <div className='resources-grid'>
               <div>
-                <span>Results ({resources.length})</span>
+                <span>Results ({resources?.length || 0})</span>
               </div>
               <Grid container spacing={3}>
-                {resources.map((resource, i) => (
+                {resources?.map((resource, i) => (
                   <Resource i={i} {...resource} />
                 ))}
               </Grid>

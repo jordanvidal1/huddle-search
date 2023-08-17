@@ -76,20 +76,6 @@
     }
   }
 
-  @include media-breakpoint-down(md) {
-    .resources-nav-inner {
-      height: unset;
-    }
-
-    .resources-nav-list-container {
-      display: none;
-    }
-
-    .resources-dropdown {
-      display: flex;
-    }
-  }
-
   .dropdown {
     background: #59060c;
     display: none;
@@ -117,17 +103,20 @@
   }
 
   @include media-breakpoint-down(md) {
+    top: 5rem;
+
     .resources-nav-inner {
+      height: 3.5rem;
       padding: 0 0.75rem 0 0.25rem;
     }
 
-    .dropdown.active {
+    .resources-nav-list-container {
+      display: none;
+    }
+
+    .resources-dropdown, .dropdown.active {
       display: flex;
     }
-  }
-
-  @include media-breakpoint-down(md) {
-    top: 5rem;
   }
 
   @include media-breakpoint-down(sm) {

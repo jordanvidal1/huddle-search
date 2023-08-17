@@ -20,10 +20,10 @@ const Jobs = ({
           {/* todo: sort by / filters */}
           <div className='jobs-grid'>
             <div>
-              <span>Results ({roles.length})</span>
+              <span>Results ({roles?.length || 0})</span>
             </div>
             <Grid container spacing={3} justifyContent='center'>
-              {roles.map((role, i) => (
+              {roles?.map((role, i) => (
                 <Role i={i} {...role} />
               ))}
             </Grid>
