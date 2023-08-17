@@ -1,10 +1,10 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import {getNamespace} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-white.svg';
 import EmailIcon from '../../static/huddle/email-white.svg';
 import VisitIcon from '../../static/huddle/visit-white.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>
@@ -14,18 +14,18 @@ const ContactVisitContainer = (t) => (
           <img alt='vacancy-icon' src={PhoneIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${getNamespace}:visitContainer:phone:title`)}
+              {t(`${NAMESPACE}:visitContainer:phone:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${getNamespace}:visitContainer:phone:text`)}
+              {t(`${NAMESPACE}:visitContainer:phone:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
           <p>
-            {t(`${getNamespace}:visitContainer:phone:phoneNumber`)}
+            {t(`${NAMESPACE}:visitContainer:phone:phoneNumber`)}
           </p>
         </div>
       </div>
@@ -36,18 +36,18 @@ const ContactVisitContainer = (t) => (
           <img alt='help-icon' src={EmailIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${getNamespace}:visitContainer:email:title`)}
+              {t(`${NAMESPACE}:visitContainer:email:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${getNamespace}:visitContainer:email:text`)}
+              {t(`${NAMESPACE}:visitContainer:email:text`)}
             </p>
           </div>
         </div>
         <div className='visit-info'>
-          <a href={`mailto:${t(`${getNamespace}:visitContainer:email:emailAddress`)}`}>
-            {t(`${getNamespace}:visitContainer:email:emailAddress`)}
+          <a href={`mailto:${t(`${NAMESPACE}:visitContainer:email:emailAddress`)}`}>
+            {t(`${NAMESPACE}:visitContainer:email:emailAddress`)}
           </a>
         </div>
       </div>
@@ -58,12 +58,12 @@ const ContactVisitContainer = (t) => (
           <img alt='cv-icon' src={VisitIcon} />
           <div className='visit-title'>
             <h5>
-              {t(`${getNamespace}:visitContainer:visit:title`)}
+              {t(`${NAMESPACE}:visitContainer:visit:title`)}
             </h5>
           </div>
           <div className='visit-text'>
             <p>
-              {t(`${getNamespace}:visitContainer:visit:text`)}
+              {t(`${NAMESPACE}:visitContainer:visit:text`)}
             </p>
           </div>
         </div>

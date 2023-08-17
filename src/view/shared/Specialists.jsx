@@ -1,7 +1,7 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {leaders} from '../../services/constants';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {leaders, NAMESPACE} from '../../services/constants'
+import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
@@ -35,12 +35,12 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${getNamespace}:specialists:${type}:title`, {name})}
+                  {t(`${NAMESPACE}:specialists:${type}:title`, {name})}
                 </h2>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${getNamespace}:specialists:${type}:desc`)}
+                  {t(`${NAMESPACE}:specialists:${type}:desc`)}
                 </p>
               </div>
             </div>

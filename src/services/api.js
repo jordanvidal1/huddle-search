@@ -8,8 +8,12 @@ export const fetchApi = async (
   body
 ) => {
   const headers = new Headers();
-  headers.set('Authorization', 'Basic ' + Buffer.from(
-    window.WP_USER + ":" + window.WP_TOKEN).toString('base64'));
+  headers.set('Authorization', 'Basic '
+    + Buffer.from(
+    process.env.REACT_APP_WP_USER
+    + ":"
+    + process.env.REACT_APP_WP_TOKEN
+  ).toString('base64'));
 
   const options = {
     method,

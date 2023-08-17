@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
 import FullLogo from '../../static/huddle/full-logo.svg';
@@ -25,6 +25,7 @@ import UnitasTwitter from '../../static/unitas/twitter.svg';
 import UnitasFacebook from '../../static/unitas/facebook.svg';
 import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const Footer = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -47,10 +48,10 @@ const Footer = () => {
                 <div className='box hire-box'>
                   <div className='text'>
                     <h3>
-                      {t(`${getNamespace}:footer:lookingToHire:title`)}
+                      {t(`${NAMESPACE}:footer:lookingToHire:title`)}
                     </h3>
                     <p>
-                      {t(`${getNamespace}:footer:lookingToHire:desc`)}
+                      {t(`${NAMESPACE}:footer:lookingToHire:desc`)}
                     </p>
                   </div>
                   <div className='btn-container'>
@@ -67,10 +68,10 @@ const Footer = () => {
                 <div className='box job-box'>
                   <div className='text'>
                     <h3>
-                      {t(`${getNamespace}:footer:lookingForAJob:title`)}
+                      {t(`${NAMESPACE}:footer:lookingForAJob:title`)}
                     </h3>
                     <p>
-                      {t(`${getNamespace}:footer:lookingForAJob:desc`)}
+                      {t(`${NAMESPACE}:footer:lookingForAJob:desc`)}
                     </p>
                   </div>
                   <div className='btn-container'>
@@ -90,7 +91,7 @@ const Footer = () => {
                           alt='logo'
                           src={isHuddle ? FullLogo : UnitasLogo}
                         />
-                        <p>{t(`${getNamespace}:footer:slogan`)}</p>
+                        <p>{t(`${NAMESPACE}:footer:slogan`)}</p>
                       </div>
                       <div className='footer-contact'>
                         <div>
@@ -105,9 +106,9 @@ const Footer = () => {
                             alt='email'
                             src={isHuddle ? Email : UnitasEmail}
                           />
-                          <a href={`mailto:${t(`${getNamespace}:footer:email`)}`}>
+                          <a href={`mailto:${t(`${NAMESPACE}:footer:email`)}`}>
                             <span>
-                              {t(`${getNamespace}:footer:email`)}
+                              {t(`${NAMESPACE}:footer:email`)}
                             </span>
                           </a>
                         </div>
@@ -197,7 +198,7 @@ const Footer = () => {
                     </div>
                     <div className='footer-copyright'>
                     <span>
-                      {t(`${getNamespace}:footer:copyright`)}
+                      {t(`${NAMESPACE}:footer:copyright`)}
                       {/* todo: make year dynamic */}
                     </span>
                     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
+import {FORM_ID, SITE_URL} from '../../services/constants';
 import Input from '../shared/Input';
 import {fetchApi} from '../../services/api';
 
@@ -30,7 +31,7 @@ const ContactForm = () => {
     }
 
     return await fetchApi(
-      `${window.SITE_URL}/wp-json/contact-form-7/v1/contact-forms/26/feedback`,
+      `${SITE_URL}/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
       'POST',
       formData
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 
 import Hero from '../shared/SpecialismHero';
 import ProPoints from '../shared/ProPoints';
@@ -10,6 +10,7 @@ import WorkForUs from '../shared/WorkForUs';
 
 import Logo from '../../static/huddle/text-logo-gold.svg';
 import UnitasLogo from '../../static/unitas/text-logo.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -18,15 +19,15 @@ const ExecutiveSearch = () => {
     <div className='executive-search'>
       <Hero type='executiveSearch' contact executive>
         <p>
-          {t(`${getNamespace}:executiveSearch:title:part1`)}
+          {t(`${NAMESPACE}:executiveSearch:title:part1`)}
           <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />
         </p>
         <div>
           <h1>
-            {t(`${getNamespace}:executiveSearch:title:part2`)}
+            {t(`${NAMESPACE}:executiveSearch:title:part2`)}
           </h1>
           <p>
-            {t(`${getNamespace}:executiveSearch:title:part3`)}
+            {t(`${NAMESPACE}:executiveSearch:title:part3`)}
           </p>
         </div>
       </Hero>

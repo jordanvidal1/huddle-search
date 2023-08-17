@@ -1,12 +1,12 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {getNamespace} from '../../services/helper';
 
 import ProIcon1 from '../../static/huddle/pro-icon-1.svg';
 import ProIcon2 from '../../static/huddle/pro-icon-2.svg';
 import ProIcon3 from '../../static/huddle/pro-icon-3.svg';
 import ProIcon4 from '../../static/huddle/pro-icon-4.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const ProPoints = props => {
   const {type} = props;
@@ -21,12 +21,12 @@ const ProPoints = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${getNamespace}:proPoints:${type}:title`)}
+                  {t(`${NAMESPACE}:proPoints:${type}:title`)}
                 </h2>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${getNamespace}:proPoints:${type}:desc`)}
+                  {t(`${NAMESPACE}:proPoints:${type}:desc`)}
                 </p>
               </div>
             </div>
@@ -36,10 +36,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-1' src={ProIcon1} />
                     <h5>
-                      {t(`${getNamespace}:proPoints:${type}:points:1:title`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:1:title`)}
                     </h5>
                     <p>
-                      {t(`${getNamespace}:proPoints:${type}:points:1:text`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:1:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -47,10 +47,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-2' src={ProIcon2} />
                     <h5>
-                      {t(`${getNamespace}:proPoints:${type}:points:2:title`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:2:title`)}
                     </h5>
                     <p>
-                      {t(`${getNamespace}:proPoints:${type}:points:2:text`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:2:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -58,10 +58,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-3' src={ProIcon3} />
                     <h5>
-                      {t(`${getNamespace}:proPoints:${type}:points:3:title`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:3:title`)}
                     </h5>
                     <p>
-                      {t(`${getNamespace}:proPoints:${type}:points:3:text`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:3:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -69,10 +69,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-4' src={ProIcon4} />
                     <h5>
-                      {t(`${getNamespace}:proPoints:${type}:points:4:title`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:4:title`)}
                     </h5>
                     <p>
-                      {t(`${getNamespace}:proPoints:${type}:points:4:text`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:4:text`)}
                     </p>
                   </div>
                 </Grid>
@@ -80,10 +80,10 @@ const ProPoints = props => {
                   <div className='pro-point'>
                     <img alt='pro-point-icon-5' src={ProIcon1} />
                     <h5>
-                      {t(`${getNamespace}:proPoints:${type}:points:5:title`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:5:title`)}
                     </h5>
                     <p>
-                      {t(`${getNamespace}:proPoints:${type}:points:5:text`)}
+                      {t(`${NAMESPACE}:proPoints:${type}:points:5:text`)}
                     </p>
                   </div>
                 </Grid>

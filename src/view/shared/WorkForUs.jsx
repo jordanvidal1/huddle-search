@@ -2,13 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
 
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 import UnitasExecutiveArrowIcon from '../../static/unitas/arrow-gold.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const WorkForUs = ({
   home,
@@ -35,7 +36,7 @@ const WorkForUs = ({
             </div>
             <div className='text'>
               <p>
-                {t(`${getNamespace}:workForUs:desc`)}
+                {t(`${NAMESPACE}:workForUs:desc`)}
               </p>
             </div>
             <Grid container spacing={4} className='grid-container'
@@ -92,14 +93,14 @@ const WorkForUs = ({
             {home && (
               <div className='cv-container'>
                 <h5>
-                  {t(`${getNamespace}:workForUs:container:title`)}
+                  {t(`${NAMESPACE}:workForUs:container:title`)}
                 </h5>
                 <p>
-                  {t(`${getNamespace}:workForUs:container:text`)}
+                  {t(`${NAMESPACE}:workForUs:container:text`)}
                 </p>
                 <div className='link-container'>
                   <Link to='/work-for-us'>
-                    {t(`${getNamespace}:workForUs:container:link`)}
+                    {t(`${NAMESPACE}:workForUs:container:link`)}
                     <img alt='arrow-icon' src={arrowIcon}/>
                   </Link>
                 </div>

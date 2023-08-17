@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 
@@ -12,13 +12,14 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const leadershipComponent = t => (
   <div className='info-container'>
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${getNamespace}:leadershipHero:leadershipTeam:info:title`)}
+          {t(`${NAMESPACE}:leadershipHero:leadershipTeam:info:title`)}
         </h5>
       </div>
       <div className='info-details'>
@@ -63,12 +64,12 @@ const ourStoryComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${getNamespace}:leadershipHero:ourStory:info:title`)}
+          {t(`${NAMESPACE}:leadershipHero:ourStory:info:title`)}
         </h5>
       </div>
       <div className='info-description'>
         <p>
-          {t(`${getNamespace}:leadershipHero:ourStory:info:text`)}
+          {t(`${NAMESPACE}:leadershipHero:ourStory:info:text`)}
         </p>
       </div>
       <div className='info-signatures'>
@@ -91,34 +92,34 @@ const ourProcessComponent = t => (
     <div className='info-box'>
       <div className='info-title'>
         <h5>
-          {t(`${getNamespace}:leadershipHero:ourProcess:info:title`)}
+          {t(`${NAMESPACE}:leadershipHero:ourProcess:info:title`)}
         </h5>
       </div>
       <div className='info-calculation'>
         <div>
           <h5>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:1:title`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:1:title`)}
           </h5>
           <p>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:1:text`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:1:text`)}
           </p>
         </div>
         <img alt='plus-icon' src={PlusIcon} />
         <div>
           <h5>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:2:title`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:title`)}
           </h5>
           <span>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:2:text`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:text`)}
           </span>
         </div>
         <img alt='equals-icon' src={EqualsIcon} />
         <div>
           <h5>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:3:title`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:3:title`)}
           </h5>
           <p>
-            {t(`${getNamespace}:leadershipHero:ourProcess:info:calculation:3:text`)}
+            {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:3:text`)}
           </p>
         </div>
       </div>
@@ -152,7 +153,7 @@ const LeadershipHero = props => {
           <div className='content'>
             <div className='text-container'>
               <h5>
-                {t(`${getNamespace}:leadershipHero:${type}:path`)}
+                {t(`${NAMESPACE}:leadershipHero:${type}:path`)}
               </h5>
               <div className='title'>
                 <h1>
@@ -161,7 +162,7 @@ const LeadershipHero = props => {
               </div>
               <div className='text'>
                 <p>
-                  {t(`${getNamespace}:leadershipHero:${type}:desc`)}
+                  {t(`${NAMESPACE}:leadershipHero:${type}:desc`)}
                 </p>
               </div>
             </div>

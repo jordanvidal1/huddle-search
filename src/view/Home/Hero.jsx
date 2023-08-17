@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {getNamespace} from '../../services/helper';
+
+import {NAMESPACE} from '../../services/constants'
 
 const Hero = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -14,21 +15,21 @@ const Hero = () => {
             <div className='text-container'>
               <div className='title'>
                 <h1>
-                  {t(`${getNamespace}:home:hero:title:part1`)}
+                  {t(`${NAMESPACE}:home:hero:title:part1`)}
                   <a>
-                    {t(`${getNamespace}:home:hero:title:part2`)}
+                    {t(`${NAMESPACE}:home:hero:title:part2`)}
                   </a>
-                  {t(`${getNamespace}:home:hero:title:part3`)}
+                  {t(`${NAMESPACE}:home:hero:title:part3`)}
                 </h1>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${getNamespace}:home:hero:desc`)}
+                  {t(`${NAMESPACE}:home:hero:desc`)}
                 </p>
               </div>
               <div className='btn-container'>
                 <Link to='/jobs' className="btn btn-primary">
-                  {t(`${getNamespace}:home:hero:button`)}
+                  {t(`${NAMESPACE}:home:hero:button`)}
                 </Link>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
@@ -18,6 +18,7 @@ import UnitasMenubar from '../../static/unitas/menubar.svg';
 import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
 import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
 import UnitasCloseButton from '../../static/unitas/close-button.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const routes = [
   {
@@ -196,7 +197,7 @@ const Navigator = ({
   );
 
   return (
-    <div className={`${getNamespace}-site`}>
+    <div className={`${NAMESPACE}-site`}>
       {renderSidebar()}
       <TopNav isHuddle={isHuddle} />
       {renderHeader()}

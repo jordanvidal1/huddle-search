@@ -2,11 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const LookingToHire = ({
   children,
@@ -26,10 +27,10 @@ const LookingToHire = ({
             </div>
             <div className='text'>
               <p>
-                {t(`${getNamespace}:lookingToHire:${type}:desc`)} {
+                {t(`${NAMESPACE}:lookingToHire:${type}:desc`)} {
                   type === 'home' && (
                     <Link to='/looking-to-hire'>
-                      {t(`${getNamespace}:lookingToHire:${type}:link`)}
+                      {t(`${NAMESPACE}:lookingToHire:${type}:link`)}
                       <img
                         className='arrow-icon'
                         alt='arrow-icon'
@@ -50,15 +51,15 @@ const LookingToHire = ({
             <div className='cv-container'>
               <div className='text-container'>
                 <h5>
-                  {t(`${getNamespace}:lookingToHire:${type}:cv:title`)}
+                  {t(`${NAMESPACE}:lookingToHire:${type}:cv:title`)}
                 </h5>
                 <p>
-                  {t(`${getNamespace}:lookingToHire:${type}:cv:text`)}
+                  {t(`${NAMESPACE}:lookingToHire:${type}:cv:text`)}
                 </p>
               </div>
               <div className='link-container'>
                 <HashLink to='/contact-us#contact'>
-                  {t(`${getNamespace}:lookingToHire:${type}:cv:link`)}
+                  {t(`${NAMESPACE}:lookingToHire:${type}:cv:link`)}
                   <img
                     alt='arrow-icon'
                     src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}

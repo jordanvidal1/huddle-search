@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {getNamespace} from '../../services/helper';
+
+import {NAMESPACE} from '../../services/constants'
 
 const ContractHires = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -18,12 +19,12 @@ const ContractHires = () => {
             </div>
             <div className='text'>
               <p>
-                {t(`${getNamespace}:lookingToHire:contract:desc`)}
+                {t(`${NAMESPACE}:lookingToHire:contract:desc`)}
               </p>
             </div>
             <div className='btn-container'>
               <Link to='/contract-interim' className="btn btn-secondary">
-                {t(`${getNamespace}:lookingToHire:contract:button`)}
+                {t(`${NAMESPACE}:lookingToHire:contract:button`)}
               </Link>
             </div>
           </div>

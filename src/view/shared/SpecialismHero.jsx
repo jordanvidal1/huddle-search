@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {getNamespace} from '../../services/helper';
 
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
+import {NAMESPACE} from '../../services/constants'
 
 const SpecialismHero = props => {
   const {
@@ -34,17 +34,17 @@ const SpecialismHero = props => {
             <div className='text-container'>
               <div className='title'>
                 <h1>
-                  {children || t(`${getNamespace}:specialismHero:title:${pathname}`, {name})}
+                  {children || t(`${NAMESPACE}:specialismHero:title:${pathname}`, {name})}
                 </h1>
               </div>
               <div className='text'>
                 <p>
-                  {t(`${getNamespace}:specialismHero:desc:${type}`)}
+                  {t(`${NAMESPACE}:specialismHero:desc:${type}`)}
                 </p>
                 {empty && (
                   <div className='btn-container'>
                     <Link to='/jobs' className='btn btn-secondary'>
-                      {t(`${getNamespace}:specialismHero:button`)}
+                      {t(`${NAMESPACE}:specialismHero:button`)}
                     </Link>
                   </div>
                 )}

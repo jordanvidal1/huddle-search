@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {getNamespace, isHuddle} from '../../services/helper';
+import {isHuddle} from '../../services/helper';
 import Input from '../shared/Input';
 
 import LinkedIn from '../../static/huddle/linkedin-purple.svg';
@@ -12,6 +12,7 @@ import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
 import UnitasTwitter from '../../static/unitas/twitter-white.svg';
 import UnitasFacebook from '../../static/unitas/facebook-white.svg';
 import UnitasInstagram from '../../static/unitas/instagram-white.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const FollowUs = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -25,10 +26,10 @@ const FollowUs = () => {
               <div className='box join'>
                 <div className='text-container'>
                   <h3>
-                    {t(`${getNamespace}:contactUs:join:title`)}
+                    {t(`${NAMESPACE}:contactUs:join:title`)}
                   </h3>
                   <p>
-                    {t(`${getNamespace}:contactUs:join:text`)}
+                    {t(`${NAMESPACE}:contactUs:join:text`)}
                   </p>
                 </div>
                 <div className='action-container'>
@@ -57,10 +58,10 @@ const FollowUs = () => {
               <div className='box follow'>
                 <div className='text-container'>
                   <h3>
-                    {t(`${getNamespace}:contactUs:follow:title`)}
+                    {t(`${NAMESPACE}:contactUs:follow:title`)}
                   </h3>
                   <p>
-                    {t(`${getNamespace}:contactUs:follow:text`)}
+                    {t(`${NAMESPACE}:contactUs:follow:text`)}
                   </p>
                 </div>
                 <div className='action-container'>

@@ -1,5 +1,4 @@
-
-const getNamespace = process.env.REACT_APP_SITE_NAME;
+import {NAMESPACE} from './constants'
 
 const renderNumber = (
   number, minimumFractionDigits = 0,
@@ -10,10 +9,9 @@ const renderNumber = (
     maximumFractionDigits
   }).format(number);
 
-const isHuddle = getNamespace === 'huddle';
+const isHuddle = NAMESPACE === 'huddle';
 
 export {
-  getNamespace,
   isHuddle,
   renderNumber,
 };

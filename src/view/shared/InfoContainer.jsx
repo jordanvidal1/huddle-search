@@ -2,11 +2,11 @@ import React from 'react';
 import {HashLink} from 'react-router-hash-link';
 
 import {Grid} from '@material-ui/core';
-import {getNamespace} from '../../services/helper';
 
 import VacancyIcon from '../../static/huddle/vacancy.svg';
 import HelpIcon from '../../static/huddle/help.svg';
 import CVIcon from '../../static/huddle/cv.svg';
+import {NAMESPACE} from '../../services/constants'
 
 const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
@@ -16,18 +16,18 @@ const InfoContainer = ({t}) => (
           <img alt='vacancy-icon' src={VacancyIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${getNamespace}:infoContainer:vacancy:title`)}
+              {t(`${NAMESPACE}:infoContainer:vacancy:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${getNamespace}:infoContainer:vacancy:text`)}
+              {t(`${NAMESPACE}:infoContainer:vacancy:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <HashLink to='/contact-us#contact' className='btn btn-secondary'>
-            {t(`${getNamespace}:infoContainer:vacancy:button`)}
+            {t(`${NAMESPACE}:infoContainer:vacancy:button`)}
           </HashLink>
         </div>
       </div>
@@ -38,18 +38,18 @@ const InfoContainer = ({t}) => (
           <img alt='help-icon' src={HelpIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${getNamespace}:infoContainer:help:title`)}
+              {t(`${NAMESPACE}:infoContainer:help:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${getNamespace}:infoContainer:help:text`)}
+              {t(`${NAMESPACE}:infoContainer:help:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <HashLink to='/contact-us#contact' className='btn btn-secondary'>
-            {t(`${getNamespace}:infoContainer:help:button`)}
+            {t(`${NAMESPACE}:infoContainer:help:button`)}
           </HashLink>
         </div>
       </div>
@@ -60,18 +60,18 @@ const InfoContainer = ({t}) => (
           <img alt='cv-icon' src={CVIcon} />
           <div className='info-title'>
             <h5>
-              {t(`${getNamespace}:infoContainer:cv:title`)}
+              {t(`${NAMESPACE}:infoContainer:cv:title`)}
             </h5>
           </div>
           <div className='info-text'>
             <p>
-              {t(`${getNamespace}:infoContainer:cv:text`)}
+              {t(`${NAMESPACE}:infoContainer:cv:text`)}
             </p>
           </div>
         </div>
         <div className='btn-container'>
           <HashLink to='/contact-us#contact' className='btn btn-secondary'>
-            {t(`${getNamespace}:infoContainer:cv:button`)}
+            {t(`${NAMESPACE}:infoContainer:cv:button`)}
           </HashLink>
         </div>
       </div>
