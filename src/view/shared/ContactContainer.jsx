@@ -61,9 +61,9 @@ const ContactContainer = ({
             </div>
           </div>
           <div className='contact-info'>
-            <p>
+            <a href={`mailto:${t(`${getNamespace}:contactContainer:email:emailAddress`)}`}>
               {t(`${getNamespace}:contactContainer:email:emailAddress`)}
-            </p>
+            </a>
           </div>
         </div>
       </Grid>

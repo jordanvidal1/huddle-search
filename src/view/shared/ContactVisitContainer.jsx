@@ -46,9 +46,9 @@ const ContactVisitContainer = (t) => (
           </div>
         </div>
         <div className='visit-info'>
-          <p>
+          <a href={`mailto:${t(`${getNamespace}:visitContainer:email:emailAddress`)}`}>
             {t(`${getNamespace}:visitContainer:email:emailAddress`)}
-          </p>
+          </a>
         </div>
       </div>
     </Grid>

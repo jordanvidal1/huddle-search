@@ -37,7 +37,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='contact'>
+    <div id='contact' className='contact'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

@@ -24,13 +24,23 @@
     .resources-grid {
         margin-top: 4rem;
 
-        > div {
+        > div:first-child {
             margin-bottom: 1.5rem;
 
             > span {
                 color: #7E8192;
                 font-size: 1.125rem;
             }
+        }
+
+        > div:last-child {
+            justify-content: flex-start;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .resources-grid > div:last-child {
+            justify-content: center;
         }
     }
 }

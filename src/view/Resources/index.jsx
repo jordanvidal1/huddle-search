@@ -24,7 +24,7 @@ const Resources = ({
             <div>
               <span>Results ({resources.length})</span>
             </div>
-            <Grid container spacing={3} justifyContent='center'>
+            <Grid container spacing={3}>
               {resources.map((resource) => (
                 <Resource {...resource} />
               ))}

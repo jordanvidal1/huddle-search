@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
+
 import {Grid} from '@material-ui/core';
 import {getNamespace} from '../../services/helper';
 
@@ -25,9 +26,9 @@ const InfoContainer = ({t}) => (
           </div>
         </div>
         <div className='btn-container'>
-          <button className='btn btn-secondary'>
+          <HashLink to='/contact-us#contact' className='btn btn-secondary'>
             {t(`${getNamespace}:infoContainer:vacancy:button`)}
-          </button>
+          </HashLink>
         </div>
       </div>
     </Grid>
@@ -47,9 +48,9 @@ const InfoContainer = ({t}) => (
           </div>
         </div>
         <div className='btn-container'>
-          <Link to='/contact-us' className='btn btn-secondary'>
+          <HashLink to='/contact-us#contact' className='btn btn-secondary'>
             {t(`${getNamespace}:infoContainer:help:button`)}
-          </Link>
+          </HashLink>
         </div>
       </div>
     </Grid>
@@ -69,9 +70,9 @@ const InfoContainer = ({t}) => (
           </div>
         </div>
         <div className='btn-container'>
-          <button className='btn btn-secondary'>
+          <HashLink to='/contact-us#contact' className='btn btn-secondary'>
             {t(`${getNamespace}:infoContainer:cv:button`)}
-          </button>
+          </HashLink>
         </div>
       </div>
     </Grid>

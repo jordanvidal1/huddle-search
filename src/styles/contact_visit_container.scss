@@ -40,7 +40,7 @@
         .visit-info {
             margin-top: 2rem;
 
-            p {
+            p, a {
                 color: #310A31;
                 font-size: 1.25rem;
                 font-weight: 800;
@@ -88,9 +88,11 @@
         color: rgba(255, 255, 255, 0.70);
     }
 
-    .visit-info p {
-        color: #FFF;
-        font-weight: 600;
-        line-height: 1.75rem; /* 140% */
+    .visit-info {
+        p, a {
+            color: #FFF;
+            font-weight: 600;
+            line-height: 1.75rem; /* 140% */
+        }
     }
 }

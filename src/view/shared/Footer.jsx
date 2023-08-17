@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {getNamespace, isHuddle} from '../../services/helper';
@@ -53,12 +54,12 @@ const Footer = () => {
                     </p>
                   </div>
                   <div className='btn-container'>
-                    <button className="btn btn-secondary">
+                    <HashLink to='/contact-us#contact' className="btn btn-secondary">
                       Submit new role
-                    </button>
-                    <Link to='/contact-us' className="btn">
+                    </HashLink>
+                    <HashLink to='/contact-us#contact' className="btn">
                       Talk to us
-                    </Link>
+                    </HashLink>
                   </div>
                 </div>
               </Grid>
@@ -104,7 +105,11 @@ const Footer = () => {
                             alt='email'
                             src={isHuddle ? Email : UnitasEmail}
                           />
-                          <span>{t(`${getNamespace}:footer:email`)}</span>
+                          <a href={`mailto:${t(`${getNamespace}:footer:email`)}`}>
+                            <span>
+                              {t(`${getNamespace}:footer:email`)}
+                            </span>
+                          </a>
                         </div>
                         <div>
                           <img

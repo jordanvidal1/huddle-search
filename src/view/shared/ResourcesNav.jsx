@@ -4,18 +4,18 @@ import cx from 'classnames';
 import DropdownArrow from '../../static/unitas/dropdown-arrow.svg';
 
 const filters = [
-  {
-    name: 'All'
-  },
+  // {
+  //   name: 'All'
+  // },
   {
     name: 'Blog'
   },
-  {
-    name: 'Insights'
-  },
-  {
-    name: 'Case studies'
-  }
+  // {
+  //   name: 'Insights'
+  // },
+  // {
+  //   name: 'Case studies'
+  // }
 ];
 
 const ResourcesNav = () => {
@@ -29,7 +29,7 @@ const ResourcesNav = () => {
       {filters.map((filter, i) => (
         <div key={i}>
           <span
-            className={cx({active: filter.name === 'All'})}
+            className={cx({active: filter.name === 'Blog'})}
           >
             {/* todo: temp condition */}
             <Link

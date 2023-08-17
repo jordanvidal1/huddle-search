@@ -37,7 +37,7 @@
         .contact-info {
             margin-top: 2rem;
 
-            p {
+            p, a {
                 color: #F6E27F;
                 font-size: 1.25rem;
                 font-weight: 800;
@@ -87,9 +87,11 @@
         font-weight: 400;
     }
 
-    .contact-info p {
-        color: #E0B45C;
-        font-family: Plus Jakarta Sans;
+    .contact-info {
+        p, a {
+            color: #E0B45C;
+            font-family: Plus Jakarta Sans;
+        }
     }
 }
 
@@ -102,9 +104,11 @@
             background: #B1C9B1;
         }
 
-        .contact-info p {
-            color: #F49944;
-            font-weight: 600;
+        .contact-info {
+            p, a {
+                color: #F49944;
+                font-weight: 600;
+            }
         }
     }
 
@@ -133,10 +137,12 @@
                 font-family: Poppins;
             }
 
-            .contact-info p {
-                color: #1A1A1A;
-                font-family: Poppins;
-                font-weight: 600;
+            .contact-info {
+                p, a {
+                    color: #1A1A1A;
+                    font-family: Poppins;
+                    font-weight: 600;
+                }
             }
         }
     }

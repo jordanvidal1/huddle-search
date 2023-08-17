@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {getNamespace, isHuddle} from '../../services/helper';
 
@@ -39,12 +40,12 @@ const LookingToHire = ({
               </p>
             </div>
             <div className='btn-container'>
-              <button className="btn btn-secondary">
+              <HashLink to='/contact-us#contact' className="btn btn-secondary">
                 Submit new role
-              </button>
-              <Link to='/contact-us' className="btn">
+              </HashLink>
+              <HashLink to='/contact-us#contact' className="btn">
                 Talk to us
-              </Link>
+              </HashLink>
             </div>
             <div className='cv-container'>
               <div className='text-container'>
@@ -56,13 +57,13 @@ const LookingToHire = ({
                 </p>
               </div>
               <div className='link-container'>
-                <a>
+                <HashLink to='/contact-us#contact'>
                   {t(`${getNamespace}:lookingToHire:${type}:cv:link`)}
                   <img
                     alt='arrow-icon'
                     src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
                   />
-                </a>
+                </HashLink>
               </div>
             </div>
           </div>
