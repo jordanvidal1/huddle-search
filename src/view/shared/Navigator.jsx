@@ -84,7 +84,7 @@ const Navigator = ({
   const closeExpandClick = () => setExpanded(false);
 
   useEffect(() => {
-    if (pathname !== '') {
+    if (pathname !== '' && !location.hash) {
       window.scrollTo(0, 0);
     }
     closeExpandClick();
