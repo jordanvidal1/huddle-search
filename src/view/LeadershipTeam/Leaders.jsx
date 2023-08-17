@@ -14,7 +14,7 @@ const Leaders = () => (
     <div className='container'>
       <div className='inner-container'>
         <div className='content'>
-          {leaders.map((leader) => {
+          {leaders.map((leader, i) => {
             const {
               name,
               role,
@@ -25,7 +25,7 @@ const Leaders = () => (
             } = leader;
 
             return (
-              <div className='leader'>
+              <div key={i} className='leader'>
                 <div className='text-container'>
                   <div className='title'>
                     <h2>{name}</h2>

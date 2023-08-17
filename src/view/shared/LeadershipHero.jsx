@@ -73,8 +73,8 @@ const ourStoryComponent = t => (
         </p>
       </div>
       <div className='info-signatures'>
-        {signatures.map((signature) => (
-          <div className='info-signature'>
+        {signatures.map((signature, i) => (
+          <div key={i} className='info-signature'>
             <img alt='signature-img' src={signature.img} />
             <div>
               <h6>{signature.name}</h6>

@@ -1,25 +1,40 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {capitalize, Grid} from '@material-ui/core';
 import cx from 'classnames';
-import {Grid} from '@material-ui/core';
 
 const Resource = props => {
-  const {type, title, attributes} = props;
+  const {
+    i,
+    categories,
+    excerpt,
+    featured_image,
+    tags,
+    title,
+    slug
+  } = props;
+
+  const category = Object.keys(categories)[0];
+  const tagsList = Object.keys(tags);
 
   const classNames = cx('resource-type', {
-    ['blog']: type === 'Blog',
-    ['insight']: type === 'Insight',
-    ['case-study']: type === 'Case Study',
+    ['blog']: category === 'Blog',
+    ['insight']: category === 'Insight',
+    ['case-study']: category === 'Case Study',
   });
 
   return (
-    <Grid item xs={12} sm={6} md={3} className='resource-grid-item'>
+    <Grid key={i} item xs={12} sm={6} md={3} className='resource-grid-item'>
       <div className='resource'>
         <div className='resource-container'>
           <div className='resource-type-container'>
-            <div className={classNames}>
-              <span>
-                {type}
-              </span>
+            <img alt='blog-img' src={featured_image} />
+            <div>
+              <div className={classNames}>
+                <span>
+                  {category}
+                </span>
+              </div>
             </div>
           </div>
           <div className='resource-title'>
@@ -28,21 +43,20 @@ const Resource = props => {
             </h6>
           </div>
           <div className='resource-attributes'>
-            {attributes.map((attribute) => (
-              <div className='resource-attribute'>
-                <span>{attribute}</span>
+            {tagsList.map((tag, i) => (
+              <div key={i} className='resource-attribute'>
+                <span>{capitalize(tag)}</span>
               </div>
             ))}
           </div>
-          <div className='resource-description'>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus.
-            </p>
-          </div>
+          <div
+            className='resource-description'
+            dangerouslySetInnerHTML={{ __html: excerpt }}
+          />
           <div className='btn-container'>
-            <button className='btn btn-primary'>
+            <Link to={`/resources/${slug}`} className='btn btn-primary'>
               Read more
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -51,11 +65,3 @@ const Resource = props => {
 }
 
 export default Resource;
-
-Resource.defaultProps = {
-  type: 'Blog',
-  title: 'Lorem ipsum dolor sit amet consectetur',
-  attributes: [
-    'How-to', 'Award'
-  ]
-};

@@ -2,9 +2,11 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
+import {fetchApi} from '../../services/api';
 import {FORM_ID, SITE_URL} from '../../services/constants';
 import Input from '../shared/Input';
-import {fetchApi} from '../../services/api';
+
+const Buffer = require('buffer/').Buffer;
 
 const ContactForm = () => {
   const {
@@ -30,10 +32,19 @@ const ContactForm = () => {
       );
     }
 
+    const headers = new Headers();
+    headers.set('Authorization', 'Basic '
+      + Buffer.from(
+        process.env.REACT_APP_WP_USER
+        + ":"
+        + process.env.REACT_APP_WP_TOKEN
+      ).toString('base64'));
+
     return await fetchApi(
-      `${SITE_URL}/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
+      `https://${SITE_URL}/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
       'POST',
-      formData
+      formData,
+      headers
     );
   }
 

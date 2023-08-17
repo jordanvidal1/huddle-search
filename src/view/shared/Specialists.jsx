@@ -45,11 +45,11 @@ const Specialists = props => {
               </div>
             </div>
             <div className='specialists-container'>
-              {(specialists || leaders).map((specialist) => {
+              {(specialists || leaders).map((specialist, i) => {
                 const {img, name, role, description, number, email, linkedin} = specialist;
 
                 return (
-                  <div className='specialist'>
+                  <div key={i} className='specialist'>
                     <div className='specialist-img-container'>
                       <img alt='specialist-img' />
                     </div>

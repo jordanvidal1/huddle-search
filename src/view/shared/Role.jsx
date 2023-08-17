@@ -12,7 +12,7 @@ import UnitasBenefits from '../../static/unitas/benefits.svg';
 import UnitasLocation from '../../static/unitas/location.svg';
 
 const Role = props => {
-  const {type, title, salary, benefits, location} = props;
+  const {i, type, title, salary, benefits, location} = props;
 
   const classNames = cx('role-type', {
     ['permanent']: type === 'Permanent',
@@ -20,7 +20,7 @@ const Role = props => {
   });
 
   return (
-    <Grid item xs={12} sm={6} md={3} className='role-grid-item'>
+    <Grid key={i} item xs={12} sm={6} md={3} className='role-grid-item'>
       {/* todo: different widths in different components */}
       <div className='role'>
         <div className='role-container'>

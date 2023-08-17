@@ -8,7 +8,7 @@ const Sitemap = require('react-router-sitemap').default;
 function generateSitemap() {
   return (
     new Sitemap(router)
-    .build(process.env.REACT_APP_SITE_URL)
+    .build(`https://${process.env.REACT_APP_SITE_URL}`)
     .save('./public/sitemap.xml')
   );
 }

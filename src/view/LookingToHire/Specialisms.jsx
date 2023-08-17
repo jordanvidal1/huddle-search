@@ -34,8 +34,8 @@ const Specialisms = props => {
                 {/*<h5>*/}
                 {/*  A*/}
                 {/*</h5>*/}
-                {specialisms.map((specialism) => (
-                  <Link to={specialism.path}>
+                {specialisms.map((specialism, i) => (
+                  <Link key={i} to={specialism.path}>
                     {specialism.name}
                     <img alt='arrow-icon' src={ArrowIcon} />
                   </Link>

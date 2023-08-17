@@ -23,8 +23,8 @@ const Jobs = ({
               <span>Results ({roles.length})</span>
             </div>
             <Grid container spacing={3} justifyContent='center'>
-              {roles.map((role) => (
-                <Role {...role} />
+              {roles.map((role, i) => (
+                <Role i={i} {...role} />
               ))}
             </Grid>
           </div>

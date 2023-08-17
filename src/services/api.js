@@ -1,20 +1,11 @@
 import fetch from 'node-fetch';
 
-const Buffer = require('buffer/').Buffer;
-
 export const fetchApi = async (
   url,
   method = 'GET',
-  body
+  body,
+  headers = new Headers()
 ) => {
-  const headers = new Headers();
-  headers.set('Authorization', 'Basic '
-    + Buffer.from(
-    process.env.REACT_APP_WP_USER
-    + ":"
-    + process.env.REACT_APP_WP_TOKEN
-  ).toString('base64'));
-
   const options = {
     method,
     headers,

@@ -22,11 +22,23 @@
     }
 
     .resource-type-container {
-      border-radius: 1rem;
-      background: #D9D9D9;
-      height: 9.19rem;
-      padding: 0.75rem;
+      position: relative;
       width: 100%;
+
+      > div {
+        border-radius: 1rem;
+        background: #D9D9D9;
+        height: 9.19rem;
+        padding: 0.75rem;
+      }
+
+      img {
+        border-radius: 1rem;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+      }
     }
 
     .resource-type {
@@ -34,7 +46,9 @@
       border-radius: 6.25rem;
       display: flex;
       padding: 0.5rem 1rem;
+      position: relative;
       width: fit-content;
+      z-index: 5;
 
       &.blog {
         background: #FFE6CF;
@@ -137,7 +151,9 @@
       }
 
       .resource-type-container {
-        border-radius: 0.5rem;
+        > div, img {
+          border-radius: 0.5rem;
+        }
       }
     }
   }

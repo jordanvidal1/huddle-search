@@ -22,7 +22,7 @@ import Resources from '../Resources';
 import Specialism from '../Specialism';
 
 // import Job from '../Job';
-// import Resource from '../Resource';
+import Resource from '../Resource';
 
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
@@ -36,10 +36,10 @@ const RouterComponent = () => (
     <Navigator>
       <Routes>
         <Route path='/' Component={Home} />
-        <Route path='/jobs' Component={Jobs} />
+        <Route exact path='/jobs' Component={Jobs} />
         {/*<Route path='/jobs/:id' Component={Job} />*/}
-        <Route path='/resources' Component={Resources} />
-        {/*<Route path='/resources/:id' Component={Resource} />*/}
+        <Route exact path='/resources' Component={Resources} />
+        <Route path='/resources/:id' Component={Resource} />
         <Route path='/specialisms' Component={Specialism} />
         {/*<Route path='/specialisms/:id' Component={Specialism}/>*/}
         <Route path='/sectors' Component={Specialism} />
