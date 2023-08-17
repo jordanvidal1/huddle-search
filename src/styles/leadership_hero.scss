@@ -263,6 +263,10 @@
                     align-items: center;
                 }
 
+                .info-description p {
+                    font-size: 1.25rem;
+                }
+
                 .info-signatures {
                     flex-direction: column;
                     gap: 1.5rem;
@@ -466,6 +470,7 @@
 
                     .info-title h5 {
                         color: #FFF;
+                        font-size: 2rem;
                         font-weight: 900;
                     }
 
@@ -495,6 +500,18 @@
                 .info-calculation {
                     img {
                         background: #B1C9B1;
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .text-container h5 {
+                    font-size: 1.25rem;
+                }
+
+                .title {
+                    h1, a {
+                        font-size: 3rem;
                     }
                 }
             }

@@ -85,5 +85,21 @@
         .text p {
             font-weight: 400;
         }
+
+        @include media-breakpoint-down(md) {
+            .title h2 {
+                font-size: 4rem;
+            }
+
+            .btn-container {
+                margin-top: 4rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title h2 {
+                font-size: 3rem;
+            }
+        }
     }
 }

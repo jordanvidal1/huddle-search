@@ -100,9 +100,9 @@ const TopNav = ({isHuddle}) => {
             className='top-nav-quicklinks'
             onClick={toggleDropdown}
           >
-            <p>
+            <span>
               Quicklinks
-            </p>
+            </span>
             <img
               alt='quicklinks-menubar'
               className='quicklinks-button'

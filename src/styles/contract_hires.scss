@@ -45,4 +45,18 @@
         color: #FFF;
         font-family: Fraunces;
     }
+
+    @include media-breakpoint-down(md) {
+        .content {
+            margin: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: #3A84C9;
+
+        .title h2 {
+            font-size: 3rem;
+        }
+    }
 }

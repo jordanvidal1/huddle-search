@@ -3,25 +3,32 @@
   align-self: stretch;
   background: #52050A;
   display: flex;
-  height: 3.5rem;
-  padding: 0 1.5rem;
+  flex-direction: column;
   justify-content: space-between;
   position: sticky;
   top: 6rem;
 
-  .resources-nav-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1248px;
-    width: 100%;
-  }
-
   .resources-nav-inner {
     align-items: center;
     display: flex;
-    gap: 4rem;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+
+  .resources-nav-list-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 1.56rem 0;
+  }
+
+  .divider {
+    background: rgba(255, 255, 255, 0.15);
+    height: 100%;
+    margin: 0 2rem;
+    width: 1px;
   }
 
   span {
@@ -30,14 +37,9 @@
   }
 
   .resources-nav-list {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
     gap: 2rem;
-
-    > div {
-      align-items: center;
-      display: flex;
-    }
 
     .active a {
       color: #FFF;
@@ -47,6 +49,79 @@
       color: rgba(255, 255, 255, 0.50);
       font-size: 1.125rem;
       font-weight: 800;
+    }
+  }
+
+  .resources-dropdown {
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+
+    img {
+      transform: rotate(0deg);
+      transition: transform 0.25s linear;
+    }
+  }
+
+  &:has(.dropdown.active) {
+    .resources-dropdown {
+      img {
+        transform: rotate(180deg);
+        transition: transform 0.25s linear;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .resources-nav-inner {
+      height: unset;
+    }
+
+    .resources-nav-list-container {
+      display: none;
+    }
+
+    .resources-dropdown {
+      display: flex;
+    }
+  }
+
+  .dropdown {
+    background: #59060c;
+    display: none;
+    width: 100%;
+
+    .dropdown-container {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      width: 100%;
+
+      .resources-nav-list {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      a {
+        font-size: 1rem;
+        font-weight: 800;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .resources-nav-inner {
+      padding: 0 0.75rem 0 0.25rem;
+    }
+
+    .dropdown.active {
+      display: flex;
     }
   }
 
@@ -64,5 +139,13 @@
 
   .resources-nav-list a {
     font-weight: 600;
+  }
+
+  .dropdown {
+    background: #004813;
+
+    .dropdown-container .resources-nav-list a {
+        font-weight: 600;
+    }
   }
 }

@@ -245,16 +245,16 @@
   },
   "contactContainer": {
     "phone": {
-      "title": "Phone",
-      "executiveTitle": "Speak over the phone",
+      "title": "Speak over the phone",
       "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
+      "executiveTitle": "Phone",
       "executiveText": "Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.",
       "phoneNumber": "+44 0000 000 000"
     },
     "email": {
-      "title": "Email",
-      "executiveTitle": "Send us an email",
+      "title": "Send us an email",
       "text": "Want to start a conversation about our embedded talent solutions? Our team is here to help.",
+      "executiveTitle": "Email",
       "executiveText": "Want to start a conversation about our specialised service for executive hires? Our team is here to help.",
       "emailAddress": "hello@huddlesearch.com"
     }

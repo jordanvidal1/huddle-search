@@ -10,8 +10,8 @@
     align-items: center;
     display: flex;
     height: 3.5rem;
-    padding: 0 1.5rem;
     justify-content: space-between;
+    padding: 0 1.5rem;
     width: 100%;
   }
 
@@ -30,7 +30,7 @@
     padding: 0.75rem 0.5rem;
     width: 100%;
 
-    p {
+    span {
       color: #F6E27F;
       font-size: 1rem;
     }
@@ -357,7 +357,7 @@ div:not(.content) > .header {
       font-weight: 600;
     }
 
-    .top-nav-quicklinks p {
+    .top-nav-quicklinks span {
       color: #FFF;
     }
 

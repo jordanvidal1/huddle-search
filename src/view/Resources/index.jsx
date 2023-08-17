@@ -2,8 +2,12 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
+import Jobs from '../Jobs'
+import Role from '../shared/Role'
 
-const Resources = () =>  (
+const Resources = ({
+  resources
+}) =>  (
   <div className='resources'>
     <div className='container'>
       <div className='inner-container'>
@@ -17,19 +21,13 @@ const Resources = () =>  (
           {/* todo: mobile placeholder */}
           {/* todo: sort by / filters */}
           <div className='resources-grid'>
+            <div>
+              <span>Results ({resources.length})</span>
+            </div>
             <Grid container spacing={3} justifyContent='center'>
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
-              <Resource />
+              {resources.map((resource) => (
+                <Resource {...resource} />
+              ))}
             </Grid>
           </div>
         </div>
@@ -39,3 +37,16 @@ const Resources = () =>  (
 );
 
 export default Resources;
+
+Resources.defaultProps = {
+  resources: [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+};

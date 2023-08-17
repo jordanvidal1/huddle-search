@@ -52,12 +52,16 @@
             .pro-point-container {
                 margin-top: 3rem;
 
-                .pro-point {
-                    h5 {
-                        font-size: 1.75rem;
-                        margin: 1rem 0 0.5rem;
-                    }
+                .pro-point h5 {
+                    font-size: 1.75rem;
+                    margin: 1rem 0 0.5rem;
                 }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .pro-point-container .pro-point {
+                max-width: 100%;
             }
         }
     }
@@ -65,14 +69,8 @@
 
 .embedded-talent,
 .contract-interim {
-    .pro-points {
-        .pro-point-container {
-            .pro-point {
-                img {
-                    background: #FF958C;
-                }
-            }
-        }
+    .pro-points .pro-point-container .pro-point img {
+        background: #FF958C;
     }
 }
 
@@ -80,36 +78,30 @@
     .pro-points {
         background: #645028;
 
-        .title {
-            h2 {
-                font-family: Playfair Display;
-                font-weight: 400;
-            }
+        .title h2 {
+            font-family: Playfair Display;
+            font-weight: 400;
         }
 
-        .text {
+        .text p {
+            color: #FFF;
+            font-family: Plus Jakarta Sans;
+            font-weight: 400;
+        }
+
+        .pro-point-container .pro-point {
+            img {
+                background: #7E8192;
+            }
+
+            h5 {
+                font-family: Playfair Display;
+            }
+
             p {
-                color: #FFF;
+                color: rgba(255, 255, 255, 0.70);
                 font-family: Plus Jakarta Sans;
                 font-weight: 400;
-            }
-        }
-
-        .pro-point-container {
-            .pro-point {
-                img {
-                    background: #7E8192;
-                }
-
-                h5 {
-                    font-family: Playfair Display;
-                }
-
-                p {
-                    color: rgba(255, 255, 255, 0.70);
-                    font-family: Plus Jakarta Sans;
-                    font-weight: 400;
-                }
             }
         }
     }
@@ -122,32 +114,49 @@
         .pro-points {
             background: #1A1A1A;
 
-            .pro-point-container .pro-point img {
-                background: #B1C9B1;
+            .pro-point-container .pro-point {
+                img {
+                    background: #B1C9B1;
+                }
+
+                h5 {
+                    font-size: 2rem;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title h2 {
+                    font-size: 3rem;
+                }
             }
         }
     }
 
-    .executive-search {
-        .pro-points {
-            background: #FFC700;
+    .executive-search .pro-points {
+        background: #FFC700;
 
-            .title h2, .text p {
+        .title h2,
+        .text p {
+            color: #1A1A1A;
+        }
+
+        .pro-point-container .pro-point {
+            img {
+                background: #710058;
+            }
+
+            h5 {
                 color: #1A1A1A;
             }
 
-            .pro-point-container .pro-point {
-                img {
-                    background: #710058;
-                }
+            p {
+                color: rgba(26, 26, 26, 0.70);
+            }
+        }
 
-                h5 {
-                    color: #1A1A1A;
-                }
-
-                p {
-                    color: rgba(26, 26, 26, 0.70);
-                }
+        @include media-breakpoint-down(sm) {
+            .title h2 {
+                font-size: 3rem;
             }
         }
     }

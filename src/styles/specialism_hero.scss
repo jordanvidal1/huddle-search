@@ -53,7 +53,7 @@
             }
 
             .text {
-                margin-top: 2.5rem;
+                margin-top: 2rem;
                 max-width: unset;
             }
 
@@ -148,13 +148,18 @@
             background: #FFF;
 
             .inner-container {
-                padding: 1.5rem 0 0;
+                padding: 1.5rem 0.75rem 2rem;
             }
 
             .title {
                 background-position: right 0;
-                background-size: 10rem;
                 padding-top: 6.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                background-size: 10rem;
 
                 h1 {
                     font-size: 3rem;
@@ -297,6 +302,22 @@
                 color: #FFF;
                 font-weight: 400;
             }
+
+            @include media-breakpoint-down(md) {
+                background: #3A84C9;
+
+                .text {
+                    margin-top: 2.5rem;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title {
+                    h1, a {
+                        font-size: 4rem;
+                    }
+                }
+            }
         }
     }
 
@@ -325,6 +346,29 @@
 
         .text p {
             font-weight: 400;
+        }
+
+        @include media-breakpoint-down(md) {
+            background: #F9F9F9;
+
+            .inner-container {
+                padding: 1.5rem 0.75rem 2rem;
+            }
+
+            .title {
+                background-position: right 0;
+                padding-top: 6.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                background-size: 10rem;
+
+                h1 {
+                    font-size: 3rem;
+                }
+            }
         }
     }
 
@@ -408,8 +452,56 @@
         }
 
         @include media-breakpoint-down(md) {
-            .title > h1 > div {
-                flex-direction: column;
+            .content {
+                margin: 0;
+            }
+
+            .title {
+                > h1 {
+                    align-items: flex-start;
+                    flex-direction: column-reverse;
+
+                    > div {
+                        align-items: flex-start;
+                        flex-direction: column;
+                        margin: 0 0 1rem;
+
+                        h1 {
+                            margin: 0;
+                        }
+                    }
+
+                    > p {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
+
+                        img {
+                            margin: 0.75rem 0 0;
+                        }
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 2.5rem;
+            }
+
+            .info-container h5 {
+                font-size: 2rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title {
+                > h1 h1 {
+                    font-size: 3rem;
+                    letter-spacing: -0.06rem;
+                }
+
+                div p {
+                    font-size: 3rem;
+                }
             }
         }
     }

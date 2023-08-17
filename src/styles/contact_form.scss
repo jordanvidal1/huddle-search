@@ -85,6 +85,10 @@
                 flex-direction: column;
                 gap: 3rem;
             }
+
+            .text-container {
+                max-width: unset;
+            }
         }
     }
 }
@@ -98,5 +102,17 @@
 
     .textfield label {
         font-family: Fraunces;
+    }
+
+    @include media-breakpoint-down(md) {
+        .text-container, .action-container {
+            max-width: unset;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .text-container h2 {
+            font-size: 3rem;
+        }
     }
 }

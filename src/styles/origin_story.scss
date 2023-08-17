@@ -145,7 +145,7 @@
 }
 
 .unitas-site .our-story .origin-story {
-    background: #F9F9F9;
+    background: #FFF;
 
     .title h2 {
         color: #1A1A1A;
@@ -156,13 +156,13 @@
         font-family: Poppins;
     }
 
-    h6 {
-        font-weight: 600;
-    }
-
     .story {
-        .story-1 p:first-child {
+        &.story-1 p:first-child {
             color: #7E8192;
+        }
+
+        h6 {
+            font-weight: 600;
         }
 
         .img-container {
@@ -184,5 +184,15 @@
         font-weight: 400;
         line-height: normal;
         text-shadow: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .title h2 {
+            font-size: 3rem;
+        }
+
+        .quote h3 {
+            font-size: 2rem;
+        }
     }
 }

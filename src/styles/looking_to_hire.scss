@@ -103,56 +103,58 @@
     }
 }
 
-.unitas-site .home, .looking-to-hire {
-    .looking-to-hire {
-        background: linear-gradient(90deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-to-hire.jpeg') center right no-repeat, lightgray 518.333px -9px / 94.676% 102.02% no-repeat;
-        background-size: cover;
+.unitas-site {
+    .home, .looking-to-hire {
+        .looking-to-hire {
+            background: linear-gradient(90deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-to-hire.jpeg') center right no-repeat, lightgray 518.333px -9px / 94.676% 102.02% no-repeat;
+            background-size: cover;
 
-        .title a {
-            background: none;
-            color: #FFF;
-            font-family: Fraunces;
-        }
-
-        .text a {
-            color: #FFF;
-            font-weight: 600;
-        }
-
-        .btn:not(.btn-secondary) {
-            background: transparent;
-            border-color: #FFF;
-            color: #FFF;
-        }
-
-        .cv-container {
-            background: #1A1A1A;
-            border-radius: 1.5rem;
-
-            .text-container {
-                max-width: 28.5rem;
+            .title a {
+                background: none;
+                color: #FFF;
+                font-family: Fraunces;
             }
 
-            .link-container a {
-                color: #C57B36;
-            }
-        }
-
-        @include media-breakpoint-down(md) {
-            background: #3A84C9;
-
-            .content {
-                margin-top: 0;
+            .text a {
+                color: #FFF;
+                font-weight: 600;
             }
 
-            .btn-container {
-                gap: 1.5rem;
+            .btn:not(.btn-secondary) {
+                background: transparent;
+                border-color: #FFF;
+                color: #FFF;
             }
-        }
 
-        @include media-breakpoint-down(sm) {
-            .title h2 {
-                font-size: 3rem;
+            .cv-container {
+                background: #1A1A1A;
+                border-radius: 1.5rem;
+
+                .text-container {
+                    max-width: 28.5rem;
+                }
+
+                .link-container a {
+                    color: #C57B36;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                background: #3A84C9;
+
+                .content {
+                    margin-top: 0;
+                }
+
+                .btn-container {
+                    gap: 1.5rem;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title h2 {
+                    font-size: 3rem;
+                }
             }
         }
     }

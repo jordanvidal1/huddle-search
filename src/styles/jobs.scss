@@ -23,6 +23,15 @@
 
     .jobs-grid {
         margin-top: 4rem;
+
+        > div {
+            margin-bottom: 1.5rem;
+
+            > span {
+                color: #7E8192;
+                font-size: 1.125rem;
+            }
+        }
     }
 }
 
@@ -30,5 +39,11 @@
     .title h2 {
         color: #1A1A1A;
         font-weight: 900;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .title h2 {
+            font-size: 3rem;
+        }
     }
 }

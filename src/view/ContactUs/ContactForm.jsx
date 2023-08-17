@@ -52,7 +52,7 @@ const ContactForm = () => {
             <div className='action-container'>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <Grid container spacing={4}>
-                  <Grid item xs={6}>
+                  <Grid item xs={12} sm={6}>
                     <Input
                       id='first-name'
                       type='text'
@@ -65,7 +65,7 @@ const ContactForm = () => {
                       errors={errors}
                     />
                   </Grid>
-                  <Grid item xs={6}>
+                  <Grid item xs={12} sm={6}>
                     <Input
                       id='last-name'
                       type='text'
