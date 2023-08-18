@@ -74,23 +74,7 @@
         "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
       }
     },
-    "button": "Find out more",
-    "specialised": {
-      "title": "A specialised service powered by AI",
-      "text": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision.",
-      "1": {
-        "title": "Simultaneous talent pool targeting",
-        "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
-      },
-      "2": {
-        "title": "Extensive data analysis",
-        "text": "We accurately examine suitable candidates with unparalleled position specificity."
-      },
-      "3": {
-        "title": "Automated candidate sourcing",
-        "text": "We intelligently identify and effectively engage with highly-qualified individuals."
-      }
-    }
+    "button": "Find out more"
   },
   "embeddedTalent": {
     "desc": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
@@ -189,12 +173,12 @@
             "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
           },
           "2": {
-            "title": "Simultaneous talent pool targeting",
-            "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+            "title": "Extensive data analysis",
+            "text": "We accurately examine suitable candidates with unparalleled position specificity."
           },
           "3": {
-            "title": "Simultaneous talent pool targeting",
-            "text": "We run concurrent searches on internal and external sources e.g. pro networks and job boards."
+            "title": "Automated candidate sourcing",
+            "text": "We intelligently identify and effectively engage with highly-qualified individuals."
           }
         }
       },
