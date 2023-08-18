@@ -9,8 +9,8 @@ const FeaturedRole = props => {
   const {type, title, salary} = props;
 
   const classNames = cx('role-type', {
-    ['permanent']: type === 'Permanent',
-    ['contract']: type === 'Contract'
+    permanent: type === 'Permanent',
+    contract: type === 'Contract'
   });
 
   return (

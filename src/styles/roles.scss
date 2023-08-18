@@ -59,7 +59,7 @@
 }
 
 .related-roles .inner-container {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 .work-for-us {
@@ -76,7 +76,6 @@
 
 .unitas-site {
     .related-roles, .work-for-us {
-        background: url('../static/unitas/open-roles-pattern.svg') top left no-repeat, url('../static/unitas/open-roles-pattern-2.svg') bottom right no-repeat #F9F9F9;
 
         .box {
             background: #1A1A1A;
@@ -90,6 +89,8 @@
     }
 
     .work-for-us {
+        background: url('../static/unitas/open-roles-pattern.svg') top left no-repeat, url('../static/unitas/open-roles-pattern-2.svg') bottom right no-repeat #F9F9F9;
+
         .box {
             background: #56422F;
         }

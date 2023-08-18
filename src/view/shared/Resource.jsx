@@ -18,9 +18,9 @@ const Resource = props => {
   const tagsList = Object.keys(tags);
 
   const classNames = cx('resource-type', {
-    ['blog']: category === 'Blog',
-    ['insight']: category === 'Insight',
-    ['case-study']: category === 'Case Study',
+    blog: category === 'Blog',
+    insight: category === 'Insight',
+    'case-study': category === 'Case Study'
   });
 
   return (

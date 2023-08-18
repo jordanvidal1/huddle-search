@@ -1,5 +1,7 @@
 import blogReducer from '../blog/reducer';
 
-export default {
+const reducers = {
   blog: blogReducer
 };
+
+export default reducers;

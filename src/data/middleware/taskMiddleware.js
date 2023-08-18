@@ -3,6 +3,7 @@ import {AsyncData} from '../AsyncData';
 
 const isPromise = val => val && typeof val.then === 'function';
 
+/* eslint-disable-next-line import/no-anonymous-default-export */
 export default ({dispatch}) => next => action => {
   const {async, ...optional} = action.payload || {};
 
