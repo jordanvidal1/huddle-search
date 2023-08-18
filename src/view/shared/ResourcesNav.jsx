@@ -67,7 +67,9 @@ const ResourcesNav = () => {
         <div className='resources-nav-inner'>
           <div className='resources-nav-list-container'>
             <div className='resources-nav-title'>
-              <span>Resources</span>
+              <Link to='/resources'>
+                Resources
+              </Link>
             </div>
             <div className='divider' />
             {renderResourcesNavList()}

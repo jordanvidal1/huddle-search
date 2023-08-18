@@ -23,10 +23,10 @@ const Resources = props => {
       </div>
       {/* todo: slider */}
       <Grid container spacing={3}>
-        <Resource />
-        <Resource />
-        <Resource />
-        <Resource />
+      {/*  <Resource />*/}
+      {/*  <Resource />*/}
+      {/*  <Resource />*/}
+      {/*  <Resource />*/}
       </Grid>
     </div>
   );

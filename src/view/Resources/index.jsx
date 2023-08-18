@@ -1,23 +1,19 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Grid} from '@material-ui/core';
-import {fetchApi} from '../../services/api';
-import {SITE_URL} from '../../services/constants';
+import useBlog from '../../services/hooks/useBlog';
 import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
 
 const Resources = () => {
-  const [resources, setResources] = useState([]);
-
-  const getResources = async () => {
-    const resources = await fetchApi(
-      `https://public-api.wordpress.com/rest/v1.1/sites/${SITE_URL}/posts`
-    );
-
-    setResources(resources.posts);
-  }
+  const {
+    loadBlog,
+    // isBlogLoading,
+    blogPosts,
+    blogCount
+  } = useBlog();
 
   useEffect(() => {
-    getResources();
+    loadBlog();
   }, []);
 
   return (
@@ -35,10 +31,10 @@ const Resources = () => {
             {/* todo: sort by / filters */}
             <div className='resources-grid'>
               <div>
-                <span>Results ({resources?.length || 0})</span>
+                <span>Results ({blogCount})</span>
               </div>
               <Grid container spacing={3}>
-                {resources?.map((resource, i) => (
+                {blogPosts?.map((resource, i) => (
                   <Resource i={i} {...resource} />
                 ))}
               </Grid>
