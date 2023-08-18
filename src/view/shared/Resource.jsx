@@ -23,6 +23,8 @@ const Resource = props => {
     'case-study': category === 'Case Study'
   });
 
+  console.log('props', props);
+
   return (
     <Grid key={i} item xs={12} sm={6} md={3} className='resource-grid-item'>
       <div className='resource'>

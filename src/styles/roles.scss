@@ -1,18 +1,14 @@
-.related-roles, .work-for-us {
+.related-roles, .work-for-us, .resource-page {
     background: #FFF;
 
-    .box {
+    .roles-box {
         align-items: flex-start;
         background: #310A31;
         border-radius: 3rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 3rem;
-
-        &.roles-box {
-            padding: 3rem 4rem;
-        }
+        padding: 3rem 4rem;
     }
 
     .roles-header {
@@ -37,16 +33,12 @@
     }
 
     @include media-breakpoint-down(md) {
-        .box {
-            padding: 1.5rem 0.75rem;
+        .roles-box {
+            padding: 2rem 0.75rem;
 
             h3 {
                 font-size: 2.375rem;
                 margin-bottom: 1rem;
-            }
-
-            &.roles-box {
-                padding: 2rem 0.75rem;
             }
         }
 
@@ -63,7 +55,7 @@
 }
 
 .work-for-us {
-    .box {
+    .roles-box {
         background: #F6E27F;
     }
 
@@ -75,9 +67,8 @@
 }
 
 .unitas-site {
-    .related-roles, .work-for-us {
-
-        .box {
+    .related-roles, .work-for-us, .resource-page {
+        .roles-box {
             background: #1A1A1A;
             border-radius: 1.5rem;
         }
@@ -91,7 +82,7 @@
     .work-for-us {
         background: url('../static/unitas/open-roles-pattern.svg') top left no-repeat, url('../static/unitas/open-roles-pattern-2.svg') bottom right no-repeat #F9F9F9;
 
-        .box {
+        .roles-box {
             background: #56422F;
         }
 

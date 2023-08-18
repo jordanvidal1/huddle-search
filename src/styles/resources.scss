@@ -1,19 +1,15 @@
-.related-resources {
+.related-resources, .resource-page {
     background: #FFF;
     background-size: cover;
 
-    .box {
+    .resources-box {
         align-items: flex-start;
         background: #52050A;
         border-radius: 3rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 3rem;
-
-        &.resources-box {
-            padding: 3rem 4rem;
-        }
+        padding: 3rem 4rem;
     }
 
     .resources-header {
@@ -37,16 +33,12 @@
     }
 
     @include media-breakpoint-down(md) {
-        .box {
-            padding: 1.5rem 0.75rem;
+        .resources-box {
+            padding: 2rem 0.75rem;
 
             h3 {
                 font-size: 2.375rem;
                 margin-bottom: 1rem;
-            }
-
-            &.resources-box {
-                padding: 2rem 0.75rem;
             }
         }
 
@@ -59,8 +51,8 @@
 }
 
 .unitas-site {
-    .related-resources {
-        .box {
+    .related-resources, .resource-page {
+        .resources-box {
             background: #00400E;
             border-radius: 1.5rem;
         }

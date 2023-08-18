@@ -1,4 +1,4 @@
-.resources {
+#content > .resources {
     .title {
         margin-bottom: 2rem;
 
@@ -22,10 +22,16 @@
     }
 
     .resources-grid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         margin-top: 4rem;
 
         > div:first-child {
+            display: flex;
             margin-bottom: 1.5rem;
+            justify-content: flex-start;
+            width: 100%;
 
             > span {
                 color: #7E8192;
@@ -45,7 +51,7 @@
     }
 }
 
-.unitas-site .resources {
+.unitas-site #content > .resources {
     .title h2 {
         color: #00400E;
         font-weight: 900;
