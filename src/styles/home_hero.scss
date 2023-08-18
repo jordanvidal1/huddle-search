@@ -51,12 +51,14 @@
 
 .unitas-site .home .hero {
     background: #F9F9F9;
+    overflow: hidden;
     position: relative;
 
     > img {
+        height: 130%;
         position: absolute;
-        right: -23rem;
-        height: 100%;
+        top: -10em;
+        right: -25rem;
     }
 
     .content {
@@ -87,6 +89,14 @@
 
     .text p {
         color: #7E8192;
+    }
+
+    @include media-breakpoint-down(lg) {
+        > img {
+            height: 120%;
+            top: -7em;
+            right: -33rem;
+        }
     }
 
     @include media-breakpoint-down(md) {
