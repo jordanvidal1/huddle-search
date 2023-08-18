@@ -3,11 +3,12 @@ import {Grid} from '@material-ui/core';
 import useBlog from '../../services/hooks/useBlog';
 import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
+import Loader from '../shared/Loader';
 
 const Resources = () => {
   const {
     loadBlog,
-    // isBlogLoading,
+    isBlogLoading,
     blogPosts,
     blogCount
   } = useBlog();
@@ -33,11 +34,14 @@ const Resources = () => {
               <div>
                 <span>Results ({blogCount})</span>
               </div>
-              <Grid container spacing={3}>
-                {blogPosts.length > 0 && blogPosts.map((resource, i) => (
-                  <Resource i={i} {...resource} />
-                ))}
-              </Grid>
+              {isBlogLoading ? <Loader />
+                : (
+                  <Grid container spacing={3}>
+                    {blogPosts.length > 0 && blogPosts.map((resource, i) => (
+                      <Resource i={i} {...resource} />
+                    ))}
+                  </Grid>
+                )}
             </div>
           </div>
         </div>

@@ -113,6 +113,8 @@
     }
 
     .top-nav-left, .top-nav-right {
+      align-items: flex-start;
+
       .divider {
         display: none;
       }

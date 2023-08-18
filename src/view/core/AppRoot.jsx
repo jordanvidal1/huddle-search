@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import {createReduxStore} from '../../data/core/store';
+import Loader from '../shared/Loader';
 import '../../data/fn';
 
 export default (App, reducers, domContainer = 'root') => {
@@ -11,8 +12,8 @@ export default (App, reducers, domContainer = 'root') => {
 
   const ProvidedApp = () => (
     <Provider store={store}>
-      <React.Suspense fallback={<div>FALLBACK</div>}>
-        <App/>
+      <React.Suspense fallback={<div id='fallback'><Loader /></div>}>
+        <App />
       </React.Suspense>
     </Provider>
   );
