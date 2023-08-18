@@ -89,7 +89,7 @@ AsyncData.mapPattern = function (patternName, defaultVal, f) {
   });
 };
 
-module.exports = {
+export {
   AsyncData,
   AsyncDataAll,
   allSuccess,

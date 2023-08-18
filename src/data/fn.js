@@ -75,7 +75,7 @@ const equals = a => b => a === b;
 
 const getNumLength = number => number.toString().length;
 
-module.exports = {
+export {
   partial,
   partialSpread,
   prop,
