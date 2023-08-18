@@ -1,10 +1,10 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 
 import PhoneIcon from '../../static/huddle/phone-white.svg';
 import EmailIcon from '../../static/huddle/email-white.svg';
 import VisitIcon from '../../static/huddle/visit-white.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>

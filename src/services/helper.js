@@ -1,4 +1,4 @@
-import {NAMESPACE} from './constants'
+import {NAMESPACE} from '../data/constants';
 
 const renderNumber = (
   number, minimumFractionDigits = 0,

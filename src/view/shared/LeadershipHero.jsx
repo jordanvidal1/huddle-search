@@ -1,5 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
@@ -12,7 +13,6 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const leadershipComponent = t => (
   <div className='info-container'>

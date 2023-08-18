@@ -1,12 +1,12 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 
 import ProIcon1 from '../../static/huddle/pro-icon-1.svg';
 import ProIcon2 from '../../static/huddle/pro-icon-2.svg';
 import ProIcon3 from '../../static/huddle/pro-icon-3.svg';
 import ProIcon4 from '../../static/huddle/pro-icon-4.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const ProPoints = props => {
   const {type} = props;

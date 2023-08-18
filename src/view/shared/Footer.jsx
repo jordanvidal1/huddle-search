@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
@@ -25,7 +26,6 @@ import UnitasTwitter from '../../static/unitas/twitter.svg';
 import UnitasFacebook from '../../static/unitas/facebook.svg';
 import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const Footer = () => {
   const {t} = useTranslation(['huddle', 'unitas']);

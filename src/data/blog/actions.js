@@ -1,6 +1,6 @@
 import {createAction} from 'redux-actions';
 import {fetchApi} from '../../services/api';
-import {SITE_URL} from '../../services/constants';
+import {SITE_URL} from '../constants';
 
 export const LOAD_BLOG = 'BLOG::LOAD_BLOG';
 

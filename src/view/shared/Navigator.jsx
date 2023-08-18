@@ -1,8 +1,8 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
-
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
@@ -18,7 +18,6 @@ import UnitasMenubar from '../../static/unitas/menubar.svg';
 import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
 import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
 import UnitasCloseButton from '../../static/unitas/close-button.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const routes = [
   {

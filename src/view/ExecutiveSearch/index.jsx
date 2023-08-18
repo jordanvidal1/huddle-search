@@ -1,5 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import Hero from '../shared/SpecialismHero';
@@ -10,7 +11,6 @@ import WorkForUs from '../shared/WorkForUs';
 
 import Logo from '../../static/huddle/text-logo-gold.svg';
 import UnitasLogo from '../../static/unitas/text-logo.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas']);

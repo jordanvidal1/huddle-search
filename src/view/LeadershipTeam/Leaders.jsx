@@ -1,5 +1,5 @@
 import React from 'react';
-import {leaders} from '../../services/constants';
+import {leaders} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';

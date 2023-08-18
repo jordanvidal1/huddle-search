@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+import {NAMESPACE} from '../../data/constants';
 import SearchBar from '../shared/SearchBar';
 import ArrowIcon from '../../static/huddle/arrow.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const Specialisms = props => {
   const {type, specialisms} = props;

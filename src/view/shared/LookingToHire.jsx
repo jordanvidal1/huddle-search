@@ -2,12 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const LookingToHire = ({
   children,

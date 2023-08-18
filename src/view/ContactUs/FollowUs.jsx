@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import Input from '../shared/Input';
 
@@ -12,7 +13,6 @@ import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
 import UnitasTwitter from '../../static/unitas/twitter-white.svg';
 import UnitasFacebook from '../../static/unitas/facebook-white.svg';
 import UnitasInstagram from '../../static/unitas/instagram-white.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const FollowUs = () => {
   const {t} = useTranslation(['huddle', 'unitas']);

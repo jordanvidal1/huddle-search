@@ -1,12 +1,11 @@
 import React from 'react';
 import {HashLink} from 'react-router-hash-link';
-
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 
 import VacancyIcon from '../../static/huddle/vacancy.svg';
 import HelpIcon from '../../static/huddle/help.svg';
 import CVIcon from '../../static/huddle/cv.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>

@@ -2,14 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
-
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 import UnitasExecutiveArrowIcon from '../../static/unitas/arrow-gold.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const WorkForUs = ({
   home,

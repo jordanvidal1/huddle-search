@@ -2,13 +2,13 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 
 import InfoBox from './InfoBox';
 import InfoIcon1 from '../../static/huddle/info-icon-1.svg';
 import InfoIcon2 from '../../static/huddle/info-icon-2.svg';
 import InfoIcon3 from '../../static/huddle/info-icon-3.svg';
 import InfoIcon4 from '../../static/huddle/info-icon-4.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const EmbeddedTalent = () => {
   const {t} = useTranslation(['huddle', 'unitas']);

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {leaders, NAMESPACE} from '../../services/constants'
+import {leaders, NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';

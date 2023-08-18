@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import InfoBox from './InfoBox';
 
@@ -16,7 +17,6 @@ import UnitasInfoIcon1 from '../../static/unitas/executive-icon-1.svg';
 import UnitasInfoIcon2 from '../../static/unitas/executive-icon-2.svg';
 import UnitasInfoIcon3 from '../../static/unitas/executive-icon-3.svg';
 import UnitasInfoIcon4 from '../../static/unitas/executive-icon-4.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas']);

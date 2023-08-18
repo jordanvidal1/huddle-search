@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-white.svg';
@@ -8,7 +9,6 @@ import ExecutivePhoneIcon from '../../static/huddle/phone-grey.svg';
 import ExecutiveEmailIcon from '../../static/huddle/contact-email-grey.svg';
 import UnitasExecutivePhoneIcon from '../../static/unitas/phone-number-white.svg';
 import UnitasExecutiveEmailIcon from '../../static/unitas/email-white.svg';
-import {NAMESPACE} from '../../services/constants'
 
 const ContactContainer = ({
   t,

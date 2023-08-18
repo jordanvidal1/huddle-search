@@ -3,7 +3,7 @@ import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {fetchApi} from '../../services/api';
-import {FORM_ID, SITE_URL} from '../../services/constants';
+import {FORM_ID, SITE_URL} from '../../data/constants';
 import Input from '../shared/Input';
 
 const Buffer = require('buffer/').Buffer;

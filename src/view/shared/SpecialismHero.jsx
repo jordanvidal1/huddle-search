@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-
+import {NAMESPACE} from '../../data/constants';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
-import {NAMESPACE} from '../../services/constants'
 
 const SpecialismHero = props => {
   const {
