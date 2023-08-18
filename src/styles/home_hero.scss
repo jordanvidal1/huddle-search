@@ -50,8 +50,14 @@
 }
 
 .unitas-site .home .hero {
-    background: url('../static/unitas/hero-image.png') right no-repeat #F9F9F9;
-    background-size: contain;
+    background: #F9F9F9;
+    position: relative;
+
+    > img {
+        position: absolute;
+        right: -23rem;
+        height: 100%;
+    }
 
     .content {
         margin-top: 0;
@@ -67,6 +73,8 @@
             font-family: Fraunces;
             font-weight: 900;
             line-height: 6rem;
+            position: relative;
+            z-index: 1;
         }
 
         a {
@@ -82,7 +90,9 @@
     }
 
     @include media-breakpoint-down(md) {
-        background: #F9F9F9;
+        > img {
+            display: none;
+        }
 
         .content {
             margin-top: 4rem;

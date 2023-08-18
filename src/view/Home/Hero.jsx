@@ -2,12 +2,17 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
+import {isHuddle} from '../../services/helper';
+import HeroImg from '../../static/unitas/hero-image.png';
 
 const Hero = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='hero'>
+      {!isHuddle && (
+          <img alt='hero-img' src={HeroImg} />
+      )}
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
