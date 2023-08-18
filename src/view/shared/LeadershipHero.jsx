@@ -109,9 +109,9 @@ const ourProcessComponent = t => (
           <h5>
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:title`)}
           </h5>
-          <span>
+          <p>
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:text`)}
-          </span>
+          </p>
         </div>
         <img alt='equals-icon' src={EqualsIcon} />
         <div>

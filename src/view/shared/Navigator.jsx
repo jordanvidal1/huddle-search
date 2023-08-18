@@ -53,15 +53,15 @@ const routes = [
         name: 'Our process',
         path: '/our-process'
       },
-      {
-        name: 'Corporate social responsibility'
-      },
-      {
-        name: 'Diversity, equality & inclusion'
-      },
-      {
-        name: 'The Prime Group'
-      }
+      // {
+      //   name: 'Corporate social responsibility'
+      // },
+      // {
+      //   name: 'Diversity, equality & inclusion'
+      // },
+      // {
+      //   name: 'The Prime Group'
+      // }
     ]
   }
 ];
@@ -72,9 +72,13 @@ const Navigator = ({
   const [expanded, setExpanded] = useState(false);
   const [pathname, setPathname] = useState('');
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
+  const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 
   const toggleSideBar = () => setSideMenuDisplayed(!sideMenuDisplayed);
   const hideSidebar = () => setSideMenuDisplayed(false);
+
+  const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
+  const hideDropdown = () => setDropdownDisplayed(false);
 
   const location = useLocation();
 
@@ -88,6 +92,7 @@ const Navigator = ({
       window.scrollTo(0, 0);
     }
     closeExpandClick();
+    hideDropdown();
     setPathname(`/${location.pathname.split('/')[1]}`);
   }, [location, pathname]);
 
@@ -198,7 +203,12 @@ const Navigator = ({
   return (
     <div className={`${NAMESPACE}-site`}>
       {renderSidebar()}
-      <TopNav isHuddle={isHuddle} />
+      <TopNav
+        dropdownDisplayed={dropdownDisplayed}
+        toggleDropdown={toggleDropdown}
+        hideDropdown={hideDropdown}
+        isHuddle={isHuddle}
+      />
       {renderHeader()}
       {pathname.includes('/resources') && <ResourcesNav />}
       <div id='content'>

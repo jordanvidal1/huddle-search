@@ -34,40 +34,46 @@ const rightRoutes = [
   }
 ];
 
-const TopNav = ({isHuddle}) => {
-  const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
-
-  const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
-  const hideDropdown = () => setDropdownDisplayed(false);
-
+const TopNav = ({
+  dropdownDisplayed,
+  isHuddle,
+  toggleDropdown,
+  hideDropdown
+}) => {
   const renderTopNavList = () => (
     <>
       <div className='top-nav-left'>
         {leftRoutes.map((route, i) => (
-          <div key={i}>
-            <span>
-              <Link
-                to={route.path}
-                onClick={hideDropdown}
-              >
-                {route.name}
-              </Link>
-            </span>
-          </div>
+          <>
+            <div key={i}>
+              <span>
+                <Link
+                  to={route.path}
+                  onClick={hideDropdown}
+                >
+                  {route.name}
+                </Link>
+              </span>
+            </div>
+            {i + 1 < leftRoutes.length && <div className='divider' />}
+          </>
         ))}
       </div>
       <div className='top-nav-right'>
         {rightRoutes.map((route, i) => (
-          <div key={i}>
-            <span>
-              <Link
-                to={route.path}
-                onClick={hideDropdown}
-              >
-                {route.name}
-              </Link>
-            </span>
-          </div>
+          <>
+            <div key={i}>
+              <span>
+                <Link
+                  to={route.path}
+                  onClick={hideDropdown}
+                >
+                  {route.name}
+                </Link>
+              </span>
+            </div>
+            {i + 1 < rightRoutes.length && <div className='divider' />}
+          </>
         ))}
       </div>
     </>
