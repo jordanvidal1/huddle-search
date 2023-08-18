@@ -13,6 +13,7 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
+import WhiteArrow from '../../static/unitas/arrow-white.svg';
 
 const leadershipComponent = t => (
   <div className='info-container'>
@@ -135,12 +136,13 @@ const LeadershipHero = props => {
   const siteName = isHuddle ? 'Huddle' : 'Unitas';
 
   const components = {
-    leadershipTeam: leadershipComponent(t),
+    leadershipTeam: <div />,
     ourStory: ourStoryComponent(t),
     ourProcess: ourProcessComponent(t),
     workForUs: Roles({
       children: `Open roles at ${siteName}`,
-      name: siteName
+      name: siteName,
+      icon: WhiteArrow
     }),
     contactUs: ContactContainer(t),
     executiveSearch: ourProcessComponent(t)

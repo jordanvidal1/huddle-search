@@ -8,7 +8,7 @@ import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 
 const Roles = props => {
-  const {children, name} = props;
+  const {children, name, icon} = props;
 
   return (
     <div className='box roles-box'>
@@ -20,7 +20,7 @@ const Roles = props => {
           {`Browse all ${name ? `${name} ` : ''}jobs`}
           <img
             alt='arrow'
-            src={isHuddle ? ArrowIcon : UnitasArrowIcon}
+            src={icon || (isHuddle ? ArrowIcon : UnitasArrowIcon)}
           />
         </Link>
       </div>
