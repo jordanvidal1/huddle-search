@@ -109,7 +109,7 @@
 .unitas-site {
     .home, .looking-to-hire {
         .embedded-talent {
-            background: linear-gradient(270deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/embedded-talent.jpeg') right, lightgray -1053.154px -199px / 160.501% 114.829% no-repeat;
+            background: url('../static/unitas/embedded-talent.jpeg') right no-repeat;
             background-size: cover;
 
             .title a {

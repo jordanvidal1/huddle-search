@@ -106,8 +106,9 @@
 .unitas-site {
     .home, .looking-to-hire {
         .looking-to-hire {
-            background: linear-gradient(90deg, #3A84C9 0%, rgba(58, 132, 201, 0.00) 100%), url('../static/unitas/home-looking-to-hire.jpeg') center right no-repeat, lightgray 518.333px -9px / 94.676% 102.02% no-repeat;
+            background: url('../static/unitas/home-looking-to-hire.jpeg') left no-repeat;
             background-size: cover;
+            margin-bottom: -1px;
 
             .title a {
                 background: none;
@@ -141,6 +142,7 @@
 
             @include media-breakpoint-down(md) {
                 background: #3A84C9;
+                margin-bottom: 0;
 
                 .content {
                     margin-top: 0;

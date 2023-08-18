@@ -452,6 +452,8 @@
         }
 
         @include media-breakpoint-down(md) {
+            background: #710058;
+
             .content {
                 margin: 0;
             }
