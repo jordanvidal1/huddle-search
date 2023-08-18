@@ -51,7 +51,7 @@
 
 .unitas-site .home .hero {
     background: url('../static/unitas/hero-image.png') right no-repeat #F9F9F9;
-    background-size: 40%;
+    background-size: contain;
 
     .content {
         margin-top: 0;
