@@ -11,9 +11,9 @@ export default blogIndex => {
     .mapPattern('Loading', false, constant(true));
 
   const blogPosts = loadBlogResult
-    .mapPattern('Success', [], ({data}) => data.toJS().posts);
+    .mapPattern('Success', [], ({data}) => data.toJS().posts || []);
   const blogCount = loadBlogResult
-    .mapPattern('Success', 0, ({data}) => data.toJS().found);
+    .mapPattern('Success', 0, ({data}) => data.toJS().found || 0);
 
   return {
     // reducers
