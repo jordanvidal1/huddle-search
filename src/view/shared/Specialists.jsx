@@ -46,12 +46,20 @@ const Specialists = props => {
             </div>
             <div className='specialists-container'>
               {(specialists || leaders).map((specialist, i) => {
-                const {img, name, role, description, number, email, linkedin} = specialist;
+                const {
+                  img,
+                  name,
+                  role,
+                  description,
+                  number,
+                  email,
+                  linkedin
+                } = specialist;
 
                 return (
                   <div key={i} className='specialist'>
                     <div className='specialist-img-container'>
-                      <img alt='specialist-img' />
+                      <img alt='specialist-img' src={img} />
                     </div>
                     <div className='specialist-details'>
                       <h5>

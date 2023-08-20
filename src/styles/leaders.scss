@@ -2,7 +2,7 @@
     background: #8762CB;
 
     .inner-container {
-        padding: 3rem 0;
+        padding: 3rem 1.5rem;
     }
 
     .leader {
@@ -101,13 +101,17 @@
 
     @include media-breakpoint-down(md) {
         .inner-container {
-            padding: 2rem 0;
+            padding: 2rem 0.75rem;
         }
 
         .leader {
             flex-direction: column-reverse;
             gap: 2rem;
             padding: 2rem 0;
+
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+            }
 
             .img-container > div {
                 padding: 6px;

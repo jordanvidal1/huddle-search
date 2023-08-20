@@ -16,6 +16,7 @@ const Leaders = () => (
         <div className='content'>
           {leaders.map((leader, i) => {
             const {
+              img,
               name,
               role,
               description,
@@ -66,7 +67,7 @@ const Leaders = () => (
                 </div>
                 <div className='img-container'>
                   <div>
-                    <img alt='specialist-img' />
+                    <img src={img} alt='specialist-img' />
                   </div>
                 </div>
               </div>
