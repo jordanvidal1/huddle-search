@@ -8,7 +8,7 @@ import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 
 const Resources = props => {
-  const {name} = props;
+  const {name, resources} = props;
 
   return (
     <div className='box resources-box'>
@@ -23,10 +23,9 @@ const Resources = props => {
       </div>
       {/* todo: slider */}
       <Grid container spacing={3}>
-      {/*  <Resource />*/}
-      {/*  <Resource />*/}
-      {/*  <Resource />*/}
-      {/*  <Resource />*/}
+        {resources?.length > 0 && resources.slice(0, 4).map((resource) => (
+          <Resource {...resource} />
+        ))}
       </Grid>
     </div>
   );

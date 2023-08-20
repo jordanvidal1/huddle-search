@@ -44,9 +44,9 @@ const Resource = props => {
               {title}
             </h6>
           </div>
-          <div className='resource-attributes'>
+          <div className='resource-tags'>
             {tagsList.map((tag, i) => (
-              <div key={i} className='resource-attribute'>
+              <div key={i} className='resource-tag'>
                 <span>{capitalize(tag)}</span>
               </div>
             ))}
