@@ -39,7 +39,7 @@ const ProPoints = props => {
               </div>
             </div>
             <div className='pro-point-container'>
-              <Grid container spacing={4} justifyContent='space-around' align='center'>
+              <Grid container spacing={4} justifyContent='center' align='center'>
                 <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
                   <div className='pro-point'>
                     <img alt='pro-point-icon-1' src={ProIcon1} />

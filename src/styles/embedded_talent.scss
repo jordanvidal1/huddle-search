@@ -1,7 +1,7 @@
 .home, .looking-to-hire {
     .embedded-talent {
         background: url('../static/huddle/embedded-talent.png') left no-repeat #8762CB;
-        background-size: 45%;
+        background-size: contain;
 
         .content {
             align-self: flex-end;
@@ -58,7 +58,7 @@
 
             h5 {
                 color: #FFF;
-                font-weight: 700;
+                font-weight: 800;
                 margin: 1.5rem 0 1rem;
             }
 

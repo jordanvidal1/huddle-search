@@ -16,8 +16,3 @@ const InfoBox = ({ icon, title, text }) => (
 );
 
 export default InfoBox;
-
-InfoBox.defaultProps = {
-  title: 'Tortor est ipsum quis',
-  text: 'Lorem ipsum dolor sit amet conse tetur. Morbi curs usamet habit asse nisl est rhoncus. Lorem ipsum dolor sit amet.'
-};

@@ -8,7 +8,7 @@
 
     .content {
         align-self: stretch;
-        gap: 2rem;
+        gap: 6rem;
 
         .title {
             align-items: center;
@@ -239,6 +239,7 @@
         }
 
         .content {
+            gap: 4rem;
             max-width: unset;
 
             .title {
