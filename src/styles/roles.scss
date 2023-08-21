@@ -35,8 +35,10 @@
     .roles-container {
         flex-wrap: nowrap;
         overflow: scroll;
+        margin: 0;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
+        width: 100%;
 
         &::-webkit-scrollbar {
             display: none; /* for Chrome, Safari, and Opera */
@@ -45,6 +47,7 @@
 
     @include media-breakpoint-down(md) {
         .roles-box {
+            border-radius: 2rem;
             padding: 2rem 0.75rem;
 
             h3 {

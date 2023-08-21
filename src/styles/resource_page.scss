@@ -25,7 +25,7 @@
 
         > a {
             align-items: center;
-            color: #310A31;
+            color: #52050A;
             display: flex;
             font-size: 1.25rem;
             font-weight: 800;
@@ -91,8 +91,6 @@
         }
 
         .text {
-            font-size: 1.125rem;
-
             p {
                 color: #1A1A1A;
                 font-size: 1rem;
@@ -254,9 +252,30 @@
         }
     }
 
-    @include media-breakpoint-down(sm) {
-        .resources-grid > div:last-child {
-            justify-content: center;
+    @include media-breakpoint-down(md) {
+        .title {
+            margin-bottom: 2rem;
+        }
+
+        .resource-components {
+            flex-direction: column;
+        }
+
+        .resource-content {
+            .featured-img {
+                margin: 3rem 0;
+            }
+
+            .resource-details {
+                flex-direction: column;
+                gap: 1rem;
+
+                .resource-details-inner {
+                    flex: unset;
+                    gap: 2rem;
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -265,11 +284,5 @@
     .title h2 {
         color: #00400E;
         font-weight: 900;
-    }
-
-    @include media-breakpoint-down(sm) {
-        .title h2 {
-            font-size: 3rem;
-        }
     }
 }
