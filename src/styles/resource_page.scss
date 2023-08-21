@@ -259,11 +259,17 @@
 
         .resource-components {
             flex-direction: column;
+            gap: 3rem;
+            padding-bottom: 2.5rem;
         }
 
         .resource-content {
             .featured-img {
                 margin: 3rem 0;
+
+                .img-container {
+                    height: 11.5rem;
+                }
             }
 
             .resource-details {
@@ -275,6 +281,18 @@
                     gap: 2rem;
                     width: 100%;
                 }
+            }
+        }
+
+        .resource-author {
+            flex-direction: column;
+
+            > img {
+                margin: 0 auto;
+            }
+
+            .author-contact span {
+                margin-left: 0.75rem;
             }
         }
     }
