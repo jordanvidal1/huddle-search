@@ -1,9 +1,10 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {fetchApi} from '../../services/api';
-import {FORM_ID, SITE_URL} from '../../data/constants';
+import {FORM_ID, NAMESPACE, SITE_URL} from '../../data/constants'
 import Input from '../shared/Input';
 
 const Buffer = require('buffer/').Buffer;
@@ -14,6 +15,8 @@ const ContactForm = () => {
     handleSubmit,
     formState: {errors}
   } = useForm();
+
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   const onSubmit = async data => {
     const formData = new FormData();
@@ -55,10 +58,10 @@ const ContactForm = () => {
           <div className='content'>
             <div className='text-container'>
               <h2>
-                Take a moment to talk to the team
+                {t(`${NAMESPACE}:contactUs:form:title`)}
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Morbi curs usamet habit asse nisl est rhoncus.
+                {t(`${NAMESPACE}:contactUs:form:text`)}
               </p>
             </div>
             <div className='action-container'>
@@ -157,7 +160,7 @@ const ContactForm = () => {
                     className='btn btn-primary'
                     type='submit'
                   >
-                    Send message
+                    {t(`${NAMESPACE}:contactUs:form:button`)}
                   </button>
                 </div>
                 {/* todo: success message */}
