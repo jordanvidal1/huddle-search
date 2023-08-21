@@ -9,6 +9,8 @@ import useBlog from '../../services/hooks/useBlog';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
 import Roles from '../shared/Roles';
+import Share from '../shared/Share';
+import Subscribe from '../shared/Subscribe';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
@@ -120,18 +122,8 @@ const Resource = () => {
           </div>
         </div>
       </div>
-      <div className='resource-share'>
-        <div className='share-text'>
-          <h5>{t(`${NAMESPACE}:jobResource:share:resource:title`)}</h5>
-          <span>{t(`${NAMESPACE}:jobResource:share:resource:text`)}</span>
-        </div>
-      </div>
-      <div className='resource-share'>
-        <div className='share-text'>
-          <h5>{t(`${NAMESPACE}:jobResource:email:title`)}</h5>
-          <span>{t(`${NAMESPACE}:jobResource:email:text`)}</span>
-        </div>
-      </div>
+      <Share t={t} />
+      <Subscribe t={t} />
     </div>
   );
 
