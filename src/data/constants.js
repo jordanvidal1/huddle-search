@@ -28,7 +28,7 @@ export const leaders = [
     number: '+44 7893 944113',
     email: leaderEmails[NAMESPACE].craig,
     linkedin: 'https://www.linkedin.com/in/craigoliver-spectrum-search/',
-    login: 'cw'
+    login: 'co'
   },
   {
     img: ScottImg,
