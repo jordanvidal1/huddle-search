@@ -1,6 +1,10 @@
 #content > .resource-page {
     background: #FFF;
 
+    .loader img {
+        margin-bottom: 4rem;
+    }
+
     .title {
         margin-bottom: 3rem;
 
@@ -18,6 +22,20 @@
 
     .resource-content {
         flex-grow: 1;
+
+        > a {
+            align-items: center;
+            color: #310A31;
+            display: flex;
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+
+            img {
+                margin-right: 1rem;
+                transform: rotate(180deg);
+            }
+        }
 
         .resource-details {
             align-items: center;
@@ -220,6 +238,17 @@
 
                 .error-msg {
                     top: -1.375rem;
+                }
+            }
+
+            .socials {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                img {
+                    width: 1.5rem;
                 }
             }
         }

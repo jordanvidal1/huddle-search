@@ -6,13 +6,13 @@ import {isHuddle} from '../../services/helper';
 import Input from '../shared/Input';
 
 import LinkedIn from '../../static/huddle/linkedin-purple.svg';
-import Twitter from '../../static/huddle/twitter-purple.svg';
-import Facebook from '../../static/huddle/facebook-purple.svg';
-import Instagram from '../../static/huddle/instagram-purple.svg';
+// import Twitter from '../../static/huddle/twitter-purple.svg';
+// import Facebook from '../../static/huddle/facebook-purple.svg';
+// import Instagram from '../../static/huddle/instagram-purple.svg';
 import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
-import UnitasTwitter from '../../static/unitas/twitter-white.svg';
-import UnitasFacebook from '../../static/unitas/facebook-white.svg';
-import UnitasInstagram from '../../static/unitas/instagram-white.svg';
+// import UnitasTwitter from '../../static/unitas/twitter-white.svg';
+// import UnitasFacebook from '../../static/unitas/facebook-white.svg';
+// import UnitasInstagram from '../../static/unitas/instagram-white.svg';
 
 const FollowUs = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -73,27 +73,27 @@ const FollowUs = () => {
                           src={isHuddle ? LinkedIn : UnitasLinkedIn}
                         />
                       </a>
-                      <a href='#' rel='noreferrer' target='_blank'>
-                        <img
-                          alt='twitter'
-                          src={isHuddle ? Twitter : UnitasTwitter}
-                        />
-                      </a>
+                      {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                      {/*  <img*/}
+                      {/*    alt='twitter'*/}
+                      {/*    src={isHuddle ? Twitter : UnitasTwitter}*/}
+                      {/*  />*/}
+                      {/*</a>*/}
                     </div>
-                    <div>
-                      <a href='#' rel='noreferrer' target='_blank'>
-                        <img
-                          alt='facebook'
-                          src={isHuddle ? Facebook : UnitasFacebook}
-                        />
-                      </a>
-                      <a href='#' rel='noreferrer' target='_blank'>
-                        <img
-                          alt='instagram'
-                          src={isHuddle ? Instagram : UnitasInstagram}
-                        />
-                      </a>
-                    </div>
+                    {/*<div>*/}
+                    {/*  <a href='#' rel='noreferrer' target='_blank'>*/}
+                    {/*    <img*/}
+                    {/*      alt='facebook'*/}
+                    {/*      src={isHuddle ? Facebook : UnitasFacebook}*/}
+                    {/*    />*/}
+                    {/*  </a>*/}
+                    {/*  <a href='#' rel='noreferrer' target='_blank'>*/}
+                    {/*    <img*/}
+                    {/*      alt='instagram'*/}
+                    {/*      src={isHuddle ? Instagram : UnitasInstagram}*/}
+                    {/*    />*/}
+                    {/*  </a>*/}
+                    {/*</div>*/}
                   </div>
                 </div>
               </div>

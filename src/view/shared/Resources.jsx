@@ -23,8 +23,8 @@ const Resources = props => {
       </div>
       {/* todo: slider */}
       <Grid container spacing={3} className='resources-container'>
-        {resources?.length > 0 && resources.slice(0, 4).map((resource) => (
-          <Resource {...resource} />
+        {resources?.length > 0 && resources.slice(0, 12).map((resource, i) => (
+          <Resource i={i} {...resource} />
         ))}
       </Grid>
     </div>

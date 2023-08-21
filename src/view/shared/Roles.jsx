@@ -25,8 +25,8 @@ const Roles = props => {
         </Link>
       </div>
       <Grid container spacing={3} className='roles-container'>
-        {/*{roles?.length > 0 && roles.slice(0, 4).map((role) => (*/}
-        {/*  <Role {...role} />*/}
+        {/*{roles?.length > 0 && roles.slice(0, 12).map((role, i) => (*/}
+        {/*  <Role i={i} {...role} />*/}
         {/*))}*/}
         <Role />
         <Role />

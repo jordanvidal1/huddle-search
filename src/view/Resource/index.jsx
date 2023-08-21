@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom'
 import {useTranslation} from 'react-i18next';
 import cx from 'classnames';
 import moment from 'moment';
 import {capitalize, Grid} from '@material-ui/core';
-import {leaders, NAMESPACE} from '../../data/constants';
+import {leaders} from '../../data/constants';
 import useBlog from '../../services/hooks/useBlog';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
@@ -12,6 +12,7 @@ import Roles from '../shared/Roles';
 import Share from '../shared/Share';
 import Subscribe from '../shared/Subscribe';
 
+import ArrowIcon from '../../static/huddle/arrow.svg';
 import PhoneIcon from '../../static/huddle/phone-number.svg';
 import EmailIcon from '../../static/huddle/email.svg';
 import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
@@ -52,6 +53,10 @@ const Resource = () => {
 
   const renderBlogComponent = () => (
     <div className='resource-content'>
+      <Link to='/resources'>
+        <img alt='back-arrow' src={ArrowIcon} />
+        Back to blog
+      </Link>
       <div className='title'>
         <h2>
           {blog?.title}

@@ -12,9 +12,9 @@ import Phone from '../../static/huddle/phone-number.svg';
 import Email from '../../static/huddle/email.svg';
 import Location from '../../static/huddle/location.svg';
 import LinkedIn from '../../static/huddle/linkedin.svg';
-import Twitter from '../../static/huddle/twitter.svg';
-import Facebook from '../../static/huddle/facebook.svg';
-import Instagram from '../../static/huddle/instagram.svg';
+// import Twitter from '../../static/huddle/twitter.svg';
+// import Facebook from '../../static/huddle/facebook.svg';
+// import Instagram from '../../static/huddle/instagram.svg';
 import ThePrimeGroup from '../../static/huddle/the-prime-group.svg';
 
 import UnitasLogo from '../../static/unitas/full-logo.svg';
@@ -22,9 +22,9 @@ import UnitasPhone from '../../static/unitas/phone-number.svg';
 import UnitasEmail from '../../static/unitas/email.svg';
 import UnitasLocation from '../../static/unitas/location.svg';
 import UnitasLinkedIn from '../../static/unitas/linkedin.svg';
-import UnitasTwitter from '../../static/unitas/twitter.svg';
-import UnitasFacebook from '../../static/unitas/facebook.svg';
-import UnitasInstagram from '../../static/unitas/instagram.svg';
+// import UnitasTwitter from '../../static/unitas/twitter.svg';
+// import UnitasFacebook from '../../static/unitas/facebook.svg';
+// import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
 
 const Footer = () => {
@@ -127,24 +127,24 @@ const Footer = () => {
                             src={isHuddle ? LinkedIn : UnitasLinkedIn}
                           />
                         </a>
-                        <a href='#' rel='noreferrer' target='_blank'>
-                          <img
-                            alt='twitter'
-                            src={isHuddle ? Twitter : UnitasTwitter}
-                          />
-                        </a>
-                        <a href='#' rel='noreferrer' target='_blank'>
-                          <img
-                            alt='facebook'
-                            src={isHuddle ? Facebook : UnitasFacebook}
-                          />
-                        </a>
-                        <a href='#' rel='noreferrer' target='_blank'>
-                          <img
-                            alt='instagram'
-                            src={isHuddle ? Instagram : UnitasInstagram}
-                          />
-                        </a>
+                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        {/*  <img*/}
+                        {/*    alt='twitter'*/}
+                        {/*    src={isHuddle ? Twitter : UnitasTwitter}*/}
+                        {/*  />*/}
+                        {/*</a>*/}
+                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        {/*  <img*/}
+                        {/*    alt='facebook'*/}
+                        {/*    src={isHuddle ? Facebook : UnitasFacebook}*/}
+                        {/*  />*/}
+                        {/*</a>*/}
+                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        {/*  <img*/}
+                        {/*    alt='instagram'*/}
+                        {/*    src={isHuddle ? Instagram : UnitasInstagram}*/}
+                        {/*  />*/}
+                        {/*</a>*/}
                       </div>
                     </div>
                     <div className='footer-divider' />
