@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useLocation} from 'react-router-dom'
+import {useLocation} from 'react-router-dom';
 import {capitalize, Grid} from '@material-ui/core';
 import moment from 'moment';
+import {leaders} from '../../data/constants';
 import useBlog from '../../services/hooks/useBlog';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
@@ -40,8 +41,11 @@ const Resource = () => {
   const tagsList = Object.keys(blog?.tags || {});
   const relatedResources = blogPosts.filter(i => i.slug !== blogSlug);
 
+  const author = leaders.find(
+    i => i.login === blog.author?.login);
+
   const renderBlogComponent = () => (
-    <Grid item xs={8} className='resource-content'>
+    <div className='resource-content'>
       <div className='title'>
         <h2>
           {blog?.title}
@@ -50,7 +54,7 @@ const Resource = () => {
       <div className='resource-details'>
         <div className='resource-details-inner'>
           <span>Author</span>
-          <span>{`${blog.author?.first_name} ${blog.author?.last_name}`}</span>
+          <span>{author?.name}</span>
         </div>
         <div className='resource-details-inner'>
           <span>Posted</span>
@@ -65,7 +69,7 @@ const Resource = () => {
       </div>
       <div
         className='text'
-        dangerouslySetInnerHTML={{ __html: blog.excerpt}}
+        dangerouslySetInnerHTML={{ __html: blog.content}}
       />
       <div className='resource-tags'>
         {tagsList.map((tag, i) => (
@@ -74,25 +78,25 @@ const Resource = () => {
           </div>
         ))}
       </div>
-    </Grid>
+    </div>
   );
 
   const renderShareComponent = () => (
-    <Grid item xs={4} className='resource-info'>
+    <div className='resource-info'>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <div className='resource-author'>
-            <img alt='author-img' />
+            <img alt='author-img' src={author?.img} />
             <div className='author-details'>
-              <h6>Author name</h6>
-              <span>Role</span>
+              <h6>{author?.name}</h6>
+              <span>{author?.role}</span>
               <div className='author-contact'>
                 <div>
                   <img
                     alt='phone-number-icon'
                     src={PhoneIcon}
                   />
-                  <span>number</span>
+                  <span>{author?.number}</span>
                 </div>
                 <div>
                   <a href={`mailto:email`}>
@@ -100,11 +104,11 @@ const Resource = () => {
                       alt='email-icon'
                       src={EmailIcon}
                     />
-                    <span>email</span>
+                    <span>{author?.email}</span>
                   </a>
                 </div>
                 <div>
-                  <a /* href={linkedin} */ rel='noreferrer' target='_blank'>
+                  <a href={author?.linkedin} rel='noreferrer' target='_blank'>
                     <img
                       alt='linkedin-icon'
                       src={LinkedInIcon}
@@ -133,7 +137,7 @@ const Resource = () => {
           </div>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 
   return (
@@ -146,10 +150,10 @@ const Resource = () => {
                 {!blog?.title
                   ? <Loader />
                   : (
-                    <Grid container spacing={3}>
+                    <div className='resource-components'>
                       {renderBlogComponent()}
                       {renderShareComponent()}
-                    </Grid>
+                    </div>
                   )}
               </Grid>
               {relatedResources?.length > 0 && (
