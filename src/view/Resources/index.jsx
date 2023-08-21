@@ -34,7 +34,7 @@ const Resources = () => {
               <div>
                 <span>Results ({blogCount})</span>
               </div>
-              {isBlogLoading ? <Loader />
+              {isBlogLoading && blogPosts.length < 1 ? <Loader />
                 : (
                   <Grid container spacing={3}>
                     {blogPosts.length > 0 && blogPosts.map((resource, i) => (

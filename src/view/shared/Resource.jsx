@@ -42,7 +42,7 @@ const Resource = props => {
               {title}
             </h6>
           </div>
-          <div className='resource-tags'>
+          <div className={cx('resource-tags', {active: tagsList.length > 0})}>
             {tagsList.map((tag, i) => (
               <div key={i} className='resource-tag'>
                 <span>{capitalize(tag)}</span>

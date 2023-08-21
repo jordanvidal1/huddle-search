@@ -6,7 +6,7 @@
         "part2": "",
         "part3": ""
       },
-      "desc": "At Huddle – we are redefining tech recruitment – by delivering new ways compelling opportunities meet the industry’s top-tier talent.",
+      "desc": "At Huddle – we are redefining tech recruitment – by delivering new ways the market’s best opportunities meet the industry’s top-tier talent.",
       "button": "Browse all jobs"
     },
     "lookingForAJob": {
@@ -24,7 +24,7 @@
       "link": "Find out more",
       "cv": {
         "title": "Be sent 3 CVs with no obligations",
-        "text": "Instantly discover talent by receiving three targeted CVs via our automated candidate sourcing tech – commitment-free.",
+        "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
         "link": "Request now"
       }
     },
@@ -42,7 +42,7 @@
     },
     "sectors": {
       "title": "Sectors",
-      "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and opportunities."
+      "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and niche opportunities."
     },
     "contract": {
       "desc": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
@@ -55,7 +55,7 @@
       "part2": "Executive",
       "part3": "SEARCH"
     },
-    "desc": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
+    "desc": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, executive identification and outreach, assessment and evaluation, and offer management and onboarding.",
     "info": {
       "1": {
         "title": "Research & needs assessment",
@@ -156,7 +156,7 @@
     },
     "ourStory": {
       "path": "/our-story",
-      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment.",
+      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment and the experience that hiring companies and job seekers go through.",
       "info": {
         "title": "The mission statement...",
         "text": "Our mission is to revolutionise the recruitment landscape by delivering exceptional results through innovative practices. We are dedicated to exceeding client expectations by leveraging cutting-edge approaches that consistently source, assess, and match top-tier talent. Through our unwavering commitment to excellence and continuous innovation, we strive to transform businesses and careers, driving success and shaping the future of recruitment."
@@ -199,10 +199,13 @@
     }
   },
   "jobResource": {
-    "email": "Be the first to know when we announce new roles, service updates, and other communications.",
+    "email": {
+      "title": "Receive email alerts",
+      "text": "Be the first to know when we announce new roles, service updates, and other communications."
+    },
     "share": {
       "job": {
-        "title": "",
+        "title": "Share job",
         "text": "Easily share this job description via social media, WhatsApp, or email."
       },
       "resource": {

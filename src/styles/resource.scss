@@ -12,13 +12,16 @@
     border: 1px solid rgba(49, 10, 49, 0.15);
     background: #FFF;
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    height: 100%;
+    min-width: 18.375rem;
 
     .resource-container {
+      align-items: flex-start;
       display: flex;
       padding: 1rem 1rem 2rem;
-      flex-direction: column;
-      align-items: flex-start;
       flex: 1 0 0;
+      flex-direction: column;
+      height: 100%;
     }
 
     .resource-type-container {
@@ -81,7 +84,9 @@
     }
 
     .resource-title {
-      margin: 1rem 0;
+      flex-grow: 1;
+      margin-top: 1rem;
+      max-height: 6.375rem;
 
       h6 {
         color: #1A1A1A;
@@ -92,8 +97,13 @@
 
     .resource-tags {
       align-items: flex-start;
-      display: flex;
+      display: none;
       gap: 0.5rem;
+      margin-top: 1rem;
+
+      &.active {
+          display: flex;
+      }
 
       .resource-tag {
         align-items: center;

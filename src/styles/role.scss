@@ -12,13 +12,16 @@
     border: 1px solid rgba(49, 10, 49, 0.15);
     background: #FFF;
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    height: 100%;
+    min-width: 18.375rem;
 
     .role-container {
+      align-items: flex-start;
       display: flex;
+      flex: 1 0 0;
       padding: 1.5rem 1.5rem 2rem;
       flex-direction: column;
-      align-items: flex-start;
-      flex: 1 0 0;
+      height: 100%;
     }
 
     .role-type {
@@ -51,7 +54,9 @@
     }
 
     .role-title {
+      flex-grow: 1;
       margin: 1rem 0;
+      max-height: 6.375rem;
 
       h6 {
         color: #1A1A1A;

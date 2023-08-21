@@ -13,6 +13,7 @@
         align-items: flex-start;
         display: flex;
         gap: 4rem;
+        padding-bottom: 4.5rem;
     }
 
     .resource-content {
@@ -29,7 +30,7 @@
                 background: #EFF0F2;
                 border-radius: 62.5rem;
                 display: flex;
-                flex-grow: 1;
+                flex: 1;
                 gap: 3.5rem;
                 height: 3.5rem;
                 padding: 0 2rem;
@@ -54,7 +55,6 @@
                 border-radius: 1rem;
                 display: flex;
                 height: 27.375rem;
-                margin-bottom: 1rem;
                 width: 100%;
 
                 img {
@@ -94,9 +94,13 @@
 
         .resource-tags {
             align-items: flex-start;
-            display: flex;
+            display: none;
             gap: 0.5rem;
-            margin: 3rem 0 4.5rem;
+            margin-top: 3rem;
+
+            &.active {
+                display: flex;
+            }
 
             .resource-tag {
                 align-items: center;
@@ -173,6 +177,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            margin-top: 1.5rem;
             padding: 1.75rem 1.75rem 2rem 1.75rem;
 
             h5 {

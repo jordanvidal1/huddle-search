@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {useLocation} from 'react-router-dom';
-import {capitalize, Grid} from '@material-ui/core';
+import {useTranslation} from 'react-i18next';
+import cx from 'classnames';
 import moment from 'moment';
-import {leaders} from '../../data/constants';
+import {capitalize, Grid} from '@material-ui/core';
+import {leaders, NAMESPACE} from '../../data/constants';
 import useBlog from '../../services/hooks/useBlog';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
@@ -22,6 +24,8 @@ const Resource = () => {
   const [blog, setBlog] = useState({});
 
   const location = useLocation();
+
+  const {t} = useTranslation(['huddle', 'unitas']);
 
   useEffect(() => {
     loadBlog();
@@ -65,13 +69,12 @@ const Resource = () => {
         <div className='img-container'>
           <img alt='blog-img' src={blog.featured_image} />
         </div>
-        <span>Lorem ipsum dolor</span>
       </div>
       <div
         className='text'
         dangerouslySetInnerHTML={{ __html: blog.content}}
       />
-      <div className='resource-tags'>
+      <div className={cx('resource-tags', {active: tagsList.length > 0})}>
         {tagsList.map((tag, i) => (
           <div key={i} className='resource-tag'>
             <span>{capitalize(tag)}</span>
@@ -83,60 +86,52 @@ const Resource = () => {
 
   const renderShareComponent = () => (
     <div className='resource-info'>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <div className='resource-author'>
-            <img alt='author-img' src={author?.img} />
-            <div className='author-details'>
-              <h6>{author?.name}</h6>
-              <span>{author?.role}</span>
-              <div className='author-contact'>
-                <div>
-                  <img
-                    alt='phone-number-icon'
-                    src={PhoneIcon}
-                  />
-                  <span>{author?.number}</span>
-                </div>
-                <div>
-                  <a href={`mailto:email`}>
-                    <img
-                      alt='email-icon'
-                      src={EmailIcon}
-                    />
-                    <span>{author?.email}</span>
-                  </a>
-                </div>
-                <div>
-                  <a href={author?.linkedin} rel='noreferrer' target='_blank'>
-                    <img
-                      alt='linkedin-icon'
-                      src={LinkedInIcon}
-                    />
-                    <span>LinkedIn profile</span>
-                  </a>
-                </div>
-              </div>
+      <div className='resource-author'>
+        <img alt='author-img' src={author?.img} />
+        <div className='author-details'>
+          <h6>{author?.name}</h6>
+          <span>{author?.role}</span>
+          <div className='author-contact'>
+            <div>
+              <img
+                alt='phone-number-icon'
+                src={PhoneIcon}
+              />
+              <span>{author?.number}</span>
+            </div>
+            <div>
+              <a href={`mailto:email`}>
+                <img
+                  alt='email-icon'
+                  src={EmailIcon}
+                />
+                <span>{author?.email}</span>
+              </a>
+            </div>
+            <div>
+              <a href={author?.linkedin} rel='noreferrer' target='_blank'>
+                <img
+                  alt='linkedin-icon'
+                  src={LinkedInIcon}
+                />
+                <span>LinkedIn profile</span>
+              </a>
             </div>
           </div>
-        </Grid>
-        <Grid item xs={12}>
-          <div className='resource-share'>
-            <div className='share-text'>
-              <h5>Share article</h5>
-              <span>Lorem ipsum dolor sit amet.</span>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xs={12}>
-          <div className='resource-share'>
-            <div className='share-text'>
-              <h5>Receive email alerts</h5>
-              <span>Lorem ipsum dolor sit amet.</span>
-            </div>
-          </div>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
+      <div className='resource-share'>
+        <div className='share-text'>
+          <h5>{t(`${NAMESPACE}:jobResource:share:resource:title`)}</h5>
+          <span>{t(`${NAMESPACE}:jobResource:share:resource:text`)}</span>
+        </div>
+      </div>
+      <div className='resource-share'>
+        <div className='share-text'>
+          <h5>{t(`${NAMESPACE}:jobResource:email:title`)}</h5>
+          <span>{t(`${NAMESPACE}:jobResource:email:text`)}</span>
+        </div>
+      </div>
     </div>
   );
 

@@ -8,7 +8,7 @@ import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 
 const Roles = props => {
-  const {children, name, icon} = props;
+  const {roles, children, name, icon} = props;
 
   return (
     <div className='box roles-box'>
@@ -24,8 +24,10 @@ const Roles = props => {
           />
         </Link>
       </div>
-      {/* todo: slider */}
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className='roles-container'>
+        {/*{roles?.length > 0 && roles.slice(0, 4).map((role) => (*/}
+        {/*  <Role {...role} />*/}
+        {/*))}*/}
         <Role />
         <Role />
         <Role />
