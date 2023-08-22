@@ -1,7 +1,7 @@
 .home, .looking-for-a-job {
     .search-roles {
-        background: url('../static/huddle/open-roles-pattern.svg') center no-repeat #FF958C;
-        background-size: cover;
+        background: url('../static/huddle/open-roles-pattern.svg') top repeat #FF958C;
+        background-size: contain;
 
         .box {
             align-items: flex-start;

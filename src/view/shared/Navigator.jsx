@@ -122,7 +122,7 @@ const Navigator = ({
     <div className='nav-list'>
       {routes.map((route, i) => (
         <div key={i}>
-          <span
+          <div
             onClick={route.subLinks && handleExpandClick}
           >
             {route.subLinks ? (
@@ -139,7 +139,7 @@ const Navigator = ({
                 {route.name}
               </Link>
             )}
-          </span>
+          </div>
           {route.subLinks && renderDropdown(route.subLinks)}
         </div>
       ))}

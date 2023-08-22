@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
@@ -26,9 +26,27 @@ import UnitasLinkedIn from '../../static/unitas/linkedin.svg';
 // import UnitasFacebook from '../../static/unitas/facebook.svg';
 // import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
+import FooterArrow from '../../static/huddle/footer-arrow.svg';
+import UnitasFooterArrow from '../../static/unitas/footer-arrow.svg';
 
 const Footer = () => {
+  const [expanded, setExpanded] = useState(false);
+
   const {t} = useTranslation(['huddle', 'unitas']);
+
+  const handleExpandClick = () => setExpanded(!expanded);
+
+  const renderDropdown = subLinks => expanded && (
+    <div className='footer-dropdown'>
+      {subLinks.map((subLink, i) => (
+        <div key={i}>
+          <Link to={subLink.path}>
+            {subLink.name}
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <div className='footer'>
@@ -172,7 +190,31 @@ const Footer = () => {
                       <div className='footer-links-column'>
                         <h6>Company</h6>
                         <ul>
-                          <li><Link to='/about-us'>About Us</Link></li>
+                          <li>
+                            <div onClick={handleExpandClick}>
+                              <span>About Us
+                                <img
+                                  alt='arrow'
+                                  className='header-arrow'
+                                  src={isHuddle ? FooterArrow : UnitasFooterArrow}
+                                />
+                              </span>
+                              {expanded && renderDropdown([
+                                {
+                                  name: 'Leadership team',
+                                  path: '/leadership-team'
+                                },
+                                {
+                                  name: 'Our story',
+                                  path: '/our-story'
+                                },
+                                {
+                                  name: 'Our process',
+                                  path: '/our-process'
+                                }
+                              ])}
+                            </div>
+                          </li>
                           {/* todo: dropdown links */}
                           <li><Link to='/work-for-us'>Work For Us</Link></li>
                           <li><Link to='/contact-us'>Contact Us</Link></li>
@@ -183,24 +225,24 @@ const Footer = () => {
                   <div className='divider'/>
                   <div className='footer-legal'>
                     <div className='footer-legal-links'>
-                      <Link to='/legal'>Legal</Link>
-                      <Link to='/cookies'>Cookies</Link>
-                      <Link to='/privacy'>Privacy</Link>
-                      <Link to='/terms'>Terms</Link>
+                      {/*<Link to='/legal'>Legal</Link>*/}
+                      {/*<Link to='/cookies'>Cookies</Link>*/}
+                      <Link to='/privacy-policy'>Privacy policy</Link>
+                      {/*<Link to='/terms'>Terms</Link>*/}
                     </div>
                     <div className='footer-legal-prime'>
-                    <span>
-                      Proudly part of <img
-                      alt='prime-group'
-                      src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
-                    />
-                    </span>
+                      <span>
+                        Proudly part of <img
+                        alt='prime-group'
+                        src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                      />
+                      </span>
                     </div>
                     <div className='footer-copyright'>
-                    <span>
-                      {t(`${NAMESPACE}:footer:copyright`)}
-                      {/* todo: make year dynamic */}
-                    </span>
+                      <span>
+                        {t(`${NAMESPACE}:footer:copyright`)}
+                        {/* todo: make year dynamic */}
+                      </span>
                     </div>
                   </div>
                 </div>

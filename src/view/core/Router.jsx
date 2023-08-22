@@ -21,14 +21,16 @@ import Jobs from '../Jobs';
 import Resources from '../Resources';
 import Specialism from '../Specialism';
 
-// import Job from '../Job';
-import Resource from '../Resource';
+// import Job from '../Jobs/Job';
+import Resource from '../Resources/Resource';
 
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
 import OurProcess from '../OurProcess';
 import WorkForUs from '../WorkForUs';
 import ContactUs from '../ContactUs';
+
+import PrivacyPolicy from '../Legal/PrivacyPolicy';
 
 const RouterComponent = () => (
   <BrowserRouter>
@@ -56,6 +58,8 @@ const RouterComponent = () => (
         <Route path='/our-process' Component={OurProcess} />
         <Route path='/work-for-us' Component={WorkForUs} />
         <Route path='/contact-us' Component={ContactUs} />
+
+        <Route path='/privacy-policy' Component={PrivacyPolicy} />
 
         <Route path="*" element={<Navigate to='/' />} />
       </Routes>

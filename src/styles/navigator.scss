@@ -215,7 +215,7 @@ div:not(.content) > .header {
       position: relative;
     }
 
-    a, a:hover, span > span {
+    a, a:hover, span {
       align-items: center;
       color: #310A31;
       cursor: pointer;
@@ -329,7 +329,7 @@ div:not(.content) > .header {
     gap: 3rem;
     margin-top: 5rem;
 
-    a, a:hover, span > span {
+    a, a:hover, span {
       font-size: 1.5rem;
     }
 
@@ -391,7 +391,7 @@ div:not(.content) > .header {
 
     .header-nav {
       .nav-list {
-        a, span > span {
+        a, span {
           color: #3A84C9;
           font-weight: 600;
         }
@@ -410,7 +410,7 @@ div:not(.content) > .header {
 
   .sidebar {
     .nav-list {
-      a, span > span {
+      a, span {
         color: #3A84C9;
         font-weight: 600;
       }
