@@ -5,9 +5,9 @@ import {Routes} from 'react-router-dom';
 export default (
   <Routes>
     <Route path='/' />
-    <Route path='/jobs' />
+    <Route exact path='/jobs' />
     <Route path='/jobs/:id' />
-    <Route path='/resources' />
+    <Route exact path='/resources' />
     <Route path='/resources/:id' />
     <Route path='/specialisms/:id' />
     <Route path='/sectors/:id' />
@@ -21,5 +21,6 @@ export default (
     <Route path='/our-process' />
     <Route path='/work-for-us' />
     <Route path='/contact-us' />
+    <Route path='/privacy-policy' />
   </Routes>
 );

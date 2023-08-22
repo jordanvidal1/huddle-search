@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
+import useBlog from '../../services/hooks/useBlog';
 import DropdownArrow from '../../static/unitas/dropdown-arrow.svg';
 
 const filters = [
@@ -20,6 +21,8 @@ const filters = [
 ];
 
 const ResourcesNav = () => {
+  const {loadBlog} = useBlog();
+
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 
   const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
@@ -35,7 +38,7 @@ const ResourcesNav = () => {
             {/* todo: temp condition */}
             <Link
               to={filter.path}
-              onClick={hideDropdown}
+              onClick={() => {hideDropdown();loadBlog();}}
             >
               {filter.name}
             </Link>
@@ -67,7 +70,7 @@ const ResourcesNav = () => {
         <div className='resources-nav-inner'>
           <div className='resources-nav-list-container'>
             <div className='resources-nav-title'>
-              <Link to='/resources'>
+              <Link to='/resources' onClick={loadBlog}>
                 Resources
               </Link>
             </div>

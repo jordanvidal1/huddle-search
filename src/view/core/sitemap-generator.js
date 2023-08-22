@@ -5,12 +5,10 @@ require('babel-register')({
 const router = require('./sitemap-routes').default;
 const Sitemap = require('react-router-sitemap').default;
 
-function generateSitemap() {
-  return (
-    new Sitemap(router)
-    .build(`https://${process.env.REACT_APP_SITE_URL}`)
-    .save('./public/sitemap.xml')
-  );
-}
+const generateSitemap = () => (
+  new Sitemap(router)
+  .build(`https://${process.env.REACT_APP_SITE_URL}`)
+  .save(`./public/sitemap.xml`)
+);
 
 generateSitemap();

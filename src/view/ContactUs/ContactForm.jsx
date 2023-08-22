@@ -151,7 +151,7 @@ const ContactForm = () => {
                       })}
                       errors={errors}
                     >
-                      You agree to our <Link to='/privacy'>privacy policy</Link>.
+                      You agree to our <Link to='/privacy-policy'>privacy policy</Link>.
                     </Input>
                   </Grid>
                 </Grid>
