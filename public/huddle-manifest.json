@@ -1,0 +1,25 @@
+{
+  "short_name": "Huddle",
+  "name": "Huddle Search",
+  "icons": [
+    {
+      "src": "huddle.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "huddle.png",
+      "type": "image/png",
+      "sizes": "226x221"
+    },
+    {
+      "src": "huddle-512.png",
+      "type": "image/png",
+      "sizes": "512x494"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
