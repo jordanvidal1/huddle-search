@@ -233,17 +233,17 @@
 
             .footer-legal-prime {
                 a {
-                    color: #FFF;
+                    align-items: center;
+                    color: rgba(255, 255, 255, 0.50);
+                    display: flex;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    gap: 1rem;
                 }
 
                 img {
                     width: 11.24rem;
                 }
-            }
-
-            .footer-copyright {
-                max-width: 11rem;
-                text-align: center;
             }
 
             & > div {
@@ -359,12 +359,9 @@
                     gap: 1rem;
                 }
 
-                > div > span {
-                    flex-direction: row;
-                    gap: 1rem;
-                }
-
-                .footer-legal-prime {
+                .footer-legal-prime a {
+                    flex-direction: column;
+                    gap: 0.5rem;
                     margin-top: 2rem;
                 }
 

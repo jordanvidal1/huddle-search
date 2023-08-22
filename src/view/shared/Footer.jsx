@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Link, useLocation} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {NAMESPACE} from '../../data/constants';
+import {NAMESPACE, SECTORS, SPECIALISMS} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
@@ -29,16 +29,100 @@ import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
 import FooterArrow from '../../static/huddle/footer-arrow.svg';
 import UnitasFooterArrow from '../../static/unitas/footer-arrow.svg';
 
+const discoverRoutes = [
+  {
+    name: 'Looking to hire',
+    path: '/looking-to-hire'
+  },
+  {
+    name: 'Looking for a job',
+    path: '/looking-for-a-job'
+  },
+  {
+    name: 'Specialisms',
+    subLinks: SPECIALISMS[NAMESPACE]
+  },
+  {
+    name: 'Sectors',
+    subLinks: SECTORS[NAMESPACE]
+  },
+  {
+    name: 'Resources',
+    path: '/resources'
+  }
+];
+
+const servicesRoutes = [
+  {
+    name: 'Executive Search',
+    subLinks: '/executive-search'
+  },
+  {
+    name: 'Embedded Talent Solutions',
+    subLinks: '/embedded-talent-solutions'
+  },
+  {
+    name: 'Contract/Interim',
+    path: '/contract-interim'
+  }
+]
+
+const companyRoutes = [
+  {
+    name: 'About us',
+    subLinks: [
+      {
+        name: 'Leadership team',
+        path: '/leadership-team'
+      },
+      {
+        name: 'Our story',
+        path: '/our-story'
+      },
+      {
+        name: 'Our process',
+        path: '/our-process'
+      },
+      // {
+      //   name: 'Corporate social responsibility'
+      // },
+      // {
+      //   name: 'Diversity, equality & inclusion'
+      // },
+      {
+        name: 'The Prime Group',
+        path: 'the-prime-group'
+      }
+    ]
+  },
+  {
+    name: 'Work for us',
+    path: '/work-for-us'
+  },
+  {
+    name: 'Contact us',
+    path: '/contact-us'
+  }
+];
+
 const Footer = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState('');
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const handleExpandClick = () => setExpanded(!expanded);
+  const location = useLocation();
 
-  const renderDropdown = subLinks => expanded && (
+  const handleExpandClick = route => setExpanded(route);
+
+  const closeExpandClick = () => setExpanded('');
+
+  useEffect(() => {
+    closeExpandClick();
+  }, [location]);
+
+  const renderDropdown = route => expanded === route.name && (
     <div className='footer-dropdown'>
-      {subLinks.map((subLink, i) => (
+      {route.subLinks.map((subLink, i) => (
         <div key={i}>
           <Link to={subLink.path}>
             {subLink.name}
@@ -170,54 +254,77 @@ const Footer = () => {
                       <div className='footer-links-column'>
                         <h6>Discover</h6>
                         <ul>
-                          <li><Link to='/looking-to-hire'>Looking to hire</Link></li>
-                          <li><Link to='/looking-for-a-job'>Looking for a job</Link></li>
-                          <li><Link to='/specialisms'>Specialisms</Link></li>
-                          {/* todo: dropdown links */}
-                          <li><Link to='/sectors'>Sectors</Link></li>
-                          {/* todo: dropdown links */}
-                          <li><Link to='/resources'>Resources</Link></li>
+                          {discoverRoutes.map((route, i) => (
+                            <li key={i}>
+                              {route.subLinks ? (
+                                <div onClick={() => {
+                                  handleExpandClick(
+                                    expanded === route.name
+                                      ? ''
+                                      : route.name
+                                  )
+                                }}>
+                                  <span>
+                                    {route.name}
+                                    <img
+                                      alt='arrow'
+                                      className='header-arrow'
+                                      src={isHuddle ? FooterArrow : UnitasFooterArrow}
+                                    />
+                                  </span>
+                                  {route.subLinks && renderDropdown(route)}
+                                </div>
+                              ) : (
+                                <Link to={route.path}>
+                                  {route.name}
+                                </Link>
+                              )}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                       <div className='footer-links-column'>
                         <h6>Services</h6>
                         <ul>
-                          <li><Link to='/executive-search'>Executive Search</Link></li>
-                          <li><Link to='/embedded-talent-solutions'>Embedded Talent Solutions</Link></li>
-                          <li><Link to='/contract-interim'>Contract/Interim</Link></li>
+                          {servicesRoutes.map((route, i) => (
+                            <li key={i}>
+                              <Link to={route.path}>
+                                {route.name}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                       <div className='footer-links-column'>
                         <h6>Company</h6>
                         <ul>
-                          <li>
-                            <div onClick={handleExpandClick}>
-                              <span>About Us
-                                <img
-                                  alt='arrow'
-                                  className='header-arrow'
-                                  src={isHuddle ? FooterArrow : UnitasFooterArrow}
-                                />
-                              </span>
-                              {expanded && renderDropdown([
-                                {
-                                  name: 'Leadership team',
-                                  path: '/leadership-team'
-                                },
-                                {
-                                  name: 'Our story',
-                                  path: '/our-story'
-                                },
-                                {
-                                  name: 'Our process',
-                                  path: '/our-process'
-                                }
-                              ])}
-                            </div>
-                          </li>
-                          {/* todo: dropdown links */}
-                          <li><Link to='/work-for-us'>Work For Us</Link></li>
-                          <li><Link to='/contact-us'>Contact Us</Link></li>
+                          {companyRoutes.map((route, i) => (
+                            <li key={i}>
+                              {route.subLinks ? (
+                                <div onClick={() => {
+                                  handleExpandClick(
+                                    expanded === route.name
+                                      ? ''
+                                      : route.name
+                                  )
+                                }}>
+                                  <span>
+                                    {route.name}
+                                    <img
+                                      alt='arrow'
+                                      className='header-arrow'
+                                      src={isHuddle ? FooterArrow : UnitasFooterArrow}
+                                    />
+                                  </span>
+                                  {route.subLinks && renderDropdown(route)}
+                                </div>
+                              ) : (
+                                <Link to={route.path}>
+                                  {route.name}
+                                </Link>
+                              )}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>

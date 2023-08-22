@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 import cx from 'classnames';
 import moment from 'moment';
 import {capitalize, Grid} from '@material-ui/core';
-import {leaders} from '../../data/constants';
+import {LEADERS} from '../../data/constants';
 import useBlog from '../../services/hooks/useBlog';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
@@ -48,7 +48,7 @@ const Resource = () => {
   const tagsList = Object.keys(blog?.tags || {});
   const relatedResources = blogPosts.filter(i => i.slug !== blogSlug);
 
-  const author = leaders.find(
+  const author = LEADERS.find(
     i => i.login === blog.author?.login);
 
   const renderBlogComponent = () => (

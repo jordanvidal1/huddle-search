@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
-import {NAMESPACE} from '../../data/constants';
+import {NAMESPACE, SPECIALISMS, SECTORS} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
@@ -30,13 +30,11 @@ const routes = [
   },
   {
     name: 'Specialisms',
-    path: '/specialisms'
-    // subLinks: []
+    subLinks: SPECIALISMS[NAMESPACE]
   },
   {
     name: 'Sectors',
-    path: '/sectors'
-    // subLinks: []
+    subLinks: SECTORS[NAMESPACE]
   },
   {
     name: 'About us',
@@ -59,9 +57,10 @@ const routes = [
       // {
       //   name: 'Diversity, equality & inclusion'
       // },
-      // {
-      //   name: 'The Prime Group'
-      // }
+      {
+        name: 'The Prime Group',
+        path: 'the-prime-group'
+      }
     ]
   }
 ];
@@ -69,7 +68,7 @@ const routes = [
 const Navigator = ({
   children
 }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState('');
   const [pathname, setPathname] = useState('');
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
@@ -84,8 +83,9 @@ const Navigator = ({
 
   const content = useMemo(() => children, [children]);
 
-  const handleExpandClick = () => setExpanded(!expanded);
-  const closeExpandClick = () => setExpanded(false);
+  const handleExpandClick = route => setExpanded(route);
+
+  const closeExpandClick = () => setExpanded('');
 
   useEffect(() => {
     if (pathname !== '' && !location.hash) {
@@ -100,14 +100,14 @@ const Navigator = ({
     document.body.style.overflow = sideMenuDisplayed ? 'hidden' : 'auto';
   }, [sideMenuDisplayed]);
 
-  const renderDropdown = subLinks => expanded && (
+  const renderDropdown = route => expanded === route.name && (
     <div className='nav-dropdown'>
       <img
         alt='dropdown-arrow'
         src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
       />
       <div>
-        {subLinks.map((subLink, i) => (
+        {route.subLinks.map((subLink, i) => (
           <div key={i}>
             <Link to={subLink.path} onClick={hideSidebar}>
               {subLink.name}
@@ -122,9 +122,11 @@ const Navigator = ({
     <div className='nav-list'>
       {routes.map((route, i) => (
         <div key={i}>
-          <div
-            onClick={route.subLinks && handleExpandClick}
-          >
+          <div onClick={() => {
+            if (route.subLinks) {
+              handleExpandClick(expanded === route.name ? '' : route.name)
+            }
+          }}>
             {route.subLinks ? (
               <span>
                 {route.name}
@@ -140,7 +142,7 @@ const Navigator = ({
               </Link>
             )}
           </div>
-          {route.subLinks && renderDropdown(route.subLinks)}
+          {route.subLinks && renderDropdown(route)}
         </div>
       ))}
     </div>
@@ -150,7 +152,7 @@ const Navigator = ({
     <div className='header'>
       <div className='header-container container'>
         <div className='header-inner'>
-          <Link to='/' onClick={expanded && handleExpandClick}>
+          <Link to='/'>
             <img alt='logo' className='logo' src={isHuddle ? Logo : UnitasLogo} />
           </Link>
           <div className='header-nav'>

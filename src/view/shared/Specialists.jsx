@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {leaders, NAMESPACE} from '../../data/constants';
+import {LEADERS, NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
@@ -45,7 +45,7 @@ const Specialists = props => {
               </div>
             </div>
             <div className='specialists-container'>
-              {(specialists || leaders).map((specialist, i) => {
+              {(specialists || LEADERS).map((specialist, i) => {
                 const {
                   img,
                   name,

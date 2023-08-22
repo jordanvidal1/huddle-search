@@ -1,5 +1,5 @@
 import React from 'react';
-import {leaders} from '../../data/constants';
+import {LEADERS} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import PhoneIcon from '../../static/huddle/phone-number.svg';
@@ -14,7 +14,7 @@ const Leaders = () => (
     <div className='container'>
       <div className='inner-container'>
         <div className='content'>
-          {leaders.map((leader, i) => {
+          {LEADERS.map((leader, i) => {
             const {
               img,
               name,

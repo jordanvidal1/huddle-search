@@ -43,10 +43,8 @@ const RouterComponent = () => (
         {/*<Route path='/jobs/:id' Component={Job} />*/}
         <Route exact path='/resources' Component={Resources} />
         <Route path='/resources/:id' Component={Resource} />
-        <Route path='/specialisms' Component={Specialism} />
-        {/*<Route path='/specialisms/:id' Component={Specialism}/>*/}
-        <Route path='/sectors' Component={Specialism} />
-        {/*<Route path='/sectors/:id' Component={Specialism} />*/}
+        <Route path='/specialisms/:id' Component={Specialism}/>
+        <Route path='/sectors/:id' Component={Specialism} />
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
         <Route path='/looking-for-a-job' Component={LookingForAJob} />
