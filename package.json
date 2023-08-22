@@ -6,11 +6,12 @@
   "scripts": {
     "start:huddle": "env-cmd -f ./.env.huddle react-scripts start",
     "start:unitas": "env-cmd -f ./.env.unitas react-scripts start",
-    "build:huddle": "env-cmd -f ./.env.huddle yarn sitemap && react-scripts build && mv build/huddle/robots.txt build/robots.txt",
-    "build:unitas": "env-cmd -f ./.env.unitas yarn sitemap && react-scripts build && mv build/unitas/robots.txt build/robots.txt",
+    "sitemap:huddle": "env-cmd -f ./.env.huddle babel-node src/view/core/sitemap-generator.js",
+    "sitemap:unitas": "env-cmd -f ./.env.unitas babel-node src/view/core/sitemap-generator.js",
+    "build:huddle": "yarn sitemap:huddle && env-cmd -f ./.env.huddle react-scripts build && mv build/huddle/robots.txt build/robots.txt",
+    "build:unitas": "yarn sitemap:unitas && env-cmd -f ./.env.unitas react-scripts build && mv build/unitas/robots.txt build/robots.txt",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sitemap": "babel-node src/view/core/sitemap-generator.js"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@fontsource/fraunces": "^5.0.8",
