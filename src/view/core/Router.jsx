@@ -30,6 +30,7 @@ import OurProcess from '../OurProcess';
 import WorkForUs from '../WorkForUs';
 import ContactUs from '../ContactUs';
 
+import ThePrimeGroup from '../ThePrimeGroup';
 import PrivacyPolicy from '../Legal/PrivacyPolicy';
 
 const RouterComponent = () => (
@@ -59,6 +60,7 @@ const RouterComponent = () => (
         <Route path='/work-for-us' Component={WorkForUs} />
         <Route path='/contact-us' Component={ContactUs} />
 
+        <Route path='/the-prime-group' Component={ThePrimeGroup} />
         <Route path='/privacy-policy' Component={PrivacyPolicy} />
 
         <Route path="*" element={<Navigate to='/' />} />

@@ -22,6 +22,7 @@
 @import 'specialisms';
 @import 'specialists';
 @import 'work_for_us';
+@import 'the_prime_group';
 
 @import 'role';
 @import 'roles';
@@ -349,4 +350,14 @@ input {
   .error-msg {
     max-width: 100%;
   }
+}
+
+@font-face {
+  font-family: ArdelaEdgeX02-Regular;
+  src: local('ArdelaEdgeX02-Regular'), url('../view/core/ardela-edge-x02-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: ArdelaEdgeX02-ExtraBold;
+  src: local('ArdelaEdgeX02-ExtraBold'), url('../view/core/ardela-edge-x02-extrabold.ttf') format('truetype');
 }

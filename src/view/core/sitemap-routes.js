@@ -21,6 +21,7 @@ export default (
     <Route path='/our-process' />
     <Route path='/work-for-us' />
     <Route path='/contact-us' />
+    <Route path='/the-prime-group' />
     <Route path='/privacy-policy' />
   </Routes>
 );

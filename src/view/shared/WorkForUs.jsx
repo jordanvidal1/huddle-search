@@ -80,14 +80,14 @@ const WorkForUs = ({
                   </Link>
                 </div>
               </Grid>
-              {/*<Grid item xs={12} sm={6}>*/}
-              {/*  <div className='link-container'>*/}
-              {/*    <Link to='/the-prime-group'>*/}
-              {/*      <span>The Prime Group</span>*/}
-              {/*      <img alt='arrow-icon' src={icon}/>*/}
-              {/*    </Link>*/}
-              {/*  </div>*/}
-              {/*</Grid>*/}
+              <Grid item xs={12} sm={6}>
+                <div className='link-container'>
+                  <Link to='/the-prime-group'>
+                    <span>The Prime Group</span>
+                    <img alt='arrow-icon' src={icon}/>
+                  </Link>
+                </div>
+              </Grid>
             </Grid>
             {home && (
               <div className='cv-container'>

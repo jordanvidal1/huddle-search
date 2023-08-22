@@ -1,19 +1,19 @@
 .legal {
     &.privacy-policy {
-        .title h2 {
-            color: #310A31;
+        .title h1 {
+            color: #1A1A1A;
+            font-size: 5rem;
+            font-weight: 900;
         }
 
         .text {
-            margin-top: 3rem;
-        }
-    }
-}
+            margin-top: 4rem;
 
-.unitas-site {
-    .legal {
-        &.privacy-policy {
-
+            p {
+                color: #1A1A1A;
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
         }
     }
 }

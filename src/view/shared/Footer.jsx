@@ -231,12 +231,12 @@ const Footer = () => {
                       {/*<Link to='/terms'>Terms</Link>*/}
                     </div>
                     <div className='footer-legal-prime'>
-                      <span>
+                      <Link to='/the-prime-group'>
                         Proudly part of <img
-                        alt='prime-group'
-                        src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
-                      />
-                      </span>
+                          alt='prime-group'
+                          src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                        />
+                      </Link>
                     </div>
                     <div className='footer-copyright'>
                       <span>

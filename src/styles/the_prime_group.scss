@@ -1,0 +1,127 @@
+.the-prime-group {
+    background: linear-gradient(180deg, #000 0%, #1A0223 100%);
+
+    .pattern {
+        background: url('../static/huddle/prime-pattern-2.png') bottom left no-repeat, url('../static/huddle/prime-pattern-1.png') top right no-repeat;
+        background-size: 25%, 50%;
+        mix-blend-mode: lighten;
+    }
+
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 6rem;
+
+        > img {
+            width: 17.5rem;
+        }
+    }
+
+    .title {
+        margin-top: 6rem;
+        text-align: center;
+
+        h1 {
+            color: #D3CDD0;
+            font-family: ArdelaEdgeX02-Regular;
+            font-size: 6rem;
+            font-weight: 400;
+            line-height: 110%; /* 6.6rem */
+        }
+
+        a, a:hover {
+            color: #163BF2;
+            font-family: ArdelaEdgeX02-ExtraBold;
+        }
+    }
+
+    .text {
+        margin: 3rem 0 8rem;
+        max-width: 52.25rem;
+        text-align: center;
+
+        p {
+            color: #D3CDD0;
+            font-family: Plus Jakarta Sans;
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.875rem; /* 150% */
+        }
+    }
+
+    .sub-text {
+        text-align: center;
+
+        p {
+            color: #C28CA7;
+            font-family: Plus Jakarta Sans;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.875rem; /* 187.5% */
+            letter-spacing: 0.32rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .logos {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        max-width: 58.25rem;
+        width: 100%;
+
+        img {
+            height: 4rem;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .pattern {
+            background: url('../static/huddle/prime-pattern-mob-2.png') bottom left no-repeat, url('../static/huddle/prime-pattern-mob-1.png') top right no-repeat;
+            background-size: 70%;
+            mix-blend-mode: lighten;
+        }
+
+        .content {
+            padding: 2rem 0;
+
+            > img {
+                width: 15rem;
+            }
+        }
+
+        .title {
+            margin-top: 4rem;
+
+            h1 {
+                font-size: 2.875rem;
+            }
+        }
+
+        .text {
+            margin: 2rem 0 6rem;
+        }
+
+        .logos {
+            flex-direction: column;
+            gap: 2rem;
+
+            img {
+                height: unset;
+                width: 10rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .pattern {
+            background-size: 80%;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
