@@ -21,7 +21,7 @@ import UnitasCloseButton from '../../static/unitas/close-button.svg';
 
 const routes = [
   {
-    name: 'Looking To hire',
+    name: 'Looking to hire',
     path: '/looking-to-hire'
   },
   {
