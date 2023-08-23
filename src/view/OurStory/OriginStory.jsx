@@ -5,6 +5,8 @@ import {isHuddle} from '../../services/helper';
 
 import Logo from '../../static/huddle/logo.svg';
 import UnitasLogo from '../../static/unitas/logo.svg';
+import Image1 from '../../static/huddle/origin-story-1.jpg';
+import Image2 from '../../static/huddle/origin-story-2.jpg';
 
 const OriginStory = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -22,66 +24,81 @@ const OriginStory = () => {
             <div className='story story-1'>
               <div className='text-container'>
                 <p>
-                  Lorem ipsum dolor sit amet consectetu erisque ornare eu id ipsum vulputate. At ultrices sit imperdiet malesuada libero at. Nulla scelerisque id lorem tristique sit. Vestibulum urna convallis vitae arcu.
+                  {t(`${NAMESPACE}:originStory:intro`)}
                 </p>
+                <br />
+                <p>
+                  {t(`${NAMESPACE}:originStory:part1:text`)}
+                </p>
+                <br />
                 <h6>
-                  Lorem ipsum dolor
+                  {t(`${NAMESPACE}:originStory:part2:title`)}
                 </h6>
                 <br />
                 <p>
-                  Lorem ipsum dolor
-                  Lorem ipsum dolor sit amet consectetur. Nam dui platea condimentum lacus feugiat adipiscing gravida dolor donec. Adipiscing mauris nisl id sed cras sed turpis. Nec amet in pellentesque netus eleifend felis pellentesque. Urna risus est sed imperdiet. Vitae tincidunt magna quam vitae mollis dui erat orci diam. Volutpat purus arcu egestas fames. Ornare viverra volutpat purus gravida. Velit lobortis risus quam odio convallis placerat augue.
+                  {t(`${NAMESPACE}:originStory:part2:text`)}
                 </p>
               </div>
               <div className='img-container'>
                 <div>
-                  <img alt='specialist-img' />
+                  <img alt='origin-img-1' src={Image1} />
                 </div>
-                <span>
-                Lorem ipsum dolor sit amet consectetur.
-              </span>
               </div>
             </div>
             <div className='quote'>
               <h3>
-                “Lorem ipsum dolor sit amet consectetur. Facilisis interdum egestas nisl sed arcu eget eu fringilla elementum.”
+                {t(`${NAMESPACE}:originStory:quote1`)}
               </h3>
             </div>
             <div className='story story-2'>
               <div className='img-container'>
                 <div>
-                  <img alt='specialist-img' />
+                  <img alt='origin-img-2' src={Image2} />
                 </div>
-                <span>
-                Lorem ipsum dolor sit amet consectetur.
-              </span>
               </div>
               <div className='text-container'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Nam dui platea condimentum lacus feugiat adipiscing gravida dolor donec. Adipiscing mauris nisl id sed cras sed turpis. Nec amet in pellentesque netus eleifend felis pellentesque. Urna risus est sed imperdiet. Vitae tincidunt magna quam vitae mollis dui erat orci diam. Volutpat purus arcu egestas fames. Ornare viverra volutpat purus gravida. Velit lobortis risus quam odio convallis placerat augue.
-                </p>
                 <h6>
-                  Lorem ipsum dolor
+                  {t(`${NAMESPACE}:originStory:part3:title`)}
                 </h6>
                 <br />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Nam dui platea condimentum lacus feugiat adipiscing gravida dolor donec. Adipiscing mauris nisl id sed cras sed turpis. Nec amet in pellentesque netus eleifend felis pellentesque. Urna risus est sed imperdiet. Vitae tincidunt magna quam vitae mollis dui erat orci diam. Volutpat purus arcu egestas fames. Ornare viverra volutpat purus gravida. Velit lobortis risus quam odio convallis placerat augue.
+                  {t(`${NAMESPACE}:originStory:part3:text`)}
+                </p>
+                <br />
+                <h6>
+                  {t(`${NAMESPACE}:originStory:part4:title`)}
+                </h6>
+                <br />
+                <p>
+                  {t(`${NAMESPACE}:originStory:part4:text`)}
                 </p>
               </div>
             </div>
             <div className='quote'>
               <h3>
-                “Lorem ipsum dolor sit amet consectetur. Facilisis interdum egestas nisl sed arcu eget eu fringilla elementum.”
+                {t(`${NAMESPACE}:originStory:quote2`)}
               </h3>
             </div>
             <div className='story story-3'>
               <div className='text-container'>
+                <h6>
+                  {t(`${NAMESPACE}:originStory:part5:title`)}
+                </h6>
+                <br />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Nam dui platea condimentum lacus feugiat adipiscing gravida dolor donec. Adipiscing mauris nisl id sed cras sed turpis. Nec amet in pellentesque netus eleifend felis pellentesque. Urna risus est sed imperdiet. Vitae tincidunt magna quam vitae mollis dui erat orci diam. Volutpat purus arcu egestas fames. Ornare viverra volutpat purus gravida. Velit lobortis risus quam odio convallis placerat augue.
+                  {t(`${NAMESPACE}:originStory:part5:text`)}
+                </p>
+                <br />
+                <h6>
+                  {t(`${NAMESPACE}:originStory:part6:title`)}
+                </h6>
+                <br />
+                <p>
+                  {t(`${NAMESPACE}:originStory:part6:text`)}
                 </p>
                 <br />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Nam dui platea condimentum lacus feugiat adipiscing gravida dolor donec. Adipiscing mauris nisl id sed cras sed turpis. Nec amet in pellentesque netus eleifend felis pellentesque. Urna risus est sed imperdiet. Vitae tincidunt magna quam vitae mollis dui erat orci diam. Volutpat purus arcu egestas fames. Ornare viverra volutpat purus gravida. Velit lobortis risus quam odio convallis placerat augue.
+                  {t(`${NAMESPACE}:originStory:part7:text`)}
                 </p>
               </div>
               <div className='img-container'>

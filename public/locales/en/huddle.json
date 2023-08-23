@@ -436,7 +436,35 @@
   },
   "originStory": {
     "title": "Origin story",
-    "text": "INTRO COPY (larger body copy): In the bustling heart of the global job market, where opportunities and talent converge, the story of Huddle begins.\nBorn from the vision of blending human expertise with transformative technology, Huddle was established by an exceptional trio: two seasoned recruitment experts and a tech innovator. Their shared goal? To reshape how recruitment agencies operate and redefine the job-seeking process.\nMeet the Founders\nEach founder brought their distinct strengths and insights to the table. The recruitment experts, with extensive experience in Executive Search, understood the significance of precision and personal connection in matching candidates with their ideal roles. The tech innovator, a forward-thinker in the realms of artificial intelligence (AI) and machine learning (ML), recognised the potential of these tools to reshape and modernise the recruitment landscape.\nBIG QUOTE: \"From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer.\"\nThe Bigger Picture\nHuddle was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent aquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience.\nPlacing You First\nFrom its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer. The founders embarked on a thorough exploration, identifying the elements that underpin a successful recruitment partnership. This endeavour was grounded in practical insights that could drive tangible improvements.\nBIG QUOTE: \"Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently.\"\nThe Tech Advantage\nEnter Huddle's tech specialist, seamlessly integrating AI and ML into the fabric of the company's operations. However, this wasn't technology for technology's sake—it was about streamlining the process. Each application of AI and ML was carefully crafted to simplify recruitment. By automating routine tasks and employing predictive analytics for candidate-client matching, Huddle aimed to enhance efficiency and accuracy.\nThe Present\nToday, Huddle stands as a guiding light for modern recruitment agencies. For job seekers, it opens doors to tailored opportunities. For companies, it serves as a gateway to a meticulously curated talent pool. Every interaction at Huddle underscores their dedication to customer satisfaction. Successful matches exemplify the harmonious blend of human expertise and cutting-edge technology. Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently.\nIn a world where time is precious and talent is paramount, Huddle emerges as a reliable partner for rapidly and effectively assembling top-tier teams. Ready to benefit from the future of recruitment? Contact the Huddle team today."
+    "intro": "In the bustling heart of the global job market, where opportunities and talent converge, the story of Huddle begins.",
+    "part1": {
+      "text": "Born from the vision of blending human expertise with transformative technology, Huddle was established by an exceptional trio: two seasoned recruitment experts and a tech innovator. Their shared goal? To reshape how recruitment agencies operate and redefine the job-seeking process."
+    },
+    "part2": {
+      "title": "Meet the Founders",
+      "text": "Each founder brought their distinct strengths and insights to the table. The recruitment experts, with extensive experience in Executive Search, understood the significance of precision and personal connection in matching candidates with their ideal roles. The tech innovator, a forward-thinker in the realms of artificial intelligence (AI) and machine learning (ML), recognised the potential of these tools to reshape and modernise the recruitment landscape."
+    },
+    "quote1": "\"From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer.\"",
+    "part3": {
+      "title": "The Bigger Picture",
+      "text": "Huddle was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent aquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
+    },
+    "part4": {
+      "title": "Placing You First",
+      "text": "From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer. The founders embarked on a thorough exploration, identifying the elements that underpin a successful recruitment partnership. This endeavour was grounded in practical insights that could drive tangible improvements."
+    },
+    "quote2": "\"Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently.\"",
+    "part5": {
+      "title": "The Tech Advantage",
+      "text": "Enter Huddle's tech specialist, seamlessly integrating AI and ML into the fabric of the company's operations. However, this wasn't technology for technology's sake—it was about streamlining the process. Each application of AI and ML was carefully crafted to simplify recruitment. By automating routine tasks and employing predictive analytics for candidate-client matching, Huddle aimed to enhance efficiency and accuracy."
+    },
+    "part6": {
+      "title": "The Present",
+      "text": "Today, Huddle stands as a guiding light for modern recruitment agencies. For job seekers, it opens doors to tailored opportunities. For companies, it serves as a gateway to a meticulously curated talent pool. Every interaction at Huddle underscores their dedication to customer satisfaction. Successful matches exemplify the harmonious blend of human expertise and cutting-edge technology. Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently."
+    },
+    "part7": {
+      "text": "In a world where time is precious and talent is paramount, Huddle emerges as a reliable partner for rapidly and effectively assembling top-tier teams. Ready to benefit from the future of recruitment? Contact the Huddle team today."
+    }
   },
   "footer": {
     "title": "Because every search starts with a",
