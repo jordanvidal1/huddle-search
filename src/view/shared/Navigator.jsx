@@ -96,10 +96,6 @@ const Navigator = ({
     setPathname(`/${location.pathname.split('/')[1]}`);
   }, [location, pathname]);
 
-  useEffect(() => {
-    document.body.style.overflow = sideMenuDisplayed ? 'hidden' : 'auto';
-  }, [sideMenuDisplayed]);
-
   const renderDropdown = route => expanded === route.name && (
     <div className='nav-dropdown'>
       <img
@@ -199,6 +195,7 @@ const Navigator = ({
         </div>
         {renderNavList()}
       </div>
+      <div className='sidebar-backdrop' onClick={hideSidebar} />
     </div>
   );
 
@@ -215,7 +212,11 @@ const Navigator = ({
       {pathname.includes('/resources') && <ResourcesNav />}
       <div id='content'>
         {content}
-        <Footer />
+        <Footer
+          expanded={expanded}
+          expandClick={handleExpandClick}
+          toggleSidebar={toggleSideBar}
+        />
       </div>
     </div>
   );

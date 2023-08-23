@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
@@ -105,32 +105,12 @@ const companyRoutes = [
   }
 ];
 
-const Footer = () => {
-  const [expanded, setExpanded] = useState('');
-
+const Footer = ({
+  expanded,
+  expandClick,
+  toggleSidebar
+}) => {
   const {t} = useTranslation(['huddle', 'unitas']);
-
-  const location = useLocation();
-
-  const handleExpandClick = route => setExpanded(route);
-
-  const closeExpandClick = () => setExpanded('');
-
-  useEffect(() => {
-    closeExpandClick();
-  }, [location]);
-
-  const renderDropdown = route => expanded === route.name && (
-    <div className='footer-dropdown'>
-      {route.subLinks.map((subLink, i) => (
-        <div key={i}>
-          <Link to={subLink.path}>
-            {subLink.name}
-          </Link>
-        </div>
-      ))}
-    </div>
-  );
 
   return (
     <div className='footer'>
@@ -140,7 +120,7 @@ const Footer = () => {
             {isHuddle && (
               <div className='title'>
                 <h6>
-                  Because every search starts with a
+                  {t(`${NAMESPACE}:footer:title`)}
                 </h6>
                 <img className='logo' alt='logo' src={TextLogo} />
               </div>
@@ -258,11 +238,12 @@ const Footer = () => {
                             <li key={i}>
                               {route.subLinks ? (
                                 <div onClick={() => {
-                                  handleExpandClick(
+                                  expandClick(
                                     expanded === route.name
                                       ? ''
                                       : route.name
-                                  )
+                                  );
+                                  toggleSidebar();
                                 }}>
                                   <span>
                                     {route.name}
@@ -272,7 +253,6 @@ const Footer = () => {
                                       src={isHuddle ? FooterArrow : UnitasFooterArrow}
                                     />
                                   </span>
-                                  {route.subLinks && renderDropdown(route)}
                                 </div>
                               ) : (
                                 <Link to={route.path}>
@@ -302,11 +282,12 @@ const Footer = () => {
                             <li key={i}>
                               {route.subLinks ? (
                                 <div onClick={() => {
-                                  handleExpandClick(
+                                  expandClick(
                                     expanded === route.name
                                       ? ''
                                       : route.name
-                                  )
+                                  );
+                                  toggleSidebar();
                                 }}>
                                   <span>
                                     {route.name}
@@ -316,7 +297,6 @@ const Footer = () => {
                                       src={isHuddle ? FooterArrow : UnitasFooterArrow}
                                     />
                                   </span>
-                                  {route.subLinks && renderDropdown(route)}
                                 </div>
                               ) : (
                                 <Link to={route.path}>

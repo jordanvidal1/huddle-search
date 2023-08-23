@@ -402,6 +402,7 @@
     }
   },
   "footer": {
+    "title": "",
     "lookingToHire": {
       "title": "Looking to hire?",
       "desc": "Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape."
