@@ -8,7 +8,7 @@ import ResourcesPage from '../shared/ResourcesPage';
 
 const Specialism = () => (
   <div className='specialism'>
-    <Hero type='specialists' name='Technology' />
+    <Hero type='specialists' />
     <RolesPage />
     <Specialists type='specialists' name='Technology' />
     <ResourcesPage />

@@ -401,6 +401,39 @@
       }
     }
   },
+  "specialisms": {
+    "software-and-engineering": "Huddle seamlessly links tech professionals to Software & Engineering roles, ensuring a skilled workforce that drives innovation and robust technological solutions.",
+    "architecture": "Huddle skilfully connects tech experts with Architecture roles, harmonising design and technology to construct functional and forward-thinking environments.",
+    "devops": "Huddle specialises in sourcing tech talent for DevOps roles, enabling streamlined software development through collaboration, automation, and continuous improvement.",
+    "cloud-infrastructure-and-networks": "Huddle efficiently matches tech professionals to Cloud, Infrastructure & Networks roles, empowering businesses with reliable, scalable, and secure technological foundations.",
+    "cyber-and-information-security": "Huddle excels in identifying tech talent for Cyber & Information Security roles, safeguarding digital assets through proactive risk management and innovative solutions.",
+    "data-and-analytics": "Huddle adeptly sources tech professionals for Data & Analytics roles, driving data-driven decision-making and insights that optimise business strategies.",
+    "erp-crm-and-hr-systems": "Huddle specialises in sourcing tech talent for ERP, CRM & HR Systems roles, ensuring efficient and integrated software solutions that enhance organisational processes.",
+    "change-and-transformation": "Huddle efficiently connects tech professionals to Change & Transformation roles, driving successful technology-driven organisational shifts and continuous improvements.",
+    "design": "Huddle excels in matching tech talent to Design (UI/UX) roles, bridging creativity and technology to craft compelling user-centred digital experiences.",
+    "product-management": "Huddle adeptly identifies tech talent for Product Management roles, ensuring products align with market demands through efficient planning, development, and delivery."
+  },
+  "sectors": {
+    "media-and-entertainment": "Huddle connects tech talent with the ever-evolving Media & Entertainment sector, ensuring tailored matches that foster sustainable growth and innovation.",
+    "telco": "Huddle sources tech professionals for the Telco industry, contributing to transformative technological advancements that reshape communication landscapes.",
+    "retail-and-retailtech": "Huddle efficiently links specialised tech talent with the dynamic Retail & RetailTech sector, driving innovative solutions and enhancing customer experiences.",
+    "ecommerce": "Huddle excels in identifying tech talent primed for E-Commerce challenges, ensuring seamless alignment with the fast-paced, digital-driven realm of online commerce.",
+    "fmcg-consumer": "Huddle adeptly identifies tech talent for FMCG/Consumer sectors, navigating intricacies of consumer-driven markets and empowering businesses to meet evolving demands.",
+    "pharmaceutical": "Huddle specialises in tech talent for the intricate Pharmaceutical sector, connecting professionals who grasp the tech-driven nuances shaping modern healthcare solutions.",
+    "banking-financial-services-asset-management": "Huddle focuses on tech talent for Banking, Financial Services, and Asset Management, bridging industry demands with proficient professionals for sustainable financial growth.",
+    "investment-banking": "Huddle connects tech professionals with Investment Banking, contributing to the financial sector's evolution by sourcing candidates aligned with the industry's tech-driven trajectory.",
+    "insurance-and-insuretech": "Huddle adeptly sources tech talent for Insurance & InsureTech, driving advancements in risk management through qualified professionals attuned to tech-enabled solutions.",
+    "fintech": "Huddle efficiently connects tech professionals with the FinTech sector, matching evolving financial technology trends with candidates poised to revolutionize the industry.",
+    "manufacturing": "Huddle identifies tech talent to elevate Manufacturing, fostering innovation by linking professionals who embrace technology's transformative impact on modern production.",
+    "public-sector": "Huddle adeptly sources tech professionals for the Public Sector, facilitating dynamic solutions by connecting experts who understand the intersection of tech and governance.",
+    "defence": "Huddle links tech talent with Defence, facilitating vital technological progress by sourcing experts who contribute to the sector's strategic and security objectives.",
+    "construction-and-proptech": "Huddle specialises in tech recruitment for Construction & PropTech, expertly connecting professionals attuned to technology's integration in shaping modern living spaces.",
+    "private-equity": "Huddle focuses on tech professionals for Private Equity, enhancing operational efficiency and investment outcomes by sourcing candidates adept in tech-enabled strategies.",
+    "healthcare-and-healthtech": "Huddle's tech recruitment extends to Healthcare & HealthTech, sourcing professionals who drive medical technology innovation, improving patient care and outcomes.",
+    "consulting": "Huddle efficiently connects tech talent with Consulting, empowering businesses with tech-savvy experts who offer valuable insights for strategic decision-making.",
+    "life-sciences": "Huddle excels in connecting tech talent with the intricate Life Sciences sector, sourcing professionals who drive breakthroughs in research and discovery, shaping the future of healthcare.",
+    "new-tech": "Huddle specialises in sourcing tech talent for the New Tech realm, identifying candidates who lead pioneering efforts in emerging technologies, shaping industries for the future."
+  },
   "footer": {
     "title": "Because every search starts with a",
     "lookingToHire": {
