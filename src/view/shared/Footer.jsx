@@ -311,26 +311,37 @@ const Footer = ({
                   </div>
                   <div className='divider'/>
                   <div className='footer-legal'>
-                    <div className='footer-legal-links'>
-                      {/*<Link to='/legal'>Legal</Link>*/}
-                      {/*<Link to='/cookies'>Cookies</Link>*/}
-                      <Link to='/privacy-policy'>Privacy policy</Link>
-                      {/*<Link to='/terms'>Terms</Link>*/}
-                    </div>
-                    <div className='footer-legal-prime'>
-                      <Link to='/the-prime-group'>
-                        Proudly part of <img
-                          alt='prime-group'
-                          src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
-                        />
-                      </Link>
-                    </div>
-                    <div className='footer-copyright'>
-                      <span>
-                        {t(`${NAMESPACE}:footer:copyright`)}
-                        {/* todo: make year dynamic */}
-                      </span>
-                    </div>
+                    <Grid
+                      container spacing={2}
+                      justifyContent='space-between' alignItems='center'
+                    >
+                      <Grid item xs={4} justifyContent='flex-start'>
+                        <div className='footer-legal-links'>
+                          {/*<Link to='/legal'>Legal</Link>*/}
+                          {/*<Link to='/cookies'>Cookies</Link>*/}
+                          <Link to='/privacy-policy'>Privacy policy</Link>
+                          {/*<Link to='/terms'>Terms</Link>*/}
+                        </div>
+                      </Grid>
+                      <Grid item xs={4} justifyContent='center'>
+                        <div className='footer-legal-prime'>
+                          <Link to='/the-prime-group'>
+                            Proudly part of <img
+                              alt='prime-group'
+                              src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                            />
+                          </Link>
+                        </div>
+                      </Grid>
+                      <Grid item xs={4} justifyContent='flex-end'>
+                        <div className='footer-copyright'>
+                          <span>
+                            {t(`${NAMESPACE}:footer:copyright`)}
+                            {/* todo: make year dynamic */}
+                          </span>
+                        </div>
+                      </Grid>
+                    </Grid>
                   </div>
                 </div>
               </Grid>

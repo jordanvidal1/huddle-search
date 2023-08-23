@@ -221,6 +221,15 @@
             display: flex;
             justify-content: space-between;
 
+            > div {
+                flex-wrap: nowrap;
+
+                > div {
+                    align-items: center;
+                    display: flex;
+                }
+            }
+
             .footer-legal-prime {
                 a {
                     align-items: center;
@@ -229,6 +238,7 @@
                     font-size: 0.875rem;
                     font-weight: 600;
                     gap: 1rem;
+                    white-space: nowrap;
                 }
 
                 img {
@@ -236,18 +246,13 @@
                 }
             }
 
-            & > div {
+            .footer-copyright span {
                 align-items: center;
+                color: rgba(255, 255, 255, 0.50);
                 display: flex;
-                gap: 1.5rem;
-
-                & > span {
-                    align-items: center;
-                    color: rgba(255, 255, 255, 0.50);
-                    display: flex;
-                    font-size: 0.875rem;
-                    gap: 1rem;
-                }
+                font-size: 0.875rem;
+                gap: 1rem;
+                text-align: right;
             }
 
             a {
@@ -255,13 +260,6 @@
                 font-size: 0.875rem;
                 font-weight: 800;
             }
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-        .footer-box .footer-legal > div > span {
-            flex-direction: column;
-            gap: 0;
         }
     }
 
@@ -343,7 +341,15 @@
             }
 
             .footer-legal {
-                flex-direction: column;
+                > div {
+                    flex-direction: column;
+
+                    > div {
+                        flex-basis: 100%;
+                        flex-grow: 1;
+                        max-width: 100%;
+                    }
+                }
 
                 .footer-legal-links {
                     flex-direction: column;
@@ -353,12 +359,15 @@
                 .footer-legal-prime a {
                     flex-direction: column;
                     gap: 0.5rem;
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                 }
 
                 .footer-copyright {
                     margin-top: 1rem;
-                    text-align: center;
+
+                    span {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -372,17 +381,6 @@
                 img {
                     max-width: 12rem;
                     width: 100%;
-                }
-            }
-
-            .footer-legal {
-                > div > span {
-                    flex-direction: column;
-                    gap: 0.5rem;
-                }
-
-                .footer-copyright {
-                    margin-top: 2rem;
                 }
             }
         }
