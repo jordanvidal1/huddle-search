@@ -276,6 +276,9 @@
     }
 
     @include media-breakpoint-down(md) {
+        background: url('../static/huddle/footer-pattern-mob.svg') top repeat #FF958C;
+        background-size: cover;
+
         .inner-container {
             padding-bottom: 10rem;
         }
