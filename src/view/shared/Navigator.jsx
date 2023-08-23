@@ -2,7 +2,7 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
 import {NAMESPACE, SPECIALISMS, SECTORS} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {isHuddle, groupSpecialisms} from '../../services/helper';
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
@@ -96,7 +96,7 @@ const Navigator = ({
     setPathname(`/${location.pathname.split('/')[1]}`);
   }, [location, pathname]);
 
-  const renderDropdown = route => expanded === route.name && (
+  const renderAboutUsDropdown = route => expanded === route.name && (
     <div className='nav-dropdown'>
       <img
         alt='dropdown-arrow'
@@ -113,6 +113,31 @@ const Navigator = ({
       </div>
     </div>
   );
+
+  const renderSpecialismDropdown = route => expanded === route.name && (
+    <div className={cx('nav-dropdown', route.name.toLowerCase())}>
+      <img
+        alt='dropdown-arrow'
+        src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+      />
+      <div className='nav-dropdown-list'>
+        {groupSpecialisms(route.subLinks).map((group, i) => (
+          <div key={i} className='nav-dropdown-list-group'>
+            <h6>{group.alphabet}</h6>
+            {group.specialisms.map((subLink, i) => (
+              <Link key={i} to={subLink.path} onClick={hideSidebar}>
+                {subLink.name}
+              </Link>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderDropdown = route => expanded === 'About us'
+    ? renderAboutUsDropdown(route)
+    : renderSpecialismDropdown(route);
 
   const renderNavList = () => (
     <div className='nav-list'>

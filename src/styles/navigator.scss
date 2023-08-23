@@ -250,7 +250,7 @@ div:not(.content) > .header {
 
     img {
       position: absolute;
-      right: 3.25rem;
+      right: 3.5rem;
       top: -0.75rem;
       width: 1.75rem;
     }
@@ -269,6 +269,55 @@ div:not(.content) > .header {
       font-style: normal;
       font-weight: 800;
       line-height: normal;
+    }
+  }
+}
+
+.header-nav .nav-dropdown {
+  &.specialisms, &.sectors {
+    justify-content: flex-start;
+    right: -8rem;
+    width: 44rem;
+
+    > img {
+      right: 12rem;
+    }
+
+    .nav-dropdown-list {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2rem;
+      height: 19.5rem;
+
+      h6 {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      a {
+        font-size: 1rem;
+        width: 12rem;
+      }
+
+      .nav-dropdown-list-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  &.sectors {
+    width: 57rem;
+
+    > img {
+      right: 10.5rem;
+    }
+
+    .nav-dropdown-list {
+      height: 29.5rem
     }
   }
 }
@@ -374,6 +423,17 @@ div:not(.content) > .header {
       color: #310A31;
       font-size: 1rem;
       text-overflow: ellipsis;
+    }
+
+    .nav-dropdown-list-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    h6 {
+      display: none;
+      margin-bottom: 0;
     }
   }
 }

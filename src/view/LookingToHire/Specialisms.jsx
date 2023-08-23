@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {isHuddle, groupSpecialisms} from '../../services/helper';
 import SearchBar from '../shared/SearchBar';
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasSpecialismsArrowIcon from '../../static/unitas/request-arrow.svg';
@@ -16,25 +16,6 @@ const Specialisms = props => {
   const specialismArrow = isHuddle ? ArrowIcon : UnitasSpecialismsArrowIcon;
   const sectorArrow = isHuddle ? ArrowIcon : UnitasSectorsArrowIcon;
   const arrowIcon = type === 'specialisms' ? specialismArrow : sectorArrow;
-
-  const groupSpecialisms = specialisms => {
-    let data = specialisms.reduce((r, e) => {
-
-      // get first letter of name of current element
-      let alphabet = e.name[0];
-
-      // if there is no property in accumulator with this letter create it
-      if (!r[alphabet]) r[alphabet] = { alphabet, specialisms: [e] }
-
-      // if there is push current element to children array for that letter
-      else r[alphabet].specialisms.push(e);
-
-      // return accumulator
-      return r;
-    }, {});
-
-    return Object.values(data);
-  }
 
   return (
     <div className={`specialisms ${type}`}>
