@@ -65,7 +65,7 @@ export const LEADERS = [
     img: ScottImg,
     name: 'Scott Darby',
     role: 'Role',
-    description: 'Descripton',
+    description: 'Scott has been in recruitment for over a decade, having built a very well known and respected personal brand within a multitude of specialist sectors and communities. Scott has led large scale recruitment campaigns and has also supported multiple FTSE listed, PE and VC backed C-suites on various executive hires on a retained basis. Scott is a self-confessed workaholic, and so the little down time he does get is spent with his partner, family and friends – with the odd game of golf thrown in too!',
     number: '+44 7360 543515',
     email: leaderEmails[NAMESPACE].scott,
     linkedin: 'https://www.linkedin.com/in/scott-darby-738b7560/',
