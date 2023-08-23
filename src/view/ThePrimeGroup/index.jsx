@@ -1,10 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {NAMESPACE} from '../../data/constants';
+import {
+  huddleHref,
+  NAMESPACE,
+  spectrumHref,
+  unitasHref,
+} from '../../data/constants'
+import {isHuddle} from '../../services/helper';
 import Logo from '../../static/huddle/the-prime-group.svg';
 import Huddle from '../../static/huddle/prime-huddle.svg';
 import Unitas from '../../static/huddle/prime-unitas.svg';
 import Spectrum from '../../static/huddle/prime-spectrum.svg';
+
+const LinkHref = props => (
+  <a {...props} target='_blank' rel='noreferrer'>
+    {props.children}
+  </a>
+);
 
 const ThePrimeGroup = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -36,9 +49,27 @@ const ThePrimeGroup = () => {
                 </p>
               </div>
               <div className='logos'>
-                <img alt='prime-huddle' src={Huddle} />
-                <img alt='prime-unitas' src={Unitas} />
-                <img alt='prime-spectrum' src={Spectrum} />
+                {isHuddle ? (
+                  <Link to='/'>
+                    <img alt='prime-huddle' src={Huddle} />
+                  </Link>
+                ) : (
+                  <LinkHref href={huddleHref}>
+                    <img alt='prime-huddle' src={Huddle} />
+                  </LinkHref>
+                )}
+                {!isHuddle ? (
+                  <Link to='/'>
+                    <img alt='prime-unitas' src={Unitas} />
+                  </Link>
+                ) : (
+                  <LinkHref href={unitasHref}>
+                    <img alt='prime-unitas' src={Unitas} />
+                  </LinkHref>
+                )}
+                <a href={spectrumHref} target='_blank' rel='noreferrer'>
+                  <img alt='prime-spectrum' src={Spectrum} />
+                </a>
               </div>
             </div>
           </div>

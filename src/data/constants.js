@@ -98,3 +98,7 @@ export const SECTORS = {
 
   ]
 };
+
+export const huddleHref = 'https://www.huddlesearch.com/';
+export const unitasHref = 'https://www.unitastalent.com/';
+export const spectrumHref = 'https://spectrum-search.com/';
