@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle, groupSpecialisms} from '../../services/helper';
-import SearchBar from '../shared/SearchBar';
+// import SearchBar from '../shared/SearchBar';
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasSpecialismsArrowIcon from '../../static/unitas/request-arrow.svg';
 import UnitasSectorsArrowIcon from '../../static/unitas/black-arrow.svg';
@@ -34,7 +34,7 @@ const Specialisms = props => {
                 </p>
               </div>
             </div>
-            <SearchBar placeholder={`Search ${type}...`} />
+            {/*<SearchBar placeholder={`Search ${type}...`} />*/}
             <div className='specialism-list-container'>
               <div className='specialism-list'>
                 {groupSpecialisms(specialisms).map((group, i) => (

@@ -5,6 +5,7 @@ import {NAMESPACE} from '../../data/constants';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
 import Loader from './Loader';
+import {HashLink} from 'react-router-hash-link'
 
 const SpecialismHero = props => {
   const {
@@ -49,9 +50,9 @@ const SpecialismHero = props => {
                 </p>
                 {button && (
                   <div className='btn-container'>
-                    <Link to='/jobs' className='btn btn-secondary'>
+                    <HashLink to='/contact-us#contact' className='btn btn-secondary'>
                       {t(`${NAMESPACE}:specialismHero:button`)}
-                    </Link>
+                    </HashLink>
                   </div>
                 )}
               </div>

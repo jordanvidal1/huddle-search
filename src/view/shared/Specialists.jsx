@@ -76,13 +76,15 @@ const Specialists = props => {
                       </p>
                     </div>
                     <div className='specialist-contact'>
-                      <div>
-                        <img
-                          alt='phone-number-icon'
-                          src={phoneIcon}
-                        />
-                        <span>{number}</span>
-                      </div>
+                      {number && (
+                        <div>
+                          <img
+                            alt='phone-number-icon'
+                            src={phoneIcon}
+                          />
+                          <span>{number}</span>
+                        </div>
+                      )}
                       <div>
                         <a href={`mailto:${email}`}>
                           <img

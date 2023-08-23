@@ -76,7 +76,7 @@ export const LEADERS = [
     name: 'Peter Wood',
     role: 'Co-Founder & CTO',
     description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at Huddle.',
-    number: '+44 7830 319093',
+    // number: '+44 7830 319093',
     email: leaderEmails[NAMESPACE].pete,
     linkedin: 'https://www.linkedin.com/in/peter-wood-632058151/',
     login: 'pw'
@@ -247,3 +247,4 @@ export const SECTORS = {
 export const huddleHref = 'https://www.huddlesearch.com/';
 export const unitasHref = 'https://www.unitastalent.com/';
 export const spectrumHref = 'https://spectrum-search.com/';
+export const huddleLinkedIn = 'https://www.linkedin.com/company/huddlesearch'

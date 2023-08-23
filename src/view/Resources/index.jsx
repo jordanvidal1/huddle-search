@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Grid} from '@material-ui/core';
 import useBlog from '../../services/hooks/useBlog';
-import SearchBar from '../shared/SearchBar';
+// import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
 import Loader from '../shared/Loader';
 
@@ -27,7 +27,7 @@ const Resources = () => {
                 Browse all resources
               </h2>
             </div>
-            <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
+            {/*<SearchBar placeholder='Search by title, keyword, specialism or sector...' />*/}
             {/* todo: mobile placeholder */}
             {/* todo: sort by / filters */}
             <div className='resources-grid'>

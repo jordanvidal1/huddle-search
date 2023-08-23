@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {NAMESPACE} from '../../data/constants';
+import {huddleLinkedIn, NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import Input from '../shared/Input';
 
@@ -67,7 +67,7 @@ const FollowUs = () => {
                 <div className='action-container'>
                   <div className='socials'>
                     <div>
-                      <a href='#' rel='noreferrer' target='_blank'>
+                      <a href={huddleLinkedIn} rel='noreferrer' target='_blank'>
                         <img
                           alt='linkedin'
                           src={isHuddle ? LinkedIn : UnitasLinkedIn}

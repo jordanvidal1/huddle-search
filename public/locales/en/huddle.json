@@ -10,11 +10,11 @@
       "button": "Our story"
     },
     "lookingForAJob": {
-      "desc": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "desc": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
       "link": "Find out more",
       "roles": {
         "title": "Featured roles",
-        "button": "Browse all jobs"
+        "button": "Talk to us"
       }
     }
   },
@@ -139,12 +139,12 @@
     "desc": {
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
       "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "lookingForAJob": "Transform your tech career with Huddle. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "lookingForAJob": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
     },
-    "button": "Browse all jobs"
+    "button": "Talk to us"
   },
   "leadershipHero": {
     "leadershipTeam": {
@@ -243,7 +243,7 @@
       "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
       "executiveTitle": "Phone",
       "executiveText": "Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.",
-      "phoneNumber": "+44 0000 000 000"
+      "phoneNumber": "+44 20 40586 4093"
     },
     "email": {
       "title": "Send us an email",
@@ -257,7 +257,7 @@
     "phone": {
       "title": "Phone",
       "text": "Mon-Fri from 8am to 5pm.",
-      "phoneNumber": "+44 0000 000 000"
+      "phoneNumber": "+44 20 40586 4093"
     },
     "email": {
       "title": "Email",
@@ -470,11 +470,14 @@
     "title": "Because every search starts with a",
     "lookingToHire": {
       "title": "Looking to hire?",
-      "desc": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape."
+      "desc": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
+      "button1": "Submit new role",
+      "button2": "Talk to us"
     },
     "lookingForAJob": {
       "title": "Looking for a job?",
-      "desc": "Browse our exciting open roles, find opportunities that meet your aspirations, and apply online."
+      "desc": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
+      "button": "Talk to us"
     },
     "slogan": "Because every search starts with a huddle",
     "email": "hello@huddlesearch.com",

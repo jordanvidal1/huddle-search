@@ -101,14 +101,11 @@ const OriginStory = () => {
                   {t(`${NAMESPACE}:originStory:part7:text`)}
                 </p>
               </div>
-              <div className='img-container'>
-                <div>
-                  <img alt='specialist-img' />
-                </div>
-                <span>
-                Lorem ipsum dolor sit amet consectetur.
-              </span>
-              </div>
+              {/*<div className='img-container'>*/}
+              {/*  <div>*/}
+              {/*    <img alt='specialist-img' />*/}
+              {/*  </div>*/}
+              {/*</div>*/}
             </div>
             <img
               alt='logo'

@@ -3,7 +3,12 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
-import {NAMESPACE, SECTORS, SPECIALISMS} from '../../data/constants';
+import {
+  huddleLinkedIn,
+  NAMESPACE,
+  SECTORS,
+  SPECIALISMS,
+} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
@@ -138,10 +143,10 @@ const Footer = ({
                   </div>
                   <div className='btn-container'>
                     <HashLink to='/contact-us#contact' className="btn btn-secondary">
-                      Submit new role
+                      {t(`${NAMESPACE}:footer:lookingToHire:button1`)}
                     </HashLink>
                     <HashLink to='/contact-us#contact' className="btn">
-                      Talk to us
+                      {t(`${NAMESPACE}:footer:lookingToHire:button2`)}
                     </HashLink>
                   </div>
                 </div>
@@ -156,11 +161,11 @@ const Footer = ({
                       {t(`${NAMESPACE}:footer:lookingForAJob:desc`)}
                     </p>
                   </div>
-                  {/*<div className='btn-container'>*/}
-                  {/*  <Link to='/jobs' className="btn btn-secondary">*/}
-                  {/*    Browse all jobs*/}
-                  {/*  </Link>*/}
-                  {/*</div>*/}
+                  <div className='btn-container'>
+                    <Link to='/jobs' className="btn btn-secondary">
+                      {t(`${NAMESPACE}:footer:lookingForAJob:button`)}
+                    </Link>
+                  </div>
                 </div>
               </Grid>
               <Grid item xs={12}>
@@ -181,7 +186,7 @@ const Footer = ({
                             alt='phone-number'
                             src={isHuddle ? Phone : UnitasPhone}
                           />
-                          <span>+44 0000 000 000</span>
+                          <span>+44 20 40586 4093</span>
                         </div>
                         <div>
                           <img
@@ -203,7 +208,7 @@ const Footer = ({
                         </div>
                       </div>
                       <div className='footer-socials'>
-                        <a href='#' rel='noreferrer' target='_blank'>
+                        <a href={huddleLinkedIn} rel='noreferrer' target='_blank'>
                           <img
                             alt='linkedin'
                             src={isHuddle ? LinkedIn : UnitasLinkedIn}

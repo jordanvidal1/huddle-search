@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import SearchBar from './SearchBar';
+// import SearchBar from './SearchBar';
 import Roles from './Roles';
 
 const SearchRoles = () =>  (
@@ -14,7 +14,7 @@ const SearchRoles = () =>  (
                 <h2>
                   Search open roles
                 </h2>
-                <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
+                {/*<SearchBar placeholder='Search by title, keyword, specialism or sector...' />*/}
                 {/* todo: mobile placeholder */}
               </div>
             </Grid>

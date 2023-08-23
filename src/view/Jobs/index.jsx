@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import SearchBar from '../shared/SearchBar';
+// import SearchBar from '../shared/SearchBar';
 import Role from '../shared/Role';
 
 const Jobs = ({
@@ -15,7 +15,7 @@ const Jobs = ({
               Browse all jobs
             </h2>
           </div>
-          <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
+          {/*<SearchBar placeholder='Search by title, keyword, specialism or sector...' />*/}
           {/* todo: mobile placeholder */}
           {/* todo: sort by / filters */}
           <div className='jobs-grid'>

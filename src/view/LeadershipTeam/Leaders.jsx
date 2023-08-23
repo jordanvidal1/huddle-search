@@ -38,13 +38,15 @@ const Leaders = () => (
                     <p>{description}</p>
                   </div>
                   <div className='leader-contact'>
-                    <div>
-                      <img
-                        alt='phone-number-icon'
-                        src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
-                      />
-                      <span>{number}</span>
-                    </div>
+                    {number && (
+                      <div>
+                        <img
+                          alt='phone-number-icon'
+                          src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
+                        />
+                        <span>{number}</span>
+                      </div>
+                    )}
                     <div>
                       <a href={`mailto:${email}`}>
                         <img
