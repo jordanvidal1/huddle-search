@@ -13,13 +13,13 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 4rem;
+            max-width: 45.0625rem;
         }
 
         .text {
             display: flex;
             align-self: flex-start;
             margin-top: 2rem;
-            max-width: 45.0625rem;
 
             p {
                 color: #FFF;
@@ -145,20 +145,16 @@
     > .specialists {
         background: #F9F9F9;
 
-        .title {
-            h2 {
-                color: #1A1A1A;
-                font-family: Playfair Display;
-                font-weight: 400;
-            }
+        .title h2 {
+            color: #1A1A1A;
+            font-family: Playfair Display;
+            font-weight: 400;
         }
 
-        .text {
-            p {
-                color: #1A1A1A;
-                font-family: Plus Jakarta Sans;
-                font-weight: 400;
-            }
+        .text p {
+            color: #1A1A1A;
+            font-family: Plus Jakarta Sans;
+            font-weight: 400;
         }
 
         .specialists-container {

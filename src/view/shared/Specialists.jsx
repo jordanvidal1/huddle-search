@@ -35,7 +35,10 @@ const Specialists = props => {
             <div className='text-container'>
               <div className='title'>
                 <h2>
-                  {t(`${NAMESPACE}:specialists:${type}:title`, {name})}
+                  {t(`${NAMESPACE}:specialists:${type}:title`, {
+                    name,
+                    interpolation: {escapeValue: false}
+                  })}
                 </h2>
               </div>
               <div className='text'>
