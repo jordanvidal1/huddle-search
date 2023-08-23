@@ -5,7 +5,7 @@ import LookingForAJob from './LookingForAJob';
 import WorkForUs from '../shared/WorkForUs';
 
 import LookingToHire from '../shared/LookingToHire';
-import SearchRoles from '../shared/SearchRoles';
+// import SearchRoles from '../shared/SearchRoles';
 import ExecutiveSearch from '../shared/ExecutiveSearch';
 import EmbeddedTalent from '../shared/EmbeddedTalent';
 
@@ -16,7 +16,7 @@ const Home = () => (
       Looking to <a>hire?</a>
     </LookingToHire>
     <LookingForAJob />
-    <SearchRoles />
+    {/*<SearchRoles />*/}
     <ExecutiveSearch />
     <EmbeddedTalent />
     <WorkForUs home />

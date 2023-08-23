@@ -54,7 +54,7 @@ export const LEADERS = [
   {
     img: CraigImg,
     name: 'Craig Oliver',
-    role: NAMESPACE === 'huddle' ? 'CEO' : 'CCO',
+    role: NAMESPACE === 'huddle' ? 'Co-Founder & CEO' : 'Co-Founder & Commercial Director',
     description: 'Craig is a proven and highly experienced recruitment entrepreneur having already founded a Global Web3 specialist recruitment agency. With over a decade of recruitment experience, guiding thousands of candidates’ careers and developing and growing many businesses by strategically building highly effective teams at scale and pace. When not scaling tech businesses, he loves spending time with his wife and two sons (ideally on holiday!) as well as getting as much time on the golf course as possible.',
     number: '+44 7893 944113',
     email: leaderEmails[NAMESPACE].craig,
@@ -64,7 +64,7 @@ export const LEADERS = [
   {
     img: ScottImg,
     name: 'Scott Darby',
-    role: 'Role',
+    role: NAMESPACE === 'huddle' ? 'Co-Founder & CCO' : 'Co-Founder & Managing Director',
     description: 'Scott has been in recruitment for over a decade, having built a very well known and respected personal brand within a multitude of specialist sectors and communities. Scott has led large scale recruitment campaigns and has also supported multiple FTSE listed, PE and VC backed C-suites on various executive hires on a retained basis. Scott is a self-confessed workaholic, and so the little down time he does get is spent with his partner, family and friends – with the odd game of golf thrown in too!',
     number: '+44 7360 543515',
     email: leaderEmails[NAMESPACE].scott,
@@ -74,8 +74,8 @@ export const LEADERS = [
   {
     img: PeteImg,
     name: 'Peter Wood',
-    role: 'Role',
-    description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalyzed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionizes the client and candidate experience here at [company name]. Beyond his professional achievements, Peter is a sought-after consultant at various companies, further solidifying his position as a thought leader in the tech space.',
+    role: 'Co-Founder & CTO',
+    description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at Huddle.',
     number: '+44 7830 319093',
     email: leaderEmails[NAMESPACE].pete,
     linkedin: 'https://www.linkedin.com/in/peter-wood-632058151/',

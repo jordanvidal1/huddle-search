@@ -10,6 +10,7 @@ const SpecialismHero = props => {
   const {
     children,
     type,
+    button,
     contact,
     executive,
     empty
@@ -61,7 +62,7 @@ const SpecialismHero = props => {
                     : t(`${NAMESPACE}:specialismHero:desc:${type}`)
                   }
                 </p>
-                {empty && (
+                {button && (
                   <div className='btn-container'>
                     <Link to='/jobs' className='btn btn-secondary'>
                       {t(`${NAMESPACE}:specialismHero:button`)}

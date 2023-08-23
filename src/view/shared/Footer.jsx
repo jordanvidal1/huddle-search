@@ -156,11 +156,11 @@ const Footer = ({
                       {t(`${NAMESPACE}:footer:lookingForAJob:desc`)}
                     </p>
                   </div>
-                  <div className='btn-container'>
-                    <Link to='/jobs' className="btn btn-secondary">
-                      Browse all jobs
-                    </Link>
-                  </div>
+                  {/*<div className='btn-container'>*/}
+                  {/*  <Link to='/jobs' className="btn btn-secondary">*/}
+                  {/*    Browse all jobs*/}
+                  {/*  </Link>*/}
+                  {/*</div>*/}
                 </div>
               </Grid>
               <Grid item xs={12}>

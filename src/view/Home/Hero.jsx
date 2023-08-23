@@ -32,7 +32,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className='btn-container'>
-                <Link to='/jobs' className="btn btn-primary">
+                <Link to='/our-story' className="btn btn-primary">
                   {t(`${NAMESPACE}:home:hero:button`)}
                 </Link>
               </div>

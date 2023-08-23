@@ -239,16 +239,12 @@
         }
 
         @include media-breakpoint-down(sm) {
-            .text-container {
-                > h5 {
-                    font-size: 1.25rem;
-                }
+            .text-container > h5 {
+                font-size: 1.25rem;
             }
 
-            .title {
-                h1 {
-                    font-size: 3rem;
-                }
+            .title h1 {
+                font-size: 3rem;
             }
 
             .info-container {
@@ -286,12 +282,16 @@
         background: url('../static/huddle/work-for-us.png') top right no-repeat #FFF;
         background-size: 55%;
 
-        .text-container {
-            margin-bottom: 8rem;
+        .text-container > h5 {
+            color: #310A31;
+        }
 
-            > h5 {
-                color: #310A31;
-            }
+        .roles-box {
+            margin-top: 8rem;
+        }
+
+        .visit-grid-container {
+            margin-top: 7.25rem;
         }
 
         .title {
@@ -311,22 +311,22 @@
         @include media-breakpoint-down(md) {
             background: #FFF;
 
-            .text-container {
-                margin-bottom: 3rem;
+            .roles-box {
+                margin-top: 3rem;
             }
 
-            .title {
-                h1 {
-                    font-size: 4rem;
-                }
+            .visit-grid-container {
+                margin-top: 2.25rem;
+            }
+
+            .title h1 {
+                font-size: 4rem;
             }
         }
 
         @include media-breakpoint-down(sm) {
-            .title {
-                h1 {
-                    font-size: 3rem;
-                }
+            .title h1 {
+                font-size: 3rem;
             }
         }
     }

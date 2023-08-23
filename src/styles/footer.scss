@@ -346,8 +346,6 @@
                 flex-direction: column;
 
                 .footer-legal-links {
-                    align-items: flex-start;
-                    align-self: flex-start;
                     flex-direction: column;
                     gap: 1rem;
                 }
@@ -360,6 +358,7 @@
 
                 .footer-copyright {
                     margin-top: 1rem;
+                    text-align: center;
                 }
             }
         }

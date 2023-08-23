@@ -2,7 +2,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
-import Roles from './Roles';
+// import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 
 import Signature1 from '../../static/huddle/signature-1.svg';
@@ -13,7 +13,7 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
-import WhiteArrow from '../../static/unitas/arrow-white.svg';
+// import WhiteArrow from '../../static/unitas/arrow-white.svg';
 
 const leadershipComponent = t => (
   <div className='info-container'>
@@ -133,17 +133,17 @@ const LeadershipHero = props => {
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const siteName = isHuddle ? 'Huddle' : 'Unitas';
+  // const siteName = isHuddle ? 'Huddle' : 'Unitas';
 
   const components = {
     leadershipTeam: <div />,
     ourStory: ourStoryComponent(t),
     ourProcess: ourProcessComponent(t),
-    workForUs: Roles({
-      children: `Open roles at ${siteName}`,
-      name: siteName,
-      icon: WhiteArrow
-    }),
+    // workForUs: Roles({
+    //   children: `Open roles at ${siteName}`,
+    //   name: siteName,
+    //   icon: WhiteArrow
+    // }),
     contactUs: ContactContainer(t),
     executiveSearch: ourProcessComponent(t)
   };

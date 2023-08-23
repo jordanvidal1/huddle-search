@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Grid} from '@material-ui/core';
+// import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../../data/constants';
 import {isHuddle} from '../../../services/helper';
-import FeaturedRole from './FeaturedRole';
+// import FeaturedRole from './FeaturedRole';
 
 import ArrowIcon from '../../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
-import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
+// import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
 
 const LookingForAJob = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -35,31 +35,31 @@ const LookingForAJob = () => {
               </Link>
               </p>
             </div>
-            <div className='featured-roles'>
-              <div className='featured-roles-container'>
-                <div className='subtitle-container'>
-                  <h5>
-                    {t(`${NAMESPACE}:home:lookingForAJob:roles:title`)}
-                  </h5>
-                  <div className='link-container'>
-                    <Link to='/jobs'>
-                      {t(`${NAMESPACE}:home:lookingForAJob:roles:button`)}
-                      <img
-                        alt='arrow-icon'
-                        src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
-                      />
-                    </Link>
-                  </div>
-                </div>
-                <div className='roles'>
-                  <Grid container spacing={2}>
-                    <FeaturedRole />
-                    <FeaturedRole />
-                    <FeaturedRole />
-                  </Grid>
-                </div>
-              </div>
-            </div>
+            {/*<div className='featured-roles'>*/}
+            {/*  <div className='featured-roles-container'>*/}
+            {/*    <div className='subtitle-container'>*/}
+            {/*      <h5>*/}
+            {/*        {t(`${NAMESPACE}:home:lookingForAJob:roles:title`)}*/}
+            {/*      </h5>*/}
+            {/*      <div className='link-container'>*/}
+            {/*        <Link to='/jobs'>*/}
+            {/*          {t(`${NAMESPACE}:home:lookingForAJob:roles:button`)}*/}
+            {/*          <img*/}
+            {/*            alt='arrow-icon'*/}
+            {/*            src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}*/}
+            {/*          />*/}
+            {/*        </Link>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*    <div className='roles'>*/}
+            {/*      <Grid container spacing={2}>*/}
+            {/*        <FeaturedRole />*/}
+            {/*        <FeaturedRole />*/}
+            {/*        <FeaturedRole />*/}
+            {/*      </Grid>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>
