@@ -86,19 +86,14 @@ export const LEADERS = [
 export const SPECIALISMS = {
   huddle: [
     {
-      name: 'Software & Engineering',
-      path: '/specialisms/software-and-engineering',
-      icon: HuddleSoftware
-    },
-    {
       name: 'Architecture',
       path: '/specialisms/architecture',
       icon: HuddleArchitecture
     },
     {
-      name: 'DevOps',
-      path: '/specialisms/devops',
-      icon: HuddleDevOps
+      name: 'Change & Transformation',
+      path: '/specialisms/change-and-transformation',
+      icon: HuddleChange
     },
     {
       name: 'Cloud, Infrastructure & Networks',
@@ -116,25 +111,30 @@ export const SPECIALISMS = {
       icon: HuddleData
     },
     {
-      name: 'ERP, CRM & HR Systems',
-      path: '/specialisms/erp-crm-and-hr-systems',
-      icon: HuddleERP
-    },
-    {
-      name: 'Change & Transformation',
-      path: '/specialisms/change-and-transformation',
-      icon: HuddleChange
-    },
-    {
       name: 'Design (UI/UX)',
       path: '/specialisms/design',
       icon: HuddleDesign
+    },
+    {
+      name: 'DevOps',
+      path: '/specialisms/devops',
+      icon: HuddleDevOps
+    },
+    {
+      name: 'ERP, CRM & HR Systems',
+      path: '/specialisms/erp-crm-and-hr-systems',
+      icon: HuddleERP
     },
     {
       name: 'Product Management',
       path: '/specialisms/product-management',
       icon: HuddleProduct
     },
+    {
+      name: 'Software & Engineering',
+      path: '/specialisms/software-and-engineering',
+      icon: HuddleSoftware
+    }
   ],
   unitas: [
 

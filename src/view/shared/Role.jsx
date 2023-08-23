@@ -21,7 +21,6 @@ const Role = props => {
 
   return (
     <Grid item xs={12} sm={6} md={3} className='role-grid-item'>
-      {/* todo: different widths in different components */}
       <div key={i} className='role'>
         <div className='role-container'>
           <div className={classNames}>

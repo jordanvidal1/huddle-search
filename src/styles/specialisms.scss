@@ -13,6 +13,10 @@
                 color: #310A31;
             }
 
+            h5 {
+                color: #7E8192;
+            }
+
             .text {
                 p {
                     color: #7E8192;
@@ -21,8 +25,11 @@
 
             .specialism-list-container {
                 .specialism-list {
+                    height: 41rem;
+
                     a {
                         color: #310A31;
+                        width: 15.5rem;
                     }
                 }
             }
@@ -47,13 +54,27 @@
         }
 
         .specialism-list-container {
-            margin-top: 4rem;
+            margin: 3rem 2rem 0;
 
             .specialism-list {
                 align-items: flex-start;
                 display: flex;
+                flex-direction: column;
                 flex-wrap: wrap;
                 gap: 2rem;
+                height: 24.75rem;
+
+                h5 {
+                    font-weight: 600;
+                    margin-top: 1rem;
+                }
+
+                > div {
+                    align-items: flex-start;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
 
                 a {
                     align-items: center;
@@ -61,6 +82,8 @@
                     display: flex;
                     font-size: 1.25rem;
                     font-weight: 800;
+                    justify-content: space-between;
+                    width: 22rem;
                 }
 
                 img {

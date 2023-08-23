@@ -21,7 +21,6 @@ const Resources = props => {
           <img alt='arrow' src={isHuddle ? ArrowIcon : UnitasArrowIcon} />
         </Link>
       </div>
-      {/* todo: slider */}
       <Grid container spacing={3} className='resources-container'>
         {resources?.length > 0 && resources.slice(0, 12).map((resource, i) => (
           <Resource i={i} {...resource} />

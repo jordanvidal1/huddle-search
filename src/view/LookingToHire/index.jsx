@@ -1,10 +1,11 @@
 import React from 'react';
 
-import ContractHires from './ContractHires';
+import {NAMESPACE, SECTORS, SPECIALISMS} from '../../data/constants';
 
 import Hero from '../shared/SpecialismHero';
 import Specialisms from './Specialisms';
 import PermanentHires from '../shared/LookingToHire';
+import ContractHires from './ContractHires';
 import ExecutiveSearch from '../shared/ExecutiveSearch';
 import EmbeddedTalent from '../shared/EmbeddedTalent';
 import OurStory from '../shared/OurStory';
@@ -15,8 +16,8 @@ const LookingToHire = () => (
     <Hero type='lookingToHire'>
       Looking to <a>hire?</a>
     </Hero>
-    <Specialisms type='specialisms' />
-    <Specialisms type='sectors' />
+    <Specialisms type='specialisms' specialisms={SPECIALISMS[NAMESPACE]} />
+    <Specialisms type='sectors' specialisms={SECTORS[NAMESPACE]} />
     <PermanentHires type='lookingToHire'>
       <a>Permanent</a> hires to transform your team
     </PermanentHires>

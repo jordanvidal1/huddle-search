@@ -17,6 +17,27 @@ const Specialisms = props => {
   const sectorArrow = isHuddle ? ArrowIcon : UnitasSectorsArrowIcon;
   const arrowIcon = type === 'specialisms' ? specialismArrow : sectorArrow;
 
+  const groupSpecialisms = specialisms => {
+    let data = specialisms.reduce((r, e) => {
+
+      // get first letter of name of current element
+      let alphabet = e.name[0];
+
+      // if there is no property in accumulator with this letter create it
+      if (!r[alphabet]) r[alphabet] = { alphabet, specialisms: [e] }
+
+      // if there is push current element to children array for that letter
+      else r[alphabet].specialisms.push(e);
+
+      // return accumulator
+      return r;
+    }, {});
+
+    return Object.values(data);
+  }
+
+  console.log(groupSpecialisms(specialisms));
+
   return (
     <div className={`specialisms ${type}`}>
       <div className='container'>
@@ -35,17 +56,18 @@ const Specialisms = props => {
               </div>
             </div>
             <SearchBar placeholder={`Search ${type}...`} />
-            {/* todo: mobile placeholder */}
             <div className='specialism-list-container'>
               <div className='specialism-list'>
-                {/*<h5>*/}
-                {/*  A*/}
-                {/*</h5>*/}
-                {specialisms.map((specialism, i) => (
-                  <Link key={i} to={specialism.path}>
-                    {specialism.name}
-                    <img alt='arrow-icon' src={arrowIcon} />
-                  </Link>
+                {groupSpecialisms(specialisms).map((group, i) => (
+                  <div key={i}>
+                    <h5>{group.alphabet}</h5>
+                    {group.specialisms.map((specialism, i) => (
+                      <Link key={i} to={specialism.path}>
+                        {specialism.name}
+                        <img alt='arrow-icon' src={arrowIcon} />
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
@@ -57,20 +79,3 @@ const Specialisms = props => {
 }
 
 export default Specialisms;
-
-Specialisms.defaultProps = {
-  specialisms: [
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-    {name: 'Specialism', path: ''},
-  ]
-};
