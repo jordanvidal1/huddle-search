@@ -36,8 +36,6 @@ const Specialisms = props => {
     return Object.values(data);
   }
 
-  console.log(groupSpecialisms(specialisms));
-
   return (
     <div className={`specialisms ${type}`}>
       <div className='container'>

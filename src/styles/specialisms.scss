@@ -93,13 +93,35 @@
             }
         }
 
+        @include media-breakpoint-down(lg) {
+            .specialism-list-container .specialism-list {
+                height: 41rem;
+            }
+
+            &.sectors .specialism-list-container .specialism-list {
+                height: 54rem;
+            }
+        }
+
         @include media-breakpoint-down(md) {
             .text {
                 margin-bottom: 3rem;
             }
 
             .specialism-list-container {
-                margin-top: 3rem;
+                margin: 3rem 0 0;
+
+                .specialism-list {
+                    height: unset;
+
+                    h5 {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            &.sectors .specialism-list-container .specialism-list {
+                height: unset;
             }
         }
 

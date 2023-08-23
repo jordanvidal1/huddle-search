@@ -132,7 +132,7 @@
             padding-top: 7rem;
             position: relative;
 
-            img {
+            > img {
                 border-radius: 62.5rem;
                 border: 6px solid #FF958C;
                 overflow: visible;
@@ -147,6 +147,10 @@
                 color: #310A31;
                 position: relative;
                 z-index: 2;
+            }
+
+            .loader {
+                justify-content: flex-start;
             }
         }
 
@@ -166,7 +170,8 @@
             .title {
                 padding-top: 6.5rem;
 
-                img {
+                > img {
+                    left: unset;
                     right: 0;
                 }
             }
@@ -174,7 +179,7 @@
 
         @include media-breakpoint-down(sm) {
             .title {
-                img {
+                > img {
                     padding: 2rem;
                     width: 10rem;
                 }

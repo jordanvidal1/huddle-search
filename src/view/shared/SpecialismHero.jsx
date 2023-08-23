@@ -4,6 +4,7 @@ import {useTranslation} from 'react-i18next';
 import {NAMESPACE, SECTORS, SPECIALISMS} from '../../data/constants';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
+import Loader from './Loader';
 
 const SpecialismHero = props => {
   const {
@@ -14,8 +15,8 @@ const SpecialismHero = props => {
     empty
   } = props;
 
-  const [pathname, setPathname] = useState('/');
-  const [slug, setSlug] = useState('/');
+  const [pathname, setPathname] = useState('');
+  const [slug, setSlug] = useState('');
   const [specialism, setSpecialism] = useState();
 
   const location = useLocation();
@@ -34,6 +35,13 @@ const SpecialismHero = props => {
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
+  const title = pathname !== ''
+    ? t(`${NAMESPACE}:specialismHero:title:${pathname}`, {
+      name: specialism?.name,
+      interpolation: {escapeValue: false}
+    })
+    : <Loader />
+
   return (
     <div className='specialism-hero'>
       <div className='container'>
@@ -43,12 +51,7 @@ const SpecialismHero = props => {
               <div className='title'>
                 {specialism && <img alt='specialism-icon' src={specialism.icon}/>}
                 <h1>
-                  {children
-                    || t(`${NAMESPACE}:specialismHero:title:${pathname}`, {
-                      name: specialism?.name,
-                      interpolation: {escapeValue: false}
-                    })
-                  }
+                  {children || title}
                 </h1>
               </div>
               <div className='text'>
