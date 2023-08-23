@@ -83,13 +83,9 @@
                 justify-content: space-between;
             }
 
-            .info-description {
-                margin-bottom: 1.5rem;
-
-                p {
-                    font-size: 1.5rem;
-                    line-height: 2.375rem;
-                }
+            .info-description p {
+                font-size: 1.5rem;
+                line-height: 2.375rem;
             }
 
             .info-signatures {
@@ -97,7 +93,7 @@
                 display: flex;
                 gap: 4rem;
                 justify-content: center;
-                margin: 0 auto;
+                margin: 1.5rem auto 0;
 
                 .info-signature {
                     align-items: flex-start;
@@ -210,12 +206,12 @@
                     }
                 }
 
-                .info-description {
-                    margin-bottom: 2rem;
+                .info-description p {
+                    line-height: 2.125rem;
+                }
 
-                    p {
-                        line-height: 2.125rem;
-                    }
+                .info-signatures {
+                    margin-top: 2rem;
                 }
 
                 .info-calculation {

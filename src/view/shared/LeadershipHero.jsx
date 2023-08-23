@@ -73,17 +73,17 @@ const ourStoryComponent = t => (
           {t(`${NAMESPACE}:leadershipHero:ourStory:info:text`)}
         </p>
       </div>
-      <div className='info-signatures'>
-        {signatures.map((signature, i) => (
-          <div key={i} className='info-signature'>
-            <img alt='signature-img' src={signature.img} />
-            <div>
-              <h6>{signature.name}</h6>
-              <span>{signature.role}</span>
-            </div>
-          </div>
-        ))}
-      </div>
+      {/*<div className='info-signatures'>*/}
+      {/*  {signatures.map((signature, i) => (*/}
+      {/*    <div key={i} className='info-signature'>*/}
+      {/*      <img alt='signature-img' src={signature.img} />*/}
+      {/*      <div>*/}
+      {/*        <h6>{signature.name}</h6>*/}
+      {/*        <span>{signature.role}</span>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  ))}*/}
+      {/*</div>*/}
     </div>
   </div>
 );
