@@ -9,7 +9,13 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        min-height: 41.875rem;
         padding: 3rem 4rem;
+
+        .loader {
+            align-self: center;
+            flex-grow: 1;
+        }
     }
 
     .resources-header {
@@ -48,6 +54,7 @@
     @include media-breakpoint-down(md) {
         .resources-box {
             border-radius: 2rem;
+            min-height: 41.125rem;
             padding: 2rem 0.75rem;
 
             h3 {
