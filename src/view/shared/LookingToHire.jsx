@@ -5,6 +5,8 @@ import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
+import HomeHero from '../../static/huddle/home-looking-to-hire.png';
+import PermanentHero from '../../static/huddle/permanent-hires.png';
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
@@ -15,11 +17,16 @@ const LookingToHire = ({
 }) => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
+  const heroImg = type === 'home' ? HomeHero : PermanentHero;
+
   return (
     <div className='looking-to-hire'>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {isHuddle && (
+              <img alt='hero-img' src={heroImg} />
+            )}
             <div className='title'>
               <h2>
                 {children}

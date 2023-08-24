@@ -6,6 +6,7 @@ import {NAMESPACE} from '../../../data/constants';
 import {isHuddle} from '../../../services/helper';
 // import FeaturedRole from './FeaturedRole';
 
+import HeroImg from '../../../static/huddle/home-looking-for-a-job.png'
 import ArrowIcon from '../../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
 // import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
@@ -18,6 +19,9 @@ const LookingForAJob = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {isHuddle && (
+              <img alt='hero-img' src={HeroImg} />
+            )}
             <div className='title'>
               <h2>
                 Looking for a <a>job?</a>

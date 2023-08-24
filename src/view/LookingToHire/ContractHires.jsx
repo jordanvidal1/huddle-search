@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
+import {isHuddle} from '../../services/helper';
+
+import HeroImg from '../../static/huddle/contract-hires.png';
 
 const ContractHires = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -11,6 +14,9 @@ const ContractHires = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {isHuddle && (
+              <img alt='hero-img' src={HeroImg} />
+            )}
             <div className='title'>
               <h2>
                 <a>Contract</a> hires to deliver your project

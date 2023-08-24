@@ -63,6 +63,8 @@ code {
   flex-direction: column;
   justify-content: center;
   max-width: 1320px !important;
+  position: relative;
+  z-index: 1;
 }
 
 .inner-container {

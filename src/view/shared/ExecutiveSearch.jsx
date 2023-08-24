@@ -6,6 +6,7 @@ import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import InfoBox from './InfoBox';
 
+import HeroImg from '../../static/huddle/executive-search.png';
 import Logo from '../../static/huddle/text-logo-gold.svg';
 import UnitasLogo from '../../static/unitas/text-logo.svg';
 
@@ -26,6 +27,9 @@ const ExecutiveSearch = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {isHuddle && (
+              <img alt='hero-img' src={HeroImg} />
+            )}
             <div className='text-container'>
               <div className='title'>
                 <p>

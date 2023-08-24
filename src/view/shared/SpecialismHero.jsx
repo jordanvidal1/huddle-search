@@ -1,11 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
+import cx from 'classnames';
 import {NAMESPACE} from '../../data/constants';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
 import Loader from './Loader';
-import {HashLink} from 'react-router-hash-link'
 
 const SpecialismHero = props => {
   const {
@@ -30,7 +30,7 @@ const SpecialismHero = props => {
     : <Loader />
 
   return (
-    <div className='specialism-hero'>
+    <div className={cx('specialism-hero', [`${pathname}-hero`])}>
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>

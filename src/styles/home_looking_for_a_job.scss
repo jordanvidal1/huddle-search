@@ -1,10 +1,18 @@
 .home .looking-for-a-job {
-    background: url('../static/huddle/home-looking-for-a-job.png') left no-repeat #8762CB;
-    background-size: 45%;
+    background: #8762CB;
+    overflow: hidden;
 
     .content {
         align-self: flex-end;
+        position: relative;
         max-width: 38.5rem;
+
+        > img {
+            height: 330%;
+            position: absolute;
+            right: 125%;
+            top: -80%;
+        }
     }
 
     .title {
@@ -142,10 +150,12 @@
     }
 
     @include media-breakpoint-down(md) {
-        background: #8762CB;
-
         .content {
             max-width: unset;
+
+            > img {
+                display: none;
+            }
         }
     }
 

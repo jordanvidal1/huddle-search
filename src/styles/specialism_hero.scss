@@ -120,14 +120,26 @@
 }
 
 .looking-for-a-job .specialism-hero {
-    background: url('../static/huddle/looking-for-a-job.png');
-    background-size: clamp(35rem, 48%, 50rem) auto;
+    background-image: url('../static/huddle/looking-for-a-job.png');
+}
+
+.embedded-talent .specialism-hero {
+    background-image: url('../static/huddle/embedded-talent-hero.png');
+}
+
+.contract-hires .specialism-hero {
+    background-image: url('../static/huddle/contract-hires-hero.png');
 }
 
 .specialism {
     .specialism-hero {
         background: url('../static/huddle/specialism.png') top right no-repeat #FFF;
-        background-size: 55%;
+        background-size: clamp(35rem, 48%, 50rem) auto;
+
+        &.sectors-hero {
+            background: url('../static/huddle/sector.png') top -6rem right -6rem no-repeat #FFF;
+            background-size: clamp(35rem, 48%, 50rem) auto;
+        }
 
         .inner-container {
             padding: 5rem 1.5rem 6rem;

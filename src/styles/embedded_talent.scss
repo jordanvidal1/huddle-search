@@ -1,11 +1,19 @@
 .home, .looking-to-hire {
     .embedded-talent {
-        background: url('../static/huddle/embedded-talent.png') left no-repeat #8762CB;
-        background-size: contain;
+        background: #8762CB;
+        overflow: hidden;
 
         .content {
             align-self: flex-end;
             max-width: 38.5rem;
+            position: relative;
+
+            > img {
+                height: 130%;
+                position: absolute;
+                right: 115%;
+                top: -15%;
+            }
         }
 
         .title {
@@ -74,10 +82,12 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: #8762CB;
-
             .content {
                 max-width: unset;
+
+                > img {
+                    display: none;
+                }
             }
 
             .info-container {

@@ -1,11 +1,12 @@
 .leadership-team,
 .our-story,
+.our-process,
 .work-for-us,
 .contact-us,
 .executive-search {
     .leadership-hero {
-        background: url('../static/huddle/leadership.png') top right no-repeat #FFF;
-        background-size: 55%;
+        background: url('../static/huddle/leadership.png') top -6rem right -6rem no-repeat #FFF;
+        background-size: clamp(35rem, 48%, 50rem) auto;
 
         .content {
             margin-top: 2rem;
@@ -273,11 +274,24 @@
     }
 }
 
+.our-story .leadership-hero {
+    background-image: url('../static/huddle/our-story.png');
+}
+
+.our-process .leadership-hero {
+    background-image: url('../static/huddle/our-process.png');
+}
+
+.work-for-us .leadership-hero {
+    background-image: url('../static/huddle/work-for-us.png');
+}
+
+.contact-us .leadership-hero {
+    background-image: url('../static/huddle/contact-us.png');
+}
+
 .work-for-us, .contact-us {
     .leadership-hero {
-        background: url('../static/huddle/work-for-us.png') top right no-repeat #FFF;
-        background-size: 55%;
-
         .text-container > h5 {
             color: #310A31;
         }

@@ -99,13 +99,15 @@ const Resource = () => {
           <h6>{author?.name}</h6>
           <span>{author?.role}</span>
           <div className='author-contact'>
-            <div>
-              <img
-                alt='phone-number-icon'
-                src={PhoneIcon}
-              />
-              <span>{author?.number}</span>
-            </div>
+            {author?.number && (
+              <div>
+                <img
+                  alt='phone-number-icon'
+                  src={PhoneIcon}
+                />
+                <span>{author?.number}</span>
+              </div>
+            )}
             <div>
               <a href={`mailto:email`}>
                 <img

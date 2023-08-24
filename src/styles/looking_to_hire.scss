@@ -1,11 +1,19 @@
 .home, .looking-to-hire {
     .looking-to-hire {
-        background: url('../static/huddle/home-looking-to-hire.png') right no-repeat #8762CB;
-        background-size: 45%;
+        background: #8762CB;
+        overflow: hidden;
 
         .content {
             align-self: flex-start;
+            position: relative;
             max-width: 38.5rem;
+
+            > img {
+                height: 170%;
+                position: absolute;
+                left: 110%;
+                top: -30%;
+            }
         }
 
         .title {
@@ -80,11 +88,13 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: #8762CB;
-
             .content {
                 margin-top: 4rem;
                 max-width: unset;
+
+                > img {
+                    display: none;
+                }
             }
 
             .btn-container {

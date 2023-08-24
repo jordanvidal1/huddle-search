@@ -6,7 +6,7 @@ import Leadership from '../shared/Specialists';
 import OurStory from '../shared/OurStory';
 
 const OurProcess = () => (
-  <div className='our-story'>
+  <div className='our-process'>
     <Hero type='ourProcess'>
       Leveraging AI to source hires <a>faster & cheaper</a>
     </Hero>

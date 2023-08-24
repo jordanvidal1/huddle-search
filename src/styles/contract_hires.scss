@@ -1,10 +1,18 @@
 .looking-to-hire .contract-hires {
-    background: url('../static/huddle/contract-hires.png') center left no-repeat #8762CB;
-    background-size: contain;
+    background: #8762CB;
+    overflow: hidden;
 
     .content {
         align-self: flex-end;
+        position: relative;
         max-width: 38.5rem;
+
+        > img {
+            height: 200%;
+            position: absolute;
+            right: 110%;
+            top: -50%;
+        }
     }
 
     .title {

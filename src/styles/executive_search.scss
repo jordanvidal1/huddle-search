@@ -1,11 +1,19 @@
 .home, .looking-to-hire {
     .executive-search {
-        background: url('../static/huddle/executive-search.png') top right no-repeat #F9F9F9;
-        background-size: contain;
+        background: #F9F9F9;
+        overflow: hidden;
 
         .content {
             align-self: flex-start;
+            position: relative;
             max-width: 38.5rem;
+
+            > img {
+                height: 140%;
+                position: absolute;
+                left: 115%;
+                top: -15%;
+            }
         }
 
         .text-container {
@@ -113,10 +121,12 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: #F9F9F9;
-
             .content {
                 max-width: unset;
+
+                > img {
+                    display: none;
+                }
             }
 
             .text-container {
