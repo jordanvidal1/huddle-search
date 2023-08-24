@@ -44,7 +44,7 @@ const ContactForm = () => {
       ).toString('base64'));
 
     return await fetchApi(
-      `https://${SITE_URL}/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
+      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
       'POST',
       formData,
       headers
