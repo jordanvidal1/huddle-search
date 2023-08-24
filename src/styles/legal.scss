@@ -20,7 +20,7 @@
                     font-size: 1.5rem;
                     font-weight: 800;
                     line-height: 2.25rem; /* 150% */
-                    margin: 1rem 0;
+                    margin: 2rem 0 1rem;
                 }
 
                 &.intro {
@@ -28,7 +28,33 @@
                     font-size: 1.25rem;
                     font-weight: 600;
                     line-height: 2rem; /* 160% */
-                    margin-bottom: 2rem;
+                    margin-bottom: 3rem;
+                }
+
+                &.updated {
+                    color: #7E8192;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-top: 4rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &.privacy-policy {
+            .title h2 {
+                font-size: 3rem;
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                p.updated {
+                    margin-top: 3rem;
+                    text-align: left;
                 }
             }
         }

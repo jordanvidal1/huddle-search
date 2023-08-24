@@ -218,6 +218,11 @@ const PrivacyPolicy = () => {
               <p>
                 {t(`${NAMESPACE}:privacy:part12:text8`)}
               </p>
+              <p className='updated'>
+                {t(`${NAMESPACE}:privacy:lastUpdated`, {
+                  date: '24th August 2023'
+                })}
+              </p>
             </div>
           </div>
         </div>

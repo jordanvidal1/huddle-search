@@ -479,11 +479,12 @@
       "text2": "Everyone here at www.unitastalent.com is familiar with the GDPR legislation,and exactly what their personal responsibilities are. Anyone joining the company is trained internally on induction day, and then at regular intervals of 2 years afterwards. If there is a change in legislation, then we ensure that everyone is fully up-to-date on the latest points.",
       "text3": "You do have the right to be forgotten, and no longer receive any communication from us. You can do this via our contact form.",
       "text4": "You can rest assured that absolutely no personal data is transferred outside of the EU under any circumstances (unless prior written consent is given by the person who’s data is to be transferred).",
-      "text5": "When processing any data we abide by the following points:-\n\n– The processing of any data is lawful, fair and we are fully transparent about what the data is being used for\n– We only collect data that is necessary for normal business operation\n– All data is kept accurate and up-to-date\n– Data is not kept for any longer than is reasonably necessary\n– All data is kept safe and secure at all times If you have enquired about our services, then we have a legitimate interest in contacting you again to follow up on your enquiry.",
+      "text5": "When processing any data we abide by the following points:\n\n– The processing of any data is lawful, fair and we are fully transparent about what the data is being used for\n– We only collect data that is necessary for normal business operation\n– All data is kept accurate and up-to-date\n– Data is not kept for any longer than is reasonably necessary\n– All data is kept safe and secure at all times If you have enquired about our services, then we have a legitimate interest in contacting you again to follow up on your enquiry.",
       "text6": "If at this point you no longer wish to hear from us then we would welcome it if you could inform us of this, and we will no longer contact you and remove your data. As outlined above, all data is held securely, but in the unlikely event of a security breach, we do have a notification process in place.",
       "text7": "If you would like to find out what data we hold about you, please use our contact form with a subject of DSAR Request.",
       "text8": "This policy may be updated from time to time, so please ensure you check it regularly."
-    }
+    },
+    "lastUpdated": "Last updated: {{date}}"
   },
   "thePrimeGroup": {
     "title": {
