@@ -296,6 +296,10 @@
 
             .content {
                 margin-top: 4rem;
+
+                > img {
+                    display: none;
+                }
             }
 
             .text-container {
