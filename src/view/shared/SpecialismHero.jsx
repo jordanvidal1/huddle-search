@@ -3,9 +3,12 @@ import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import cx from 'classnames';
 import {NAMESPACE} from '../../data/constants';
+import {isHuddle} from '../../services/helper';
+
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
 import Loader from './Loader';
+import HeroImg from '../../static/huddle/executive-search.png';
 
 const SpecialismHero = props => {
   const {
@@ -34,6 +37,9 @@ const SpecialismHero = props => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {isHuddle && executive && (
+              <img alt='hero-img' src={HeroImg} />
+            )}
             <div className='text-container'>
               <div className='title'>
                 {specialism && <img alt='specialism-icon' src={specialism.icon}/>}
