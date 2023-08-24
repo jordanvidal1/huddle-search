@@ -88,6 +88,9 @@
         }
 
         @include media-breakpoint-down(md) {
+            background: url('../static/huddle/home-looking-to-hire-mob.png') top right no-repeat #8762CB;
+            background-size: 17rem;
+
             .content {
                 margin-top: 4rem;
                 max-width: unset;

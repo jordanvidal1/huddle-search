@@ -88,6 +88,10 @@
         }
 
         @include media-breakpoint-down(md) {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg'), lightgray -1217.123px 0px / 610.604% 100% no-repeat;
+            background-position: center;
+            background-size: cover;
+
             .content {
                 max-width: unset;
             }
@@ -144,6 +148,11 @@
                 color: #E0B45C;
                 font-family: Plus Jakarta Sans;
             }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/executive-work-for-us.jpeg'), lightgray -655.917px 0px / 362.356% 100% no-repeat;
+            background-size: cover;
         }
     }
 }
