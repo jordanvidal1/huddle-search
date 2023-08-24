@@ -290,6 +290,12 @@
             }
         }
 
+        @include media-breakpoint-down(lg) {
+            .text {
+                align-self: flex-start;
+            }
+        }
+
         @include media-breakpoint-down(md) {
             background: url('../static/huddle/executive-search-mob.png') top left no-repeat #F9F9F9;
             background-size: 30rem;
