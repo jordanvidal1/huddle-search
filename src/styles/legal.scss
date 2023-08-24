@@ -11,8 +11,25 @@
 
             p {
                 color: #1A1A1A;
+                font-family: Montserrat;
                 font-size: 1rem;
                 line-height: 1.75rem;
+
+                &:has(strong) {
+                    color: #7E8192;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    line-height: 2.25rem; /* 150% */
+                    margin: 1rem 0;
+                }
+
+                &.intro {
+                    color: #7E8192;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    line-height: 2rem; /* 160% */
+                    margin-bottom: 2rem;
+                }
             }
         }
     }
