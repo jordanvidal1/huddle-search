@@ -1,21 +1,63 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {huddleLinkedIn, NAMESPACE} from '../../data/constants';
+import {useForm} from 'react-hook-form';
+import {
+  huddleLinkedIn,
+  NAMESPACE,
+  SITE_URL,
+  SUBSCRIBE_FORM_ID
+} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
+import {fetchApi} from '../../services/api';
 import Input from '../shared/Input';
 
 import LinkedIn from '../../static/huddle/linkedin-purple.svg';
+import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
 // import Twitter from '../../static/huddle/twitter-purple.svg';
 // import Facebook from '../../static/huddle/facebook-purple.svg';
 // import Instagram from '../../static/huddle/instagram-purple.svg';
-import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
 // import UnitasTwitter from '../../static/unitas/twitter-white.svg';
 // import UnitasFacebook from '../../static/unitas/facebook-white.svg';
 // import UnitasInstagram from '../../static/unitas/instagram-white.svg';
 
+const Buffer = require('buffer/').Buffer;
+
 const FollowUs = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
+
+  const {
+    register,
+    handleSubmit,
+    formState: {errors}
+  } = useForm();
+
+  const onSubmit = async data => {
+    const formData = new FormData();
+    formData.append(
+      'your-subject',
+      'Subscribe'
+    );
+
+    for (const key in data) {
+      formData.append(`your-${key}`, data[key]);
+    }
+
+    const headers = new Headers();
+    headers.set('Authorization', 'Basic '
+      + Buffer.from(
+        process.env.REACT_APP_WP_USER
+        + ":"
+        + process.env.REACT_APP_WP_TOKEN
+      ).toString('base64'));
+
+    return await fetchApi(
+      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${SUBSCRIBE_FORM_ID}/feedback`,
+      'POST',
+      formData,
+      headers
+    );
+  }
 
   return (
     <div className='follow-us'>
@@ -33,18 +75,25 @@ const FollowUs = () => {
                   </p>
                 </div>
                 <div className='action-container'>
-                  <form /* todo: connect form */ >
+                  <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='subscribe-container'>
                       <Input
-                        id='email-subscribe'
+                        id='email-address'
                         type='text'
                         name='email'
                         placeholder='Enter your email address'
+                        register={register('email', {
+                          required: 'Email address is required.',
+                          pattern: {
+                            value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                            message: 'Email address is invalid.'
+                          }
+                        })}
+                        errors={errors}
                       />
                       <button
                         className='btn btn-secondary'
                         type='submit'
-                        form='subscribe'
                       >
                         Subscribe
                       </button>

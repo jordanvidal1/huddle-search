@@ -4,7 +4,7 @@ import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import {fetchApi} from '../../services/api';
-import {FORM_ID, NAMESPACE, SITE_URL} from '../../data/constants';
+import {CONTACT_FORM_ID, NAMESPACE, SITE_URL} from '../../data/constants';
 import Input from '../shared/Input';
 
 const Buffer = require('buffer/').Buffer;
@@ -44,7 +44,7 @@ const ContactForm = () => {
       ).toString('base64'));
 
     return await fetchApi(
-      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
+      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${CONTACT_FORM_ID}/feedback`,
       'POST',
       formData,
       headers

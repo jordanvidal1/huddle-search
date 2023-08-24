@@ -35,7 +35,8 @@ import HuddleTelco from '../static/huddle/telco.svg';
 
 export const SITE_URL = process.env.REACT_APP_SITE_URL;
 export const NAMESPACE = process.env.REACT_APP_SITE_NAME;
-export const FORM_ID = process.env.REACT_APP_WP_FORM_ID;
+export const CONTACT_FORM_ID = process.env.REACT_APP_WP_CONTACT_FORM_ID;
+export const SUBSCRIBE_FORM_ID = process.env.REACT_APP_WP_SUBSCRIBE_FORM_ID;
 
 const leaderEmails = {
   huddle: {

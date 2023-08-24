@@ -1,7 +1,11 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
-import {FORM_ID, NAMESPACE, SITE_URL} from '../../data/constants';
+import {
+  NAMESPACE,
+  SITE_URL,
+  SUBSCRIBE_FORM_ID
+} from '../../data/constants';
 import {fetchApi} from '../../services/api';
 import Input from './Input';
 
@@ -18,6 +22,10 @@ const Subscribe = props => {
 
   const onSubmit = async data => {
     const formData = new FormData();
+    formData.append(
+      'your-subject',
+      'Subscribe'
+    );
 
     for (const key in data) {
       formData.append(`your-${key}`, data[key]);
@@ -32,7 +40,7 @@ const Subscribe = props => {
       ).toString('base64'));
 
     return await fetchApi(
-      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`,
+      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${SUBSCRIBE_FORM_ID}/feedback`,
       'POST',
       formData,
       headers
@@ -68,8 +76,9 @@ const Subscribe = props => {
             {t(`${NAMESPACE}:jobResource:email:button`)}
           </button>
           <span>
-            {t(`${NAMESPACE}:jobResource:email:terms:part1`)}<Link to='/terms'>
-            {t(`${NAMESPACE}:jobResource:email:terms:link`)}
+            {t(`${NAMESPACE}:jobResource:email:terms:part1`)}
+            <Link to='/privacy-policy'>
+              {t(`${NAMESPACE}:jobResource:email:terms:link`)}
             </Link>
             {t(`${NAMESPACE}:jobResource:email:terms:part2`)}
           </span>
