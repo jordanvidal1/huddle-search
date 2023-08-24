@@ -74,6 +74,11 @@
                     min-width: 21.375rem;
                 }
 
+                .error-msg {
+                    color: #de695c;
+                    top: -1.5rem;
+                }
+
                 @include media-breakpoint-down(lg) {
                     flex-wrap: wrap;
 
@@ -157,7 +162,7 @@
                 max-width: 8.625rem;
 
                 div {
-                    justify-content: space-between;
+                    //justify-content: space-between;
                     padding: 2rem 0;
                     width: 100%;
 

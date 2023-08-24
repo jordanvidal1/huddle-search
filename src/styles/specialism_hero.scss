@@ -182,6 +182,10 @@
         @include media-breakpoint-down(md) {
             background: #FFF;
 
+            &.sectors-hero {
+                background: #FFF;
+            }
+
             .inner-container {
                 padding: 1.5rem 0.75rem 4rem;
             }
