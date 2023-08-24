@@ -1,19 +1,19 @@
 .our-story-static {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
     background-size: cover;
 
     @include media-breakpoint-down(md) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 }
 
 .our-process-static {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-process.jpeg'), lightgray -100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-process.jpeg') center no-repeat, lightgray -100% / cover no-repeat;
     background-size: cover;
 
     @include media-breakpoint-down(md) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-process.jpeg'), lightgray 773px 0px / -312.267% 100% no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-process.jpeg') center no-repeat, lightgray 773px 0px / 312.267% 100% no-repeat;
         background-size: cover;
     }
 }
@@ -69,12 +69,12 @@
 
 .unitas-site {
     .our-story-static {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
     .our-process-static {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg'), lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 

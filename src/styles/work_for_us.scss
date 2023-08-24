@@ -4,8 +4,7 @@
 .embedded-talent,
 .contract-interim {
     > .work-for-us {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/work-for-us.jpg'), lightgray 50% / cover no-repeat;
-        background-position: center;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/work-for-us.jpg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
 
         .content {
@@ -88,8 +87,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg'), lightgray -1217.123px 0px / 610.604% 100% no-repeat;
-            background-position: center;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
             background-size: cover;
 
             .content {
@@ -120,7 +118,7 @@
 
 .executive-search {
     > .work-for-us {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/executive-work-for-us.jpeg'), lightgray 0px -70.059px / 100% 117.087% no-repeat;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/executive-work-for-us.jpeg') center no-repeat, lightgray 0px -70.059px / 100% 117.087% no-repeat;
         background-size: cover;
 
         .title {
@@ -201,7 +199,7 @@
     }
 
     .executive-search > .work-for-us {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/executive-work-for-us.jpeg'), lightgray 50% / cover no-repeat;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/executive-work-for-us.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
 
         .grid-container a span {
