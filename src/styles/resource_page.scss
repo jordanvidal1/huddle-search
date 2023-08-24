@@ -93,9 +93,22 @@
         .text {
             p {
                 color: #1A1A1A;
+                font-family: Montserrat;
                 font-size: 1rem;
+                font-style: normal;
                 font-weight: 600;
                 line-height: 1.75rem;
+
+                strong {
+                    color: #7E8192;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    line-height: 2.25rem; /* 150% */
+                }
+
+                &:has(strong) {
+                    margin: 1rem 0;
+                }
             }
 
             a {
