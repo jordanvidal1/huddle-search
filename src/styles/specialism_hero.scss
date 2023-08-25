@@ -151,15 +151,20 @@
             padding-top: 7rem;
             position: relative;
 
-            > img {
+            .specialism-icon {
                 border-radius: 62.5rem;
                 border: 6px solid #FF958C;
-                overflow: visible;
-                padding: 3rem;
-                position: absolute;
+                height: 12rem;
                 left: 50%;
+                position: absolute;
                 top: 0;
                 width: 12rem;
+
+                img {
+                    height: 100%;
+                    padding: 3rem;
+                    width: 100%;
+                }
             }
 
             h1 {
@@ -193,7 +198,7 @@
             .title {
                 padding-top: 6.5rem;
 
-                > img {
+                .specialism-icon {
                     left: unset;
                     right: 0;
                 }
@@ -202,9 +207,13 @@
 
         @include media-breakpoint-down(sm) {
             .title {
-                > img {
-                    padding: 2rem;
+                .specialism-icon {
+                    height: 10rem;
                     width: 10rem;
+
+                    img {
+                        padding: 2rem;
+                    }
                 }
 
                 h1 {
