@@ -5,8 +5,6 @@ import {NAMESPACE} from '../../data/constants';
 const PrivacyPolicy = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  console.log('text', t(`${NAMESPACE}:privacy:text`));
-
   return (
     <div className='legal privacy-policy'>
       <div className='container'>

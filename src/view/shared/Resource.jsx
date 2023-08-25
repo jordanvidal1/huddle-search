@@ -38,9 +38,7 @@ const Resource = props => {
             </div>
           </div>
           <div className='resource-title'>
-            <h6>
-              {title}
-            </h6>
+            <h6 dangerouslySetInnerHTML={{ __html: title }}/>
           </div>
           <div className={cx('resource-tags', {active: tagsList.length > 0})}>
             {tagsList.map((tag, i) => (

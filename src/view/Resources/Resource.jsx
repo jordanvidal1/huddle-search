@@ -58,9 +58,7 @@ const Resource = () => {
         Back to blog
       </Link>
       <div className='title'>
-        <h2>
-          {blog?.title}
-        </h2>
+        <h2 dangerouslySetInnerHTML={{ __html: blog?.title }} />
       </div>
       <div className='resource-details'>
         <div className='resource-details-inner'>
@@ -79,7 +77,7 @@ const Resource = () => {
       </div>
       <div
         className='text'
-        dangerouslySetInnerHTML={{ __html: blog.content}}
+        dangerouslySetInnerHTML={{ __html: blog.content }}
       />
       <div className={cx('resource-tags', {active: tagsList.length > 0})}>
         {tagsList.map((tag, i) => (
