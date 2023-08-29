@@ -248,4 +248,5 @@ export const SECTORS = {
 export const huddleHref = 'https://www.huddlesearch.com/';
 export const unitasHref = 'https://www.unitastalent.com/';
 export const spectrumHref = 'https://spectrum-search.com/';
-export const huddleLinkedIn = 'https://www.linkedin.com/company/huddlesearch'
+export const huddleLinkedIn = 'https://www.linkedin.com/company/huddlesearch';
+export const unitasLinkedIn = 'https://www.linkedin.com/company/unitastalent';

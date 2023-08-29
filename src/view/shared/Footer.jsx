@@ -5,6 +5,7 @@ import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {
   huddleLinkedIn,
+  unitasLinkedIn,
   NAMESPACE,
   SECTORS,
   SPECIALISMS,
@@ -208,7 +209,7 @@ const Footer = ({
                         </div>
                       </div>
                       <div className='footer-socials'>
-                        <a href={huddleLinkedIn} rel='noreferrer' target='_blank'>
+                        <a href={isHuddle ? huddleLinkedIn : unitasLinkedIn} rel='noreferrer' target='_blank'>
                           <img
                             alt='linkedin'
                             src={isHuddle ? LinkedIn : UnitasLinkedIn}

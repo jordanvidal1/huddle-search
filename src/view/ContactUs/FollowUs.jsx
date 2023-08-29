@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {useForm} from 'react-hook-form';
-import {huddleLinkedIn, NAMESPACE} from '../../data/constants';
+import {huddleLinkedIn, unitasLinkedIn, NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 import useWordPress from '../../services/hooks/useWordPress';
 import Input from '../shared/Input';
@@ -119,7 +119,7 @@ const FollowUs = () => {
                 <div className='action-container'>
                   <div className='socials'>
                     <div>
-                      <a href={huddleLinkedIn} rel='noreferrer' target='_blank'>
+                      <a href={isHuddle ? huddleLinkedIn : unitasLinkedIn} rel='noreferrer' target='_blank'>
                         <img
                           alt='linkedin'
                           src={isHuddle ? LinkedIn : UnitasLinkedIn}
