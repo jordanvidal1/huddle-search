@@ -49,7 +49,7 @@ const FollowUs = () => {
             reset();
           } else {
             setType('error');
-            setMessage(res.status);
+            setMessage(res.message);
           }
         });
       }

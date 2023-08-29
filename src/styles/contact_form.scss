@@ -83,6 +83,10 @@
                     min-width: 14.0375rem;
                 }
             }
+
+            .error-msg, .success-msg {
+                bottom: -2.5rem;
+            }
         }
 
         @include media-breakpoint-down(md) {
