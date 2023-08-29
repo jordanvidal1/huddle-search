@@ -23,6 +23,7 @@
 
         .action-container {
             max-width: 35rem;
+            position: relative;
 
             .input-container {
                 input {
@@ -77,6 +78,10 @@
             .btn-container {
                 margin-top: 3rem;
                 justify-content: flex-end;
+
+                .btn {
+                    min-width: 14.0375rem;
+                }
             }
         }
 

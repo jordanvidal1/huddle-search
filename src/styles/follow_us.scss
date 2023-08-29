@@ -48,6 +48,7 @@
 
         .action-container {
             flex-grow: 1;
+            position: relative;
 
             &:has(.socials) {
                 margin: auto 0;
@@ -63,6 +64,11 @@
                 text-decoration-line: underline;
             }
 
+            .error-msg, .success-msg {
+                left: 0;
+                top: -1.5rem;
+            }
+
             .subscribe-container {
                 align-items: center;
                 display: flex;
@@ -74,9 +80,9 @@
                     min-width: 21.375rem;
                 }
 
-                .error-msg {
-                    color: #de695c;
-                    top: -1.5rem;
+                button {
+                    height: 3.875rem;
+                    min-width: 10.9375rem;
                 }
 
                 @include media-breakpoint-down(lg) {

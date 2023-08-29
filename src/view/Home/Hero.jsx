@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className='hero'>
       {!isHuddle && (
-          <img alt='hero-img' src={HeroImg} />
+        <img alt='hero-img' src={HeroImg} />
       )}
       <div className='container'>
         <div className='inner-container'>

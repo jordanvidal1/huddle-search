@@ -12,7 +12,11 @@ export default (App, reducers, domContainer = 'root') => {
 
   const ProvidedApp = () => (
     <Provider store={store}>
-      <React.Suspense fallback={<div id='fallback'><Loader /></div>}>
+      <React.Suspense fallback={
+        <div id='fallback'>
+          <Loader />
+        </div>
+      }>
         <App />
       </React.Suspense>
     </Provider>

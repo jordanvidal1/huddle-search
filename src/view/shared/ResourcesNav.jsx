@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
-import useBlog from '../../services/hooks/useBlog';
+import useWordPress from '../../services/hooks/useWordPress';
 import DropdownArrow from '../../static/unitas/dropdown-arrow.svg';
 
 const filters = [
@@ -21,7 +21,7 @@ const filters = [
 ];
 
 const ResourcesNav = () => {
-  const {loadBlog} = useBlog();
+  const {loadBlog} = useWordPress();
 
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 

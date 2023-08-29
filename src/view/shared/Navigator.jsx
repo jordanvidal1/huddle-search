@@ -73,7 +73,7 @@ const Navigator = ({
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 
-  const toggleSideBar = () => setSideMenuDisplayed(!sideMenuDisplayed);
+  const toggleSidebar = () => setSideMenuDisplayed(!sideMenuDisplayed);
   const hideSidebar = () => setSideMenuDisplayed(false);
 
   const toggleDropdown = () => setDropdownDisplayed(!dropdownDisplayed);
@@ -184,7 +184,7 @@ const Navigator = ({
               alt='logo-menubar'
               className='logo-menubar'
               src={isHuddle ? Menubar : UnitasMenubar}
-              onClick={toggleSideBar}
+              onClick={toggleSidebar}
             />
           </div>
         </div>
@@ -240,7 +240,7 @@ const Navigator = ({
         <Footer
           expanded={expanded}
           expandClick={handleExpandClick}
-          toggleSidebar={toggleSideBar}
+          toggleSidebar={toggleSidebar}
         />
       </div>
     </div>

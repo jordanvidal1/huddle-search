@@ -1,55 +1,57 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-import {fetchApi} from '../../services/api';
-import {CONTACT_FORM_ID, NAMESPACE, SITE_URL} from '../../data/constants';
+import {NAMESPACE} from '../../data/constants';
+import useWordPress from '../../services/hooks/useWordPress';
 import Input from '../shared/Input';
-
-const Buffer = require('buffer/').Buffer;
+import Loader from '../shared/Loader';
 
 const ContactForm = () => {
   const {
-    register,
-    handleSubmit,
-    formState: {errors}
-  } = useForm();
+    contactUs,
+    contactUsResult,
+    isContactUsLoading
+  } = useWordPress();
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const onSubmit = async data => {
-    const formData = new FormData();
-    formData.append(
-      'your-subject',
-      'Contact us'
-    );
-    formData.append(
-      'your-name',
-      `${data.firstName} ${data.lastName}`
-    );
+  const [message, setMessage] = useState('');
+  const [type, setType] = useState('error');
 
-    for (const key in data) {
-      formData.append(
-        key.indexOf('checkbox') < 0 ? `your-${key}` : key, data[key]
-      );
+  const {
+    register,
+    handleSubmit,
+    formState: {errors},
+    getValues,
+    reset
+  } = useForm();
+
+  useEffect(() => {
+    const values = getValues();
+    if (values.firstName
+      && values.lastName
+      && values.email
+      && values.number
+      && values.message
+      && values['checkbox-816']
+    ) {
+      contactUsResult
+        .mapPattern('Success', [], ({data}) => {
+          const res = data.toJS();
+          if (res.status === 'mail_sent') {
+            setType('success');
+            setMessage('Message sent!');
+            setTimeout(() => setMessage(''), 5000);
+            reset();
+          } else {
+            setType('error');
+            setMessage(res.status);
+          }
+        });
     }
-
-    const headers = new Headers();
-    headers.set('Authorization', 'Basic '
-      + Buffer.from(
-        process.env.REACT_APP_WP_USER
-        + ":"
-        + process.env.REACT_APP_WP_TOKEN
-      ).toString('base64'));
-
-    return await fetchApi(
-      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${CONTACT_FORM_ID}/feedback`,
-      'POST',
-      formData,
-      headers
-    );
-  }
+  }, [contactUsResult]);
 
   return (
     <div id='contact' className='contact'>
@@ -65,7 +67,10 @@ const ContactForm = () => {
               </p>
             </div>
             <div className='action-container'>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <p className={`${type}-msg`}>
+                {message}
+              </p>
+              <form onSubmit={handleSubmit(contactUs)}>
                 <Grid container spacing={4}>
                   <Grid item xs={12} sm={6}>
                     <Input
@@ -118,12 +123,7 @@ const ContactForm = () => {
                       label='Phone number'
                       placeholder='+44 0000 000 000'
                       register={register('number', {
-                        required: 'Phone number is required.',
-                        // todo: phone number validation
-                        // pattern: {
-                        //   value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                        //   message: 'Phone number is invalid.'
-                        // }
+                        required: 'Phone number is required.'
                       })}
                       errors={errors}
                     />
@@ -151,7 +151,9 @@ const ContactForm = () => {
                       })}
                       errors={errors}
                     >
-                      You agree to our <Link to='/privacy-policy'>privacy policy</Link>.
+                      You agree to our <Link to='/privacy-policy'>
+                      privacy policy
+                      </Link>.
                     </Input>
                   </Grid>
                 </Grid>
@@ -159,11 +161,13 @@ const ContactForm = () => {
                   <button
                     className='btn btn-primary'
                     type='submit'
+                    disabled={isContactUsLoading}
                   >
-                    {t(`${NAMESPACE}:contactUs:form:button`)}
+                    {isContactUsLoading
+                      ? <Loader />
+                      : t(`${NAMESPACE}:contactUs:form:button`)}
                   </button>
                 </div>
-                {/* todo: success message */}
               </form>
             </div>
           </div>

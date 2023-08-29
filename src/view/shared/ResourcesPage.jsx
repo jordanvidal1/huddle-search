@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Resources from './Resources';
-import useBlog from '../../services/hooks/useBlog';
+import useWordPress from '../../services/hooks/useWordPress';
 
 const ResourcesPage = props => {
   const {name} = props;
@@ -9,7 +9,7 @@ const ResourcesPage = props => {
     loadBlog,
     isBlogLoading,
     blogPosts,
-  } = useBlog();
+  } = useWordPress();
 
   useEffect(() => {
     loadBlog();

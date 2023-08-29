@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Grid} from '@material-ui/core';
-import useBlog from '../../services/hooks/useBlog';
+import useWordPress from '../../services/hooks/useWordPress';
 // import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
 import Loader from '../shared/Loader';
@@ -11,7 +11,7 @@ const Resources = () => {
     isBlogLoading,
     blogPosts,
     blogCount
-  } = useBlog();
+  } = useWordPress();
 
   useEffect(() => {
     loadBlog();

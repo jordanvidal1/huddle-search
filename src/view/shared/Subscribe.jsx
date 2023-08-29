@@ -1,51 +1,48 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
-import {
-  NAMESPACE,
-  SITE_URL,
-  SUBSCRIBE_FORM_ID
-} from '../../data/constants';
-import {fetchApi} from '../../services/api';
+import useWordPress from '../../services/hooks/useWordPress';
+import {NAMESPACE} from '../../data/constants';
 import Input from './Input';
-
-const Buffer = require('buffer/').Buffer;
+import Loader from '../shared/Loader';
 
 const Subscribe = props => {
+  const {
+    subscribeNewsletter,
+    subscribeNewsletterResult,
+    isSubscribeLoading
+  } = useWordPress();
+
   const {t} = props;
+
+  const [message, setMessage] = useState('');
+  const [type, setType] = useState('error');
 
   const {
     register,
     handleSubmit,
-    formState: {errors}
+    formState: {errors},
+    getValues,
+    reset
   } = useForm();
 
-  const onSubmit = async data => {
-    const formData = new FormData();
-    formData.append(
-      'your-subject',
-      'Subscribe'
-    );
-
-    for (const key in data) {
-      formData.append(`your-${key}`, data[key]);
+  useEffect(() => {
+    if (getValues('email')) {
+      subscribeNewsletterResult
+      .mapPattern('Success', [], ({data}) => {
+        const res = data.toJS();
+        if (res.status === 'mail_sent') {
+          setType('success');
+          setMessage('Subscription successful!');
+          setTimeout(() => setMessage(''), 5000);
+          reset();
+        } else {
+          setType('error');
+          setMessage(res.status);
+        }
+      });
     }
-
-    const headers = new Headers();
-    headers.set('Authorization', 'Basic '
-      + Buffer.from(
-        process.env.REACT_APP_WP_USER
-        + ":"
-        + process.env.REACT_APP_WP_TOKEN
-      ).toString('base64'));
-
-    return await fetchApi(
-      `https://${SITE_URL}/index.php/wp-json/contact-form-7/v1/contact-forms/${SUBSCRIBE_FORM_ID}/feedback`,
-      'POST',
-      formData,
-      headers
-    );
-  }
+  }, [subscribeNewsletterResult]);
 
   return (
     <div className='resource-share'>
@@ -54,7 +51,10 @@ const Subscribe = props => {
         <span>{t(`${NAMESPACE}:jobResource:email:text`)}</span>
       </div>
       <div className='action-container'>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <p className={`${type}-msg`}>
+          {message}
+        </p>
+        <form onSubmit={handleSubmit(subscribeNewsletter)}>
           <Input
             id='email-address'
             type='text'
@@ -72,18 +72,23 @@ const Subscribe = props => {
           <button
             className='btn btn-secondary'
             type='submit'
+            disabled={isSubscribeLoading}
           >
-            {t(`${NAMESPACE}:jobResource:email:button`)}
+            {isSubscribeLoading
+              ? <Loader />
+              : t(`${NAMESPACE}:jobResource:email:button`)
+            }
           </button>
+        </form>
+        <div>
           <span>
             {t(`${NAMESPACE}:jobResource:email:terms:part1`)}
             <Link to='/privacy-policy'>
-              {t(`${NAMESPACE}:jobResource:email:terms:link`)}
+            {t(`${NAMESPACE}:jobResource:email:terms:link`)}
             </Link>
             {t(`${NAMESPACE}:jobResource:email:terms:part2`)}
           </span>
-          {/* todo: success message */}
-        </form>
+        </div>
       </div>
     </div>
   );

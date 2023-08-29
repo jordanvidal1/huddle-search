@@ -1,7 +1,7 @@
-import blogReducer from '../blog/reducer';
+import wordpressReducer from '../wordpress/reducer';
 
 const reducers = {
-  blog: blogReducer
+  wordpress: wordpressReducer
 };
 
 export default reducers;

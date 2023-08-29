@@ -5,7 +5,7 @@ import cx from 'classnames';
 import moment from 'moment';
 import {capitalize, Grid} from '@material-ui/core';
 import {LEADERS} from '../../data/constants';
-import useBlog from '../../services/hooks/useBlog';
+import useWordPress from '../../services/hooks/useWordPress';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
 import Roles from '../shared/Roles';
@@ -21,7 +21,7 @@ const Resource = () => {
   const {
     loadBlog,
     blogPosts
-  } = useBlog();
+  } = useWordPress();
 
   const [blogSlug, setBlogSlug] = useState('/');
   const [blog, setBlog] = useState({});
