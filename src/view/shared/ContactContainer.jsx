@@ -27,7 +27,9 @@ const ContactContainer = ({
       <Grid item xs={6}>
         <div className='contact-container'>
           <div className='contact-text-container'>
-            <img alt='phone-icon' src={phoneIcon} />
+            <div className='contact-icon'>
+              <img alt='phone-icon' src={phoneIcon} />
+            </div>
             <div className='contact-title'>
               <h5>
                 {t(`${NAMESPACE}:contactContainer:phone:${executive ? 'executiveTitle' : 'title'}`)}
@@ -49,7 +51,9 @@ const ContactContainer = ({
       <Grid item xs={6}>
         <div className='contact-container'>
           <div className='contact-text-container'>
-            <img alt='email-icon' src={emailIcon} />
+            <div className='contact-icon'>
+              <img alt='phone-icon' src={emailIcon} />
+            </div>
             <div className='contact-title'>
               <h5>
                 {t(`${NAMESPACE}:contactContainer:email:${executive ? 'executiveTitle' : 'title'}`)}

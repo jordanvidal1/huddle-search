@@ -6,13 +6,16 @@ import {NAMESPACE} from '../../data/constants';
 import VacancyIcon from '../../static/huddle/vacancy.svg';
 import HelpIcon from '../../static/huddle/help.svg';
 import CVIcon from '../../static/huddle/cv.svg';
+import VisitIcon from '../../static/huddle/visit-white.svg'
 
 const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
     <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
-          <img alt='vacancy-icon' src={VacancyIcon} />
+          <div className='contact-icon'>
+            <img alt='vacancy-icon' src={VacancyIcon} />
+          </div>
           <div className='info-title'>
             <h5>
               {t(`${NAMESPACE}:infoContainer:vacancy:title`)}
@@ -34,7 +37,9 @@ const InfoContainer = ({t}) => (
     <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
-          <img alt='help-icon' src={HelpIcon} />
+          <div className='contact-icon'>
+            <img alt='help-icon' src={HelpIcon} />
+          </div>
           <div className='info-title'>
             <h5>
               {t(`${NAMESPACE}:infoContainer:help:title`)}
@@ -56,7 +61,9 @@ const InfoContainer = ({t}) => (
     <Grid item xs={12} sm={4}>
       <div className='info-container'>
         <div className='info-text-container'>
-          <img alt='cv-icon' src={CVIcon} />
+          <div className='contact-icon'>
+            <img alt='cv-icon' src={CVIcon} />
+          </div>
           <div className='info-title'>
             <h5>
               {t(`${NAMESPACE}:infoContainer:cv:title`)}

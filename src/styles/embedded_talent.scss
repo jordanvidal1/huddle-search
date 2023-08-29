@@ -56,12 +56,17 @@
             flex-direction: column;
             padding: 1rem;
 
-            img {
+            .info-icon {
                 background: #FF958C;
                 border-radius: 62.5rem;
-                overflow: visible;
-                padding: 1rem;
+                height: 4rem;
                 width: 4rem;
+
+                > img {
+                    height: 100%;
+                    padding: 1rem;
+                    width: 100%;
+                }
             }
 
             h5 {
@@ -140,7 +145,7 @@
             }
 
             .info-container {
-                img {
+                .info-icon {
                     background: #B1C9B1;
                 }
 

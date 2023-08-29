@@ -13,14 +13,18 @@
             align-items: flex-start;
             display: flex;
             flex-direction: column;
+        }
+
+        .contact-icon {
+            background: #FF958C;
+            border-radius: 62.5rem;
+            height: 4rem;
+            width: 4rem;
 
             > img {
-                background: #FF958C;
-                border-radius: 62.5rem;
-                height: 4rem;
-                overflow: visible;
+                height: 100%;
                 padding: 1rem;
-                width: 4rem;
+                width: 100%;
             }
         }
 
@@ -101,7 +105,7 @@
         background: #1A1A1A;
         border-radius: 1.5rem;
 
-        .contact-text-container > img {
+        .contact-icon {
             background: #B1C9B1;
         }
 
@@ -118,12 +122,15 @@
             background: #E0E0E0;
             border-radius: 0.5rem;
 
-            .contact-text-container > img {
+            .contact-icon {
                 background: none;
                 border-radius: 0;
-                height: 2rem;
-                padding: 0;
-                width: 2rem;
+
+                > img {
+                    height: 2rem;
+                    padding: 0;
+                    width: 2rem;
+                }
             }
 
             .contact-title h5 {

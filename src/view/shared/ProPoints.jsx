@@ -42,7 +42,9 @@ const ProPoints = props => {
               <Grid container spacing={4} justifyContent='center' align='center'>
                 <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
                   <div className='pro-point'>
-                    <img alt='pro-point-icon-1' src={ProIcon1} />
+                    <div className='pro-point-icon'>
+                      <img alt='pro-point-icon-1' src={ProIcon1} />
+                    </div>
                     <h5>
                       {t(`${NAMESPACE}:proPoints:${type}:points:1:title`)}
                     </h5>
@@ -53,7 +55,9 @@ const ProPoints = props => {
                 </Grid>
                 <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
                   <div className='pro-point'>
-                    <img alt='pro-point-icon-2' src={ProIcon2} />
+                    <div className='pro-point-icon'>
+                      <img alt='pro-point-icon-2' src={ProIcon2} />
+                    </div>
                     <h5>
                       {t(`${NAMESPACE}:proPoints:${type}:points:2:title`)}
                     </h5>
@@ -64,7 +68,9 @@ const ProPoints = props => {
                 </Grid>
                 <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
                   <div className='pro-point'>
-                    <img alt='pro-point-icon-3' src={ProIcon3} />
+                    <div className='pro-point-icon'>
+                      <img alt='pro-point-icon-3' src={ProIcon3} />
+                    </div>
                     <h5>
                       {t(`${NAMESPACE}:proPoints:${type}:points:3:title`)}
                     </h5>
@@ -75,7 +81,9 @@ const ProPoints = props => {
                 </Grid>
                 <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
                   <div className='pro-point'>
-                    <img alt='pro-point-icon-4' src={ProIcon4} />
+                    <div className='pro-point-icon'>
+                      <img alt='pro-point-icon-4' src={ProIcon4} />
+                    </div>
                     <h5>
                       {t(`${NAMESPACE}:proPoints:${type}:points:4:title`)}
                     </h5>
@@ -87,7 +95,9 @@ const ProPoints = props => {
                 {!isVariant && (
                   <Grid item xs={12} sm={6} md={4}>
                     <div className='pro-point'>
-                      <img alt='pro-point-icon-5' src={ProIcon1} />
+                      <div className='pro-point-icon'>
+                        <img alt='pro-point-icon-5' src={ProIcon1} />
+                      </div>
                       <h5>
                         {t(`${NAMESPACE}:proPoints:${type}:points:5:title`)}
                       </h5>

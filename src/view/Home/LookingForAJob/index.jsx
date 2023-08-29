@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 // import {Grid} from '@material-ui/core';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../../data/constants';
@@ -38,6 +39,11 @@ const LookingForAJob = () => {
                 />
               </Link>
               </p>
+              <div className='btn-container'>
+                <HashLink to='/contact-us#contact' className='btn btn-secondary'>
+                  {t(`${NAMESPACE}:home:lookingForAJob:button`)}
+                </HashLink>
+              </div>
             </div>
             {/*<div className='featured-roles'>*/}
             {/*  <div className='featured-roles-container'>*/}

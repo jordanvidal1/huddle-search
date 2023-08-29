@@ -11,7 +11,9 @@ const ContactVisitContainer = (t) => (
     <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
-          <img alt='vacancy-icon' src={PhoneIcon} />
+          <div className='contact-icon'>
+            <img alt='vacancy-icon' src={PhoneIcon} />
+          </div>
           <div className='visit-title'>
             <h5>
               {t(`${NAMESPACE}:visitContainer:phone:title`)}
@@ -33,7 +35,9 @@ const ContactVisitContainer = (t) => (
     <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
-          <img alt='help-icon' src={EmailIcon} />
+          <div className='contact-icon'>
+            <img alt='help-icon' src={EmailIcon} />
+          </div>
           <div className='visit-title'>
             <h5>
               {t(`${NAMESPACE}:visitContainer:email:title`)}
@@ -55,7 +59,9 @@ const ContactVisitContainer = (t) => (
     <Grid item xs={12} sm={4}>
       <div className='visit-container'>
         <div className='visit-text-container'>
-          <img alt='cv-icon' src={VisitIcon} />
+          <div className='contact-icon'>
+            <img alt='cv-icon' src={VisitIcon} />
+          </div>
           <div className='visit-title'>
             <h5>
               {t(`${NAMESPACE}:visitContainer:visit:title`)}
