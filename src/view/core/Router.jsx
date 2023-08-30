@@ -8,6 +8,8 @@ import {
 import {hot} from 'react-hot-loader/root';
 import {CssBaseline} from '@material-ui/core';
 
+import {isHuddle} from '../../services/helper';
+
 import Navigator from '../shared/Navigator';
 import Home from '../Home';
 
@@ -47,7 +49,10 @@ const RouterComponent = () => (
         <Route path='/sectors/:id' Component={Specialism} />
 
         <Route path='/looking-to-hire' Component={LookingToHire} />
-        <Route path='/looking-for-a-job' Component={LookingForAJob} />
+        <Route
+          path={isHuddle ? '/looking-for-a-job' : '/candidates'}
+          Component={LookingForAJob}
+        />
         <Route path='/executive-search' Component={ExecutiveSearch} />
         <Route path='/embedded-talent-solutions' Component={EmbeddedTalent} />
         <Route path='/contract-interim' Component={ContractInterim} />

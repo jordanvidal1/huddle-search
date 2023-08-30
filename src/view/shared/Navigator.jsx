@@ -25,8 +25,8 @@ const routes = [
     path: '/looking-to-hire'
   },
   {
-    name: 'Looking for a job',
-    path: '/looking-for-a-job'
+    name: isHuddle ? 'Looking for a job' : 'Candidates',
+    path: isHuddle ? '/looking-for-a-job' : '/candidates'
   },
   {
     name: 'Specialisms',

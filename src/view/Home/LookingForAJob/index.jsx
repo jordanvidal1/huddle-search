@@ -25,12 +25,15 @@ const LookingForAJob = () => {
             )}
             <div className='title'>
               <h2>
-                Looking for a <a>job?</a>
+                {t(`${NAMESPACE}:home:lookingForAJob:title:part1`)}<a>
+                {t(`${NAMESPACE}:home:lookingForAJob:title:part2`)}
+                </a>
               </h2>
             </div>
             <div className='text'>
               <p>
-                {t(`${NAMESPACE}:home:lookingForAJob:desc`)} <Link to='/looking-for-a-job'>
+                {t(`${NAMESPACE}:home:lookingForAJob:desc`)} <Link
+                to={isHuddle ? '/looking-for-a-job' : '/candidates'}>
                 {t(`${NAMESPACE}:home:lookingForAJob:link`)}
                 <img
                   className='arrow-icon'

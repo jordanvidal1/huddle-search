@@ -32,9 +32,7 @@ const ExecutiveSearch = () => {
         </div>
       </Hero>
       <ProPoints type='executiveSearch' />
-      <Service type='executiveSearch'>
-        A specialised service powered by AI
-      </Service>
+      <Service type='executiveSearch' />
       <Leadership executive />
       <WorkForUs executive />
     </div>

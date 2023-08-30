@@ -10,6 +10,10 @@
       "button": "Our story"
     },
     "lookingForAJob": {
+      "title": {
+        "part1": "Looking for a ",
+        "part2": "job?"
+      },
       "desc": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
       "link": "Find out more",
       "button": "Talk to us",
@@ -21,6 +25,11 @@
   },
   "lookingToHire": {
     "home": {
+      "title": {
+        "part1": "Looking to ",
+        "part2": "hire?",
+        "part3": ""
+      },
       "desc": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
       "link": "Find out more",
       "cv": {
@@ -30,6 +39,11 @@
       }
     },
     "lookingToHire": {
+      "title": {
+        "part1": "",
+        "part2": "Permanent",
+        "part3": " hires to transform your team"
+      },
       "desc": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
       "cv": {
         "title": "Be sent 3 CVs with no obligations",
@@ -46,6 +60,10 @@
       "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and niche opportunities."
     },
     "contract": {
+      "title": {
+        "part1": "Contract",
+        "part2": " hires to deliver your project"
+      },
       "desc": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "button": "Find out more"
     }
@@ -135,7 +153,11 @@
   "specialismHero": {
     "title": {
       "specialisms": "Specialism: {{name}}",
-      "sectors": "Sector: {{name}}"
+      "sectors": "Sector: {{name}}",
+      "lookingForAJob": {
+        "part1": "Looking for a ",
+        "part2": "job?"
+      }
     },
     "desc": {
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
@@ -150,6 +172,11 @@
   "leadershipHero": {
     "leadershipTeam": {
       "path": "/leadership-team",
+      "title": {
+        "part1": "A leadership with ",
+        "part2": "unrivalled",
+        "part3": " experience"
+      },
       "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success.",
       "info": {
         "title": "The leadership in numbers..."
@@ -157,6 +184,11 @@
     },
     "ourStory": {
       "path": "/our-story",
+      "title": {
+        "part1": "Experts unite to ",
+        "part2": "redefine",
+        "part3": " an industry"
+      },
       "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment and the experience that hiring companies and job seekers go through.",
       "info": {
         "title": "The mission statement...",
@@ -166,6 +198,11 @@
     },
     "ourProcess": {
       "path": "/our-process",
+      "title": {
+        "part1": "Leveraging AI to source hires ",
+        "part2": "faster & cheaper",
+        "part3": ""
+      },
       "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified candidates efficiently and with unprecedented precision.",
       "info": {
         "title": "The internal propitiatory tech...",
@@ -188,14 +225,29 @@
     },
     "executiveSearch": {
       "path": "",
+      "title": {
+        "part1": "A specialised service powered by AI",
+        "part2": "",
+        "part3": ""
+      },
       "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision."
     },
     "workForUs": {
       "path": "/work-for-us",
+      "title": {
+        "part1": "We’re always on the ",
+        "part2": "look-out",
+        "part3": " for talent"
+      },
       "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
     },
     "contactUs": {
       "path": "/contact-us",
+      "title": {
+        "part1": "We’d love you to give us a ",
+        "part2": "shout",
+        "part3": ""
+      },
       "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
     }
   },
@@ -448,7 +500,7 @@
     "quote1": "\"From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer.\"",
     "part3": {
       "title": "The Bigger Picture",
-      "text": "Huddle was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent aquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
+      "text": "Huddle was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent acquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
     },
     "part4": {
       "title": "Placing You First",

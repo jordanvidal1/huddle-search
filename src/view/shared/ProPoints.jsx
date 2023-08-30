@@ -8,18 +8,26 @@ import ProIcon2 from '../../static/huddle/pro-icon-2.svg';
 import ProIcon3 from '../../static/huddle/pro-icon-3.svg';
 import ProIcon4 from '../../static/huddle/pro-icon-4.svg';
 
-const variantList = [
-  'executiveSearch',
-  'contractInterim',
-  'embeddedTalent'
-];
+const variantList = {
+  huddle: [
+    'executiveSearch',
+    'contractInterim',
+    'embeddedTalent'
+  ],
+  unitas: [
+    'executiveSearch',
+    'contractInterim',
+    'embeddedTalent',
+    'ourProcess'
+  ]
+};
 
 const ProPoints = props => {
   const {type} = props;
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
-  const isVariant = variantList.indexOf(type) > -1;
+  const isVariant = variantList[NAMESPACE].indexOf(type) > -1;
 
   return (
     <div className='pro-points'>

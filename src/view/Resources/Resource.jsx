@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 import cx from 'classnames';
 import moment from 'moment';
 import {capitalize, Grid} from '@material-ui/core';
-import {LEADERS} from '../../data/constants';
+import {LEADERS, NAMESPACE} from '../../data/constants';
 import useWordPress from '../../services/hooks/useWordPress';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
@@ -48,7 +48,7 @@ const Resource = () => {
   const tagsList = Object.keys(blog?.tags || {});
   const relatedResources = blogPosts.filter(i => i.slug !== blogSlug);
 
-  const author = LEADERS.find(
+  const author = LEADERS[NAMESPACE].find(
     i => i.login === blog.author?.login);
 
   const renderBlogComponent = () => (

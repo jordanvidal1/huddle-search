@@ -29,7 +29,11 @@ const LookingToHire = ({
             )}
             <div className='title'>
               <h2>
-                {children}
+                {t(`${NAMESPACE}:lookingToHire:${type}:title:part1`)}
+                <a>
+                  {t(`${NAMESPACE}:lookingToHire:${type}:title:part2`)}
+                </a>
+                {t(`${NAMESPACE}:lookingToHire:${type}:title:part3`)}
               </h2>
             </div>
             <div className='text'>

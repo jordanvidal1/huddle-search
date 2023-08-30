@@ -5,9 +5,7 @@ import WorkForUsStatic from '../shared/WorkForUs';
 
 const WorkForUs = () => (
   <div className='work-for-us'>
-    <Hero type='workForUs'>
-      We’re always on the <a>look-out</a> for talent
-    </Hero>
+    <Hero type='workForUs' />
     <WorkForUsStatic />
   </div>
 );

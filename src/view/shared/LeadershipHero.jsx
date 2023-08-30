@@ -129,7 +129,7 @@ const ourProcessComponent = t => (
 );
 
 const LeadershipHero = props => {
-  const {children, type} = props;
+  const {type} = props;
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
@@ -159,7 +159,11 @@ const LeadershipHero = props => {
               </h5>
               <div className='title'>
                 <h1>
-                  {children}
+                  {t(`${NAMESPACE}:leadershipHero:${type}:title:part1`)}
+                  <a>
+                    {t(`${NAMESPACE}:leadershipHero:${type}:title:part2`)}
+                  </a>
+                  {t(`${NAMESPACE}:leadershipHero:${type}:title:part3`)}
                 </h1>
               </div>
               <div className='text'>

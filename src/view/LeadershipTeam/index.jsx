@@ -7,9 +7,7 @@ import OurStory from '../shared/OurStory';
 
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero type='leadershipTeam'>
-      A leadership with <a>unrivalled</a> experience
-    </Hero>
+    <Hero type='leadershipTeam' />
     <Leaders />
     <OurStory type='story'>
       Three leaders come together to <a>reimagine</a> recruitment

@@ -18,9 +18,7 @@ const LookingToHire = () => (
     </Hero>
     <Specialisms type='specialisms' specialisms={SPECIALISMS[NAMESPACE]} />
     <Specialisms type='sectors' specialisms={SECTORS[NAMESPACE]} />
-    <PermanentHires type='lookingToHire'>
-      <a>Permanent</a> hires to transform your team
-    </PermanentHires>
+    <PermanentHires type='lookingToHire' />
     <ContractHires />
     <ExecutiveSearch />
     <EmbeddedTalent />

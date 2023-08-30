@@ -19,7 +19,10 @@ const ContractHires = () => {
             )}
             <div className='title'>
               <h2>
-                <a>Contract</a> hires to deliver your project
+                <a>
+                  {t(`${NAMESPACE}:lookingToHire:contract:title:part1`)}
+                </a>
+                {t(`${NAMESPACE}:lookingToHire:contract:title:part2`)}
               </h2>
             </div>
             <div className='text'>

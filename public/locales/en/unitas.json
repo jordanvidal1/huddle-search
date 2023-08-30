@@ -6,11 +6,15 @@
         "part2": "verified",
         "part3": " Unitas talent"
       },
-      "desc": "At Unitas – we are redefining recruitment in finance – by delivering new ways compelling opportunities meet the industry’s top-tier talent.",
+      "desc": "At Unitas we are reshaping recruitment within senior finance with our in-house AI technology.",
       "button": "Our story"
     },
     "lookingForAJob": {
-      "desc": "Transform your finance career with Unitas. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "title": {
+        "part1": "Looking for a new challenge?",
+        "part2": ""
+      },
+      "desc": "Unitas are absolutely focused on working with the most tangible brands in the market that have a genuine focus on culture and career progression. If you feel that a role change is necessary and would like to understand how we can help, please reach out.",
       "link": "Find out more",
       "button": "Talk to us",
       "roles": {
@@ -21,32 +25,46 @@
   },
   "lookingToHire": {
     "home": {
-      "desc": "Elevate your financial team with exceptional talent. Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
+      "title": {
+        "part1": "Looking to hire?",
+        "part2": "",
+        "part3": ""
+      },
+      "desc": "Unitas are experts in identifying exceptional finance talent at speed in multiple sectors, without compromising on quality in any part of the process.",
       "link": "Find out more",
       "cv": {
-        "title": "Be sent 3 CVs with no obligations",
-        "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
+        "title": "Example talent – no obligations?",
+        "text": "We prove our network and you decide next steps.",
         "link": "Request now"
       }
     },
     "lookingToHire": {
-      "desc": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
+      "title": {
+        "part1": "Permanent hires that add high performance",
+        "part2": "",
+        "part3": ""
+      },
+      "desc": "Our passion is adding high-performing, game-changing permanent talent to your team that is an instant match with your culture.",
       "cv": {
-        "title": "Be sent 3 CVs with no obligations",
-        "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
+        "title": "Example talent – no obligations?",
+        "text": "We prove our network, and you decide next steps.",
         "link": "Request now"
       }
     },
     "specialisms": {
       "title": "Specialisms",
-      "desc": "Our expansive team of experts covers a diverse array of fields, enabling us to provide comprehensive solutions across various specialisms."
+      "desc": "At Unitas, our passion is supporting finance SLTs to attract the very best, high-performing qualified finance talent at unrivalled pace, within the below specialisms…"
     },
     "sectors": {
       "title": "Sectors",
       "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and niche opportunities."
     },
     "contract": {
-      "desc": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
+      "title": {
+        "part1": "",
+        "part2": "Interim search & selection with pace & quality"
+      },
+      "desc": "We understand that an interim solution for your team is a ‘need now’ requirement, so our 24-hour, multiple CV turnaround will ease the pressure.",
       "button": "Find out more"
     }
   },
@@ -60,47 +78,47 @@
     "info": {
       "1": {
         "title": "Research & needs assessment",
-        "text": "By consulting clients, creating detailed role specifications, and analysing markets, we grasp your needs and conditions, enabling a precise recruitment strategy."
+        "text": "Understanding in detail the role specifications and the wider business to best represent you. Also, discussing our go-to-market strategy for the search."
       },
       "2": {
         "title": "Executive identification & outreach",
-        "text": "Through a blend of diverse sourcing, discreet outreach, and meticulous long-listing, we connect with candidates meeting criteria and expressing genuine interest."
+        "text": "Through a blend of diverse sourcing, discreet outreach and meticulous long-listing, we connect and meet with candidates matching the search criteria."
       },
       "3": {
         "title": "Assessment & evaluation",
-        "text": "Thorough interviews, reference validation, and assessments such as psychometric tests ensure the selection qualified, compatible candidates, enhancing your recruitment process."
+        "text": "Unitas conduct thorough market analysis, interviews & reference validation to ensure the shortlist is above expectations, every time."
       },
       "4": {
         "title": "Offer management & onboarding",
-        "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
+        "text": "Offer management starts from the very first conversation and continues throughout the whole process. This focused approach will ultimately result in a very smooth acceptance and onboarding phase."
       }
     },
     "button": "Find out more"
   },
   "embeddedTalent": {
-    "desc": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
+    "desc": "Our embedded talent solutions cover the understanding stage, talent identification, performance monitoring & feedback. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly successful collaborative journey.",
     "info": {
       "1": {
-        "title": "Onboarding & integration",
-        "text": "We can guarantee seamless assimilation of external talent. Through processes, tools, training, and alignment with your culture and objectives, we ensure their swift integration."
+        "title": "Understanding stage",
+        "text": "We sit down to assess the recruitment project in greater detail, and with our experience and expertise formulate an effective strategy to identify and successfully attract market leading talent."
       },
       "2": {
-        "title": "Resource & skill management",
-        "text": "We perform skill assessments, targeted talent acquisition, gap analysis, talent pools, and ongoing learning to ensure your projects access the right expertise for success."
+        "title": "Talent identification",
+        "text": "We utilise our in-house AI technologies to roll out a market leading talent acquisition campaign, ensuring we are capturing the very best talent for the projects needs at pace."
       },
       "3": {
         "title": "Performance monitoring & feedback",
-        "text": "We ensure external talent's alignment with your company goals, with use of metrics, check-ins, feedback, KPIs, and reviews for effective collaboration and measurable success."
+        "text": "We encourage a weekly ‘huddle’ to discuss how we’re tracking vs agreed KPI metrics, market feedback as a whole on the business, interview and onboarding processes plus much more."
       },
       "4": {
         "title": "Transition & off-boarding",
-        "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
+        "text": "We promise to provide a smooth project exit with complete oversight of knowledge transfer, to ensure you can adopt our best ways of working which resulted in the project being successful."
       }
     },
     "button": "Find out more"
   },
   "workForUs": {
-    "desc": "Discover more about our innovative company and game-changing service to further ignite your enthusiasm for Unitas.",
+    "desc": "Discover more about our innovative AI tech-led approach to senior finance recruitment that has a sole focus on servicing our client and candidate community.",
     "container": {
       "title": "Want to work for us?",
       "text": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Unitas.",
@@ -135,12 +153,16 @@
   "specialismHero": {
     "title": {
       "specialisms": "Specialism: {{name}}",
-      "sectors": "Sector: {{name}}"
+      "sectors": "Sector: {{name}}",
+      "lookingForAJob": {
+        "part1": "Looking for a new challenge?",
+        "part2": ""
+      }
     },
     "desc": {
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
-      "lookingToHire": "Elevate your financial team with exceptional talent. Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
-      "lookingForAJob": "Transform your finance career with Unitas. Browse our exciting open roles, find opportunities that meet your aspirations, and apply online – or contact us for more helpful information.",
+      "lookingToHire": "Unitas are incredibly passionate about representing the very best finance talent in today’s market and can move with unrivalled pace. Let’s chat…",
+      "lookingForAJob": "Our focus at Unitas is to truly understand how our clients can offer an amazing culture, progression and benefits to our candidate community. Reach out and we can help you.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -150,6 +172,11 @@
   "leadershipHero": {
     "leadershipTeam": {
       "path": "/leadership-team",
+      "title": {
+        "part1": "A leadership with unrivalled experience",
+        "part2": "",
+        "part3": ""
+      },
       "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success.",
       "info": {
         "title": "The leadership in numbers..."
@@ -157,7 +184,12 @@
     },
     "ourStory": {
       "path": "/our-story",
-      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Unitas, they have formed a powerhouse committed to the innovation of recruitment in finance.",
+      "title": {
+        "part1": "Experts unite to redefine an industry",
+        "part2": "",
+        "part3": ""
+      },
+      "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Unitas, they have formed a business committed to the innovation of recruitment in finance.",
       "info": {
         "title": "The mission statement...",
         "text": "Our mission is to revolutionise the recruitment landscape by delivering exceptional results through innovative practices. We are dedicated to exceeding client expectations by leveraging cutting-edge approaches that consistently source, assess, and match top-tier talent. Through our unwavering commitment to excellence and continuous innovation, we strive to transform businesses and careers, driving success and shaping the future of recruitment."
@@ -166,7 +198,12 @@
     },
     "ourProcess": {
       "path": "/our-process",
-      "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified candidates efficiently and with unprecedented precision.",
+      "title": {
+        "part1": "Leveraging AI for the benefit of our candidates & clients",
+        "part2": "",
+        "part3": ""
+      },
+      "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the best experience for our client and candidate communities.",
       "info": {
         "title": "The internal propitiatory tech...",
         "calculation": {
@@ -188,14 +225,29 @@
     },
     "executiveSearch": {
       "path": "",
+      "title": {
+        "part1": "A specialised service powered by AI",
+        "part2": "",
+        "part3": ""
+      },
       "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision."
     },
     "workForUs": {
       "path": "/work-for-us",
+      "title": {
+        "part1": "We’re always on the look-out for talent",
+        "part2": "",
+        "part3": ""
+      },
       "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Unitas."
     },
     "contactUs": {
       "path": "/contact-us",
+      "title": {
+        "part1": "Get in touch with us…",
+        "part2": "",
+        "part3": ""
+      },
       "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
     }
   },
@@ -224,17 +276,17 @@
   "infoContainer": {
     "vacancy": {
       "title": "Have a vacancy to fill?",
-      "text": "Find visionary minds in finance and critical industry experts to gain a competitive edge in today's rapidly evolving finance landscape.",
+      "text": "",
       "button": "Submit new role"
     },
     "help": {
       "title": "Need help with something?",
-      "text": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service.",
+      "text": "",
       "button": "Talk to us"
     },
     "cv": {
-      "title": "Want 3 CVs with no obligations?",
-      "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
+      "title": "Example talent – no obligations?",
+      "text": "We prove our network and you decide next steps.",
       "button": "Request role"
     }
   },
@@ -318,8 +370,8 @@
           "text": "Significantly reducing the overall time-to-fill vacancies, streamlining the recruitment journey."
         },
         "5": {
-          "title": "Cost savings are passed to hiring companies",
-          "text": "Passing on cost savings directly to hiring companies, optimising resource allocation and maximising value."
+          "title": "",
+          "text": ""
         }
       }
     },
@@ -404,34 +456,34 @@
   },
   "originStory": {
     "title": "Origin story",
-    "intro": "In the bustling heart of the global job market, where opportunities and talent converge, the story of Unitas begins.",
+    "intro": "",
     "part1": {
-      "text": "Born from the vision of blending human expertise with transformative technology, Unitas was established by an exceptional trio: two seasoned recruitment experts and a tech innovator. Their shared goal? To reshape how recruitment agencies operate and redefine the job-seeking process."
+      "text": "Born from the vision of blending human expertise with transformative technology, Unitas was established by an experienced trio: two seasoned recruitment experts and a tech innovator. Their shared goal? To reshape how the recruitment process works to enable better outcomes for both the candidate and client community."
     },
     "part2": {
       "title": "Meet the Founders",
-      "text": "Each founder brought their distinct strengths and insights to the table. The recruitment experts, with extensive experience in Executive Search, understood the significance of precision and personal connection in matching candidates with their ideal roles. The tech innovator, a forward-thinker in the realms of artificial intelligence (AI) and machine learning (ML), recognised the potential of these tools to reshape and modernise the recruitment landscape."
+      "text": "Each founder brought their distinct strengths and insights to the table. The recruitment experts understood the significance of precision and personal connection in matching candidates with their ideal roles. The tech innovator, a forward-thinker in the realms of artificial intelligence (AI) and machine learning (ML), recognised the potential of these tools to reshape and modernise the recruitment process."
     },
     "quote1": "\"From its inception, Unitas' strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer.\"",
     "part3": {
       "title": "The Bigger Picture",
-      "text": "Unitas was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent aquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
+      "text": "Unitas was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent acquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
     },
     "part4": {
       "title": "Placing You First",
       "text": "From its inception, Unitas' strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer. The founders embarked on a thorough exploration, identifying the elements that underpin a successful recruitment partnership. This endeavour was grounded in practical insights that could drive tangible improvements."
     },
-    "quote2": "\"Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently.\"",
+    "quote2": "",
     "part5": {
       "title": "The Tech Advantage",
       "text": "Enter Unitas' tech specialist, seamlessly integrating AI and ML into the fabric of the company's operations. However, this wasn't technology for technology's sake—it was about streamlining the process. Each application of AI and ML was carefully crafted to simplify recruitment. By automating routine tasks and employing predictive analytics for candidate-client matching, Unitas aimed to enhance efficiency and accuracy."
     },
     "part6": {
       "title": "The Present",
-      "text": "Today, Unitas stands as a guiding light for modern recruitment agencies. For job seekers, it opens doors to tailored opportunities. For companies, it serves as a gateway to a meticulously curated talent pool. Every interaction at Unitas underscores their dedication to customer satisfaction. Successful matches exemplify the harmonious blend of human expertise and cutting-edge technology. Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently."
+      "text": "Today, Unitas has a sole focus on servicing the finance candidate and client community. We feel with our technology and recruitment expertise it opens doors to many more tailored opportunities for our candidates, whilst for our clients it serves as a gateway to a meticulously curated talent pool at unrivalled speed. Every interaction at Unitas underscores our dedication to customer satisfaction."
     },
     "part7": {
-      "text": "In a world where time is precious and talent is paramount, Unitas emerges as a reliable partner for rapidly and effectively assembling top-tier teams. Ready to benefit from the future of recruitment? Contact the Unitas team today."
+      "text": "In a world where time is precious and talent is paramount, Unitas emerges as a reliable partner for rapidly and effectively assembling high-performing teams. Ready to benefit from the future of recruitment? Contact the Unitas team today."
     }
   },
   "footer": {
