@@ -138,7 +138,34 @@ export const SPECIALISMS = {
     }
   ],
   unitas: [
-
+    {
+      name: 'Commercial FP&A',
+      path: '/specialisms/commercial-fp-and-a',
+    },
+    {
+      name: 'Data Analysis & BI',
+      path: '/specialisms/data-analysis-and-bi',
+    },
+    {
+      name: 'Finance Business Partnering',
+      path: '/specialisms/finance-business-partnering',
+    },
+    {
+      name: 'Group Financial Control',
+      path: '/specialisms/group-financial-control',
+    },
+    {
+      name: 'Group FP&A',
+      path: '/specialisms/group-fp-and-a',
+    },
+    {
+      name: 'Group Financial Reporting',
+      path: '/specialisms/group-financial-reporting',
+    },
+    {
+      name: 'Group Technical Accounting',
+      path: '/specialisms/group-technical-accounting',
+    }
   ]
 };
 
@@ -241,7 +268,61 @@ export const SECTORS = {
     }
   ],
   unitas: [
-
+    {
+      name: 'Clothing Retail',
+      path: '/sectors/clothing-retail',
+      // icon: HuddleEcommerce
+    },
+    {
+      name: 'E-Commerce',
+      path: '/sectors/ecommerce',
+      icon: HuddleEcommerce
+    },
+    {
+      name: 'FinTech & Healthcare',
+      path: '/sectors/fintech-and-healthcare',
+      icon: HuddleFintech
+    },
+    {
+      name: 'FMCG',
+      path: '/sectors/fmcg',
+      icon: HuddleFMCG
+    },
+    {
+      name: 'Food Retail',
+      path: '/sectors/food-retail',
+      // icon: HuddleEcommerce
+    },
+    {
+      name: 'Media',
+      path: '/sectors/media',
+      icon: HuddleMedia
+    },
+    {
+      name: 'Private Equity',
+      path: '/sectors/private-equity',
+      icon: HuddlePrivate
+    },
+    {
+      name: 'Real Estate',
+      path: '/sectors/real-estate',
+      // icon: HuddleNewTech
+    },
+    {
+      name: 'Telecoms',
+      path: '/sectors/telecoms',
+      icon: HuddleTelco
+    },
+    {
+      name: 'Technology',
+      path: '/sectors/technology',
+      // icon: HuddleTelco
+    },
+    {
+      name: 'Venture Capital',
+      path: '/sectors/venture-capital',
+      // icon: HuddlePharmaceutical
+    }
   ]
 };
 
