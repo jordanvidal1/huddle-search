@@ -1,7 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router';
 import {Routes} from 'react-router-dom';
-import {isHuddle} from '../../services/helper';
 
 export default (
   <Routes>
@@ -13,7 +12,7 @@ export default (
     <Route path='/specialisms/:id' />
     <Route path='/sectors/:id' />
     <Route path='/looking-to-hire' />
-    <Route path={isHuddle ? '/looking-for-a-job' : '/candidates'} />
+    <Route path='/candidates' />
     <Route path='/executive-search' />
     <Route path='/embedded-talent-solutions' />
     <Route path='/contract-interim' />
