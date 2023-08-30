@@ -26,7 +26,7 @@ const OriginStory = () => {
                 <p>
                   {t(`${NAMESPACE}:originStory:intro`)}
                 </p>
-                <br />
+                {isHuddle && <br />}
                 <p>
                   {t(`${NAMESPACE}:originStory:part1:text`)}
                 </p>
@@ -74,11 +74,13 @@ const OriginStory = () => {
                 </p>
               </div>
             </div>
-            <div className='quote'>
-              <h3>
-                {t(`${NAMESPACE}:originStory:quote2`)}
-              </h3>
-            </div>
+            {isHuddle && (
+              <div className='quote'>
+                <h3>
+                  {t(`${NAMESPACE}:originStory:quote2`)}
+                </h3>
+              </div>
+            )}
             <div className='story story-3'>
               <div className='text-container'>
                 <h6>
