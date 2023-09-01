@@ -32,6 +32,7 @@
         .specialists-container {
             align-items: flex-start;
             display: flex;
+            gap: 2rem;
             justify-content: space-around;
 
             .specialist {
@@ -117,6 +118,7 @@
 
             .specialists-container {
                 flex-direction: column;
+                gap: 1rem;
 
                 .specialist {
                     max-width: unset;

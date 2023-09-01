@@ -84,7 +84,7 @@
                 }
             }
 
-            .error-msg, .success-msg {
+            > .error-msg, > .success-msg {
                 bottom: -2.5rem;
             }
         }
