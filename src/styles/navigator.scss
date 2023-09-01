@@ -472,6 +472,22 @@ div:not(.content) > .header {
   .header {
     border-bottom: 1px solid rgba(26, 26, 26, 0.15);
 
+    .logo {
+      height: 3rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      .logo {
+        height: 2.5rem;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .logo {
+        height: 2rem;
+      }
+    }
+
     .header-nav {
       .nav-list {
         a, span {
@@ -484,10 +500,10 @@ div:not(.content) > .header {
         background: #5AA1E4;
 
         &.sectors, &.specialisms {
-          width: 39rem;
+          width: 28rem;
 
           .nav-dropdown-list {
-            height: 21.5rem;
+            height: 23.5rem;
 
             h6 {
               color: #1A1A1A;
@@ -497,11 +513,7 @@ div:not(.content) > .header {
         }
 
         &.sectors {
-          width: 35rem;
-
-          .nav-dropdown-list {
-            height: 24.5rem;
-          }
+          width: 40.5rem;
         }
 
         a, a:hover, span {

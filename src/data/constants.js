@@ -17,7 +17,7 @@ import HuddleBanking from '../static/huddle/banking.svg';
 import HuddleConstruction from '../static/huddle/construction-and-proptech.svg';
 import HuddleConsulting from '../static/huddle/consulting.svg';
 import HuddleDefence from '../static/huddle/defence.svg';
-import HuddleEcommerce from '../static/huddle/ecommerce.svg';
+import HuddleECommerce from '../static/huddle/ecommerce.svg';
 import HuddleFintech from '../static/huddle/fintech.svg';
 import HuddleFMCG from '../static/huddle/fmcg-consumer.svg';
 import HuddleHealthcare from '../static/huddle/healthcare-and-healthtech.svg';
@@ -32,7 +32,29 @@ import HuddlePrivate from '../static/huddle/private-equity.svg';
 import HuddlePublic from '../static/huddle/public-sector.svg';
 import HuddleRetail from '../static/huddle/retail-and-retailtech.svg';
 import HuddleTelco from '../static/huddle/telco.svg';
-import {isHuddle} from '../services/helper'
+
+import UnitasCFOFinance from '../static/unitas/cfo-finance-leadership.svg';
+import UnitasCommercialFPA from '../static/unitas/commercial-fp&a.svg';
+import UnitasDataAnalysis from '../static/unitas/data-analysis-&-bi.svg';
+import UnitasFinanceBP from '../static/unitas/finance-business-partnering.svg';
+import UnitasGroupFC from '../static/unitas/group-financial-control.svg';
+import UnitasGroupFPA from '../static/unitas/group-fp&a.svg';
+import UnitasGroupFR from '../static/unitas/group-financial-reporting.svg';
+import UnitasGroupTA from '../static/unitas/group-technical-accounting.svg';
+
+import UnitasClothing from '../static/unitas/clothing-retail.svg';
+import UnitasECommerce from '../static/unitas/e-commerce.svg';
+import UnitasFinTech from '../static/unitas/fintech.svg';
+import UnitasFMCG from '../static/unitas/fmcg.svg';
+import UnitasFood from '../static/unitas/food-retail.svg';
+import UnitasHealthcare from '../static/unitas/healthcare.svg';
+import UnitasManufacturing from '../static/unitas/manufacturing.svg';
+import UnitasMedia from '../static/unitas/media.svg';
+import UnitasPrivate from '../static/unitas/private-equity.svg';
+import UnitasEstate from '../static/unitas/real-estate.svg';
+import UnitasTelecoms from '../static/unitas/telecoms.svg';
+import UnitasTechnology from '../static/unitas/technology.svg';
+import UnitasVenture from '../static/unitas/venture-capital.svg';
 
 export const SITE_URL = process.env.REACT_APP_SITE_URL;
 export const NAMESPACE = process.env.REACT_APP_SITE_NAME;
@@ -154,35 +176,43 @@ export const SPECIALISMS = {
   unitas: [
     {
       name: 'CFO/Finance Leadership',
-      // path: '/cfo-finance-leadership'
+      path: '/specialisms/cfo-finance-leadership',
+      icon: UnitasCFOFinance
     },
     {
       name: 'Commercial FP&A',
-      // path: '/specialisms/commercial-fp-and-a'
+      path: '/specialisms/commercial-fp-and-a',
+      icon: UnitasCommercialFPA
     },
     {
       name: 'Data Analysis & BI',
-      // path: '/specialisms/data-analysis-and-bi'
+      path: '/specialisms/data-analysis-and-bi',
+      icon: UnitasDataAnalysis
     },
     {
       name: 'Finance Business Partnering',
-      // path: '/specialisms/finance-business-partnering'
+      path: '/specialisms/finance-business-partnering',
+      icon: UnitasFinanceBP
     },
     {
       name: 'Group Financial Control',
-      // path: '/specialisms/group-financial-control'
+      path: '/specialisms/group-financial-control',
+      icon: UnitasGroupFC
     },
     {
       name: 'Group FP&A',
-      // path: '/specialisms/group-fp-and-a'
+      path: '/specialisms/group-fp-and-a',
+      icon: UnitasGroupFPA
     },
     {
       name: 'Group Financial Reporting',
-      // path: '/specialisms/group-financial-reporting'
+      path: '/specialisms/group-financial-reporting',
+      icon: UnitasGroupFR
     },
     {
       name: 'Group Technical Accounting',
-      // path: '/specialisms/group-technical-accounting'
+      path: '/specialisms/group-technical-accounting',
+      icon: UnitasGroupTA
     }
   ]
 };
@@ -211,8 +241,8 @@ export const SECTORS = {
     },
     {
       name: 'E-Commerce',
-      path: '/sectors/ecommerce',
-      icon: HuddleEcommerce
+      path: '/sectors/e-commerce',
+      icon: HuddleECommerce
     },
     {
       name: 'FinTech',
@@ -288,67 +318,68 @@ export const SECTORS = {
   unitas: [
     {
       name: 'Clothing Retail',
-      // path: '/sectors/clothing-retail',
-      // icon: HuddleEcommerce
+      path: '/sectors/clothing-retail',
+      icon: UnitasClothing
     },
     {
       name: 'E-Commerce',
-      // path: '/sectors/ecommerce',
-      // icon: HuddleEcommerce
+      path: '/sectors/e-commerce',
+      icon: UnitasECommerce
     },
     {
       name: 'FinTech',
-      // path: '/sectors/fintech',
-      // icon: HuddleFintech
+      path: '/sectors/fintech',
+      icon: UnitasFinTech
     },
     {
       name: 'FMCG',
-      // path: '/sectors/fmcg',
-      // icon: HuddleFMCG
+      path: '/sectors/fmcg',
+      icon: UnitasFMCG
     },
     {
       name: 'Food Retail',
-      // path: '/sectors/food-retail',
-      // icon: HuddleEcommerce
+      path: '/sectors/food-retail',
+      icon: UnitasFood
     },
     {
       name: 'Healthcare',
-      // path: '/sectors/healthcare',
-      // icon: HuddleHealthcare
+      path: '/sectors/healthcare',
+      icon: UnitasHealthcare
     },
     {
       name: 'Manufacturing',
-      // path: '/manufacturing'
+      path: '/sectors/manufacturing',
+      icon: UnitasManufacturing
     },
     {
       name: 'Media',
-      // path: '/sectors/media',
-      // icon: HuddleMedia
+      path: '/sectors/media',
+      icon: UnitasMedia
     },
     {
       name: 'Private Equity',
-      // path: '/sectors/private-equity',
-      // icon: HuddlePrivate
+      path: '/sectors/private-equity',
+      icon: UnitasPrivate
     },
     {
       name: 'Real Estate',
-      // path: '/sectors/real-estate',
-      // icon: HuddleNewTech
+      path: '/sectors/real-estate',
+      icon: UnitasEstate
     },
     {
       name: 'Telecoms',
-      // path: '/sectors/telecoms',
-      // icon: HuddleTelco
+      path: '/sectors/telecoms',
+      icon: UnitasTelecoms
     },
     {
       name: 'Technology',
-      // path: '/sectors/technology',
-      // icon: HuddleTelco
+      path: '/sectors/technology',
+      icon: UnitasTechnology
     },
     {
       name: 'Venture Capital',
-      // path: '/sectors/venture-capital',
-      // icon: HuddlePharmaceutical
+      path: '/sectors/venture-capital',
+      icon: UnitasVenture
     }
   ]
 };

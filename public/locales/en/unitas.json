@@ -481,6 +481,31 @@
       }
     }
   },
+  "specialisms": {
+    "cfo-finance-leadership": "Unitas specialises in sourcing highly-skilled CFOs and finance leaders who are instrumental in shaping financial strategies and driving organisations toward fiscal excellence, empowering businesses to achieve financial efficiency and strategic growth.",
+    "commercial-fp-and-a": "Unitas seamlessly connects financial professionals to Commercial Financial Planning & Analysis positions, enabling informed decisions and strategic financial management for business growth.",
+    "data-analysis-and-bi": "Unitas excels in identifying financial experts for Data Analysis & Business Intelligence functions, harnessing data-driven insights to drive informed business strategies and gain competitive advantages.",
+    "finance-business-partnering": "Unitas adeptly sources financial partners for Finance Business Partnering positions, ensuring collaboration between finance and operations for streamlined decision-making and financial optimisation.",
+    "group-financial-control": "Unitas specialises in matching financial professionals with Group Financial Control roles, ensuring robust financial governance and compliance within complex organisational structures.",
+    "group-fp-and-a": "Unitas efficiently links financial professionals to Group Financial Planning & Analysis positions, enabling strategic financial forecasting and performance analysis for group-wide success.",
+    "group-financial-reporting": "Unitas excels in connecting financial talent with Group Financial Reporting roles, ensuring accurate and timely financial reporting to stakeholders and regulatory bodies.",
+    "group-technical-accounting": "Unitas adeptly identifies financial experts for Group Technical Accounting positions, ensuring compliance with complex accounting standards and providing expertise in financial technicalities."
+  },
+  "sectors": {
+    "clothing-retail": "Unitas excels in recruiting for Clothing Retail, partnering with fashion brands to drive success through innovative strategies, market-responsive solutions, and the creation of engaging shopping experiences.",
+    "e-commerce": "Unitas leads the way in E-Commerce recruitment, empowering digital retail growth by connecting businesses with professionals who specialise in creating seamless online experiences and adapting strategies to evolving market dynamics.",
+    "fintech": "Unitas leads in FinTech by linking talent with pioneering financial tech companies for efficiency and innovation, enhancing financial strategies and giving businesses a competitive edge.",
+    "fmcg": "Unitas specialises in FMCG positions, optimising supply chains, enhancing product delivery, and ensuring the availability of safe, fresh, and affordable consumer goods.",
+    "food-retail": "Unitas efficiently connects professionals to Food Retail functions, guaranteeing consumers have access to a variety of safe, fresh, and affordable food products while supporting businesses in this sector.",
+    "healthcare": "In healthcare, Unitas excels in connecting organisations with dedicated professionals committed to enhancing patient care, driving innovation and improving patient experiences.",
+    "manufacturing": "Unitas excels in the manufacturing sector, connecting businesses with skilled professionals who optimise production processes, quality control, and supply chain management, enhancing operational efficiency and ensuring reliable, high-quality products for customers.",
+    "media": "Unitas excels in matching top talent with Media positions, shaping content creation, distribution, and audience engagement across a wide range of platforms and media types.",
+    "private-equity": "Unitas connects professionals to Private Equity roles, optimising investment strategies, fostering financial growth, and contributing to the success of both companies and investors.",
+    "real-estate": "Unitas identifies top talent for Real Estate positions, enhancing property value through efficient management, development, and strategic investment decisions.",
+    "telecoms": "Unitas sources professionals for Telecoms functions, ensuring seamless communication services, robust connectivity, and innovative solutions that meet the demands of today's fast-paced digital world.",
+    "technology": "Unitas specialises in Technology roles, fostering innovation, driving digital transformation, and delivering cutting-edge solutions that empower businesses to thrive in a tech-driven landscape.",
+    "venture-capital": "Unitas matches professionals to Venture Capital functions, fuelling the growth of innovative startups and contributing to investment success by connecting promising ideas with the resources needed to thrive."
+  },
   "originStory": {
     "title": "Origin story",
     "intro": "",
