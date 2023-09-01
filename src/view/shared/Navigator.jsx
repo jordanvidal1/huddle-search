@@ -105,9 +105,11 @@ const Navigator = ({
       <div>
         {route.subLinks.map((subLink, i) => (
           <div key={i}>
-            <Link to={subLink.path} onClick={hideSidebar}>
-              {subLink.name}
-            </Link>
+            <span>
+              <Link to={subLink.path} onClick={hideSidebar}>
+                {subLink.name}
+              </Link>
+            </span>
           </div>
         ))}
       </div>
@@ -125,9 +127,11 @@ const Navigator = ({
           <div key={i} className='nav-dropdown-list-group'>
             <h6>{group.alphabet}</h6>
             {group.specialisms.map((subLink, i) => subLink.path ? (
-              <Link key={i} to={subLink.path} onClick={hideSidebar}>
-                {subLink.name}
-              </Link>
+              <span>
+                <Link key={i} to={subLink.path} onClick={hideSidebar}>
+                  {subLink.name}
+                </Link>
+              </span>
             ) : (
               <span>{subLink.name}</span>
             ))}
@@ -160,9 +164,11 @@ const Navigator = ({
                 />
               </span>
             ) : (
-              <Link to={route.path} onClick={hideSidebar}>
-                {route.name}
-              </Link>
+              <span>
+                <Link to={route.path} onClick={hideSidebar}>
+                  {route.name}
+                </Link>
+              </span>
             )}
           </div>
           {route.subLinks && renderDropdown(route)}

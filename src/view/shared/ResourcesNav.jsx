@@ -32,17 +32,17 @@ const ResourcesNav = () => {
     <div className='resources-nav-list'>
       {filters.map((filter, i) => (
         <div key={i}>
-          <span
-            className={cx({active: filter.name === 'Blog'})}
+          {/* todo: temp condition */}
+          <Link
+            to={filter.path}
+            onClick={() => {hideDropdown();loadBlog();}}
           >
-            {/* todo: temp condition */}
-            <Link
-              to={filter.path}
-              onClick={() => {hideDropdown();loadBlog();}}
+            <span
+              className={cx({active: filter.name === 'Blog'})}
             >
               {filter.name}
-            </Link>
-          </span>
+            </span>
+          </Link>
         </div>
       ))}
     </div>
@@ -70,9 +70,11 @@ const ResourcesNav = () => {
         <div className='resources-nav-inner'>
           <div className='resources-nav-list-container'>
             <div className='resources-nav-title'>
-              <Link to='/resources' onClick={loadBlog}>
-                Resources
-              </Link>
+              <span>
+                <Link to='/resources' onClick={loadBlog}>
+                  Resources
+                </Link>
+              </span>
             </div>
             <div className='divider' />
             {renderResourcesNavList()}

@@ -262,13 +262,17 @@ div:not(.content) > .header {
       gap: 2rem;
     }
 
-    a, a:hover {
+    a, a:hover, span {
       color: #F6E27F;
       font-family: Montserrat;
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 800;
       line-height: normal;
+    }
+
+    span {
+      cursor: initial;
     }
   }
 }
@@ -419,10 +423,14 @@ div:not(.content) > .header {
       display: none;
     }
 
-    a, a:hover {
+    a, a:hover, span {
       color: #310A31;
       font-size: 1rem;
       text-overflow: ellipsis;
+    }
+
+    span {
+      cursor: initial;
     }
 
     .nav-dropdown-list-group {
