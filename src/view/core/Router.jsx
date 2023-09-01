@@ -15,6 +15,8 @@ import Home from '../Home';
 
 import LookingToHire from '../LookingToHire';
 import LookingForAJob from '../LookingForAJob';
+
+import PermanentHires from '../PermanentHires';
 import ExecutiveSearch from '../ExecutiveSearch';
 import EmbeddedTalent from '../EmbeddedTalent';
 import ContractInterim from '../ContractInterim';
@@ -53,6 +55,8 @@ const RouterComponent = () => (
           path={isHuddle ? '/looking-for-a-job' : '/candidates'}
           Component={LookingForAJob}
         />
+
+        <Route path='/permanent-hires' Component={PermanentHires} />
         <Route path='/executive-search' Component={ExecutiveSearch} />
         <Route path='/embedded-talent-solutions' Component={EmbeddedTalent} />
         <Route path='/contract-interim' Component={ContractInterim} />

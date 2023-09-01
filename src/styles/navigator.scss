@@ -477,11 +477,36 @@ div:not(.content) > .header {
       }
 
       .nav-dropdown {
-        background: #3A84C9;
+        background: #5AA1E4;
 
-        a, a:hover {
+        &.sectors, &.specialisms {
+          width: 39rem;
+
+          .nav-dropdown-list {
+            height: 21.5rem;
+
+            h6 {
+              color: #1A1A1A;
+              font-weight: 400;
+            }
+          }
+        }
+
+        &.sectors {
+          width: 35rem;
+
+          .nav-dropdown-list {
+            height: 24.5rem;
+          }
+        }
+
+        a, a:hover, span {
           color: #FFF;
           font-family: Poppins;
+        }
+
+        span {
+          cursor: initial;
         }
       }
     }

@@ -60,12 +60,16 @@ const discoverRoutes = [
 
 const servicesRoutes = [
   {
+    name: 'Permanent Hires',
+    path: '/permanent-hires'
+  },
+  {
     name: 'Executive Search',
-    subLinks: '/executive-search'
+    path: '/executive-search'
   },
   {
     name: 'Embedded Talent Solutions',
-    subLinks: '/embedded-talent-solutions'
+    path: '/embedded-talent-solutions'
   },
   {
     name: 'Contract/Interim',

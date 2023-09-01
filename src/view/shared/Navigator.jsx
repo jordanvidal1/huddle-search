@@ -124,10 +124,12 @@ const Navigator = ({
         {groupSpecialisms(route.subLinks).map((group, i) => (
           <div key={i} className='nav-dropdown-list-group'>
             <h6>{group.alphabet}</h6>
-            {group.specialisms.map((subLink, i) => (
+            {group.specialisms.map((subLink, i) => subLink.path ? (
               <Link key={i} to={subLink.path} onClick={hideSidebar}>
                 {subLink.name}
               </Link>
+            ) : (
+              <span>{subLink.name}</span>
             ))}
           </div>
         ))}

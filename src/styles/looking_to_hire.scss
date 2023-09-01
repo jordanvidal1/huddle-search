@@ -123,6 +123,10 @@
             background-size: cover;
             margin-bottom: -1px;
 
+            .content {
+                max-width: 39.5rem;
+            }
+
             .title a {
                 background: none;
                 color: #FFF;

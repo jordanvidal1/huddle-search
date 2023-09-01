@@ -3,7 +3,8 @@
 .looking-for-a-job,
 .executive-search,
 .embedded-talent,
-.contract-interim {
+.contract-interim,
+.permanent-hires {
     .specialism-hero {
         .text-container {
             align-self: flex-start;
@@ -95,7 +96,8 @@
 .looking-to-hire,
 .looking-for-a-job,
 .embedded-talent,
-.contract-interim {
+.contract-interim,
+.permanent-hires {
     .specialism-hero {
         background: url('../static/huddle/looking-to-hire.png') top -5rem right -5rem no-repeat #8762CB;
         background-size: clamp(35rem, 48%, 50rem) auto;
@@ -131,6 +133,10 @@
 
 .contract-hires .specialism-hero {
     background-image: url('../static/huddle/contract-hires-hero.png');
+}
+
+.permanent-hires .specialism-hero {
+    // todo
 }
 
 .specialism {
@@ -358,7 +364,8 @@
     .looking-to-hire,
     .looking-for-a-job,
     .embedded-talent,
-    .contract-interim {
+    .contract-interim,
+    .permanent-hires {
         .specialism-hero {
             background: url('../static/unitas/looking-to-hire.png') top right no-repeat #3A84C9;
             background-size: 40%;
@@ -396,8 +403,17 @@
         }
     }
 
+    .looking-for-a-job, .contract-interim, .permanent-hires {
+        .specialism-hero .title {
+            h1, a {
+                font-size: 5rem;
+            }
+        }
+    }
+
     .embedded-talent,
-    .contract-interim {
+    .contract-interim,
+    .permanent-hires {
         .specialism-hero {
             background: url('../static/unitas/embedded-talent-specialism.png') top right no-repeat #3A84C9;
             background-size: 40%;

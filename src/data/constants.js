@@ -32,6 +32,7 @@ import HuddlePrivate from '../static/huddle/private-equity.svg';
 import HuddlePublic from '../static/huddle/public-sector.svg';
 import HuddleRetail from '../static/huddle/retail-and-retailtech.svg';
 import HuddleTelco from '../static/huddle/telco.svg';
+import {isHuddle} from '../services/helper'
 
 export const SITE_URL = process.env.REACT_APP_SITE_URL;
 export const NAMESPACE = process.env.REACT_APP_SITE_NAME;
@@ -77,7 +78,7 @@ const peteLeader = {
   img: PeteImg,
   name: 'Peter Wood',
   role: 'Co-Founder & CTO',
-  description: 'Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at Huddle.',
+  description: `Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at ${NAMESPACE === 'huddle' ? 'Huddle' : 'Unitas'}.`,
   // number: '+44 7830 319093',
   email: leaderEmails[NAMESPACE].pete,
   linkedin: 'https://www.linkedin.com/in/peter-wood-632058151/',
@@ -152,32 +153,36 @@ export const SPECIALISMS = {
   ],
   unitas: [
     {
+      name: 'CFO/Finance Leadership',
+      // path: '/cfo-finance-leadership'
+    },
+    {
       name: 'Commercial FP&A',
-      path: '/specialisms/commercial-fp-and-a',
+      // path: '/specialisms/commercial-fp-and-a'
     },
     {
       name: 'Data Analysis & BI',
-      path: '/specialisms/data-analysis-and-bi',
+      // path: '/specialisms/data-analysis-and-bi'
     },
     {
       name: 'Finance Business Partnering',
-      path: '/specialisms/finance-business-partnering',
+      // path: '/specialisms/finance-business-partnering'
     },
     {
       name: 'Group Financial Control',
-      path: '/specialisms/group-financial-control',
+      // path: '/specialisms/group-financial-control'
     },
     {
       name: 'Group FP&A',
-      path: '/specialisms/group-fp-and-a',
+      // path: '/specialisms/group-fp-and-a'
     },
     {
       name: 'Group Financial Reporting',
-      path: '/specialisms/group-financial-reporting',
+      // path: '/specialisms/group-financial-reporting'
     },
     {
       name: 'Group Technical Accounting',
-      path: '/specialisms/group-technical-accounting',
+      // path: '/specialisms/group-technical-accounting'
     }
   ]
 };
@@ -283,57 +288,66 @@ export const SECTORS = {
   unitas: [
     {
       name: 'Clothing Retail',
-      path: '/sectors/clothing-retail',
+      // path: '/sectors/clothing-retail',
       // icon: HuddleEcommerce
     },
     {
       name: 'E-Commerce',
-      path: '/sectors/ecommerce',
-      icon: HuddleEcommerce
-    },
-    {
-      name: 'FinTech & Healthcare',
-      path: '/sectors/fintech-and-healthcare',
-      icon: HuddleFintech
-    },
-    {
-      name: 'FMCG',
-      path: '/sectors/fmcg',
-      icon: HuddleFMCG
-    },
-    {
-      name: 'Food Retail',
-      path: '/sectors/food-retail',
+      // path: '/sectors/ecommerce',
       // icon: HuddleEcommerce
     },
     {
+      name: 'FinTech',
+      // path: '/sectors/fintech',
+      // icon: HuddleFintech
+    },
+    {
+      name: 'FMCG',
+      // path: '/sectors/fmcg',
+      // icon: HuddleFMCG
+    },
+    {
+      name: 'Food Retail',
+      // path: '/sectors/food-retail',
+      // icon: HuddleEcommerce
+    },
+    {
+      name: 'Healthcare',
+      // path: '/sectors/healthcare',
+      // icon: HuddleHealthcare
+    },
+    {
+      name: 'Manufacturing',
+      // path: '/manufacturing'
+    },
+    {
       name: 'Media',
-      path: '/sectors/media',
-      icon: HuddleMedia
+      // path: '/sectors/media',
+      // icon: HuddleMedia
     },
     {
       name: 'Private Equity',
-      path: '/sectors/private-equity',
-      icon: HuddlePrivate
+      // path: '/sectors/private-equity',
+      // icon: HuddlePrivate
     },
     {
       name: 'Real Estate',
-      path: '/sectors/real-estate',
+      // path: '/sectors/real-estate',
       // icon: HuddleNewTech
     },
     {
       name: 'Telecoms',
-      path: '/sectors/telecoms',
-      icon: HuddleTelco
+      // path: '/sectors/telecoms',
+      // icon: HuddleTelco
     },
     {
       name: 'Technology',
-      path: '/sectors/technology',
+      // path: '/sectors/technology',
       // icon: HuddleTelco
     },
     {
       name: 'Venture Capital',
-      path: '/sectors/venture-capital',
+      // path: '/sectors/venture-capital',
       // icon: HuddlePharmaceutical
     }
   ]

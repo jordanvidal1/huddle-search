@@ -48,7 +48,7 @@ const ProPoints = props => {
             </div>
             <div className='pro-point-container'>
               <Grid container spacing={4} justifyContent='center' align='center'>
-                <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
+                <Grid item xs={12}>
                   <div className='pro-point'>
                     <div className='pro-point-icon'>
                       <img alt='pro-point-icon-1' src={ProIcon1} />
@@ -61,7 +61,7 @@ const ProPoints = props => {
                     </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
+                <Grid item xs={12}>
                   <div className='pro-point'>
                     <div className='pro-point-icon'>
                       <img alt='pro-point-icon-2' src={ProIcon2} />
@@ -74,7 +74,7 @@ const ProPoints = props => {
                     </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
+                <Grid item xs={12}>
                   <div className='pro-point'>
                     <div className='pro-point-icon'>
                       <img alt='pro-point-icon-3' src={ProIcon3} />
@@ -87,7 +87,7 @@ const ProPoints = props => {
                     </p>
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={6} md={isVariant ? 6 : 4}>
+                <Grid item xs={12}>
                   <div className='pro-point'>
                     <div className='pro-point-icon'>
                       <img alt='pro-point-icon-4' src={ProIcon4} />
@@ -101,7 +101,7 @@ const ProPoints = props => {
                   </div>
                 </Grid>
                 {!isVariant && (
-                  <Grid item xs={12} sm={6} md={4}>
+                  <Grid item xs={12}>
                     <div className='pro-point'>
                       <div className='pro-point-icon'>
                         <img alt='pro-point-icon-5' src={ProIcon1} />

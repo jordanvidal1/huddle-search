@@ -2,7 +2,8 @@
 .our-process,
 .executive-search,
 .embedded-talent,
-.contract-interim {
+.contract-interim,
+.permanent-hires {
     .pro-points {
         background: #310A31;
 
@@ -59,25 +60,42 @@
             .pro-point-container {
                 margin-top: 3rem;
 
-                .pro-point h5 {
-                    font-size: 1.75rem;
-                    margin: 1rem 0 0.5rem;
-                }
-            }
-        }
+                .pro-point {
+                    max-width: unset;
 
-        @include media-breakpoint-down(sm) {
-            .pro-point-container .pro-point {
-                max-width: 100%;
+                    h5 {
+                        font-size: 1.75rem;
+                        margin: 1rem 0 0.5rem;
+                    }
+                }
             }
         }
     }
 }
 
 .embedded-talent,
-.contract-interim {
+.contract-interim,
+.permanent-hires {
     .pro-points .pro-point-container .pro-point .pro-point-icon {
         background: #FF958C;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .permanent-hires, .our-story, .our-process {
+        .pro-points .pro-point-container > div > div {
+            flex-basis: 33.333333%;
+            flex-grow: 0;
+            max-width: 33.333333%;
+        }
+    }
+
+    .executive-search, .contract-interim, .embedded-talent, .unitas-site .our-process {
+        .pro-points .pro-point-container > div > div {
+            flex-basis: 50%;
+            flex-grow: 0;
+            max-width: 50%;
+        }
     }
 }
 
@@ -118,7 +136,8 @@
     .our-story,
     .our-process,
     .embedded-talent,
-    .contract-interim {
+    .contract-interim,
+    .permanent-hires {
         .pro-points {
             background: #1A1A1A;
 

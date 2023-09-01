@@ -163,6 +163,7 @@
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
       "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
       "lookingForAJob": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
+      "permanentHires": "",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -452,6 +453,32 @@
           "text": ""
         }
       }
+    },
+    "permanentHires": {
+      "title": "Title",
+      "desc": "Blurb",
+      "points": {
+        "1": {
+          "title": "",
+          "text": ""
+        },
+        "2": {
+          "title": "",
+          "text": ""
+        },
+        "3": {
+          "title": "",
+          "text": ""
+        },
+        "4": {
+          "title": "",
+          "text": ""
+        },
+        "5": {
+          "title": "",
+          "text": ""
+        }
+      }
     }
   },
   "specialisms": {
@@ -497,19 +524,19 @@
       "title": "Meet the Founders",
       "text": "Each founder brought their distinct strengths and insights to the table. The recruitment experts, with extensive experience in Executive Search, understood the significance of precision and personal connection in matching candidates with their ideal roles. The tech innovator, a forward-thinker in the realms of artificial intelligence (AI) and machine learning (ML), recognised the potential of these tools to reshape and modernise the recruitment landscape."
     },
-    "quote1": "\"From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer.\"",
+    "quote1": "\"From its inception, Huddle's strategy has been anchored in prioritising your needs — whether you're a job seeker or an employer.\"",
     "part3": {
       "title": "The Bigger Picture",
       "text": "Huddle was established to be a company that transcends the typical recruitment agency experience, serving as a direct strategic partner dedicated to guiding and supporting clients and candidates alike. Uniquely, their aspiration is to combine the meticulous practices of talent acquisition, with the efficiency, scalability, and predictive capabilities of AI and ML. At the heart of this blend lies an unwavering commitment to delivering an exceptional customer experience."
     },
     "part4": {
       "title": "Placing You First",
-      "text": "From its inception, Huddle's strategy has been anchored in prioritising your needs—whether you're a job seeker or an employer. The founders embarked on a thorough exploration, identifying the elements that underpin a successful recruitment partnership. This endeavour was grounded in practical insights that could drive tangible improvements."
+      "text": "From its inception, Huddle's strategy has been anchored in prioritising your needs — whether you're a job seeker or an employer. The founders embarked on a thorough exploration, identifying the elements that underpin a successful recruitment partnership. This endeavour was grounded in practical insights that could drive tangible improvements."
     },
     "quote2": "\"Each partnership between a candidate and a client contributes to the evolving story of a company that dared to envision recruitment differently.\"",
     "part5": {
       "title": "The Tech Advantage",
-      "text": "Enter Huddle's tech specialist, seamlessly integrating AI and ML into the fabric of the company's operations. However, this wasn't technology for technology's sake—it was about streamlining the process. Each application of AI and ML was carefully crafted to simplify recruitment. By automating routine tasks and employing predictive analytics for candidate-client matching, Huddle aimed to enhance efficiency and accuracy."
+      "text": "Enter Huddle's tech specialist, seamlessly integrating AI and ML into the fabric of the company's operations. However, this wasn't technology for technology's sake — it was about streamlining the process. Each application of AI and ML was carefully crafted to simplify recruitment. By automating routine tasks and employing predictive analytics for candidate-client matching, Huddle aimed to enhance efficiency and accuracy."
     },
     "part6": {
       "title": "The Present",

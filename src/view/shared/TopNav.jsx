@@ -6,6 +6,10 @@ import UnitasDropdownArrow from '../../static/unitas/dropdown-arrow.svg';
 
 const leftRoutes = [
   {
+    name: 'Permanent Hires',
+    path: '/permanent-hires'
+  },
+  {
     name: 'Executive Search',
     path: '/executive-search'
   },
