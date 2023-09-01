@@ -167,9 +167,9 @@ const Footer = ({
                     </p>
                   </div>
                   <div className='btn-container'>
-                    <Link to='/jobs' className="btn btn-secondary">
+                    <HashLink to='/contact-us#contact' className="btn btn-secondary">
                       {t(`${NAMESPACE}:footer:lookingForAJob:button`)}
-                    </Link>
+                    </HashLink>
                   </div>
                 </div>
               </Grid>

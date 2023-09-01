@@ -7,6 +7,7 @@ import Logo from '../../static/huddle/logo.svg';
 import UnitasLogo from '../../static/unitas/logo.svg';
 import Image1 from '../../static/huddle/origin-story-1.jpg';
 import Image2 from '../../static/huddle/origin-story-2.jpg';
+import Image3 from '../../static/huddle/origin-story-3.jpg';
 
 const OriginStory = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -103,11 +104,11 @@ const OriginStory = () => {
                   {t(`${NAMESPACE}:originStory:part7:text`)}
                 </p>
               </div>
-              {/*<div className='img-container'>*/}
-              {/*  <div>*/}
-              {/*    <img alt='specialist-img' />*/}
-              {/*  </div>*/}
-              {/*</div>*/}
+              <div className='img-container'>
+                <div>
+                  <img alt='specialist-img' src={Image3} />
+                </div>
+              </div>
             </div>
             <img
               alt='logo'
