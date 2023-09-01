@@ -163,7 +163,7 @@
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
       "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
       "lookingForAJob": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
-      "permanentHires": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
+      "permanent": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -454,29 +454,29 @@
         }
       }
     },
-    "permanentHires": {
+    "permanent": {
       "title": "Title",
       "desc": "Blurb",
       "points": {
         "1": {
-          "title": "",
-          "text": ""
+          "title": "Strategic Candidate Search & Skill Assessment",
+          "text": "We employ an expansive network and meticulous screening to source candidates who possess both the necessary skills and a cultural fit, ensuring a harmonious team integration and optimal performance."
         },
         "2": {
-          "title": "",
-          "text": ""
+          "title": "Efficient Interview Coordination",
+          "text": "Our streamlined process saves you time and ensures seamless communication with candidates. This enhances their experience, accelerates the hiring process, and maintains a positive impression of your organisation."
         },
         "3": {
-          "title": "",
-          "text": ""
+          "title": "Expert Negotiation Support",
+          "text": "With our seasoned negotiators at your side, you can confidently extend competitive offers. This minimises any potential delays in finalising candidate acceptance and secures top talent for your team."
         },
         "4": {
-          "title": "",
-          "text": ""
+          "title": "Seamless Onboarding & Support",
+          "text": "We guide candidates through a comprehensive onboarding process, ensuring a smooth transition into their roles. This personalised approach contributes to higher retention rates and cultivates a satisfied and productive workforce."
         },
         "5": {
-          "title": "",
-          "text": ""
+          "title": "Industry Insights & Dedicated Consultant",
+          "text": "Benefit from our industry expertise, gaining insights into market trends and salary benchmarks. Your dedicated consultant offers personalised guidance, ensuring your recruitment strategy aligns with your organisation's goals and objectives."
         }
       }
     }

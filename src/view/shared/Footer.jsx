@@ -60,8 +60,8 @@ const discoverRoutes = [
 
 const servicesRoutes = [
   {
-    name: 'Permanent Hires',
-    path: '/permanent-hires'
+    name: 'Permanent',
+    path: '/permanent'
   },
   {
     name: 'Executive Search',

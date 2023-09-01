@@ -11,15 +11,15 @@ const title = isHuddle
   ? ' hires to transform your team'
   : 'Permanent hires that add high performance';
 
-const PermanentHires = () => (
-  <div className='permanent-hires'>
-    <Hero type='permanentHires'>
+const Permanent = () => (
+  <div className='permanent'>
+    <Hero type='permanent'>
       <a>{highlighted}</a>{title}
     </Hero>
-    <ProPoints type='permanentHires' />
+    <ProPoints type='permanent' />
     <Leadership />
     <WorkForUs />
   </div>
 );
 
-export default PermanentHires;
+export default Permanent;
