@@ -455,8 +455,8 @@
       }
     },
     "permanent": {
-      "title": "Why our permanent hire service is great for clients",
-      "desc": "Our comprehensive permanent hire service blends expert candidate sourcing, efficient interviews, skilled negotiations, seamless onboarding, and industry insights, all under dedicated consultancy. This ensures efficient talent acquisition, smooth transitions, and informed decisions.",
+      "title": "Permanent Talent with Unitas",
+      "desc": "At Unitas we understand how important it is to attract the right long term permanent talent for your team and wider business. Our deep-rooted knowledge and networks within our focused sectors, accompanied by our AI Technology will ensure we know where to find the highest performing senior finance talent in today’s market.",
       "points": {
         "1": {
           "title": "Strategic Candidate Search & Skill Assessment",
@@ -467,16 +467,16 @@
           "text": "Our streamlined process saves you time and ensures seamless communication with candidates. This enhances their experience, accelerates the hiring process, and maintains a positive impression of your organisation."
         },
         "3": {
-          "title": "Expert Negotiation Support",
-          "text": "With our seasoned negotiators at your side, you can confidently extend competitive offers. This minimises any potential delays in finalising candidate acceptance and secures top talent for your team."
+          "title": "Offer Management",
+          "text": "Offer management starts from the very first conversation and continues throughout the whole process. This focused approach will ultimately result in a very smooth acceptance stage, securing top talent for your team."
         },
         "4": {
           "title": "Seamless Onboarding & Support",
-          "text": "We guide candidates through a comprehensive onboarding process, ensuring a smooth transition into their roles. This personalised approach contributes to higher retention rates and cultivates a satisfied and productive workforce."
+          "text": "We guide candidates through a comprehensive onboarding process, ensuring a smooth transition into their new role. This personalised approach contributes to higher retention rates and cultivates a satisfied and productive team."
         },
         "5": {
-          "title": "Industry Insights & Dedicated Consultant",
-          "text": "Benefit from our industry expertise, gaining insights into market trends and salary benchmarks. Your dedicated consultant offers personalised guidance, ensuring your recruitment strategy aligns with your organisation's goals and objectives."
+          "title": "",
+          "text": ""
         }
       }
     }
