@@ -33,16 +33,16 @@ const ResourcesNav = () => {
       {filters.map((filter, i) => (
         <div key={i}>
           {/* todo: temp condition */}
-          <Link
-            to={filter.path}
-            onClick={() => {hideDropdown();loadBlog();}}
-          >
-            <span
+          <span
               className={cx({active: filter.name === 'Blog'})}
+          >
+            <Link
+              to={filter.path}
+              onClick={() => {hideDropdown();loadBlog();}}
             >
               {filter.name}
-            </span>
-          </Link>
+            </Link>
+          </span>
         </div>
       ))}
     </div>

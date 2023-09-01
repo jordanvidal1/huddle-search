@@ -429,10 +429,6 @@ div:not(.content) > .header {
       text-overflow: ellipsis;
     }
 
-    span {
-      cursor: initial;
-    }
-
     .nav-dropdown-list-group {
       display: flex;
       flex-direction: column;
@@ -511,10 +507,6 @@ div:not(.content) > .header {
         a, a:hover, span {
           color: #FFF;
           font-family: Poppins;
-        }
-
-        span {
-          cursor: initial;
         }
       }
     }
