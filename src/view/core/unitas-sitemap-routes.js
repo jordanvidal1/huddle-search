@@ -13,7 +13,7 @@ export default (
     <Route path='/sectors/:id' />
     <Route path='/looking-to-hire' />
     <Route path='/candidates' />
-    <Route path='/permanent' />
+    <Route path='/permanent-hiers' />
     <Route path='/executive-search' />
     <Route path='/embedded-talent-solutions' />
     <Route path='/contract-interim' />

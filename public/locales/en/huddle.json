@@ -163,7 +163,7 @@
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
       "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
       "lookingForAJob": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
-      "permanent": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
+      "permanentHires": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -454,7 +454,7 @@
         }
       }
     },
-    "permanent": {
+    "permanentHires": {
       "title": "Why our permanent hire service is great for clients",
       "desc": "Our comprehensive permanent hire service blends expert candidate sourcing, efficient interviews, skilled negotiations, seamless onboarding, and industry insights, all under dedicated consultancy. This ensures efficient talent acquisition, smooth transitions, and informed decisions.",
       "points": {

@@ -163,7 +163,7 @@
       "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
       "lookingToHire": "Unitas are incredibly passionate about representing the very best finance talent in today’s market and can move with unrivalled pace. Let’s chat…",
       "lookingForAJob": "Our focus at Unitas is to truly understand how our clients can offer an amazing culture, progression and benefits to our candidate community. Reach out and we can help you.",
-      "permanent": "Our passion is adding high-performing, game-changing permanent talent to your team that is an instant match with your culture.",
+      "permanentHires": "Our passion is adding high-performing, game-changing permanent talent to your team that is an instant match with your culture.",
       "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
       "contractInterim": "We understand that an interim solution for your team is a ‘need now’ requirement, so our 24-hour, multiple CV turnaround will ease the pressure.",
       "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
@@ -454,7 +454,7 @@
         }
       }
     },
-    "permanent": {
+    "permanentHires": {
       "title": "Permanent Talent with Unitas",
       "desc": "At Unitas we understand how important it is to attract the right long term permanent talent for your team and wider business. Our deep-rooted knowledge and networks within our focused sectors, accompanied by our AI Technology will ensure we know where to find the highest performing senior finance talent in today’s market.",
       "points": {

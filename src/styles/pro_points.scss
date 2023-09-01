@@ -3,7 +3,7 @@
 .executive-search,
 .embedded-talent,
 .contract-interim,
-.permanent {
+.permanent-hires {
     .pro-points {
         background: #310A31;
 
@@ -75,14 +75,14 @@
 
 .embedded-talent,
 .contract-interim,
-.permanent {
+.permanent-hires {
     .pro-points .pro-point-container .pro-point .pro-point-icon {
         background: #FF958C;
     }
 }
 
 @include media-breakpoint-up(md) {
-    .permanent, .our-story, .our-process {
+    .permanent-hires, .our-story, .our-process {
         .pro-points .pro-point-container > div > div {
             flex-basis: 33.333333%;
             flex-grow: 0;
@@ -92,7 +92,7 @@
 
     .executive-search, .contract-interim, .embedded-talent,
     .unitas-site .our-process,
-    .unitas-site .permanent {
+    .unitas-site .permanent-hires {
         .pro-points .pro-point-container > div > div {
             flex-basis: 50%;
             flex-grow: 0;
@@ -139,7 +139,7 @@
     .our-process,
     .embedded-talent,
     .contract-interim,
-    .permanent {
+    .permanent-hires {
         .pro-points {
             background: #1A1A1A;
 

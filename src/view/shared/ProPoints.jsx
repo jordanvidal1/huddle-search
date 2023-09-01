@@ -19,7 +19,7 @@ const variantList = {
     'contractInterim',
     'embeddedTalent',
     'ourProcess',
-    'permanent'
+    'permanentHires'
   ]
 };
 
