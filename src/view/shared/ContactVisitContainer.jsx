@@ -79,7 +79,7 @@ const ContactVisitContainer = (t) => (
             <br />
             London
             <br />
-            EC2Y9DT
+            EC2Y 9DT
           </p>
         </div>
       </div>

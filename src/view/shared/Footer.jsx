@@ -209,7 +209,7 @@ const Footer = ({
                             alt='location'
                             src={isHuddle ? Location : UnitasLocation}
                           />
-                          <span>1 Fore St Ave, London EC2Y9DT</span>
+                          <span>1 Fore St Ave, London EC2Y 9DT</span>
                         </div>
                       </div>
                       <div className='footer-socials'>
