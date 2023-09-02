@@ -26,13 +26,7 @@ import '@fontsource/plus-jakarta-sans/600-italic.css'; // Specify weight and sty
 import '@fontsource/plus-jakarta-sans/800.css'; // Specify weight
 import '@fontsource/plus-jakarta-sans/800-italic.css'; // Specify weight and style
 
-import '@fontsource/fraunces'; // Defaults to weight 400
-import '@fontsource/fraunces/300.css'; // Specify weight
-import '@fontsource/fraunces/300-italic.css'; // Specify weight and style
-import '@fontsource/fraunces/400.css'; // Specify weight
-import '@fontsource/fraunces/400-italic.css'; // Specify weight and style
-import '@fontsource/fraunces/900.css'; // Specify weight
-import '@fontsource/fraunces/900-italic.css'; // Specify weight and style
+import '../styles/Fraunces.css';
 
 import '@fontsource/poppins'; // Defaults to weight 400
 import '@fontsource/poppins/400.css'; // Specify weight
