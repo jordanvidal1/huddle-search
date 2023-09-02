@@ -52,7 +52,6 @@ import UnitasManufacturing from '../static/unitas/manufacturing.svg';
 import UnitasMedia from '../static/unitas/media.svg';
 import UnitasPrivate from '../static/unitas/private-equity.svg';
 import UnitasEstate from '../static/unitas/real-estate.svg';
-import UnitasTelecoms from '../static/unitas/telecoms.svg';
 import UnitasTechnology from '../static/unitas/technology.svg';
 import UnitasVenture from '../static/unitas/venture-capital.svg';
 
@@ -365,11 +364,6 @@ export const SECTORS = {
       name: 'Real Estate',
       path: '/sectors/real-estate',
       icon: UnitasEstate
-    },
-    {
-      name: 'Telecoms',
-      path: '/sectors/telecoms',
-      icon: UnitasTelecoms
     },
     {
       name: 'Technology',

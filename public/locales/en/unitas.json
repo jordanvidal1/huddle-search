@@ -152,8 +152,8 @@
   },
   "specialismHero": {
     "title": {
-      "specialisms": "Specialism: {{name}}",
-      "sectors": "Sector: {{name}}",
+      "specialisms": "{{name}}",
+      "sectors": "{{name}}",
       "lookingForAJob": {
         "part1": "Looking for a new challenge?",
         "part2": ""
@@ -482,29 +482,28 @@
     }
   },
   "specialisms": {
-    "cfo-finance-leadership": "Unitas specialises in sourcing highly-skilled CFOs and finance leaders who are instrumental in shaping financial strategies and driving organisations toward fiscal excellence, empowering businesses to achieve financial efficiency and strategic growth.",
-    "commercial-fp-and-a": "Unitas seamlessly connects financial professionals to Commercial Financial Planning & Analysis positions, enabling informed decisions and strategic financial management for business growth.",
-    "data-analysis-and-bi": "Unitas excels in identifying financial experts for Data Analysis & Business Intelligence functions, harnessing data-driven insights to drive informed business strategies and gain competitive advantages.",
-    "finance-business-partnering": "Unitas adeptly sources financial partners for Finance Business Partnering positions, ensuring collaboration between finance and operations for streamlined decision-making and financial optimisation.",
-    "group-financial-control": "Unitas specialises in matching financial professionals with Group Financial Control roles, ensuring robust financial governance and compliance within complex organisational structures.",
-    "group-fp-and-a": "Unitas efficiently links financial professionals to Group Financial Planning & Analysis positions, enabling strategic financial forecasting and performance analysis for group-wide success.",
-    "group-financial-reporting": "Unitas excels in connecting financial talent with Group Financial Reporting roles, ensuring accurate and timely financial reporting to stakeholders and regulatory bodies.",
-    "group-technical-accounting": "Unitas adeptly identifies financial experts for Group Technical Accounting positions, ensuring compliance with complex accounting standards and providing expertise in financial technicalities."
+    "cfo-finance-leadership": "Unitas have partnered FTSE Listed C-suites and Founder led PE/VC backed organisations for over a decade. We represent a market leading CFO/SLT network that will instil high performance throughout the business.",
+    "commercial-fp-and-a": "Dare we say, one of our favourites here at Unitas! We have the candidate network that will enable better informed financial decisions for your business.",
+    "data-analysis-and-bi": "Data Analytics & BI has surged over the past few years and is now seen as a critical plug-in to the Finance team. Better Data = Better Decisions. Unitas can help.",
+    "finance-business-partnering": "Sitting at the heart of the decision-making process and is often seen as a co-pilot to the Commercial teams. We truly believe Unitas has an unrivalled senior network within this discipline.",
+    "group-financial-control": "We understand the importance of Controls, and understand you need high performing talent to drive it through the business. Our network can help.",
+    "group-fp-and-a": "Budgets & Forecasts time! Of course, chuck in management and performance reporting with some modelling too! We represent market leading talent in this area.",
+    "group-financial-reporting": "We strongly believe we have built some of the highest performing Group Financial reporting teams in the market, and that this is a discipline that we excel in.",
+    "group-technical-accounting": "Reduce your outsource fees from the big 4, Unitas can help! We have built in-house Technical Accounting teams for over a decade."
   },
   "sectors": {
-    "clothing-retail": "Unitas excels in recruiting for Clothing Retail, partnering with fashion brands to drive success through innovative strategies, market-responsive solutions, and the creation of engaging shopping experiences.",
-    "e-commerce": "Unitas leads the way in E-Commerce recruitment, empowering digital retail growth by connecting businesses with professionals who specialise in creating seamless online experiences and adapting strategies to evolving market dynamics.",
-    "fintech": "Unitas leads in FinTech by linking talent with pioneering financial tech companies for efficiency and innovation, enhancing financial strategies and giving businesses a competitive edge.",
-    "fmcg": "Unitas specialises in FMCG positions, optimising supply chains, enhancing product delivery, and ensuring the availability of safe, fresh, and affordable consumer goods.",
-    "food-retail": "Unitas efficiently connects professionals to Food Retail functions, guaranteeing consumers have access to a variety of safe, fresh, and affordable food products while supporting businesses in this sector.",
-    "healthcare": "In healthcare, Unitas excels in connecting organisations with dedicated professionals committed to enhancing patient care, driving innovation and improving patient experiences.",
-    "manufacturing": "Unitas excels in the manufacturing sector, connecting businesses with skilled professionals who optimise production processes, quality control, and supply chain management, enhancing operational efficiency and ensuring reliable, high-quality products for customers.",
-    "media": "Unitas excels in matching top talent with Media positions, shaping content creation, distribution, and audience engagement across a wide range of platforms and media types.",
-    "private-equity": "Unitas connects professionals to Private Equity roles, optimising investment strategies, fostering financial growth, and contributing to the success of both companies and investors.",
-    "real-estate": "Unitas identifies top talent for Real Estate positions, enhancing property value through efficient management, development, and strategic investment decisions.",
-    "telecoms": "Unitas sources professionals for Telecoms functions, ensuring seamless communication services, robust connectivity, and innovative solutions that meet the demands of today's fast-paced digital world.",
-    "technology": "Unitas specialises in Technology roles, fostering innovation, driving digital transformation, and delivering cutting-edge solutions that empower businesses to thrive in a tech-driven landscape.",
-    "venture-capital": "Unitas matches professionals to Venture Capital functions, fuelling the growth of innovative startups and contributing to investment success by connecting promising ideas with the resources needed to thrive."
+    "clothing-retail": "The Unitas team have worked extensively with some of the most well known and loved Global Clothing brands throughout the last decade. We represent experienced market leading senior finance talent to ensure we surpass your expectations.",
+    "e-commerce": "We love partnering with brands that have an E-commerce offering for their products, and so does our network! These markets are often seen by our networks as one of their top three spaces to either break into OR, continue to thrive within.",
+    "fintech": "The innovation taken within the FS space is amazing. We have been incredibly busy supporting several challenger banks and Founder led FinTech organisations on locating their high performing Finance talent.",
+    "fmcg": "Our Founder Scott Darby has built a strong personal brand within the FMCG sector with a deep-rooted network by constantly performing for his hiring community. We love this space, so reach out to us with confidence.",
+    "food-retail": "The Food Retail sector is our expertise! We get it, we understand the challenges, we know the fast-paced environment and we absolutely have the Finance network to deliver for you, every time.",
+    "healthcare": "An incredibly exciting sector, especially with the introduction of AI! Our candidate community feel there is a sense of pride to drive a Finance function forward for a business that is essentially focused on making people’s health better.",
+    "manufacturing": "With an annual output of £183billion in the UK and covering a wide range of sectors from Food & Beverage, Technology, Healthcare and many more, this has, and will always be a huge area of focus for us at Unitas.",
+    "media": "Digital Media plays such a pivotal role in our everyday lives as consumers, with most of the products and offerings being tangible, it is often in our candidate communities top three sectors of choice!",
+    "private-equity": "The Unitas founders have worked with Multi sector Private Equity backed businesses and the PE Fund themselves for over a decade. We have the network and the knowledge to attract the right talent, right away.",
+    "real-estate": "Unitas have supported their Candidate & Client communities within the Commercial, Residential & Facilities Management spaces extensively. It can be a niche candidate market, but we’re plugged in to it!",
+    "technology": "We partner Global Tech firms OR growing Founder led PE/VC backed EdTech, PropTech, FoodTech, InsurTech businesses too! A key strategic focus for us here at Unitas, so we know we can go above expectations on delivery.",
+    "venture-capital": "We get it! Early-stage startups whatever sector you’re in, requires a certain type of Finance individual who is happy to wear many hats, comfortable with unstructured finance processes that need fixing and fits in to the culture perfectly."
   },
   "originStory": {
     "title": "Origin story",
