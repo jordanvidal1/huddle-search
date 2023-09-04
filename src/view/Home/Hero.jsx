@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
-import HeroImg from '../../static/unitas/hero-image.png';
+import HeroImg from '../../static/unitas/home-hero.png';
 
 const Hero = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
@@ -13,8 +13,8 @@ const Hero = () => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            {!isHuddle && <img alt='hero-img' src={HeroImg} />}
             <div className='text-container'>
+              {!isHuddle && <img alt='hero-img' src={HeroImg} />}
               <div className='title'>
                 <h1>
                   {t(`${NAMESPACE}:home:hero:title:part1`)}

@@ -10,7 +10,7 @@
             align-self: flex-start;
             display: flex;
             flex-direction: column;
-            max-width: 45.0625rem;
+            width: 45.0625rem;
         }
 
         .title {
@@ -44,7 +44,7 @@
 
         @include media-breakpoint-down(md) {
             .text-container {
-                max-width: unset;
+                width: unset;
             }
 
             .title {
@@ -81,13 +81,17 @@
     }
 }
 
+.permanent-hires .specialism-hero .title {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
 @include media-breakpoint-down(sm) {
-    .embedded-talent, .contract-interim {
-        .specialism-hero {
-            .title {
-                h1 {
-                    font-size: 3.5rem;
-                }
+    .embedded-talent, .contract-interim, .permanent-hires {
+        .specialism-hero .title {
+            h1 {
+                font-size: 3.5rem;
             }
         }
     }
@@ -133,15 +137,6 @@
 
 .contract-hires .specialism-hero {
     background-image: url('../static/huddle/contract-hires-hero.png');
-}
-
-.permanent-hires .specialism-hero {
-    // todo
-    .title {
-        h1, a {
-            font-size: 4.5rem;
-        }
-    }
 }
 
 .specialism {
@@ -244,17 +239,17 @@
             position: relative;
             margin-top: 2rem;
 
-            > img {
-                height: 175%;
-                position: absolute;
-                left: 65%;
-                top: -35%;
-                z-index: -5;
-            }
-        }
+            .text-container {
+                width: 45.0625rem;
 
-        .text-container {
-            width: 45.0625rem;
+                > img {
+                    height: 175%;
+                    position: absolute;
+                    left: 65%;
+                    top: -35%;
+                    z-index: -5;
+                }
+            }
         }
 
         .title {
@@ -322,19 +317,19 @@
 
         @include media-breakpoint-down(md) {
             background: url('../static/huddle/executive-search-mob.png') top left no-repeat #F9F9F9;
-            background-size: 30rem;
+            background-size: 26rem;
 
             .content {
                 margin-top: 4rem;
 
-                > img {
-                    display: none;
-                }
-            }
+                .text-container {
+                    text-align: center;
+                    width: unset;
 
-            .text-container {
-                text-align: center;
-                width: unset;
+                    > img {
+                        display: none;
+                    }
+                }
             }
 
             .title {
@@ -375,12 +370,12 @@
             background: #3A84C9;
             overflow: hidden;
 
-            .content {
+            .text-container {
                 position: relative;
 
                 > img {
                     position: absolute;
-                    left: 49rem;
+                    left: 105%;
                     top: -18rem;
                     width: 62.5rem;
                     z-index: -5;
@@ -405,6 +400,10 @@
             @include media-breakpoint-down(md) {
                 background: #3A84C9;
 
+                .text-container > img {
+                    display: none;
+                }
+
                 .text {
                     margin-top: 2.5rem;
                 }
@@ -421,20 +420,22 @@
     }
 
     .looking-for-a-job, .contract-interim, .permanent-hires {
-        .specialism-hero {
-            .content > img {
-                position: absolute;
-                left: 49rem;
-                top: -18rem;
-                width: 62.5rem;
-                z-index: -5;
+        .specialism-hero .title {
+            h1 {
+                font-size: 5rem;
             }
+        }
+    }
 
-            .title {
-                h1, a {
-                    font-size: 5rem;
-                }
+    @include media-breakpoint-down(sm) {
+        .looking-for-a-job, .contract-interim {
+            .specialism-hero .title h1 {
+                font-size: 4rem;
             }
+        }
+
+        .permanent-hires .specialism-hero .title h1 {
+            font-size: 3rem;
         }
     }
 
@@ -442,29 +443,16 @@
         max-width: 40rem;
     }
 
-    .embedded-talent,
-    .contract-interim,
-    .permanent-hires {
-        .specialism-hero {
-            background: #3A84C9;
-            overflow: hidden;
-
-            .content {
-
-            }
-        }
-    }
-
     .specialism .specialism-hero {
         background: #F9F9F9;
         overflow: hidden;
 
-        .content {
+        .text-container {
             position: relative;
 
             > img {
                 position: absolute;
-                left: 49rem;
+                left: 105%;
                 top: -18rem;
                 width: 62.5rem;
                 z-index: -5;
@@ -494,6 +482,10 @@
                 padding: 1.5rem 0.75rem 4rem;
             }
 
+            .text-container > img {
+                display: none;
+            }
+
             .title {
                 background-position: right 0;
                 padding-top: 6.5rem;
@@ -507,6 +499,30 @@
                 h1 {
                     font-size: 3rem;
                 }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .looking-to-hire .specialism-hero {
+            background: url('../static/unitas/looking-to-hire-mob.png') top right no-repeat #3A84C9;
+            background-size: 18.6875rem;
+        }
+
+        .looking-for-a-job .specialism-hero {
+            background: url('../static/unitas/looking-for-a-job-mob.png') top right no-repeat #3A84C9;
+            background-size: 18.6875rem;
+        }
+
+        .embedded-talent .specialism-hero {
+            background: url('../static/unitas/embedded-talent-mob.png') top right no-repeat #3A84C9;
+            background-size: 18.6875rem;
+        }
+
+        .contract-interim, .permanent-hires {
+            .specialism-hero {
+                background: url('../static/unitas/contract-hires-mob.png') top right no-repeat #3A84C9;
+                background-size: 18.6875rem;
             }
         }
     }

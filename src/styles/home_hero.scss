@@ -57,13 +57,17 @@
 
     .content {
         margin-top: 0;
-        position: relative;
 
-        > img {
-            left: 110%;
-            position: absolute;
-            top: -34vh;
-            width: 60vw;
+        .text-container {
+            position: relative;
+
+            > img {
+                position: absolute;
+                left: 110%;
+                top: -14rem;
+                width: 62.5rem;
+                z-index: -5;
+            }
         }
     }
 
@@ -98,12 +102,15 @@
     }
 
     @include media-breakpoint-down(md) {
-        > img {
-            display: none;
-        }
+        background: url('../static/unitas/home-hero-mob.png') top right no-repeat #F9F9F9;
+        background-size: 17.6875rem;
 
         .content {
             margin-top: 4rem;
+
+            .text-container > img {
+                display: none;
+            }
         }
 
         .title {

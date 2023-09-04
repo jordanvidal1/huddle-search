@@ -6,7 +6,7 @@ import Leadership from '../shared/Specialists';
 import ProPoints from '../shared/ProPoints';
 import WorkForUs from '../shared/WorkForUs';
 
-import HeroImg from '../../static/unitas/embedded-talent-specialism.png';
+import HeroImg from '../../static/unitas/embedded-talent.png';
 
 const EmbeddedTalent = () => (
   <div className='embedded-talent'>

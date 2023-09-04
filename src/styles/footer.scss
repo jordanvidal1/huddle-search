@@ -293,6 +293,7 @@
 
             h3 {
                 font-size: 2rem;
+                white-space: normal;
             }
 
             .btn-container {
@@ -403,7 +404,7 @@
             background: #1A1A1A;
 
             h3 {
-                white-space: initial;
+                white-space: normal;
             }
 
             .btn:not(.btn-secondary) {

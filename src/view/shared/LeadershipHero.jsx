@@ -153,8 +153,8 @@ const LeadershipHero = props => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            {img && <img alt='hero-img' src={img} />}
             <div className='text-container'>
+              {img && <img alt='hero-img' src={img} />}
               <h5>
                 {t(`${NAMESPACE}:leadershipHero:${type}:path`)}
               </h5>

@@ -6,6 +6,8 @@ import Leadership from '../shared/Specialists';
 import ProPoints from '../shared/ProPoints';
 import WorkForUs from '../shared/WorkForUs';
 
+import HeroImg from '../../static/unitas/contract-hires.png';
+
 const highlighted = isHuddle ? 'Permanent' : '';
 const title = isHuddle
   ? ' hires to transform your team'
@@ -13,7 +15,7 @@ const title = isHuddle
 
 const PermanentHires = () => (
   <div className='permanent-hires'>
-    <Hero type='permanentHires'>
+    <Hero type='permanentHires' img={HeroImg}>
       <a>{highlighted}</a>{title}
     </Hero>
     <ProPoints type='permanentHires' />

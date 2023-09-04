@@ -173,6 +173,12 @@
                 }
             }
 
+            @include media-breakpoint-down(lg) {
+                .specialism-list-container .specialism-list {
+                    height: 30.5rem;
+                }
+            }
+
             @include media-breakpoint-down(md) {
                 .specialism-list-container .specialism-list,
                 &.sectors .specialism-list-container .specialism-list {

@@ -88,7 +88,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center right -36rem no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
             background-size: cover;
 
             .content {
@@ -150,7 +150,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/executive-work-for-us.jpeg'), lightgray -655.917px 0px / 362.356% 100% no-repeat;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/executive-work-for-us.jpeg') center right -12rem no-repeat, lightgray -655.917px 0px / 362.356% 100% no-repeat;
             background-size: cover;
         }
     }
@@ -192,6 +192,11 @@
                 }
             }
 
+            @include media-breakpoint-down(md) {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../static/unitas/work-for-us.jpeg') center right -18rem no-repeat, lightgray 951.508px 0px / 503.952% 100% no-repeat;
+                background-size: cover;
+            }
+
             @include media-breakpoint-down(sm) {
                 .title h2 {
                     font-size: 3rem;
@@ -206,6 +211,11 @@
 
         .grid-container a span {
             color: #FFC700;
+        }
+
+        @include media-breakpoint-down(md) {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/executive-work-for-us.jpeg') center no-repeat, lightgray -585.402px 0px / 358.4% 100% no-repeat;
+            background-size: cover;
         }
     }
 }

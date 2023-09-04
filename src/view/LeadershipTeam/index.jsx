@@ -1,4 +1,5 @@
 import React from 'react';
+import {isHuddle} from '../../services/helper';
 
 import Leaders from './Leaders';
 
@@ -9,7 +10,7 @@ import HeroImg from '../../static/unitas/leadership.png';
 
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero type='leadershipTeam' img={HeroImg} />
+    <Hero type='leadershipTeam' img={!isHuddle && HeroImg} />
     <Leaders />
     <OurStory type='story'>
       Three leaders come together to <a>reimagine</a> recruitment

@@ -16,7 +16,7 @@
             align-self: flex-start;
             display: flex;
             flex-direction: column;
-            max-width: 45.0625rem;
+            width: 45.0625rem;
 
             > h5 {
                 color: #00D7A9;
@@ -164,7 +164,7 @@
             }
 
             .text-container {
-                max-width: unset;
+                width: unset;
 
                 > h5 {
                     font-size: 1.75rem;
@@ -415,7 +415,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 23.61%, rgba(0, 0, 0, 0.79) 43.10%, rgba(0, 0, 0, 0.65) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/executive-leadership.jpg') center no-repeat, lightgray -1389.25px 0px / 518.8% 100% no-repeat;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 23.61%, rgba(0, 0, 0, 0.79) 43.10%, rgba(0, 0, 0, 0.65) 65.41%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/executive-leadership.jpg') center right -16rem no-repeat, lightgray -1389.25px 0px / 518.8% 100% no-repeat;
             background-size: cover;
 
             .info-container {
@@ -464,11 +464,23 @@
     .contact-us,
     .executive-search {
         .leadership-hero {
-            .text-container h5 {
-                color: #496049;
-                font-family: Poppins;
-                font-size: 1.75rem;
-                font-weight: 400;
+            .text-container {
+                position: relative;
+
+                > img {
+                    position: absolute;
+                    left: 105%;
+                    top: -18rem;
+                    width: 62.5rem;
+                    z-index: -5;
+                }
+
+                h5 {
+                    color: #496049;
+                    font-family: Poppins;
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                }
             }
 
             .title {
@@ -526,6 +538,12 @@
                 }
             }
 
+            @include media-breakpoint-down(md) {
+                .text-container > img {
+                    display: none;
+                }
+            }
+
             @include media-breakpoint-down(sm) {
                 .text-container h5 {
                     font-size: 1.25rem;
@@ -540,29 +558,6 @@
         }
     }
 
-    .leadership-team,
-    .our-story,
-    .our-process,
-    .work-for-us,
-    .contact-us {
-        .leadership-hero {
-            background: #F9F9F9;
-            overflow: hidden;
-
-            .content {
-                position: relative;
-
-                > img {
-                    position: absolute;
-                    left: 49rem;
-                    top: -18rem;
-                    width: 62.5rem;
-                    z-index: -5;
-                }
-            }
-        }
-    }
-
     .work-for-us, .contact-us {
         .leadership-hero {
             .text-container h5,
@@ -570,6 +565,33 @@
             .title a {
                 color: #56422F;
             }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .leadership-team .leadership-hero {
+            background: url('../static/unitas/leadership-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
+        }
+
+        .our-story .leadership-hero {
+            background: url('../static/unitas/our-story-hero-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
+        }
+
+        .our-process .leadership-hero {
+            background: url('../static/unitas/our-process-hero-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
+        }
+
+        .work-for-us .leadership-hero {
+            background: url('../static/unitas/work-for-us-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
+        }
+
+        .contact-us .leadership-hero {
+            background: url('../static/unitas/contact-us-mob.png') top right no-repeat #F9F9F9;
+            background-size: 17.6875rem;
         }
     }
 
@@ -595,6 +617,11 @@
             .info-calculation img {
                 background: #710058;
             }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 22.88%, rgba(0, 0, 0, 0.79) 41.8%, rgba(0, 0, 0, 0.65) 63.46%, rgba(0, 0, 0, 0.00) 97.03%), url('../static/unitas/executive-leadership.jpeg') center right -24rem no-repeat, lightgray -1172px 0px / 522.4% 100% no-repeat;
+            background-size: cover;
         }
     }
 }

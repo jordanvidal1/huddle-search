@@ -37,8 +37,8 @@ const SpecialismHero = props => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
-            {img && <img alt='hero-img' src={img} />}
             <div className='text-container'>
+              {img && <img alt='hero-img' src={img} />}
               <div className='title'>
                 {specialism && (
                   <div className='specialism-icon'>
