@@ -88,7 +88,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center right -36rem no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center right -34rem no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
             background-size: cover;
 
             .content {
@@ -113,6 +113,18 @@
             .cv-container {
                 margin-top: 3rem;
             }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .work-for-us,
+    .embedded-talent,
+    .contract-interim,
+    .permanent-hires {
+        > .work-for-us {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center right -24rem no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
+            background-size: cover;
         }
     }
 }
@@ -193,7 +205,7 @@
             }
 
             @include media-breakpoint-down(md) {
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../static/unitas/work-for-us.jpeg') center right -18rem no-repeat, lightgray 951.508px 0px / 503.952% 100% no-repeat;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../static/unitas/work-for-us.jpeg') center right -26rem no-repeat, lightgray 951.508px 0px / 503.952% 100% no-repeat;
                 background-size: cover;
             }
 
@@ -201,6 +213,18 @@
                 .title h2 {
                     font-size: 3rem;
                 }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .work-for-us,
+        .embedded-talent,
+        .contract-interim,
+        .permanent-hires {
+            > .work-for-us {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../static/unitas/work-for-us.jpeg') center right -18rem no-repeat, lightgray 951.508px 0px / 503.952% 100% no-repeat;
+                background-size: cover;
             }
         }
     }

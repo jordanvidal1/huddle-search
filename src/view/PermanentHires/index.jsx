@@ -15,7 +15,7 @@ const title = isHuddle
 
 const PermanentHires = () => (
   <div className='permanent-hires'>
-    <Hero type='permanentHires' img={HeroImg}>
+    <Hero type='permanentHires' img={!isHuddle && HeroImg}>
       <a>{highlighted}</a>{title}
     </Hero>
     <ProPoints type='permanentHires' />
