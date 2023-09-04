@@ -372,8 +372,20 @@
     .contract-interim,
     .permanent-hires {
         .specialism-hero {
-            background: url('../static/unitas/looking-to-hire.png') top right no-repeat #3A84C9;
-            background-size: 40%;
+            background: #3A84C9;
+            overflow: hidden;
+
+            .content {
+                position: relative;
+
+                > img {
+                    position: absolute;
+                    left: 49rem;
+                    top: -18rem;
+                    width: 62.5rem;
+                    z-index: -5;
+                }
+            }
 
             .title {
                 h1, a {
@@ -409,25 +421,55 @@
     }
 
     .looking-for-a-job, .contract-interim, .permanent-hires {
-        .specialism-hero .title {
-            h1, a {
-                font-size: 5rem;
+        .specialism-hero {
+            .content > img {
+                position: absolute;
+                left: 49rem;
+                top: -18rem;
+                width: 62.5rem;
+                z-index: -5;
+            }
+
+            .title {
+                h1, a {
+                    font-size: 5rem;
+                }
             }
         }
+    }
+
+    .looking-for-a-job .specialism-hero .title {
+        max-width: 40rem;
     }
 
     .embedded-talent,
     .contract-interim,
     .permanent-hires {
         .specialism-hero {
-            background: url('../static/unitas/embedded-talent-specialism.png') top right no-repeat #3A84C9;
-            background-size: 40%;
+            background: #3A84C9;
+            overflow: hidden;
+
+            .content {
+
+            }
         }
     }
 
     .specialism .specialism-hero {
-        background: url('../static/unitas/sector.png') top right no-repeat #F9F9F9;
-        background-size: 40%;
+        background: #F9F9F9;
+        overflow: hidden;
+
+        .content {
+            position: relative;
+
+            > img {
+                position: absolute;
+                left: 49rem;
+                top: -18rem;
+                width: 62.5rem;
+                z-index: -5;
+            }
+        }
 
         .title {
             .specialism-icon {
@@ -470,7 +512,7 @@
     }
 
     .executive-search .specialism-hero {
-        background: linear-gradient(90deg, #710058 0%, rgba(113, 0, 88, 0.92) 39.76%, rgba(113, 0, 88, 0.00) 100%), url('../static/unitas/executive-search.jpeg') right no-repeat, lightgray 369.127px -386.817px / 100% 143.885% no-repeat;
+        background: linear-gradient(90deg, #710058 0%, rgba(113, 0, 88, 0.92) 60%, rgba(113, 0, 88, 0.00) 100%), url('../static/unitas/executive-search.jpeg') right no-repeat, lightgray 369.127px -386.817px / 100% 143.885% no-repeat;
         background-size: cover;
 
         .title {

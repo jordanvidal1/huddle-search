@@ -119,13 +119,8 @@
 .unitas-site {
     .home, .looking-to-hire {
         .looking-to-hire {
-            background: url('../static/unitas/home-looking-to-hire.jpeg') left no-repeat;
+            background: url('../static/unitas/home-looking-to-hire.jpeg') top left no-repeat;
             background-size: cover;
-            margin-bottom: -1px;
-
-            .content {
-                max-width: 39.5rem;
-            }
 
             .title a {
                 background: none;

@@ -5,12 +5,12 @@
     .content {
         align-self: stretch;
         margin-top: 6rem;
+        max-width: 38.5rem;
     }
 
     .text-container {
         display: flex;
         flex-direction: column;
-        max-width: 38.5rem;
     }
 
     .title {
@@ -55,19 +55,16 @@
     overflow: hidden;
     position: relative;
 
-    > img {
-        height: 130%;
-        position: absolute;
-        top: -10em;
-        right: -25rem;
-    }
-
     .content {
         margin-top: 0;
-    }
+        position: relative;
 
-    .text-container {
-        max-width: 41.5rem;
+        > img {
+            left: 110%;
+            position: absolute;
+            top: -34vh;
+            width: 60vw;
+        }
     }
 
     .title {

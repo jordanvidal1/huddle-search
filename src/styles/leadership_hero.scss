@@ -540,18 +540,31 @@
         }
     }
 
-    .leadership-team, .our-story, .our-process {
+    .leadership-team,
+    .our-story,
+    .our-process,
+    .work-for-us,
+    .contact-us {
         .leadership-hero {
-            background: url('../static/unitas/leadership.png') top right no-repeat #F9F9F9;
-            background-size: 40%;
+            background: #F9F9F9;
+            overflow: hidden;
+
+            .content {
+                position: relative;
+
+                > img {
+                    position: absolute;
+                    left: 49rem;
+                    top: -18rem;
+                    width: 62.5rem;
+                    z-index: -5;
+                }
+            }
         }
     }
 
     .work-for-us, .contact-us {
         .leadership-hero {
-            background: url('../static/unitas/contact-us.png') top right no-repeat #F9F9F9;
-            background-size: 40%;
-
             .text-container h5,
             .title h1,
             .title a {

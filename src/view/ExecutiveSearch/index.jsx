@@ -11,13 +11,19 @@ import WorkForUs from '../shared/WorkForUs';
 
 import Logo from '../../static/huddle/text-logo-gold.svg';
 import UnitasLogo from '../../static/unitas/text-logo.svg';
+import HeroImg from '../../static/huddle/executive-search.png';
 
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
 
   return (
     <div className='executive-search'>
-      <Hero type='executiveSearch' contact executive>
+      <Hero
+        type='executiveSearch'
+        img={isHuddle && HeroImg}
+        contact
+        executive
+      >
         <p>
           {t(`${NAMESPACE}:executiveSearch:title:part1`)}
           <img alt='logo-gold' src={isHuddle ? Logo : UnitasLogo} />

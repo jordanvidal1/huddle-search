@@ -129,7 +129,7 @@ const ourProcessComponent = t => (
 );
 
 const LeadershipHero = props => {
-  const {type} = props;
+  const {type, img} = props;
 
   const {t} = useTranslation(['huddle', 'unitas']);
 
@@ -153,6 +153,7 @@ const LeadershipHero = props => {
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {img && <img alt='hero-img' src={img} />}
             <div className='text-container'>
               <h5>
                 {t(`${NAMESPACE}:leadershipHero:${type}:path`)}

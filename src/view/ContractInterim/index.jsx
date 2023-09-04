@@ -6,6 +6,8 @@ import Leadership from '../shared/Specialists';
 import ProPoints from '../shared/ProPoints';
 import WorkForUs from '../shared/WorkForUs';
 
+import HeroImg from '../../static/unitas/contract-hires.png';
+
 const highlighted = isHuddle ? 'Contract' : '';
 const title = isHuddle
   ? ' hires to deliver your project'
@@ -13,7 +15,7 @@ const title = isHuddle
 
 const ContractInterim = () => (
   <div className='contract-interim'>
-    <Hero type='contractInterim'>
+    <Hero type='contractInterim' img={!isHuddle && HeroImg}>
       <a>{highlighted}</a>{title}
     </Hero>
     <ProPoints type='contractInterim' />

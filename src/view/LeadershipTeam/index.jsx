@@ -5,9 +5,11 @@ import Leaders from './Leaders';
 import Hero from '../shared/LeadershipHero';
 import OurStory from '../shared/OurStory';
 
+import HeroImg from '../../static/unitas/leadership.png';
+
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero type='leadershipTeam' />
+    <Hero type='leadershipTeam' img={HeroImg} />
     <Leaders />
     <OurStory type='story'>
       Three leaders come together to <a>reimagine</a> recruitment

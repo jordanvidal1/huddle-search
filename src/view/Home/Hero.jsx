@@ -10,12 +10,10 @@ const Hero = () => {
 
   return (
     <div className='hero'>
-      {!isHuddle && (
-        <img alt='hero-img' src={HeroImg} />
-      )}
       <div className='container'>
         <div className='inner-container'>
           <div className='content'>
+            {!isHuddle && <img alt='hero-img' src={HeroImg} />}
             <div className='text-container'>
               <div className='title'>
                 <h1>
