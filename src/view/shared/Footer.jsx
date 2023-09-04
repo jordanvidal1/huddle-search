@@ -191,7 +191,7 @@ const Footer = ({
                             alt='phone-number'
                             src={isHuddle ? Phone : UnitasPhone}
                           />
-                          <span>+44 20 40586 4093</span>
+                          <span>{t(`${NAMESPACE}:footer:number`)}</span>
                         </div>
                         <div>
                           <img
