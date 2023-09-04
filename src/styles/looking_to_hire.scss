@@ -154,8 +154,9 @@
             }
 
             @include media-breakpoint-down(md) {
-                background: radial-gradient(40.8% 37.98% at 79.6% 5.02%, rgba(58, 132, 201, 0.30) 0%, #3A84C9 100%), url('../static/unitas/home-looking-to-hire-mob.jpeg') top left, #3A84C9 76px 0px / 146.309% 36.327% no-repeat;
-                background-size: contain;
+                background: #3A84C9;
+                //background: radial-gradient(40.8% 37.98% at 79.6% 5.02%, rgba(58, 132, 201, 0.30) 0%, #3A84C9 100%), url('../static/unitas/home-looking-to-hire-mob.jpeg') top left, #3A84C9 76px 0px / 146.309% 36.327% no-repeat;
+                //background-size: contain;
 
                 .content {
                     margin-top: 0;

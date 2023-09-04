@@ -166,6 +166,10 @@
                 }
             }
 
+            @include media-breakpoint-down(md) {
+                background: #3A84C9;
+            }
+
             @include media-breakpoint-down(sm) {
                 .title h2 {
                     font-size: 3rem;
