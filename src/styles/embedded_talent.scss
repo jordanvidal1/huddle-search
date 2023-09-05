@@ -167,7 +167,8 @@
             }
 
             @include media-breakpoint-down(md) {
-                background: #3A84C9;
+                background:  url('../static/unitas/embedded-talent-mob.jpg') top right no-repeat #3A84C9;
+                background-size: 75%;
             }
 
             @include media-breakpoint-down(sm) {

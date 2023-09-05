@@ -56,14 +56,15 @@
     }
 
     @include media-breakpoint-down(md) {
+        background:  url('../static/unitas/contract-hires-mob.jpg') top right no-repeat #3A84C9;
+        background-size: 75%;
+
         .content {
             margin: 0;
         }
     }
 
     @include media-breakpoint-down(sm) {
-        background: #3A84C9;
-
         .title h2 {
             font-size: 3rem;
         }
