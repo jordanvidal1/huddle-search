@@ -155,7 +155,7 @@
 
             @include media-breakpoint-down(md) {
                 background:  url('../static/unitas/home-looking-to-hire-mob.jpg') top right no-repeat #3A84C9;
-                background-size: 75%;
+                background-size: 85%;
 
                 .content {
                     margin-top: 0;
@@ -181,7 +181,7 @@
 
             @include media-breakpoint-down(md) {
                 background:  url('../static/unitas/permanent-hires-mob.jpg') top right no-repeat #3A84C9;
-                background-size: 75%;
+                background-size: 85%;
             }
         }
     }

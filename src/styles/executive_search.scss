@@ -255,7 +255,8 @@
             }
 
             @include media-breakpoint-down(md) {
-                background: #710058;
+                background:  url('../static/unitas/executive-search-mob.jpg') top right no-repeat #710058;
+                background-size: 85%;
 
                 .title {
                     align-items: flex-start;
