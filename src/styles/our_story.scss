@@ -1,9 +1,9 @@
 .our-story-static {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') top center no-repeat, lightgray 50% / cover no-repeat;
     background-size: cover;
 
     @include media-breakpoint-down(md) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/huddle/our-story.jpeg') top center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 }
@@ -69,7 +69,7 @@
 
 .unitas-site {
     .our-story-static {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/our-story.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/our-story.jpeg') top center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
     }
 
