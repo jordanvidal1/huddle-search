@@ -85,7 +85,8 @@
             }
 
             > .error-msg, > .success-msg {
-                bottom: -2.5rem;
+                bottom: 0;
+                max-width: 50%;
             }
         }
 
@@ -97,6 +98,13 @@
 
             .text-container {
                 max-width: unset;
+            }
+
+            .action-container {
+                > .error-msg, > .success-msg {
+                    bottom: -3.5rem;
+                    max-width: unset;
+                }
             }
         }
     }
