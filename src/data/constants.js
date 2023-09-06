@@ -58,6 +58,7 @@ import UnitasVenture from '../static/unitas/venture-capital.svg';
 export const SITE_URL = process.env.REACT_APP_SITE_URL;
 export const NAMESPACE = process.env.REACT_APP_SITE_NAME;
 export const CONTACT_FORM_ID = process.env.REACT_APP_WP_CONTACT_FORM_ID;
+export const CONTACT_CHECKBOX_ID = process.env.REACT_APP_WP_CONTACT_CHECKBOX_ID;
 export const SUBSCRIBE_FORM_ID = process.env.REACT_APP_WP_SUBSCRIBE_FORM_ID;
 
 const leaderEmails = {

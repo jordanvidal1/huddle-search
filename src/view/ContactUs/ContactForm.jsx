@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next';
 import {useForm} from 'react-hook-form';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-import {NAMESPACE} from '../../data/constants';
+import {NAMESPACE, CONTACT_CHECKBOX_ID} from '../../data/constants';
 import useWordPress from '../../services/hooks/useWordPress';
 import Input from '../shared/Input';
 import Loader from '../shared/Loader';
@@ -35,7 +35,7 @@ const ContactForm = () => {
       && values.email
       && values.number
       && values.message
-      && values['checkbox-816']
+      && values[`checkbox-${CONTACT_CHECKBOX_ID}`]
     ) {
       contactUsResult
         .mapPattern('Success', [], ({data}) => {
@@ -145,8 +145,8 @@ const ContactForm = () => {
                     <Input
                       id='privacy'
                       type='checkbox'
-                      name='checkbox-816'
-                      register={register('checkbox-816', {
+                      name={`checkbox-${CONTACT_CHECKBOX_ID}`}
+                      register={register(`checkbox-${CONTACT_CHECKBOX_ID}`, {
                         required: 'You must agree to continue.'
                       })}
                       errors={errors}
