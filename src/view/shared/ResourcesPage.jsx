@@ -15,6 +15,10 @@ const ResourcesPage = props => {
     loadBlog();
   }, []);
 
+  if (!blogPosts || blogPosts.length < 1) {
+    return <div/>
+  }
+
   return (
     <div className='related-resources'>
       <div className='container'>
