@@ -137,6 +137,10 @@
         }
 
         @include media-breakpoint-down(sm) {
+            .title h2 {
+                font-size: 2.5rem;
+            }
+
             .specialists-container .specialist .specialist-img-container {
                 height: 15.625rem;
                 width: 15.625rem;

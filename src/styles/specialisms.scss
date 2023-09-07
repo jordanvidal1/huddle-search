@@ -108,7 +108,8 @@
                 margin-bottom: 3rem;
             }
 
-            .specialism-list-container {
+            .specialism-list-container,
+            &.sectors .specialism-list-container {
                 margin: 3rem 0 0;
 
                 .specialism-list {
@@ -116,6 +117,10 @@
 
                     h5 {
                         margin-top: 0;
+                    }
+
+                    a {
+                        width: 26rem;
                     }
                 }
             }
@@ -126,9 +131,18 @@
         }
 
         @include media-breakpoint-down(sm) {
-            .specialism-list-container {
+            .specialism-list-container,
+            &.sectors .specialism-list-container {
                 .specialism-list {
                     flex-direction: column;
+
+                    > div {
+                        width: 100%;
+                    }
+
+                    a {
+                        width: 100%;
+                    }
                 }
             }
         }

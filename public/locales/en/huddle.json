@@ -482,16 +482,16 @@
     }
   },
   "specialisms": {
-    "architecture": "Huddle skilfully connects tech experts with Architecture roles, harmonising design and technology to construct functional and forward-thinking environments.",
-    "change-and-transformation": "Huddle efficiently connects tech professionals to Change & Transformation roles, driving successful technology-driven organisational shifts and continuous improvements.",
-    "cloud-infrastructure-and-networks": "Huddle efficiently matches tech professionals to Cloud, Infrastructure & Networks roles, empowering businesses with reliable, scalable, and secure technological foundations.",
-    "cyber-and-information-security": "Huddle excels in identifying tech talent for Cyber & Information Security roles, safeguarding digital assets through proactive risk management and innovative solutions.",
-    "data-and-analytics": "Huddle adeptly sources tech professionals for Data & Analytics roles, driving data-driven decision-making and insights that optimise business strategies.",
-    "design": "Huddle excels in matching tech talent to Design (UI/UX) roles, bridging creativity and technology to craft compelling user-centred digital experiences.",
-    "devops": "Huddle specialises in sourcing tech talent for DevOps roles, enabling streamlined software development through collaboration, automation, and continuous improvement.",
-    "erp-crm-and-hr-systems": "Huddle specialises in sourcing tech talent for ERP, CRM & HR Systems roles, ensuring efficient and integrated software solutions that enhance organisational processes.",
-    "product-management": "Huddle adeptly identifies tech talent for Product Management roles, ensuring products align with market demands through efficient planning, development, and delivery.",
-    "software-and-engineering": "Huddle seamlessly links tech professionals to Software & Engineering roles, ensuring a skilled workforce that drives innovation and robust technological solutions."
+    "architecture": "At Huddle, we specialise in recruiting for a spectrum of Architecture roles, from Solutions and Enterprise Architects to Infrastructure and Cloud Architects. Whether you're shaping digital strategy or implementing foundational systems, we connect premier talent with leading organisations in the Architecture domain.",
+    "change-and-transformation": "Change & Transformation encompasses a range of roles, from Change Managers, Business Analysts, and Project Leaders, to Transformation Consultants. We specialise in recruiting top-tier talent for each unique position, ensuring businesses adapt, innovate, and thrive in today's ever-evolving landscape.",
+    "cloud-infrastructure-and-networks": "At Huddle, we specialise in recruiting top talent for a diverse range of Cloud, Infrastructure & Networks roles. Whether you're seeking expertise in public, private, or hybrid cloud, traditional IT infrastructure, or advanced network configurations, our dedicated team is adept at finding the perfect fit for every niche requirement.",
+    "cyber-and-information-security": "We recruit for a diverse range of Cyber & Information Security roles, from ethical hackers, security architects, and penetration testers to risk analysts and compliance specialists. We understand the intricacies of each position, ensuring the right fit for every security need in today's digital landscape.",
+    "data-and-analytics": "From Data Scientists to Business Intelligence Analysts, our recruitment expertise covers the full spectrum of Data & Analytics roles. Whether you're seeking specialists in data engineering, visualization, or advanced analytics, we connect businesses with top-tier talent, ensuring the right fit for every data-centric position.",
+    "design": "At Huddle, we understand the nuances of Design roles, from the visual brilliance of User Interface (UI) designers to the intuitive expertise of User Experience (UX) specialists. Whether you're seeking pixel-perfect creators or user-centric innovators, we're adept at recruiting top talent across the entire UI/UX spectrum.",
+    "devops": "Discover talent across the diverse spectrum of DevOps roles with us. From Integration Specialists to Infrastructure Automation Engineers, Release Managers to Site Reliability Engineers (SREs), we excel in sourcing the finest professionals for each unique facet of the DevOps lifecycle. Your DevOps recruitment, simplified.",
+    "erp-crm-and-hr-systems": "We specialize in recruiting top talents for a range of roles within the ERP, CRM, and HR Systems sectors. Whether it's analysts, developers, or project managers for platforms like SAP, Oracle, Salesforce, or Workday, we have the expertise to find the perfect fit for your business's unique needs.",
+    "product-management": "We specialise in recruiting for the entire spectrum of Product Management roles: from Product Owners who drive detailed execution, to Product Managers who strategize roadmaps, and Product Leaders who envision the big picture. Whether you're hiring for technical, consumer, or enterprise products, we find the perfect fit for every product niche.",
+    "software-and-engineering": "Our expertise spans the vast landscape of Software Development & Engineering roles. From Front-end Developers, Backend Engineers, Full-Stack Specialists to DevOps Experts, Mobile App Designers, and Systems Architects, we have a deep understanding of the nuances of each position. Partner with us to find the perfect fit for every software niche."
   },
   "sectors": {
     "banking-financial-services-asset-management": "At Huddle, we specialise in sourcing top-tier tech talent for a diverse range of Banking, Financial Services, and Asset Management entities. Whether it's global investment banks, boutique financial consultancies, insurance providers, or hedge funds, our expertise spans across the intricate landscape of the financial world. Through a deep understanding of the unique technological needs of each sector, we're poised to connect our clients with the ideal candidates who can propel their digital advancements. Partner with us for tailored recruitment solutions in the financial tech sphere.",
@@ -513,6 +513,58 @@
     "public-sector": "At Huddle, we specialise in tech recruitment for a diverse range of Public Sector organisations. From local government bodies and educational institutions to healthcare providers and emergency services, our expertise covers the spectrum. We understand the unique demands and nuances of each sector, ensuring that we find the perfect tech talent to drive innovation and efficiency. Partner with us and access a vast pool of candidates tailored for the Public Sector's evolving technological needs.",
     "retail-and-retailtech": "At Huddle, we specialise in connecting top-tier talent with a diverse range of Retail & RetailTech companies. From traditional brick-and-mortar establishments to cutting-edge e-commerce platforms, omnichannel solutions providers, and innovative point-of-sale tech startups, we understand the unique challenges and opportunities of each segment. Our expertise ensures that we source the best tech professionals adept at driving innovation in any retail environment, guaranteeing our clients a competitive edge in an ever-evolving market.",
     "telco": "At Huddle, we specialise in recruiting for a diverse range of Telco companies, from established telecommunications giants to innovative startups breaking new ground in tech. Whether it's mobile network operators, internet service providers, satellite communications firms, or cutting-edge VoIP enterprises, our expertise ensures we connect talented professionals with the perfect tech roles across the broad Telco spectrum. Partner with us to discover a world of opportunity in telecommunications recruitment."
+  },
+  "typesOfRoles": {
+    "title": {
+      "roles": "Roles in {{specialism}}",
+      "technologies": "Technologies in {{specialism}}"
+    },
+    "desc": {
+      "roles": "Commonly recruited for job titles (this list is not exhaustive):",
+      "technologies": "Commonly recruited for technologies (this list is not exhaustive):"
+    },
+    "specialisms": {
+      "architecture": {
+        "roles": "Enterprise Architect|Solutions Architect|Infrastructure Architect|Cloud Architect|Application Architect|Data Architect|Network Architect|Security Architect|System Architect|Technical Architect|Integration Architect|Business Architect|Digital Architect|Software Architect|IT Strategy Architect|Domain Architect|Platform Architect|Information Architect|API Architect|Mobile Architect",
+        "technologies": "Amazon Web Services (AWS)|Microsoft Azure|Google Cloud Platform (GCP)|Docker|Kubernetes|Terraform|Apache Kafka|Cisco Technologies|VMware|Oracle Database|MongoDB|RabbitMQ|Zachman Framework|TOGAF (The Open Group Architecture Framework)|Red Hat OpenShift|Microservices|API Gateways (like Apigee or AWS API Gateway)|Microsoft Active Directory|Unified Modeling Language (UML)|Ansible"
+      },
+      "change-and-transformation": {
+        "roles": "Change Manager|Transformation Director|Business Analyst|Change Analyst|Organisational Change Consultant|Process Improvement Specialist|Project Manager|Digital Transformation Lead|Operational Excellence Manager|Change Communication Specialist|Lean Six Sigma Consultant|Business Transformation Manager|Change Control Coordinator|Agile Transformation Coach|Program Management Officer (PMO)|Change Strategy Consultant|Process Automation Specialist|Enterprise Transformation Leader|Organisational Development Specialist|Cultural Transformation Consultant",
+        "technologies": "Microsoft Project|JIRA & Confluence|Trello or Asana|Slack or Microsoft Teams|Miro or Lucidchart|Tableau|Power BI|Visio|ServiceNow|Blueworks Live|Minitab|RPA tools (UiPath, Blue Prism, Automation Anywhere)|Smartsheet|Monday.com|Prosci ADKAR|Jama Connect|Airtable|Git/GitHub or Bitbucket|Salesforce|SAP or Oracle ERP systems"
+      },
+      "cloud-infrastructure-and-networks": {
+        "roles": "Cloud Solutions Architect|Cloud Engineer|Cloud Consultant|DevOps Engineer|Infrastructure Engineer|Network Engineer|Systems Administrator|Network Architect|Network Administrator|Cloud Security Specialist|Infrastructure Architect|Virtualization Engineer|Data Center Engineer|Network Security Engineer|Wireless Network Engineer|Cloud Product Manager|Cloud Sales Specialist|Network Operations Center (NOC) Technician|Infrastructure Project Manager|WAN/LAN Specialist",
+        "technologies": "AWS (Amazon Web Services)|Microsoft Azure|Google Cloud Platform (GCP)|VMware vSphere|Docker Containers|Kubernetes|Cisco IOS (Internetwork Operating System)|Terraform|Ansible|Jenkins|OpenStack|Elastic Load Balancer (ELB)|Cisco ACI (Application Centric Infrastructure)|Palo Alto Firewalls|Microsoft Hyper-V|Citrix XenApp/XenDesktop|Juniper Networks Devices|SD-WAN solutions (e.g., Cisco Viptela, Silver Peak)|NetApp Storage Solutions|Zabbix (for network monitoring)"
+      },
+      "cyber-and-information-security": {
+        "roles": "Information Security Analyst|Ethical Hacker/Penetration Tester|Security Architect|Cybersecurity Consultant|Incident Responder|Forensic Computer Analyst|Security Software Developer|Vulnerability Assessor|Security Auditor|Chief Information Security Officer (CISO)|Security Operations Center (SOC) Analyst|Threat Intelligence Analyst|Malware Analyst/Reverse Engineer|IT Security Engineer|Risk Management Specialist|Security Compliance Analyst|Network Security Specialist|Cryptographer/Cryptanalyst|Cloud Security Specialist|Data Privacy Officer",
+        "technologies": "Wireshark|Nmap|Metasploit|Burp Suite|Kali Linux|Nessus|Splunk|Cisco ASA|Snort|Symantec Endpoint Protection|Palo Alto Networks|Tanium|Qualys|YARA|OWASP Zap|Hashcat|Check Point|Bitlocker|TrueCrypt/VeraCrypt|Okta"
+      },
+      "data-and-analytics": {
+        "roles": "Data Scientist|Data Analyst|Data Engineer|Business Intelligence Analyst|Machine Learning Engineer|Data Visualization Specialist|Statistical Analyst|Data Architect|Big Data Engineer|Quantitative Researcher|Data Governance Manager|Data Operations Analyst|Predictive Analyst|Data Quality Specialist|Advanced Analytics Consultant|Master Data Manager|Data Warehouse Specialist|Data Platform Manager|Analytics Manager|Decision Scientist",
+        "technologies": "Python|R|SQL|Hadoop|Spark|Tableau|Power BI|TensorFlow|Jupyter Notebooks|Amazon Web Services (AWS)|Google Cloud Platform (GCP)|Microsoft Azure|SAS|Apache Kafka|Elasticsearch|NoSQL databases (e.g., MongoDB, Cassandra)|MATLAB|Looker|Alteryx|KNIME"
+      },
+      "design": {
+        "roles": "UI Designer|UX Designer|Interaction Designer|Visual Designer|UI/UX Researcher|User Experience Strategist|Information Architect|Motion Graphics Designer|Product Designer|User Interface Developer|UX Analyst|User Researcher|UX Writer|Prototype Designer|Accessibility Designer|Voice User Interface Designer|UI Kit Designer|Mobile UI Designer|Web UI Designer|Usability Tester",
+        "technologies": "Adobe XD|Sketch|Figma|InVision|Marvel|Zeplin|Axure RP|Balsamiq Mockups|Framer|Affinity Designer|Principle|Justinmind|Proto.io|Origami Studio|Adobe After Effects (for UI animations)|UsabilityHub|Lookback.io|Optimal Workshop|Webflow|Hotjar"
+      },
+      "devops": {
+        "roles": "DevOps Engineer|Site Reliability Engineer (SRE)|Infrastructure Automation Engineer|Build and Release Engineer|Cloud Operations Engineer|Containerization Engineer|Continuous Integration/Continuous Deployment (CI/CD) Engineer|Platform Engineer|Configuration Manager|Systems Integration Specialist|Infrastructure as Code (IAC) Developer|DevSecOps Engineer|Application Deployment Specialist|Network Automation Engineer|Monitoring & Analytics Engineer|Performance Engineer|Release Manager|Cloud Solutions Architect|Operations Engineer|Chaos Engineer",
+        "technologies": "Docker|Kubernetes|Jenkins|Terraform|Ansible|Git|GitHub Actions|AWS/Azure/GCP|Prometheus|Grafana|ELK Stack (Elasticsearch, Logstash, Kibana)|Nagios|Chef|Puppet|Helm|GitLab CI/CD|Splunk|SonarQube|Consul|Istio"
+      },
+      "erp-cr-and-hr-systems": {
+        "roles": "ERP Implementation Consultant|CRM Developer|SAP HCM Consultant|Oracle ERP Analyst|Salesforce Administrator|Workday HRIS Specialist|Dynamics CRM Consultant|ERP Project Manager|CRM Business Analyst|PeopleSoft HR Consultant|SAP FICO Specialist|CRM Solutions Architect|Oracle Cloud HCM Analyst|Salesforce Developer|ERP System Administrator|HRIS Analyst|Microsoft Dynamics AX Developer|CRM Support Specialist|SAP SD/MM Consultant|Workday Integration Specialist",
+        "technologies": "SAP (e.g., SAP HANA, SAP S/4HANA)|Oracle (e.g., Oracle Cloud ERP, Oracle Fusion)|Salesforce (including Lightning Platform and Einstein Analytics)|Microsoft Dynamics (e.g., Dynamics 365, Dynamics AX, Dynamics CRM)|Workday (particularly for HR and financial management functions)|PeopleSoft|NetSuite|Pega CRM|ServiceNow (especially for HR service delivery)|Tableau (for analytics and business intelligence)|Informatica (for data integration purposes)|Taleo (for talent management)|SuccessFactors|Zoho CRM|HubSpot CRM|Jira (often used in conjunction with Agile development practices)|Confluence (for documentation and collaboration)|Mulesoft (for integration services, especially with Salesforce)|Zapier (for process automation and integration)|Git (for version control in development processes)"
+      },
+      "product-management": {
+        "roles": "Product Manager|Associate Product Manager|Senior Product Manager|Product Owner|Technical Product Manager|Group Product Manager|Product Director|Chief Product Officer|Product Lead|Product Analyst|Product Management Intern|Product Strategy Manager|Product Lifecycle Manager|Mobile Product Manager|Digital Product Manager|Product Operations Manager|Product Design Manager|Global Product Manager|Product Portfolio Manager|Product Development Manager",
+        "technologies": ""
+      },
+      "software-and-engineering": {
+        "roles": "Front-end Developer|Backend Developer|Full-Stack Developer|Mobile App Developer|DevOps Engineer|Systems Architect|Software Tester/QA Engineer|Embedded Systems Engineer|Data Engineer|UI/UX Designer|Cloud Engineer|Database Administrator|Machine Learning Engineer|Security Engineer|Application Support Engineer|Site Reliability Engineer (SRE)|Game Developer|Web Developer|Software Development Manager|Infrastructure Engineer",
+        "technologies": "Java|Python|JavaScript (and frameworks like React, Vue, and Angular)|C#|C++|Ruby on Rails|SQL (and databases like PostgreSQL, MySQL)|NoSQL databases (like MongoDB, Cassandra)|Docker|Kubernetes|AWS, Azure, Google Cloud Platform|Git (and platforms like GitHub, GitLab)|Node.js|.NET Core|TensorFlow and PyTorch (for ML roles)|Jenkins (for CI/CD)|Ansible (for configuration management)|Elasticsearch|GraphQL|Apache Kafka"
+      }
+    }
   },
   "originStory": {
     "title": "Origin story",

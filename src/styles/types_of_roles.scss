@@ -1,0 +1,139 @@
+.specialism .types-of-roles {
+    background: #310A31;
+
+    &.technologies {
+        background: #F9F9F9;
+
+        h2 {
+            color: #310A31;
+        }
+
+        .text p {
+            color: #7E8192;
+        }
+
+        .roles-list p {
+            color: #310A31;
+        }
+    }
+
+    .text-container {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        align-self: flex-start;
+        margin: 2rem 0 4rem;
+        max-width: 45.0625rem;
+
+        p {
+            color: #FFF;
+            font-size: 1.125rem;
+        }
+    }
+
+    .roles-list {
+        ul {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            padding: 0;
+
+            @include media-breakpoint-down(lg) {
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+            }
+
+            @include media-breakpoint-down(md) {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+
+            p {
+                color: #F6E27F;
+                font-size: 1.25rem;
+                font-weight: 800;
+                margin: 2rem 0;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .text {
+            margin-bottom: 3rem;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.unitas-site {
+    .specialism .types-of-roles {
+        background: #1A1A1A;
+
+        &.technologies {
+            background: #F9F9F9;
+
+            h2 {
+                color: #1A1A1A;
+            }
+
+            .specialism-list-container .specialism-list {
+                height: 34.5rem;
+
+                a {
+                    color: #1A1A1A;
+                }
+            }
+        }
+
+        .specialism-list-container .specialism-list {
+            height: 19.5rem;
+
+            h5 {
+                font-weight: 400;
+            }
+
+            a {
+                color: #F49944;
+                font-weight: 600;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            .specialism-list-container .specialism-list {
+                height: 30.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .specialism-list-container .specialism-list,
+            &.sectors .specialism-list-container .specialism-list {
+                height: unset;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .title h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
