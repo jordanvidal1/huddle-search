@@ -1,6 +1,10 @@
 .specialism .types-of-roles {
     background: #310A31;
 
+    .content {
+        gap: 4rem;
+    }
+
     &.technologies {
         background: #F9F9F9;
 
@@ -26,7 +30,7 @@
     .text {
         display: flex;
         align-self: flex-start;
-        margin: 2rem 0 4rem;
+        margin-top: 2rem;
         max-width: 45.0625rem;
 
         p {
@@ -72,8 +76,8 @@
     }
 
     @include media-breakpoint-down(md) {
-        .text {
-            margin-bottom: 3rem;
+        .content {
+            gap: 3rem;
         }
     }
 
