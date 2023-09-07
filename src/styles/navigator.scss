@@ -283,7 +283,7 @@ div:not(.content) > .header {
   &.specialisms, &.sectors {
     justify-content: flex-start;
     right: -8rem;
-    width: 44rem;
+    width: 45rem;
 
     > img {
       right: 12rem;
@@ -295,7 +295,7 @@ div:not(.content) > .header {
       flex-direction: column;
       flex-wrap: wrap;
       gap: 2rem;
-      height: 19.5rem;
+      height: 20rem;
 
       h6 {
         font-weight: 600;
@@ -316,14 +316,14 @@ div:not(.content) > .header {
   }
 
   &.sectors {
-    width: 57rem;
+    width: 59rem;
 
     > img {
       right: 10.5rem;
     }
 
     .nav-dropdown-list {
-      height: 29.5rem
+      height: 30rem
     }
   }
 }
@@ -502,10 +502,10 @@ div:not(.content) > .header {
         background: #5AA1E4;
 
         &.sectors, &.specialisms {
-          width: 28rem;
+          width: 30rem;
 
           .nav-dropdown-list {
-            height: 23.5rem;
+            height: 24rem;
 
             h6 {
               color: #1A1A1A;
@@ -515,7 +515,7 @@ div:not(.content) > .header {
         }
 
         &.sectors {
-          width: 40.5rem;
+          width: 43.5rem;
         }
 
         a, a:hover, span {
