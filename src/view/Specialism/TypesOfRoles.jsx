@@ -19,7 +19,8 @@ const TypesOfRoles = props => {
               <div className='title'>
                 <h2>
                   {t(`${NAMESPACE}:typesOfRoles:title:${type}`, {
-                    specialism: specialism?.name
+                    specialism: specialism?.name,
+                    interpolation: {escapeValue: false}
                   })}
                 </h2>
               </div>
