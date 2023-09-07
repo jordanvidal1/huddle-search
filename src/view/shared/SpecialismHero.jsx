@@ -7,7 +7,6 @@ import {NAMESPACE} from '../../data/constants';
 import InfoContainer from './InfoContainer';
 import ContactContainer from './ContactContainer';
 import Loader from './Loader';
-import {isHuddle} from "../../services/helper";
 
 const SpecialismHero = props => {
   const {
