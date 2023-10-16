@@ -4,6 +4,7 @@ import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 // import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
+import PrinciplesContainer from './PrinciplesContainer';
 
 import Signature1 from '../../static/huddle/signature-1.svg';
 import Signature2 from '../../static/huddle/signature-2.svg';
@@ -128,12 +129,13 @@ const ourProcessComponent = t => (
   </div>
 );
 
-const corporateComponent = t => (
-  <div />
-);
-
-const diversityComponent = t => (
-  <div />
+const principlesComponent = (t, type) => (
+  <div className='info-container'>
+    <h3>
+      {t(`${NAMESPACE}:leadershipHero:${type}:info:title`)}
+    </h3>
+    <PrinciplesContainer t={t} type={type} />
+  </div>
 );
 
 const LeadershipHero = props => {
@@ -154,8 +156,8 @@ const LeadershipHero = props => {
     // }),
     contactUs: ContactContainer(t),
     executiveSearch: ourProcessComponent(t),
-    corporate: corporateComponent(t),
-    diversity: diversityComponent(t)
+    corporate: principlesComponent(t, type),
+    diversity: principlesComponent(t, type)
   };
 
   return (

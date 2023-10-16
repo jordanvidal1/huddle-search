@@ -297,6 +297,16 @@
     background-image: url('../static/huddle/contact-us.png');
 }
 
+.corporate .leadership-hero {
+    background-image: url('../static/huddle/corporate.png');
+    background-position: top right;
+}
+
+.diversity .leadership-hero {
+    background-image: url('../static/huddle/diversity.png');
+    background-position: top right;
+}
+
 .work-for-us, .contact-us {
     .leadership-hero {
         .text-container > h5 {
@@ -349,6 +359,70 @@
             }
         }
     }
+}
+
+.corporate, .diversity {
+    .leadership-hero {
+        .text-container h5 {
+            color: #8762CB;
+        }
+
+        .title h1 {
+            color: #8762CB;
+        }
+
+        .info-container {
+            margin-top: 8rem;
+
+            h3 {
+                color: #8762CB;
+            }
+        }
+
+        .info-grid-container {
+            margin-top: 3rem;
+        }
+
+        .principles-container {
+            border-radius: 3rem;
+            background: #8762CB;
+            height: 100%;
+            padding: 3rem;
+
+            .principles-title {
+                margin: 1.5rem 0 1rem;
+            }
+
+            h2 {
+                color: #FF958C;
+            }
+
+            h2, h5 {
+                font-weight: 800;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.70);
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .info-grid-container {
+                margin-top: 2.25rem;
+
+                > div {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.diversity .leadership-hero .principles-container h2 {
+    max-width: 60%;
 }
 
 .executive-search {

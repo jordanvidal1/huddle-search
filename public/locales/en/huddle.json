@@ -260,7 +260,39 @@
       },
       "desc": "We believe that success is not just about business growth; it's also about contributing to a better world. At Huddle, we're committed to making a positive impact on society and the environment, aligning our values with our mission to connect top talent with businesses.",
       "info": {
-        "title": "Our 6 CSR principles..."
+        "title": "Our 6 CSR principles...",
+        "points": {
+          "1": {
+            "number": "1.",
+            "title": "Ethical business conduct",
+            "text": "Upholding strong ethical standards in all our actions and decisions."
+          },
+          "2": {
+            "number": "2.",
+            "title": "Environmental stewardship",
+            "text": "Responsibly managing our environmental footprint and promoting sustainable practices."
+          },
+          "3": {
+            "number": "3.",
+            "title": "Community engagement",
+            "text": "Actively engaging with and supporting our local communities."
+          },
+          "4": {
+            "number": "4.",
+            "title": "Diversity & inclusion",
+            "text": "Fostering a diverse and inclusive workplace and culture."
+          },
+          "5": {
+            "number": "5.",
+            "title": "Employee well-being",
+            "text": "Prioritising the health, safety, and development of our employees."
+          },
+          "6": {
+            "number": "6.",
+            "title": "Transparency & accountability",
+            "text": "Regularly assessing and sharing the impact of our CSR initiatives."
+          }
+        }
       }
     },
     "diversity": {
@@ -272,7 +304,24 @@
       },
       "desc": "We believe that diversity is a strength, equity is a necessity, and inclusion is a commitment. At Unitas, we’re dedicated to fostering a workplace where every individual feels valued, empowered, and supported, regardless of background.",
       "info": {
-        "title": "Our 3 DEI initiatives..."
+        "title": "Our 3 DEI initiatives...",
+        "points": {
+          "1": {
+            "number": "1.",
+            "title": "Diversity & inclusion",
+            "text": "We embrace diversity in all its forms, including but not limited to race, ethnicity, gender, age, sexual orientation, abilities, and backgrounds. We believe that a diverse workforce drives innovation."
+          },
+          "2": {
+            "number": "2.",
+            "title": "Equity & access",
+            "text": "Equity is at the core of our DEI efforts. We are dedicated to dismantling systemic barriers and ensuring that every employee has equal opportunities for growth, development, and advancement."
+          },
+          "3": {
+            "number": "3.",
+            "title": "Inclusive culture",
+            "text": "We foster an inclusive culture where everyone feels a sense of belonging. Inclusion is about actively inviting and valuing different perspectives, experiences, and identities."
+          }
+        }
       }
     }
   },
