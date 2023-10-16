@@ -3,7 +3,9 @@
 .executive-search,
 .embedded-talent,
 .contract-interim,
-.permanent-hires {
+.permanent-hires,
+.corporate,
+.diversity {
     > .work-for-us {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/work-for-us.jpg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
@@ -121,7 +123,9 @@
     .work-for-us,
     .embedded-talent,
     .contract-interim,
-    .permanent-hires {
+    .permanent-hires,
+    .corporate,
+    .diversity {
         > .work-for-us {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../static/huddle/work-for-us.jpg') center right -24rem no-repeat, lightgray -1217.123px 0px / 610.604% 100% no-repeat;
             background-size: cover;
@@ -174,7 +178,9 @@
     .executive-search,
     .embedded-talent,
     .contract-interim,
-    .permanent-hires {
+    .permanent-hires,
+    .corporate,
+    .diversity {
         > .work-for-us {
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/work-for-us.jpeg') center no-repeat, lightgray 1688px -5.42px / 118.889% 100.943% no-repeat;
             background-size: cover;
@@ -221,7 +227,9 @@
         .work-for-us,
         .embedded-talent,
         .contract-interim,
-        .permanent-hires {
+        .permanent-hires,
+        .corporate,
+        .diversity {
             > .work-for-us {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../static/unitas/work-for-us.jpeg') center right -18rem no-repeat, lightgray 951.508px 0px / 503.952% 100% no-repeat;
                 background-size: cover;

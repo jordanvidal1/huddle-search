@@ -128,6 +128,14 @@ const ourProcessComponent = t => (
   </div>
 );
 
+const corporateComponent = t => (
+  <div />
+);
+
+const diversityComponent = t => (
+  <div />
+);
+
 const LeadershipHero = props => {
   const {type, img} = props;
 
@@ -145,7 +153,9 @@ const LeadershipHero = props => {
     //   icon: WhiteArrow
     // }),
     contactUs: ContactContainer(t),
-    executiveSearch: ourProcessComponent(t)
+    executiveSearch: ourProcessComponent(t),
+    corporate: corporateComponent(t),
+    diversity: diversityComponent(t)
   };
 
   return (

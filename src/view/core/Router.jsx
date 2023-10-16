@@ -34,6 +34,8 @@ import OurProcess from '../OurProcess';
 import WorkForUs from '../WorkForUs';
 import ContactUs from '../ContactUs';
 
+import Corporate from '../Corporate';
+import Diversity from '../Diversity';
 import ThePrimeGroup from '../ThePrimeGroup';
 import PrivacyPolicy from '../Legal/PrivacyPolicy';
 
@@ -67,6 +69,8 @@ const RouterComponent = () => (
         <Route path='/work-for-us' Component={WorkForUs} />
         <Route path='/contact-us' Component={ContactUs} />
 
+        <Route path='/corporate-social-responsibility' Component={Corporate} />
+        <Route path='/diversity-equality-and-inclusion' Component={Diversity} />
         <Route path='/the-prime-group' Component={ThePrimeGroup} />
         <Route path='/privacy-policy' Component={PrivacyPolicy} />
 

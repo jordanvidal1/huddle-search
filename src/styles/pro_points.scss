@@ -3,7 +3,9 @@
 .executive-search,
 .embedded-talent,
 .contract-interim,
-.permanent-hires {
+.permanent-hires,
+.corporate,
+.diversity {
     .pro-points {
         background: #310A31;
 
@@ -82,7 +84,7 @@
 }
 
 @include media-breakpoint-up(md) {
-    .permanent-hires, .our-story, .our-process {
+    .permanent-hires, .our-story, .our-process, .corporate, .diversity {
         .pro-points .pro-point-container > div > div {
             flex-basis: 33.333333%;
             flex-grow: 0;
@@ -139,7 +141,9 @@
     .our-process,
     .embedded-talent,
     .contract-interim,
-    .permanent-hires {
+    .permanent-hires,
+    .corporate,
+    .diversity {
         .pro-points {
             background: #1A1A1A;
 

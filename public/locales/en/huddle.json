@@ -250,6 +250,30 @@
         "part3": ""
       },
       "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
+    },
+    "corporate": {
+      "path": "/corporate-social-responsibility",
+      "title": {
+        "part1": "We’re making a positive ",
+        "part2": "impact",
+        "part3": " on society"
+      },
+      "desc": "We believe that success is not just about business growth; it's also about contributing to a better world. At Huddle, we're committed to making a positive impact on society and the environment, aligning our values with our mission to connect top talent with businesses.",
+      "info": {
+        "title": "Our 6 CSR principles..."
+      }
+    },
+    "diversity": {
+      "path": "/diversity-equality-and-inclusion",
+      "title": {
+        "part1": "A workplace where everyone feels ",
+        "part2": "valued",
+        "part3": ""
+      },
+      "desc": "We believe that diversity is a strength, equity is a necessity, and inclusion is a commitment. At Unitas, we’re dedicated to fostering a workplace where every individual feels valued, empowered, and supported, regardless of background.",
+      "info": {
+        "title": "Our 3 DEI initiatives..."
+      }
     }
   },
   "jobResource": {
@@ -477,6 +501,58 @@
         "5": {
           "title": "Industry Insights & Dedicated Consultant",
           "text": "Benefit from our industry expertise, gaining insights into market trends and salary benchmarks. Your dedicated consultant offers personalised guidance, ensuring your recruitment strategy aligns with your organisation's goals and objectives."
+        }
+      }
+    },
+    "corporate": {
+      "title": "Core initiatives for corporate social responsibility",
+      "desc": "Our CSR includes eco-friendly practices, diverse hiring, community outreach, ethical sourcing, and employee empowerment for a positive impact on the environment, society, and our team.",
+      "points": {
+        "1": {
+          "title": "Green practices",
+          "text": "We're eco-conscious. From waste reduction to energy efficiency, we implement sustainable practices in our offices, contributing to a greener future."
+        },
+        "2": {
+          "title": "Diversity in recruitment",
+          "text": "We champion diversity. Our recruitment process promotes equal opportunities for candidates of all backgrounds, fostering an inclusive workforce."
+        },
+        "3": {
+          "title": "Community outreach",
+          "text": "We serve our communities. Volunteering and supporting charitable causes close to our hearts is how we give back."
+        },
+        "4": {
+          "title": "Ethical sourcing",
+          "text": "We partner ethically. Our supply chain adheres to ethical and sustainable practices, reflecting our commitment to responsible sourcing."
+        },
+        "5": {
+          "title": "Employee power",
+          "text": "Our team is our strength. We invest in employee development, training, and well-being, ensuring a motivated and satisfied workforce."
+        }
+      }
+    },
+    "diversity": {
+      "title": "Core commitments to diversity, equality & inclusion",
+      "desc": "We wholeheartedly embrace DEI, from leadership's example to education, inclusive hiring, ERGs, supplier diversity, and community involvement, infusing it throughout our organisation.",
+      "points": {
+        "1": {
+          "title": "Leadership buy-in",
+          "text": "Our leadership team is committed to leading by example. They champion DEI initiatives and set the tone for our entire organisation."
+        },
+        "2": {
+          "title": "Education & training",
+          "text": "We provide ongoing DEI education and training to all employees. This includes workshops, webinars, and resources that promote understanding and awareness."
+        },
+        "3": {
+          "title": "Recruitment & hiring",
+          "text": "We actively seek diverse talent and employ inclusive hiring practices to ensure our workforce represents the communities we serve."
+        },
+        "4": {
+          "title": "Employee resource groups (ERGs)",
+          "text": "We support ERGs, which provide safe spaces for employees to connect, share experiences, and advocate for change."
+        },
+        "5": {
+          "title": "Community engagement",
+          "text": "Our commitment extends beyond our workplace. We engage with and support organisations and initiatives that promote DEI in our communities."
         }
       }
     }

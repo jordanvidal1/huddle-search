@@ -93,15 +93,17 @@ const companyRoutes = [
         name: 'Our process',
         path: '/our-process'
       },
-      // {
-      //   name: 'Corporate social responsibility'
-      // },
-      // {
-      //   name: 'Diversity, equality & inclusion'
-      // },
+      {
+        name: 'Corporate social responsibility',
+        path: '/corporate-social-responsibility'
+      },
+      {
+        name: 'Diversity, equality & inclusion',
+        path: '/diversity-equality-and-inclusion'
+      },
       {
         name: 'The Prime Group',
-        path: 'the-prime-group'
+        path: '/the-prime-group'
       }
     ]
   },
