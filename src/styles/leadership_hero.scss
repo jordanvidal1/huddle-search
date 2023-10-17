@@ -714,6 +714,12 @@
                 p {
                     font-weight: 400;
                 }
+
+                @include media-breakpoint-down(sm) {
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
             }
         }
     }
