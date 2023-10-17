@@ -7,7 +7,7 @@ import CorporateMeasure from '../shared/CorporateMeasure';
 import OurStory from '../shared/OurStory';
 import WorkForUs from '../shared/WorkForUs';
 
-import HeroImg from '../../static/unitas/embedded-talent.png';
+import HeroImg from '../../static/unitas/corporate.png';
 
 const Corporate = () => (
   <div className='corporate'>

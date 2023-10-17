@@ -448,7 +448,7 @@
     }
 }
 
-.diversity .leadership-hero .principles-container h2 {
+.diversity .leadership-hero .principles-container h5 {
     max-width: 60%;
 }
 
@@ -565,7 +565,9 @@
     .our-process,
     .work-for-us,
     .contact-us,
-    .executive-search {
+    .executive-search,
+    .corporate,
+    .diversity {
         .leadership-hero {
             background: #F9F9F9;
             overflow: hidden;
@@ -674,6 +676,48 @@
         }
     }
 
+    .corporate,
+    .diversity {
+        .leadership-hero {
+            .text-container {
+                > img {
+                    position: absolute;
+                    left: 115%;
+                    top: -10rem;
+                    width: 40rem;
+                    z-index: -5;
+                }
+
+                h5 {
+                    color: #824554;
+                }
+            }
+
+            .title h1, .info-container h3 {
+                color: #824554;
+            }
+
+            .principles-container {
+                background: #824554;
+
+                h2 {
+                    color: #1A1A1A;
+                    font-size: 4rem;
+                    font-weight: 400;
+                }
+
+                h5 {
+                    color: #FFF;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
     @include media-breakpoint-down(md) {
         .leadership-team .leadership-hero {
             background: url('../static/unitas/leadership-mob.png') top right no-repeat #F9F9F9;
@@ -698,6 +742,16 @@
         .contact-us .leadership-hero {
             background: url('../static/unitas/contact-us-mob.png') top right no-repeat #F9F9F9;
             background-size: 17.6875rem;
+        }
+
+        .corporate .leadership-hero {
+            background: url('../static/unitas/corporate-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
+        }
+
+        .diversity .leadership-hero {
+            background: url('../static/unitas/diversity-mob.png') top right no-repeat #F9F9F9;
+            background-size: 18.6875rem;
         }
     }
 

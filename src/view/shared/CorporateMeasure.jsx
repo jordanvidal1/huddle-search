@@ -4,9 +4,6 @@ import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
 import HeroImg from '../../static/huddle/contract-hires.png';
-import {HashLink} from 'react-router-hash-link';
-import ArrowIcon from '../../static/huddle/arrow.svg';
-import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
 
 const CorporateMeasure = () => {
   const {t} = useTranslation(['huddle', 'unitas']);
