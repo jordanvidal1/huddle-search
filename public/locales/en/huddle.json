@@ -140,6 +140,54 @@
       "text": "Make sure you’re following us across social media to keep up-to-date with new roles and more."
     }
   },
+  "corporateMeasure": {
+    "title": {
+      "part1": "How we ",
+      "part2": "measure",
+      "part3": " our influence"
+    },
+    "desc": "Our CSR principles and initiatives are founded on a rock-solid dedication to measurable impact and unwavering accountability. We believe in not just setting goals but tracking our progress meticulously to ensure we fulfil our promise of a better tomorrow.",
+    "plan": {
+      "title": "Our 3-point plan",
+      "1": {
+        "title": "Impact assessment excellence",
+        "text": "We assess our CSR efforts rigorously, combining quantitative metrics and real-life stories to understand our impact."
+      },
+      "2": {
+        "title": "Transparent reporting",
+        "text": "Our reports are honest narratives, sharing our successes, setbacks, and lessons learned."
+      },
+      "3": {
+        "title": "Stakeholder engagement",
+        "text": "We actively involve employees, partners, customers, and communities, aligning our initiatives with their needs."
+      }
+    },
+    "desc2": "With this plan, we measure our impact, share it transparently, and ensure accountability, creating a better, more sustainable future together."
+  },
+  "diversityMeasure": {
+    "title": {
+      "part1": "How we ",
+      "part2": "measure",
+      "part3": " our progress"
+    },
+    "desc": "We believe in accountability. To measure our progress, we set specific, measurable, and time-bound goals related to diversity, equity, and inclusion. We regularly review our progress, make adjustments, and share updates transparently.",
+    "plan": {
+      "title": "Our 3-point plan",
+      "1": {
+        "title": "Strategic goal setting",
+        "text": "We establish clear, measurable, and time-bound goals in diversity, equity, and inclusion. These goals serve as our roadmap for progress."
+      },
+      "2": {
+        "title": "Continuous evaluation",
+        "text": "Regular assessments and reviews help us track our journey. We analyse data, gather feedback, and make necessary adjustments to stay on course."
+      },
+      "3": {
+        "title": "Transparent reporting",
+        "text": "Our commitment to accountability extends to transparent reporting. We openly share our progress, achievements, and areas where improvement is needed, fostering trust and collaboration."
+      }
+    },
+    "desc2": "With this plan, we measure our commitment to DEI, ensuring that our efforts translate into meaningful change within our organization and for the communities we serve."
+  },
   "specialists": {
     "leadership": {
       "title": "Leadership Team",

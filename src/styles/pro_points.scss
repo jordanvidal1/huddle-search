@@ -77,9 +77,19 @@
 
 .embedded-talent,
 .contract-interim,
-.permanent-hires {
+.permanent-hires,
+.corporate,
+.diversity {
     .pro-points .pro-point-container .pro-point .pro-point-icon {
         background: #FF958C;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .corporate, .diversity {
+        .pro-points .title h2 {
+            font-size: 2.375rem;
+        }
     }
 }
 

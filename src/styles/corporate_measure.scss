@@ -1,0 +1,160 @@
+.corporate, .diversity {
+    .corporate-measure {
+        background: #8762CB;
+        overflow: hidden;
+
+        .content {
+            align-self: flex-end;
+            position: relative;
+            max-width: 38.5rem;
+
+            > img {
+                height: 170%;
+                position: absolute;
+                right: 110%;
+                top: -36%;
+            }
+        }
+
+        .title {
+            a {
+                color: #F6E27F;
+                background: #310A31;
+            }
+        }
+
+        .text {
+            font-size: 1.125rem;
+
+            &:not(:last-child) {
+                margin-top: 2rem;
+            }
+
+            a {
+                align-items: center;
+                color: #F6E27F;
+                display: inline-flex;
+                font-weight: 800;
+                white-space: nowrap;
+            }
+
+            img {
+                margin-left: 0.5rem;
+                width: 0.875rem;
+            }
+        }
+
+        .plan-container {
+            background: #310A31;
+            border-radius: 2rem;
+            margin: 3rem 0;
+            padding: 2rem;
+
+            h5 {
+                margin-bottom: 2rem;
+            }
+
+            ol {
+                margin: 0;
+                padding-left: 1.5rem;
+            }
+
+            li {
+                &::marker {
+                    color: white;
+                    font-family: Montserrat;
+                    font-size: 1.125rem;
+                    font-weight: 900;
+                }
+
+                h6 {
+                    font-size: 1.125rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                span {
+                    color: rgba(255, 255, 255, 0.70);
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            li:not(:first-child) {
+                margin-top: 1.5rem;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            background: url('../static/huddle/corporate-measure-mob.png') top right no-repeat #8762CB;
+            background-size: 17rem;
+
+            .content {
+                margin-top: 4rem;
+                max-width: unset;
+
+                > img {
+                    display: none;
+                }
+            }
+
+            .plan-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    }
+}
+
+.diversity .corporate-measure {
+    @include media-breakpoint-down(md) {
+        background: url('../static/huddle/diversity-measure-mob.png') top right no-repeat #8762CB;
+        background-size: 17rem;
+    }
+}
+
+.unitas-site {
+    .corporate, .diversity {
+        .corporate-measure {
+            background: url('../static/unitas/home-looking-to-hire.jpeg') top left no-repeat;
+            background-size: cover;
+
+            .title a {
+                background: none;
+                color: #FFF;
+                font-family: Fraunces;
+            }
+
+            .text a {
+                color: #FFF;
+                font-weight: 600;
+            }
+
+            .cv-container {
+                background: #1A1A1A;
+                border-radius: 1.5rem;
+
+                .text-container {
+                    max-width: 28.5rem;
+                }
+
+                .link-container a {
+                    color: #F49944;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                background:  url('../static/unitas/home-looking-to-hire-mob.jpg') top right no-repeat #3A84C9;
+                background-size: 85%;
+
+                .content {
+                    margin-top: 0;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

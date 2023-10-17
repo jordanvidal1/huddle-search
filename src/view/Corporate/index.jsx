@@ -3,6 +3,7 @@ import {isHuddle} from '../../services/helper';
 
 import Hero from '../shared/LeadershipHero';
 import ProPoints from '../shared/ProPoints';
+import CorporateMeasure from '../shared/CorporateMeasure';
 import OurStory from '../shared/OurStory';
 import WorkForUs from '../shared/WorkForUs';
 
@@ -15,6 +16,7 @@ const Corporate = () => (
       img={!isHuddle && HeroImg}
     />
     <ProPoints type='corporate' />
+    <CorporateMeasure />
     <OurStory type='story'>
         Three leaders come together to <a>reimagine</a> recruitment
     </OurStory>

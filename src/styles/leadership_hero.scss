@@ -363,8 +363,12 @@
 
 .corporate, .diversity {
     .leadership-hero {
-        .text-container h5 {
-            color: #8762CB;
+        .text-container {
+            max-width: 66%;
+
+            h5 {
+                color: #8762CB;
+            }
         }
 
         .title h1 {
@@ -380,7 +384,7 @@
         }
 
         .info-grid-container {
-            margin-top: 3rem;
+            margin-top: 2.25rem;
         }
 
         .principles-container {
@@ -409,13 +413,36 @@
         }
 
         @include media-breakpoint-down(md) {
+            .text-container {
+                max-width: 100%;
+
+                h5 {
+                    max-width: 66%;
+                }
+            }
+
+            .info-container {
+                margin-top: 3rem;
+            }
+
             .info-grid-container {
-                margin-top: 2.25rem;
+                margin-top: 1.25rem;
 
                 > div {
                     flex-basis: 100%;
                     max-width: 100%;
                 }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .info-container h3 {
+                font-size: 2.375rem;
+            }
+
+            .principles-container {
+                border-radius: 3rem;
+                padding: 1.5rem 1.5rem 2rem 1.5rem;
             }
         }
     }
