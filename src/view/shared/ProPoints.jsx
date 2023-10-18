@@ -26,7 +26,7 @@ const variantList = {
 const ProPoints = props => {
   const {type} = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const isVariant = variantList[NAMESPACE].indexOf(type) > -1;
 

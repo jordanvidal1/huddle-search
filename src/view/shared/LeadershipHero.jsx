@@ -141,7 +141,7 @@ const principlesComponent = (t, type) => (
 const LeadershipHero = props => {
   const {type, img} = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   // const siteName = isHuddle ? 'Huddle' : 'Unitas';
 

@@ -194,7 +194,6 @@ div:not(.content) > .header {
 
 .header-nav {
   border-radius: 1000px;
-  background: #FFF;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -516,6 +515,64 @@ div:not(.content) > .header {
 
         &.sectors {
           width: 43.5rem;
+        }
+
+        a, a:hover, span {
+          color: #FFF;
+          font-family: Poppins;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    .nav-list {
+      a, span {
+        color: #3A84C9;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.prime-site {
+  .header {
+    background: #163BF2;
+
+    .logo {
+      height: 3rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      .logo {
+        height: 2.5rem;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .logo {
+        height: 2rem;
+      }
+    }
+
+    .header-nav {
+      .nav-list {
+        a, span {
+          color: #FFF;
+          font-weight: 600;
+        }
+      }
+
+      .nav-dropdown {
+        background: #EB52F9;
+        border-radius: 0;
+        justify-content: flex-start;
+        padding: 2.5rem 2rem;
+        right: unset;
+        width: 16.5rem;
+
+        img {
+          right: 44%;
         }
 
         a, a:hover, span {

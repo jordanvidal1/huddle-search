@@ -20,7 +20,7 @@ const LinkHref = props => (
 );
 
 const ThePrimeGroup = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='the-prime-group'>

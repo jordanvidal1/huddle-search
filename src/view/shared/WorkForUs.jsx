@@ -14,7 +14,7 @@ const WorkForUs = ({
   home,
   executive
 }) => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const arrowIcon = isHuddle
     ? ArrowIcon : UnitasArrowIcon;

@@ -22,7 +22,7 @@ const SpecialismHero = props => {
     empty
   } = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const title = pathname !== ''
     ? t(`${NAMESPACE}:specialismHero:title:${pathname}`, {

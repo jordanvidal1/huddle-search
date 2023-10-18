@@ -122,7 +122,7 @@ const Footer = ({
   expandClick,
   toggleSidebar
 }) => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='footer'>

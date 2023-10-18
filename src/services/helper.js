@@ -2,6 +2,8 @@ import {NAMESPACE} from '../data/constants';
 
 const isHuddle = NAMESPACE === 'huddle';
 
+const isPrime = NAMESPACE === 'prime';
+
 const renderNumber = (
   number, minimumFractionDigits = 0,
   maximumFractionDigits = 2
@@ -32,6 +34,7 @@ const groupSpecialisms = specialisms => {
 
 export {
   isHuddle,
+  isPrime,
   renderNumber,
   groupSpecialisms
 };

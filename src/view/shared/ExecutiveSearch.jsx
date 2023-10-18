@@ -20,7 +20,7 @@ import UnitasInfoIcon3 from '../../static/unitas/executive-icon-3.svg';
 import UnitasInfoIcon4 from '../../static/unitas/executive-icon-4.svg';
 
 const ExecutiveSearch = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='executive-search'>

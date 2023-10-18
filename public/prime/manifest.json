@@ -1,6 +1,6 @@
 {
-  "short_name": "Huddle",
-  "name": "Huddle Search",
+  "short_name": "Prime",
+  "name": "The Prime Group",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,12 +10,12 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "226x221"
+      "sizes": "198x198"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x494"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

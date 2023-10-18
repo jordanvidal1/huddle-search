@@ -6,10 +6,13 @@
   "scripts": {
     "start:huddle": "env-cmd -f ./.env.huddle react-scripts start",
     "start:unitas": "env-cmd -f ./.env.unitas react-scripts start",
+    "start:prime": "env-cmd -f ./.env.prime react-scripts start",
     "sitemap:huddle": "env-cmd -f ./.env.huddle babel-node src/view/core/sitemap-generator.js",
     "sitemap:unitas": "env-cmd -f ./.env.unitas babel-node src/view/core/sitemap-generator.js",
+    "sitemap:prime": "env-cmd -f ./.env.prime babel-node src/view/core/sitemap-generator.js",
     "build:huddle": "yarn sitemap:huddle && env-cmd -f ./.env.huddle react-scripts build && mv build/huddle/robots.txt build/robots.txt",
     "build:unitas": "yarn sitemap:unitas && env-cmd -f ./.env.unitas react-scripts build && mv build/unitas/robots.txt build/robots.txt",
+    "build:prime": "yarn sitemap:prime && env-cmd -f ./.env.prime react-scripts build && mv build/prime/robots.txt build/robots.txt",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

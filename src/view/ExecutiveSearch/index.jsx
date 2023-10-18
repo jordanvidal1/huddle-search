@@ -14,7 +14,7 @@ import UnitasLogo from '../../static/unitas/text-logo.svg';
 import HeroImg from '../../static/huddle/executive-search.png';
 
 const ExecutiveSearch = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='executive-search'>

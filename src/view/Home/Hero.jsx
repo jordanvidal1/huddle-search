@@ -6,7 +6,7 @@ import {isHuddle} from '../../services/helper';
 import HeroImg from '../../static/unitas/home-hero.png';
 
 const Hero = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='hero'>

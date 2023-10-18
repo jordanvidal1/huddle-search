@@ -13,7 +13,7 @@ import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
 // import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
 
 const LookingForAJob = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='looking-for-a-job'>

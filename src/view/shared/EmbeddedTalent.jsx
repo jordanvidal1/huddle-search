@@ -13,7 +13,7 @@ import InfoIcon3 from '../../static/huddle/info-icon-3.svg';
 import InfoIcon4 from '../../static/huddle/info-icon-4.svg';
 
 const EmbeddedTalent = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='embedded-talent'>

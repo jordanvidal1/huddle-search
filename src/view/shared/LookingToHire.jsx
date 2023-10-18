@@ -15,7 +15,7 @@ const LookingToHire = ({
   children,
   type
 }) => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const heroImg = type === 'home' ? HomeHero : PermanentHero;
 

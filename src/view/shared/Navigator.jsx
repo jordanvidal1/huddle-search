@@ -2,16 +2,16 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
 import {NAMESPACE, SPECIALISMS, SECTORS} from '../../data/constants';
-import {isHuddle, groupSpecialisms} from '../../services/helper';
+import {isHuddle, isPrime, groupSpecialisms} from '../../services/helper';
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
 
-import Logo from '../../static/huddle/full-logo-dark.svg';
-import Menubar from '../../static/huddle/menubar.svg';
-import CloseButton from '../../static/huddle/close-button.svg';
-import DropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
-import HeaderArrow from '../../static/huddle/header-arrow.svg';
+import HuddleLogo from '../../static/huddle/full-logo-dark.svg';
+import HuddleMenubar from '../../static/huddle/menubar.svg';
+import HuddleCloseButton from '../../static/huddle/close-button.svg';
+import HuddleDropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
+import HuddleHeaderArrow from '../../static/huddle/header-arrow.svg';
 
 import UnitasLogo from '../../static/unitas/full-logo.svg';
 import UnitasMenubar from '../../static/unitas/menubar.svg';
@@ -19,7 +19,37 @@ import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
 import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
 import UnitasCloseButton from '../../static/unitas/close-button.svg';
 
-const routes = [
+import PrimeLogo from '../../static/prime/full-logo.svg';
+import PrimeMenubar from '../../static/huddle/menubar.svg';
+import PrimeDropdownArrow from '../../static/prime/header-dropdown-arrow.svg';
+import PrimeHeaderArrow from '../../static/prime/header-arrow.svg';
+import PrimeCloseButton from '../../static/huddle/close-button.svg';
+
+const icons = {
+  huddle: {
+    logo: HuddleLogo,
+    menubar: HuddleMenubar,
+    closeButton: HuddleCloseButton,
+    dropdownArrow: HuddleDropdownArrow,
+    headerArrow: HuddleHeaderArrow
+  },
+  unitas: {
+    logo: UnitasLogo,
+    menubar: UnitasMenubar,
+    closeButton: UnitasCloseButton,
+    dropdownArrow: UnitasDropdownArrow,
+    headerArrow: UnitasHeaderArrow
+  },
+  prime: {
+    logo: PrimeLogo,
+    menubar: PrimeMenubar,
+    closeButton: PrimeCloseButton,
+    dropdownArrow: PrimeDropdownArrow,
+    headerArrow: PrimeHeaderArrow
+  },
+}
+
+const defaultRoutes = [
   {
     name: 'Looking to hire',
     path: '/looking-to-hire'
@@ -67,6 +97,63 @@ const routes = [
   }
 ];
 
+const primeRoutes = [
+  {
+    name: 'Companies',
+    subLinks: [
+      {
+        name: 'Huddle',
+        path: '/companies/huddle'
+      },
+      {
+        name: 'Unitas',
+        path: '/companies/unitas'
+      },
+      {
+        name: 'Spectrum',
+        path: '/companies/spectrum'
+      }
+    ]
+  },
+  {
+    name: 'About us',
+    subLinks: [
+      {
+        name: 'Leadership team',
+        path: '/leadership-team'
+      },
+      {
+        name: 'Our story',
+        path: '/our-story'
+      },
+      {
+        name: 'Our process',
+        path: '/our-process'
+      }
+    ]
+  },
+  {
+    name: 'Blog',
+    path: '/blog'
+  },
+  {
+    name: 'Work for us',
+    path: '/work-for-us'
+  },
+  {
+    name: 'Contact us',
+    path: '/contact-us'
+  }
+];
+
+const routes = {
+  huddle: defaultRoutes,
+  unitas: defaultRoutes,
+  prime: primeRoutes
+};
+
+const groupedDropdowns = ['sectors', 'specialisms'];
+
 const Navigator = ({
   children
 }) => {
@@ -98,11 +185,11 @@ const Navigator = ({
     setPathname(`/${location.pathname.split('/')[1]}`);
   }, [location, pathname]);
 
-  const renderAboutUsDropdown = route => expanded === route.name && (
+  const renderNormalDropdown = route => expanded === route.name && (
     <div className='nav-dropdown'>
       <img
         alt='dropdown-arrow'
-        src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+        src={icons[NAMESPACE].dropdownArrow}
       />
       <div>
         {route.subLinks.map((subLink, i) => (
@@ -122,7 +209,7 @@ const Navigator = ({
     <div className={cx('nav-dropdown', route.name.toLowerCase())}>
       <img
         alt='dropdown-arrow'
-        src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
+        src={icons[NAMESPACE].dropdownArrow}
       />
       <div className='nav-dropdown-list'>
         {groupSpecialisms(route.subLinks).map((group, i) => (
@@ -143,13 +230,13 @@ const Navigator = ({
     </div>
   );
 
-  const renderDropdown = route => expanded === 'About us'
-    ? renderAboutUsDropdown(route)
-    : renderSpecialismDropdown(route);
+  const renderDropdown = route => groupedDropdowns.indexOf(expanded) > -1
+    ? renderSpecialismDropdown(route)
+    : renderNormalDropdown(route);
 
   const renderNavList = () => (
     <div className='nav-list'>
-      {routes.map((route, i) => (
+      {routes[NAMESPACE].map((route, i) => (
         <div key={i}>
           <div onClick={() => {
             if (route.subLinks) {
@@ -162,7 +249,7 @@ const Navigator = ({
                 <img
                   alt='arrow'
                   className='header-arrow'
-                  src={isHuddle ? HeaderArrow : UnitasHeaderArrow}
+                  src={icons[NAMESPACE].headerArrow}
                 />
               </span>
             ) : (
@@ -184,7 +271,7 @@ const Navigator = ({
       <div className='header-container container'>
         <div className='header-inner'>
           <Link to='/'>
-            <img alt='logo' className='logo' src={isHuddle ? Logo : UnitasLogo} />
+            <img alt='logo' className='logo' src={icons[NAMESPACE].logo} />
           </Link>
           <div className='header-nav'>
             <div className='header-nav-list'>
@@ -193,7 +280,7 @@ const Navigator = ({
             <img
               alt='logo-menubar'
               className='logo-menubar'
-              src={isHuddle ? Menubar : UnitasMenubar}
+              src={icons[NAMESPACE].menubar}
               onClick={toggleSidebar}
             />
           </div>
@@ -218,14 +305,14 @@ const Navigator = ({
             <img
               alt='sidebar-logo'
               className='logo'
-              src={isHuddle ? Logo : UnitasLogo}
+              src={icons[NAMESPACE].logo}
             />
           </Link>
           <img
             alt='close-button'
             onClick={hideSidebar}
             className='close-button'
-            src={isHuddle ? CloseButton : UnitasCloseButton}
+            src={icons[NAMESPACE].closeButton}
           />
         </div>
         {renderNavList()}
@@ -237,12 +324,14 @@ const Navigator = ({
   return (
     <div className={`${NAMESPACE}-site`}>
       {renderSidebar()}
-      <TopNav
-        dropdownDisplayed={dropdownDisplayed}
-        toggleDropdown={toggleDropdown}
-        hideDropdown={hideDropdown}
-        isHuddle={isHuddle}
-      />
+      {!isPrime && (
+        <TopNav
+          dropdownDisplayed={dropdownDisplayed}
+          toggleDropdown={toggleDropdown}
+          hideDropdown={hideDropdown}
+          isHuddle={isHuddle}
+        />
+      )}
       {renderHeader()}
       {pathname.includes('/resources') && <ResourcesNav />}
       <div id='content'>

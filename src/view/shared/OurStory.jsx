@@ -8,7 +8,7 @@ const OurStory = ({
   children,
   type
 }) => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className={`our-${type}-static`}>

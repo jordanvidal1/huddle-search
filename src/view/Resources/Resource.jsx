@@ -28,7 +28,7 @@ const Resource = () => {
 
   const location = useLocation();
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   useEffect(() => {
     loadBlog();

@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 
 const PrivacyPolicy = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='legal privacy-policy'>

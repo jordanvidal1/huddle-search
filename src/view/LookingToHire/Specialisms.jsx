@@ -11,7 +11,7 @@ import UnitasSectorsArrowIcon from '../../static/unitas/black-arrow.svg';
 const Specialisms = props => {
   const {type, specialisms} = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const specialismArrow = isHuddle ? ArrowIcon : UnitasSpecialismsArrowIcon;
   const sectorArrow = isHuddle ? ArrowIcon : UnitasSectorsArrowIcon;

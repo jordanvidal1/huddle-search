@@ -17,7 +17,7 @@ import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
 const Specialists = props => {
   const {type = 'leadership', name, specialists, executive} = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const huddlePhoneIcon = executive ? ExecutivePhoneIcon : PhoneIcon;
   const huddleEmailIcon = executive ? ExecutiveEmailIcon : EmailIcon;

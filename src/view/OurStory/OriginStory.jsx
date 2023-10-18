@@ -10,7 +10,7 @@ import Image2 from '../../static/huddle/origin-story-2.jpg';
 import Image3 from '../../static/huddle/origin-story-3.jpg';
 
 const OriginStory = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='origin-story'>

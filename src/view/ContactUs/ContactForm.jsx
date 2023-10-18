@@ -15,7 +15,7 @@ const ContactForm = () => {
     isContactUsLoading
   } = useWordPress();
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const [message, setMessage] = useState('');
   const [type, setType] = useState('error');

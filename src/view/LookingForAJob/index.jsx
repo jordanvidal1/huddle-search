@@ -12,7 +12,7 @@ import ResourcesPage from '../shared/ResourcesPage';
 import HeroImg from '../../static/unitas/candidates.png';
 
 const LookingForAJob = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='looking-for-a-job'>

@@ -6,7 +6,7 @@ import {isHuddle} from '../../services/helper';
 import HeroImg from '../../static/huddle/contract-hires.png';
 
 const CorporateMeasure = () => {
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   return (
     <div className='corporate-measure'>

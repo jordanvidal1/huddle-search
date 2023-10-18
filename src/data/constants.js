@@ -71,7 +71,12 @@ const leaderEmails = {
     craig: 'craig@unitastalent.com',
     scott: 'scott@unitastalent.com',
     pete: 'pete@unitastalent.com',
-  }
+  },
+  prime: {
+    craig: 'craig@unitastalent.com',
+    scott: 'scott@unitastalent.com',
+    pete: 'pete@unitastalent.com',
+  },
 }
 
 const craigLeader = {
@@ -117,7 +122,12 @@ export const LEADERS = {
     scottLeader,
     craigLeader,
     peteLeader
-  ]
+  ],
+  prime: [
+    scottLeader,
+    craigLeader,
+    peteLeader
+  ],
 };
 
 export const SPECIALISMS = {

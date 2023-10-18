@@ -5,7 +5,7 @@ import {NAMESPACE} from '../../data/constants';
 const TypesOfRoles = props => {
   const {type, specialism, pathname, slug} = props;
 
-  const {t} = useTranslation(['huddle', 'unitas']);
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const ts = t(`${NAMESPACE}:typesOfRoles:${pathname}:${slug}:${type}`);
   const list = ts.split('|').sort();
