@@ -2,7 +2,7 @@ import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
 import {NAMESPACE, SPECIALISMS, SECTORS, huddleHref, unitasHref, spectrumHref} from '../../data/constants';
-import {isHuddle, isPrime, groupSpecialisms} from '../../services/helper';
+import {groupSpecialisms, isHuddle, isPrime} from '../../services/helper';
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
@@ -25,7 +25,7 @@ import PrimeDropdownArrow from '../../static/prime/header-dropdown-arrow.svg';
 import PrimeHeaderArrow from '../../static/prime/header-arrow.svg';
 import PrimeCloseButton from '../../static/huddle/close-button.svg';
 
-const icons = {
+const ICONS = {
   huddle: {
     logo: HuddleLogo,
     menubar: HuddleMenubar,
@@ -47,7 +47,7 @@ const icons = {
     dropdownArrow: PrimeDropdownArrow,
     headerArrow: PrimeHeaderArrow
   },
-}
+};
 
 const defaultRoutes = [
   {
@@ -198,7 +198,7 @@ const Navigator = ({
     <div className='nav-dropdown'>
       <img
         alt='dropdown-arrow'
-        src={icons[NAMESPACE].dropdownArrow}
+        src={ICONS[NAMESPACE].dropdownArrow}
       />
       <div>
         {route.subLinks.map((subLink, i) => (
@@ -224,7 +224,7 @@ const Navigator = ({
     <div className={cx('nav-dropdown', route.name.toLowerCase())}>
       <img
         alt='dropdown-arrow'
-        src={icons[NAMESPACE].dropdownArrow}
+        src={ICONS[NAMESPACE].dropdownArrow}
       />
       <div className='nav-dropdown-list'>
         {groupSpecialisms(route.subLinks).map((group, i) => (
@@ -264,7 +264,7 @@ const Navigator = ({
                 <img
                   alt='arrow'
                   className='header-arrow'
-                  src={icons[NAMESPACE].headerArrow}
+                  src={ICONS[NAMESPACE].headerArrow}
                 />
               </span>
             ) : (
@@ -286,7 +286,7 @@ const Navigator = ({
       <div className='header-container container'>
         <div className='header-inner'>
           <Link to='/'>
-            <img alt='logo' className='logo' src={icons[NAMESPACE].logo} />
+            <img alt='logo' className='logo' src={ICONS[NAMESPACE].logo} />
           </Link>
           <div className='header-nav'>
             <div className='header-nav-list'>
@@ -295,7 +295,7 @@ const Navigator = ({
             <img
               alt='logo-menubar'
               className='logo-menubar'
-              src={icons[NAMESPACE].menubar}
+              src={ICONS[NAMESPACE].menubar}
               onClick={toggleSidebar}
             />
           </div>
@@ -320,14 +320,14 @@ const Navigator = ({
             <img
               alt='sidebar-logo'
               className='logo'
-              src={icons[NAMESPACE].logo}
+              src={ICONS[NAMESPACE].logo}
             />
           </Link>
           <img
             alt='close-button'
             onClick={hideSidebar}
             className='close-button'
-            src={icons[NAMESPACE].closeButton}
+            src={ICONS[NAMESPACE].closeButton}
           />
         </div>
         {renderNavList()}

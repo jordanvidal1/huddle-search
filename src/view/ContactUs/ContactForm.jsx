@@ -152,7 +152,7 @@ const ContactForm = () => {
                       errors={errors}
                     >
                       You agree to our <Link to='/privacy-policy'>
-                      privacy policy
+                      Privacy Policy
                       </Link>.
                     </Input>
                   </Grid>

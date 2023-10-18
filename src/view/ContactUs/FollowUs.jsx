@@ -103,7 +103,7 @@ const FollowUs = () => {
                     </div>
                   </form>
                   <p>
-                    We care about your data in our <Link to='/privacy-policy'>privacy policy.</Link>
+                    We care about your data in our <Link to='/privacy-policy'>Privacy Policy.</Link>
                   </p>
                 </div>
               </div>

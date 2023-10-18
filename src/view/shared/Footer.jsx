@@ -4,23 +4,26 @@ import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {
+  huddleHref,
+  unitasHref,
+  spectrumHref,
   huddleLinkedIn,
   unitasLinkedIn,
   NAMESPACE,
   SECTORS,
   SPECIALISMS,
 } from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {isHuddle, isPrime} from '../../services/helper';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
-import FullLogo from '../../static/huddle/full-logo.svg';
-import Phone from '../../static/huddle/phone-number.svg';
-import Email from '../../static/huddle/email.svg';
-import Location from '../../static/huddle/location.svg';
-import LinkedIn from '../../static/huddle/linkedin.svg';
-// import Twitter from '../../static/huddle/twitter.svg';
-// import Facebook from '../../static/huddle/facebook.svg';
-// import Instagram from '../../static/huddle/instagram.svg';
+import HuddleLogo from '../../static/huddle/full-logo.svg';
+import HuddlePhone from '../../static/huddle/phone-number.svg';
+import HuddleEmail from '../../static/huddle/email.svg';
+import HuddleLocation from '../../static/huddle/location.svg';
+import HuddleLinkedIn from '../../static/huddle/linkedin.svg';
+// import HuddleTwitter from '../../static/huddle/twitter.svg';
+// import HuddleFacebook from '../../static/huddle/facebook.svg';
+// import HuddleInstagram from '../../static/huddle/instagram.svg';
 import ThePrimeGroup from '../../static/huddle/the-prime-group.svg';
 
 import UnitasLogo from '../../static/unitas/full-logo.svg';
@@ -32,90 +35,174 @@ import UnitasLinkedIn from '../../static/unitas/linkedin.svg';
 // import UnitasFacebook from '../../static/unitas/facebook.svg';
 // import UnitasInstagram from '../../static/unitas/instagram.svg';
 import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
-import FooterArrow from '../../static/huddle/footer-arrow.svg';
+import HuddleFooterArrow from '../../static/huddle/footer-arrow.svg';
 import UnitasFooterArrow from '../../static/unitas/footer-arrow.svg';
 
-const discoverRoutes = [
-  {
-    name: 'Looking to hire',
-    path: '/looking-to-hire'
-  },
-  {
-    name: isHuddle ? 'Looking for a job' : 'Candidates',
-    path: isHuddle ? '/looking-for-a-job' : '/candidates'
-  },
-  {
-    name: 'Specialisms',
-    subLinks: SPECIALISMS[NAMESPACE]
-  },
-  {
-    name: 'Sectors',
-    subLinks: SECTORS[NAMESPACE]
-  },
-  {
-    name: 'Resources',
-    path: '/resources'
-  }
-];
+import PrimeLogo from '../../static/prime/full-logo.svg';
+import PrimePhone from '../../static/prime/phone-number.svg';
+import PrimeEmail from '../../static/prime/email.svg';
+import PrimeLocation from '../../static/prime/location.svg';
+import PrimeLinkedIn from '../../static/prime/linkedin-white-filled.svg';
 
-const servicesRoutes = [
-  {
-    name: 'Permanent Hires',
-    path: '/permanent-hires'
+const ICONS = {
+  huddle: {
+    logo: HuddleLogo,
+    phone: HuddlePhone,
+    email: HuddleEmail,
+    location: HuddleLocation,
+    linkedin: HuddleLinkedIn,
+    headerArrow: HuddleFooterArrow
   },
-  {
-    name: 'Executive Search',
-    path: '/executive-search'
+  unitas: {
+    logo: UnitasLogo,
+    phone: UnitasPhone,
+    email: UnitasEmail,
+    location: UnitasLocation,
+    linkedin: UnitasLinkedIn,
+    headerArrow: UnitasFooterArrow
   },
-  {
-    name: 'Embedded Talent Solutions',
-    path: '/embedded-talent-solutions'
+  prime: {
+    logo: PrimeLogo,
+    phone: PrimePhone,
+    email: PrimeEmail,
+    location: PrimeLocation,
+    linkedin: PrimeLinkedIn,
+    headerArrow: UnitasFooterArrow
   },
-  {
-    name: 'Contract/Interim',
-    path: '/contract-interim'
-  }
-]
+};
 
-const companyRoutes = [
-  {
-    name: 'About us',
-    subLinks: [
-      {
-        name: 'Leadership team',
-        path: '/leadership-team'
-      },
-      {
-        name: 'Our story',
-        path: '/our-story'
-      },
-      {
-        name: 'Our process',
-        path: '/our-process'
-      },
-      {
-        name: 'Corporate social responsibility',
-        path: '/corporate-social-responsibility'
-      },
-      {
-        name: 'Diversity, equality & inclusion',
-        path: '/diversity-equality-and-inclusion'
-      },
-      {
-        name: 'The Prime Group',
-        path: '/the-prime-group'
-      }
-    ]
-  },
-  {
-    name: 'Work for us',
-    path: '/work-for-us'
-  },
-  {
-    name: 'Contact us',
-    path: '/contact-us'
-  }
-];
+const discoverRoutes = isPrime ?
+  [
+    {
+      name: 'Huddle',
+      path: huddleHref,
+      external: true
+    },
+    {
+      name: 'Unitas',
+      path: unitasHref,
+      external: true
+    },
+    {
+      name: 'Spectrum',
+      path: spectrumHref,
+      external: true
+    }
+  ] : [
+    {
+      name: 'Looking to hire',
+      path: '/looking-to-hire'
+    },
+    {
+      name: isHuddle ? 'Looking for a job' : 'Candidates',
+      path: isHuddle ? '/looking-for-a-job' : '/candidates'
+    },
+    {
+      name: 'Specialisms',
+      subLinks: SPECIALISMS[NAMESPACE]
+    },
+    {
+      name: 'Sectors',
+      subLinks: SECTORS[NAMESPACE]
+    },
+    {
+      name: 'Resources',
+      path: '/resources'
+    }
+  ];
+
+const servicesRoutes = isPrime ?
+  [
+    {
+      name: 'Leadership team',
+      path: '/leadership-team'
+    },
+    {
+      name: 'Our story',
+      path: '/our-story'
+    },
+    {
+      name: 'Our process',
+      path: '/our-process'
+    }
+  ] : [
+    {
+      name: 'Permanent Hires',
+      path: '/permanent-hires'
+    },
+    {
+      name: 'Executive Search',
+      path: '/executive-search'
+    },
+    {
+      name: 'Embedded Talent Solutions',
+      path: '/embedded-talent-solutions'
+    },
+    {
+      name: 'Contract/Interim',
+      path: '/contract-interim'
+    }
+  ];
+
+const companyRoutes = isPrime ?
+  [
+    {
+      name: 'Blog',
+      path: '/blog'
+    },
+    {
+      name: 'Work for us',
+      path: '/work-for-us'
+    },
+    {
+      name: 'Contact us',
+      path: '/contact-us'
+    }
+  ] : [
+    {
+      name: 'About us',
+      subLinks: [
+        {
+          name: 'Leadership team',
+          path: '/leadership-team'
+        },
+        {
+          name: 'Our story',
+          path: '/our-story'
+        },
+        {
+          name: 'Our process',
+          path: '/our-process'
+        },
+        {
+          name: 'Corporate social responsibility',
+          path: '/corporate-social-responsibility'
+        },
+        {
+          name: 'Diversity, equality & inclusion',
+          path: '/diversity-equality-and-inclusion'
+        },
+        {
+          name: 'The Prime Group',
+          path: '/the-prime-group'
+        }
+      ]
+    },
+    {
+      name: 'Work for us',
+      path: '/work-for-us'
+    },
+    {
+      name: 'Contact us',
+      path: '/contact-us'
+    }
+  ];
+
+const LinkHref = props => (
+  <a {...props} target='_blank' rel='noreferrer'>
+    {props.children}
+  </a>
+);
 
 const Footer = ({
   expanded,
@@ -138,43 +225,47 @@ const Footer = ({
               </div>
             )}
             <Grid container spacing={4}>
-              <Grid item xs={12} md={6}>
-                <div className='box hire-box'>
-                  <div className='text'>
-                    <h3>
-                      {t(`${NAMESPACE}:footer:lookingToHire:title`)}
-                    </h3>
-                    <p>
-                      {t(`${NAMESPACE}:footer:lookingToHire:desc`)}
-                    </p>
-                  </div>
-                  <div className='btn-container'>
-                    <HashLink to='/contact-us#contact' className="btn btn-secondary">
-                      {t(`${NAMESPACE}:footer:lookingToHire:button1`)}
-                    </HashLink>
-                    <HashLink to='/contact-us#contact' className="btn">
-                      {t(`${NAMESPACE}:footer:lookingToHire:button2`)}
-                    </HashLink>
-                  </div>
-                </div>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <div className='box job-box'>
-                  <div className='text'>
-                    <h3>
-                      {t(`${NAMESPACE}:footer:lookingForAJob:title`)}
-                    </h3>
-                    <p>
-                      {t(`${NAMESPACE}:footer:lookingForAJob:desc`)}
-                    </p>
-                  </div>
-                  <div className='btn-container'>
-                    <HashLink to='/contact-us#contact' className="btn btn-secondary">
-                      {t(`${NAMESPACE}:footer:lookingForAJob:button`)}
-                    </HashLink>
-                  </div>
-                </div>
-              </Grid>
+              {!isPrime && (
+                <>
+                  <Grid item xs={12} md={6}>
+                    <div className='box hire-box'>
+                      <div className='text'>
+                        <h3>
+                          {t(`${NAMESPACE}:footer:lookingToHire:title`)}
+                        </h3>
+                        <p>
+                          {t(`${NAMESPACE}:footer:lookingToHire:desc`)}
+                        </p>
+                      </div>
+                      <div className='btn-container'>
+                        <HashLink to='/contact-us#contact' className="btn btn-secondary">
+                          {t(`${NAMESPACE}:footer:lookingToHire:button1`)}
+                        </HashLink>
+                        <HashLink to='/contact-us#contact' className="btn">
+                          {t(`${NAMESPACE}:footer:lookingToHire:button2`)}
+                        </HashLink>
+                      </div>
+                    </div>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <div className='box job-box'>
+                      <div className='text'>
+                        <h3>
+                          {t(`${NAMESPACE}:footer:lookingForAJob:title`)}
+                        </h3>
+                        <p>
+                          {t(`${NAMESPACE}:footer:lookingForAJob:desc`)}
+                        </p>
+                      </div>
+                      <div className='btn-container'>
+                        <HashLink to='/contact-us#contact' className="btn btn-secondary">
+                          {t(`${NAMESPACE}:footer:lookingForAJob:button`)}
+                        </HashLink>
+                      </div>
+                    </div>
+                  </Grid>
+                </>
+              )}
               <Grid item xs={12}>
                 <div className='box footer-box'>
                   <div className='footer-container'>
@@ -183,7 +274,7 @@ const Footer = ({
                         <img
                           className='logo'
                           alt='logo'
-                          src={isHuddle ? FullLogo : UnitasLogo}
+                          src={ICONS[NAMESPACE].logo}
                         />
                         <p>{t(`${NAMESPACE}:footer:slogan`)}</p>
                       </div>
@@ -191,14 +282,14 @@ const Footer = ({
                         <div>
                           <img
                             alt='phone-number'
-                            src={isHuddle ? Phone : UnitasPhone}
+                            src={ICONS[NAMESPACE].phone}
                           />
                           <span>{t(`${NAMESPACE}:footer:number`)}</span>
                         </div>
                         <div>
                           <img
                             alt='email'
-                            src={isHuddle ? Email : UnitasEmail}
+                            src={ICONS[NAMESPACE].email}
                           />
                           <a href={`mailto:${t(`${NAMESPACE}:footer:email`)}`}>
                             <span>
@@ -209,34 +300,34 @@ const Footer = ({
                         <div>
                           <img
                             alt='location'
-                            src={isHuddle ? Location : UnitasLocation}
+                            src={ICONS[NAMESPACE].location}
                           />
                           <span>1 Fore St Ave, London EC2Y 9DT</span>
                         </div>
                       </div>
                       <div className='footer-socials'>
-                        <a href={isHuddle ? huddleLinkedIn : unitasLinkedIn} rel='noreferrer' target='_blank'>
+                        <LinkHref href={isHuddle ? huddleLinkedIn : unitasLinkedIn}>
                           <img
                             alt='linkedin'
-                            src={isHuddle ? LinkedIn : UnitasLinkedIn}
+                            src={ICONS[NAMESPACE].linkedin}
                           />
-                        </a>
-                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        </LinkHref>
+                        {/*<LinkHref href='#'>*/}
                         {/*  <img*/}
                         {/*    alt='twitter'*/}
-                        {/*    src={isHuddle ? Twitter : UnitasTwitter}*/}
+                        {/*    src={isHuddle ? HuddleTwitter : UnitasTwitter}*/}
                         {/*  />*/}
                         {/*</a>*/}
-                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        {/*<LinkHref href='#'>*/}
                         {/*  <img*/}
                         {/*    alt='facebook'*/}
-                        {/*    src={isHuddle ? Facebook : UnitasFacebook}*/}
+                        {/*    src={isHuddle ? HuddleFacebook : UnitasFacebook}*/}
                         {/*  />*/}
                         {/*</a>*/}
-                        {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                        {/*<LinkHref href='#'>*/}
                         {/*  <img*/}
                         {/*    alt='instagram'*/}
-                        {/*    src={isHuddle ? Instagram : UnitasInstagram}*/}
+                        {/*    src={isHuddle ? HuddleInstagram : UnitasInstagram}*/}
                         {/*  />*/}
                         {/*</a>*/}
                       </div>
@@ -244,7 +335,7 @@ const Footer = ({
                     <div className='footer-divider' />
                     <div className='footer-links'>
                       <div className='footer-links-column'>
-                        <h6>Discover</h6>
+                        <h6>{t(`${NAMESPACE}:footer:navHeader:1`)}</h6>
                         <ul>
                           {discoverRoutes.map((route, i) => (
                             <li key={i}>
@@ -262,21 +353,27 @@ const Footer = ({
                                     <img
                                       alt='arrow'
                                       className='header-arrow'
-                                      src={isHuddle ? FooterArrow : UnitasFooterArrow}
+                                      src={ICONS[NAMESPACE].headerArrow}
                                     />
                                   </span>
                                 </div>
                               ) : (
-                                <Link to={route.path}>
-                                  {route.name}
-                                </Link>
+                                route.external ? (
+                                  <LinkHref href={route.path}>
+                                    {route.name}
+                                  </LinkHref>
+                                ) : (
+                                  <Link to={route.path}>
+                                    {route.name}
+                                  </Link>
+                                )
                               )}
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div className='footer-links-column'>
-                        <h6>Services</h6>
+                        <h6>{t(`${NAMESPACE}:footer:navHeader:2`)}</h6>
                         <ul>
                           {servicesRoutes.map((route, i) => (
                             <li key={i}>
@@ -288,7 +385,7 @@ const Footer = ({
                         </ul>
                       </div>
                       <div className='footer-links-column'>
-                        <h6>Company</h6>
+                        <h6>{t(`${NAMESPACE}:footer:navHeader:3`)}</h6>
                         <ul>
                           {companyRoutes.map((route, i) => (
                             <li key={i}>
@@ -306,7 +403,7 @@ const Footer = ({
                                     <img
                                       alt='arrow'
                                       className='header-arrow'
-                                      src={isHuddle ? FooterArrow : UnitasFooterArrow}
+                                      src={ICONS[NAMESPACE].headerArrow}
                                     />
                                   </span>
                                 </div>
@@ -331,20 +428,22 @@ const Footer = ({
                         <div className='footer-legal-links'>
                           {/*<Link to='/legal'>Legal</Link>*/}
                           {/*<Link to='/cookies'>Cookies</Link>*/}
-                          <Link to='/privacy-policy'>Privacy policy</Link>
+                          <Link to='/privacy-policy'>Privacy Policy</Link>
                           {/*<Link to='/terms'>Terms</Link>*/}
                         </div>
                       </Grid>
-                      <Grid item xs={4} justifyContent='center'>
-                        <div className='footer-legal-prime'>
-                          <Link to='/the-prime-group'>
-                            Proudly part of <img
-                              alt='prime-group'
-                              src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
-                            />
-                          </Link>
-                        </div>
-                      </Grid>
+                      {!isPrime && (
+                        <Grid item xs={4} justifyContent='center'>
+                          <div className='footer-legal-prime'>
+                            <Link to='/the-prime-group'>
+                              Proudly part of <img
+                                alt='prime-group'
+                                src={isHuddle ? ThePrimeGroup : UnitasThePrimeGroup}
+                              />
+                            </Link>
+                          </div>
+                        </Grid>
+                      )}
                       <Grid item xs={4} justifyContent='flex-end'>
                         <div className='footer-copyright'>
                           <span>

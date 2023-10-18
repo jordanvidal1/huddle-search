@@ -772,22 +772,15 @@
     }
   },
   "footer": {
-    "title": "Because every search starts with a",
-    "lookingToHire": {
-      "title": "Looking to hire?",
-      "desc": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "button1": "Submit new role",
-      "button2": "Talk to us"
-    },
-    "lookingForAJob": {
-      "title": "Looking for a job?",
-      "desc": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
-      "button": "Talk to us"
-    },
-    "slogan": "Because every search starts with a huddle",
+    "slogan": "A group of recruitment companies dedicated to redefining talent acquisition.",
     "number": "+44 20 4586 4093",
-    "email": "hello@huddlesearch.com",
-    "copyright": "2023 © Huddle Search. All rights reserved."
+    "email": "hello@theprimegroup.com",
+    "navHeader": {
+      "1": "Companies",
+      "2": "About",
+      "3": "Company"
+    },
+    "copyright": "2023 © The Prime Group. All rights reserved."
   },
   "privacy": {
     "title": "Privacy policy",

@@ -786,7 +786,12 @@
     },
     "slogan": "Because every search starts with a huddle",
     "number": "+44 20 4586 4093",
-    "email": "hello@huddlesearch.com",
+    "email": "hello@huddlesearch.com",,
+    "navHeader": {
+      "1": "Discover",
+      "2": "Services",
+      "3": "Company"
+    },
     "copyright": "2023 © Huddle Search. All rights reserved."
   },
   "privacy": {
