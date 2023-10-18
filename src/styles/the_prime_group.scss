@@ -14,12 +14,12 @@
         padding: 2rem 0 6rem;
 
         > img {
+            margin-bottom: 6rem;
             width: 17.5rem;
         }
     }
 
     .title {
-        margin-top: 6rem;
         text-align: center;
 
         h1 {
@@ -123,5 +123,15 @@
         .title h1 {
             font-size: 2.5rem;
         }
+    }
+}
+
+.prime-site .the-prime-group {
+    .text {
+        margin: 3rem 0 6rem;
+    }
+
+    .sub-text p {
+        color: #EB52F9;
     }
 }

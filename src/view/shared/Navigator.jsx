@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
-import {NAMESPACE, SPECIALISMS, SECTORS} from '../../data/constants';
+import {NAMESPACE, SPECIALISMS, SECTORS, huddleHref, unitasHref, spectrumHref} from '../../data/constants';
 import {isHuddle, isPrime, groupSpecialisms} from '../../services/helper';
 import TopNav from './TopNav';
 import ResourcesNav from './ResourcesNav';
@@ -103,15 +103,18 @@ const primeRoutes = [
     subLinks: [
       {
         name: 'Huddle',
-        path: '/companies/huddle'
+        path: huddleHref,
+        external: true
       },
       {
         name: 'Unitas',
-        path: '/companies/unitas'
+        path: unitasHref,
+        external: true
       },
       {
         name: 'Spectrum',
-        path: '/companies/spectrum'
+        path: spectrumHref,
+        external: true
       }
     ]
   },
@@ -154,6 +157,12 @@ const routes = {
 
 const groupedDropdowns = ['sectors', 'specialisms'];
 
+const LinkHref = props => (
+  <a {...props} target='_blank' rel='noreferrer'>
+    {props.children}
+  </a>
+);
+
 const Navigator = ({
   children
 }) => {
@@ -195,9 +204,15 @@ const Navigator = ({
         {route.subLinks.map((subLink, i) => (
           <div key={i}>
             <span>
-              <Link to={subLink.path} onClick={hideSidebar}>
-                {subLink.name}
-              </Link>
+              {subLink.external ? (
+                <LinkHref href={subLink.path}>
+                  {subLink.name}
+                </LinkHref>
+              ) : (
+                <Link to={subLink.path} onClick={hideSidebar}>
+                  {subLink.name}
+                </Link>
+              )}
             </span>
           </div>
         ))}
