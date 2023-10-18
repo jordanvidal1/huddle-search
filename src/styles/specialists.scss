@@ -279,3 +279,62 @@
         }
     }
 }
+
+.prime-site .specialists {
+    background: linear-gradient(180deg, #000 0%, #1A0223 100%);
+
+    .text-container {
+        align-self: center;
+        max-width: 51.625rem;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-family: ArdelaEdgeX02-Medium;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+
+    .text p {
+        color: #D3CDD0;
+        font-family: Plus Jakarta Sans;
+        font-weight: 500;
+    }
+
+    .specialists-container {
+        .specialist {
+            .specialist-img-container {
+                background: #000;
+                border-radius: 0;
+                padding: 3px;
+
+                img {
+                    background: #7E8192;
+                    border-radius: 0;
+                }
+            }
+
+            .specialist-details {
+                h5 {
+                    font-family: ArdelaEdgeX02-Black;
+                    font-weight: 400;
+                }
+
+                span {
+                    color: rgba(211, 205, 208, 0.70);
+                }
+            }
+
+            p {
+                color: #D3CDD0;
+            }
+
+            .specialist-contact {
+                span {
+                    color: #FFF;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

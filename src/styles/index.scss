@@ -184,6 +184,18 @@ p {
   }
 }
 
+.prime-site {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ArdelaEdgeX02-Medium;
+    font-weight: 400;
+  }
+
+  p, span, a, label {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+  }
+}
+
 .btn {
   align-items: center;
   border: 0;
@@ -381,6 +393,16 @@ input {
 @font-face {
   font-family: ArdelaEdgeX02-Regular;
   src: local('ArdelaEdgeX02-Regular'), url('../view/core/ardela-edge-x02-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: ArdelaEdgeX02-Medium;
+  src: local('ArdelaEdgeX02-Medium'), url('../view/core/ardela-edge-x02-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: ArdelaEdgeX02-Black;
+  src: local('ArdelaEdgeX02-Black'), url('../view/core/ardela-edge-x02-black.ttf') format('truetype');
 }
 
 @font-face {
