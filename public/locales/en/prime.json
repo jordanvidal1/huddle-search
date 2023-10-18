@@ -234,9 +234,9 @@
     "ourStory": {
       "path": "/our-story",
       "title": {
-        "part1": "Experts unite to ",
-        "part2": "redefine",
-        "part3": " an industry"
+        "part1": "Seasoned pros dedicate futures to redefining talent acquisition",
+        "part2": "",
+        "part3": ""
       },
       "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Huddle, they have formed a powerhouse committed to the innovation of tech recruitment and the experience that hiring companies and job seekers go through.",
       "info": {
@@ -248,8 +248,8 @@
     "ourProcess": {
       "path": "/our-process",
       "title": {
-        "part1": "Leveraging AI to source hires ",
-        "part2": "faster & cheaper",
+        "part1": "Leveraging AI to service clients at unprecedented speed & scale",
+        "part2": "",
         "part3": ""
       },
       "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified candidates efficiently and with unprecedented precision.",

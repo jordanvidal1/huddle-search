@@ -19,9 +19,7 @@ const OurStory = () => (
     <OriginStory />
     <ProPoints type='ourStory' />
     <Leadership />
-    <OurStoryStatic type='process'>
-      Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale
-    </OurStoryStatic>
+    <OurStoryStatic type='process' />
   </div>
 );
 

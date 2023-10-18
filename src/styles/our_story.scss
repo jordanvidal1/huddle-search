@@ -113,3 +113,28 @@
         }
     }
 }
+
+.prime-site {
+    .our-story-static {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/huddle/our-story.jpeg') top center no-repeat, lightgray 0px -6.234px / 100% 110.145% no-repeat;
+        background-size: cover;
+    }
+
+    .our-process-static {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../static/prime/our-process.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+        background-size: cover;
+    }
+
+    .our-story-static, .our-process-static  {
+        h5 {
+            color: #00FFA3;
+            font-family: Plus Jakarta Sans;
+            font-weight: 700;
+        }
+
+        .text p {
+            color: #D3CDD0;
+            font-weight: 500;
+        }
+    }
+}

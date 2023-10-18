@@ -5,7 +5,6 @@ import {capitalize} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
 
 const OurStory = ({
-  children,
   type
 }) => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
@@ -20,7 +19,11 @@ const OurStory = ({
             </h5>
             <div className='title'>
               <h2>
-                {children}
+                {t(`${NAMESPACE}:leadershipHero:our${capitalize(type)}:title:part1`)}
+                <a>
+                  {t(`${NAMESPACE}:leadershipHero:our${capitalize(type)}:title:part2`)}
+                </a>
+                {t(`${NAMESPACE}:leadershipHero:our${capitalize(type)}:title:part3`)}
               </h2>
             </div>
             <div className='text'>

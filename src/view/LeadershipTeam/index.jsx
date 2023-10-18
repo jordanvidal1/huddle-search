@@ -12,12 +12,8 @@ const LeadershipTeam = () => (
   <div className='leadership-team'>
     <Hero type='leadershipTeam' img={!isHuddle && HeroImg} />
     <Leaders />
-    <OurStory type='story'>
-      Three leaders come together to <a>reimagine</a> recruitment
-    </OurStory>
-    <OurStory type='process'>
-      Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale
-    </OurStory>
+    <OurStory type='story' />
+    <OurStory type='process' />
   </div>
 );
 

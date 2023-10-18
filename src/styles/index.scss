@@ -276,6 +276,28 @@ p {
   }
 }
 
+.prime-site {
+  .btn {
+    border-radius: 0;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+  }
+
+  .btn-primary, .btn-primary:hover {
+    background: #163BF2;
+    border: 0;
+    box-shadow: none;
+    color: #FFF;
+  }
+
+  .btn-secondary, .btn-secondary:hover {
+    background: #EB52F9;
+    border: 0;
+    box-shadow: none;
+    color: #FFF;
+  }
+}
+
 .btn-container {
   align-items: center;
   align-self: stretch;

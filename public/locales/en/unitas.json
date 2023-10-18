@@ -234,9 +234,11 @@
     "ourStory": {
       "path": "/our-story",
       "title": {
-        "part1": "Experts unite to redefine an industry",
-        "part2": "",
-        "part3": ""
+        "title": {
+          "part1": "Three leaders come together to reimagine recruitment",
+          "part2": "",
+          "part3": ""
+        }
       },
       "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Unitas, they have formed a business committed to the innovation of recruitment in finance.",
       "info": {
@@ -248,7 +250,7 @@
     "ourProcess": {
       "path": "/our-process",
       "title": {
-        "part1": "Leveraging AI for the benefit of our candidates & clients",
+        "part1": "Leveraging AI tech to service clients at unprecedented speed & scale",
         "part2": "",
         "part3": ""
       },

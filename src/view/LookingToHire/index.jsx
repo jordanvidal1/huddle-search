@@ -25,12 +25,8 @@ const LookingToHire = () => (
     <ContractHires />
     <ExecutiveSearch />
     <EmbeddedTalent />
-    <OurStory type='story'>
-      Three leaders come together to <a>reimagine</a> recruitment
-    </OurStory>
-    <OurStory type='process'>
-      Leveraging AI tech to service clients at <a>unprecedented</a> speed & scale
-    </OurStory>
+    <OurStory type='story' />
+    <OurStory type='process' />
     <ResourcesPage />
   </div>
 );
