@@ -61,3 +61,32 @@
         }
     }
 }
+
+.prime-site .legal {
+    &.privacy-policy {
+        background: #000;
+
+        .title h2 {
+            color: #FFF;
+            font-family: ArdelaEdgeX02-Black;
+            font-weight: 400;
+        }
+
+        .text {
+            p {
+                color: rgba(211, 205, 208, 0.70);
+                font-family: Plus Jakarta Sans;
+                font-weight: 500;
+
+                &.intro {
+                    color: #D3CDD0;
+                }
+
+                &:has(strong) {
+                    color: #D3CDD0;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
