@@ -133,3 +133,36 @@
         }
     }
 }
+
+.prime-site .contact-us > .contact {
+    background: #151515;
+
+    .text-container p {
+        color: #D3CDD0;
+    }
+
+    .action-container {
+        .input-container input {
+            border-radius: 0;
+
+            &#message {
+                border-radius: 0;
+            }
+        }
+
+        .checkbox-container {
+            input {
+                border-radius: 0;
+            }
+
+            label {
+                font-family: Plus Jakarta Sans;
+                font-weight: 500;
+            }
+        }
+
+        .btn-container .btn {
+            max-width: unset;
+        }
+    }
+}

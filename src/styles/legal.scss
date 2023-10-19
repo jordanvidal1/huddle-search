@@ -64,7 +64,8 @@
 
 .prime-site .legal {
     &.privacy-policy {
-        background: #000;
+        background: url('../static/prime/prime-pattern.png') top right no-repeat #000;
+        background-size: 40%;
 
         .title h2 {
             color: #FFF;

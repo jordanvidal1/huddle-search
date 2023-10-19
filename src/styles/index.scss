@@ -185,12 +185,12 @@ p {
 }
 
 .prime-site {
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, label {
     font-family: ArdelaEdgeX02-Medium;
     font-weight: 400;
   }
 
-  p, span, a, label {
+  p, span, a {
     font-family: Plus Jakarta Sans;
     font-weight: 500;
   }
@@ -281,6 +281,7 @@ p {
     border-radius: 0;
     font-family: Plus Jakarta Sans;
     font-weight: 700;
+    padding: 1rem 2rem 1.12rem;
   }
 
   .btn-primary, .btn-primary:hover {
@@ -325,16 +326,16 @@ input {
     outline: 0;
   }
 
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #7E8192;
     opacity: 1; /* Firefox */
   }
 
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #7E8192;
   }
 
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  &::-ms-input-placeholder { /* Microsoft Edge */
     color: #7E8192;
   }
 }
@@ -342,6 +343,23 @@ input {
 .unitas-site input {
   font-family: Poppins;
   font-weight: 400;
+}
+
+.prime-site input {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: 500;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: 500;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    font-weight: 500;
+  }
 }
 
 .textfield {

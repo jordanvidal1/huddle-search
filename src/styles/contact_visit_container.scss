@@ -101,3 +101,28 @@
         }
     }
 }
+
+.prime-site .visit-grid-container .visit-container {
+    background: #FFB800;
+    border-radius: 0;
+
+    .contact-icon {
+        background: #000;
+        border-radius: 0;
+    }
+
+    .visit-title h5 {
+        color: #000;
+    }
+
+    .visit-text p {
+        color: rgba(0, 0, 0, 0.70);
+    }
+
+    .visit-info {
+        p, a {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}

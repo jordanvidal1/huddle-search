@@ -218,3 +218,46 @@
         }
     }
 }
+
+.prime-site .contact-us > .follow-us {
+    background: url('../static/prime/follow-us.jpeg') bottom left no-repeat #000;
+    background-size: 120%;
+
+    .box-container {
+        .box {
+            border-radius: 0;
+
+            &.join {
+                background: #000;
+
+                p, a {
+                    color: #D3CDD0;
+                }
+            }
+
+            &.follow {
+                background: #FFB800;
+
+                h3 {
+                    color: #000;
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.70);
+                }
+            }
+        }
+
+        .action-container .subscribe-container {
+            input {
+                border-radius: 0;
+                font-size: 1.125rem;
+                height: 3.6875rem;
+            }
+
+            button {
+                height: unset;
+            }
+        }
+    }
+}

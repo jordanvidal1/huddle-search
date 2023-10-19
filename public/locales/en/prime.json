@@ -289,17 +289,17 @@
     "workForUs": {
       "path": "/work-for-us",
       "title": {
-        "part1": "We’re always on the ",
-        "part2": "look-out",
-        "part3": " for talent"
+        "part1": "We are always on the look-out for talent",
+        "part2": "",
+        "part3": ""
       },
       "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
     },
     "contactUs": {
       "path": "/contact-us",
       "title": {
-        "part1": "We’d love you to give us a ",
-        "part2": "shout",
+        "part1": "We would love you to give us a shout",
+        "part2": "",
         "part3": ""
       },
       "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
