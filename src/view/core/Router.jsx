@@ -24,10 +24,10 @@ import ContractInterim from '../ContractInterim';
 import Jobs from '../Jobs';
 import Resources from '../Resources';
 import Specialism from '../Specialism';
-
 // import Job from '../Jobs/Job';
 import Resource from '../Resources/Resource';
 
+import Company from '../Company';
 import LeadershipTeam from '../LeadershipTeam';
 import OurStory from '../OurStory';
 import OurProcess from '../OurProcess';
@@ -69,6 +69,14 @@ const RouterComponent = () => (
             <Route path='/corporate-social-responsibility' Component={Corporate} />
             <Route path='/diversity-equality-and-inclusion' Component={Diversity} />
             <Route path='/the-prime-group' Component={ThePrimeGroup} />
+          </>
+        )}
+
+        {isPrime && (
+          <>
+            <Route path='/companies/huddle' Component={Company} />
+            <Route path='/companies/unitas' Component={Company} />
+            <Route path='/companies/spectrum' Component={Company} />
           </>
         )}
 

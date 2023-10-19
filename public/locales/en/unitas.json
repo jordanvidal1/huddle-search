@@ -118,6 +118,11 @@
     "button": "Find out more"
   },
   "workForUs": {
+    "title": {
+      "part1": "More reasons to get ",
+      "part2": "excited",
+      "part3": " about {{siteName}}"
+    },
     "desc": "Discover more about our innovative AI tech-led approach to senior finance recruitment that has a sole focus on servicing our client and candidate community.",
     "container": {
       "title": "Want to work for us?",

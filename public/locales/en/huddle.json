@@ -118,6 +118,11 @@
     "button": "Find out more"
   },
   "workForUs": {
+    "title": {
+      "part1": "More reasons to get ",
+      "part2": "excited",
+      "part3": " about {{siteName}}"
+    },
     "desc": "Discover more about our innovative company and game-changing service to further ignite your enthusiasm for Huddle.",
     "container": {
       "title": "Want to work for us?",

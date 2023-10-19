@@ -5,7 +5,8 @@
 .contract-interim,
 .permanent-hires,
 .corporate,
-.diversity {
+.diversity,
+.company {
     > .work-for-us {
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 10.41%, rgba(0, 0, 0, 0.44) 34.26%, rgba(0, 0, 0, 0.36) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/huddle/work-for-us.jpg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
@@ -248,6 +249,49 @@
         @include media-breakpoint-down(md) {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url('../static/unitas/executive-work-for-us.jpeg') center no-repeat, lightgray -585.402px 0px / 358.4% 100% no-repeat;
             background-size: cover;
+        }
+    }
+}
+
+.prime-site {
+    .company{
+        > .work-for-us {
+            background: linear-gradient(80deg, rgba(0, 0, 0, 0.95) 25.67%, rgba(0, 0, 0, 0.84) 38.84%, rgba(0, 0, 0, 0.68) 50.47%, rgba(0, 0, 0, 0.00) 75.13%), url('../static/prime/work-for-us.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+            background-size: cover;
+
+            .title h2 {
+                font-size: 5rem;
+            }
+
+            .text p {
+                color: #D3CDD0;
+                font-weight: 500;
+            }
+
+            .grid-container a span {
+                color: #EB52F9;
+                font-weight: 700;
+            }
+
+            .cv-container {
+                background: #EB52F9;
+                border-radius: 0;
+
+                h5 {
+                    color: #000;
+                    font-family: ArdelaEdgeX02-Black;
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.70);
+                    font-family: Plus Jakarta Sans;
+                }
+
+                .link-container a {
+                    color: #FFF;
+                    font-weight: 700;
+                }
+            }
         }
     }
 }

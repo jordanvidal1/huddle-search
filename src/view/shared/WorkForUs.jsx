@@ -1,27 +1,42 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {Grid} from '@material-ui/core';
+import {capitalize, Grid} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {isPrime} from '../../services/helper';
 
 import ArrowIcon from '../../static/huddle/arrow.svg';
 import ExecutiveArrowIcon from '../../static/huddle/arrow-gold.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
 import UnitasExecutiveArrowIcon from '../../static/unitas/arrow-gold.svg';
+import PrimeArrowIcon from '../../static/prime/arrow.svg';
+import PrimeArrowWhiteIcon from '../../static/prime/arrow-white.svg';
+
+const ICONS = {
+  huddle: {
+    normal: ArrowIcon,
+    executive: ExecutiveArrowIcon,
+    join: ArrowIcon
+  },
+  unitas: {
+    normal: UnitasArrowIcon,
+    executive: UnitasExecutiveArrowIcon,
+    join: UnitasArrowIcon
+  },
+  prime: {
+    normal: PrimeArrowIcon,
+    executive: PrimeArrowIcon,
+    join: PrimeArrowWhiteIcon
+  }
+};
 
 const WorkForUs = ({
   home,
-  executive
+  type = 'normal'
 }) => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
-  const arrowIcon = isHuddle
-    ? ArrowIcon : UnitasArrowIcon;
-  const executiveArrowIcon = isHuddle
-    ? ExecutiveArrowIcon : UnitasExecutiveArrowIcon;
-  const icon = executive ? executiveArrowIcon : arrowIcon;
-  const siteName = isHuddle ? 'Huddle' : 'Unitas';
+  const siteName = capitalize(NAMESPACE);
 
   return (
     <div className='work-for-us'>
@@ -30,7 +45,11 @@ const WorkForUs = ({
           <div className='content'>
             <div className='title'>
               <h2>
-                More reasons to get <a>excited</a> about {siteName}
+                {t(`${NAMESPACE}:workForUs:title:part1`)}
+                <a>
+                  {t(`${NAMESPACE}:workForUs:title:part2`)}
+                </a>
+                {t(`${NAMESPACE}:workForUs:title:part3`, {siteName})}
               </h2>
             </div>
             <div className='text'>
@@ -40,54 +59,60 @@ const WorkForUs = ({
             </div>
             <Grid container spacing={4} className='grid-container'
                   alignItems='center'>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={isPrime ? 12 : 6}>
                 <div className='link-container'>
                   <Link to='/leadership-team'>
                     <span>Leadership team</span>
-                    <img alt='arrow-icon' src={icon}/>
+                    <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <div className='link-container'>
-                  <Link to='/corporate-social-responsibility'>
-                    <span>Corporate social responsibility</span>
-                    <img alt='arrow-icon' src={icon}/>
-                  </Link>
-                </div>
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              {!isPrime && (
+                <Grid item xs={12} sm={6}>
+                  <div className='link-container'>
+                    <Link to='/corporate-social-responsibility'>
+                      <span>Corporate social responsibility</span>
+                      <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
+                    </Link>
+                  </div>
+                </Grid>
+              )}
+              <Grid item xs={12} sm={isPrime ? 12 : 6}>
                 <div className='link-container'>
                   <Link to='/our-story'>
                     <span>Our story</span>
-                    <img alt='arrow-icon' src={icon}/>
+                    <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <div className='link-container'>
-                  <Link to='/diversity-equality-and-inclusion'>
-                    <span>Diversity, equality & inclusion</span>
-                    <img alt='arrow-icon' src={icon}/>
-                  </Link>
-                </div>
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              {!isPrime && (
+                <Grid item xs={12} sm={6}>
+                  <div className='link-container'>
+                    <Link to='/diversity-equality-and-inclusion'>
+                      <span>Diversity, equality & inclusion</span>
+                      <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
+                    </Link>
+                  </div>
+                </Grid>
+              )}
+              <Grid item xs={12} sm={isPrime ? 12 : 6}>
                 <div className='link-container'>
                   <Link to='/our-process'>
                     <span>Our process</span>
-                    <img alt='arrow-icon' src={icon}/>
+                    <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <div className='link-container'>
-                  <Link to='/the-prime-group'>
-                    <span>The Prime Group</span>
-                    <img alt='arrow-icon' src={icon}/>
-                  </Link>
-                </div>
-              </Grid>
+              {!isPrime && (
+                  <Grid item xs={12} sm={6}>
+                  <div className='link-container'>
+                    <Link to='/the-prime-group'>
+                      <span>The Prime Group</span>
+                      <img alt='arrow-icon' src={ICONS[NAMESPACE][type]}/>
+                    </Link>
+                  </div>
+                </Grid>
+              )}
             </Grid>
             {home && (
               <div className='cv-container'>
@@ -100,7 +125,7 @@ const WorkForUs = ({
                 <div className='link-container'>
                   <Link to='/work-for-us'>
                     {t(`${NAMESPACE}:workForUs:container:link`)}
-                    <img alt='arrow-icon' src={arrowIcon}/>
+                    <img alt='arrow-icon' src={ICONS[NAMESPACE].join}/>
                   </Link>
                 </div>
               </div>

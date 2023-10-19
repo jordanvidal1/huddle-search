@@ -479,6 +479,7 @@
         .footer-content {
             p {
                 color: #D3CDD0;
+                max-width: 26rem;
             }
 
             .footer-contact span {
@@ -488,6 +489,8 @@
         }
 
         .footer-links {
+            max-width: 39rem;
+
             h6 {
                 color: #D3CDD0;
                 font-family: Plus Jakarta Sans;

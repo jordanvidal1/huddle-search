@@ -4,9 +4,6 @@ import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {
-  huddleHref,
-  unitasHref,
-  spectrumHref,
   huddleLinkedIn,
   unitasLinkedIn,
   NAMESPACE,
@@ -75,18 +72,15 @@ const discoverRoutes = isPrime ?
   [
     {
       name: 'Huddle',
-      path: huddleHref,
-      external: true
+      path: '/companies/huddle'
     },
     {
       name: 'Unitas',
-      path: unitasHref,
-      external: true
+      path: '/companies/unitas'
     },
     {
       name: 'Spectrum',
-      path: spectrumHref,
-      external: true
+      path: '/companies/spectrum'
     }
   ] : [
     {
@@ -358,15 +352,9 @@ const Footer = ({
                                   </span>
                                 </div>
                               ) : (
-                                route.external ? (
-                                  <LinkHref href={route.path}>
-                                    {route.name}
-                                  </LinkHref>
-                                ) : (
-                                  <Link to={route.path}>
-                                    {route.name}
-                                  </Link>
-                                )
+                                <Link to={route.path}>
+                                  {route.name}
+                                </Link>
                               )}
                             </li>
                           ))}
