@@ -204,3 +204,26 @@
         }
     }
 }
+
+.prime-site .pro-points {
+    background: #163BF2;
+
+    .text p {
+        color: #D3CDD0;
+    }
+
+    .pro-point-container .pro-point {
+        .pro-point-icon {
+            background: #000;
+            border-radius: 0;
+        }
+
+        h5 {
+            font-family: ArdelaEdgeX02-Black;
+        }
+
+        p {
+            color: #D3CDD0;
+        }
+    }
+}

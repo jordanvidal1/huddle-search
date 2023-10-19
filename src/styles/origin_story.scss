@@ -194,3 +194,44 @@
         }
     }
 }
+
+.prime-site .our-story .origin-story {
+    background: #151515;
+
+    .title h2 {
+        color: #FFF;
+    }
+
+    h6 {
+        color: #D3CDD0;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: rgba(211, 205, 208, 0.70);
+    }
+
+    .story.story-1 p:first-child {
+        color: #D3CDD0;
+    }
+
+    .quote h3 {
+        color: #FFF;
+        font-weight: 400;
+        text-shadow: none;
+    }
+
+    .img-container > div {
+        border: 5px solid #000;
+        border-radius: 0;
+        height: 17.5625rem;
+        overflow: hidden;
+        padding: 0;
+
+        img {
+            height: unset;
+        }
+    }
+}

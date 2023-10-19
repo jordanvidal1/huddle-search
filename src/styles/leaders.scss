@@ -159,3 +159,38 @@
         font-weight: 600;
     }
 }
+
+.prime-site .leadership-team .leaders {
+    background: #163BF2;
+
+    .leader {
+        .role span {
+            color: rgba(211, 205, 208, 0.70);
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .text p {
+            color: #D3CDD0;
+        }
+
+        .img-container > div {
+            background: #000;
+            border: 5px solid #000;
+            border-radius: 0;
+            height: 17.5625rem;
+            overflow: hidden;
+            padding: 0;
+
+            img {
+                background: #7E8192;
+                height: unset;
+            }
+        }
+    }
+
+    .leader-contact span {
+        color: #FFF;
+        font-weight: 700;
+    }
+}

@@ -1,13 +1,20 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {isHuddle, isPrime} from '../../services/helper';
 
-import Logo from '../../static/huddle/logo.svg';
+import HuddleLogo from '../../static/huddle/logo.svg';
 import UnitasLogo from '../../static/unitas/logo.svg';
+import PrimeLogo from '../../static/prime/logo.svg';
 import Image1 from '../../static/huddle/origin-story-1.jpg';
 import Image2 from '../../static/huddle/origin-story-2.jpg';
 import Image3 from '../../static/huddle/origin-story-3.jpg';
+
+const LOGOS = {
+  huddle: HuddleLogo,
+  unitas: UnitasLogo,
+  prime: PrimeLogo
+}
 
 const OriginStory = () => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
@@ -27,7 +34,7 @@ const OriginStory = () => {
                 <p>
                   {t(`${NAMESPACE}:originStory:intro`)}
                 </p>
-                {isHuddle && <br />}
+                {(isHuddle || isPrime) && <br />}
                 <p>
                   {t(`${NAMESPACE}:originStory:part1:text`)}
                 </p>
@@ -75,7 +82,7 @@ const OriginStory = () => {
                 </p>
               </div>
             </div>
-            {isHuddle && (
+            {(isHuddle || isPrime) && (
               <div className='quote'>
                 <h3>
                   {t(`${NAMESPACE}:originStory:quote2`)}
@@ -113,7 +120,7 @@ const OriginStory = () => {
             <img
               alt='logo'
               className='logo'
-              src={isHuddle ? Logo : UnitasLogo}
+              src={LOGOS[NAMESPACE]}
             />
           </div>
         </div>
