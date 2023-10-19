@@ -35,7 +35,6 @@
     .roles-container {
         flex-wrap: nowrap;
         overflow: scroll;
-        margin: 0;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
         width: 100%;
@@ -105,5 +104,18 @@
                 color: #FFF;
             }
         }
+    }
+}
+
+.prime-site .work-for-us {
+    .roles-box {
+        background: #FFB800;
+        border-radius: 0;
+        gap: 3rem;
+    }
+
+    .roles-header h3 {
+        color: #000;
+        font-size: 2.5rem;
     }
 }

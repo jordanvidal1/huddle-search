@@ -293,7 +293,10 @@
         "part2": "look-out",
         "part3": " for talent"
       },
-      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
+      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle.",
+      "roles": {
+        "title": "Open roles at {{siteName}}"
+      }
     },
     "contactUs": {
       "path": "/contact-us",

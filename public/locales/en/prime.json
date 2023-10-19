@@ -293,7 +293,10 @@
         "part2": "",
         "part3": ""
       },
-      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle."
+      "desc": "If you're enthusiastic about joining our incredibly talented team, be sure to monitor the open roles at Huddle.",
+      "roles": {
+        "title": "Roles across TPG companies"
+      }
     },
     "contactUs": {
       "path": "/contact-us",

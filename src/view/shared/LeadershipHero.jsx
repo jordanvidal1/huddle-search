@@ -1,5 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+// import {capitalize} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 // import Roles from './Roles';
@@ -14,7 +15,6 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
-import {capitalize} from '@material-ui/core';
 // import WhiteArrow from '../../static/unitas/arrow-white.svg';
 
 const leadershipComponent = t => (
@@ -149,7 +149,6 @@ const LeadershipHero = props => {
     ourStory: ourStoryComponent(t),
     ourProcess: ourProcessComponent(t),
     // workForUs: Roles({
-    //   children: `Open roles at ${NAMESPACE}`,
     //   name: capitalize(NAMESPACE),
     //   icon: WhiteArrow
     // }),
