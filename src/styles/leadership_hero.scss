@@ -5,7 +5,8 @@
 .contact-us,
 .executive-search,
 .corporate,
-.diversity {
+.diversity,
+.company {
     .leadership-hero {
         background: url('../static/huddle/leadership.png') top -5rem right -5rem no-repeat #FFF;
         background-size: clamp(35rem, 48%, 50rem) auto;
@@ -788,6 +789,91 @@
         @include media-breakpoint-down(md) {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 22.88%, rgba(0, 0, 0, 0.79) 41.8%, rgba(0, 0, 0, 0.65) 63.46%, rgba(0, 0, 0, 0.00) 97.03%), url('../static/unitas/executive-leadership.jpeg') center right -24rem no-repeat, lightgray -1172px 0px / 522.4% 100% no-repeat;
             background-size: cover;
+        }
+    }
+}
+
+.prime-site {
+    .leadership-team,
+    .our-story,
+    .our-process,
+    .work-for-us,
+    .contact-us {
+        .leadership-hero {
+            background: #000;
+            overflow: hidden;
+
+            .text-container {
+                position: relative;
+
+                > img {
+                    position: absolute;
+                    left: 105%;
+                    top: -18rem;
+                    width: 62.5rem;
+                    z-index: -5;
+                }
+
+                h5 {
+                    color: #00FFA3;
+                    font-family: Plus Jakarta Sans;
+                    font-weight: 500;
+                }
+            }
+
+            .title h1 {
+                color: #00FFA3;
+                font-family: ArdelaEdgeX02-Black;
+            }
+
+            .text p {
+                color: #D3CDD0;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            .info-container {
+                .info-box {
+                    background: #00FFA3;
+                    border-radius: 0;
+
+                    .info-title h5 {
+                        color: #000;
+                        font-family: ArdelaEdgeX02-Black;
+                    }
+
+                    .info-description p {
+                        color: #000;
+                    }
+                }
+
+                .info-calculation {
+                    h5, p {
+                        color: #000;
+                    }
+
+                    img {
+                        background: #000;
+                        border-radius: 0;
+                    }
+                }
+
+                .info-details {
+                    .info-detail {
+                        h2 {
+                            color: #000;
+                            font-family: ArdelaEdgeX02-Black;
+                            font-size: 5rem;
+                            line-height: 5rem; /* 100% */
+                            margin-bottom: 1.5rem;
+                        }
+
+                        span {
+                            color: #000;
+                        }
+                    }
+                }
+            }
         }
     }
 }

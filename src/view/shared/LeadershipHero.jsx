@@ -14,6 +14,7 @@ import UnitasSignature2 from '../../static/unitas/signature-2.svg';
 import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 import PlusIcon from '../../static/huddle/plus.svg';
 import EqualsIcon from '../../static/huddle/equals.svg';
+import {capitalize} from '@material-ui/core';
 // import WhiteArrow from '../../static/unitas/arrow-white.svg';
 
 const leadershipComponent = t => (
@@ -143,15 +144,13 @@ const LeadershipHero = props => {
 
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
-  // const siteName = isHuddle ? 'Huddle' : 'Unitas';
-
   const components = {
     leadershipTeam: <div />,
     ourStory: ourStoryComponent(t),
     ourProcess: ourProcessComponent(t),
     // workForUs: Roles({
-    //   children: `Open roles at ${siteName}`,
-    //   name: siteName,
+    //   children: `Open roles at ${NAMESPACE}`,
+    //   name: capitalize(NAMESPACE),
     //   icon: WhiteArrow
     // }),
     contactUs: ContactContainer(t),

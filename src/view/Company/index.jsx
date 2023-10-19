@@ -8,10 +8,7 @@ import WorkForUs from '../shared/WorkForUs';
 
 const Company = () => (
   <div className='company'>
-    {/*<Hero*/}
-    {/*  type='ourStory'*/}
-    {/*  img={!isHuddle && HeroImg}*/}
-    {/*/>*/}
+    {/*<Hero />*/}
     <Leadership />
     <OurStory type='story' />
     <OurStory type='process' />

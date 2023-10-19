@@ -227,9 +227,9 @@
     "leadershipTeam": {
       "path": "/leadership-team",
       "title": {
-        "part1": "A leadership with ",
-        "part2": "unrivalled",
-        "part3": " experience"
+        "part1": "A leadership with unrivalled experience",
+        "part2": "",
+        "part3": ""
       },
       "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success.",
       "info": {
@@ -239,7 +239,7 @@
     "ourStory": {
       "path": "/our-story",
       "title": {
-        "part1": "Seasoned pros dedicate futures to redefining talent acquisition",
+        "part1": "Experts unite to redefine an industry",
         "part2": "",
         "part3": ""
       },
@@ -253,7 +253,7 @@
     "ourProcess": {
       "path": "/our-process",
       "title": {
-        "part1": "Leveraging AI to service clients at unprecedented speed & scale",
+        "part1": "Leveraging AI to source hires faster & cheaper",
         "part2": "",
         "part3": ""
       },

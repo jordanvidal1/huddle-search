@@ -20,7 +20,8 @@ const variantList = {
     'embeddedTalent',
     'ourProcess',
     'permanentHires'
-  ]
+  ],
+  prime: []
 };
 
 const ProPoints = props => {

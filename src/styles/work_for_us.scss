@@ -254,7 +254,7 @@
 }
 
 .prime-site {
-    .company{
+    .company, .work-for-us {
         > .work-for-us {
             background: linear-gradient(80deg, rgba(0, 0, 0, 0.95) 25.67%, rgba(0, 0, 0, 0.84) 38.84%, rgba(0, 0, 0, 0.68) 50.47%, rgba(0, 0, 0, 0.00) 75.13%), url('../static/prime/work-for-us.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
             background-size: cover;
