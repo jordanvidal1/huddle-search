@@ -46,7 +46,7 @@ const RouterComponent = () => (
       <Routes>
         <Route path='/' Component={Home} />
         <Route exact path={isPrime ? '/blog' : '/resources'} Component={Resources} />
-        <Route path={isPrime ? 'blog/:id' : '/resources/:id'} Component={Resource} />
+        <Route path={isPrime ? '/blog/:id' : '/resources/:id'} Component={Resource} />
 
         {!isPrime && (
           <>
