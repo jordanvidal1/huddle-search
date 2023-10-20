@@ -392,5 +392,15 @@ export const SECTORS = {
 export const huddleHref = 'https://www.huddlesearch.com/';
 export const unitasHref = 'https://www.unitastalent.com/';
 export const spectrumHref = 'https://spectrum-search.com/';
-export const huddleLinkedIn = 'https://www.linkedin.com/company/huddlesearch';
-export const unitasLinkedIn = 'https://www.linkedin.com/company/unitastalent';
+
+export const SOCIAL_HREFS = {
+  huddle: {
+    linkedin: 'https://www.linkedin.com/company/huddlesearch'
+  },
+  unitas: {
+    linkedin: 'https://www.linkedin.com/company/unitastalent'
+  },
+  prime: {
+    linkedin: 'https://www.linkedin.com/company/theprimegroup'
+  }
+};

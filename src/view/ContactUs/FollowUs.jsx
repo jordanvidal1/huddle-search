@@ -2,20 +2,42 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {useForm} from 'react-hook-form';
-import {huddleLinkedIn, unitasLinkedIn, NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+import {NAMESPACE, SOCIAL_HREFS} from '../../data/constants';
 import useWordPress from '../../services/hooks/useWordPress';
 import Input from '../shared/Input';
 import Loader from '../shared/Loader';
+import LinkHref from '../shared/LinkHref';
 
-import LinkedIn from '../../static/huddle/linkedin-purple.svg';
+import HuddleLinkedIn from '../../static/huddle/linkedin-purple.svg';
 import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
-// import Twitter from '../../static/huddle/twitter-purple.svg';
-// import Facebook from '../../static/huddle/facebook-purple.svg';
-// import Instagram from '../../static/huddle/instagram-purple.svg';
+import PrimeLinkedIn from '../../static/prime/linkedin-white-filled.svg';
+// import HuddleTwitter from '../../static/huddle/twitter-purple.svg';
+// import HuddleFacebook from '../../static/huddle/facebook-purple.svg';
+// import HuddleInstagram from '../../static/huddle/instagram-purple.svg';
 // import UnitasTwitter from '../../static/unitas/twitter-white.svg';
 // import UnitasFacebook from '../../static/unitas/facebook-white.svg';
 // import UnitasInstagram from '../../static/unitas/instagram-white.svg';
+
+const ICONS = {
+  huddle: {
+    linkedin: HuddleLinkedIn,
+    // twitter: HuddleTwitter,
+    // facebook: HuddleFacebook,
+    // instagram: HuddleInstagram
+  },
+  unitas: {
+    linkedin: UnitasLinkedIn,
+    // twitter: UnitasTwitter,
+    // facebook: UnitasFacebook,
+    // instagram: UnitasInstagram
+  },
+  prime: {
+    linkedin: PrimeLinkedIn,
+    // twitter: PrimeTwitter,
+    // facebook: PrimeFacebook,
+    // instagram: PrimeInstagram
+  },
+};
 
 const FollowUs = () => {
   const {
@@ -119,32 +141,32 @@ const FollowUs = () => {
                 <div className='action-container'>
                   <div className='socials'>
                     <div>
-                      <a href={isHuddle ? huddleLinkedIn : unitasLinkedIn} rel='noreferrer' target='_blank'>
+                      <LinkHref href={SOCIAL_HREFS[NAMESPACE].linkedin}>
                         <img
                           alt='linkedin'
-                          src={isHuddle ? LinkedIn : UnitasLinkedIn}
+                          src={ICONS[NAMESPACE].linkedin}
                         />
-                      </a>
-                      {/*<a href='#' rel='noreferrer' target='_blank'>*/}
+                      </LinkHref>
+                      {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>*/}
                       {/*  <img*/}
                       {/*    alt='twitter'*/}
-                      {/*    src={isHuddle ? Twitter : UnitasTwitter}*/}
+                      {/*    src={ICONS[NAMESPACE].twitter}*/}
                       {/*  />*/}
-                      {/*</a>*/}
+                      {/*</LinkHref>*/}
                     </div>
                     {/*<div>*/}
-                    {/*  <a href='#' rel='noreferrer' target='_blank'>*/}
+                    {/*  <LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>*/}
                     {/*    <img*/}
                     {/*      alt='facebook'*/}
-                    {/*      src={isHuddle ? Facebook : UnitasFacebook}*/}
+                    {/*      src={ICONS[NAMESPACE].facebook}*/}
                     {/*    />*/}
-                    {/*  </a>*/}
-                    {/*  <a href='#' rel='noreferrer' target='_blank'>*/}
+                    {/*  </LinkHref>*/}
+                    {/*  <LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>*/}
                     {/*    <img*/}
                     {/*      alt='instagram'*/}
-                    {/*      src={isHuddle ? Instagram : UnitasInstagram}*/}
+                    {/*      src={ICONS[NAMESPACE].instagram}*/}
                     {/*    />*/}
-                    {/*  </a>*/}
+                    {/*  </LinkHref>*/}
                     {/*</div>*/}
                   </div>
                 </div>

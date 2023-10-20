@@ -4,13 +4,13 @@ import {HashLink} from 'react-router-hash-link';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {
-  huddleLinkedIn,
-  unitasLinkedIn,
   NAMESPACE,
   SECTORS,
+  SOCIAL_HREFS,
   SPECIALISMS,
 } from '../../data/constants';
 import {isHuddle, isPrime} from '../../services/helper';
+import LinkHref from '../shared/LinkHref';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
 import HuddleLogo from '../../static/huddle/full-logo.svg';
@@ -192,12 +192,6 @@ const companyRoutes = isPrime ?
     }
   ];
 
-const LinkHref = props => (
-  <a {...props} target='_blank' rel='noreferrer'>
-    {props.children}
-  </a>
-);
-
 const Footer = ({
   expanded,
   expandClick,
@@ -300,28 +294,28 @@ const Footer = ({
                         </div>
                       </div>
                       <div className='footer-socials'>
-                        <LinkHref href={isHuddle ? huddleLinkedIn : unitasLinkedIn}>
+                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].linkedin}>
                           <img
                             alt='linkedin'
                             src={ICONS[NAMESPACE].linkedin}
                           />
                         </LinkHref>
-                        {/*<LinkHref href='#'>*/}
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>*/}
                         {/*  <img*/}
                         {/*    alt='twitter'*/}
-                        {/*    src={isHuddle ? HuddleTwitter : UnitasTwitter}*/}
+                        {/*    src={ICONS[NAMESPACE].twitter}*/}
                         {/*  />*/}
                         {/*</a>*/}
-                        {/*<LinkHref href='#'>*/}
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>*/}
                         {/*  <img*/}
                         {/*    alt='facebook'*/}
-                        {/*    src={isHuddle ? HuddleFacebook : UnitasFacebook}*/}
+                        {/*    src={ICONS[NAMESPACE].facebook}*/}
                         {/*  />*/}
                         {/*</a>*/}
-                        {/*<LinkHref href='#'>*/}
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>*/}
                         {/*  <img*/}
                         {/*    alt='instagram'*/}
-                        {/*    src={isHuddle ? HuddleInstagram : UnitasInstagram}*/}
+                        {/*    src={ICONS[NAMESPACE].instagram}*/}
                         {/*  />*/}
                         {/*</a>*/}
                       </div>
@@ -435,8 +429,9 @@ const Footer = ({
                       <Grid item xs={4} justifyContent='flex-end'>
                         <div className='footer-copyright'>
                           <span>
-                            {t(`${NAMESPACE}:footer:copyright`)}
-                            {/* todo: make year dynamic */}
+                            {t(`${NAMESPACE}:footer:copyright`, {
+                              year: new Date().getFullYear()
+                            })}
                           </span>
                         </div>
                       </Grid>

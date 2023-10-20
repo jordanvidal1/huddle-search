@@ -1,4 +1,12 @@
 {
+  "thePrimeGroup": {
+    "title": {
+      "part1": "RECRUITMENT",
+      "part2": "REIMAGINED"
+    },
+    "text": "A group of recruitment companies dedicated to redefining talent acquisition with cutting-edge, in-house proprietary artificial intelligence technology.",
+    "subText": "Proudly part of The Prime Group"
+  },
   "home": {
     "hero": {
       "title": {
@@ -22,100 +30,6 @@
         "button": "Talk to us"
       }
     }
-  },
-  "lookingToHire": {
-    "home": {
-      "title": {
-        "part1": "Looking to ",
-        "part2": "hire?",
-        "part3": ""
-      },
-      "desc": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "link": "Find out more",
-      "cv": {
-        "title": "Be sent 3 CVs with no obligations",
-        "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
-        "link": "Request now"
-      }
-    },
-    "lookingToHire": {
-      "title": {
-        "part1": "",
-        "part2": "Permanent",
-        "part3": " hires to transform your team"
-      },
-      "desc": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
-      "cv": {
-        "title": "Be sent 3 CVs with no obligations",
-        "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
-        "link": "Request now"
-      }
-    },
-    "specialisms": {
-      "title": "Specialisms",
-      "desc": "Our expansive team of experts covers a diverse array of fields, enabling us to provide comprehensive solutions across various specialisms."
-    },
-    "sectors": {
-      "title": "Sectors",
-      "desc": "Our company's versatility spans across numerous sectors, allowing us to customise solutions for distinct challenges and niche opportunities."
-    },
-    "contract": {
-      "title": {
-        "part1": "Contract",
-        "part2": " hires to deliver your project"
-      },
-      "desc": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
-      "button": "Find out more"
-    }
-  },
-  "executiveSearch": {
-    "title": {
-      "part1": "A specialist service by",
-      "part2": "Executive",
-      "part3": "SEARCH"
-    },
-    "desc": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, executive identification and outreach, assessment and evaluation, and offer management and onboarding.",
-    "info": {
-      "1": {
-        "title": "Research & needs assessment",
-        "text": "By consulting clients, creating detailed role specifications, and analysing markets, we grasp your needs and conditions, enabling a precise recruitment strategy."
-      },
-      "2": {
-        "title": "Executive identification & outreach",
-        "text": "Through a blend of diverse sourcing, discreet outreach, and meticulous long-listing, we connect with candidates meeting criteria and expressing genuine interest."
-      },
-      "3": {
-        "title": "Assessment & evaluation",
-        "text": "Thorough interviews, reference validation, and assessments such as psychometric tests ensure the selection qualified, compatible candidates, enhancing your recruitment process."
-      },
-      "4": {
-        "title": "Offer management & onboarding",
-        "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
-      }
-    },
-    "button": "Find out more"
-  },
-  "embeddedTalent": {
-    "desc": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
-    "info": {
-      "1": {
-        "title": "Onboarding & integration",
-        "text": "We can guarantee seamless assimilation of external talent. Through processes, tools, training, and alignment with your culture and objectives, we ensure their swift integration."
-      },
-      "2": {
-        "title": "Resource & skill management",
-        "text": "We perform skill assessments, targeted talent acquisition, gap analysis, talent pools, and ongoing learning to ensure your projects access the right expertise for success."
-      },
-      "3": {
-        "title": "Performance monitoring & feedback",
-        "text": "We ensure external talent's alignment with your company goals, with use of metrics, check-ins, feedback, KPIs, and reviews for effective collaboration and measurable success."
-      },
-      "4": {
-        "title": "Transition & off-boarding",
-        "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
-      }
-    },
-    "button": "Find out more"
   },
   "workForUs": {
     "title": {
@@ -141,87 +55,15 @@
       "text": "Be the first to know when we announce new roles, service updates, and other communications."
     },
     "follow": {
-      "title": "Follow the team @huddlesearch",
+      "title": "Follow the team @theprimegroup",
       "text": "Make sure you’re following us across social media to keep up-to-date with new roles and more."
     }
-  },
-  "corporateMeasure": {
-    "title": {
-      "part1": "How we ",
-      "part2": "measure",
-      "part3": " our influence"
-    },
-    "desc": "Our CSR principles and initiatives are founded on a rock-solid dedication to measurable impact and unwavering accountability. We believe in not just setting goals but tracking our progress meticulously to ensure we fulfil our promise of a better tomorrow.",
-    "plan": {
-      "title": "Our 3-point plan",
-      "1": {
-        "title": "Impact assessment excellence",
-        "text": "We assess our CSR efforts rigorously, combining quantitative metrics and real-life stories to understand our impact."
-      },
-      "2": {
-        "title": "Transparent reporting",
-        "text": "Our reports are honest narratives, sharing our successes, setbacks, and lessons learned."
-      },
-      "3": {
-        "title": "Stakeholder engagement",
-        "text": "We actively involve employees, partners, customers, and communities, aligning our initiatives with their needs."
-      }
-    },
-    "desc2": "With this plan, we measure our impact, share it transparently, and ensure accountability, creating a better, more sustainable future together."
-  },
-  "diversityMeasure": {
-    "title": {
-      "part1": "How we ",
-      "part2": "measure",
-      "part3": " our progress"
-    },
-    "desc": "We believe in accountability. To measure our progress, we set specific, measurable, and time-bound goals related to diversity, equity, and inclusion. We regularly review our progress, make adjustments, and share updates transparently.",
-    "plan": {
-      "title": "Our 3-point plan",
-      "1": {
-        "title": "Strategic goal setting",
-        "text": "We establish clear, measurable, and time-bound goals in diversity, equity, and inclusion. These goals serve as our roadmap for progress."
-      },
-      "2": {
-        "title": "Continuous evaluation",
-        "text": "Regular assessments and reviews help us track our journey. We analyse data, gather feedback, and make necessary adjustments to stay on course."
-      },
-      "3": {
-        "title": "Transparent reporting",
-        "text": "Our commitment to accountability extends to transparent reporting. We openly share our progress, achievements, and areas where improvement is needed, fostering trust and collaboration."
-      }
-    },
-    "desc2": "With this plan, we measure our commitment to DEI, ensuring that our efforts translate into meaningful change within our organization and for the communities we serve."
   },
   "specialists": {
     "leadership": {
       "title": "Leadership Team",
       "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success."
-    },
-    "specialists": {
-      "title": "Specialists in {{name}}",
-      "desc": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
     }
-  },
-  "specialismHero": {
-    "title": {
-      "specialisms": "Specialism: {{name}}",
-      "sectors": "Sector: {{name}}",
-      "lookingForAJob": {
-        "part1": "Looking for a ",
-        "part2": "job?"
-      }
-    },
-    "desc": {
-      "executiveSearch": "Our comprehensive and highly-successful approach to executive recruitment encompasses four key stages – client research and needs assessment, candidate identification and outreach, assessment and evaluation, and offer management and onboarding.",
-      "lookingToHire": "Enhance your workforce with exceptional tech talent. Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "lookingForAJob": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
-      "permanentHires": "Build your team through our strategic permanent hiring solutions. Elevate the workforce with skilled professionals for lasting growth and sustained success.",
-      "embeddedTalent": "Our embedded talent solutions cover onboarding, resource management, performance monitoring, and transitions. From seamless integration to skill management, performance alignment, and smooth exits, our approach ensures a highly-successful collaborative journey.",
-      "contractInterim": "Optimise project delivery with our agile contract hiring. Our skilled professionals seamlessly integrate into your work-streams, guaranteeing results.",
-      "specialists": "Our specialists comprise of a diverse group of experts, all of which experienced in a broad array of industry sectors and specialisms, ensuring both our clients and candidates receive an unprecedented level of service."
-    },
-    "button": "Talk to us"
   },
   "leadershipHero": {
     "leadershipTeam": {
@@ -277,15 +119,6 @@
       },
       "button": "Find out more"
     },
-    "executiveSearch": {
-      "path": "",
-      "title": {
-        "part1": "A specialised service powered by AI",
-        "part2": "",
-        "part3": ""
-      },
-      "desc": "Talent acquisition is being redefined thanks to our cutting-edge, in-house proprietary artificial intelligence technology, which streamlines the end-to-end process to deliver the most qualified executive candidates efficiently and with unprecedented precision."
-    },
     "workForUs": {
       "path": "/work-for-us",
       "title": {
@@ -306,82 +139,12 @@
         "part3": ""
       },
       "desc": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service."
-    },
-    "corporate": {
-      "path": "/corporate-social-responsibility",
-      "title": {
-        "part1": "We’re making a positive ",
-        "part2": "impact",
-        "part3": " on society"
-      },
-      "desc": "We believe that success is not just about business growth; it's also about contributing to a better world. At Huddle, we're committed to making a positive impact on society and the environment, aligning our values with our mission to connect top talent with businesses.",
-      "info": {
-        "title": "Our 6 CSR principles...",
-        "points": {
-          "1": {
-            "number": "1.",
-            "title": "Ethical business conduct",
-            "text": "Upholding strong ethical standards in all our actions and decisions."
-          },
-          "2": {
-            "number": "2.",
-            "title": "Environmental stewardship",
-            "text": "Responsibly managing our environmental footprint and promoting sustainable practices."
-          },
-          "3": {
-            "number": "3.",
-            "title": "Community engagement",
-            "text": "Actively engaging with and supporting our local communities."
-          },
-          "4": {
-            "number": "4.",
-            "title": "Diversity & inclusion",
-            "text": "Fostering a diverse and inclusive workplace and culture."
-          },
-          "5": {
-            "number": "5.",
-            "title": "Employee well-being",
-            "text": "Prioritising the health, safety, and development of our employees."
-          },
-          "6": {
-            "number": "6.",
-            "title": "Transparency & accountability",
-            "text": "Regularly assessing and sharing the impact of our CSR initiatives."
-          }
-        }
-      }
-    },
-    "diversity": {
-      "path": "/diversity-equality-and-inclusion",
-      "title": {
-        "part1": "A workplace where everyone feels ",
-        "part2": "valued",
-        "part3": ""
-      },
-      "desc": "We believe that diversity is a strength, equity is a necessity, and inclusion is a commitment. At Unitas, we’re dedicated to fostering a workplace where every individual feels valued, empowered, and supported, regardless of background.",
-      "info": {
-        "title": "Our 3 DEI initiatives...",
-        "points": {
-          "1": {
-            "number": "1.",
-            "title": "Diversity & inclusion",
-            "text": "We embrace diversity in all its forms, including but not limited to race, ethnicity, gender, age, sexual orientation, abilities, and backgrounds. We believe that a diverse workforce drives innovation."
-          },
-          "2": {
-            "number": "2.",
-            "title": "Equity & access",
-            "text": "Equity is at the core of our DEI efforts. We are dedicated to dismantling systemic barriers and ensuring that every employee has equal opportunities for growth, development, and advancement."
-          },
-          "3": {
-            "number": "3.",
-            "title": "Inclusive culture",
-            "text": "We foster an inclusive culture where everyone feels a sense of belonging. Inclusion is about actively inviting and valuing different perspectives, experiences, and identities."
-          }
-        }
-      }
     }
   },
   "jobResource": {
+    "resources": {
+      "title": "Blog"
+    },
     "email": {
       "title": "Receive email alerts",
       "text": "Be the first to know when we announce new roles, service updates, and other communications.",
@@ -403,39 +166,6 @@
       }
     }
   },
-  "infoContainer": {
-    "vacancy": {
-      "title": "Have a vacancy to fill?",
-      "text": "Source visionary engineers, innovative designers, and critical industry experts to gain a competitive edge in today's rapidly evolving technology landscape.",
-      "button": "Submit new role"
-    },
-    "help": {
-      "title": "Need help with something?",
-      "text": "Reach out to the team to ask a question, or to simply find out more about our innovative company and game-changing service.",
-      "button": "Talk to us"
-    },
-    "cv": {
-      "title": "Want 3 CVs with no obligations?",
-      "text": "Instantly discover talent by receiving three targeted CVs via our proprietary candidate sourcing tech – commitment-free.",
-      "button": "Request role"
-    }
-  },
-  "contactContainer": {
-    "phone": {
-      "title": "Speak over the phone",
-      "text": "Want to chat about embedding Huddle into your team? Our lines are open Mon-Fri from 8am to 5pm.",
-      "executiveTitle": "Phone",
-      "executiveText": "Want to chat about Huddle’s Executive Search? Our lines are open Mon-Fri from 8am to 5pm.",
-      "phoneNumber": "+44 20 40586 4093"
-    },
-    "email": {
-      "title": "Send us an email",
-      "text": "Want to start a conversation about our embedded talent solutions? Our team is here to help.",
-      "executiveTitle": "Email",
-      "executiveText": "Want to start a conversation about our specialised service for executive hires? Our team is here to help.",
-      "emailAddress": "hello@huddlesearch.com"
-    }
-  },
   "visitContainer": {
     "phone": {
       "title": "Phone",
@@ -445,7 +175,7 @@
     "email": {
       "title": "Email",
       "text": "Our team is here to help.",
-      "emailAddress": "hello@huddlesearch.com"
+      "emailAddress": "hello@theprimegroup.com"
     },
     "visit": {
       "title": "Visit",
@@ -504,247 +234,6 @@
           "text": "Passing on cost savings directly to hiring companies, optimising resource allocation and maximising value."
         }
       }
-    },
-    "executiveSearch": {
-      "title": "Why Executive Search is great for clients",
-      "desc": "Our process encompasses comprehensive research, diverse candidate sourcing, thorough evaluation, and streamlined offer management and onboarding, ensuring a seamless transition into new roles for top-tier executive talent.",
-      "points": {
-        "1": {
-          "title": "Research & needs assessment",
-          "text": "By consulting clients, creating detailed role specifications, and analysing markets, we grasp your needs and conditions, enabling a precise recruitment strategy."
-        },
-        "2": {
-          "title": "Executive identification & outreach",
-          "text": "Through a blend of diverse sourcing, discreet outreach, and meticulous long-listing, we connect with candidates meeting criteria and expressing genuine interest."
-        },
-        "3": {
-          "title": "Assessment & evaluation",
-          "text": "Thorough interviews, reference validation, and assessments such as psychometric tests ensure the selection qualified, compatible candidates, enhancing your recruitment process."
-        },
-        "4": {
-          "title": "Offer management & onboarding",
-          "text": "We curate a refined shortlist based on our evaluations, expertly manage offers and negotiations while you conduct interviews, and assist seamless new role transitions."
-        },
-        "5": {
-          "title": "",
-          "text": ""
-        }
-      }
-    },
-    "contractInterim": {
-      "title": "Why our contract service is great for clients",
-      "desc": "Our streamlined contract service encompasses effective client engagement, candidate sourcing and shortlisting, interview coordination, seamless onboarding, performance monitoring, and contract management for a comprehensive and smooth transition.",
-      "points": {
-        "1": {
-          "title": "Client engagement & requirement understanding",
-          "text": "We initiate communication, gather comprehensive job specifications, and establish clear contract terms to lay the groundwork for a successful partnership."
-        },
-        "2": {
-          "title": "Candidate sourcing & shortlisting",
-          "text": "Our candidate sourcing and shortlisting strategy involves diverse channels, thorough screening, and meticulous evaluation, resulting in a refined shortlist of the most fitting candidates for the next selection stage."
-        },
-        "3": {
-          "title": "Interview & selection process",
-          "text": "We manage interview coordination, gather feedback for refinement, and facilitate offer negotiation to ensure a seamless transition for the chosen candidate."
-        },
-        "4": {
-          "title": "Onboarding & contract management",
-          "text": "We finalise contracts, guide seamless candidate onboarding, monitor performance, and discuss contract renewal or conclusion for a smooth transition."
-        },
-        "5": {
-          "title": "",
-          "text": ""
-        }
-      }
-    },
-    "embeddedTalent": {
-      "title": "Why embedding Huddle is great for clients",
-      "desc": "Our services ensure seamless assimilation of external talent, expert resource management, performance alignment through metrics and feedback, and smooth transitions for optimised collaboration.",
-      "points": {
-        "1": {
-          "title": "Onboarding & integration",
-          "text": "We can guarantee seamless assimilation of external talent. Through processes, tools, training, and alignment with your culture and objectives, we ensure their swift integration."
-        },
-        "2": {
-          "title": "Resource & skill management",
-          "text": "We perform skill assessments, targeted talent acquisition, gap analysis, talent pools, and ongoing learning to ensure your projects access the right expertise for success."
-        },
-        "3": {
-          "title": "Performance monitoring & feedback",
-          "text": "We ensure external talent's alignment with your company goals, with use of metrics, check-ins, feedback, KPIs, and reviews for effective collaboration and measurable success."
-        },
-        "4": {
-          "title": "Transition & off-boarding",
-          "text": "We promise to provide smooth talent exits, role shifts, knowledge transfers, structured protocols, feedback, evaluations, and potential future engagements, optimising collaboration value."
-        },
-        "5": {
-          "title": "",
-          "text": ""
-        }
-      }
-    },
-    "permanentHires": {
-      "title": "Why our permanent hire service is great for clients",
-      "desc": "Our comprehensive permanent hire service blends expert candidate sourcing, efficient interviews, skilled negotiations, seamless onboarding, and industry insights, all under dedicated consultancy. This ensures efficient talent acquisition, smooth transitions, and informed decisions.",
-      "points": {
-        "1": {
-          "title": "Strategic Candidate Search & Skill Assessment",
-          "text": "We employ an expansive network and meticulous screening to source candidates who possess both the necessary skills and a cultural fit, ensuring a harmonious team integration and optimal performance."
-        },
-        "2": {
-          "title": "Efficient Interview Coordination",
-          "text": "Our streamlined process saves you time and ensures seamless communication with candidates. This enhances their experience, accelerates the hiring process, and maintains a positive impression of your organisation."
-        },
-        "3": {
-          "title": "Expert Negotiation Support",
-          "text": "With our seasoned negotiators at your side, you can confidently extend competitive offers. This minimises any potential delays in finalising candidate acceptance and secures top talent for your team."
-        },
-        "4": {
-          "title": "Seamless Onboarding & Support",
-          "text": "We guide candidates through a comprehensive onboarding process, ensuring a smooth transition into their roles. This personalised approach contributes to higher retention rates and cultivates a satisfied and productive workforce."
-        },
-        "5": {
-          "title": "Industry Insights & Dedicated Consultant",
-          "text": "Benefit from our industry expertise, gaining insights into market trends and salary benchmarks. Your dedicated consultant offers personalised guidance, ensuring your recruitment strategy aligns with your organisation's goals and objectives."
-        }
-      }
-    },
-    "corporate": {
-      "title": "Core initiatives for corporate social responsibility",
-      "desc": "Our CSR includes eco-friendly practices, diverse hiring, community outreach, ethical sourcing, and employee empowerment for a positive impact on the environment, society, and our team.",
-      "points": {
-        "1": {
-          "title": "Green practices",
-          "text": "We're eco-conscious. From waste reduction to energy efficiency, we implement sustainable practices in our offices, contributing to a greener future."
-        },
-        "2": {
-          "title": "Diversity in recruitment",
-          "text": "We champion diversity. Our recruitment process promotes equal opportunities for candidates of all backgrounds, fostering an inclusive workforce."
-        },
-        "3": {
-          "title": "Community outreach",
-          "text": "We serve our communities. Volunteering and supporting charitable causes close to our hearts is how we give back."
-        },
-        "4": {
-          "title": "Ethical sourcing",
-          "text": "We partner ethically. Our supply chain adheres to ethical and sustainable practices, reflecting our commitment to responsible sourcing."
-        },
-        "5": {
-          "title": "Employee power",
-          "text": "Our team is our strength. We invest in employee development, training, and well-being, ensuring a motivated and satisfied workforce."
-        }
-      }
-    },
-    "diversity": {
-      "title": "Core commitments to diversity, equality & inclusion",
-      "desc": "We wholeheartedly embrace DEI, from leadership's example to education, inclusive hiring, ERGs, supplier diversity, and community involvement, infusing it throughout our organisation.",
-      "points": {
-        "1": {
-          "title": "Leadership buy-in",
-          "text": "Our leadership team is committed to leading by example. They champion DEI initiatives and set the tone for our entire organisation."
-        },
-        "2": {
-          "title": "Education & training",
-          "text": "We provide ongoing DEI education and training to all employees. This includes workshops, webinars, and resources that promote understanding and awareness."
-        },
-        "3": {
-          "title": "Recruitment & hiring",
-          "text": "We actively seek diverse talent and employ inclusive hiring practices to ensure our workforce represents the communities we serve."
-        },
-        "4": {
-          "title": "Employee resource groups (ERGs)",
-          "text": "We support ERGs, which provide safe spaces for employees to connect, share experiences, and advocate for change."
-        },
-        "5": {
-          "title": "Community engagement",
-          "text": "Our commitment extends beyond our workplace. We engage with and support organisations and initiatives that promote DEI in our communities."
-        }
-      }
-    }
-  },
-  "specialisms": {
-    "architecture": "At Huddle, we specialise in recruiting for a spectrum of Architecture roles, from Solutions and Enterprise Architects to Infrastructure and Cloud Architects. Whether you're shaping digital strategy or implementing foundational systems, we connect premier talent with leading organisations in the Architecture domain.",
-    "change-and-transformation": "Change & Transformation encompasses a range of roles, from Change Managers, Business Analysts, and Project Leaders, to Transformation Consultants. We specialise in recruiting top-tier talent for each unique position, ensuring businesses adapt, innovate, and thrive in today's ever-evolving landscape.",
-    "cloud-infrastructure-and-networks": "At Huddle, we specialise in recruiting top talent for a diverse range of Cloud, Infrastructure & Networks roles. Whether you're seeking expertise in public, private, or hybrid cloud, traditional IT infrastructure, or advanced network configurations, our dedicated team is adept at finding the perfect fit for every niche requirement.",
-    "cyber-and-information-security": "We recruit for a diverse range of Cyber & Information Security roles, from ethical hackers, security architects, and penetration testers to risk analysts and compliance specialists. We understand the intricacies of each position, ensuring the right fit for every security need in today's digital landscape.",
-    "data-and-analytics": "From Data Scientists to Business Intelligence Analysts, our recruitment expertise covers the full spectrum of Data & Analytics roles. Whether you're seeking specialists in data engineering, visualization, or advanced analytics, we connect businesses with top-tier talent, ensuring the right fit for every data-centric position.",
-    "design": "At Huddle, we understand the nuances of Design roles, from the visual brilliance of User Interface (UI) designers to the intuitive expertise of User Experience (UX) specialists. Whether you're seeking pixel-perfect creators or user-centric innovators, we're adept at recruiting top talent across the entire UI/UX spectrum.",
-    "devops": "Discover talent across the diverse spectrum of DevOps roles with us. From Integration Specialists to Infrastructure Automation Engineers, Release Managers to Site Reliability Engineers (SREs), we excel in sourcing the finest professionals for each unique facet of the DevOps lifecycle. Your DevOps recruitment, simplified.",
-    "erp-crm-and-hr-systems": "We specialize in recruiting top talents for a range of roles within the ERP, CRM, and HR Systems sectors. Whether it's analysts, developers, or project managers for platforms like SAP, Oracle, Salesforce, or Workday, we have the expertise to find the perfect fit for your business's unique needs.",
-    "product-management": "We specialise in recruiting for the entire spectrum of Product Management roles: from Product Owners who drive detailed execution, to Product Managers who strategize roadmaps, and Product Leaders who envision the big picture. Whether you're hiring for technical, consumer, or enterprise products, we find the perfect fit for every product niche.",
-    "software-and-engineering": "Our expertise spans the vast landscape of Software Development & Engineering roles. From Front-end Developers, Backend Engineers, Full-Stack Specialists to DevOps Experts, Mobile App Designers, and Systems Architects, we have a deep understanding of the nuances of each position. Partner with us to find the perfect fit for every software niche."
-  },
-  "sectors": {
-    "banking-financial-services-asset-management": "At Huddle, we specialise in sourcing top-tier tech talent for a diverse range of Banking, Financial Services, and Asset Management entities. Whether it's global investment banks, boutique financial consultancies, insurance providers, or hedge funds, our expertise spans across the intricate landscape of the financial world. Through a deep understanding of the unique technological needs of each sector, we're poised to connect our clients with the ideal candidates who can propel their digital advancements. Partner with us for tailored recruitment solutions in the financial tech sphere.",
-    "construction-and-proptech": "At Huddle, we specialise in recruitment for the dynamic world of Construction & PropTech. From innovative startups revolutionising the property landscape, to established construction firms integrating cutting-edge technologies, we understand the unique tech needs across the spectrum. Whether you're a BIM software developer, a smart-building IoT pioneer, or a green construction solutions firm, we connect you with top-tier tech talents tailored for your business.",
-    "consulting": "At Huddle, we proudly partner with a diverse range of consulting firms, from globally renowned strategy powerhouses to niche tech-focused boutiques. Whether you're an IT consultancy mapping out enterprise solutions, a management consultancy advising on organisational transformations, or a specialised advisor leading in emerging tech sectors, we have the expertise to source top-tier tech talent tailored to your unique needs. Our deep understanding of the consulting landscape ensures you're matched with candidates who drive innovation and results.",
-    "defence": "At Huddle, we proudly partner with a diverse range of Defence companies, from established defence contractors to innovative startups. Our expertise covers traditional defence manufacturers, cyber security firms, aerospace innovators, naval design specialists, and advanced technology developers. With a deep understanding of the unique challenges and demands of the defence sector, we're adept at identifying top-tier tech talent suited for the multifaceted landscape of defence industries. Trust us to bridge the gap between your tech vacancies and the industry's best candidates.",
-    "e-commerce": "At Huddle, we specialise in recruiting top-tier talent for a diverse range of E-Commerce businesses. From giants in online retailing and B2C marketplaces to innovative B2B platforms, dropshipping ventures, and subscription service providers, we understand the unique challenges and opportunities each model presents. Our deep industry knowledge ensures that we find the right tech professionals to propel any E-Commerce entity forward. Partner with us, and gain a competitive edge with the best in tech talent.",
-    "fintech": "At Huddle, we specialise in tech recruitment for a diverse range of FinTech companies. From pioneering digital banks and innovative payment platforms to advanced wealth management tools and cutting-edge insurtech solutions, we understand the unique needs of each niche. Our deep industry knowledge allows us to connect top tech talent with groundbreaking FinTech firms, ensuring a perfect fit that drives both individual and industry growth. Partner with us and propel your FinTech journey forward.",
-    "fmcg-consumer": "At Huddle, we specialise in sourcing top-tier tech talent for a diverse range of FMCG/Consumer companies. From global giants in the food and beverage sector to emerging innovators in personal care, household products, and beyond, we understand the unique technological needs of each. Whether you're a niche start-up or an established brand, we're committed to connecting you with the tech professionals that drive your business forward in this fast-paced, consumer-centric landscape.",
-    "healthcare-and-healthtech": "At Huddle, we specialise in sourcing top-tier tech talent for a diverse range of Healthcare and HealthTech sectors. From pioneering digital health startups to established e-health platforms, telehealth services, and medical device innovators, we understand the unique needs of each domain. Our vast industry experience enables us to effectively match candidates with the right opportunities, driving innovation and growth in this rapidly evolving field. Partner with us, and let's shape the future of healthcare together.",
-    "insurance-and-insuretech": "At Huddle, we specialise in recruiting for a diverse range of Insurance and InsureTech firms. From traditional insurance giants to cutting-edge InsureTech startups, we understand the unique needs of each sector. Whether you're a global carrier, a niche underwriter, a digital-first disruptor, or an innovative platform provider, we have the expertise to match the right tech talent with your organisation. Our commitment is to bridge the gap between world-class tech talent and the evolving insurance industry.",
-    "investment-banking": "At Huddle, we specialise in recruiting top-tier tech talent for a diverse range of Investment Banks. From global bulge bracket banks known for their vast operations and multinational presence, to boutique banks focusing on niche markets, and middle-market institutions bridging the gap, we understand the unique tech needs of each. Our expertise extends to serving elite advisory firms and specialised finance providers. Partner with us, and access the finest tech talent tailored to the dynamic world of Investment Banking.",
-    "life-sciences": "At Huddle, we specialise in sourcing top-tier tech talent for diverse Life Sciences sectors. From innovative biotech startups pushing the boundaries of medical research to established pharmaceutical giants, diagnostic service providers, and medical device trailblazers, we understand the unique needs of each domain. Our expertise ensures that we find the right fit for tech roles across the spectrum, powering the future of Life Sciences through unmatched talent solutions.",
-    "manufacturing": "At Huddle, we understand the diverse landscape of the manufacturing industry. From automotive and aerospace to consumer goods and pharmaceuticals, we've partnered with a myriad of manufacturing sectors to source top-tier tech talent. Our expertise lies in identifying the unique technological needs of each niche and connecting them with professionals who drive innovation. Whether it's robotics in auto production or automation in food processing, our recruitment ensures a tech-savvy future for every manufacturing domain.",
-    "media-and-entertainment": "At Huddle, we specialise in tech recruitment for a diverse range of Media & Entertainment sectors. From pioneering streaming services and blockbuster film studios to influential media houses and innovative gaming companies, our expertise spans the vast landscape of entertainment. We understand the unique technological needs of each niche, ensuring we connect top tech talent with the right opportunity. Join us as we bridge the gap between tech brilliance and the world's most compelling media narratives.",
-    "new-tech": "At Huddle, we specialise in recruiting top talent for a diverse range of New Tech companies. From AI-driven startups and state-of-the-art biotech firms to trailblazing IoT developers and next-gen software solutions, our expertise covers a broad spectrum of the tech landscape. We understand the unique needs of each sector and have a proven track record of matching skilled professionals with their ideal roles. Partner with us to power your enterprise with the best in tech talent.",
-    "pharmaceutical": "At Huddle, we specialise in tech recruitment for a diverse range of pharmaceutical companies. From cutting-edge biotech startups and generics manufacturers to large-scale research-driven pharma giants and over-the-counter (OTC) product leaders, our expertise spans the entire spectrum of the pharmaceutical industry. We understand the unique tech needs of each type of pharma company and are dedicated to connecting them with the ideal candidates to drive innovation and growth. Choose us for precision-matched tech talent in the pharmaceutical domain.",
-    "private-equity": "At Huddle, we partner with a diverse range of Private Equity firms, from boutique investment houses to global giants, to source exceptional talent for technology roles. Whether it's for growth equity firms focusing on budding startups, buyout firms acquiring established businesses, or venture capitalists backing innovative tech disruptors, our expertise lies in connecting top-tier technology professionals with Private Equity stakeholders to drive success and innovation. Let us power your PE firm's tech future.",
-    "public-sector": "At Huddle, we specialise in tech recruitment for a diverse range of Public Sector organisations. From local government bodies and educational institutions to healthcare providers and emergency services, our expertise covers the spectrum. We understand the unique demands and nuances of each sector, ensuring that we find the perfect tech talent to drive innovation and efficiency. Partner with us and access a vast pool of candidates tailored for the Public Sector's evolving technological needs.",
-    "retail-and-retailtech": "At Huddle, we specialise in connecting top-tier talent with a diverse range of Retail & RetailTech companies. From traditional brick-and-mortar establishments to cutting-edge e-commerce platforms, omnichannel solutions providers, and innovative point-of-sale tech startups, we understand the unique challenges and opportunities of each segment. Our expertise ensures that we source the best tech professionals adept at driving innovation in any retail environment, guaranteeing our clients a competitive edge in an ever-evolving market.",
-    "telco": "At Huddle, we specialise in recruiting for a diverse range of Telco companies, from established telecommunications giants to innovative startups breaking new ground in tech. Whether it's mobile network operators, internet service providers, satellite communications firms, or cutting-edge VoIP enterprises, our expertise ensures we connect talented professionals with the perfect tech roles across the broad Telco spectrum. Partner with us to discover a world of opportunity in telecommunications recruitment."
-  },
-  "typesOfRoles": {
-    "title": {
-      "roles": "Roles in {{specialism}}",
-      "technologies": "Technologies in {{specialism}}"
-    },
-    "desc": {
-      "roles": "Commonly recruited for job titles (this list is not exhaustive):",
-      "technologies": "Commonly recruited for technologies (this list is not exhaustive):"
-    },
-    "specialisms": {
-      "architecture": {
-        "roles": "Enterprise Architect|Solutions Architect|Infrastructure Architect|Cloud Architect|Application Architect|Data Architect|Network Architect|Security Architect|System Architect|Technical Architect|Integration Architect|Business Architect|Digital Architect|Software Architect|IT Strategy Architect|Domain Architect|Platform Architect|Information Architect|API Architect|Mobile Architect",
-        "technologies": "Amazon Web Services (AWS)|Microsoft Azure|Google Cloud Platform (GCP)|Docker|Kubernetes|Terraform|Apache Kafka|Cisco Technologies|VMware|Oracle Database|MongoDB|RabbitMQ|Zachman Framework|TOGAF (The Open Group Architecture Framework)|Red Hat OpenShift|Microservices|API Gateways (like Apigee or AWS API Gateway)|Microsoft Active Directory|Unified Modeling Language (UML)|Ansible"
-      },
-      "change-and-transformation": {
-        "roles": "Change Manager|Transformation Director|Business Analyst|Change Analyst|Organisational Change Consultant|Process Improvement Specialist|Project Manager|Digital Transformation Lead|Operational Excellence Manager|Change Communication Specialist|Lean Six Sigma Consultant|Business Transformation Manager|Change Control Coordinator|Agile Transformation Coach|Program Management Officer (PMO)|Change Strategy Consultant|Process Automation Specialist|Enterprise Transformation Leader|Organisational Development Specialist|Cultural Transformation Consultant",
-        "technologies": "Microsoft Project|JIRA & Confluence|Trello or Asana|Slack or Microsoft Teams|Miro or Lucidchart|Tableau|Power BI|Visio|ServiceNow|Blueworks Live|Minitab|RPA tools (UiPath, Blue Prism, Automation Anywhere)|Smartsheet|Monday.com|Prosci ADKAR|Jama Connect|Airtable|Git/GitHub or Bitbucket|Salesforce|SAP or Oracle ERP systems"
-      },
-      "cloud-infrastructure-and-networks": {
-        "roles": "Cloud Solutions Architect|Cloud Engineer|Cloud Consultant|DevOps Engineer|Infrastructure Engineer|Network Engineer|Systems Administrator|Network Architect|Network Administrator|Cloud Security Specialist|Infrastructure Architect|Virtualization Engineer|Data Center Engineer|Network Security Engineer|Wireless Network Engineer|Cloud Product Manager|Cloud Sales Specialist|Network Operations Center (NOC) Technician|Infrastructure Project Manager|WAN/LAN Specialist",
-        "technologies": "AWS (Amazon Web Services)|Microsoft Azure|Google Cloud Platform (GCP)|VMware vSphere|Docker Containers|Kubernetes|Cisco IOS (Internetwork Operating System)|Terraform|Ansible|Jenkins|OpenStack|Elastic Load Balancer (ELB)|Cisco ACI (Application Centric Infrastructure)|Palo Alto Firewalls|Microsoft Hyper-V|Citrix XenApp/XenDesktop|Juniper Networks Devices|SD-WAN solutions (e.g., Cisco Viptela, Silver Peak)|NetApp Storage Solutions|Zabbix (for network monitoring)"
-      },
-      "cyber-and-information-security": {
-        "roles": "Information Security Analyst|Ethical Hacker/Penetration Tester|Security Architect|Cybersecurity Consultant|Incident Responder|Forensic Computer Analyst|Security Software Developer|Vulnerability Assessor|Security Auditor|Chief Information Security Officer (CISO)|Security Operations Center (SOC) Analyst|Threat Intelligence Analyst|Malware Analyst/Reverse Engineer|IT Security Engineer|Risk Management Specialist|Security Compliance Analyst|Network Security Specialist|Cryptographer/Cryptanalyst|Cloud Security Specialist|Data Privacy Officer",
-        "technologies": "Wireshark|Nmap|Metasploit|Burp Suite|Kali Linux|Nessus|Splunk|Cisco ASA|Snort|Symantec Endpoint Protection|Palo Alto Networks|Tanium|Qualys|YARA|OWASP Zap|Hashcat|Check Point|Bitlocker|TrueCrypt/VeraCrypt|Okta"
-      },
-      "data-and-analytics": {
-        "roles": "Data Scientist|Data Analyst|Data Engineer|Business Intelligence Analyst|Machine Learning Engineer|Data Visualization Specialist|Statistical Analyst|Data Architect|Big Data Engineer|Quantitative Researcher|Data Governance Manager|Data Operations Analyst|Predictive Analyst|Data Quality Specialist|Advanced Analytics Consultant|Master Data Manager|Data Warehouse Specialist|Data Platform Manager|Analytics Manager|Decision Scientist",
-        "technologies": "Python|R|SQL|Hadoop|Spark|Tableau|Power BI|TensorFlow|Jupyter Notebooks|Amazon Web Services (AWS)|Google Cloud Platform (GCP)|Microsoft Azure|SAS|Apache Kafka|Elasticsearch|NoSQL databases (e.g., MongoDB, Cassandra)|MATLAB|Looker|Alteryx|KNIME"
-      },
-      "design": {
-        "roles": "UI Designer|UX Designer|Interaction Designer|Visual Designer|UI/UX Researcher|User Experience Strategist|Information Architect|Motion Graphics Designer|Product Designer|User Interface Developer|UX Analyst|User Researcher|UX Writer|Prototype Designer|Accessibility Designer|Voice User Interface Designer|UI Kit Designer|Mobile UI Designer|Web UI Designer|Usability Tester",
-        "technologies": "Adobe XD|Sketch|Figma|InVision|Marvel|Zeplin|Axure RP|Balsamiq Mockups|Framer|Affinity Designer|Principle|Justinmind|Proto.io|Origami Studio|Adobe After Effects (for UI animations)|UsabilityHub|Lookback.io|Optimal Workshop|Webflow|Hotjar"
-      },
-      "devops": {
-        "roles": "DevOps Engineer|Site Reliability Engineer (SRE)|Infrastructure Automation Engineer|Build and Release Engineer|Cloud Operations Engineer|Containerization Engineer|Continuous Integration/Continuous Deployment (CI/CD) Engineer|Platform Engineer|Configuration Manager|Systems Integration Specialist|Infrastructure as Code (IAC) Developer|DevSecOps Engineer|Application Deployment Specialist|Network Automation Engineer|Monitoring & Analytics Engineer|Performance Engineer|Release Manager|Cloud Solutions Architect|Operations Engineer|Chaos Engineer",
-        "technologies": "Docker|Kubernetes|Jenkins|Terraform|Ansible|Git|GitHub Actions|AWS/Azure/GCP|Prometheus|Grafana|ELK Stack (Elasticsearch, Logstash, Kibana)|Nagios|Chef|Puppet|Helm|GitLab CI/CD|Splunk|SonarQube|Consul|Istio"
-      },
-      "erp-cr-and-hr-systems": {
-        "roles": "ERP Implementation Consultant|CRM Developer|SAP HCM Consultant|Oracle ERP Analyst|Salesforce Administrator|Workday HRIS Specialist|Dynamics CRM Consultant|ERP Project Manager|CRM Business Analyst|PeopleSoft HR Consultant|SAP FICO Specialist|CRM Solutions Architect|Oracle Cloud HCM Analyst|Salesforce Developer|ERP System Administrator|HRIS Analyst|Microsoft Dynamics AX Developer|CRM Support Specialist|SAP SD/MM Consultant|Workday Integration Specialist",
-        "technologies": "SAP (e.g., SAP HANA, SAP S/4HANA)|Oracle (e.g., Oracle Cloud ERP, Oracle Fusion)|Salesforce (including Lightning Platform and Einstein Analytics)|Microsoft Dynamics (e.g., Dynamics 365, Dynamics AX, Dynamics CRM)|Workday (particularly for HR and financial management functions)|PeopleSoft|NetSuite|Pega CRM|ServiceNow (especially for HR service delivery)|Tableau (for analytics and business intelligence)|Informatica (for data integration purposes)|Taleo (for talent management)|SuccessFactors|Zoho CRM|HubSpot CRM|Jira (often used in conjunction with Agile development practices)|Confluence (for documentation and collaboration)|Mulesoft (for integration services, especially with Salesforce)|Zapier (for process automation and integration)|Git (for version control in development processes)"
-      },
-      "product-management": {
-        "roles": "Product Manager|Associate Product Manager|Senior Product Manager|Product Owner|Technical Product Manager|Group Product Manager|Product Director|Chief Product Officer|Product Lead|Product Analyst|Product Management Intern|Product Strategy Manager|Product Lifecycle Manager|Mobile Product Manager|Digital Product Manager|Product Operations Manager|Product Design Manager|Global Product Manager|Product Portfolio Manager|Product Development Manager",
-        "technologies": ""
-      },
-      "software-and-engineering": {
-        "roles": "Front-end Developer|Backend Developer|Full-Stack Developer|Mobile App Developer|DevOps Engineer|Systems Architect|Software Tester/QA Engineer|Embedded Systems Engineer|Data Engineer|UI/UX Designer|Cloud Engineer|Database Administrator|Machine Learning Engineer|Security Engineer|Application Support Engineer|Site Reliability Engineer (SRE)|Game Developer|Web Developer|Software Development Manager|Infrastructure Engineer",
-        "technologies": "Java|Python|JavaScript (and frameworks like React, Vue, and Angular)|C#|C++|Ruby on Rails|SQL (and databases like PostgreSQL, MySQL)|NoSQL databases (like MongoDB, Cassandra)|Docker|Kubernetes|AWS, Azure, Google Cloud Platform|Git (and platforms like GitHub, GitLab)|Node.js|.NET Core|TensorFlow and PyTorch (for ML roles)|Jenkins (for CI/CD)|Ansible (for configuration management)|Elasticsearch|GraphQL|Apache Kafka"
-      }
     }
   },
   "originStory": {
@@ -788,7 +277,7 @@
       "2": "About",
       "3": "Company"
     },
-    "copyright": "2023 © The Prime Group. All rights reserved."
+    "copyright": "{{year}} © The Prime Group. All rights reserved."
   },
   "privacy": {
     "title": "Privacy policy",
@@ -850,8 +339,8 @@
     },
     "part12": {
       "title": "General Data Protection Regulation (GDPR)",
-      "text": "You can contact our Data Protection Officer on (hello@huddlesearch.com).",
-      "text2": "Everyone here at www.huddlesearch.com is familiar with the GDPR legislation,and exactly what their personal responsibilities are. Anyone joining the company is trained internally on induction day, and then at regular intervals of 2 years afterwards. If there is a change in legislation, then we ensure that everyone is fully up-to-date on the latest points.",
+      "text": "You can contact our Data Protection Officer on (hello@theprimegroup.com).",
+      "text2": "Everyone here at www.theprimegroup.com is familiar with the GDPR legislation,and exactly what their personal responsibilities are. Anyone joining the company is trained internally on induction day, and then at regular intervals of 2 years afterwards. If there is a change in legislation, then we ensure that everyone is fully up-to-date on the latest points.",
       "text3": "You do have the right to be forgotten, and no longer receive any communication from us. You can do this via our contact form.",
       "text4": "You can rest assured that absolutely no personal data is transferred outside of the EU under any circumstances (unless prior written consent is given by the person who’s data is to be transferred).",
       "text5": "When processing any data we abide by the following points:\n\n– The processing of any data is lawful, fair and we are fully transparent about what the data is being used for\n– We only collect data that is necessary for normal business operation\n– All data is kept accurate and up-to-date\n– Data is not kept for any longer than is reasonably necessary\n– All data is kept safe and secure at all times If you have enquired about our services, then we have a legitimate interest in contacting you again to follow up on your enquiry.",
@@ -860,13 +349,5 @@
       "text8": "This policy may be updated from time to time, so please ensure you check it regularly."
     },
     "lastUpdated": "Last updated: {{date}}"
-  },
-  "thePrimeGroup": {
-    "title": {
-      "part1": "RECRUITMENT",
-      "part2": "REIMAGINED"
-    },
-    "text": "A group of recruitment companies dedicated to redefining talent acquisition with cutting-edge, in-house proprietary artificial intelligence technology.",
-    "subText": "Proudly part of The Prime Group"
   }
 }

@@ -1,15 +1,36 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
-import {isHuddle, renderNumber} from '../../services/helper';
+import {NAMESPACE} from '../../data/constants';
+import {renderNumber} from '../../services/helper';
 
-import Salary from '../../static/huddle/salary-pink.svg';
-import Benefits from '../../static/huddle/benefits-pink.svg';
-import Location from '../../static/huddle/location-pink.svg';
-
+import HuddleSalary from '../../static/huddle/salary-pink.svg';
+import HuddleBenefits from '../../static/huddle/benefits-pink.svg';
+import HuddleLocation from '../../static/huddle/location-pink.svg';
 import UnitasSalary from '../../static/unitas/salary.svg';
 import UnitasBenefits from '../../static/unitas/benefits.svg';
 import UnitasLocation from '../../static/unitas/location.svg';
+import PrimeSalary from '../../static/prime/salary.svg';
+import PrimeBenefits from '../../static/prime/benefits.svg';
+import PrimeLocation from '../../static/prime/location-pink.svg';
+
+const ICONS = {
+  huddle: {
+    salary: HuddleSalary,
+    benefits: HuddleBenefits,
+    location: HuddleLocation
+  },
+  unitas: {
+    salary: UnitasSalary,
+    benefits: UnitasBenefits,
+    location: UnitasLocation
+  },
+  prime: {
+    salary: PrimeSalary,
+    benefits: PrimeBenefits,
+    location: PrimeLocation
+  }
+};
 
 const Role = props => {
   const {i, type, title, salary, benefits, location} = props;
@@ -37,21 +58,21 @@ const Role = props => {
             <span>
               <img
                 alt='salary'
-                src={isHuddle ? Salary : UnitasSalary}
+                src={ICONS[NAMESPACE].salary}
               />
               £{renderNumber(salary)} per year
             </span>
             <span>
               <img
                 alt='benefits'
-                src={isHuddle ? Benefits : UnitasBenefits}
+                src={ICONS[NAMESPACE].benefits}
               />
               {benefits}
             </span>
             <span>
               <img
                 alt='location'
-                src={isHuddle ? Location : UnitasLocation}
+                src={ICONS[NAMESPACE].location}
               />
               {location}
             </span>

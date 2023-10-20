@@ -117,3 +117,46 @@
     }
   }
 }
+
+.prime-site {
+  .roles-box, .jobs {
+    .role {
+      border-radius: 0;
+
+      .role-type {
+        background: none;
+        padding: 0;
+
+        span {
+          color: #7E8192;
+          font-size: 0.875rem;
+          font-weight: 700;
+          letter-spacing: 0.105rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .role-title {
+        margin: 0.5rem 0 1.5rem;
+
+        h6 {
+          color: #000;
+          font-family: ArdelaEdgeX02-Black;
+          font-weight: 400;
+        }
+      }
+
+      .role-details span {
+        color: #000;
+      }
+
+      .role-description {
+        margin: 1.5rem 0;
+      }
+
+      .btn {
+        padding: 0.69rem 2rem 0.81rem;
+      }
+    }
+  }
+}

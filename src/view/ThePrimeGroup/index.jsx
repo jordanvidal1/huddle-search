@@ -8,6 +8,7 @@ import {
   unitasHref,
 } from '../../data/constants'
 import {isHuddle, isPrime} from '../../services/helper';
+import LinkHref from '../shared/LinkHref';
 
 import Logo from '../../static/huddle/the-prime-group.svg';
 import Huddle from '../../static/huddle/prime-huddle.svg';
@@ -17,12 +18,6 @@ import Spectrum from '../../static/huddle/prime-spectrum.svg';
 import HuddlePink from '../../static/prime/huddle-logo-pink.svg';
 import UnitasPink from '../../static/prime/unitas-logo-pink.svg';
 import SpectrumPink from '../../static/prime/spectrum-logo-pink.svg';
-
-const LinkHref = props => (
-  <a {...props} target='_blank' rel='noreferrer'>
-    {props.children}
-  </a>
-);
 
 const NormalLogos = () => (
   <div className='logos'>

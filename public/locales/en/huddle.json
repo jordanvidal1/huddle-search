@@ -382,6 +382,9 @@
     }
   },
   "jobResource": {
+    "resources": {
+      "title": "Browse all resources"
+    },
     "email": {
       "title": "Receive email alerts",
       "text": "Be the first to know when we announce new roles, service updates, and other communications.",
@@ -800,7 +803,7 @@
       "2": "Services",
       "3": "Company"
     },
-    "copyright": "2023 © Huddle Search. All rights reserved."
+    "copyright": "{{year}} © Huddle Search. All rights reserved."
   },
   "privacy": {
     "title": "Privacy policy",

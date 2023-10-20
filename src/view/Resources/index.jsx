@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
+import {NAMESPACE} from '../../data/constants';
 import useWordPress from '../../services/hooks/useWordPress';
 // import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
@@ -17,6 +19,8 @@ const Resources = () => {
     loadBlog();
   }, []);
 
+  const {t} = useTranslation(['huddle', 'unitas', 'prime']);
+
   return (
     <div className='resources'>
       <div className='container'>
@@ -24,7 +28,7 @@ const Resources = () => {
           <div className='content'>
             <div className='title'>
               <h2>
-                Browse all resources
+                {t(`${NAMESPACE}:jobResource:resources:title`)}
               </h2>
             </div>
             {/*<SearchBar placeholder='Search by title, keyword, specialism or sector...' />*/}
