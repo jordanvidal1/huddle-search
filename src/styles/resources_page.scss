@@ -63,3 +63,19 @@
         }
     }
 }
+
+.prime-site #content > .resources {
+    background: url('../static/prime/blog.png') top right no-repeat #000;
+    background-size: 40%;
+
+    .title h2 {
+        color: #FFF;
+        font-family: ArdelaEdgeX02-Black;
+        font-size: 5rem;
+        font-weight: 400;
+    }
+
+    .resources-grid > div:first-child span {
+        color: #D3CDD0;
+    }
+}

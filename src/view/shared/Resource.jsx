@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {capitalize, Grid} from '@material-ui/core';
 import cx from 'classnames';
+import {isPrime} from '../../services/helper';
 
 const Resource = props => {
   const {
@@ -30,11 +31,13 @@ const Resource = props => {
           <div className='resource-type-container'>
             <img alt='blog-img' src={featured_image} />
             <div>
-              <div className={classNames}>
-                <span>
-                  {category}
-                </span>
-              </div>
+              {!isPrime && (
+                <div className={classNames}>
+                  <span>
+                    {category}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
           <div className='resource-title'>

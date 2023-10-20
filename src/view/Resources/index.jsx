@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
 import useWordPress from '../../services/hooks/useWordPress';
-// import SearchBar from '../shared/SearchBar';
+import SearchBar from '../shared/SearchBar';
 import Resource from '../shared/Resource';
 import Loader from '../shared/Loader';
 
@@ -31,7 +31,7 @@ const Resources = () => {
                 {t(`${NAMESPACE}:jobResource:resources:title`)}
               </h2>
             </div>
-            {/*<SearchBar placeholder='Search by title, keyword, specialism or sector...' />*/}
+            <SearchBar placeholder='Search by title, keyword, specialism or sector...' />
             {/* todo: mobile placeholder */}
             {/* todo: sort by / filters */}
             <div className='resources-grid'>

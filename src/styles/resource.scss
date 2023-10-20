@@ -167,3 +167,50 @@
     }
   }
 }
+
+.prime-site {
+  .resources-box, .resources {
+    .resource {
+      background: #101010;
+      border: 1px solid #747474;
+      border-radius: 0;
+
+      .resource-type-container {
+        img, > div {
+          border-radius: 0;
+        }
+      }
+
+      .resource-title {
+        max-height: 6rem;
+
+        h6 {
+          color: #FFF;
+          font-family: ArdelaEdgeX02-Black;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+
+      .resource-tags .resource-tag {
+        border-radius: 62.5rem;
+        background: rgba(235, 82, 249, 0.30);
+        padding: 0.22rem 0.75rem 0.28rem;
+
+        span {
+          color: #F689FF;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+
+      .resource-description p {
+        color: #D3CDD0;
+      }
+
+      .btn {
+        padding: 0.69rem 2rem 0.81rem;
+      }
+    }
+  }
+}

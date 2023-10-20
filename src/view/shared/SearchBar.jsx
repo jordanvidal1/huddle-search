@@ -1,9 +1,16 @@
 import React from 'react';
-import {isHuddle} from '../../services/helper';
+import {NAMESPACE} from '../../data/constants';
 import Input from './Input';
 
-import SearchIcon from '../../static/huddle/search.svg';
+import HuddleSearchIcon from '../../static/huddle/search.svg';
 import UnitasSearchIcon from '../../static/unitas/search.svg';
+import PrimeSearchIcon from '../../static/prime/search.svg';
+
+const ICONS = {
+  huddle: HuddleSearchIcon,
+  unitas: UnitasSearchIcon,
+  prime: PrimeSearchIcon
+};
 
 const SearchBar = ({
   placeholder
@@ -15,7 +22,7 @@ const SearchBar = ({
       name='search'
       placeholder={placeholder}
       autoComplete='off'
-      img={isHuddle ? SearchIcon : UnitasSearchIcon}
+      img={ICONS[NAMESPACE]}
     />
     {/* todo: reset button */}
   </div>
