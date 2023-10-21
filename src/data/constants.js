@@ -393,6 +393,12 @@ export const huddleHref = 'https://www.huddlesearch.com/';
 export const unitasHref = 'https://www.unitastalent.com/';
 export const spectrumHref = 'https://spectrum-search.com/';
 
+export const COMPANY_HREFS = {
+  huddle: huddleHref,
+  unitas: unitasHref,
+  spectrum: spectrumHref
+};
+
 export const SOCIAL_HREFS = {
   huddle: {
     linkedin: 'https://www.linkedin.com/company/huddlesearch'

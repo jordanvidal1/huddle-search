@@ -7,30 +7,6 @@
     "text": "A group of recruitment companies dedicated to redefining talent acquisition with cutting-edge, in-house proprietary artificial intelligence technology.",
     "subText": "Proudly part of The Prime Group"
   },
-  "home": {
-    "hero": {
-      "title": {
-        "part1": "Because every search starts with a huddle",
-        "part2": "",
-        "part3": ""
-      },
-      "desc": "At Huddle – we are redefining tech recruitment – by delivering new ways the market’s best opportunities meet the industry’s top-tier talent.",
-      "button": "Our story"
-    },
-    "lookingForAJob": {
-      "title": {
-        "part1": "Looking for a ",
-        "part2": "job?"
-      },
-      "desc": "Transform your tech career with Huddle. Reach out to find opportunities that meet your aspirations or for more helpful information.",
-      "link": "Find out more",
-      "button": "Talk to us",
-      "roles": {
-        "title": "Featured roles",
-        "button": "Talk to us"
-      }
-    }
-  },
   "workForUs": {
     "title": {
       "part1": "Discover why we’re primed to change the industry",
@@ -64,6 +40,55 @@
       "title": "Leadership Team",
       "desc": "Our distinguished leadership team comprises of three seasoned industry experts, each bringing a wealth of experience and boasting a proven track record of driving innovation and success."
     }
+  },
+  "companyHero": {
+    "title": {
+      "huddle": "Huddle",
+      "unitas": "Unitas",
+      "spectrum": "Spectrum"
+    },
+    "desc": {
+      "huddle": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.",
+      "unitas": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.",
+      "spectrum": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum."
+    },
+    "content": {
+      "title": "The {{siteName}} team is waiting to hear from you",
+      "desc": {
+        "huddle": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus.",
+        "unitas": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus.",
+        "spectrum": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus."
+      }
+    },
+    "contact": {
+      "company": {
+        "huddle": "huddlesearch.com",
+        "unitas": "unitastalent.com",
+        "spectrum": "spectrum-search.com"
+      },
+      "email": {
+        "huddle": "hello@huddlesearch.com",
+        "unitas": "hello@unitastalent.com",
+        "spectrum": "info@spectrum-search.com"
+      },
+      "phone": {
+        "huddle": "+44 20 4586 4093",
+        "unitas": "+44 20 4586 4361",
+        "spectrum": "+44 203 468 6977"
+      },
+      "location": {
+        "huddle": "1 Fore St Ave, London EC2Y 9DT",
+        "unitas": "1 Fore St Ave, London EC2Y 9DT",
+        "spectrum": "100 Avebury Blvd, Milton Keynes, MK91FH"
+      }
+    },
+    "boss": {
+      "title": "Speak to the boss..."
+    },
+    "service": "Service",
+    "recruitment": "Recruitment",
+    "sector": "Sector",
+    "button": "Go to site"
   },
   "leadershipHero": {
     "leadershipTeam": {

@@ -1,0 +1,184 @@
+.company .company-hero {
+    background: #000;
+    overflow: hidden;
+
+    .content {
+        margin-top: 2rem;
+    }
+
+    .text-container {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 45.0625rem;
+
+        > img {
+            position: absolute;
+            left: 105%;
+            top: -18rem;
+            width: 62.5rem;
+            z-index: -5;
+        }
+    }
+
+    .title {
+        margin-top: 2rem;
+
+        img {
+            height: 2rem;
+        }
+
+        h1 {
+            color: #FF3D00;
+            font-family: ArdelaEdgeX02-Black;
+            font-size: 7rem;
+            font-weight: 400;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .service, .sector {
+            align-items: center;
+            display: flex;
+            gap: 1.5rem;
+
+            span {
+                color: #FF3D00;
+                font-size: 1.25rem;
+            }
+
+            span:first-child {
+                color: rgba(255, 61, 0, 0.70);
+                width: 4.5rem;
+            }
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        margin-top: 3rem;
+        max-width: 37.0625rem;
+
+        p {
+            color: #D3CDD0;
+            font-size: 1.25rem;
+            line-height: 2rem; /* 160% */
+        }
+
+        .btn-container {
+            justify-content: flex-end;
+            margin-top: 2rem;
+        }
+    }
+
+    .company-container {
+        margin-top: 6rem;
+        align-items: flex-start;
+        background: #FF3D00;
+        display: flex;
+        gap: 4rem;
+        padding: 4rem;
+
+        .company-content {
+            h2, p {
+                color: #000;
+            }
+
+            p {
+                margin: 2rem 0 3rem;
+            }
+        }
+
+        .divider {
+            background: rgba(0, 0, 0, 0.15);
+            height: 100%;
+            width: 0.125rem;
+        }
+
+        .company-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            > div {
+                align-items: center;
+                display: flex;
+            }
+
+            img {
+                margin-right: 1.5rem;
+                width: 1.5rem;
+            }
+
+            span, a {
+                color: #FFF;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+
+        .boss-contact {
+            width: 30%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #FFF;
+        background-size: clamp(14rem, 48%, 21rem) auto;
+
+        .title {
+            max-width: 35rem;
+        }
+
+        .content {
+            margin-top: 4rem;
+        }
+
+        .text-container {
+            width: unset;
+
+            > h5 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .title {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .text {
+            margin-top: 2rem;
+            max-width: unset;
+        }
+
+        .company-container {
+            margin-top: 3rem;
+            padding: 2rem 1.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        //.text-container > h5 {
+        //    font-size: 1.25rem;
+        //}
+        //
+        //.title h1 {
+        //    font-size: 3rem;
+        //}
+
+        .company-container {
+            margin-top: 3rem;
+            padding: 2rem 1.5rem;
+        }
+    }
+}
