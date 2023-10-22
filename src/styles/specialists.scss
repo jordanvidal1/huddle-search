@@ -282,7 +282,7 @@
 }
 
 .prime-site .specialists {
-    background: linear-gradient(180deg, #000 0%, #1A0223 100%);
+    background: #000;
 
     .text-container {
         align-self: center;
@@ -304,10 +304,12 @@
 
     .specialists-container {
         .specialist {
+            align-items: flex-start;
+
             .specialist-img-container {
                 background: #000;
                 border-radius: 0;
-                padding: 3px;
+                padding: 0;
 
                 img {
                     background: #7E8192;
