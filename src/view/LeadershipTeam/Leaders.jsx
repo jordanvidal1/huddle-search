@@ -16,7 +16,7 @@ const Leaders = () => (
         <div className='content'>
           {LEADERS[NAMESPACE].map((leader, i) => {
             const {
-              img,
+              leaderImg,
               name,
               role,
               description,
@@ -69,7 +69,7 @@ const Leaders = () => (
                 </div>
                 <div className='img-container'>
                   <div>
-                    <img src={img} alt='specialist-img' />
+                    <img src={leaderImg} alt='specialist-img' />
                   </div>
                 </div>
               </div>

@@ -4,6 +4,9 @@ import PeteImg from '../static/huddle/pete.jpg';
 import CraigPrimeImg from '../static/prime/craig.jpg';
 import ScottPrimeImg from '../static/prime/scott.jpg';
 import PetePrimeImg from '../static/prime/pete.jpg';
+import CraigRectImg from '../static/prime/craig-rect.jpg';
+import ScottRectImg from '../static/prime/scott-rect.jpg';
+import PeteRectImg from '../static/prime/pete-rect.jpg';
 
 import HuddleSoftware from '../static/huddle/software-and-engineering.svg';
 import HuddleArchitecture from '../static/huddle/architecture.svg';
@@ -68,22 +71,23 @@ const leaderEmails = {
   huddle: {
     craig: 'craig@huddlesearch.com',
     scott: 'scott@huddlesearch.com',
-    pete: 'pete@huddlesearch.com',
+    pete: 'pete@huddlesearch.com'
   },
   unitas: {
     craig: 'craig@unitastalent.com',
     scott: 'scott@unitastalent.com',
-    pete: 'pete@unitastalent.com',
+    pete: 'pete@unitastalent.com'
   },
   prime: {
     craig: 'craig@unitastalent.com',
     scott: 'scott@unitastalent.com',
-    pete: 'pete@unitastalent.com',
-  },
-}
+    pete: 'pete@unitastalent.com'
+  }
+};
 
 const craigLeader = {
   img: NAMESPACE === 'prime' ? CraigPrimeImg : CraigImg,
+  leaderImg: NAMESPACE === 'prime' ? CraigRectImg : CraigImg,
   name: 'Craig Oliver',
   role: NAMESPACE === 'huddle' ? 'Co-Founder & CEO' : 'Co-Founder & Commercial Director',
   description: 'Craig is a proven and highly experienced recruitment entrepreneur having already founded a Global Web3 specialist recruitment agency. With over a decade of recruitment experience, guiding thousands of candidates’ careers and developing and growing many businesses by strategically building highly effective teams at scale and pace. When not scaling tech businesses, he loves spending time with his wife and two sons (ideally on holiday!) as well as getting as much time on the golf course as possible.',
@@ -95,6 +99,7 @@ const craigLeader = {
 
 const scottLeader = {
   img: NAMESPACE === 'prime' ? ScottPrimeImg : ScottImg,
+  leaderImg: NAMESPACE === 'prime' ? ScottRectImg : ScottImg,
   name: 'Scott Darby',
   role: NAMESPACE === 'huddle' ? 'Co-Founder & CCO' : 'Co-Founder & Managing Director',
   description: 'Scott has been in recruitment for over a decade, having built a very well known and respected personal brand within a multitude of specialist sectors and communities. Scott has led large scale recruitment campaigns and has also supported multiple FTSE listed, PE and VC backed C-suites on various executive hires on a retained basis. Scott is a self-confessed workaholic, and so the little down time he does get is spent with his partner, family and friends – with the odd game of golf thrown in too!',
@@ -106,6 +111,7 @@ const scottLeader = {
 
 const peteLeader = {
   img: NAMESPACE === 'prime' ? PetePrimeImg : PeteImg,
+  leaderImg: NAMESPACE === 'prime' ? PeteRectImg : PeteImg,
   name: 'Peter Wood',
   role: 'Co-Founder & CTO',
   description: `Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at ${NAMESPACE === 'huddle' ? 'Huddle' : 'Unitas'}.`,

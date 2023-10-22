@@ -176,7 +176,6 @@
 
         .img-container > div {
             background: #000;
-            border: 5px solid #000;
             border-radius: 0;
             height: 17.5625rem;
             overflow: hidden;
@@ -184,6 +183,7 @@
 
             img {
                 background: #7E8192;
+                border-radius: 0;
                 height: unset;
             }
         }
