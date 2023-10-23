@@ -224,14 +224,14 @@
     }
 
     .img-container > div {
-        border: 5px solid #000;
         border-radius: 0;
         height: 17.5625rem;
         overflow: hidden;
         padding: 0;
+        max-width: unset;
 
         img {
-            height: unset;
+            border-radius: 0;
         }
     }
 }

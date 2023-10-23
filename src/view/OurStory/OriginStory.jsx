@@ -9,6 +9,9 @@ import PrimeLogo from '../../static/prime/logo.svg';
 import Image1 from '../../static/huddle/origin-story-1.jpg';
 import Image2 from '../../static/huddle/origin-story-2.jpg';
 import Image3 from '../../static/huddle/origin-story-3.jpg';
+import PrimeImage1 from '../../static/prime/origin-story-1.jpg';
+import PrimeImage2 from '../../static/prime/origin-story-2.jpg';
+import PrimeImage3 from '../../static/prime/origin-story-3.jpg';
 
 const LOGOS = {
   huddle: HuddleLogo,
@@ -49,7 +52,7 @@ const OriginStory = () => {
               </div>
               <div className='img-container'>
                 <div>
-                  <img alt='origin-img-1' src={Image1} />
+                  <img alt='origin-img-1' src={isPrime ? PrimeImage1 : Image1} />
                 </div>
               </div>
             </div>
@@ -61,7 +64,7 @@ const OriginStory = () => {
             <div className='story story-2'>
               <div className='img-container'>
                 <div>
-                  <img alt='origin-img-2' src={Image2} />
+                  <img alt='origin-img-2' src={isPrime ? PrimeImage2 : Image2} />
                 </div>
               </div>
               <div className='text-container'>
@@ -113,7 +116,7 @@ const OriginStory = () => {
               </div>
               <div className='img-container'>
                 <div>
-                  <img alt='specialist-img' src={Image3} />
+                  <img alt='origin-img-3' src={isPrime ? PrimeImage3 : Image3} />
                 </div>
               </div>
             </div>

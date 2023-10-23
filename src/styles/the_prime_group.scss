@@ -129,6 +129,18 @@
 .prime-site .the-prime-group {
     background: #000;
 
+    .pattern {
+        background: url('../static/prime/top-bg.png') top right no-repeat, url('../static/prime/middle-bg.png') bottom left no-repeat;
+        background-size: 25%, 18%;
+        margin-bottom: -25rem;
+        mix-blend-mode: lighten;
+        padding-bottom: 25rem;
+    }
+
+    .content {
+        padding: 2rem 0;
+    }
+
     .text {
         margin: 3rem 0 6rem;
     }

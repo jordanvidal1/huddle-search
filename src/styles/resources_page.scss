@@ -65,8 +65,13 @@
 }
 
 .prime-site #content > .resources {
-    background: url('../static/prime/blog.png') top right no-repeat #000;
-    background-size: 40%;
+    background: #000;
+
+    .pattern {
+        background: url('../static/prime/blog.png') top right no-repeat;
+        background-size: 63%;
+        mix-blend-mode: lighten;
+    }
 
     .title h2 {
         color: #FFF;

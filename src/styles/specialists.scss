@@ -340,4 +340,12 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md) {
+        .specialists-container {
+            .specialist {
+                align-items: center;
+            }
+        }
+    }
 }
