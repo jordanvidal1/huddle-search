@@ -8,6 +8,9 @@ import LinkHref from './LinkHref';
 import HuddleLogo from '../../static/prime/huddle-logo-red.svg';
 import UnitasLogo from '../../static/prime/unitas-logo-red.svg';
 import SpectrumLogo from '../../static/prime/spectrum-logo-red.svg';
+import HuddleHero from '../../static/prime/tpg-hero-huddle-min.png';
+import UnitasHero from '../../static/prime/tpg-hero-unitas-min.png';
+import SpectrumHero from '../../static/prime/tpg-hero-spectrum-min.png';
 
 import CompanyIcon from '../../static/prime/company.svg';
 import PhoneIcon from '../../static/prime/phone-white.svg';
@@ -18,6 +21,12 @@ const LOGOS = {
   huddle: HuddleLogo,
   unitas: UnitasLogo,
   spectrum: SpectrumLogo
+};
+
+const IMAGES = {
+  huddle: HuddleHero,
+  unitas: UnitasHero,
+  spectrum: SpectrumHero
 };
 
 const CompanyHero = () => {
@@ -37,7 +46,7 @@ const CompanyHero = () => {
         <div className='inner-container'>
           <div className='content'>
             <div className='text-container'>
-              {/*{img && <img alt='hero-img' src={img} />}*/}
+              <img alt='hero-img' src={IMAGES[company]} />
               <div className='title'>
                 <img alt='company-logo' src={LOGOS[company]} />
                 <h1>

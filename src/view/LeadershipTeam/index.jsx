@@ -1,16 +1,23 @@
 import React from 'react';
-import {isHuddle} from '../../services/helper';
+import {NAMESPACE} from '../../data/constants';
 
 import Leaders from './Leaders';
 
 import Hero from '../shared/LeadershipHero';
 import OurStory from '../shared/OurStory';
 
-import HeroImg from '../../static/unitas/leadership.png';
+import UnitasHero from '../../static/unitas/leadership.png';
+import PrimeHero from '../../static/prime/tpg-hero-leadership-team-min.png';
+
+const IMAGES = {
+  huddle: false,
+  unitas: UnitasHero,
+  prime: PrimeHero,
+};
 
 const LeadershipTeam = () => (
   <div className='leadership-team'>
-    <Hero type='leadershipTeam' img={!isHuddle && HeroImg} />
+    <Hero type='leadershipTeam' img={IMAGES[NAMESPACE]} />
     <Leaders />
     <OurStory type='story' />
     <OurStory type='process' />

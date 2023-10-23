@@ -17,7 +17,7 @@
             position: absolute;
             left: 105%;
             top: -18rem;
-            width: 62.5rem;
+            width: 60rem;
             z-index: -5;
         }
     }
@@ -131,7 +131,7 @@
     }
 
     @include media-breakpoint-down(md) {
-        background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #FFF;
+        background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #000;
         background-size: clamp(14rem, 48%, 21rem) auto;
 
         .title {
