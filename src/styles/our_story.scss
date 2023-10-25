@@ -136,6 +136,26 @@
             color: #D3CDD0;
             font-weight: 500;
         }
+
+        @include media-breakpoint-down(md) {
+            h2 {
+                font-size: 3rem;
+            }
+
+            h5 {
+                font-weight: 500;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            h5 {
+                font-size: 1.25rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
     }
 
     .our-story-home, .our-process-home {

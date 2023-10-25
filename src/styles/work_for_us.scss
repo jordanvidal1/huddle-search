@@ -252,7 +252,7 @@
 .prime-site {
     .home, .company, .work-for-us {
         > .work-for-us {
-            background: linear-gradient(80deg, rgba(0, 0, 0, 0.95) 25.67%, rgba(0, 0, 0, 0.84) 38.84%, rgba(0, 0, 0, 0.68) 50.47%, rgba(0, 0, 0, 0.00) 75.13%), url('../static/prime/work-for-us.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
+            background: linear-gradient(80deg, rgba(0, 0, 0, 0.95) 25.67%, rgba(0, 0, 0, 0.84) 38.84%, rgba(0, 0, 0, 0.68) 50.47%, rgba(0, 0, 0, 0.00) 75.13%), url('../static/prime/work-for-us.jpeg') top center no-repeat, lightgray 50% / cover no-repeat;
             background-size: cover;
 
             .title h2 {
@@ -286,6 +286,33 @@
                 .link-container a {
                     color: #FFF;
                     font-weight: 700;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                background: linear-gradient(67deg, rgba(0, 0, 0, 0.95) 30.68%, rgba(0, 0, 0, 0.84) 50.68%, rgba(0, 0, 0, 0.68) 68.34%, rgba(0, 0, 0, 0.00) 105.79%), url('../static/prime/work-for-us.jpeg') top center no-repeat, lightgray 50% / cover no-repeat;
+
+                .title h2 {
+                    font-size: 3rem;
+                }
+
+                .grid-container > div {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                .title h2 {
+                    font-size: 2rem;
+                }
+
+                .grid-container {
+                    margin-top: 3rem;
+                }
+
+                .cv-container h5 {
+                    font-size: 1.75rem;
                 }
             }
         }
