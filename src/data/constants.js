@@ -137,6 +137,11 @@ export const LEADERS = {
     craigLeader,
     peteLeader
   ],
+  spectrum: [
+    scottLeader,
+    craigLeader,
+    peteLeader
+  ]
 };
 
 export const SPECIALISMS = {

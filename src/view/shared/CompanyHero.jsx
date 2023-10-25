@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useLocation} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
-import {COMPANY_HREFS, NAMESPACE} from '../../data/constants';
+import {COMPANY_HREFS, LEADERS, NAMESPACE} from '../../data/constants';
 import LinkHref from './LinkHref';
 
 import HuddleLogo from '../../static/prime/huddle-logo-red.svg';
@@ -13,9 +13,10 @@ import UnitasHero from '../../static/prime/tpg-hero-unitas-min.png';
 import SpectrumHero from '../../static/prime/tpg-hero-spectrum-min.png';
 
 import CompanyIcon from '../../static/prime/company.svg';
-import PhoneIcon from '../../static/prime/phone-white.svg';
-import EmailIcon from '../../static/prime/email-white.svg';
+import PhoneIcon from '../../static/prime/phone-white-thick.svg';
+import EmailIcon from '../../static/prime/email-white-thick.svg';
 import LocationIcon from '../../static/prime/visit-white.svg';
+import LinkedInIcon from '../../static/prime/linkedin-white.svg';
 
 const LOGOS = {
   huddle: HuddleLogo,
@@ -31,6 +32,7 @@ const IMAGES = {
 
 const CompanyHero = () => {
   const [company, setCompany] = useState('');
+  const [boss, setBoss] = useState({});
 
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
@@ -39,6 +41,10 @@ const CompanyHero = () => {
   useEffect(() => {
     setCompany(`${location.pathname.split('/')[2]}`);
   }, [location]);
+
+  useEffect(() => {
+    setBoss(LEADERS[company]?.[0]);
+  }, [company]);
 
   return (
     <div className='company-hero'>
@@ -92,11 +98,11 @@ const CompanyHero = () => {
                 </p>
                 <div className='company-contact'>
                   <div>
-                    <img
-                      alt='company-icon'
-                      src={CompanyIcon}
-                    />
                     <LinkHref href={COMPANY_HREFS[company]}>
+                      <img
+                        alt='company-icon'
+                        src={CompanyIcon}
+                      />
                       {t(`${NAMESPACE}:companyHero:contact:company:${company}`)}
                     </LinkHref>
                   </div>
@@ -105,8 +111,8 @@ const CompanyHero = () => {
                     <span>{t(`${NAMESPACE}:companyHero:contact:phone:${company}`)}</span>
                   </div>
                   <div>
-                    <img alt='email-icon' src={EmailIcon} />
                     <a href={`mailto:${t(`${NAMESPACE}:companyHero:contact:email:${company}`)}`}>
+                      <img alt='email-icon' src={EmailIcon} />
                       <span>
                         {t(`${NAMESPACE}:companyHero:contact:email:${company}`)}
                       </span>
@@ -118,57 +124,59 @@ const CompanyHero = () => {
                   </div>
                 </div>
               </div>
-              <div className='divider' />
-              <div className='boss-content'>
-                <h5>
-                  {t(`${NAMESPACE}:companyHero:boss:title`)}
-                </h5>
-                {/*<div key={i} className='specialist'>*/}
-                {/*  <div className='specialist-img-container'>*/}
-                {/*    <img alt='specialist-img' src={img} />*/}
-                {/*  </div>*/}
-                {/*  <div className='specialist-details'>*/}
-                {/*    <h5>*/}
-                {/*      {name}*/}
-                {/*    </h5>*/}
-                {/*    <span>*/}
-                {/*        {role}*/}
-                {/*      </span>*/}
-                {/*    <p>*/}
-                {/*      {description}*/}
-                {/*    </p>*/}
-                {/*  </div>*/}
-                {/*  <div className='specialist-contact'>*/}
-                {/*    {number && (*/}
-                {/*      <div>*/}
-                {/*        <img*/}
-                {/*          alt='phone-number-icon'*/}
-                {/*          src={phoneIcon}*/}
-                {/*        />*/}
-                {/*        <span>{number}</span>*/}
-                {/*      </div>*/}
-                {/*    )}*/}
-                {/*    <div>*/}
-                {/*      <a href={`mailto:${email}`}>*/}
-                {/*        <img*/}
-                {/*          alt='email-icon'*/}
-                {/*          src={emailIcon}*/}
-                {/*        />*/}
-                {/*        <span>{email}</span>*/}
-                {/*      </a>*/}
-                {/*    </div>*/}
-                {/*    <div>*/}
-                {/*      <a href={linkedin} rel='noreferrer' target='_blank'>*/}
-                {/*        <img*/}
-                {/*          alt='linkedin-icon'*/}
-                {/*          src={linkedInIcon}*/}
-                {/*        />*/}
-                {/*        <span>LinkedIn profile</span>*/}
-                {/*      </a>*/}
-                {/*    </div>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
-              </div>
+              {boss && (
+                <div className='boss-content'>
+                  <div className='divider' />
+                  <h5>
+                    {t(`${NAMESPACE}:companyHero:boss:title`)}
+                  </h5>
+                  <div className='boss'>
+                    <div className='boss-img-container'>
+                      <img alt='boss-img' src={boss.img} />
+                    </div>
+                    <div className='boss-details'>
+                      <h5>
+                        {boss.name}
+                      </h5>
+                      <span>
+                        {boss.role}
+                      </span>
+                      <p>
+                        {boss.description}
+                      </p>
+                    </div>
+                    <div className='boss-contact'>
+                      {boss.number && (
+                        <div>
+                          <img
+                            alt='phone-number-icon'
+                            src={PhoneIcon}
+                          />
+                          <span>{boss.number}</span>
+                        </div>
+                      )}
+                      <div>
+                        <a href={`mailto:${boss.email}`}>
+                          <img
+                            alt='email-icon'
+                            src={EmailIcon}
+                          />
+                          <span>{boss.email}</span>
+                        </a>
+                      </div>
+                      <div>
+                        <a href={boss.linkedin} rel='noreferrer' target='_blank'>
+                          <img
+                            alt='linkedin-icon'
+                            src={LinkedInIcon}
+                          />
+                          <span>LinkedIn profile</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
