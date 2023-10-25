@@ -281,71 +281,77 @@
     }
 }
 
-.prime-site .specialists {
-    background: #000;
+.prime-site {
+    .specialists {
+        background: #000;
 
-    .text-container {
-        align-self: center;
-        max-width: 51.625rem;
-        text-align: center;
-    }
-
-    .title h2 {
-        font-family: ArdelaEdgeX02-Medium;
-        font-size: 3.5rem;
-        font-weight: 400;
-    }
-
-    .text p {
-        color: #D3CDD0;
-        font-family: Plus Jakarta Sans;
-        font-weight: 500;
-    }
-
-    .specialists-container {
-        .specialist {
-            align-items: flex-start;
-
-            .specialist-img-container {
-                background: #000;
-                border-radius: 0;
-                padding: 0;
-
-                img {
-                    background: #7E8192;
-                    border-radius: 0;
-                }
-            }
-
-            .specialist-details {
-                h5 {
-                    font-family: ArdelaEdgeX02-Black;
-                    font-weight: 400;
-                }
-
-                span {
-                    color: rgba(211, 205, 208, 0.70);
-                }
-            }
-
-            p {
-                color: #D3CDD0;
-            }
-
-            .specialist-contact {
-                span {
-                    color: #FFF;
-                    font-weight: 700;
-                }
-            }
+        .text-container {
+            align-self: center;
+            max-width: 51.625rem;
+            text-align: center;
         }
-    }
 
-    @include media-breakpoint-down(md) {
+        .title h2 {
+            font-family: ArdelaEdgeX02-Medium;
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+
+        .text p {
+            color: #D3CDD0;
+            font-family: Plus Jakarta Sans;
+            font-weight: 500;
+        }
+
         .specialists-container {
             .specialist {
-                align-items: center;
+                align-items: flex-start;
+
+                .specialist-img-container {
+                    background: #000;
+                    border-radius: 0;
+                    padding: 0;
+
+                    img {
+                        background: #7E8192;
+                        border-radius: 0;
+                    }
+                }
+
+                .specialist-details {
+                    h5 {
+                        font-family: ArdelaEdgeX02-Black;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        color: rgba(211, 205, 208, 0.70);
+                    }
+                }
+
+                p {
+                    color: #D3CDD0;
+                }
+
+                .specialist-contact {
+                    span {
+                        color: #FFF;
+                        font-weight: 700;
+                    }
+                }
             }
         }
+
+        @include media-breakpoint-down(md) {
+            .specialists-container {
+                .specialist {
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .home .specialists .content {
+        padding: 2rem 0;
     }
 }

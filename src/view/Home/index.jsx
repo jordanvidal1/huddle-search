@@ -21,6 +21,7 @@ const Home = () => isPrime
       <Leaders />
       <OurStory type='story' />
       <OurStory type='process' />
+      <WorkForUs home />
     </div>
   ) : (
     <div className='home'>

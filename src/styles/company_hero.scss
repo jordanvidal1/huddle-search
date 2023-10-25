@@ -2,6 +2,10 @@
     background: #000;
     overflow: hidden;
 
+    .inner-container {
+        padding-bottom: 0;
+    }
+
     .content {
         margin-top: 2rem;
     }
