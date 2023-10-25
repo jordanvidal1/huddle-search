@@ -330,6 +330,10 @@
         }
 
         @include media-breakpoint-down(md) {
+            .pattern {
+                background: none;
+            }
+
             .grid-container > div {
                 flex-basis: 100%;
                 max-width: 100%;

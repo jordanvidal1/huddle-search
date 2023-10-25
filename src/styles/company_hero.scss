@@ -148,7 +148,7 @@
             .boss {
                 margin-top: 3rem;
 
-                img {
+                .boss-img-container img {
                     width: 9.375rem;
                 }
 
@@ -196,15 +196,15 @@
     }
 
     @include media-breakpoint-down(md) {
-        background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #000;
-        background-size: clamp(14rem, 48%, 21rem) auto;
+        //background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #000;
+        //background-size: clamp(14rem, 48%, 21rem) auto;
 
         .title {
-            max-width: 35rem;
+            margin-top: 0;
         }
 
         .content {
-            margin-top: 4rem;
+            margin-top: 0;
         }
 
         .text-container {
@@ -215,35 +215,50 @@
             }
         }
 
-        .title {
-            h1 {
-                font-size: 4rem;
-            }
+        .title h1 {
+            font-size: 4rem;
         }
 
         .text {
-            margin-top: 2rem;
+            margin-top: 3rem;
             max-width: unset;
         }
 
         .company-container {
-            margin-top: 3rem;
-            padding: 2rem 1.5rem;
+            flex-direction: column;
+            gap: 4rem;
+            margin-top: 4rem;
+            padding: 4rem 1.5rem;
+
+            .divider {
+                height: 0.125rem;
+                width: 100%;
+            }
+
+            .boss-content {
+                max-width: unset;
+                padding-top: 4rem;
+                padding-left: 0;
+
+                h5 {
+                    font-size: 1.75rem;
+                }
+
+                .boss .boss-img-container img {
+                    min-width: 9.375rem;
+                    width: 50%;
+                }
+            }
         }
     }
 
     @include media-breakpoint-down(sm) {
-        //.text-container > h5 {
-        //    font-size: 1.25rem;
-        //}
-        //
-        //.title h1 {
-        //    font-size: 3rem;
-        //}
-
         .company-container {
-            margin-top: 3rem;
-            padding: 2rem 1.5rem;
+            .company-content {
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
         }
     }
 }
