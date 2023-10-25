@@ -20,10 +20,10 @@ import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
 import UnitasCloseButton from '../../static/unitas/close-button.svg';
 
 import PrimeLogo from '../../static/prime/full-logo.svg';
-import PrimeMenubar from '../../static/huddle/menubar.svg';
+import PrimeMenubar from '../../static/prime/menubar.svg';
 import PrimeDropdownArrow from '../../static/prime/header-dropdown-arrow.svg';
 import PrimeHeaderArrow from '../../static/prime/header-arrow.svg';
-import PrimeCloseButton from '../../static/huddle/close-button.svg';
+import PrimeCloseButton from '../../static/prime/close-button.svg';
 
 const ICONS = {
   huddle: {

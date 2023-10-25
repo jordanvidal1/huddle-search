@@ -173,6 +173,21 @@
                 height: 17.5625rem;
             }
         }
+
+        @include media-breakpoint-down(md) {
+            .content {
+                flex-direction: column-reverse !important;
+            }
+
+            .img-container {
+                padding: 0;
+
+                img {
+                    height: unset;
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .our-process-home .content {

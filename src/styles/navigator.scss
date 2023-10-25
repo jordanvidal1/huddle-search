@@ -415,6 +415,7 @@ div:not(.content) > .header {
     align-items: flex-start;
     background: none;
     gap: 2rem;
+    justify-content: flex-start;
     padding: 0;
     position: relative;
     margin-top: 2rem;
@@ -584,10 +585,15 @@ div:not(.content) > .header {
   }
 
   .sidebar {
+    .sidebar-container {
+      border-right: 2px solid #D3CDD0;
+      background: #163BF2;
+    }
+
     .nav-list {
       a, span {
-        color: #3A84C9;
-        font-weight: 600;
+        color: #FFF;
+        font-weight: 700;
       }
     }
   }
