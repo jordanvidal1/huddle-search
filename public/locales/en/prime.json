@@ -5,7 +5,19 @@
       "part2": "REIMAGINED"
     },
     "text": "A group of recruitment companies dedicated to redefining talent acquisition with cutting-edge, in-house proprietary artificial intelligence technology.",
-    "subText": "Proudly part of The Prime Group"
+    "subText": "Proudly part of The Prime Group",
+    "ourStory": {
+      "path": "/our-story",
+      "title": "Seasoned pros dedicate futures to redefining talent acquisition",
+      "desc": "Lorem ipsum dolor sit amet consectetur. Purus vulputate scele risque tellus massa purus velit. In ullamcorper gravida ut morbimet diam nisl gravida porttitor neque.",
+      "button": "Find out more"
+    },
+    "ourProcess": {
+      "path": "/our-process",
+      "title": "Utilising the power of AI to help clients at extraordinary speed & scale",
+      "desc": "Lorem ipsum dolor sit amet consectetur. Purus vulputate scele risque tellus massa purus velit. In ullamcorper gravida ut morbimet diam nisl gravida porttitor neque.",
+      "button": "Find out more"
+    }
   },
   "workForUs": {
     "title": {

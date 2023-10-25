@@ -12,14 +12,15 @@ import EmbeddedTalent from '../shared/EmbeddedTalent';
 
 import ThePrimeGroup from '../ThePrimeGroup';
 import Leaders from '../shared/Specialists';
+import OurStory from './OurStory';
 
 const Home = () => isPrime
   ? (
     <div className='home'>
       <ThePrimeGroup />
       <Leaders />
-      {/* OUR STORY */}
-      {/* OUR PROCESS */}
+      <OurStory type='story' />
+      <OurStory type='process' />
     </div>
   ) : (
     <div className='home'>
