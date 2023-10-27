@@ -196,9 +196,6 @@
     }
 
     @include media-breakpoint-down(md) {
-        //background: url('../static/huddle/leadership.png') top -1.5rem right -1.5rem no-repeat #000;
-        //background-size: clamp(14rem, 48%, 21rem) auto;
-
         .title {
             margin-top: 0;
         }
@@ -209,6 +206,13 @@
 
         .text-container {
             width: unset;
+
+            > img {
+                left: unset;
+                right: -13%;
+                top: -5rem;
+                width: 40%;
+            }
 
             > h5 {
                 font-size: 1.75rem;
