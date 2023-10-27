@@ -8,12 +8,14 @@ const huddleRouter = require('./huddle-sitemap-routes').default;
 const unitasRouter = require('./unitas-sitemap-routes').default;
 const primeRouter = require('./prime-sitemap-routes').default;
 
-const router = process.env.REACT_APP_SITE_NAME === 'huddle'
-  ? huddleRouter
-  : unitasRouter;
+const ROUTERS = {
+  huddle: huddleRouter,
+  unitas: unitasRouter,
+  prime: primeRouter
+};
 
 const generateSitemap = () => (
-  new Sitemap(router)
+  new Sitemap(ROUTERS[process.env.REACT_APP_SITE_NAME])
   .build(`https://${process.env.REACT_APP_SITE_URL}`)
   .save(`./public/sitemap.xml`)
 );
