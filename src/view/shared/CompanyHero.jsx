@@ -7,7 +7,7 @@ import LinkHref from './LinkHref';
 
 import HuddleLogo from '../../static/prime/huddle-logo-red.svg';
 import UnitasLogo from '../../static/prime/unitas-logo-red.svg';
-import SpectrumLogo from '../../static/prime/spectrum-logo-red.svg';
+import SpectrumLogo from '../../static/prime/spectrum-logo-red.png';
 import HuddleHero from '../../static/prime/tpg-hero-huddle-min.png';
 import UnitasHero from '../../static/prime/tpg-hero-unitas-min.png';
 import SpectrumHero from '../../static/prime/tpg-hero-spectrum-min.png';

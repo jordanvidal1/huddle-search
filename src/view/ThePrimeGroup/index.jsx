@@ -17,7 +17,7 @@ import Spectrum from '../../static/huddle/prime-spectrum.svg';
 
 import HuddlePink from '../../static/prime/huddle-logo-pink.svg';
 import UnitasPink from '../../static/prime/unitas-logo-pink.svg';
-import SpectrumPink from '../../static/prime/spectrum-logo-pink.svg';
+import SpectrumPink from '../../static/prime/spectrum-logo-pink.png';
 
 const NormalLogos = () => (
   <div className='logos'>
