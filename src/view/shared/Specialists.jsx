@@ -15,7 +15,7 @@ import UnitasEmailIcon from '../../static/unitas/email-white.svg';
 import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
 
 const Specialists = props => {
-  const {type = 'leadership', name, specialists, executive} = props;
+  const {type = 'leadership', name, specialists, company, executive} = props;
 
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
@@ -26,6 +26,8 @@ const Specialists = props => {
   const phoneIcon = isHuddle ? huddlePhoneIcon : UnitasPhoneIcon;
   const emailIcon = isHuddle ? huddleEmailIcon : UnitasEmailIcon;
   const linkedInIcon = isHuddle ? huddleLinkedInIcon : UnitasLinkedInIcon;
+
+  const leaders = specialists || LEADERS[company] || LEADERS[NAMESPACE];
 
   return (
     <div className='specialists'>
@@ -48,7 +50,7 @@ const Specialists = props => {
               </div>
             </div>
             <div className='specialists-container'>
-              {(specialists || LEADERS[NAMESPACE]).map((specialist, i) => {
+              {leaders.map((specialist, i) => {
                 const {
                   img,
                   name,

@@ -79,9 +79,9 @@ const leaderEmails = {
     pete: 'pete@unitastalent.com'
   },
   prime: {
-    craig: 'craig@unitastalent.com',
-    scott: 'scott@unitastalent.com',
-    pete: 'pete@unitastalent.com'
+    craig: 'craig@theprimegroup.ai',
+    scott: 'scott@theprimegroup.ai',
+    pete: 'pete@theprimegroup.ai'
   }
 };
 

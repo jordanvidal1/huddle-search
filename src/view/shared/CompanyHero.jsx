@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
 import {COMPANY_HREFS, LEADERS, NAMESPACE} from '../../data/constants';
@@ -30,17 +29,10 @@ const IMAGES = {
   spectrum: SpectrumHero
 };
 
-const CompanyHero = () => {
-  const [company, setCompany] = useState('');
+const CompanyHero = ({company}) => {
   const [boss, setBoss] = useState({});
 
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    setCompany(`${location.pathname.split('/')[2]}`);
-  }, [location]);
 
   useEffect(() => {
     setBoss(LEADERS[company]?.[0]);
