@@ -402,6 +402,18 @@ input {
   color: #65de5c !important;
 }
 
+.prime-site {
+  .error-msg {
+    color: #f6ff00 !important;
+    font-weight: 700;
+  }
+
+  .success-msg {
+    color: #2cff00 !important;
+    font-weight: 700;
+  }
+}
+
 #fallback {
   height: 100vh;
 }
