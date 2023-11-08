@@ -410,7 +410,7 @@
   },
   "resources": {
     "title": "Related resources",
-    "link": "Browse all{{name}}resources"
+    "link": "Browse all {{name}}resources"
   },
   "infoContainer": {
     "vacancy": {

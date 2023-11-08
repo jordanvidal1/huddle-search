@@ -19,7 +19,7 @@ const ICONS = {
 const Resources = props => {
   const {t, name, resources, isLoading} = props;
 
-  const linkName = name ? ` ${name } ` : '';
+  const linkName = name ? `${name} ` : '';
 
   return (
     <div className='box resources-box'>
