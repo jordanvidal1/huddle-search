@@ -84,3 +84,18 @@
         }
     }
 }
+
+.prime-site {
+    .related-resources, .resource-page {
+        .resources-box {
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+        }
+
+        .resources-header a {
+            color: #EB52F9;
+            font-weight: 700;
+        }
+    }
+}

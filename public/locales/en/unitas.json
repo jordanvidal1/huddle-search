@@ -408,6 +408,10 @@
       }
     }
   },
+  "resources": {
+    "title": "Related resources",
+    "link": "Browse all{{name}}resources"
+  },
   "infoContainer": {
     "vacancy": {
       "title": "Have a vacancy to fill?",

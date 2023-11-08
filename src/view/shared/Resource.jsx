@@ -55,7 +55,10 @@ const Resource = props => {
             dangerouslySetInnerHTML={{ __html: excerpt }}
           />
           <div className='btn-container'>
-            <Link to={`/resources/${slug}`} className='btn btn-primary'>
+            <Link
+              to={`/${isPrime ? 'blog' : 'resources'}/${slug}`}
+              className='btn btn-primary'
+            >
               Read more
             </Link>
           </div>

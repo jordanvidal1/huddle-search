@@ -183,7 +183,7 @@
       "title": "Blog"
     },
     "email": {
-      "title": "Receive email alerts",
+      "title": "Receive alerts",
       "text": "Be the first to know when we announce new roles, service updates, and other communications.",
       "button": "Subscribe",
       "terms": {
@@ -202,6 +202,10 @@
         "text": "Easily share this article via social media, WhatsApp, or email."
       }
     }
+  },
+  "resources": {
+    "title": "Related posts",
+    "link": "Browse all posts"
   },
   "visitContainer": {
     "phone": {

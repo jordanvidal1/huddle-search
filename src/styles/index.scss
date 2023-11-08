@@ -370,11 +370,10 @@ input {
   .input-container {
     align-items: center;
     align-self: stretch;
-    border-radius: 1000px;
-    background: #FFF;
     display: flex;
 
     input {
+      background: #FFF;
       border-radius: 62.5rem;
       padding: 1rem;
     }

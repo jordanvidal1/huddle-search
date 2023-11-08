@@ -34,6 +34,7 @@
             img {
                 margin-right: 1rem;
                 transform: rotate(180deg);
+                width: 1.25rem;
             }
         }
 
@@ -91,6 +92,15 @@
         }
 
         .text {
+            .wp-block-heading {
+                color: #7E8192;
+                font-family: Montserrat;
+                font-size: 1.5rem;
+                font-weight: 800;
+                line-height: 2.25rem; /* 150% */
+                margin: 1rem 0;
+            }
+
             p {
                 color: #1A1A1A;
                 font-family: Montserrat;
@@ -199,6 +209,10 @@
                     font-size: 1rem;
                     font-weight: 800;
                     margin-left: 0.75rem;
+                }
+
+                img {
+                    width: 1.25rem;
                 }
             }
         }
@@ -335,5 +349,184 @@
     .title h2 {
         color: #00400E;
         font-weight: 900;
+    }
+}
+
+.prime-site #content > .resource-page {
+    background: #000;
+
+    .title {
+        margin-bottom: 2rem;
+
+        h2 {
+            color: #FFF;
+            font-family: ArdelaEdgeX02-Black;
+        }
+    }
+
+    .resource-content {
+        > a {
+            color: #EB52F9;
+            font-weight: 700;
+        }
+
+        .resource-details {
+            flex-direction: row-reverse;
+
+            .resource-details-inner {
+                background: none;
+                border-radius: 0;
+                gap: 1rem;
+                height: unset;
+                padding: 0;
+
+                &:first-child {
+                    justify-content: flex-end;
+                }
+
+                span {
+                    color: #D3CDD0;
+                    font-size: 1rem;
+                }
+
+                span:first-child {
+                    color: rgba(211, 205, 208, 0.70);
+                }
+            }
+        }
+
+        .featured-img .img-container {
+            background: #7E8192;
+            border-radius: 0;
+
+            img {
+                border-radius: 0;
+            }
+        }
+
+        .text {
+            .wp-block-heading {
+                color: #D3CDD0;
+                font-family: Plus Jakarta Sans;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 2.25rem; /* 150% */
+                margin: 2rem 0 1.5rem;
+            }
+
+            p {
+                color: rgba(211, 205, 208, 0.70);
+                font-family: Plus Jakarta Sans;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.75rem;
+
+                strong {
+                    color: #D3CDD0;
+                    font-family: Plus Jakarta Sans;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 2.25rem; /* 150% */
+                    margin: 2rem 0 1.5rem;
+                }
+
+                &:has(strong) {
+                    margin: 2rem 0 1.5rem;
+                }
+
+                &:first-child {
+                    color: #D3CDD0;
+                    font-size: 1.25rem;
+                    line-height: 2rem; /* 160% */
+                }
+            }
+        }
+
+        .resource-tags .resource-tag {
+            border-radius: 62.5rem;
+            background: rgba(235, 82, 249, 0.30);
+            padding: 0.4375rem 1rem 0.5625rem 1rem;
+
+            span {
+                color: #F689FF;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .resource-info {
+        .resource-author {
+            border: 1px solid #747474;
+            border-radius: 0;
+            background: #101010;
+
+            > img {
+                border-radius: 0;
+            }
+
+            h6 {
+                color: #D3CDD0;
+                font-family: ArdelaEdgeX02-Black;
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+
+            span {
+                color: rgba(211, 205, 208, 0.70);
+            }
+
+            .author-contact span {
+                color: #FFF;
+                font-weight: 700;
+            }
+        }
+
+        .resource-share {
+            background: #EB52F9;
+            border-radius: 0;
+            padding: 2rem;
+
+            h5 {
+                color: #000;
+                font-family: ArdelaEdgeX02-Black;
+            }
+
+            span {
+                color: #000;
+            }
+
+            .action-container {
+                input {
+                    background: rgba(0, 0, 0, 0.30);
+                    border-radius: 0;
+                    color: #FFF;
+                    font-weight: 500;
+                    padding: 1rem 1.5rem 1.125rem 1.5rem;
+
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: rgba(255, 255, 255, 0.70);
+                    }
+
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: rgba(255, 255, 255, 0.70);
+                    }
+
+                    &::-ms-input-placeholder { /* Microsoft Edge */
+                        color: rgba(255, 255, 255, 0.70);
+                    }
+                }
+
+                .btn {
+                    background: #FFF;
+                    color: #000;
+                    padding: 0.75rem 2rem 0.875rem 2rem;
+                }
+
+                a {
+                    color: #000;
+                }
+            }
+        }
     }
 }

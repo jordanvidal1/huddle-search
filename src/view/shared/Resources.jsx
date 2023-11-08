@@ -1,25 +1,35 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-import {isHuddle} from '../../services/helper';
+import {NAMESPACE} from '../../data/constants';
+import {isPrime} from '../../services/helper';
 import Resource from './Resource';
 import Loader from './Loader';
 
-import ArrowIcon from '../../static/huddle/arrow.svg';
+import HuddleArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
+import PrimeArrowIcon from '../../static/prime/arrow.svg';
+
+const ICONS = {
+  huddle: HuddleArrowIcon,
+  unitas: UnitasArrowIcon,
+  prime: PrimeArrowIcon
+};
 
 const Resources = props => {
-  const {name, resources, isLoading} = props;
+  const {t, name, resources, isLoading} = props;
+
+  const linkName = name ? ` ${name } ` : '';
 
   return (
     <div className='box resources-box'>
       <div className='resources-header'>
         <h3>
-          Related resources
+          {t(`${NAMESPACE}:resources:title`)}
         </h3>
-        <Link to='/resources'>
-          {`Browse all ${name ? `${name} ` : ''}resources`}
-          <img alt='arrow' src={isHuddle ? ArrowIcon : UnitasArrowIcon} />
+        <Link to={isPrime ? '/blog' : '/resources'}>
+          {t(`${NAMESPACE}:resources:link`, {name: linkName})}
+          <img alt='arrow' src={ICONS[NAMESPACE]} />
         </Link>
       </div>
       {isLoading && resources.length < 1 ? <Loader />

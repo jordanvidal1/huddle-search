@@ -5,17 +5,46 @@ import cx from 'classnames';
 import moment from 'moment';
 import {capitalize, Grid} from '@material-ui/core';
 import {LEADERS, NAMESPACE} from '../../data/constants';
+import {isPrime} from '../../services/helper';
 import useWordPress from '../../services/hooks/useWordPress';
 import Loader from '../shared/Loader';
 import Resources from '../shared/Resources';
-import Roles from '../shared/Roles';
+// import Roles from '../shared/Roles';
 import Share from '../shared/Share';
 import Subscribe from '../shared/Subscribe';
 
-import ArrowIcon from '../../static/huddle/arrow.svg';
-import PhoneIcon from '../../static/huddle/phone-number.svg';
-import EmailIcon from '../../static/huddle/email.svg';
-import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
+import HuddleArrowIcon from '../../static/huddle/arrow.svg';
+import HuddlePhoneIcon from '../../static/huddle/phone-number.svg';
+import HuddleEmailIcon from '../../static/huddle/email.svg';
+import HuddleLinkedInIcon from '../../static/huddle/linkedin-pink.svg';
+import HuddleLinkedInFilled from '../../static/huddle/linkedin.svg';
+
+import PrimeArrowIcon from '../../static/prime/arrow.svg';
+import PrimePhoneIcon from '../../static/prime/phone-white.svg';
+import PrimeEmailIcon from '../../static/prime/email.svg';
+import PrimeLinkedInIcon from '../../static/prime/linkedin-white.svg';
+import PrimeLinkedInFilled from '../../static/prime/linkedin-white-filled.svg';
+
+const ICONS = {
+  huddle: {
+    arrow: HuddleArrowIcon,
+    phone: HuddlePhoneIcon,
+    email: HuddleEmailIcon,
+    linkedin: HuddleLinkedInIcon,
+    linkedinFilled: HuddleLinkedInFilled
+  },
+  // unitas: {
+  //   arrow: UnitasArrowIcon,
+  //   phone: UnitasPhoneIcon
+  // },
+  prime: {
+    arrow: PrimeArrowIcon,
+    phone: PrimePhoneIcon,
+    email: PrimeEmailIcon,
+    linkedin: PrimeLinkedInIcon,
+    linkedinFilled: PrimeLinkedInFilled
+  }
+};
 
 const Resource = () => {
   const {
@@ -53,8 +82,8 @@ const Resource = () => {
 
   const renderBlogComponent = () => (
     <div className='resource-content'>
-      <Link to='/resources'>
-        <img alt='back-arrow' src={ArrowIcon} />
+      <Link to={isPrime ? '/blog' : '/resources'}>
+        <img alt='back-arrow' src={ICONS[NAMESPACE].arrow} />
         Back to blog
       </Link>
       <div className='title'>
@@ -101,7 +130,7 @@ const Resource = () => {
               <div>
                 <img
                   alt='phone-number-icon'
-                  src={PhoneIcon}
+                  src={ICONS[NAMESPACE].phone}
                 />
                 <span>{author?.number}</span>
               </div>
@@ -110,7 +139,7 @@ const Resource = () => {
               <a href={`mailto:email`}>
                 <img
                   alt='email-icon'
-                  src={EmailIcon}
+                  src={ICONS[NAMESPACE].email}
                 />
                 <span>{author?.email}</span>
               </a>
@@ -119,7 +148,7 @@ const Resource = () => {
               <a href={author?.linkedin} rel='noreferrer' target='_blank'>
                 <img
                   alt='linkedin-icon'
-                  src={LinkedInIcon}
+                  src={ICONS[NAMESPACE].linkedin}
                 />
                 <span>LinkedIn profile</span>
               </a>
@@ -127,7 +156,7 @@ const Resource = () => {
           </div>
         </div>
       </div>
-      <Share t={t} />
+      <Share t={t} icon={ICONS[NAMESPACE].linkedinFilled} />
       <Subscribe t={t} />
     </div>
   );
@@ -150,14 +179,12 @@ const Resource = () => {
               </Grid>
               {relatedResources?.length > 0 && (
                 <Grid item xs={12}>
-                  <Resources
-                    resources={relatedResources}
-                  />
+                  <Resources t={t} resources={relatedResources} />
                 </Grid>
               )}
-              <Grid item xs={12}>
-                <Roles />
-              </Grid>
+              {/*<Grid item xs={12}>*/}
+              {/*  <Roles />*/}
+              {/*</Grid>*/}
             </Grid>
           </div>
         </div>
