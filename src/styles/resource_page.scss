@@ -347,8 +347,93 @@
 
 .unitas-site #content > .resource-page {
     .title h2 {
-        color: #00400E;
         font-weight: 900;
+    }
+
+    .resource-content {
+        > a {
+            color: #C57B36;
+            font-weight: 600;
+        }
+
+        .text {
+            .wp-block-heading {
+                color: #7E8192;
+                font-family: Poppins;
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 2.25rem; /* 150% */
+                margin: 2rem 0 1.5rem;
+            }
+
+            p {
+                color: #1A1A1A;
+                font-family: Poppins;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.75rem;
+
+                strong {
+                    color: #7E8192;
+                    font-family: Poppins;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 2.25rem; /* 150% */
+                    margin: 2rem 0 1.5rem;
+                }
+
+                &:has(strong) {
+                    margin: 2rem 0 1.5rem;
+                }
+
+                &:first-child {
+                    color: #7E8192;
+                    font-size: 1.25rem;
+                    line-height: 2rem; /* 160% */
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    .resource-info {
+        .resource-author {
+            h6 {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+
+            .author-contact {
+                span {
+                    color: #1A1A1A;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .resource-share {
+            border-radius: 1.125rem;
+            background: #00400E;
+
+            .action-container {
+                input {
+                    height: 3.8125rem;
+                    padding: 1.0625rem 1.5rem;
+                }
+
+                .btn {
+                    padding: 0.8125rem 2rem;
+                    min-height: 3.5rem;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .title h2 {
+            font-size: 3rem;
+        }
     }
 }
 

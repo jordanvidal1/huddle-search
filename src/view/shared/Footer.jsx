@@ -27,7 +27,7 @@ import UnitasLogo from '../../static/unitas/full-logo.svg';
 import UnitasPhone from '../../static/unitas/phone-number.svg';
 import UnitasEmail from '../../static/unitas/email.svg';
 import UnitasLocation from '../../static/unitas/location.svg';
-import UnitasLinkedIn from '../../static/unitas/linkedin.svg';
+import UnitasLinkedIn from '../../static/unitas/linkedin-filled.svg';
 // import UnitasTwitter from '../../static/unitas/twitter.svg';
 // import UnitasFacebook from '../../static/unitas/facebook.svg';
 // import UnitasInstagram from '../../static/unitas/instagram.svg';

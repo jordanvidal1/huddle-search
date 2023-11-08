@@ -19,6 +19,12 @@ import HuddleEmailIcon from '../../static/huddle/email.svg';
 import HuddleLinkedInIcon from '../../static/huddle/linkedin-pink.svg';
 import HuddleLinkedInFilled from '../../static/huddle/linkedin.svg';
 
+import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
+import UnitasPhoneIcon from '../../static/unitas/phone-number.svg';
+import UnitasEmailIcon from '../../static/unitas/email.svg';
+import UnitasLinkedInIcon from '../../static/unitas/linkedin.svg';
+import UnitasLinkedInFilled from '../../static/unitas/linkedin-filled.svg';
+
 import PrimeArrowIcon from '../../static/prime/arrow.svg';
 import PrimePhoneIcon from '../../static/prime/phone-white.svg';
 import PrimeEmailIcon from '../../static/prime/email.svg';
@@ -33,10 +39,13 @@ const ICONS = {
     linkedin: HuddleLinkedInIcon,
     linkedinFilled: HuddleLinkedInFilled
   },
-  // unitas: {
-  //   arrow: UnitasArrowIcon,
-  //   phone: UnitasPhoneIcon
-  // },
+  unitas: {
+    arrow: UnitasArrowIcon,
+    phone: UnitasPhoneIcon,
+    email: UnitasEmailIcon,
+    linkedin: UnitasLinkedInIcon,
+    linkedinFilled: UnitasLinkedInFilled
+  },
   prime: {
     arrow: PrimeArrowIcon,
     phone: PrimePhoneIcon,
