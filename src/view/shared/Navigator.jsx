@@ -152,7 +152,7 @@ const routes = {
   prime: primeRoutes
 };
 
-const groupedDropdowns = ['sectors', 'specialisms'];
+const groupedDropdowns = ['Sectors', 'Specialisms'];
 
 const Navigator = ({
   children
