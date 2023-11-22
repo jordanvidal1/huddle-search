@@ -239,11 +239,9 @@
     "ourStory": {
       "path": "/our-story",
       "title": {
-        "title": {
-          "part1": "Three leaders come together to reimagine recruitment",
-          "part2": "",
-          "part3": ""
-        }
+        "part1": "Three leaders come together to reimagine recruitment",
+        "part2": "",
+        "part3": ""
       },
       "desc": "Our company is the culmination of our three founders' extensive career journeys. In establishing Unitas, they have formed a business committed to the innovation of recruitment in finance.",
       "info": {
