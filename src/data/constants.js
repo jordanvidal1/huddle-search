@@ -244,7 +244,7 @@ export const SPECIALISMS = {
 export const SECTORS = {
   huddle: [
     {
-      name: 'Banking, Financial Services, Asset Management',
+      name: 'Banking, Finances, Assets',
       path: '/sectors/banking-financial-services-asset-management',
       icon: HuddleBanking
     },

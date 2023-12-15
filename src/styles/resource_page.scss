@@ -101,6 +101,10 @@
                 margin: 1rem 0;
             }
 
+            .wp-block-separator {
+                display: none;
+            }
+
             p {
                 color: #1A1A1A;
                 font-family: Montserrat;
@@ -117,7 +121,7 @@
                 }
 
                 &:has(strong) {
-                    margin: 1rem 0;
+                    margin: 2rem 0 1rem;
                 }
             }
 
