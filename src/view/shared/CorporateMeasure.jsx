@@ -3,20 +3,12 @@ import {useTranslation} from 'react-i18next';
 import {NAMESPACE} from '../../data/constants';
 import {isHuddle} from '../../services/helper';
 
-import HuddleCorporateHero from '../../static/huddle/contract-hires.png';
-import HuddleDiversityHero from '../../static/huddle/contract-hires.png';
-import UnitasCorporateHero from '../../static/unitas/corporate.png';
-import UnitasDiversityHero from '../../static/unitas/corporate.png';
+import HuddleCorporateHero from '../../static/huddle/corporate-measure.png';
+import HuddleDiversityHero from '../../static/huddle/diversity-measure.png';
 
 const IMAGES = {
-  huddle: {
-    corporate: HuddleCorporateHero,
-    diversity: HuddleDiversityHero
-  },
-  unitas: {
-    corporate: UnitasCorporateHero,
-    diversity: UnitasDiversityHero
-  }
+  corporate: HuddleCorporateHero,
+  diversity: HuddleDiversityHero
 };
 
 const CorporateMeasure = ({type}) => {
@@ -28,7 +20,7 @@ const CorporateMeasure = ({type}) => {
         <div className='inner-container'>
           <div className='content'>
             {isHuddle && (
-              <img alt='hero-img' src={IMAGES[NAMESPACE][type]} />
+              <img alt='hero-img' src={IMAGES[type]} />
             )}
             <div className='title'>
               <h2>

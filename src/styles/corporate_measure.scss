@@ -114,7 +114,7 @@
 .unitas-site {
     .corporate, .diversity {
         .corporate-measure {
-            background:  url('../static/unitas/corporate-measure.jpg') left no-repeat;
+            background:  url('../static/unitas/corporate-measure.jpg') right no-repeat;
             background-size: cover;
             margin-bottom: -1px;
 
@@ -167,13 +167,13 @@
         }
     }
 
-    //.diversity .corporate-measure {
-    //    background: url('../static/unitas/corporate-measure.jpg') left no-repeat;
-    //    background-size: cover;
-    //
-    //    @include media-breakpoint-down(md) {
-    //        background:  url('../static/unitas/permanent-hires-mob.jpg') top right no-repeat #3A84C9;
-    //        background-size: 85%;
-    //    }
-    //}
+    .diversity .corporate-measure {
+        background: url('../static/unitas/diversity-measure.jpg') right no-repeat;
+        background-size: cover;
+
+        @include media-breakpoint-down(md) {
+            background:  url('../static/unitas/permanent-hires-mob.jpg') top right no-repeat #3A84C9;
+            background-size: 85%;
+        }
+    }
 }

@@ -300,12 +300,10 @@
 
 .corporate .leadership-hero {
     background-image: url('../static/huddle/corporate.png');
-    background-position: top right;
 }
 
 .diversity .leadership-hero {
     background-image: url('../static/huddle/diversity.png');
-    background-position: top right;
 }
 
 .work-for-us, .contact-us {
@@ -680,18 +678,8 @@
     .corporate,
     .diversity {
         .leadership-hero {
-            .text-container {
-                > img {
-                    position: absolute;
-                    left: 114.5%;
-                    top: -10rem;
-                    width: 40rem;
-                    z-index: -5;
-                }
-
-                h5 {
-                    color: #824554;
-                }
+            .text-container h5 {
+                color: #824554;
             }
 
             .title h1, .info-container h3 {
