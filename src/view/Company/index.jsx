@@ -21,7 +21,7 @@ const Company = () => {
       <Leadership company={company} />
       <OurStory type='story' />
       <OurStory type='process' />
-      <WorkForUs home />
+      <WorkForUs />
     </div>
   );
 }
