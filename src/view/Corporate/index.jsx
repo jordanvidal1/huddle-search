@@ -16,7 +16,7 @@ const Corporate = () => (
       img={!isHuddle && HeroImg}
     />
     <ProPoints type='corporate' />
-    <CorporateMeasure />
+    <CorporateMeasure type='corporate' />
     <OurStory type='story' />
     <OurStory type='process' />
     <WorkForUs />

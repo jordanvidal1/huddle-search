@@ -7,52 +7,35 @@ import {
   spectrumHref,
   unitasHref,
 } from '../../data/constants'
-import {isHuddle, isPrime} from '../../services/helper';
+import {isHuddle, isPrime, isUnitas} from '../../services/helper';
 import LinkHref from '../shared/LinkHref';
 
 import Logo from '../../static/huddle/the-prime-group.svg';
-import Huddle from '../../static/huddle/prime-huddle.svg';
-import Unitas from '../../static/huddle/prime-unitas.svg';
-import Spectrum from '../../static/huddle/prime-spectrum.svg';
 
 import HuddlePink from '../../static/prime/huddle-logo-pink.svg';
 import UnitasPink from '../../static/prime/unitas-logo-pink.svg';
 import SpectrumPink from '../../static/prime/spectrum-logo-pink.png';
 
-const NormalLogos = () => (
+const PrimeLogos = () => (
   <div className='logos'>
     {isHuddle ? (
       <Link to='/'>
-        <img alt='prime-huddle' src={Huddle} />
+        <img alt='prime-huddle' src={HuddlePink} />
       </Link>
     ) : (
       <LinkHref href={huddleHref}>
-        <img alt='prime-huddle' src={Huddle} />
+        <img alt='prime-huddle' src={HuddlePink} />
       </LinkHref>
     )}
-    {!isHuddle ? (
+    {!isUnitas ? (
       <Link to='/'>
-        <img alt='prime-unitas' src={Unitas} />
+        <img alt='prime-unitas' src={UnitasPink} />
       </Link>
     ) : (
       <LinkHref href={unitasHref}>
-        <img alt='prime-unitas' src={Unitas} />
+        <img alt='prime-unitas' src={UnitasPink} />
       </LinkHref>
     )}
-    <LinkHref href={spectrumHref}>
-      <img alt='prime-spectrum' src={Spectrum} />
-    </LinkHref>
-  </div>
-);
-
-const PrimeLogos = () => (
-  <div className='logos'>
-    <LinkHref href={huddleHref}>
-      <img alt='prime-huddle' src={HuddlePink} />
-    </LinkHref>
-    <LinkHref href={unitasHref}>
-      <img alt='prime-unitas' src={UnitasPink} />
-    </LinkHref>
     <LinkHref href={spectrumHref}>
       <img alt='prime-spectrum' src={SpectrumPink} />
     </LinkHref>
@@ -88,7 +71,7 @@ const ThePrimeGroup = () => {
                   {t(`${NAMESPACE}:thePrimeGroup:subText`)}
                 </p>
               </div>
-              {isPrime ? <PrimeLogos /> : <NormalLogos />}
+              <PrimeLogos />
             </div>
           </div>
         </div>

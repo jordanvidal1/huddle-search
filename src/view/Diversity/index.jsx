@@ -16,7 +16,7 @@ const Diversity = () => (
       img={!isHuddle && HeroImg}
     />
     <ProPoints type='diversity' />
-    <CorporateMeasure />
+    <CorporateMeasure type='diversity' />
     <OurStory type='story' />
     <OurStory type='process' />
     <WorkForUs />

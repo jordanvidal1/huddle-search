@@ -24,9 +24,7 @@ const variantList = {
   prime: []
 };
 
-const ProPoints = props => {
-  const {type} = props;
-
+const ProPoints = ({type}) => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const isVariant = variantList[NAMESPACE].indexOf(type) > -1;
@@ -49,7 +47,7 @@ const ProPoints = props => {
               </div>
             </div>
             <div className='pro-point-container'>
-              <Grid container spacing={4} justifyContent='center' align='center'>
+              <Grid container spacing={8} justifyContent='center' align='center'>
                 <Grid item xs={12}>
                   <div className='pro-point'>
                     <div className='pro-point-icon'>
