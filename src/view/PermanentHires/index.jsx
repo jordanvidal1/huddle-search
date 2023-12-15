@@ -6,7 +6,7 @@ import Leadership from '../shared/Specialists';
 import ProPoints from '../shared/ProPoints';
 import WorkForUs from '../shared/WorkForUs';
 
-import HeroImg from '../../static/unitas/contract-hires.png';
+import HeroImg from '../../static/unitas/permanent-hires.png';
 
 const highlighted = isHuddle ? 'Permanent' : '';
 const title = isHuddle

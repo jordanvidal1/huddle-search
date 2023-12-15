@@ -11,10 +11,7 @@ import ArrowIcon from '../../static/huddle/arrow.svg';
 import UnitasArrowIcon from '../../static/unitas/arrow.svg';
 import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
 
-const LookingToHire = ({
-  children,
-  type
-}) => {
+const LookingToHire = ({type}) => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
   const heroImg = type === 'home' ? HomeHero : PermanentHero;
