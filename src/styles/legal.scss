@@ -66,6 +66,21 @@
     }
 }
 
+.unitas-site .legal {
+    &.privacy-policy {
+        .text {
+            p {
+                font-family: Poppins;
+                font-weight: 400;
+
+                &:has(strong) {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
 .prime-site .legal {
     &.privacy-policy {
         background: #000;
