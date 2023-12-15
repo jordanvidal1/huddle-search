@@ -125,7 +125,7 @@
         background-size: cover;
     }
 
-    .our-story-static, .our-process-static  {
+    .our-story-static, .our-process-static {
         h5 {
             color: #00FFA3;
             font-family: Plus Jakarta Sans;
@@ -210,7 +210,11 @@
         }
     }
 
-    .our-process-home .content {
-        flex-direction: row-reverse;
+    .our-process-home {
+        background: linear-gradient(180deg, #000 0%, #1A0223 30%, #1A0223 70%, #000 100%, #000 100%, #000 100%, #000 100%);
+
+        .content {
+            flex-direction: row-reverse;
+        }
     }
 }
