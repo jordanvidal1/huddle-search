@@ -187,6 +187,10 @@
       border: 1px solid #747474;
       border-radius: 0;
 
+      .resource-container {
+        padding: 1rem 1rem 1.5rem;
+      }
+
       .resource-type-container {
         img, > div {
           border-radius: 0;
