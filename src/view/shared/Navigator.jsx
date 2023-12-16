@@ -334,7 +334,7 @@ const Navigator = ({
       )}
       {renderHeader()}
       {pathname.includes('/resources') && <ResourcesNav />}
-      <div id='content'>
+      <div id='content' onClick={closeExpandClick}>
         {content}
         <Footer
           expanded={expanded}
