@@ -523,11 +523,14 @@
             background-size: 18.6875rem;
         }
 
-        .contract-interim, .permanent-hires {
-            .specialism-hero {
-                background: url('../static/unitas/contract-hires-mob.png') top right no-repeat #3A84C9;
-                background-size: 18.6875rem;
-            }
+        .contract-interim .specialism-hero {
+            background: url('../static/unitas/contract-hires-mob.png') top right no-repeat #3A84C9;
+            background-size: 18.6875rem;
+        }
+
+        .permanent-hires .specialism-hero {
+            background: url('../static/unitas/permanent-hires-mob.png') top right no-repeat #3A84C9;
+            background-size: 18.6875rem;
         }
     }
 
