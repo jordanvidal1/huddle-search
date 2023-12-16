@@ -31,8 +31,12 @@
         }
 
         a, a:hover {
-            color: #163BF2;
+            background: url('../static/prime/tpg-pattern.jpg') left;
+            background-size: 50%;
             font-family: ArdelaEdgeX02-ExtraBold;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-font-smoothing: antialiased;
         }
     }
 
