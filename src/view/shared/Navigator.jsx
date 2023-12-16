@@ -268,7 +268,7 @@ const Navigator = ({
 
   const renderHeader = () => (
     <div className={cx('header-outer-container', {
-      'header-home': location.pathname && isHuddle === '/'
+      'header-home': location.pathname === '/' && isHuddle
     })}>
       <div className='container'>
         <div className='header-inner-container'>

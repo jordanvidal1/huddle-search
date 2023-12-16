@@ -141,7 +141,8 @@
 
 .header-outer-container {
   background: #FFF;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 20;
 
   @media screen and (min-width: 868px) {
@@ -576,6 +577,7 @@
 .prime-site {
   .header-outer-container {
     background: #163BF2;
+    top: 0;
   }
 
   .header {
