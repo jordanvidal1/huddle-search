@@ -44,6 +44,11 @@
                     margin-top: 4rem;
                     text-align: right;
                 }
+
+                a {
+                    color: #310a31;
+                    font-weight: 800;
+                }
             }
         }
     }
@@ -74,6 +79,11 @@
                 font-weight: 400;
 
                 &:has(strong) {
+                    font-weight: 600;
+                }
+
+                a {
+                    color: #1A1A1A;
                     font-weight: 600;
                 }
             }
