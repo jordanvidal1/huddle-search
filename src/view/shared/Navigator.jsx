@@ -267,22 +267,30 @@ const Navigator = ({
   );
 
   const renderHeader = () => (
-    <div className='header'>
-      <div className='header-container container'>
-        <div className='header-inner'>
-          <Link to='/'>
-            <img alt='logo' className='logo' src={ICONS[NAMESPACE].logo} />
-          </Link>
-          <div className='header-nav'>
-            <div className='header-nav-list'>
-              {renderNavList()}
+    <div className={cx('header-outer-container', {
+      'header-home': location.pathname && isHuddle === '/'
+    })}>
+      <div className='container'>
+        <div className='header-inner-container'>
+          <div className='header'>
+            <div className='header-container'>
+              <div className='header-inner'>
+                <Link to='/'>
+                  <img alt='logo' className='logo' src={ICONS[NAMESPACE].logo} />
+                </Link>
+                <div className='header-nav'>
+                  <div className='header-nav-list'>
+                    {renderNavList()}
+                  </div>
+                  <img
+                    alt='logo-menubar'
+                    className='logo-menubar'
+                    src={ICONS[NAMESPACE].menubar}
+                    onClick={toggleSidebar}
+                  />
+                </div>
+              </div>
             </div>
-            <img
-              alt='logo-menubar'
-              className='logo-menubar'
-              src={ICONS[NAMESPACE].menubar}
-              onClick={toggleSidebar}
-            />
           </div>
         </div>
       </div>
