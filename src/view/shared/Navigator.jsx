@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import cx from 'classnames';
 import {NAMESPACE, SPECIALISMS, SECTORS} from '../../data/constants';
@@ -159,6 +159,7 @@ const Navigator = ({
 }) => {
   const [expanded, setExpanded] = useState('');
   const [pathname, setPathname] = useState('');
+  const [navVisible, setNavVisible] = useState(true);
   const [sideMenuDisplayed, setSideMenuDisplayed] = useState(false);
   const [dropdownDisplayed, setDropdownDisplayed] = useState(false);
 
@@ -184,6 +185,18 @@ const Navigator = ({
     hideDropdown();
     setPathname(`/${location.pathname.split('/')[1]}`);
   }, [location, pathname]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', (event) => {
+      if (window.scrollY > 130) {
+        if (navVisible === true) {
+          setNavVisible(false);
+        }
+      } else if (navVisible === false) {
+        setNavVisible(true);
+      }
+    });
+  });
 
   const renderNormalDropdown = route => expanded === route.name && (
     <div className='nav-dropdown'>
@@ -268,7 +281,7 @@ const Navigator = ({
 
   const renderHeader = () => (
     <div className={cx('header-outer-container', {
-      'header-home': location.pathname === '/' && isHuddle
+      'header-home': location.pathname === '/' && isHuddle && navVisible
     })}>
       <div className='container'>
         <div className='header-inner-container'>
