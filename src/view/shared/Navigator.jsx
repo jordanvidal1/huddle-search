@@ -188,11 +188,11 @@ const Navigator = ({
 
   useEffect(() => {
     window.addEventListener('scroll', (event) => {
-      if (window.scrollY > 130) {
-        if (navVisible === true) {
+      if (navVisible === true) {
+        if (window.scrollY >= 130) {
           setNavVisible(false);
         }
-      } else if (navVisible === false) {
+      } else if (window.scrollY <= 228) {
         setNavVisible(true);
       }
     });
