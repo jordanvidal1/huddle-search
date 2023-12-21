@@ -194,18 +194,20 @@
             }
         }
 
+        @include media-breakpoint-down(lg) {
+            .img-container {
+                padding: 0;
+            }
+        }
+
         @include media-breakpoint-down(md) {
             .content {
                 flex-direction: column-reverse !important;
             }
 
-            .img-container {
-                padding: 0;
-
-                img {
-                    height: unset;
-                    width: 100%;
-                }
+            .img-container img {
+                height: unset;
+                width: 100%;
             }
         }
     }

@@ -862,6 +862,19 @@
                     }
                 }
             }
+
+            @include media-breakpoint-down(lg) {
+                .text-container {
+                    position: unset;
+
+                    > img {
+                        left: unset;
+                        right: -4%;
+                        top: -1rem;
+                        width: 44%;
+                    }
+                }
+            }
         }
     }
 
