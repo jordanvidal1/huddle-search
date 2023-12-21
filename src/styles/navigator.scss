@@ -600,7 +600,8 @@
       .nav-list {
         a, span {
           color: #FFF;
-          font-weight: 600;
+          font-family: Plus Jakarta Sans;
+          font-weight: 800;
         }
       }
 
@@ -617,8 +618,7 @@
         }
 
         a, a:hover, span {
-          color: #FFF;
-          font-family: Poppins;
+          font-weight: 700;
         }
       }
     }
@@ -633,6 +633,7 @@
     .nav-list {
       a, span {
         color: #FFF;
+        font-family: Plus Jakarta Sans;
         font-weight: 700;
       }
     }
