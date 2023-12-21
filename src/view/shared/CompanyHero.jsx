@@ -53,18 +53,18 @@ const CompanyHero = ({company}) => {
                 <div className='details'>
                   <div className='service'>
                     <span>
-                      {t(`${NAMESPACE}:companyHero:service`)}
+                      {t(`${NAMESPACE}:companyHero:service:header`)}
                     </span>
                     <span>
-                      {t(`${NAMESPACE}:companyHero:recruitment`)}
+                      {t(`${NAMESPACE}:companyHero:service:type`)}
                     </span>
                   </div>
                   <div className='sector'>
                     <span>
-                      {t(`${NAMESPACE}:companyHero:sector`)}
+                      {t(`${NAMESPACE}:companyHero:sector:header`)}
                     </span>
                     <span>
-                      {t(`${NAMESPACE}:companyHero:recruitment`)}
+                      {t(`${NAMESPACE}:companyHero:sector:${company}`)}
                     </span>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const CompanyHero = ({company}) => {
                   {t(`${NAMESPACE}:companyHero:content:title`, {siteName: capitalize(company)})}
                 </h2>
                 <p>
-                  {t(`${NAMESPACE}:companyHero:content:desc:${company}`)}
+                  {t(`${NAMESPACE}:companyHero:content:desc`)}
                 </p>
                 <div className='company-contact'>
                   <div>

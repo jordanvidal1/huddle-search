@@ -42,6 +42,7 @@ const OriginStory = () => {
                   {t(`${NAMESPACE}:originStory:part1:text`)}
                 </p>
                 <br />
+                <br />
                 <h6>
                   {t(`${NAMESPACE}:originStory:part2:title`)}
                 </h6>
@@ -76,6 +77,7 @@ const OriginStory = () => {
                   {t(`${NAMESPACE}:originStory:part3:text`)}
                 </p>
                 <br />
+                <br />
                 <h6>
                   {t(`${NAMESPACE}:originStory:part4:title`)}
                 </h6>
@@ -101,6 +103,7 @@ const OriginStory = () => {
                 <p>
                   {t(`${NAMESPACE}:originStory:part5:text`)}
                 </p>
+                <br />
                 <br />
                 <h6>
                   {t(`${NAMESPACE}:originStory:part6:title`)}

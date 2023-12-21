@@ -193,7 +193,6 @@ const companyRoutes = isPrime ?
   ];
 
 const Footer = ({
-  expanded,
   expandClick,
   toggleSidebar
 }) => {
@@ -329,11 +328,7 @@ const Footer = ({
                             <li key={i}>
                               {route.subLinks ? (
                                 <div onClick={() => {
-                                  expandClick(
-                                    expanded === route.name
-                                      ? ''
-                                      : route.name
-                                  );
+                                  expandClick(route.name);
                                   toggleSidebar();
                                 }}>
                                   <span>
@@ -373,11 +368,7 @@ const Footer = ({
                             <li key={i}>
                               {route.subLinks ? (
                                 <div onClick={() => {
-                                  expandClick(
-                                    expanded === route.name
-                                      ? ''
-                                      : route.name
-                                  );
+                                  expandClick(route.name);
                                   toggleSidebar();
                                 }}>
                                   <span>

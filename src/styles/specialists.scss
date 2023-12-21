@@ -282,8 +282,12 @@
 }
 
 .prime-site {
-    .specialists {
+    .home .specialists {
         background: linear-gradient(180deg, #000 0%, #1A0223 30%, #1A0223 70%, #000 100%, #000 100%, #000 100%, #000 100%);
+    }
+
+    .specialists {
+        background: #000;
 
         .text-container {
             align-self: center;
@@ -330,7 +334,7 @@
                 }
 
                 p {
-                    color: #D3CDD0;
+                    color: rgba(211, 205, 208, 0.7);
                 }
 
                 .specialist-contact {

@@ -59,18 +59,24 @@
       "unitas": "Unitas",
       "spectrum": "Spectrum"
     },
+    "service": {
+      "header": "Service",
+      "type": "Recruitment"
+    },
+    "sector": {
+      "header": "Sector",
+      "huddle": "Technology",
+      "unitas": "Finance",
+      "spectrum": "Web3"
+    },
     "desc": {
-      "huddle": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.",
-      "unitas": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum.",
-      "spectrum": "Lorem ipsum dolor sit amet consectetur. Nibh bibendum tempor lorem a non mauris hendrerit mauris. Vitae cursus orci vulputate condimentum."
+      "huddle": "At Huddle, we're redefining tech recruitment by delivering new ways the market’s best opportunities meet the industry’s top-tier talent.",
+      "unitas": "At Unitas, we're reshaping recruitment within senior finance with our in-house AI technology.",
+      "spectrum": "Spectrum Search, the premier Web3, Crypto & Blockchain recruitment agency, connects top talent with innovative blockchain and decentralized tech companies."
     },
     "content": {
       "title": "The {{siteName}} team is waiting to hear from you",
-      "desc": {
-        "huddle": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus.",
-        "unitas": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus.",
-        "spectrum": "Lorem ipsum dolor sit amet consectetur. Ultrices sed ipsum dignissim nibh feugiat mauris pellentesque. Vulputate ipsum lectus interdum interdum purus accumsan amet nisl tellus."
-      }
+      "desc": "There are a number of ways to contact the team, so feel free to get in touch today."
     },
     "contact": {
       "company": {
@@ -97,9 +103,6 @@
     "boss": {
       "title": "Speak to the boss..."
     },
-    "service": "Service",
-    "recruitment": "Recruitment",
-    "sector": "Sector",
     "button": "Go to site"
   },
   "leadershipHero": {

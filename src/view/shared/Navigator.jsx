@@ -173,9 +173,9 @@ const Navigator = ({
 
   const content = useMemo(() => children, [children]);
 
-  const handleExpandClick = route => setExpanded(route);
+  const handleExpandClick = route => setExpanded(expanded === route ? '' : route);
 
-  const closeExpandClick = () => setExpanded('');
+  const closeExpandClick = () => expanded && setExpanded('');
 
   useEffect(() => {
     if (pathname !== '' && !location.hash) {
@@ -253,7 +253,7 @@ const Navigator = ({
         <div key={i}>
           <div onClick={() => {
             if (route.subLinks) {
-              handleExpandClick(expanded === route.name ? '' : route.name)
+              handleExpandClick(route.name)
             }
           }}>
             {route.subLinks ? (
@@ -358,7 +358,6 @@ const Navigator = ({
       <div id='content' onClick={closeExpandClick}>
         {content}
         <Footer
-          expanded={expanded}
           expandClick={handleExpandClick}
           toggleSidebar={toggleSidebar}
         />
