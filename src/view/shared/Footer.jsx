@@ -289,7 +289,15 @@ const Footer = ({
                             alt='location'
                             src={ICONS[NAMESPACE].location}
                           />
-                          <span>1 Fore St Ave, London EC2Y 9DT</span>
+                          <a
+                            href={`https://www.google.com/maps/search/?api=1&1 Fore St Ave, London EC2Y 9DT`}
+                            target='_blank'
+                            rel='noreferrer'
+                          >
+                            <span>
+                              1 Fore St Ave, London EC2Y 9DT
+                            </span>
+                          </a>
                         </div>
                       </div>
                       <div className='footer-socials'>

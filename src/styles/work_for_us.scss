@@ -43,7 +43,9 @@
             a {
                 align-items: center;
                 display: flex;
+                justify-content: space-between;
                 max-width: 14.75rem;
+                width: 100%;
 
                 span {
                     color: #F6E27F;
@@ -108,7 +110,7 @@
 
                     a {
                         justify-content: space-between;
-                        width: 100%;
+                        max-width: 100%;
                     }
                 }
             }

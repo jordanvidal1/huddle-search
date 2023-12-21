@@ -112,7 +112,15 @@ const CompanyHero = ({company}) => {
                   </div>
                   <div>
                     <img alt='location-icon' src={LocationIcon} />
-                    <span>{t(`${NAMESPACE}:companyHero:contact:location:${company}`)}</span>
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&${t(`${NAMESPACE}:companyHero:contact:location:${company}`)}`}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <span>
+                        {t(`${NAMESPACE}:companyHero:contact:location:${company}`)}
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>

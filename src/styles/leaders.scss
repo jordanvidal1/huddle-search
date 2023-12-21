@@ -147,6 +147,7 @@
     .leader {
         h2 {
             color: #1A1A1A;
+            font-size: 3rem;
         }
 
         .role span {
@@ -196,5 +197,14 @@
     .leader-contact span {
         color: #FFF;
         font-weight: 700;
+    }
+
+    @include media-breakpoint-down(md) {
+        .leader .img-container > div {
+            height: unset;
+            max-height: unset;
+            max-width: unset;
+            width: 100%;
+        }
     }
 }

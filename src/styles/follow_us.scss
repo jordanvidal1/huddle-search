@@ -260,4 +260,9 @@
             }
         }
     }
+
+    @include media-breakpoint-down(md) {
+        background-size: cover;
+        background-position: top center;
+    }
 }

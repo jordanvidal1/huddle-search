@@ -92,16 +92,13 @@
             padding: 2rem 0;
 
             > img {
+                margin-bottom: 4rem;
                 width: 15rem;
             }
         }
 
-        .title {
-            margin-top: 4rem;
-
-            h1 {
-                font-size: 2.875rem;
-            }
+        .title h1 {
+            font-size: 2.875rem;
         }
 
         .text {
@@ -161,12 +158,8 @@
             padding-bottom: 7rem;
         }
 
-        .title {
-            margin-top: 0;
-
-            h1 {
-                font-size: 4rem;
-            }
+        .title h1 {
+            font-size: 4rem;
         }
 
         .text {

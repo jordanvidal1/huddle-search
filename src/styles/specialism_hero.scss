@@ -660,12 +660,12 @@
         @include media-breakpoint-down(sm) {
             .title {
                 > h1 h1 {
-                    font-size: 3rem;
+                    font-size: 4rem;
                     letter-spacing: -0.06rem;
                 }
 
                 div p {
-                    font-size: 3rem;
+                    font-size: 4rem;
                 }
             }
         }

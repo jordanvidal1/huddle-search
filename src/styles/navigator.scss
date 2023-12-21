@@ -171,7 +171,7 @@
     padding: 0 1.5rem;
     width: 100%;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       padding: 0 0.75rem;
     }
   }
@@ -586,13 +586,13 @@
 
     @include media-breakpoint-down(md) {
       .logo {
-        height: 2.5rem;
+        height: 3rem;
       }
     }
 
     @include media-breakpoint-down(sm) {
       .logo {
-        height: 2rem;
+        height: 2.5rem;
       }
     }
 

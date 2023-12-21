@@ -237,9 +237,10 @@
         }
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         .img-container > div {
             height: unset;
+            max-height: unset;
             width: 100%;
         }
     }

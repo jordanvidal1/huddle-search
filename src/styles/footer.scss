@@ -271,10 +271,6 @@
         background: url('../static/huddle/footer-pattern-mob.svg') top repeat #FF958C;
         background-size: cover;
 
-        .inner-container {
-            padding-bottom: 10rem;
-        }
-
         .content {
             gap: 4rem;
             max-width: unset;
@@ -382,11 +378,9 @@
         .footer-box {
             padding: 3rem 1.5rem;
 
-            .footer-company {
-                img {
-                    max-width: 12rem;
-                    width: 100%;
-                }
+            .footer-company img {
+                height: 3.5rem;
+                width: 100%;
             }
         }
     }
@@ -395,10 +389,6 @@
 .unitas-site .footer {
     background: url('../static/unitas/footer-pattern.svg') bottom no-repeat #3A84C9;
     background-size: 15.625rem;
-
-    .inner-container {
-        padding-bottom: 10rem;
-    }
 
     .box {
         background: #1A1A1A;
