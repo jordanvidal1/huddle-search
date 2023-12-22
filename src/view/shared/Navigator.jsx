@@ -67,35 +67,6 @@ const defaultRoutes = [
     subLinks: SECTORS[NAMESPACE]
   },
   {
-    name: 'About us',
-    subLinks: [
-      {
-        name: 'Leadership team',
-        path: '/leadership-team'
-      },
-      {
-        name: 'Our story',
-        path: '/our-story'
-      },
-      {
-        name: 'Our process',
-        path: '/our-process'
-      },
-      {
-        name: 'Corporate social responsibility',
-        path: '/corporate-social-responsibility'
-      },
-      {
-        name: 'Diversity, equality & inclusion',
-        path: '/diversity-equality-and-inclusion'
-      },
-      {
-        name: 'The Prime Group',
-        path: '/the-prime-group'
-      }
-    ]
-  },
-  {
     name: 'Types',
     mobile: true,
     subLinks: [
@@ -131,6 +102,35 @@ const defaultRoutes = [
     name: 'Contact us',
     path: '/contact-us',
     mobile: true
+  },
+  {
+    name: 'About us',
+    subLinks: [
+      {
+        name: 'Leadership team',
+        path: '/leadership-team'
+      },
+      {
+        name: 'Our story',
+        path: '/our-story'
+      },
+      {
+        name: 'Our process',
+        path: '/our-process'
+      },
+      {
+        name: 'Corporate social responsibility',
+        path: '/corporate-social-responsibility'
+      },
+      {
+        name: 'Diversity, equality & inclusion',
+        path: '/diversity-equality-and-inclusion'
+      },
+      {
+        name: 'The Prime Group',
+        path: '/the-prime-group'
+      }
+    ]
   }
 ];
 
