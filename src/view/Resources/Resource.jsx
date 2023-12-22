@@ -141,7 +141,9 @@ const Resource = () => {
                   alt='phone-number-icon'
                   src={ICONS[NAMESPACE].phone}
                 />
-                <span>{author?.number}</span>
+                <a href={`tel:${author?.number}`}>
+                  <span>{author?.number}</span>
+                </a>
               </div>
             )}
             <div>

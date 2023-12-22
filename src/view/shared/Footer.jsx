@@ -271,7 +271,9 @@ const Footer = ({
                             alt='phone-number'
                             src={ICONS[NAMESPACE].phone}
                           />
-                          <span>{t(`${NAMESPACE}:footer:number`)}</span>
+                          <a href={`tel:${t(`${NAMESPACE}:footer:number`)}`}>
+                            <span>{t(`${NAMESPACE}:footer:number`)}</span>
+                          </a>
                         </div>
                         <div>
                           <img
@@ -290,12 +292,12 @@ const Footer = ({
                             src={ICONS[NAMESPACE].location}
                           />
                           <a
-                            href={`https://www.google.com/maps/search/?api=1&1 Fore St Ave, London EC2Y 9DT`}
+                            href={`https://www.google.com/maps/search/?api=1&query=${t(`${NAMESPACE}:footer:address`)}`}
                             target='_blank'
                             rel='noreferrer'
                           >
                             <span>
-                              1 Fore St Ave, London EC2Y 9DT
+                              {t(`${NAMESPACE}:footer:address`)}
                             </span>
                           </a>
                         </div>

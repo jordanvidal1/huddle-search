@@ -84,7 +84,9 @@ const Specialists = props => {
                             alt='phone-number-icon'
                             src={phoneIcon}
                           />
-                          <span>{number}</span>
+                          <a href={`tel:${number}`}>
+                            <span>{number}</span>
+                          </a>
                         </div>
                       )}
                       <div>

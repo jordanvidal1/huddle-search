@@ -97,7 +97,7 @@
       "location": {
         "huddle": "1 Fore St Ave, London EC2Y 9DT",
         "unitas": "1 Fore St Ave, London EC2Y 9DT",
-        "spectrum": "100 Avebury Blvd, Milton Keynes, MK91FH"
+        "spectrum": "100 Avebury Blvd, Milton Keynes, MK9 1FH"
       }
     },
     "boss": {
@@ -316,6 +316,7 @@
     "slogan": "A group of recruitment companies dedicated to redefining talent acquisition.",
     "number": "+44 20 4586 4093",
     "email": "hello@theprimegroup.ai",
+    "address": "1 Fore St Ave, London EC2Y 9DT",
     "navHeader": {
       "1": "Companies",
       "2": "About",

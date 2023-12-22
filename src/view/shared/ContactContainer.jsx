@@ -42,9 +42,11 @@ const ContactContainer = ({
             </div>
           </div>
           <div className='contact-info'>
-            <p>
-              {t(`${NAMESPACE}:contactContainer:phone:phoneNumber`)}
-            </p>
+            <a href={`tel:${t(`${NAMESPACE}:contactContainer:phone:phoneNumber`)}`}>
+              <p>
+                {t(`${NAMESPACE}:contactContainer:phone:phoneNumber`)}
+              </p>
+            </a>
           </div>
         </div>
       </Grid>
@@ -52,7 +54,7 @@ const ContactContainer = ({
         <div className='contact-container'>
           <div className='contact-text-container'>
             <div className='contact-icon'>
-              <img alt='phone-icon' src={emailIcon} />
+              <img alt='email-icon' src={emailIcon} />
             </div>
             <div className='contact-title'>
               <h5>

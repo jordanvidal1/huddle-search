@@ -30,9 +30,11 @@ const ContactVisitContainer = (t) => (
           </div>
         </div>
         <div className='visit-info'>
-          <p>
-            {t(`${NAMESPACE}:visitContainer:phone:phoneNumber`)}
-          </p>
+          <a href={`tel:${t(`${NAMESPACE}:visitContainer:phone:phoneNumber`)}`}>
+            <p>
+              {t(`${NAMESPACE}:visitContainer:phone:phoneNumber`)}
+            </p>
+          </a>
         </div>
       </div>
     </Grid>
@@ -78,13 +80,19 @@ const ContactVisitContainer = (t) => (
           </div>
         </div>
         <div className='visit-info'>
-          <p>
-            1 Fore Street Avenue
-            <br />
-            London
-            <br />
-            EC2Y 9DT
-          </p>
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${t(`${NAMESPACE}:footer:address`)}`}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <p>
+              1 Fore Street Avenue
+              <br />
+              London
+              <br />
+              EC2Y 9DT
+            </p>
+          </a>
         </div>
       </div>
     </Grid>

@@ -44,7 +44,9 @@ const Leaders = () => (
                           alt='phone-number-icon'
                           src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
                         />
-                        <span>{number}</span>
+                        <a href={`tel:${number}`}>
+                          <span>{number}</span>
+                        </a>
                       </div>
                     )}
                     <div>

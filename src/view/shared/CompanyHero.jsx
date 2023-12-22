@@ -113,7 +113,7 @@ const CompanyHero = ({company}) => {
                   <div>
                     <img alt='location-icon' src={LocationIcon} />
                     <a
-                      href={`https://www.google.com/maps/search/?api=1&${t(`${NAMESPACE}:companyHero:contact:location:${company}`)}`}
+                      href={`https://www.google.com/maps/search/?api=1&query=${t(`${NAMESPACE}:companyHero:contact:location:${company}`)}`}
                       target='_blank'
                       rel='noreferrer'
                     >
@@ -152,7 +152,9 @@ const CompanyHero = ({company}) => {
                             alt='phone-number-icon'
                             src={PhoneIcon}
                           />
-                          <span>{boss.number}</span>
+                          <a href={`tel:${boss.number}`}>
+                            <span>{boss.number}</span>
+                          </a>
                         </div>
                       )}
                       <div>
