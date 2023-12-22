@@ -94,6 +94,43 @@ const defaultRoutes = [
         path: '/the-prime-group'
       }
     ]
+  },
+  {
+    name: 'Types',
+    mobile: true,
+    subLinks: [
+      {
+        name: 'Permanent Hires',
+        path: '/permanent-hires'
+      },
+      {
+        name: 'Executive Search',
+        path: '/executive-search'
+      },
+      {
+        name: 'Embedded Talent',
+        path: '/embedded-talent-solutions'
+      },
+      {
+        name: 'Contract/Interim',
+        path: '/contract-interim'
+      }
+    ]
+  },
+  {
+    name: 'Resources',
+    path: '/resources',
+    mobile: true
+  },
+  {
+    name: 'Work for us',
+    path: '/work-for-us',
+    mobile: true
+  },
+  {
+    name: 'Contact us',
+    path: '/contact-us',
+    mobile: true
   }
 ];
 
@@ -247,9 +284,9 @@ const Navigator = ({
     ? renderSpecialismDropdown(route)
     : renderNormalDropdown(route);
 
-  const renderNavList = () => (
+  const renderNavList = (mobile = false) => (
     <div className='nav-list'>
-      {routes[NAMESPACE].map((route, i) => (
+      {routes[NAMESPACE].map((route, i) => (!mobile ? !route.mobile : true) && (
         <div key={i}>
           <div onClick={() => {
             if (route.subLinks) {
@@ -336,7 +373,7 @@ const Navigator = ({
             src={ICONS[NAMESPACE].closeButton}
           />
         </div>
-        {renderNavList()}
+        {renderNavList(true)}
       </div>
       <div className='sidebar-backdrop' onClick={hideSidebar} />
     </div>
