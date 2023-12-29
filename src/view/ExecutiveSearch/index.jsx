@@ -39,7 +39,7 @@ const ExecutiveSearch = () => {
       </Hero>
       <ProPoints type='executiveSearch' />
       <Service type='executiveSearch' />
-      <Leadership executive />
+      <Leadership />
       <WorkForUs />
     </div>
   );
