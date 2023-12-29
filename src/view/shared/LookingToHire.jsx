@@ -7,9 +7,8 @@ import {isHuddle} from '../../services/helper';
 
 import HomeHero from '../../static/huddle/home-looking-to-hire.png';
 import PermanentHero from '../../static/huddle/permanent-hires.png';
-import ArrowIcon from '../../static/huddle/arrow.svg';
-import UnitasArrowIcon from '../../static/unitas/arrow.svg';
-import UnitasRequestArrowIcon from '../../static/unitas/request-arrow.svg';
+
+import {ReactComponent as Arrow} from '../../static/icons/arrow.svg';
 
 const LookingToHire = ({type}) => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
@@ -39,11 +38,7 @@ const LookingToHire = ({type}) => {
                   type === 'home' && (
                     <Link to='/looking-to-hire'>
                       {t(`${NAMESPACE}:lookingToHire:${type}:link`)}
-                      <img
-                        className='arrow-icon'
-                        alt='arrow-icon'
-                        src={isHuddle ? ArrowIcon : UnitasArrowIcon}
-                      />
+                      <Arrow />
                     </Link>
                 )}
               </p>
@@ -68,10 +63,7 @@ const LookingToHire = ({type}) => {
               <div className='link-container'>
                 <HashLink to='/contact-us#contact'>
                   {t(`${NAMESPACE}:lookingToHire:${type}:cv:link`)}
-                  <img
-                    alt='arrow-icon'
-                    src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}
-                  />
+                  <Arrow />
                 </HashLink>
               </div>
             </div>

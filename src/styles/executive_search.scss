@@ -88,8 +88,13 @@
             flex-direction: column;
             padding: 1rem;
 
-            img {
-                height: 2.5rem;
+            svg {
+                height: unset;
+                width: 2.5rem;
+
+                path {
+                    stroke: #7E6739;
+                }
             }
 
             h5 {
@@ -234,6 +239,11 @@
             }
 
             .info-container {
+                svg path {
+                    stroke: #FFF;
+                    stroke-opacity: 0.3;
+                }
+
                 h5 {
                     color: #FFF;
                     font-family: Fraunces;

@@ -39,15 +39,21 @@
       font-size: 1rem;
     }
 
-    img {
+    svg {
+      height: unset;
       transform: rotate(0deg);
       transition: transform 0.25s linear;
+      width: 0.875rem;
+
+      path {
+        stroke: #F6E27F;
+      }
     }
   }
 
   &:has(.dropdown.active) {
     .top-nav-quicklinks {
-      img {
+      svg {
         transform: rotate(180deg);
         transition: transform 0.25s linear;
       }
@@ -240,10 +246,16 @@
     display: block;
   }
 
-  .logo-menubar {
+  > svg {
     cursor: pointer;
     display: none;
+    height: unset;
     padding: 0.5rem;
+    width: 2.5rem;
+
+    path {
+      stroke: #310A31;
+    }
   }
 }
 
@@ -267,9 +279,14 @@
       font-size: 1.125rem;
       font-weight: 800;
 
-      img {
-        margin-left: 0.63rem;
+      svg {
+        height: unset;
+        margin-left: 0.625rem;
         width: 1rem;
+
+        path {
+          stroke: #310A31;
+        }
       }
     }
   }
@@ -368,7 +385,7 @@
   .header-nav .nav-list {
     gap: 1.75rem;
 
-    span img {
+    span svg {
       margin-left: 8px;
     }
   }
@@ -380,7 +397,7 @@
       display: none;
     }
 
-    .logo-menubar {
+    .header-nav > svg {
       display: block;
     }
   }
@@ -425,9 +442,16 @@
       height: 2.5rem;
     }
 
-    .close-button {
+    > svg {
       cursor: pointer;
+      height: unset;
       padding: 0.5rem;
+      transform: rotate(90deg);
+      width: 2.125rem;
+
+      path {
+        stroke: #310A31;
+      }
     }
   }
 
@@ -479,10 +503,6 @@
   }
 }
 
-.closeButton {
-  cursor: pointer;
-}
-
 .unitas-site {
   .top-nav {
     background: #3A84C9;
@@ -492,8 +512,14 @@
       font-weight: 600;
     }
 
-    .top-nav-quicklinks span {
-      color: #FFF;
+    .top-nav-quicklinks {
+      span {
+        color: #FFF;
+      }
+
+      svg path {
+        stroke: #FFF;
+      }
     }
 
     .dropdown {
@@ -533,6 +559,14 @@
           color: #3A84C9;
           font-weight: 600;
         }
+
+        svg path {
+          stroke: #3A84C9;
+        }
+      }
+
+      > svg path {
+        stroke: #3A84C9;
       }
 
       .nav-dropdown {
@@ -564,6 +598,10 @@
   }
 
   .sidebar {
+    .sidebar-header > svg path {
+      stroke: #3A84C9;
+    }
+
     .nav-list {
       a, span {
         color: #3A84C9;
@@ -604,6 +642,14 @@
           font-family: Plus Jakarta Sans;
           font-weight: 800;
         }
+
+        svg path {
+          stroke: #FFF;
+        }
+      }
+
+      > svg path {
+        stroke: #FFF;
       }
 
       .nav-dropdown {
@@ -629,6 +675,10 @@
     .sidebar-container {
       border-right: 2px solid #D3CDD0;
       background: #163BF2;
+    }
+
+    .sidebar-header > svg path {
+      stroke: #FFF;
     }
 
     .nav-list {

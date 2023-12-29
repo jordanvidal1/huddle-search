@@ -3,9 +3,9 @@ import {HashLink} from 'react-router-hash-link';
 import {Grid} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
 
-import VacancyIcon from '../../static/huddle/vacancy.svg';
-import HelpIcon from '../../static/huddle/help.svg';
-import CVIcon from '../../static/huddle/cv.svg';
+import {ReactComponent as Vacancy} from '../../static/icons/paper-plane.svg';
+import {ReactComponent as Help} from '../../static/icons/speech-bubbles.svg';
+import {ReactComponent as CV} from '../../static/icons/paperclip.svg';
 
 const InfoContainer = ({t}) => (
   <Grid container spacing={3} justifyContent='center' className='info-grid-container'>
@@ -13,7 +13,7 @@ const InfoContainer = ({t}) => (
       <div className='info-container'>
         <div className='info-text-container'>
           <div className='contact-icon'>
-            <img alt='vacancy-icon' src={VacancyIcon} />
+            <Vacancy />
           </div>
           <div className='info-title'>
             <h5>
@@ -37,7 +37,7 @@ const InfoContainer = ({t}) => (
       <div className='info-container'>
         <div className='info-text-container'>
           <div className='contact-icon'>
-            <img alt='help-icon' src={HelpIcon} />
+            <Help />
           </div>
           <div className='info-title'>
             <h5>
@@ -61,7 +61,7 @@ const InfoContainer = ({t}) => (
       <div className='info-container'>
         <div className='info-text-container'>
           <div className='contact-icon'>
-            <img alt='cv-icon' src={CVIcon} />
+            <CV />
           </div>
           <div className='info-title'>
             <h5>

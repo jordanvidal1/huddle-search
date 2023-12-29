@@ -120,8 +120,13 @@
                     display: flex;
                 }
 
-                img {
+                svg {
+                    height: unset;
                     width: 1.25rem;
+
+                    path {
+                        stroke: #FF958C;
+                    }
                 }
 
                 span {
@@ -138,8 +143,14 @@
                 display: flex;
                 gap: 2rem;
 
-                img {
+                svg {
                     height: 1.75rem;
+                    width: unset;
+
+                    path {
+                        fill: #F6E27F;
+                        stroke: none;
+                    }
                 }
             }
         }
@@ -201,9 +212,13 @@
                     display: flex;
                 }
 
-                img {
+                svg {
                     margin-left: 0.5rem;
                     width: 0.625rem;
+
+                    path {
+                        stroke: #F6E27F;
+                    }
                 }
             }
         }
@@ -417,9 +432,20 @@
         }
 
         .footer-content {
-            .footer-contact span {
-                color: #C57B36;
-                font-weight: 600;
+            .footer-contact {
+                svg path {
+                    stroke: #C57B36;
+                }
+
+                span {
+                    color: #C57B36;
+                    font-weight: 600;
+                }
+            }
+
+            .footer-socials svg path {
+                fill: #C57B36;
+                stroke: none;
             }
         }
 
@@ -433,6 +459,10 @@
                 a, span {
                     color: #C57B36;
                     font-weight: 600;
+                }
+
+                svg path {
+                    stroke: #C57B36;
                 }
             }
         }
@@ -473,9 +503,20 @@
                 max-width: 26rem;
             }
 
-            .footer-contact span {
-                color: #FFF;
-                font-weight: 700;
+            .footer-contact {
+                svg path {
+                    stroke: #FFF;
+                }
+
+                span {
+                    color: #FFF;
+                    font-weight: 700;
+                }
+            }
+
+            .footer-socials svg path {
+                fill: #FFF;
+                stroke: none;
             }
         }
 

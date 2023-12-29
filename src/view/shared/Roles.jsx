@@ -6,8 +6,7 @@ import {NAMESPACE} from '../../data/constants';
 import {isHuddle, isPrime} from '../../services/helper';
 import Role from './Role';
 
-import ArrowIcon from '../../static/huddle/arrow.svg';
-import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
+import {ReactComponent as Arrow} from '../../static/icons/arrow.svg';
 
 const Roles = props => {
   const {roles, name, icon} = props;
@@ -23,6 +22,7 @@ const Roles = props => {
         {!isPrime && (
           <Link to='/jobs'>
             {`Browse all ${name ? `${name} ` : ''}jobs`}
+            {isHuddle ? <Arrow /> : (icon || <Arrow />)}
             <img
               alt='arrow'
               src={isHuddle ? ArrowIcon : (icon || UnitasArrowIcon)}

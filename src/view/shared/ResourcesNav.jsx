@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
 import useWordPress from '../../services/hooks/useWordPress';
-import DropdownArrow from '../../static/unitas/dropdown-arrow.svg';
+
+import {ReactComponent as Chevron} from '../../static/icons/chevron.svg';
 
 const filters = [
   // {
@@ -34,7 +35,7 @@ const ResourcesNav = () => {
         <div key={i}>
           {/* todo: temp condition */}
           <span
-              className={cx({active: filter.name === 'Blog'})}
+            className={cx({active: filter.name === 'Blog'})}
           >
             <Link
               to={filter.path}
@@ -86,11 +87,7 @@ const ResourcesNav = () => {
             <span>
               Resources
             </span>
-            <img
-              alt='resources-menubar'
-              className='resources-button'
-              src={DropdownArrow}
-            />
+            <Chevron />
           </div>
         </div>
       </div>

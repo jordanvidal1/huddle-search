@@ -7,10 +7,11 @@ import {isHuddle} from '../../services/helper';
 
 import HeroImg from '../../static/huddle/embedded-talent.png';
 import InfoBox from './InfoBox';
-import InfoIcon1 from '../../static/huddle/info-icon-1.svg';
-import InfoIcon2 from '../../static/huddle/info-icon-2.svg';
-import InfoIcon3 from '../../static/huddle/info-icon-3.svg';
-import InfoIcon4 from '../../static/huddle/info-icon-4.svg';
+
+import {ReactComponent as Icon1} from '../../static/icons/embedded-talent-1.svg';
+import {ReactComponent as Icon2} from '../../static/icons/embedded-talent-2.svg';
+import {ReactComponent as Icon3} from '../../static/icons/embedded-talent-3.svg';
+import {ReactComponent as Icon4} from '../../static/icons/embedded-talent-4.svg';
 
 const EmbeddedTalent = () => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
@@ -35,25 +36,29 @@ const EmbeddedTalent = () => {
             </div>
             <Grid container spacing={2} className='grid-container'>
               <InfoBox
-                icon={InfoIcon1}
                 title={t(`${NAMESPACE}:embeddedTalent:info:1:title`)}
                 text={t(`${NAMESPACE}:embeddedTalent:info:1:text`)}
-              />
+              >
+                <Icon1 />
+              </InfoBox>
               <InfoBox
-                icon={InfoIcon2}
                 title={t(`${NAMESPACE}:embeddedTalent:info:2:title`)}
                 text={t(`${NAMESPACE}:embeddedTalent:info:2:text`)}
-              />
+              >
+                <Icon2 />
+              </InfoBox>
               <InfoBox
-                icon={InfoIcon3}
                 title={t(`${NAMESPACE}:embeddedTalent:info:3:title`)}
                 text={t(`${NAMESPACE}:embeddedTalent:info:3:text`)}
-              />
+              >
+                <Icon3 />
+              </InfoBox>
               <InfoBox
-                icon={InfoIcon4}
                 title={t(`${NAMESPACE}:embeddedTalent:info:4:title`)}
                 text={t(`${NAMESPACE}:embeddedTalent:info:4:text`)}
-              />
+              >
+                <Icon4 />
+              </InfoBox>
             </Grid>
             <div className='btn-container'>
               <Link to='/embedded-talent-solutions' className="btn btn-secondary">

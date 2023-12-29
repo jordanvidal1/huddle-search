@@ -21,10 +21,14 @@
             height: 4rem;
             width: 4rem;
 
-            > img {
+            > svg {
                 height: 100%;
                 padding: 1rem;
                 width: 100%;
+
+                path {
+                    stroke: #FFF;
+                }
             }
         }
 

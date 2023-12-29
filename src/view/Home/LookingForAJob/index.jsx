@@ -8,9 +8,7 @@ import {isHuddle} from '../../../services/helper';
 // import FeaturedRole from './FeaturedRole';
 
 import HeroImg from '../../../static/huddle/home-looking-for-a-job.png'
-import ArrowIcon from '../../../static/huddle/arrow.svg';
-import UnitasArrowIcon from '../../../static/unitas/arrow.svg';
-// import UnitasRequestArrowIcon from '../../../static/unitas/request-arrow.svg';
+import {ReactComponent as Arrow} from '../../../static/icons/arrow.svg';
 
 const LookingForAJob = () => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
@@ -35,11 +33,7 @@ const LookingForAJob = () => {
                 {t(`${NAMESPACE}:home:lookingForAJob:desc`)} <Link
                 to={isHuddle ? '/looking-for-a-job' : '/candidates'}>
                 {t(`${NAMESPACE}:home:lookingForAJob:link`)}
-                <img
-                  className='arrow-icon'
-                  alt='arrow-icon'
-                  src={isHuddle ? ArrowIcon : UnitasArrowIcon}
-                />
+                <Arrow />
               </Link>
               </p>
               <div className='btn-container'>
@@ -57,10 +51,7 @@ const LookingForAJob = () => {
             {/*      <div className='link-container'>*/}
             {/*        <Link to='/jobs'>*/}
             {/*          {t(`${NAMESPACE}:home:lookingForAJob:roles:button`)}*/}
-            {/*          <img*/}
-            {/*            alt='arrow-icon'*/}
-            {/*            src={isHuddle ? ArrowIcon : UnitasRequestArrowIcon}*/}
-            {/*          />*/}
+            {/*          <Arrow />*/}
             {/*        </Link>*/}
             {/*      </div>*/}
             {/*    </div>*/}

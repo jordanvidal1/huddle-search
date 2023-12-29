@@ -19,6 +19,11 @@ import UnitasInfoIcon2 from '../../static/unitas/executive-icon-2.svg';
 import UnitasInfoIcon3 from '../../static/unitas/executive-icon-3.svg';
 import UnitasInfoIcon4 from '../../static/unitas/executive-icon-4.svg';
 
+import {ReactComponent as Icon1} from '../../static/icons/executive-search-1.svg';
+import {ReactComponent as Icon2} from '../../static/icons/executive-search-2.svg';
+import {ReactComponent as Icon3} from '../../static/icons/executive-search-3.svg';
+import {ReactComponent as Icon4} from '../../static/icons/executive-search-4.svg';
+
 const ExecutiveSearch = () => {
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 
@@ -53,25 +58,29 @@ const ExecutiveSearch = () => {
             </div>
             <Grid container spacing={2} className='grid-container'>
               <InfoBox
-                icon={isHuddle ? InfoIcon1 : UnitasInfoIcon1}
                 title={t(`${NAMESPACE}:executiveSearch:info:1:title`)}
                 text={t(`${NAMESPACE}:executiveSearch:info:1:text`)}
-              />
+              >
+                <Icon1 />
+              </InfoBox>
               <InfoBox
-                icon={isHuddle ? InfoIcon2 : UnitasInfoIcon2}
                 title={t(`${NAMESPACE}:executiveSearch:info:2:title`)}
                 text={t(`${NAMESPACE}:executiveSearch:info:2:text`)}
-              />
+              >
+                <Icon2 />
+              </InfoBox>
               <InfoBox
-                icon={isHuddle ? InfoIcon3 : UnitasInfoIcon3}
                 title={t(`${NAMESPACE}:executiveSearch:info:3:title`)}
                 text={t(`${NAMESPACE}:executiveSearch:info:3:text`)}
-              />
+              >
+                <Icon3 />
+              </InfoBox>
               <InfoBox
-                icon={isHuddle ? InfoIcon4 : UnitasInfoIcon4}
                 title={t(`${NAMESPACE}:executiveSearch:info:4:title`)}
                 text={t(`${NAMESPACE}:executiveSearch:info:4:text`)}
-              />
+              >
+                <Icon4 />
+              </InfoBox>
             </Grid>
             <div className='btn-container'>
               <Link to='/executive-search' className="btn">

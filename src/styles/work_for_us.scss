@@ -55,9 +55,14 @@
                 }
             }
 
-            img {
+            svg {
+                height: unset;
                 margin-left: 1rem;
                 width: 1.25rem;
+
+                path {
+                    stroke: #FF958C;
+                }
             }
         }
 
@@ -85,9 +90,14 @@
                     font-weight: 800;
                 }
 
-                img {
+                svg {
+                    height: unset;
                     margin-left: 1rem;
                     width: 1.25rem;
+
+                    path {
+                        stroke: #FF958C;
+                    }
                 }
             }
         }
@@ -159,9 +169,15 @@
             font-weight: 400;
         }
 
-        .grid-container a span {
-            color: #E0B45C;
-            font-family: Plus Jakarta Sans;
+        .grid-container {
+            a span {
+                color: #E0B45C;
+                font-family: Plus Jakarta Sans;
+            }
+
+            svg path {
+                stroke: #E0B45C;
+            }
         }
 
         @include media-breakpoint-down(md) {
@@ -194,9 +210,15 @@
                 font-weight: 400;
             }
 
-            .grid-container a span {
-                color: #F49944;
-                font-weight: 600;
+            .grid-container {
+                a span {
+                    color: #F49944;
+                    font-weight: 600;
+                }
+
+                svg path {
+                    stroke: #C57B36;
+                }
             }
 
             .cv-container {
@@ -206,6 +228,10 @@
                 a {
                     color: #F49944;
                     font-weight: 600;
+                }
+
+                .link-container svg path {
+                    stroke: #C57B36;
                 }
             }
 
@@ -240,8 +266,14 @@
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 10.41%, rgba(0, 0, 0, 0.75) 34.26%, rgba(0, 0, 0, 0.61) 55.33%, rgba(0, 0, 0, 0.00) 100%), url('../static/unitas/executive-work-for-us.jpeg') center no-repeat, lightgray 50% / cover no-repeat;
         background-size: cover;
 
-        .grid-container a span {
-            color: #FFC700;
+        .grid-container {
+            a span {
+                color: #FFC700;
+            }
+
+            svg path {
+                stroke: #FFC700;
+            }
         }
 
         @include media-breakpoint-down(md) {
@@ -266,9 +298,15 @@
                 font-weight: 500;
             }
 
-            .grid-container a span {
-                color: #EB52F9;
-                font-weight: 700;
+            .grid-container {
+                a span {
+                    color: #EB52F9;
+                    font-weight: 700;
+                }
+
+                svg path {
+                    stroke: #EB52F9;
+                }
             }
 
             .cv-container {
@@ -285,9 +323,15 @@
                     font-family: Plus Jakarta Sans;
                 }
 
-                .link-container a {
-                    color: #FFF;
-                    font-weight: 700;
+                .link-container {
+                    a {
+                        color: #FFF;
+                        font-weight: 700;
+                    }
+
+                    svg path {
+                        stroke: #FFF;
+                    }
                 }
             }
 

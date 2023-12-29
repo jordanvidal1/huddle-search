@@ -223,7 +223,7 @@ p {
     opacity: 1;
   }
 
-  .loader img {
+  .loader svg {
     height: 1.5rem;
     width: 1.5rem;
   }
@@ -424,10 +424,14 @@ input {
   height: 100%;
   justify-content: center;
 
-  img {
+  svg {
     animation: spin 1.75s infinite linear;
     height: 2rem;
     width: 2rem;
+
+    path {
+      stroke: #7E8192;
+    }
   }
 }
 

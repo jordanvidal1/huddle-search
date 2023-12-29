@@ -1,9 +1,9 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
-import {isHuddle, renderNumber} from '../../../services/helper';
-import SalaryIcon from '../../../static/huddle/salary.svg';
-import UnitasSalaryIcon from '../../../static/unitas/salary.svg';
+import {renderNumber} from '../../../services/helper';
+
+import {ReactComponent as Salary} from '../../../static/icons/salary.svg';
 
 const FeaturedRole = props => {
   const {type, title, salary} = props;
@@ -28,10 +28,7 @@ const FeaturedRole = props => {
             </h6>
           </div>
           <div className='role-salary'>
-            <img
-              alt='salary-icon'
-              src={isHuddle ? SalaryIcon : UnitasSalaryIcon}
-            />
+            <Salary />
             <span>
               £{renderNumber(salary)} per year
             </span>

@@ -1,7 +1,7 @@
 #content > .resource-page {
     background: #FFF;
 
-    .loader img {
+    .loader svg {
         margin-bottom: 4rem;
     }
 
@@ -31,10 +31,15 @@
             font-weight: 800;
             margin-bottom: 2rem;
 
-            img {
+            svg {
+                height: unset;
                 margin-right: 1rem;
                 transform: rotate(180deg);
                 width: 1.25rem;
+
+                path {
+                    stroke: #FF958C;
+                }
             }
         }
 
@@ -215,8 +220,18 @@
                     margin-left: 0.75rem;
                 }
 
-                img {
+                svg {
+                    height: unset;
                     width: 1.25rem;
+
+                    path {
+                        stroke: #FF958C;
+                    }
+                }
+
+                div:last-child svg path {
+                    fill: #FF958C;
+                    stroke: none;
                 }
             }
         }
@@ -260,7 +275,7 @@
                     min-height: 3.875rem;
                     width: 100%;
 
-                    .loader img {
+                    .loader svg {
                         margin: 0;
                     }
                 }
@@ -290,8 +305,14 @@
                 justify-content: center;
                 width: 100%;
 
-                img {
+                svg {
+                    height: unset;
                     width: 1.5rem;
+
+                    path {
+                        fill: #F6E27F;
+                        stroke: none;
+                    }
                 }
             }
         }
@@ -358,6 +379,10 @@
         > a {
             color: #C57B36;
             font-weight: 600;
+
+            svg path {
+                stroke: #C57B36;
+            }
         }
 
         .text {
@@ -413,6 +438,15 @@
                     color: #1A1A1A;
                     font-weight: 600;
                 }
+
+                svg path {
+                    stroke: #C57B36;
+                }
+
+                div:last-child svg path {
+                    fill: #C57B36;
+                    stroke: none;
+                }
             }
         }
 
@@ -430,6 +464,11 @@
                     padding: 0.8125rem 2rem;
                     min-height: 3.5rem;
                 }
+            }
+
+            .socials svg path {
+                fill: #C57B36;
+                stroke: none;
             }
         }
     }
@@ -457,6 +496,10 @@
         > a {
             color: #EB52F9;
             font-weight: 700;
+
+            svg path {
+                stroke: #EB52F9;
+            }
         }
 
         .resource-details {
@@ -565,9 +608,20 @@
                 color: rgba(211, 205, 208, 0.70);
             }
 
-            .author-contact span {
-                color: #FFF;
-                font-weight: 700;
+            .author-contact {
+                span {
+                    color: #FFF;
+                    font-weight: 700;
+                }
+
+                svg path {
+                    stroke: #FFF;
+                }
+
+                div:last-child svg path {
+                    fill: #FFF;
+                    stroke: none;
+                }
             }
         }
 
@@ -615,6 +669,11 @@
                 a {
                     color: #000;
                 }
+            }
+
+            .socials svg path {
+                fill: #FFF;
+                stroke: none;
             }
         }
     }

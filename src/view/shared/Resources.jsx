@@ -6,15 +6,7 @@ import {isPrime} from '../../services/helper';
 import Resource from './Resource';
 import Loader from './Loader';
 
-import HuddleArrowIcon from '../../static/huddle/arrow.svg';
-import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
-import PrimeArrowIcon from '../../static/prime/arrow.svg';
-
-const ICONS = {
-  huddle: HuddleArrowIcon,
-  unitas: UnitasArrowIcon,
-  prime: PrimeArrowIcon
-};
+import {ReactComponent as Arrow} from '../../static/icons/arrow.svg';
 
 const Resources = props => {
   const {t, name, resources, isLoading} = props;
@@ -29,7 +21,7 @@ const Resources = props => {
         </h3>
         <Link to={isPrime ? '/blog' : '/resources'}>
           {t(`${NAMESPACE}:resources:link`, {name: linkName})}
-          <img alt='arrow' src={ICONS[NAMESPACE]} />
+          <Arrow />
         </Link>
       </div>
       {isLoading && resources.length < 1 ? <Loader />

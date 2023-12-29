@@ -66,15 +66,21 @@
       font-size: 1rem;
     }
 
-    img {
+    svg {
+      height: unset;
       transform: rotate(0deg);
       transition: transform 0.25s linear;
+      width: 0.875rem;
+
+      path {
+        stroke: #FFF;
+      }
     }
   }
 
   &:has(.dropdown.active) {
     .resources-dropdown {
-      img {
+      svg {
         transform: rotate(180deg);
         transition: transform 0.25s linear;
       }

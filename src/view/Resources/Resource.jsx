@@ -13,47 +13,10 @@ import Resources from '../shared/Resources';
 import Share from '../shared/Share';
 import Subscribe from '../shared/Subscribe';
 
-import HuddleArrowIcon from '../../static/huddle/arrow.svg';
-import HuddlePhoneIcon from '../../static/huddle/phone-number.svg';
-import HuddleEmailIcon from '../../static/huddle/email.svg';
-import HuddleLinkedInIcon from '../../static/huddle/linkedin-pink.svg';
-import HuddleLinkedInFilled from '../../static/huddle/linkedin.svg';
-
-import UnitasArrowIcon from '../../static/unitas/request-arrow.svg';
-import UnitasPhoneIcon from '../../static/unitas/phone-number.svg';
-import UnitasEmailIcon from '../../static/unitas/email.svg';
-import UnitasLinkedInIcon from '../../static/unitas/linkedin.svg';
-import UnitasLinkedInFilled from '../../static/unitas/linkedin-filled.svg';
-
-import PrimeArrowIcon from '../../static/prime/arrow.svg';
-import PrimePhoneIcon from '../../static/prime/phone-white.svg';
-import PrimeEmailIcon from '../../static/prime/email.svg';
-import PrimeLinkedInIcon from '../../static/prime/linkedin-white.svg';
-import PrimeLinkedInFilled from '../../static/prime/linkedin-white-filled.svg';
-
-const ICONS = {
-  huddle: {
-    arrow: HuddleArrowIcon,
-    phone: HuddlePhoneIcon,
-    email: HuddleEmailIcon,
-    linkedin: HuddleLinkedInIcon,
-    linkedinFilled: HuddleLinkedInFilled
-  },
-  unitas: {
-    arrow: UnitasArrowIcon,
-    phone: UnitasPhoneIcon,
-    email: UnitasEmailIcon,
-    linkedin: UnitasLinkedInIcon,
-    linkedinFilled: UnitasLinkedInFilled
-  },
-  prime: {
-    arrow: PrimeArrowIcon,
-    phone: PrimePhoneIcon,
-    email: PrimeEmailIcon,
-    linkedin: PrimeLinkedInIcon,
-    linkedinFilled: PrimeLinkedInFilled
-  }
-};
+import {ReactComponent as Arrow} from '../../static/icons/arrow.svg';
+import {ReactComponent as Phone} from '../../static/icons/phone.svg';
+import {ReactComponent as Email} from '../../static/icons/email.svg';
+import {ReactComponent as LinkedIn} from '../../static/icons/linkedin-sm.svg';
 
 const Resource = () => {
   const {
@@ -92,7 +55,7 @@ const Resource = () => {
   const renderBlogComponent = () => (
     <div className='resource-content'>
       <Link to={isPrime ? '/blog' : '/resources'}>
-        <img alt='back-arrow' src={ICONS[NAMESPACE].arrow} />
+        <Arrow />
         Back to blog
       </Link>
       <div className='title'>
@@ -137,37 +100,28 @@ const Resource = () => {
           <div className='author-contact'>
             {author?.number && (
               <div>
-                <img
-                  alt='phone-number-icon'
-                  src={ICONS[NAMESPACE].phone}
-                />
                 <a href={`tel:${author?.number}`}>
+                  <Phone />
                   <span>{author?.number}</span>
                 </a>
               </div>
             )}
             <div>
               <a href={`mailto:email`}>
-                <img
-                  alt='email-icon'
-                  src={ICONS[NAMESPACE].email}
-                />
+                <Email />
                 <span>{author?.email}</span>
               </a>
             </div>
             <div>
               <a href={author?.linkedin} rel='noreferrer' target='_blank'>
-                <img
-                  alt='linkedin-icon'
-                  src={ICONS[NAMESPACE].linkedin}
-                />
+                <LinkedIn />
                 <span>LinkedIn profile</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <Share t={t} icon={ICONS[NAMESPACE].linkedinFilled} />
+      <Share t={t} />
       <Subscribe t={t} />
     </div>
   );

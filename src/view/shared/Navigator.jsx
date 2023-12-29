@@ -8,44 +8,27 @@ import ResourcesNav from './ResourcesNav';
 import Footer from './Footer';
 
 import HuddleLogo from '../../static/huddle/full-logo-dark.svg';
-import HuddleMenubar from '../../static/huddle/menubar.svg';
-import HuddleCloseButton from '../../static/huddle/close-button.svg';
-import HuddleDropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
-import HuddleHeaderArrow from '../../static/huddle/header-arrow.svg';
-
 import UnitasLogo from '../../static/unitas/full-logo.svg';
-import UnitasMenubar from '../../static/unitas/menubar.svg';
-import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
-import UnitasHeaderArrow from '../../static/unitas/header-arrow.svg';
-import UnitasCloseButton from '../../static/unitas/close-button.svg';
-
 import PrimeLogo from '../../static/prime/full-logo.svg';
-import PrimeMenubar from '../../static/prime/menubar.svg';
+import HuddleDropdownArrow from '../../static/huddle/header-dropdown-arrow.svg';
+import UnitasDropdownArrow from '../../static/unitas/header-dropdown-arrow.svg';
 import PrimeDropdownArrow from '../../static/prime/header-dropdown-arrow.svg';
-import PrimeHeaderArrow from '../../static/prime/header-arrow.svg';
-import PrimeCloseButton from '../../static/prime/close-button.svg';
+
+import {ReactComponent as Chevron} from '../../static/icons/chevron.svg';
+import {ReactComponent as Menubar} from '../../static/icons/menubar.svg';
 
 const ICONS = {
   huddle: {
     logo: HuddleLogo,
-    menubar: HuddleMenubar,
-    closeButton: HuddleCloseButton,
-    dropdownArrow: HuddleDropdownArrow,
-    headerArrow: HuddleHeaderArrow
+    dropdownArrow: HuddleDropdownArrow
   },
   unitas: {
     logo: UnitasLogo,
-    menubar: UnitasMenubar,
-    closeButton: UnitasCloseButton,
-    dropdownArrow: UnitasDropdownArrow,
-    headerArrow: UnitasHeaderArrow
+    dropdownArrow: UnitasDropdownArrow
   },
   prime: {
     logo: PrimeLogo,
-    menubar: PrimeMenubar,
-    closeButton: PrimeCloseButton,
-    dropdownArrow: PrimeDropdownArrow,
-    headerArrow: PrimeHeaderArrow
+    dropdownArrow: PrimeDropdownArrow
   },
 };
 
@@ -296,11 +279,7 @@ const Navigator = ({
             {route.subLinks ? (
               <span>
                 {route.name}
-                <img
-                  alt='arrow'
-                  className='header-arrow'
-                  src={ICONS[NAMESPACE].headerArrow}
-                />
+                <Chevron />
               </span>
             ) : (
               <span>
@@ -332,12 +311,7 @@ const Navigator = ({
                   <div className='header-nav-list'>
                     {renderNavList()}
                   </div>
-                  <img
-                    alt='logo-menubar'
-                    className='logo-menubar'
-                    src={ICONS[NAMESPACE].menubar}
-                    onClick={toggleSidebar}
-                  />
+                  <Menubar onClick={toggleSidebar} />
                 </div>
               </div>
             </div>
@@ -366,12 +340,7 @@ const Navigator = ({
               src={ICONS[NAMESPACE].logo}
             />
           </Link>
-          <img
-            alt='close-button'
-            onClick={hideSidebar}
-            className='close-button'
-            src={ICONS[NAMESPACE].closeButton}
-          />
+          <Chevron onClick={hideSidebar} />
         </div>
         {renderNavList(true)}
       </div>
@@ -387,7 +356,6 @@ const Navigator = ({
           dropdownDisplayed={dropdownDisplayed}
           toggleDropdown={toggleDropdown}
           hideDropdown={hideDropdown}
-          isHuddle={isHuddle}
         />
       )}
       {renderHeader()}

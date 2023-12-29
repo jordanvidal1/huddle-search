@@ -1,14 +1,10 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
-import {isPrime} from '../../services/helper';
 
-import PhoneIcon from '../../static/huddle/phone-white.svg';
-import EmailIcon from '../../static/huddle/email-white.svg';
-import VisitIcon from '../../static/huddle/visit-white.svg';
-import PrimePhoneIcon from '../../static/prime/phone-white.svg';
-import PrimeEmailIcon from '../../static/prime/email-white.svg';
-import PrimeVisitIcon from '../../static/prime/visit-white.svg';
+import {ReactComponent as Phone} from '../../static/icons/phone.svg';
+import {ReactComponent as Email} from '../../static/icons/email.svg';
+import {ReactComponent as Location} from '../../static/icons/location.svg';
 
 const ContactVisitContainer = (t) => (
   <Grid container spacing={3} justifyContent='center' className='visit-grid-container'>
@@ -16,7 +12,7 @@ const ContactVisitContainer = (t) => (
       <div className='visit-container'>
         <div className='visit-text-container'>
           <div className='contact-icon'>
-            <img alt='phone-icon' src={isPrime ? PrimePhoneIcon : PhoneIcon} />
+            <Phone />
           </div>
           <div className='visit-title'>
             <h5>
@@ -42,7 +38,7 @@ const ContactVisitContainer = (t) => (
       <div className='visit-container'>
         <div className='visit-text-container'>
           <div className='contact-icon'>
-            <img alt='email-icon' src={isPrime ? PrimeEmailIcon : EmailIcon} />
+            <Email />
           </div>
           <div className='visit-title'>
             <h5>
@@ -66,7 +62,7 @@ const ContactVisitContainer = (t) => (
       <div className='visit-container'>
         <div className='visit-text-container'>
           <div className='contact-icon'>
-            <img alt='visit-icon' src={isPrime ? PrimeVisitIcon : VisitIcon} />
+            <Location />
           </div>
           <div className='visit-title'>
             <h5>

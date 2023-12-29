@@ -31,9 +31,14 @@
             font-weight: 800;
         }
 
-        img {
+        svg {
+            height: unset;
             margin-left: 1rem;
             width: 1.25rem;
+
+            path {
+                stroke: #FF958C;
+            }
         }
     }
 
@@ -77,9 +82,15 @@
             border-radius: 1.5rem;
         }
 
-        .resources-header a {
-            color: #F49944;
-            font-weight: 600;
+        .resources-header {
+            a {
+                color: #F49944;
+                font-weight: 600;
+            }
+
+            svg path {
+                stroke: #C57B36;
+            }
         }
     }
 }
@@ -92,9 +103,15 @@
             padding: 0;
         }
 
-        .resources-header a {
-            color: #EB52F9;
-            font-weight: 700;
+        .resources-header {
+            a {
+                color: #EB52F9;
+                font-weight: 700;
+            }
+
+            svg path {
+                stroke: #EB52F9;
+            }
         }
     }
 }

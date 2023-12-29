@@ -14,58 +14,25 @@ import LinkHref from '../shared/LinkHref';
 
 import TextLogo from '../../static/huddle/text-logo.svg';
 import HuddleLogo from '../../static/huddle/full-logo.svg';
-import HuddlePhone from '../../static/huddle/phone-number.svg';
-import HuddleEmail from '../../static/huddle/email.svg';
-import HuddleLocation from '../../static/huddle/location.svg';
-import HuddleLinkedIn from '../../static/huddle/linkedin.svg';
-// import HuddleTwitter from '../../static/huddle/twitter.svg';
-// import HuddleFacebook from '../../static/huddle/facebook.svg';
-// import HuddleInstagram from '../../static/huddle/instagram.svg';
-import ThePrimeGroup from '../../static/huddle/the-prime-group.svg';
-
 import UnitasLogo from '../../static/unitas/full-logo.svg';
-import UnitasPhone from '../../static/unitas/phone-number.svg';
-import UnitasEmail from '../../static/unitas/email.svg';
-import UnitasLocation from '../../static/unitas/location.svg';
-import UnitasLinkedIn from '../../static/unitas/linkedin-filled.svg';
-// import UnitasTwitter from '../../static/unitas/twitter.svg';
-// import UnitasFacebook from '../../static/unitas/facebook.svg';
-// import UnitasInstagram from '../../static/unitas/instagram.svg';
-import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
-import HuddleFooterArrow from '../../static/huddle/footer-arrow.svg';
-import UnitasFooterArrow from '../../static/unitas/footer-arrow.svg';
-
 import PrimeLogo from '../../static/prime/full-logo.svg';
-import PrimePhone from '../../static/prime/phone-number.svg';
-import PrimeEmail from '../../static/prime/email.svg';
-import PrimeLocation from '../../static/prime/location.svg';
-import PrimeLinkedIn from '../../static/prime/linkedin-white-filled.svg';
 
-const ICONS = {
-  huddle: {
-    logo: HuddleLogo,
-    phone: HuddlePhone,
-    email: HuddleEmail,
-    location: HuddleLocation,
-    linkedin: HuddleLinkedIn,
-    headerArrow: HuddleFooterArrow
-  },
-  unitas: {
-    logo: UnitasLogo,
-    phone: UnitasPhone,
-    email: UnitasEmail,
-    location: UnitasLocation,
-    linkedin: UnitasLinkedIn,
-    headerArrow: UnitasFooterArrow
-  },
-  prime: {
-    logo: PrimeLogo,
-    phone: PrimePhone,
-    email: PrimeEmail,
-    location: PrimeLocation,
-    linkedin: PrimeLinkedIn,
-    headerArrow: UnitasFooterArrow
-  },
+import ThePrimeGroup from '../../static/huddle/the-prime-group.svg';
+import UnitasThePrimeGroup from '../../static/unitas/the-prime-group.svg';
+
+import {ReactComponent as Phone} from '../../static/icons/phone.svg';
+import {ReactComponent as Email} from '../../static/icons/email.svg';
+import {ReactComponent as Location} from '../../static/icons/location.svg';
+import {ReactComponent as LinkedIn} from '../../static/icons/linkedin.svg';
+import {ReactComponent as X} from '../../static/icons/x.svg';
+import {ReactComponent as Facebook} from '../../static/icons/facebook.svg';
+import {ReactComponent as Instagram} from '../../static/icons/instagram.svg';
+import {ReactComponent as Chevron} from '../../static/icons/chevron.svg';
+
+const LOGOS = {
+  huddle: HuddleLogo,
+  unitas: UnitasLogo,
+  prime: PrimeLogo,
 };
 
 const discoverRoutes = isPrime ?
@@ -261,25 +228,19 @@ const Footer = ({
                         <img
                           className='logo'
                           alt='logo'
-                          src={ICONS[NAMESPACE].logo}
+                          src={LOGOS[NAMESPACE]}
                         />
                         <p>{t(`${NAMESPACE}:footer:slogan`)}</p>
                       </div>
                       <div className='footer-contact'>
                         <div>
-                          <img
-                            alt='phone-number'
-                            src={ICONS[NAMESPACE].phone}
-                          />
+                          <Phone />
                           <a href={`tel:${t(`${NAMESPACE}:footer:number`)}`}>
                             <span>{t(`${NAMESPACE}:footer:number`)}</span>
                           </a>
                         </div>
                         <div>
-                          <img
-                            alt='email'
-                            src={ICONS[NAMESPACE].email}
-                          />
+                          <Email />
                           <a href={`mailto:${t(`${NAMESPACE}:footer:email`)}`}>
                             <span>
                               {t(`${NAMESPACE}:footer:email`)}
@@ -287,10 +248,7 @@ const Footer = ({
                           </a>
                         </div>
                         <div>
-                          <img
-                            alt='location'
-                            src={ICONS[NAMESPACE].location}
-                          />
+                          <Location />
                           <a
                             href={`https://www.google.com/maps/search/?api=1&query=${t(`${NAMESPACE}:footer:address`)}`}
                             target='_blank'
@@ -304,29 +262,17 @@ const Footer = ({
                       </div>
                       <div className='footer-socials'>
                         <LinkHref href={SOCIAL_HREFS[NAMESPACE].linkedin}>
-                          <img
-                            alt='linkedin'
-                            src={ICONS[NAMESPACE].linkedin}
-                          />
+                          <LinkedIn />
                         </LinkHref>
-                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>*/}
-                        {/*  <img*/}
-                        {/*    alt='twitter'*/}
-                        {/*    src={ICONS[NAMESPACE].twitter}*/}
-                        {/*  />*/}
-                        {/*</a>*/}
-                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>*/}
-                        {/*  <img*/}
-                        {/*    alt='facebook'*/}
-                        {/*    src={ICONS[NAMESPACE].facebook}*/}
-                        {/*  />*/}
-                        {/*</a>*/}
-                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>*/}
-                        {/*  <img*/}
-                        {/*    alt='instagram'*/}
-                        {/*    src={ICONS[NAMESPACE].instagram}*/}
-                        {/*  />*/}
-                        {/*</a>*/}
+                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>
+                          <X />
+                        </LinkHref>
+                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>
+                          <Facebook />
+                        </LinkHref>
+                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>
+                          <Instagram />
+                        </LinkHref>
                       </div>
                     </div>
                     <div className='footer-divider' />
@@ -343,11 +289,7 @@ const Footer = ({
                                 }}>
                                   <span>
                                     {route.name}
-                                    <img
-                                      alt='arrow'
-                                      className='header-arrow'
-                                      src={ICONS[NAMESPACE].headerArrow}
-                                    />
+                                    <Chevron />
                                   </span>
                                 </div>
                               ) : (
@@ -383,11 +325,7 @@ const Footer = ({
                                 }}>
                                   <span>
                                     {route.name}
-                                    <img
-                                      alt='arrow'
-                                      className='header-arrow'
-                                      src={ICONS[NAMESPACE].headerArrow}
-                                    />
+                                    <Chevron />
                                   </span>
                                 </div>
                               ) : (

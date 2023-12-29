@@ -1,9 +1,10 @@
 import React from 'react';
-import Preloader from '../../static/huddle/loader.svg';
+
+import {ReactComponent as Loading} from '../../static/icons/loading.svg';
 
 const Loader = () => (
   <div className='loader'>
-    <img alt='loader' src={Preloader} />
+    <Loading />
   </div>
 );
 

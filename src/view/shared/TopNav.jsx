@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import cx from 'classnames';
-import DropdownArrow from '../../static/huddle/dropdown-arrow.svg';
-import UnitasDropdownArrow from '../../static/unitas/dropdown-arrow.svg';
+
+import {ReactComponent as Chevron} from '../../static/icons/chevron.svg';
 
 const leftRoutes = [
   {
@@ -40,7 +40,6 @@ const rightRoutes = [
 
 const TopNav = ({
   dropdownDisplayed,
-  isHuddle,
   toggleDropdown,
   hideDropdown
 }) => {
@@ -113,11 +112,7 @@ const TopNav = ({
             <span>
               Quicklinks
             </span>
-            <img
-              alt='quicklinks-menubar'
-              className='quicklinks-button'
-              src={isHuddle ? DropdownArrow : UnitasDropdownArrow}
-            />
+            <Chevron />
           </div>
         </div>
       </div>

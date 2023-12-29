@@ -35,9 +35,14 @@
             white-space: nowrap;
         }
 
-        img {
+        svg {
+            height: unset;
             margin-left: 0.5rem;
-            width: 0.875rem;
+            width: 1.125rem;
+
+            path {
+                stroke: #FF958C;
+            }
         }
 
         .btn-container {
@@ -75,9 +80,14 @@
                 font-weight: 800;
             }
 
-            img {
+            svg {
+                height: unset;
                 margin-left: 1rem;
                 width: 1.25rem;
+
+                path {
+                    stroke: #FF958C;
+                }
             }
         }
 
@@ -148,8 +158,14 @@
                 font-size: 0.75rem;
             }
 
-            img {
+            svg {
+                height: unset;
                 margin-right: 0.5rem;
+                width: 1.375rem;
+
+                path {
+                    stroke: #7E8192;
+                }
             }
         }
     }
@@ -201,14 +217,24 @@
             color: #FFF;
             font-weight: 600;
         }
+
+        svg path {
+            stroke: #FFF;
+        }
     }
 
     .featured-roles {
         background: #1A1A1A;
         border-radius: 1.5rem;
 
-        .link-container a {
-            color: #F49944;
+        .link-container {
+            a {
+                color: #F49944;
+            }
+
+            svg path {
+                stroke: #C57B36;
+            }
         }
     }
 
@@ -217,6 +243,10 @@
 
         .role-title h6 {
             font-weight: 900;
+        }
+
+        .role-salary svg path {
+            stroke: #C57B36;
         }
     }
 
