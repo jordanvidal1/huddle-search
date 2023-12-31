@@ -209,8 +209,14 @@
         }
     }
 
-    .action-container .subscribe-container input {
-        height: 4rem;
+    .action-container .subscribe-container {
+        input {
+            height: 4rem;
+        }
+
+        .socials svg path {
+            fill: #FFF;
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -262,6 +268,10 @@
 
             button {
                 height: unset;
+            }
+
+            .socials svg path {
+                fill: #FFF;
             }
         }
     }

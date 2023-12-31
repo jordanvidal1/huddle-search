@@ -215,9 +215,20 @@
         }
     }
 
-    .leader-contact span {
-        color: #FFF;
-        font-weight: 700;
+    .leader-contact {
+        svg path {
+            stroke: #FFF;
+        }
+
+        div:last-child svg path {
+            fill: #FFF;
+            stroke: none;
+        }
+
+        span {
+            color: #FFF;
+            font-weight: 700;
+        }
     }
 
     @include media-breakpoint-down(md) {
