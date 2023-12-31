@@ -1,39 +1,14 @@
 import React from 'react';
 import cx from 'classnames';
 import {Grid} from '@material-ui/core';
-import {NAMESPACE} from '../../data/constants';
 import {renderNumber} from '../../services/helper';
 
-import HuddleSalary from '../../static/huddle/salary-pink.svg';
-import HuddleBenefits from '../../static/huddle/benefits-pink.svg';
-import HuddleLocation from '../../static/huddle/location-pink.svg';
-import UnitasSalary from '../../static/unitas/salary.svg';
-import UnitasBenefits from '../../static/unitas/benefits.svg';
-import UnitasLocation from '../../static/unitas/location.svg';
-import PrimeSalary from '../../static/prime/salary.svg';
-import PrimeBenefits from '../../static/prime/benefits.svg';
-import PrimeLocation from '../../static/prime/location-pink.svg';
-
-const ICONS = {
-  huddle: {
-    salary: HuddleSalary,
-    benefits: HuddleBenefits,
-    location: HuddleLocation
-  },
-  unitas: {
-    salary: UnitasSalary,
-    benefits: UnitasBenefits,
-    location: UnitasLocation
-  },
-  prime: {
-    salary: PrimeSalary,
-    benefits: PrimeBenefits,
-    location: PrimeLocation
-  }
-};
+import {ReactComponent as Salary} from '../../static/icons/salary.svg';
+import {ReactComponent as Perk} from '../../static/icons/perk.svg';
+import {ReactComponent as Location} from '../../static/icons/location.svg';
 
 const Role = props => {
-  const {i, type, title, salary, benefits, location} = props;
+  const {i, type, title, salary, perks, location} = props;
 
   const classNames = cx('role-type', {
     permanent: type === 'Permanent',
@@ -56,24 +31,15 @@ const Role = props => {
           </div>
           <div className='role-details'>
             <span>
-              <img
-                alt='salary'
-                src={ICONS[NAMESPACE].salary}
-              />
+              <Salary />
               £{renderNumber(salary)} per year
             </span>
             <span>
-              <img
-                alt='benefits'
-                src={ICONS[NAMESPACE].benefits}
-              />
-              {benefits}
+              <Perk />
+              {perks}
             </span>
             <span>
-              <img
-                alt='location'
-                src={ICONS[NAMESPACE].location}
-              />
+              <Location />
               {location}
             </span>
           </div>
@@ -99,6 +65,6 @@ Role.defaultProps = {
   type: 'Permanent',
   title: 'Job title that breaks onto 3 lines',
   salary: 50000,
-  benefits: 'Car, Pension, Bonus, LTIP',
+  perks: 'Car, Pension, Bonus, LTIP',
   location: 'London, UK'
 };

@@ -87,8 +87,18 @@
             display: flex;
         }
 
-        img {
+        svg {
+            height: unset;
             width: 1.5rem;
+
+            path {
+                stroke: #FF958C;
+            }
+        }
+
+        div:last-child svg path {
+            fill: #FF958C;
+            stroke: none;
         }
 
         span {
@@ -159,9 +169,20 @@
         }
     }
 
-    .leader-contact span {
-        color: #FFF;
-        font-weight: 600;
+    .leader-contact {
+        span {
+            color: #FFF;
+            font-weight: 600;
+        }
+
+        svg path {
+            stroke: #FFF;
+        }
+
+        div:last-child svg path {
+            fill: #FFF;
+            stroke: none;
+        }
     }
 }
 

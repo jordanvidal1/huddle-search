@@ -2,20 +2,21 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 // import {capitalize} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
+// import {isHuddle} from '../../services/helper';
 // import Roles from './Roles';
 import ContactContainer from './ContactVisitContainer';
 import PrinciplesContainer from './PrinciplesContainer';
 
-import Signature1 from '../../static/huddle/signature-1.svg';
-import Signature2 from '../../static/huddle/signature-2.svg';
-import Signature3 from '../../static/huddle/signature-3.svg';
-import UnitasSignature1 from '../../static/unitas/signature-1.svg';
-import UnitasSignature2 from '../../static/unitas/signature-2.svg';
-import UnitasSignature3 from '../../static/unitas/signature-3.svg';
-import PlusIcon from '../../static/huddle/plus.svg';
-import EqualsIcon from '../../static/huddle/equals.svg';
-// import WhiteArrow from '../../static/unitas/arrow-white.svg';
+import {ReactComponent as Plus} from '../../static/icons/plus.svg';
+import {ReactComponent as Equals} from '../../static/icons/equal.svg';
+// import {ReactComponent as Arrow} from '../../static/icons/arrow.svg';
+
+// import Signature1 from '../../static/huddle/signature-1.svg';
+// import Signature2 from '../../static/huddle/signature-2.svg';
+// import Signature3 from '../../static/huddle/signature-3.svg';
+// import UnitasSignature1 from '../../static/unitas/signature-1.svg';
+// import UnitasSignature2 from '../../static/unitas/signature-2.svg';
+// import UnitasSignature3 from '../../static/unitas/signature-3.svg';
 
 const leadershipComponent = t => (
   <div className='info-container'>
@@ -51,16 +52,16 @@ const leadershipComponent = t => (
   </div>
 );
 
-const defaultSignature = {
-  name: 'Name',
-  role: 'Role'
-}
+// const defaultSignature = {
+//   name: 'Name',
+//   role: 'Role'
+// }
 
-const signatures = [
-  {...defaultSignature, img: isHuddle ? Signature1 : UnitasSignature1},
-  {...defaultSignature, img: isHuddle ? Signature2 : UnitasSignature2},
-  {...defaultSignature, img: isHuddle ? Signature3 : UnitasSignature3}
-];
+// const signatures = [
+//   {...defaultSignature, img: isHuddle ? Signature1 : UnitasSignature1},
+//   {...defaultSignature, img: isHuddle ? Signature2 : UnitasSignature2},
+//   {...defaultSignature, img: isHuddle ? Signature3 : UnitasSignature3}
+// ];
 
 const ourStoryComponent = t => (
   <div className='info-container'>
@@ -107,7 +108,7 @@ const ourProcessComponent = t => (
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:1:text`)}
           </p>
         </div>
-        <img alt='plus-icon' src={PlusIcon} />
+        <Plus />
         <div>
           <h5>
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:title`)}
@@ -116,7 +117,7 @@ const ourProcessComponent = t => (
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:2:text`)}
           </p>
         </div>
-        <img alt='equals-icon' src={EqualsIcon} />
+        <Equals />
         <div>
           <h5>
             {t(`${NAMESPACE}:leadershipHero:ourProcess:info:calculation:3:title`)}

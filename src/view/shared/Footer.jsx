@@ -24,9 +24,9 @@ import {ReactComponent as Phone} from '../../static/icons/phone.svg';
 import {ReactComponent as Email} from '../../static/icons/email.svg';
 import {ReactComponent as Location} from '../../static/icons/location.svg';
 import {ReactComponent as LinkedIn} from '../../static/icons/linkedin.svg';
-import {ReactComponent as X} from '../../static/icons/x.svg';
-import {ReactComponent as Facebook} from '../../static/icons/facebook.svg';
-import {ReactComponent as Instagram} from '../../static/icons/instagram.svg';
+// import {ReactComponent as X} from '../../static/icons/x.svg';
+// import {ReactComponent as Facebook} from '../../static/icons/facebook.svg';
+// import {ReactComponent as Instagram} from '../../static/icons/instagram.svg';
 import {ReactComponent as Chevron} from '../../static/icons/chevron.svg';
 
 const LOGOS = {
@@ -234,8 +234,8 @@ const Footer = ({
                       </div>
                       <div className='footer-contact'>
                         <div>
-                          <Phone />
                           <a href={`tel:${t(`${NAMESPACE}:footer:number`)}`}>
+                            <Phone />
                             <span>{t(`${NAMESPACE}:footer:number`)}</span>
                           </a>
                         </div>
@@ -264,15 +264,15 @@ const Footer = ({
                         <LinkHref href={SOCIAL_HREFS[NAMESPACE].linkedin}>
                           <LinkedIn />
                         </LinkHref>
-                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>
-                          <X />
-                        </LinkHref>
-                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>
-                          <Facebook />
-                        </LinkHref>
-                        <LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>
-                          <Instagram />
-                        </LinkHref>
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>*/}
+                        {/*  <X />*/}
+                        {/*</LinkHref>*/}
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].facebook}>*/}
+                        {/*  <Facebook />*/}
+                        {/*</LinkHref>*/}
+                        {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].instagram}>*/}
+                        {/*  <Instagram />*/}
+                        {/*</LinkHref>*/}
                       </div>
                     </div>
                     <div className='footer-divider' />

@@ -8,36 +8,10 @@ import Input from '../shared/Input';
 import Loader from '../shared/Loader';
 import LinkHref from '../shared/LinkHref';
 
-import HuddleLinkedIn from '../../static/huddle/linkedin-purple.svg';
-import UnitasLinkedIn from '../../static/unitas/linkedin-white-filled.svg';
-import PrimeLinkedIn from '../../static/prime/linkedin-white-filled.svg';
-// import HuddleTwitter from '../../static/huddle/twitter-purple.svg';
-// import HuddleFacebook from '../../static/huddle/facebook-purple.svg';
-// import HuddleInstagram from '../../static/huddle/instagram-purple.svg';
-// import UnitasTwitter from '../../static/unitas/twitter-white.svg';
-// import UnitasFacebook from '../../static/unitas/facebook-white.svg';
-// import UnitasInstagram from '../../static/unitas/instagram-white.svg';
-
-const ICONS = {
-  huddle: {
-    linkedin: HuddleLinkedIn,
-    // twitter: HuddleTwitter,
-    // facebook: HuddleFacebook,
-    // instagram: HuddleInstagram
-  },
-  unitas: {
-    linkedin: UnitasLinkedIn,
-    // twitter: UnitasTwitter,
-    // facebook: UnitasFacebook,
-    // instagram: UnitasInstagram
-  },
-  prime: {
-    linkedin: PrimeLinkedIn,
-    // twitter: PrimeTwitter,
-    // facebook: PrimeFacebook,
-    // instagram: PrimeInstagram
-  },
-};
+import {ReactComponent as LinkedIn} from '../../static/icons/linkedin.svg';
+// import {ReactComponent as X} from '../../static/icons/x.svg';
+// import {ReactComponent as Facebook} from '../../static/icons/facebook.svg';
+// import {ReactComponent as Instagram} from '../../static/icons/instagram.svg';
 
 const FollowUs = () => {
   const {
@@ -142,16 +116,10 @@ const FollowUs = () => {
                   <div className='socials'>
                     <div>
                       <LinkHref href={SOCIAL_HREFS[NAMESPACE].linkedin}>
-                        <img
-                          alt='linkedin'
-                          src={ICONS[NAMESPACE].linkedin}
-                        />
+                        <LinkedIn />
                       </LinkHref>
-                      {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].twitter}>*/}
-                      {/*  <img*/}
-                      {/*    alt='twitter'*/}
-                      {/*    src={ICONS[NAMESPACE].twitter}*/}
-                      {/*  />*/}
+                      {/*<LinkHref href={SOCIAL_HREFS[NAMESPACE].x}>*/}
+                      {/*  <X />*/}
                       {/*</LinkHref>*/}
                     </div>
                     {/*<div>*/}

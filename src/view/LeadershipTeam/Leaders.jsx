@@ -1,13 +1,9 @@
 import React from 'react';
 import {LEADERS, NAMESPACE} from '../../data/constants';
-import {isHuddle} from '../../services/helper';
 
-import PhoneIcon from '../../static/huddle/phone-number.svg';
-import EmailIcon from '../../static/huddle/email.svg';
-import LinkedInIcon from '../../static/huddle/linkedin-pink.svg';
-import UnitasPhoneIcon from '../../static/unitas/phone-number-white.svg';
-import UnitasEmailIcon from '../../static/unitas/email-white.svg';
-import UnitasLinkedInIcon from '../../static/unitas/linkedin-white.svg';
+import {ReactComponent as Phone} from '../../static/icons/phone.svg';
+import {ReactComponent as Email} from '../../static/icons/email.svg';
+import {ReactComponent as LinkedIn} from '../../static/icons/linkedin-sm.svg';
 
 const Leaders = () => (
   <div className='leaders'>
@@ -40,30 +36,21 @@ const Leaders = () => (
                   <div className='leader-contact'>
                     {number && (
                       <div>
-                        <img
-                          alt='phone-number-icon'
-                          src={isHuddle ? PhoneIcon : UnitasPhoneIcon}
-                        />
                         <a href={`tel:${number}`}>
+                          <Phone />
                           <span>{number}</span>
                         </a>
                       </div>
                     )}
                     <div>
                       <a href={`mailto:${email}`}>
-                        <img
-                          alt='email-icon'
-                          src={isHuddle ? EmailIcon : UnitasEmailIcon}
-                        />
+                        <Email />
                         <span>{email}</span>
                       </a>
                     </div>
                     <div>
                       <a href={linkedin} rel='noreferrer' target='_blank'>
-                        <img
-                          alt='linkedin-icon'
-                          src={isHuddle ? LinkedInIcon : UnitasLinkedInIcon}
-                        />
+                        <LinkedIn />
                         <span>LinkedIn profile</span>
                       </a>
                     </div>

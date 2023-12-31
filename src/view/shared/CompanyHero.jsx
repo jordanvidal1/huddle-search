@@ -11,11 +11,11 @@ import HuddleHero from '../../static/prime/tpg-hero-huddle-min.png';
 import UnitasHero from '../../static/prime/tpg-hero-unitas-min.png';
 import SpectrumHero from '../../static/prime/tpg-hero-spectrum-min.png';
 
-import CompanyIcon from '../../static/prime/company.svg';
-import PhoneIcon from '../../static/prime/phone-white-thick.svg';
-import EmailIcon from '../../static/prime/email-white-thick.svg';
-import LocationIcon from '../../static/prime/visit-white.svg';
-import LinkedInIcon from '../../static/prime/linkedin-white.svg';
+import {ReactComponent as Company} from '../../static/icons/laptop.svg';
+import {ReactComponent as Phone} from '../../static/icons/phone.svg';
+import {ReactComponent as Email} from '../../static/icons/email.svg';
+import {ReactComponent as Location} from '../../static/icons/location.svg';
+import {ReactComponent as LinkedIn} from '../../static/icons/linkedin-sm.svg';
 
 const LOGOS = {
   huddle: HuddleLogo,
@@ -91,32 +91,31 @@ const CompanyHero = ({company}) => {
                 <div className='company-contact'>
                   <div>
                     <LinkHref href={COMPANY_HREFS[company]}>
-                      <img
-                        alt='company-icon'
-                        src={CompanyIcon}
-                      />
+                      <Company />
                       {t(`${NAMESPACE}:companyHero:contact:company:${company}`)}
                     </LinkHref>
                   </div>
                   <div>
-                    <img alt='phone-icon' src={PhoneIcon} />
-                    <span>{t(`${NAMESPACE}:companyHero:contact:phone:${company}`)}</span>
+                    <a href={`tel:${t(`${NAMESPACE}:companyHero:contact:phone:${company}`)}`}>
+                      <Phone />
+                      <span>{t(`${NAMESPACE}:companyHero:contact:phone:${company}`)}</span>
+                    </a>
                   </div>
                   <div>
                     <a href={`mailto:${t(`${NAMESPACE}:companyHero:contact:email:${company}`)}`}>
-                      <img alt='email-icon' src={EmailIcon} />
+                      <Email />
                       <span>
                         {t(`${NAMESPACE}:companyHero:contact:email:${company}`)}
                       </span>
                     </a>
                   </div>
                   <div>
-                    <img alt='location-icon' src={LocationIcon} />
                     <a
                       href={`https://www.google.com/maps/search/?api=1&query=${t(`${NAMESPACE}:companyHero:contact:location:${company}`)}`}
                       target='_blank'
                       rel='noreferrer'
                     >
+                      <Location />
                       <span>
                         {t(`${NAMESPACE}:companyHero:contact:location:${company}`)}
                       </span>
@@ -148,30 +147,21 @@ const CompanyHero = ({company}) => {
                     <div className='boss-contact'>
                       {boss.number && (
                         <div>
-                          <img
-                            alt='phone-number-icon'
-                            src={PhoneIcon}
-                          />
                           <a href={`tel:${boss.number}`}>
+                            <Phone />
                             <span>{boss.number}</span>
                           </a>
                         </div>
                       )}
                       <div>
                         <a href={`mailto:${boss.email}`}>
-                          <img
-                            alt='email-icon'
-                            src={EmailIcon}
-                          />
+                          <Email />
                           <span>{boss.email}</span>
                         </a>
                       </div>
                       <div>
                         <a href={boss.linkedin} rel='noreferrer' target='_blank'>
-                          <img
-                            alt='linkedin-icon'
-                            src={LinkedInIcon}
-                          />
+                          <LinkedIn />
                           <span>LinkedIn profile</span>
                         </a>
                       </div>

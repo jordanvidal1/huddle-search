@@ -10,15 +10,6 @@ import HeroImg from '../../static/huddle/executive-search.png';
 import Logo from '../../static/huddle/text-logo-gold.svg';
 import UnitasLogo from '../../static/unitas/text-logo.svg';
 
-import InfoIcon1 from '../../static/huddle/executive-icon-1.svg';
-import InfoIcon2 from '../../static/huddle/executive-icon-2.svg';
-import InfoIcon3 from '../../static/huddle/executive-icon-3.svg';
-import InfoIcon4 from '../../static/huddle/executive-icon-4.svg';
-import UnitasInfoIcon1 from '../../static/unitas/executive-icon-1.svg';
-import UnitasInfoIcon2 from '../../static/unitas/executive-icon-2.svg';
-import UnitasInfoIcon3 from '../../static/unitas/executive-icon-3.svg';
-import UnitasInfoIcon4 from '../../static/unitas/executive-icon-4.svg';
-
 import {ReactComponent as Icon1} from '../../static/icons/executive-search-1.svg';
 import {ReactComponent as Icon2} from '../../static/icons/executive-search-2.svg';
 import {ReactComponent as Icon3} from '../../static/icons/executive-search-3.svg';
