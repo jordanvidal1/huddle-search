@@ -270,25 +270,23 @@ const Navigator = ({
   const renderNavList = (mobile = false) => (
     <div className='nav-list'>
       {routes[NAMESPACE].map((route, i) => (!mobile ? !route.mobile : true) && (
-        <div key={i}>
-          <div onClick={() => {
-            if (route.subLinks) {
-              handleExpandClick(route.name)
-            }
-          }}>
-            {route.subLinks ? (
-              <span>
+        <div key={i} onClick={() => {
+          if (route.subLinks) {
+            handleExpandClick(route.name)
+          }
+        }}>
+          {route.subLinks ? (
+            <span>
+              {route.name}
+              <Chevron />
+            </span>
+          ) : (
+            <span>
+              <Link to={route.path} onClick={hideSidebar}>
                 {route.name}
-                <Chevron />
-              </span>
-            ) : (
-              <span>
-                <Link to={route.path} onClick={hideSidebar}>
-                  {route.name}
-                </Link>
-              </span>
-            )}
-          </div>
+              </Link>
+            </span>
+          )}
           {route.subLinks && renderDropdown(route)}
         </div>
       ))}

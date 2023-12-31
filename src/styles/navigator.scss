@@ -269,6 +269,13 @@
       display: flex;
       flex-direction: column;
       position: relative;
+
+      &:has(.nav-dropdown) {
+        svg {
+          transform: rotate(180deg);
+          transition: transform 0.25s linear;
+        }
+      }
     }
 
     a, a:hover, span {
@@ -282,6 +289,8 @@
       svg {
         height: unset;
         margin-left: 0.625rem;
+        transform: rotate(0deg);
+        transition: transform 0.25s linear;
         width: 1rem;
 
         path {
@@ -607,6 +616,10 @@
         color: #3A84C9;
         font-family: Poppins;
         font-weight: 600;
+
+        svg path {
+          stroke: #FFF;
+        }
       }
     }
   }
@@ -686,6 +699,10 @@
         color: #FFF;
         font-family: Plus Jakarta Sans;
         font-weight: 700;
+
+        svg path {
+          stroke: #FFF;
+        }
       }
     }
   }
