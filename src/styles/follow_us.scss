@@ -209,8 +209,8 @@
         }
     }
 
-    .action-container .subscribe-container {
-        input {
+    .action-container {
+        .subscribe-container input {
             height: 4rem;
         }
 
@@ -259,15 +259,17 @@
             }
         }
 
-        .action-container .subscribe-container {
-            input {
-                border-radius: 0;
-                font-size: 1.125rem;
-                height: 3.6875rem;
-            }
+        .action-container {
+            .subscribe-container {
+                input {
+                    border-radius: 0;
+                    font-size: 1.125rem;
+                    height: 3.6875rem;
+                }
 
-            button {
-                height: unset;
+                button {
+                    height: unset;
+                }
             }
 
             .socials svg path {
