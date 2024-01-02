@@ -2,7 +2,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Grid} from '@material-ui/core';
 import {NAMESPACE} from '../../data/constants';
-import {isHuddle} from "../../services/helper";
+import {isUnitas} from "../../services/helper";
 
 import PermanentIcon1 from '../../static/icons/permanent-hires-1.svg';
 import PermanentIcon2 from '../../static/icons/permanent-hires-2.svg';
@@ -55,7 +55,7 @@ const ICONS = {
     PermanentIcon2,
     PermanentIcon3,
     PermanentIcon4,
-    isHuddle ? PermanentIcon5 : null
+    isUnitas ? null : PermanentIcon5
   ],
   executiveSearch: [
     ExecutiveIcon1,
@@ -87,7 +87,7 @@ const ICONS = {
     OurProcessIcon2,
     OurProcessIcon3,
     OurProcessIcon4,
-    isHuddle ? OurProcessIcon5 : null
+    isUnitas ? null : OurProcessIcon5
   ],
   corporate: [
     CSRIcon1,
