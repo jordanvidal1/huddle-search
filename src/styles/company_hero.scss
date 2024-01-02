@@ -93,8 +93,6 @@
         width: 100%;
 
         .company-content {
-            //max-width: 45.1875rem;
-
             h2, p {
                 color: #000;
             }
@@ -194,6 +192,11 @@
                         path {
                             stroke: #FFF;
                         }
+                    }
+
+                    div:last-child svg path {
+                        fill: #FFF;
+                        stroke: none;
                     }
 
                     span {
