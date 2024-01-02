@@ -85,6 +85,12 @@ const leaderEmails = {
   }
 };
 
+export const COMPANY_EMAILS = {
+  huddle: leaderEmails.huddle.craig,
+  unitas: leaderEmails.unitas.scott,
+  spectrum: 'craig.oliver@spectrum-search.com'
+};
+
 const craigLeader = {
   img: NAMESPACE === 'prime' ? CraigPrimeImg : CraigImg,
   leaderImg: NAMESPACE === 'prime' ? CraigRectImg : CraigImg,
@@ -133,14 +139,14 @@ export const LEADERS = {
     peteLeader
   ],
   prime: [
-    scottLeader,
+    peteLeader,
     craigLeader,
-    peteLeader
+    scottLeader
   ],
   spectrum: [
-    scottLeader,
     craigLeader,
-    peteLeader
+    peteLeader,
+    scottLeader
   ]
 };
 
