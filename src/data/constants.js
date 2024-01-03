@@ -106,6 +106,9 @@ export const LEADER_ROLES = {
     pete: 'Co-Founder',
     craig: 'Co-Founder',
     scott: 'Co-Founder'
+  },
+  spectrum: {
+    craig: 'Founder & CEO',
   }
 };
 
