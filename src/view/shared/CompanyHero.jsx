@@ -144,7 +144,7 @@ const CompanyHero = ({company}) => {
                         {boss.name}
                       </h5>
                       <span>
-                        {LEADER_ROLES[company][boss.id]}
+                        {LEADER_ROLES[company]?.[boss.id]}
                       </span>
                       <p>
                         {boss.description}
