@@ -2,7 +2,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import {
   LEADERS,
-  NAMESPACE,
+  NAMESPACE
 } from '../../data/constants';
 
 import {ReactComponent as Phone} from '../../static/icons/phone.svg';
