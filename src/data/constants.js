@@ -67,7 +67,7 @@ export const CONTACT_FORM_ID = process.env.REACT_APP_WP_CONTACT_FORM_ID;
 export const CONTACT_CHECKBOX_ID = process.env.REACT_APP_WP_CONTACT_CHECKBOX_ID;
 export const SUBSCRIBE_FORM_ID = process.env.REACT_APP_WP_SUBSCRIBE_FORM_ID;
 
-export const LEADER_EMAILS = {
+const LEADER_EMAILS = {
   huddle: {
     craig: 'craig@huddlesearch.com',
     scott: 'scott@huddlesearch.com',
@@ -106,10 +106,6 @@ export const LEADER_ROLES = {
     pete: 'Co-Founder',
     craig: 'Co-Founder',
     scott: 'Co-Founder'
-  },
-  spectrum: {
-    craig: 'Founder & CEO',
-    pete: 'CTO'
   }
 };
 
