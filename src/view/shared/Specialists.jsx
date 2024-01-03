@@ -1,6 +1,11 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import {LEADERS, NAMESPACE} from '../../data/constants';
+import {
+  LEADERS,
+  LEADER_EMAILS,
+  NAMESPACE,
+  LEADER_ROLES
+} from '../../data/constants';
 
 import {ReactComponent as Phone} from '../../static/icons/phone.svg';
 import {ReactComponent as Email} from '../../static/icons/email.svg';
@@ -36,6 +41,7 @@ const Specialists = props => {
             <div className='specialists-container'>
               {leaders.map((specialist, i) => {
                 const {
+                  id,
                   img,
                   name,
                   role,
@@ -44,6 +50,9 @@ const Specialists = props => {
                   email,
                   linkedin
                 } = specialist;
+
+                const leaderEmail = LEADER_EMAILS[company]?.[id] || email;
+                const leaderRole = LEADER_ROLES[company]?.[id] || role;
 
                 return (
                   <div key={i} className='specialist'>
@@ -55,7 +64,7 @@ const Specialists = props => {
                         {name}
                       </h5>
                       <span>
-                        {role}
+                        {leaderRole}
                       </span>
                       <p>
                         {description}
@@ -71,9 +80,9 @@ const Specialists = props => {
                         </div>
                       )}
                       <div>
-                        <a href={`mailto:${email}`}>
+                        <a href={`mailto:${leaderEmail}`}>
                           <Email />
-                          <span>{email}</span>
+                          <span>{leaderEmail}</span>
                         </a>
                       </div>
                       <div>

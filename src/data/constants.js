@@ -67,7 +67,7 @@ export const CONTACT_FORM_ID = process.env.REACT_APP_WP_CONTACT_FORM_ID;
 export const CONTACT_CHECKBOX_ID = process.env.REACT_APP_WP_CONTACT_CHECKBOX_ID;
 export const SUBSCRIBE_FORM_ID = process.env.REACT_APP_WP_SUBSCRIBE_FORM_ID;
 
-const leaderEmails = {
+export const LEADER_EMAILS = {
   huddle: {
     craig: 'craig@huddlesearch.com',
     scott: 'scott@huddlesearch.com',
@@ -86,43 +86,68 @@ const leaderEmails = {
 };
 
 export const COMPANY_EMAILS = {
-  huddle: leaderEmails.huddle.craig,
-  unitas: leaderEmails.unitas.scott,
+  huddle: LEADER_EMAILS.huddle.craig,
+  unitas: LEADER_EMAILS.unitas.scott,
   spectrum: 'craig.oliver@spectrum-search.com'
 };
 
+export const LEADER_ROLES = {
+  huddle: {
+    craig: 'Co-Founder & CEO',
+    scott: 'Co-Founder & CCO',
+    pete: 'Co-Founder & CTO'
+  },
+  unitas: {
+    scott: 'Co-Founder & Managing Director',
+    craig: 'Co-Founder & Commercial Director',
+    pete: 'Co-Founder & CTO'
+  },
+  prime: {
+    pete: 'Co-Founder',
+    craig: 'Co-Founder',
+    scott: 'Co-Founder'
+  },
+  spectrum: {
+    craig: 'Founder & CEO',
+    pete: 'CTO'
+  }
+};
+
 const craigLeader = {
+  id: 'craig',
   img: NAMESPACE === 'prime' ? CraigPrimeImg : CraigImg,
   leaderImg: NAMESPACE === 'prime' ? CraigRectImg : CraigImg,
   name: 'Craig Oliver',
-  role: NAMESPACE === 'huddle' ? 'Co-Founder & CEO' : 'Co-Founder & Commercial Director',
+  role: LEADER_ROLES[NAMESPACE].craig,
   description: 'Craig is a proven and highly experienced recruitment entrepreneur having already founded a Global Web3 specialist recruitment agency. With over a decade of recruitment experience, guiding thousands of candidates’ careers and developing and growing many businesses by strategically building highly effective teams at scale and pace. When not scaling tech businesses, he loves spending time with his wife and two sons (ideally on holiday!) as well as getting as much time on the golf course as possible.',
   number: '+44 7893 944113',
-  email: leaderEmails[NAMESPACE].craig,
+  email: LEADER_EMAILS[NAMESPACE].craig,
   linkedin: 'https://www.linkedin.com/in/craigoliver-spectrum-search/',
   login: 'co'
 };
 
 const scottLeader = {
+  id: 'scott',
   img: NAMESPACE === 'prime' ? ScottPrimeImg : ScottImg,
   leaderImg: NAMESPACE === 'prime' ? ScottRectImg : ScottImg,
   name: 'Scott Darby',
-  role: NAMESPACE === 'huddle' ? 'Co-Founder & CCO' : 'Co-Founder & Managing Director',
+  role: LEADER_ROLES[NAMESPACE].scott,
   description: 'Scott has been in recruitment for over a decade, having built a very well known and respected personal brand within a multitude of specialist sectors and communities. Scott has led large scale recruitment campaigns and has also supported multiple FTSE listed, PE and VC backed C-suites on various executive hires on a retained basis. Scott is a self-confessed workaholic, and so the little down time he does get is spent with his partner, family and friends – with the odd game of golf thrown in too!',
   number: '+44 7360 543515',
-  email: leaderEmails[NAMESPACE].scott,
+  email: LEADER_EMAILS[NAMESPACE].scott,
   linkedin: 'https://www.linkedin.com/in/scott-darby-738b7560/',
   login: 'sd'
 };
 
 const peteLeader = {
+  id: 'pete',
   img: NAMESPACE === 'prime' ? PetePrimeImg : PeteImg,
   leaderImg: NAMESPACE === 'prime' ? PeteRectImg : PeteImg,
   name: 'Peter Wood',
-  role: 'Co-Founder & CTO',
+  role: LEADER_ROLES[NAMESPACE].pete,
   description: `Peter, a distinguished 3-time tech founder and CTO, boasts a proven track record in scaling businesses and securing significant capital. With over a decade in the tech industry, he has mastered the art of innovation and strategic leadership. Currently, he lends his unparalleled expertise as a pivotal advisor and mentor at Outlier Ventures accelerator, where his insights have not only catalysed the growth of emerging companies but also shaped the next generation of tech leaders. A visionary in AI innovation, Peter has pioneered proprietary technology that revolutionises the client and candidate experience here at ${NAMESPACE === 'huddle' ? 'Huddle' : 'Unitas'}.`,
   // number: '+44 7830 319093',
-  email: leaderEmails[NAMESPACE].pete,
+  email: LEADER_EMAILS[NAMESPACE].pete,
   linkedin: 'https://www.linkedin.com/in/peter-wood-632058151/',
   login: 'pw'
 };
@@ -145,8 +170,7 @@ export const LEADERS = {
   ],
   spectrum: [
     craigLeader,
-    peteLeader,
-    scottLeader
+    peteLeader
   ]
 };
 

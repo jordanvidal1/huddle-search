@@ -1,7 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import {capitalize} from '@material-ui/core';
-import {COMPANY_HREFS, LEADERS, NAMESPACE, COMPANY_EMAILS} from '../../data/constants';
+import {
+  COMPANY_HREFS,
+  LEADERS,
+  NAMESPACE,
+  COMPANY_EMAILS,
+  LEADER_ROLES
+} from '../../data/constants';
 import LinkHref from './LinkHref';
 
 import HuddleLogo from '../../static/prime/huddle-logo-red.svg';
@@ -138,7 +144,7 @@ const CompanyHero = ({company}) => {
                         {boss.name}
                       </h5>
                       <span>
-                        {boss.role}
+                        {LEADER_ROLES[company][boss.id]}
                       </span>
                       <p>
                         {boss.description}
