@@ -10,7 +10,7 @@ import {ReactComponent as Email} from '../../static/icons/email.svg';
 import {ReactComponent as LinkedIn} from '../../static/icons/linkedin-sm.svg';
 
 const Specialists = props => {
-  const {type = 'leadership', name, specialists, company} = props;
+  const {type = 'leadership', name, specialists} = props;
 
   const {t} = useTranslation(['huddle', 'unitas', 'prime']);
 

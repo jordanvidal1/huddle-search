@@ -18,7 +18,7 @@ const Company = () => {
   return (
     <div className='company'>
       <Hero company={company} />
-      <Leadership company={company} />
+      <Leadership />
       <OurStory type='story' />
       <OurStory type='process' />
       <WorkForUs />
